@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationAsstAmministrativa",
+  "meta": {
+    "lastUpdated": "2022-09-26T12:44:05.0110104+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAmministrativa",
+  "name": "RLOrganizationAsstAmministrativa",
+  "status": "active",
+  "experimental": false,
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
+      "code": "RLOrganizationL1"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
+      "code": "RLOrganizationL2"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAmministrativa"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

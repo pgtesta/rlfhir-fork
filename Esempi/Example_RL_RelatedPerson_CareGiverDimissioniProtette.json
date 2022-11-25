@@ -1,0 +1,67 @@
+{
+  "resourceType": "Patient",
+  "id": "example-Patient-DimissioniProtette",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLRelatedPersonCareGiverDimissioniProtette"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "RSSLCE07D12B112Q"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceSTP",
+      "value": "9876543210 - example"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/example"
+  },
+  "relationship": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+          "code": "CP"
+        }
+      ]
+    }
+  ],
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Luca"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1984-10-05",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "3388839838"
+        },
+        {
+          "system": "mail",
+          "value": "lucarossi@example.it"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLRelatedPersonLuogoNascita",
+      "valueAddress": {
+        "city": "Milano",
+        "district": "MB",
+        "state": "LOMBARDIA",
+        "postalCode": "20871"
+      }
+    }
+  ]
+}

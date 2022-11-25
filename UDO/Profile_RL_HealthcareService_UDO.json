@@ -1,0 +1,144 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLHealthcareServiceUDO",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceUDO",
+  "name": "RLHealthcareServiceUDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "HealthcareService",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "HealthcareService.extension",
+        "path": "HealthcareService.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "HealthcareService.extension:dataInsert",
+        "path": "HealthcareService.extension",
+        "sliceName": "dataInsert",
+        "short": "Data inserimento",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataInsert"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:dataUpdate",
+        "path": "HealthcareService.extension",
+        "sliceName": "dataUpdate",
+        "short": "Data aggiornamento",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataUpdate.json"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.identifier",
+        "path": "HealthcareService.identifier",
+        "comment": "UDO_<<CD_LIVELLO_2>>"
+      },
+      {
+        "id": "HealthcareService.providedBy",
+        "path": "HealthcareService.providedBy",
+        "short": "Riferimento alla struttura che eroga il servizio",
+        "comment": "Fonte: MD_UDO.CD_LIVELLO_2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HealthcareService.category",
+        "path": "HealthcareService.category",
+        "short": "Tipologia struttura erogante",
+        "comment": "Fonte: MD_UDO.CD_LIVELLO_2  e DS_TIPO_LIVELLO_2."
+      },
+      {
+        "id": "HealthcareService.characteristic",
+        "path": "HealthcareService.characteristic",
+        "short": "Raccolta dei servizi",
+        "definition": "Numero posti letto ABILITATI, ACCREDITATI, A CONTRATTO"
+      },
+      {
+        "id": "HealthcareService.characteristic.extension",
+        "path": "HealthcareService.characteristic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "HealthcareService.characteristic.extension:valore",
+        "path": "HealthcareService.characteristic.extension",
+        "sliceName": "valore",
+        "short": "Numero posti letto",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceCharacteristicValue"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.characteristic.extension:periodoAttivita",
+        "path": "HealthcareService.characteristic.extension",
+        "sliceName": "periodoAttivita",
+        "short": "Periodo di attività",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceCharacteristicPeriod"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPractitionerDataInsert",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:43:36.0764798+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert",
+  "name": "RLPractitionerDataInsert",
+  "status": "active",
+  "experimental": false,
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
+      "code": "RLPractitioner"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Practitioner"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

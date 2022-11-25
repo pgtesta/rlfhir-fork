@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLGoalObiettiviSalute",
+  "meta": {
+    "lastUpdated": "2022-10-19T09:15:05.6243552+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
+  "name": "RLGoalObiettiviSalute",
+  "status": "draft",
+  "description": "Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PAI).",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PAI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Goal",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Goal",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Goal.lifecycleStatus",
+        "path": "Goal.lifecycleStatus",
+        "short": "Stato dell'obbiettivo di salute",
+        "definition": "Valore fisso su \"planned\"",
+        "comment": "Il dato è detenuto dal SGDT",
+        "fixedCode": "planned"
+      },
+      {
+        "id": "Goal.achievementStatus",
+        "path": "Goal.achievementStatus",
+        "short": "Stato di raggiungimento dell'obbiettivo di salute",
+        "definition": "Da definire una codifica il linea con i valori dello standard",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Goal.description",
+        "path": "Goal.description",
+        "short": "Codifica e descrizione dell' obbiettivo di salute definito per il paziente"
+      },
+      {
+        "id": "Goal.description.coding",
+        "path": "Goal.description.coding",
+        "short": "Codifica e descrizione dell' obbiettivo di salute definito per il paziente"
+      },
+      {
+        "id": "Goal.description.coding.code",
+        "path": "Goal.description.coding.code",
+        "short": "Codice dell'obiettivo di salute",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Goal.description.coding.display",
+        "path": "Goal.description.coding.display",
+        "short": "Descrizione dell'obiettivo di salute",
+        "definition": "Stringa alfanumerica al più di 200 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Goal.subject",
+        "path": "Goal.subject",
+        "short": "Paziente al quale deve essere fornito l'intervento educazionale",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Goal.note",
+        "path": "Goal.note",
+        "short": "Nota contenente l'obbiettivo di salute nel caso non fosse selezionato tra le voci codificate",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

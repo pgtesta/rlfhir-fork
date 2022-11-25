@@ -1,0 +1,358 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationL1",
+  "meta": {
+    "lastUpdated": "2022-10-25T14:05:09.7668281+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
+  "name": "RLOrganizationL1",
+  "status": "active",
+  "experimental": false,
+  "description": "Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L1",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.extension",
+        "path": "Organization.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Organization.extension:DataCessazione",
+        "path": "Organization.extension",
+        "sliceName": "DataCessazione",
+        "short": "Data di cessazione dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_CESSAZIONE della tabella V_LIVELLO_1_DDC",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataInsert",
+        "path": "Organization.extension",
+        "sliceName": "DataInsert",
+        "short": "Data di inserimento del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INSERT della tabella V_LIVELLO_1_DDC",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataUpdate",
+        "path": "Organization.extension",
+        "sliceName": "DataUpdate",
+        "short": "Data di aggiornamento del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_ULTV della tabella V_LIVELLO_1_DDC",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataCostituzione",
+        "path": "Organization.extension",
+        "sliceName": "DataCostituzione",
+        "short": "Data di costituzione dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_COSTITUZIONE della tabella V_LIVELLO_1_DDC",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataInizioValidita",
+        "path": "Organization.extension",
+        "sliceName": "DataInizioValidita",
+        "short": "Data di inizio della validità di esercizio dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA della tabella V_LIVELLO_1_DDC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataFineValidita",
+        "path": "Organization.extension",
+        "sliceName": "DataFineValidita",
+        "short": "Data di fine della validità di esercizio dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_FINE_VALIDITA della tabella V_LIVELLO_1_DDC",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Lista dei codici identificativi dell'ente",
+        "definition": "I codici identificativi ultilizzati sono: codice fiscale/partita iva, codice L1",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier:CF",
+        "path": "Organization.identifier",
+        "sliceName": "CF",
+        "short": "Codice fiscale dell'ente",
+        "definition": "Stringa alfanumerica al più di 16 caratteri",
+        "comment": "La fonte del dato è il campo CD_FISCALE della tabella V_LIVELLO_1_DDC",
+        "max": "1",
+        "fixedIdentifier": {
+          "system": "http://hl7.it/sid/codiceFiscale"
+        }
+      },
+      {
+        "id": "Organization.identifier:CF.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice fiscale dell'ente",
+        "definition": "Stringa alfanumerica massimo di di 16 caratteri",
+        "comment": "La fonte del dato è il campo CD_FISCALE della tabella V_LIVELLO_1_DDC"
+      },
+      {
+        "id": "Organization.identifier:L1",
+        "path": "Organization.identifier",
+        "sliceName": "L1",
+        "short": "Codice identificativo della struttura (ministeriale per AO / ASST e ASL / ATS, mentre per gli ENT è il codice SISS)",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier:L1.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+      },
+      {
+        "id": "Organization.identifier:L1.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice di livello 1 dell'ente",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "short": "Descrizione del tipo di azienda",
+        "definition": "Stringa alfanumerica di 3 caratteri",
+        "comment": "La fonte del dato è il campo DS_TIPO_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1
+      },
+      {
+        "id": "Organization.type.coding.system",
+        "path": "Organization.type.coding.system",
+        "min": 1,
+        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+      },
+      {
+        "id": "Organization.type.coding.code",
+        "path": "Organization.type.coding.code",
+        "short": "Descrizione del tipo di azienda",
+        "definition": "Stringa alfanumerica di 3 caratteri",
+        "comment": "La fonte del dato è il campo DS_TIPO_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "short": "Denominazione dell'ente",
+        "definition": "Stringa alfanumerica al più 1000 caratteri",
+        "comment": "La fonte del dato è il campo DS_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "short": "Contatti dell'ente",
+        "definition": "Telefono, mail, fax ed url del sito internet",
+        "comment": "TBD"
+      },
+      {
+        "id": "Organization.telecom.system",
+        "path": "Organization.telecom.system",
+        "short": "Ogni ripetizione conterrà un valore tra phone | email | fax | url"
+      },
+      {
+        "id": "Organization.telecom.value",
+        "path": "Organization.telecom.value",
+        "short": "phone | email | fax | url",
+        "definition": "Il value del tag \"telecom\" è composto da 4 ripetizioni per restituire le informazioni (se presenti) del telefono, mail, fax e sito web. Ogni ripetizione conterràun valore."
+      },
+      {
+        "id": "Organization.telecom.use",
+        "path": "Organization.telecom.use",
+        "definition": "Non utilizzato"
+      },
+      {
+        "id": "Organization.telecom.rank",
+        "path": "Organization.telecom.rank",
+        "definition": "Non utilizzato"
+      },
+      {
+        "id": "Organization.telecom.period",
+        "path": "Organization.telecom.period",
+        "definition": "Non utilizzato"
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "short": "Indirizzo dell'azienda",
+        "definition": "Indirizzo dell'azienda."
+      },
+      {
+        "id": "Organization.address.extension",
+        "path": "Organization.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Organization.address.extension:IstatCode",
+        "path": "Organization.address.extension",
+        "sliceName": "IstatCode",
+        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_COMUNE della tabella V_LIVELLO_1_DDC",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.address.extension:DistrettoCode",
+        "path": "Organization.address.extension",
+        "sliceName": "DistrettoCode",
+        "short": "Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo",
+        "definition": "TBD",
+        "comment": "TBD",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.address.extension:DistrettoCode.value[x]",
+        "path": "Organization.address.extension.value[x]",
+        "comment": "A stream of bytes, base64 encoded\r\nTBD: CD_DISTRETTO"
+      },
+      {
+        "id": "Organization.address.use",
+        "path": "Organization.address.use",
+        "short": "Da valorizzare con 'work'",
+        "definition": "Valore costante secondo lo standard FHIR"
+      },
+      {
+        "id": "Organization.address.type",
+        "path": "Organization.address.type",
+        "short": "Da valorizzare con 'physical'",
+        "definition": "Valore costante secondo lo standard FHIR"
+      },
+      {
+        "id": "Organization.address.line",
+        "path": "Organization.address.line",
+        "short": "Indirizzo e numero civico dell'azienda",
+        "definition": "Stringa alfanumerica al più 1000 caratteri",
+        "comment": "La fonte del dato sono i campi DS_INDIRIZZO e NR_CIVICO  della tabella V_LIVELLO_1_DDC"
+      },
+      {
+        "id": "Organization.address.district",
+        "path": "Organization.address.district",
+        "short": "Sigla della provincia in cui l'ente è ubicato",
+        "definition": "Stringa alfabetica di due caratteri",
+        "comment": "La fonte del dato è il campo CD_SIGLA_PROVINCIA della tabella V_LIVELLO_1_DDC"
+      },
+      {
+        "id": "Organization.address.postalCode",
+        "path": "Organization.address.postalCode",
+        "short": "Codice di avviamento postale (CAP) dell'indirizzo",
+        "definition": "Stringa numerica di 5 cifre",
+        "comment": "La fonte del dato è il campo CD_CAPDIST della tabella V_LIVELLO_1_DDC"
+      }
+    ]
+  }
+}

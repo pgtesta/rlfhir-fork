@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationAddressDistrettoCode",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:18:29.5816821+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
+  "name": "RLOrganizationAddressDistrettoCode",
+  "status": "active",
+  "experimental": false,
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
+      "code": "RLOrganizationL1"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
+      "code": "RLOrganizationL2"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Address"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "code": [
+          {
+            "system": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+          }
+        ],
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding.system",
+        "path": "Extension.value[x].coding.system",
+        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+      }
+    ]
+  }
+}

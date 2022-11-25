@@ -1,0 +1,66 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "example-UDO",
+  "meta": {
+    "lastUpdated": "2022-02-18T10:31:24Z",
+    "versionId": "1",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceUDO"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodificaLivello2",
+      "value": "UDP_000392"
+    }
+  ],
+  "providedBy": {
+    "reference": "Organization/2",
+    "display": "RDS AMICIZIA"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipologiaStrutturaUDO",
+          "code": "01",
+          "display": "RSD"
+        }
+      ]
+    }
+  ],
+  "characteristic": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodificaServizi",
+          "code": "ABI-SOL",
+          "display": "Posti letto ABILITATI SOLLIEVO"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/RLHealthcareServiceCharacteristicValue",
+          "valueInteger": 10
+        },
+        {
+          "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/RLHealthcareServiceCharacteristicPeriod",
+          "valuePeriod": {
+            "start": "2015-01-01",
+            "end": "2023-08-01"
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataInsert",
+      "valueDate": "2015-01-01"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataUpdate",
+      "valueDate": "2015-01-28"
+    }
+  ]
+}

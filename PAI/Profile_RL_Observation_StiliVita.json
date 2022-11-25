@@ -1,0 +1,142 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLObservationStiliVita",
+  "meta": {
+    "lastUpdated": "2022-10-19T09:16:09.1325916+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
+  "name": "RLObservationStiliVita",
+  "status": "draft",
+  "description": "Profilo volto a descrivere le osservazioni sugli stili di vita del paziente.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PAI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato della registrazione dello stile di vita",
+        "definition": "Valore fisso su \"final\"",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "Classificazione della registrazione dello stile di vita",
+        "definition": "Valore fisso su \"social-history\" cosi come previsto dal value-set dello standard FHIR",
+        "fixedCodeableConcept": {
+          "text": "social-history"
+        }
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Codifica dello stile di vita"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "short": "Le tipologie dello stile di vita sono: fumo, alcol, sedentarietà ed eccesso ponderale"
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "short": "Codice della tipologia dello stile di vita",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "short": "Descrizione della tipologia dello stile di vita",
+        "definition": "Stringa alfabetica di al più 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Paziente al quale è stata diagnosticata la patologia",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Data e ora di registrazione dello stile di vita",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Codifica e descrizione dello stato relativo al corrispondende stile di vita",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
+        "short": "Codifica e descrizione dello stato relativo al corrispondende stile di vita"
+      },
+      {
+        "id": "Observation.value[x].coding.code",
+        "path": "Observation.value[x].coding.code",
+        "short": "Codice dell'osservazione sullo stile di vita",
+        "comment": "I valori della codifica sono rapressentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo. \r\nIl dato è detenuto dal SGDT."
+      },
+      {
+        "id": "Observation.value[x].coding.display",
+        "path": "Observation.value[x].coding.display",
+        "short": "Codice dell'osservazione sullo stile di vita",
+        "definition": "Stringa alfanumerica di al più 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.component.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      }
+    ]
+  }
+}

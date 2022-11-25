@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLAllergyIntolleranceAllergie",
+  "meta": {
+    "lastUpdated": "2022-10-19T09:17:29.04055+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntolleranceAllergie",
+  "name": "RLAllergyIntolleranceAllergie",
+  "status": "draft",
+  "description": "Profilo volto a descrivere le allergie di cui il paziente è affetto.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PAI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "Paziente al quale sono riferite le eventuali allergie",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "short": "Campo di testo libero non obbligatorio riportante le informazioni su allergie",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

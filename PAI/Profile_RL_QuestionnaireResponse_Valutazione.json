@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione",
+  "name": "RLQuestionnaireResponseValutazione",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "QuestionnaireResponse",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "QuestionnaireResponse.basedOn",
+        "path": "QuestionnaireResponse.basedOn",
+        "short": "Riferimento al progetto individule nel quale è previsto l'esito della valutazione",
+        "definition": "Reference alla risorsa RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente"
+      },
+      {
+        "id": "QuestionnaireResponse.questionnaire",
+        "path": "QuestionnaireResponse.questionnaire",
+        "short": "Tipologia di valutazione",
+        "definition": "Reference alla risorsa RLQuestionnaireTipologiaValutazione contenente il nome della valutazione",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.status",
+        "path": "QuestionnaireResponse.status",
+        "short": "Stato della valutazione",
+        "definition": "Valore fisso su \"completed\"",
+        "fixedCode": "completed"
+      },
+      {
+        "id": "QuestionnaireResponse.authored",
+        "path": "QuestionnaireResponse.authored",
+        "short": "Data della valutazione",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "QuestionnaireResponse.author",
+        "path": "QuestionnaireResponse.author",
+        "short": "Riferimento del professionista sanitario che ha eseguito la valutazione",
+        "definition": "Reference al profilo RLPractioner del professionista sanitario che ha eseguito la valutazione",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.source",
+        "path": "QuestionnaireResponse.source",
+        "short": "Paziente sottopposto alla valutazione",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "QuestionnaireResponse.item.linkId",
+        "path": "QuestionnaireResponse.item.linkId",
+        "short": "Identificativo del quesito",
+        "definition": "Stringa alfanumerica al più di 10 caratteri"
+      },
+      {
+        "id": "QuestionnaireResponse.item.text",
+        "path": "QuestionnaireResponse.item.text",
+        "short": "Testo del quesito",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer",
+        "path": "QuestionnaireResponse.item.answer",
+        "short": "Riposta al quesito"
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.value[x]",
+        "path": "QuestionnaireResponse.item.answer.value[x]",
+        "short": "Contenuto informativo della risposta",
+        "definition": "In base alla tipologia di risposta relativa al singolo quesito i possibili campi e i relativi datatype sono: \r\nvalueBoolean (boolean) \r\nvalueDecimal (decimal) \r\nvalueInteger (integer) \r\nvalueDate (date) \r\nvalueDateTime (dateTime) \r\nvalueTime (time) \r\nvalueString (string) \r\nvalueUri (uri) \r\nvalueAttachment (Attachment)\r\nvalueCoding (Coding)\r\nvalueQuantity (Quantity) \r\nvalueReference (Reference)",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.item",
+        "path": "QuestionnaireResponse.item.answer.item",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item"
+      },
+      {
+        "id": "QuestionnaireResponse.item.item",
+        "path": "QuestionnaireResponse.item.item",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item"
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLHealthcareServiceParcheggio",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio",
+  "name": "RLHealthcareServiceParcheggio",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:ProprietaStruttura",
+        "path": "Extension.extension",
+        "sliceName": "ProprietaStruttura",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:ProprietaStruttura.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ProprietaStruttura"
+      },
+      {
+        "id": "Extension.extension:ProprietaStruttura.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:NumeroPosti",
+        "path": "Extension.extension",
+        "sliceName": "NumeroPosti",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:NumeroPosti.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "NumeroPosti"
+      },
+      {
+        "id": "Extension.extension:NumeroPosti.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:Costo",
+        "path": "Extension.extension",
+        "sliceName": "Costo",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:Costo.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "Costo"
+      },
+      {
+        "id": "Extension.extension:Costo.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationNPO",
+  "name": "RLLocationNPO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "short": "Identificativo del posto letto"
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "short": "Info associate al ricovero"
+      },
+      {
+        "id": "Location.type.coding",
+        "path": "Location.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Location.type.coding:regimeRicovero",
+        "path": "Location.type.coding",
+        "sliceName": "regimeRicovero",
+        "short": "Regime del ricovero",
+        "definition": "Ordinario, DH, ecc."
+      },
+      {
+        "id": "Location.type.coding:dimissioneProtetta",
+        "path": "Location.type.coding",
+        "sliceName": "dimissioneProtetta",
+        "short": "Tipo dimissione",
+        "definition": "Dimissione protetta o meno"
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "short": "Reference L3 del repartoClinico"
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "short": "Riferimento L3 del repartoFisico"
+      }
+    ]
+  }
+}

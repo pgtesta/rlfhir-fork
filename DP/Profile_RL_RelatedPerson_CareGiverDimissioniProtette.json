@@ -1,0 +1,105 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLRelatedPersonCareGiverDimissioniProtette",
+  "name": "RLRelatedPersonCareGiverDimissioniProtette",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.extension",
+        "path": "RelatedPerson.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "RelatedPerson.extension:LuogoDiNascita",
+        "path": "RelatedPerson.extension",
+        "sliceName": "LuogoDiNascita",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLRelatedPersonLuogoNascita"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "RelatedPerson.identifier",
+        "path": "RelatedPerson.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "RelatedPerson.identifier:CodiceFiscale",
+        "path": "RelatedPerson.identifier",
+        "sliceName": "CodiceFiscale"
+      },
+      {
+        "id": "RelatedPerson.identifier:CodiceSTP",
+        "path": "RelatedPerson.identifier",
+        "sliceName": "CodiceSTP"
+      },
+      {
+        "id": "RelatedPerson.patient",
+        "path": "RelatedPerson.patient",
+        "short": "Reference al paziente"
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "short": "Relazione tra paziente e assistente"
+      },
+      {
+        "id": "RelatedPerson.name.family",
+        "path": "RelatedPerson.name.family",
+        "short": "Cognome"
+      },
+      {
+        "id": "RelatedPerson.name.given",
+        "path": "RelatedPerson.name.given",
+        "short": "Nome"
+      },
+      {
+        "id": "RelatedPerson.telecom",
+        "path": "RelatedPerson.telecom",
+        "short": "Contatti",
+        "definition": "Telefono, mail"
+      },
+      {
+        "id": "RelatedPerson.gender",
+        "path": "RelatedPerson.gender",
+        "short": "Sesso"
+      },
+      {
+        "id": "RelatedPerson.birthDate",
+        "path": "RelatedPerson.birthDate",
+        "short": "Data di nascita"
+      }
+    ]
+  }
+}

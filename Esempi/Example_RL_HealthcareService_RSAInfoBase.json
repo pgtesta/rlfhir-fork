@@ -1,0 +1,147 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "example-RSAInfoBase",
+  "meta": {
+    "lastUpdated": "2022-02-18T10:31:24Z",
+    "versionId": "1",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRSAInfoBase"
+    ]
+  },
+  "providedBy": {
+    "reference": "Organization/2",
+    "display": "RESIDENZA ANNI AZZURRI - REZZATO"
+  },
+  "location": [
+    {
+      "reference": "Location/1"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "012345",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "rsa@example.com",
+      "use": "work"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodificaInformazioniRSA",
+          "code": "P02",
+          "display": "Presenza nucleo accreditato Alzheimer"
+        }
+      ]
+    }
+  ],
+  "characteristic": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodificaInformazioniRSA",
+          "display": "Zone dedicate alle relazioni sociali",
+          "code": "DS02"
+        }
+      ],
+      "text": "Questa è un descrizione standard per i cittadini di cosa è previsto dall'accreditamento per la UDO"
+    },
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodificaInformazioniRSA",
+          "display": "Presenza wi-fi",
+          "code": "DS04"
+        }
+      ]
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "wed"
+      ],
+      "allDay": true
+    },
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "thu",
+        "fri"
+      ],
+      "availableStartTime": "08:30:00",
+      "availableEndTime": "17:30:00"
+    },
+    {
+      "daysOfWeek": [
+        "sat",
+        "fri"
+      ],
+      "availableStartTime": "09:30:00",
+      "availableEndTime": "14:30:00"
+    }
+  ],
+  "notAvailable": [
+    {
+      "description": "Natale"
+    },
+    {
+      "description": "Capodanno"
+    },
+    {
+      "description": "Pasqua"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceReferenteStruttura",
+      "valueString": "Mario Rossi"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceTempiMediPresaInCarico",
+      "valueDuration": {
+        "value": 30,
+        "unit": "day"
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRettaSociale",
+      "valueRange": {
+        "low": {
+          "value": 600,
+          "unit": "EUR"
+        },
+        "high": {
+          "value": 3000,
+          "unit": "EUR"
+        }
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio",
+      "extension": [
+        {
+          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio/ProprietaStruttura",
+          "valueBoolean": true
+        },
+        {
+          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio/NumeroPosti",
+          "valueInteger": 70
+        },
+        {
+          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio/Costo",
+          "valueQuantity": {
+            "value": 125,
+            "unit": "EUR"
+          }
+        }
+      ]
+    }
+  ]
+}

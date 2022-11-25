@@ -1,0 +1,35 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione",
+  "name": "RLQuestionnaireTipologiaValutazione",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.title",
+        "path": "Questionnaire.title",
+        "short": "Nome della valutazione",
+        "definition": "'Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Le valutazioni previste attualmente sono: \r\n- SchedaTriage \r\n- Scheda SIAD, \r\n- Scheda HomeCare"
+      },
+      {
+        "id": "Questionnaire.status",
+        "path": "Questionnaire.status",
+        "short": "Stato del nome della valutazione",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      },
+      {
+        "id": "Questionnaire.item.item",
+        "path": "Questionnaire.item.item",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"
+      }
+    ]
+  }
+}

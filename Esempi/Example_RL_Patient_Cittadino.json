@@ -1,0 +1,23 @@
+{
+  "resourceType": "Patient",
+  "id": "example-Patient-Cittadino",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+    ]
+  },
+  "identifier": {
+    "system": "http://hl7.it/sid/codiceFiscale",
+    "value": "RSSMRT57D12D612R"
+  },
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Mario"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-12-25"
+}

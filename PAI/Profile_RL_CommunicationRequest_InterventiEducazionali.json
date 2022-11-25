@@ -1,0 +1,138 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLCommunicationRequestInterventiEducazionali",
+  "meta": {
+    "lastUpdated": "2022-10-19T08:40:34.2965487+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali",
+  "name": "RLCommunicationRequestInterventiEducazionali",
+  "status": "draft",
+  "description": "Profilo volto a descrivere l’intervento educazionale di cui il paziente necessita come definito dal suo progetto individuale.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PAI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CommunicationRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CommunicationRequest.basedOn",
+        "path": "CommunicationRequest.basedOn",
+        "short": "Riferimento al progetto individuale nel quale è previsto l'intervento educazionale",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CommunicationRequest.status",
+        "path": "CommunicationRequest.status",
+        "short": "Stato dell'intervento educazionale",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      },
+      {
+        "id": "CommunicationRequest.medium",
+        "path": "CommunicationRequest.medium",
+        "short": "Codice e descrizione dellla modalità di erogazione dell'intervento educazionale",
+        "definition": "La codifica delle informazioni è la seguente: \r\n01: intervento erogabile in presenza\r\n02: intervento erogabile da remoto",
+        "comment": "I valori della codifica sono rapressentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo.  \r\nIl dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CommunicationRequest.subject",
+        "path": "CommunicationRequest.subject",
+        "short": "Paziente al quale deve essere fornito l'intervento educazionale",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CommunicationRequest.encounter",
+        "path": "CommunicationRequest.encounter",
+        "short": "Dettagli dell'accesso del paziente che ha portato alla definizione dell'intervento educazionale",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CommunicationRequest.payload",
+        "path": "CommunicationRequest.payload",
+        "short": "Intervento educazionale da attivare"
+      },
+      {
+        "id": "CommunicationRequest.payload.content[x]",
+        "path": "CommunicationRequest.payload.content[x]",
+        "short": "Descrizione dell'intervento educazionale",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "CommunicationRequest.occurrence[x]",
+        "path": "CommunicationRequest.occurrence[x]",
+        "short": "Range temporale nel quale l'intervento educazionale deve essere erogato",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "CommunicationRequest.occurrence[x].start",
+        "path": "CommunicationRequest.occurrence[x].start",
+        "short": "Prima data possibile per l'erogazione dell'intervento educazionale",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CommunicationRequest.occurrence[x].end",
+        "path": "CommunicationRequest.occurrence[x].end",
+        "short": "Ultima data possibile per l'erogazione dell'intervento educazionale",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR"
+      },
+      {
+        "id": "CommunicationRequest.requester",
+        "path": "CommunicationRequest.requester",
+        "short": "Profilo del professionista sanitario richiedente la fonitura dell'intervento educazionale",
+        "definition": "Reference al profilo RLPractioner del professionista sanitario che ha richiesto l'attivazione del'intervento educazionale",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CommunicationRequest.note",
+        "path": "CommunicationRequest.note",
+        "short": "Note / commenti aggiuntivi",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

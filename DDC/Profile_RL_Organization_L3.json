@@ -1,0 +1,172 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationL3",
+  "meta": {
+    "lastUpdated": "2022-10-25T10:22:11.2054768+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3",
+  "name": "RLOrganizationL3",
+  "status": "active",
+  "experimental": false,
+  "description": "Profilo che descrive un reparto appartenente ad una struttura di ricovero identificata da un codice L2",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.extension",
+        "path": "Organization.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Organization.extension:DataFineValidita",
+        "path": "Organization.extension",
+        "sliceName": "DataFineValidita",
+        "short": "Data fine validità del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_FINE_VALIDITA della tabella V_REPARTO_DDC",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.extension:DataInizioValidita",
+        "path": "Organization.extension",
+        "sliceName": "DataInizioValidita",
+        "short": "Data di inizio validità del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA della tabella V_REPARTO_DDC",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Lista dei codici identificativi del reparto",
+        "definition": "I codici identificativi ultilizzati sono il codice interno ed il codice ministeriale del reparto"
+      },
+      {
+        "id": "Organization.identifier:CodiceInternoReparto",
+        "path": "Organization.identifier",
+        "sliceName": "CodiceInternoReparto",
+        "short": "Codice interno del reparto",
+        "definition": "Stringa alfanumerica massimo di 16 caratteri",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier:CodiceInternoReparto.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "https://www.siss.regione.lombardia.it/codesystems/departments"
+      },
+      {
+        "id": "Organization.identifier:CodiceInternoReparto.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice interno del reparto",
+        "definition": "Stringa alfanumerica massimo di 16 caratteri",
+        "comment": "La fonte del dato è il campo ID_REPARTO della tabella V_REPARTO_DDC"
+      },
+      {
+        "id": "Organization.identifier:CodiceMinisterialeReparto",
+        "path": "Organization.identifier",
+        "sliceName": "CodiceMinisterialeReparto",
+        "short": "Codice ministeriale del reparto",
+        "definition": "Stringa alfanumerica massimo di 12 caratteri",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier:CodiceMinisterialeReparto.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice ministeriale del reparto",
+        "definition": "Stringa alfanumerica massimo di 12 caratteri",
+        "comment": "La fonte del dato è il campo CD_REPARTO della tabella V_REPARTO_DDC"
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "short": "Denominazione del reparto",
+        "definition": "Stringa alfanumerica di al più 70 caratteri.",
+        "comment": "La fonte del dato è il campo DS_REPARTO della tabella V_REPARTO_DDC",
+        "min": 1
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "short": "Reference alla struttura L2 di appartenenza",
+        "definition": "Riferimento al presidio di appartenenza del reparto",
+        "comment": "Fonte: ID_LIVELLO_2 o CD_LIVELLO_2",
+        "min": 1,
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ],
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.partOf.reference",
+        "path": "Organization.partOf.reference",
+        "short": "Identificativo dell'ente L2 di appartenenza"
+      },
+      {
+        "id": "Organization.partOf.type",
+        "path": "Organization.partOf.type",
+        "short": "Da valorizzare con 'organization'",
+        "definition": "Valore costante secondo lo standard FHIR"
+      }
+    ]
+  }
+}

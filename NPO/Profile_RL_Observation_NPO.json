@@ -1,0 +1,204 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLObservationNPO",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationNPO",
+  "name": "RLObservationNPO",
+  "status": "draft",
+  "description": "Questo profilo riporta le informazioni relative ai posti letto occupati per ogni reparto (OrganizationL3)",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "short": "Identificativo dell'osservazione",
+        "definition": "In questo caso ci sarà un identificativo del numero di posti letto occpupati per reparto"
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Data aggiornamento",
+        "comment": "Fonte: \"dataOraAggiornamento\""
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Reiferimenti a strutture L1, L2, L3"
+      },
+      {
+        "id": "Observation.performer:codiceL1",
+        "path": "Observation.performer",
+        "sliceName": "codiceL1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer:codiceL2",
+        "path": "Observation.performer",
+        "sliceName": "codiceL2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer:codiceL3",
+        "path": "Observation.performer",
+        "sliceName": "codiceL3",
+        "short": "Riferimento a codice L3 relativo al reparto fisico",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Totale posti letto occupati",
+        "comment": "Fonte: \"totaleLettiOccupati\""
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "short": "Singolo posto letto occupato",
+        "definition": "Ogni component è identificato da codiceL3-Stanza-Letto e contiene un serie di informazioni associate al ricovero associato."
+      },
+      {
+        "id": "Observation.component.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Observation.component.extension:repartoClinico",
+        "path": "Observation.component.extension",
+        "sliceName": "repartoClinico",
+        "short": "Riferimento a codice L3 relativo al reparto clinico",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRepartoClinico"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:repartoClinico.value[x]",
+        "path": "Observation.component.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component.extension:dataOraAccettazione",
+        "path": "Observation.component.extension",
+        "sliceName": "dataOraAccettazione",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraAccettazione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:dataOraOccupazioneLetto",
+        "path": "Observation.component.extension",
+        "sliceName": "dataOraOccupazioneLetto",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraOccupazioneLetto"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:dataOraDimissionePrevista",
+        "path": "Observation.component.extension",
+        "sliceName": "dataOraDimissionePrevista",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraDimissionePrevista"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "short": "Informazioni aggiuntive relative al ricovero",
+        "definition": "Codifiche che dertermina il tipo di ricovero o l'eventuale dimissione protetta"
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Identificativo del posto letto occupato",
+        "definition": "Stanza-Letto"
+      },
+      {
+        "id": "Observation.component.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      }
+    ]
+  }
+}

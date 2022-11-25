@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLCoverageEsenzioni",
+  "meta": {
+    "lastUpdated": "2022-10-19T09:19:32.9307652+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni",
+  "name": "RLCoverageEsenzioni",
+  "status": "draft",
+  "description": "Profilo volto a descrivere le esenzioni di cui il paziente beneficia",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PAI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Coverage",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Coverage",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Coverage.identifier",
+        "path": "Coverage.identifier",
+        "short": "Codice dell'esenzione",
+        "definition": "Stringa alfanumerica di al più 17 caratteri",
+        "comment": "La fonte del dato è il campo CD_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\""
+      },
+      {
+        "id": "Coverage.type",
+        "path": "Coverage.type",
+        "short": "Tipologia e descrizione esenzione"
+      },
+      {
+        "id": "Coverage.type.coding.code",
+        "path": "Coverage.type.coding.code",
+        "short": "Codice che indica la tipologia dell’esenzione.",
+        "definition": "Stringa alfabetica di 2 caratteri",
+        "comment": "La fonte del dato è il campo CD_TIPO_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\""
+      },
+      {
+        "id": "Coverage.type.coding.display",
+        "path": "Coverage.type.coding.display",
+        "short": "Descrizione dell’esenzione",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "La fonte del dato è il campo DS_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\""
+      },
+      {
+        "id": "Coverage.policyHolder",
+        "path": "Coverage.policyHolder",
+        "short": "Paziente al quale è riferita l'esenzione",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.period",
+        "path": "Coverage.period",
+        "short": "Decorrenza e scadenza esenzione"
+      },
+      {
+        "id": "Coverage.period.start",
+        "path": "Coverage.period.start",
+        "short": "Decorrenza esenzione",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Coverage.period.end",
+        "path": "Coverage.period.end",
+        "short": "Scadenza esenzione",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

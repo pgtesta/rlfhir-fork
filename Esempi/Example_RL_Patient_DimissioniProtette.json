@@ -1,0 +1,54 @@
+{
+  "resourceType": "Patient",
+  "id": "example-Patient-DimissioniProtette",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientDimissioniProtette"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "RSSMRT57D12D612R"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceSTP",
+      "value": "0123456789 - example"
+    }
+  ],
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Mario"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1974-12-25",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "33312345678"
+        },
+        {
+          "system": "mail",
+          "value": "mariorossi@example.it"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoNascita",
+      "valueAddress": {
+        "city": "Milano",
+        "district": "MB",
+        "state": "LOMBARDIA",
+        "postalCode": "20871"
+      }
+    }
+  ]
+}

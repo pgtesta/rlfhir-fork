@@ -1,0 +1,5 @@
+title: Progetto FHIR per Regione Lombardia - DRAFT
+description: This guide contains all the FHIR resources implemented for Regione Lombardia.
+version: 2.0.0-beta
+style-root: project
+style-name: RL-css
