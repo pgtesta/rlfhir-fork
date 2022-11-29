@@ -38,7 +38,7 @@
           ],
           "rules": "open"
         },
-        "short": "Reiferimenti a strutture L1, L2, L3"
+        "short": "Riferimenti a strutture L1, L2, L3"
       },
       {
         "id": "Observation.performer:codiceL1",
@@ -209,6 +209,25 @@
             "code": "Extension",
             "profile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDimissioneProtetta"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:areaDegenza",
+        "path": "Observation.component.extension",
+        "sliceName": "areaDegenza",
+        "short": "Area degenza",
+        "definition": "Identificativo dell’area di degenza dove il paziente risulta allettato",
+        "comment": "Fonte: \"areaDegenza\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentAreaDegenza"
             ]
           }
         ],
