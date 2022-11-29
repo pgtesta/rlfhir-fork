@@ -18,7 +18,7 @@ L’esito della ricerca permette di recuperare le informazioni relative al proge
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https%3A//example.org/fhir/StructureDefinition/ 
+    CarePlan?_profile=https://example.org/fhir/StructureDefinition/ 
 
 Restituirà..
 

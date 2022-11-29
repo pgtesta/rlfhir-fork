@@ -7,6 +7,6 @@ Organization L1 con data fine validità superiore alla data odierna o nulla
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&     dataFineValidita={datadiRiferimento}&partof:Organization.identifier={codicelivelloL1}    |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{datadiRiferimento\}&partof:Organization.identifier=\{codicelivelloL1\}    |
 
 <br>

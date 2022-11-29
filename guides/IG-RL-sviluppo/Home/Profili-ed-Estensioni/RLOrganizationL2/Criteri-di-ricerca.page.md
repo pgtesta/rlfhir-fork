@@ -9,11 +9,11 @@ Criterio di ricerca che permette di recuperare le informazioni relative alle str
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita={datadiRiferimento}&partof:Organization.identifier={codicelivelloL1} |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{datadiRiferimento\}&partof:Organization.identifier=\{codicelivelloL1\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05 &partof:Organization.identifier=030720
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&partof:Organization.identifier=030720
 
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
@@ -24,12 +24,11 @@ Criterio di ricerca che permette di recuperare le informazioni relative alle str
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | / Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&
-dataFineValidita={datadiRiferimento}&… |
+| URL | / Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{datadiRiferimento\}&… |
 
 A titolo esemplificativo, la chiamata:
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05 & =030720
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&=030720
 
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
