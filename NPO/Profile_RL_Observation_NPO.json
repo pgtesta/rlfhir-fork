@@ -17,12 +17,13 @@
         "id": "Observation.category",
         "path": "Observation.category",
         "short": "Identificativo dell'osservazione",
-        "definition": "In questo caso ci sarà un identificativo del numero di posti letto occpupati per reparto"
+        "definition": "Identificativo relativo al numero di posti letto occupati per reparto"
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Data aggiornamento",
+        "short": "Data e ora di aggiornamento",
+        "definition": "Data e ora di aggiornamento dei posti letto occupati (indicare la data e ora più recente tra quelle disponibili per il particolare set di dettaglioLetti)",
         "comment": "Fonte: \"dataOraAggiornamento\""
       },
       {
@@ -43,6 +44,7 @@
         "id": "Observation.performer:codiceL1",
         "path": "Observation.performer",
         "sliceName": "codiceL1",
+        "short": "Codice Organization L1",
         "type": [
           {
             "code": "Reference",
@@ -56,6 +58,7 @@
         "id": "Observation.performer:codiceL2",
         "path": "Observation.performer",
         "sliceName": "codiceL2",
+        "short": "Codice Organization L2",
         "type": [
           {
             "code": "Reference",
@@ -69,7 +72,7 @@
         "id": "Observation.performer:codiceL3",
         "path": "Observation.performer",
         "sliceName": "codiceL3",
-        "short": "Riferimento a codice L3 relativo al reparto fisico",
+        "short": "Codice Organization L3 relativo al reparto fisico",
         "type": [
           {
             "code": "Reference",
@@ -83,6 +86,7 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Totale posti letto occupati",
+        "definition": "Fonte: \"totaleLettiOccupati\"",
         "comment": "Fonte: \"totaleLettiOccupati\""
       },
       {
@@ -138,6 +142,9 @@
         "id": "Observation.component.extension:dataOraAccettazione",
         "path": "Observation.component.extension",
         "sliceName": "dataOraAccettazione",
+        "short": "Data e ora di accettazione",
+        "definition": "Data e ora di accettazione del paziente (ingresso in struttura)",
+        "comment": "Fonte: \"dataOraAccettazione\"",
         "min": 0,
         "max": "1",
         "type": [
@@ -154,6 +161,9 @@
         "id": "Observation.component.extension:dataOraOccupazioneLetto",
         "path": "Observation.component.extension",
         "sliceName": "dataOraOccupazioneLetto",
+        "short": "Data e ora di occupazione posto letto",
+        "definition": "Data e ora occupazione posto letto (valorizzata con data e ora di assegnazione del letto)",
+        "comment": "Fonte: \"dataOraOccupazioneLetto\"",
         "min": 0,
         "max": "1",
         "type": [
@@ -170,6 +180,9 @@
         "id": "Observation.component.extension:dataOraDimissionePrevista",
         "path": "Observation.component.extension",
         "sliceName": "dataOraDimissionePrevista",
+        "short": "Data e ora di dimissione prevista",
+        "definition": "Data e ora prevista per la dimissione del paziente (in caso in cui non è disponibile l’ora, indicare mezzanotte)",
+        "comment": "Fonte: \"dataOraDimissionePrevista\"",
         "min": 0,
         "max": "1",
         "type": [
@@ -183,16 +196,35 @@
         "isModifier": false
       },
       {
+        "id": "Observation.component.extension:dimissioneProtetta",
+        "path": "Observation.component.extension",
+        "sliceName": "dimissioneProtetta",
+        "short": "Dimissione Protetta",
+        "definition": "Flag dimissione protetta (“true” o “false”)",
+        "comment": "Fonte: \"dimissioneProtetta\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDimissioneProtetta"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "Observation.component.code",
         "path": "Observation.component.code",
         "short": "Informazioni aggiuntive relative al ricovero",
-        "definition": "Codifiche che dertermina il tipo di ricovero o l'eventuale dimissione protetta"
+        "definition": "Codifiche che dertermina il tipo di ricovero o l'eventuale dimissione protetta\r\nFonte \"regimeRicovero\" che può assumere i seguenti valori: \r\n• “1” per degenza ordinaria;\r\n• “2” per day-hospital;\r\n• “S “per cure sub-acute;\r\n• “P” per prestazioni erogate nell’ambito di potenziamento dell’attività di soccorso e assistenza di cui alla DGR 794/2018 e successive modifiche/integrazioni"
       },
       {
         "id": "Observation.component.value[x]",
         "path": "Observation.component.value[x]",
-        "short": "Identificativo del posto letto occupato",
-        "definition": "Stanza-Letto"
+        "short": "Informazioni sull'edificio, piano, stanza e identificativo del posto letto occupato",
+        "definition": "Edificio-piano-stanza-letto"
       },
       {
         "id": "Observation.component.referenceRange",
