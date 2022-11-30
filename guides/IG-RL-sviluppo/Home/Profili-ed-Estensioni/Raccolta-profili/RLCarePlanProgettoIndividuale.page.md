@@ -4,7 +4,8 @@
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Progetto individuale contenente i dettagli dell’attivazione di un servizio sociosanitario da un determinato ente erogatore](#progetto-individuale-contenente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-da-un-determinato-ente-erogatore)
+    - [Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetti-individuali-attivi-contenenti-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
+    - [Progetto individuale attivo di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetto-individuale-attivo-di-un-paziente-contenente-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
   - [Seacrh parameter](#seacrh-parameter)
   - [Value set](#value-set)
 
@@ -68,27 +69,10 @@ Al momento non ci sono esempi disponibili.
 ## Extension
 Di seguito la descrizione delle extension inerenti al profilo RLCarePlanProgettoIndividuale:
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome Extension e link Simplifier</th>
-      <th>Nome campo esteso</th>
-      <th>Descrizione</th>
-      <th>Contesto</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-	  {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI}}
-      </td>
-      <td>VersionePAI</td>
-      <td>Versione del progetto individuale</td>
-      <td>CarePlan</td>
-    </tr>
-  </tbody>
-</table>
-
+| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
+|---|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI}} | VersionePAI | Versione del progetto individuale | CarePlan |
+| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanEsenzioni}} | Esenzioni | Esenzioni relative al cittadino | CarePlan |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
@@ -96,15 +80,16 @@ Di seguito la descrizione delle extension inerenti al profilo RLCarePlanProgetto
 
 Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLCarePlanProgettoIndividuale.
 
-###	Progetto individuale contenente i dettagli dell’attivazione di un servizio sociosanitario da un determinato ente erogatore
-
-Parametri di ricerca:
+###	Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
+Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
+I parametri da valorizzare per effettuare la ricerca sono:
+- status
 - activity.reference(RLServiceRequestServiziSociosanitari).code
 - activity.reference(RLServiceRequestServiziSociosanitari).performer
 
-L’esito della ricerca permette di recuperare le informazioni relative al progetto individuale di un cittadino per il quale è stato previsto l’attivazione di un servizio sociosanitario (profilo RLServiceRequestServiziSociosanitari) di una determinata tipologia di unità d’offerta (UdO) sociosanitaria e per il quale è stato individuato l’ente erogatore (profilo RLOrganizationL2).
+L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSociosanitari_) di una determinata tipologia di UdO sociosanitaria e per il quali è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
 
-|     SCOPE    |     Ricerca tutti i CarePlan   che contengono almeno una ServiceRequest relativa ai servizi sociosanitari di   una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato   l’ente erogatore del servizio.     |
+|     SCOPE    |    Ricerca tutti i CarePlan in stato attivo che contengono almeno una ServiceRequest relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
 |---|---|
 |     VERB    |     GET    |
 |     BASE    |          |
@@ -113,6 +98,28 @@ L’esito della ricerca permette di recuperare le informazioni relative al proge
 A titolo esemplificativo, la chiamata: 
 
     CarePlan?_profile=https://example.org/fhir/StructureDefinition/ 
+
+Restituirà..
+
+### Progetto individuale attivo di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
+Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
+I parametri da valorizzare per effettuare la ricerca sono:
+- status
+- activity.reference(RLServiceRequestServiziSociosanitari).code
+- activity.reference(RLServiceRequestServiziSociosanitari).performer
+- activity.reference(RLPatientCittadino).identifier
+
+L’esito della ricerca permette di recuperare le informazioni relative al progetto individuale atttivo di un cittadino per il quale è prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSociosanitari_) di una determinata tipologia di UdO sociosanitaria e per il quale è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
+
+|     SCOPE    |     Ricerca iltutti i CarePlan in stato attivo relativo ad un determinato cittadino che   contieneengono almeno una ServiceRequest   relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM,   RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
+|---|---|
+|     VERB    |     GET    |
+|     BASE    |          |
+|     URL    |          |
+
+A titolo esemplificativo, la chiamata:
+
+  CarePlan?_profile=https%3A//example.org/fhir/StructureDefinition/ 
 
 Restituirà..
 
@@ -126,6 +133,6 @@ Attualmente non sono definiti Search Parameters oltre ai campi standard della ri
 
 ## Value set
 
-Attualmente non sono presenti value set nei campi del profilo
+Attualmente non sono presenti value set nei campi del profilo RLCarePlanProgettoIndividuale.
 
 <br>

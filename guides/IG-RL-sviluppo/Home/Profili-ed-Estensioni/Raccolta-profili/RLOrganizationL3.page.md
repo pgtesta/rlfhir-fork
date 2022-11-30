@@ -67,47 +67,23 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 ## Extension
 Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL3:
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome Extension e link Simplifier</th>
-      <th>Nome campo esteso</th>
-      <th>Descrizione</th>
-      <th>Contesto</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}}
-      </td>
-      <td>DataFineValidita</td>
-      <td>
-        Data di fine della validità di esercizio dell'ente
-        descritto dal profilo
-      </td>
-      <td>Organization</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}}
-      </td>
-      <td>DataInizioValidita</td>
-      <td>
-        Data di inizio della validità di esercizio dell'ente
-        descritto dal profilo
-      </td>
-      <td>Organization</td>
-    </tr>
-  </tbody>
-</table>
+| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
+|---|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}} | DataInizioValidita | Data di inizio della validità di esercizio dell'ente descritto dal profilo | Organization |
+| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}} | DataFineValidita | Data di fine della validità di esercizio dell'ente descritto dal profilo | Organization |
+
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Criteri di ricerca
 
 ### Oganization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data
-Criterio di ricerca che permette di recuperare le informazioni relative alle strutture di tipo L3, descritto nel profilo RLOrganizationL3, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L2 (profilo RLOrganizationL2).
+Parametri di ricerca:
+-	dataFineValidità
+-	partOf 
+
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L3, descritto nel profilo _RLOrganizationL3_, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L2 (profilo _RLOrganizationL2_).
+
 
 | SCOPE | Ricerca tutte le Organization con profilo L3 la cui data di fine validità è maggiore di una data di riferimento e che sono parte di un determinato codice L2    |
 |---|---|
@@ -115,13 +91,13 @@ Criterio di ricerca che permette di recuperare le informazioni relative alle str
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
 | URL | /    |
 
-<br>
+<!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters.
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Organization.
 
-<br>
+<!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Value set
 

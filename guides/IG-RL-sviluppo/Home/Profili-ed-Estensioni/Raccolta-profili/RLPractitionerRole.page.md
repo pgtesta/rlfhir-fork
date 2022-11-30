@@ -65,34 +65,10 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 ## Extension
 Di seguito la descrizione delle extension inerenti al profilo RLPractitionerRole:
 
-<table>
-  <thead>
-    <tr>
-      <th>Nome Extension e link Simplifier</th>
-      <th>Nome campo esteso</th>
-      <th>Descrizione</th>
-      <th>Contesto</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert}}
-      </td>
-      <td>DataInsert</td>
-      <td>Data di inserimento del record</td>
-      <td>PractitionerRole</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate}}
-      </td>
-      <td>DataUpdate</td>
-      <td>Data dell'ultima modifica del record</td>
-      <td>PractitionerRole</td>
-    </tr>
-  </tbody>
-</table>
+| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
+|---|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate}} | DataUpdate | Data dell'ultima modifica del record | PractitionerRole |
+| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert}} | DataInsert | Data di inserimento del record | PractitionerRole |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
@@ -104,7 +80,7 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters.
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa PractitionerRole.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

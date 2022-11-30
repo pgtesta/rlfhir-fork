@@ -1,3 +1,5 @@
+- name: Modello pagina profilo
+  filename: Modello-pagina-profilo.page.md
 - name: RLOrganizationL1
   filename: RLOrganizationL1.page.md
 - name: RLOrganizationL2
@@ -12,3 +14,11 @@
   filename: RLCarePlanProgettoIndividuale.page.md
 - name: RLParientCittadino
   filename: RLParientCittadino.page.md
+- name: RLQuestionnaireResponseValutazione
+  filename: RLQuestionnaireResponseValutazione.page.md
+- name: RLProcedurePrestazione
+  filename: RLProcedurePrestazione.page.md
+- name: RLServiceRequestSopensioneADI
+  filename: RLServiceRequestSopensioneADI.page.md
+- name: RLServiceRequestRivalutazione 
+  filename: RLServiceRequestRivalutazione.page.md

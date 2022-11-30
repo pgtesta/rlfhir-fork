@@ -1,17 +1,17 @@
-# RLPatientCittadino
+# RLQuestionnaireResponseValutazione
 
-- [RLPatientCittadino](#rlpatientcittadino)
+- [RLQuestionnaireResponseValutazione](#rlquestionnaireresponsevalutazione)
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-  - [Search parameter](#search-parameter)
+  - [Seacrh parameter](#seacrh-parameter)
   - [Value set](#value-set)
 
+
 ## Descrizione
+Profilo declinato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per il dettaglio delle risposte ai quesiti della valutazione (semplice o multidimensionale) alla quale il paziente è stato sottoposto.
 
-Profilo declinato a partire dalla risorsa standard FHIR [Patient](http://hl7.org/fhir/R4/patient.html) contenente i dettagli anagrafici del cittadino.
-
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, text: qui}}.
+La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, text: qui}}.
 
 <br>
 <div class="tab">
@@ -26,56 +26,60 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili.
+Al momento non ci sono esempi disponibili. 
 <br>
 </div>
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Extension
+
 Non sono state sviluppate extension per questo profilo.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Criteri di ricerca
+
 Attualmente non sono stati definiti criteri di ricerca.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Search parameter
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
+## Seacrh parameter
+
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa QuestionnaireResponse.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Value set
-Attualmente non sono definiti value set specifici per il profilo RLPatientCittadino.
+
+Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireResponseValutazione.

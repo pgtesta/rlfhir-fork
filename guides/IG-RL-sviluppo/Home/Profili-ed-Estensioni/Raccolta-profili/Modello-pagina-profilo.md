@@ -59,33 +59,34 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
 {{pagelink:Home/Esempi/ASST-della-Brianza.page.md}}
+Al momento non ci sono esempi disponibili. 
 <br>
 </div>
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Extension
+
+Non sono state sviluppate extension per questo profilo.
+
 Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL1:
 
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
+| Nome Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
 |---|---|---|---|
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione}} | DataCessazione | Data di cessazione dell'ente | Organization |
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert}} | DataInsert | Data di inserimento del record | Organization |
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}} | DataUpdate | Data di aggiornamento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione}} | DataCostituzione | Data di costituzione dell'ente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}} | DataInizioValidita | Data di inizio della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}} | DataFineValidita | Data di fine della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode}} | IstatCode | Codice ISTAT | Organization.Address |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode}} | DistrettoCode | Distretto territoriale così definito dalla legge regionale   22-2021 della Regione Lombardia | Organization.Address |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Criteri di ricerca
 
+Attualmente non sono stati definiti criteri di ricerca.
+
 ### Enti L1 attualmente attivi
 Organization L1 con data fine validità superiore alla data odierna o nulla
 
-| SCOPE | Ricerca tutte le Organization con profilo L2 la cui   data di fine validità è maggiore di una data di riferimento e che sono parte   di un determinato codice L1    |
+| SCOPE | Ricerca tutte le Organization con profilo L2 la cui data di fine validità è maggiore di una data di riferimento e che sono parte   di un determinato codice L1    |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
@@ -94,6 +95,8 @@ Organization L1 con data fine validità superiore alla data odierna o nulla
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Seacrh parameter
+
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Organization.
 
 I parametri di ricerca definiti nel profilo RLOrganizationL1 sono definiti nella seguente tabella:
 
@@ -106,8 +109,10 @@ I parametri di ricerca definiti nel profilo RLOrganizationL1 sono definiti nella
 
 ## Value set
 
+Attualmente non sono definiti value set specifici per il profilo RLOrganizationL1.
+
 Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1.
 
-| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| type    | Codifica del tipo di azienda L1    | Il riferimento alla lista esaustiva della tipologia di enti di   livello 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
+| type | Codifica del tipo di azienda L1 | Il riferimento alla lista esaustiva della tipologia di enti di   livello 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
