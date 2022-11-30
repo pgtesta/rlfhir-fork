@@ -1,5 +1,15 @@
 # RLOrganizationL2
 
+- [RLOrganizationL2](#rlorganizationl2)
+  - [Descrizione](#descrizione)
+  - [Extension](#extension)
+  - [Criteri di ricerca](#criteri-di-ricerca)
+    - [Organization L2 appartenenti ad un Organization L1 con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-un-organization-l1-con-data-fine-validità-superiore-ad-una-certa-data)
+    - [Organization L2 appartenenti ad una ASST Territoriale con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-una-asst-territoriale-con-data-fine-validità-superiore-ad-una-certa-data)
+    - [Organization L2 appartenenti ad una ASST Territoriale con data fine validità superiore ad una certa data e di una specifica tipologia](#organization-l2-appartenenti-ad-una-asst-territoriale-con-data-fine-validità-superiore-ad-una-certa-data-e-di-una-specifica-tipologia)
+  - [Serch parameter](#serch-parameter)
+  - [Value set](#value-set)
+
 ## Descrizione
 
 Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni anagrafiche e di contatto relative alle strutture identificate da un codice di tipo L2 che erogano servizi sanitari e sociosanitari appartenenti agli enti codificati con codice L1. In Regione Lombardia le strutture univocamente identificate da un codice L2 rappresentano le unità d’offerta (es. RSA, centri diurni integrati, consultori, ecc). In questo profilo è definito il riferimento all’ente di tipo L1 alla quale l’UdO afferisce. 
