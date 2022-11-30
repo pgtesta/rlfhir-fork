@@ -44,7 +44,7 @@
           <td>Versione del progetto individuale</td>
           <td>CarePlan</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLCarePlanProgettoIndividuale}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanProgettoIndividuale}}
           </td>
         </tr>
         <tr>
@@ -58,8 +58,8 @@
           </td>
           <td>Organization.Address</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}}
           </td>
         </tr>
         <tr>
@@ -70,8 +70,8 @@
           <td>Codice ISTAT</td>
           <td>Organization.Address</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}}
           </td>
         </tr>
         <tr>
@@ -84,7 +84,7 @@
             territorio di competenza
           </td>
           <td>Organization</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}}</td>
         </tr>
         <tr>
           <td>
@@ -93,7 +93,7 @@
           <td>ATSAfferenza</td>
           <td>ATS alla quale il presidio afferisce territorialmente</td>
           <td>Organization</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}}</td>
         </tr>
         <tr>
           <td>
@@ -102,7 +102,7 @@
           <td>DataCessazione</td>
           <td>Data di cessazione dell'ente</td>
           <td>Organization</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}}</td>
         </tr>
         <tr>
           <td>
@@ -111,7 +111,7 @@
           <td>DataCostituzione</td>
           <td>Data di costituzione dell'ente</td>
           <td>Organization</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}}</td>
         </tr>
         <tr>
           <td>
@@ -124,9 +124,9 @@
           </td>
           <td>Organization</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL3}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3}}
           </td>
         </tr>
         <tr>
@@ -140,9 +140,9 @@
           </td>
           <td>Organization</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL3}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3}}
           </td>
         </tr>
         <tr>
@@ -153,8 +153,8 @@
           <td>Data di inserimento del record</td>
           <td>Organization</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}}
           </td>
         </tr>
         <tr>
@@ -165,8 +165,8 @@
           <td>Data di aggiornamento del record</td>
           <td>Organization</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL1}},
-            {{pagelink:Home/Profili-ed-Estensioni/RLOrganizationL2}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1}},
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2}}
           </td>
         </tr>
         <tr>
@@ -176,7 +176,7 @@
           <td>DataInsert</td>
           <td>Data di inserimento del record</td>
           <td>Practitioner</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLPractitioner}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitioner}}</td>
         </tr>
         <tr>
           <td>
@@ -185,7 +185,7 @@
           <td>DataUpdate</td>
           <td>Data dell'ultima modifica del record</td>
           <td>Practitioner</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLPractitioner}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitioner}}</td>
         </tr>
         <tr>
           <td>
@@ -194,7 +194,7 @@
           <td>DataInsert</td>
           <td>Data di inserimento del record</td>
           <td>PractitionerRole</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLPractitionerRole}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole}}</td>
         </tr>
         <tr>
           <td>
@@ -203,7 +203,7 @@
           <td>DataUpdate</td>
           <td>Data dell'ultima modifica del record</td>
           <td>PractitionerRole</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/RLPractitionerRole}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole}}</td>
         </tr>
       </tbody>
     </table>
