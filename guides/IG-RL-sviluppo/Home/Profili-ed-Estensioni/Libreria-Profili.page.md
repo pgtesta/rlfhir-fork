@@ -109,10 +109,10 @@
       </tr>
       <tr>
         <td>ADI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione .page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione.page.md}}</td>
         <td>(missing)</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione }}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione}}</td>
       </tr>
     </tbody>
     </table>
