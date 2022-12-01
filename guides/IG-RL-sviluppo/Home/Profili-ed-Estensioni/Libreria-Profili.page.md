@@ -40,79 +40,79 @@
       <tr>
         <td>DDC</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}</td>
-        <td>Profilo che descrive una struttura o un ente identificato univocamente da&nbsp;&nbsp;&nbsp;un codice di ente L1</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/organization.html"&gt;Organization&lt;/a&gt;</td>
+        <td>Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L1</td>
+        <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}</td>
       </tr>
       <tr>
         <td>DDC</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
-        <td>Profilo che descrive un’unità d’offerta identificata univocamente da un&nbsp;&nbsp;&nbsp;codice L2</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/organization.html"&gt;Organization&lt;/a&gt;</td>
+        <td>Profilo che descrive un’unità d’offerta identificata univocamente da un codice L2</td>
+        <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}</td>
       </tr>
       <tr>
         <td>DDC</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}</td>
-        <td>Profilo che descrive un reparto appartenente ad una struttura di ricovero&nbsp;&nbsp;&nbsp;identificata da un codice L2</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/organization.html"&gt;Organization&lt;/a&gt;</td>
+        <td>Profilo che descrive un reparto appartenente ad una struttura di ricovero identificata da un codice L2</td>
+        <td><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3}}</td>
       </tr>
       <tr>
         <td>DDC</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitioner.page.md}}</td>
-        <td>Profilo che contiene l’anagrafica dei medici prescrittori della Regione&nbsp;&nbsp;&nbsp;Lombardia destinatari di ricettari RUR</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/practitioner.html"&gt;Practitioner&lt;/a&gt;</td>
+        <td>Profilo che contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR</td>
+        <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitioner}}</td>
       </tr>
       <tr>
         <td>DDC</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole.page.md}}</td>
-        <td>Risorsa che raccoglie i ruoli e le qualifiche di un determinato medico&nbsp;&nbsp;&nbsp;prescrittore</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/practitionerrole.html"&gt;PractitionerRole&lt;/a&gt;</td>
+        <td>Risorsa che raccoglie i ruoli e le qualifiche di un determinato medico prescrittore</td>
+        <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole}}</td>
       </tr>
       <tr>
         <td>ADI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCittadino.page.md}}</td>
         <td>Dettagli anagrafici del cittadino</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/patient.html"&gt;Patient&lt;/a&gt;</td>
+        <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino}}</td>
       </tr>
       <tr>
         <td>ADI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanProgettoIndividuale.page.md}}</td>
-        <td>Profilo che contiene tutte le attività e le informazioni definite in un&nbsp;&nbsp;&nbsp;progetto individuale (PAI) di un cittadino redatto sul Sistema di Gestione&nbsp;&nbsp;&nbsp;Digitale del Territorio.</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/careplan.html"&gt;CarePlan&lt;/a&gt;</td>
+        <td>Profilo che contiene tutte le attività e le informazioni definite in un progetto individuale (PAI) di un cittadino redatto sul Sistema di Gestione Digitale del Territorio.</td>
+        <td><a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale}}</td>
       </tr>
       <tr>
         <td>ADI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireResponseValutazione.page.md}}</td>
         <td>(missing)</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/questionnaireresponse.html"&gt;QuestionnaireResponse&lt;/a&gt;</td>
+        <td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}</td>
       </tr>
       <tr>
         <td>ADI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedurePrestazione.page.md}}</td>
         <td>(missing)</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/procedure.html"&gt;Procedure&lt;/a&gt;</td>
+        <td><a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione}}</td>
       </tr>
       <tr>
         <td>ADI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSopensioneADI.page.md}}</td>
         <td>(missing)</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/servicerequest.html"&gt;ServiceRequest&lt;/a&gt;</td>
+        <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI}}</td>
       </tr>
       <tr>
         <td>ADI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione&nbsp;&nbsp;&nbsp;.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione .page.md}}</td>
         <td>(missing)</td>
-        <td>&lt;a&nbsp;&nbsp;&nbsp;href="http://hl7.org/fhir/R4/servicerequest.html"&gt;ServiceRequest&lt;/a&gt;</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&nbsp;&nbsp;&nbsp;}}</td>
+        <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione }}</td>
       </tr>
     </tbody>
     </table>
