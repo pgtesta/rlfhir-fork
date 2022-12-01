@@ -18,7 +18,7 @@
   filename: RLQuestionnaireResponseValutazione.page.md
 - name: RLProcedurePrestazione
   filename: RLProcedurePrestazione.page.md
-- name: RLServiceRequestSopensioneADI
-  filename: RLServiceRequestSopensioneADI.page.md
-- name: RLServiceRequestRivalutazione 
+- name: RLServiceRequestSospensioneADI
+  filename: RLServiceRequestSospensioneADI.page.md
+- name: RLServiceRequestRivalutazione
   filename: RLServiceRequestRivalutazione.page.md

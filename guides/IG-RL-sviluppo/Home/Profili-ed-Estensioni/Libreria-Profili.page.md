@@ -102,10 +102,10 @@
       </tr>
       <tr>
         <td>ADI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSopensioneADI.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSospensioneADI.page.md}}</td>
         <td>(missing)</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI}}</td>
       </tr>
       <tr>
         <td>ADI</td>

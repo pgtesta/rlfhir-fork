@@ -1,6 +1,6 @@
-# RLServiceRequestSopensioneADI
+# RLServiceRequestSospensioneADI
 
-- [RLServiceRequestSopensioneADI](#rlservicerequestsopensioneadi)
+- [RLServiceRequestSospensioneADI](#rlservicerequestsospensioneadi)
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
@@ -13,7 +13,7 @@
 
 Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, text: qui}}.
+La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, text: qui}}.
 
 <br>
 <div class="tab">
@@ -28,32 +28,32 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSopensioneADI, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -95,7 +95,7 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## Value set
 
-Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestSopensioneADI.
+Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestSospensioneADI.
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
