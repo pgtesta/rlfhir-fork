@@ -1,10 +1,10 @@
 {
   "resourceType": "Observation",
-  "id": "example-NPO",
+  "id": "example-PLO",
   "meta": {
     "lastUpdated": "2022-04-04T11:07:01Z",
     "profile": [
-      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationNPO"
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPLO"
     ],
     "versionId": "1"
   },

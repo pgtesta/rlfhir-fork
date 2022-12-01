@@ -19,7 +19,7 @@
         "meta": {
           "versionId": "1",
           "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationNPosti"
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPLOsti"
           ],
           "lastUpdated": "2022-07-12T07:15:20Z"
         },

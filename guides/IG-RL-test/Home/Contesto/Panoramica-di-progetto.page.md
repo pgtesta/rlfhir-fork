@@ -16,7 +16,7 @@ Raccolta di acronimi e termini usati nel progetto:
 | DP | Dimissione Protette |
 | PAI | Piano Assistenziale Individuale |
 | RSA | Residenza Sanitaria Assistenziale |
-| NPO | Numero Posti Occupati |
+| PLO | Numero Posti Occupati |
 | L1 | Codice   identificativo di livello 1 degli enti aderenti al progetto SISS. La risorsa   FHIR che descrive questa tipologia di struttura è RLOrganizationL1 |
 | L2 | Codice   identificativo di livello 2 delle strutture di tipo UdO. La risorsa FHIR che   descrive questa tipologia di struttura è RLOrganizationL2. |
 | UdO | Strutture   presenti nella rete territoriale che rendono disponibili servizi   sociosanitari e assistenziali. |

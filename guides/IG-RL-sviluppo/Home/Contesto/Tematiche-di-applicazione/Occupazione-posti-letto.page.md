@@ -73,7 +73,7 @@ Il risultato della GET sarà una risorsa di tipo Bundle contenente informazioni 
 
 #### Stuttura di Observation
 
-Nella tabella sottostante si riportano le principali caratteristiche degli attributi della risorsa Observation che aderisce al profilo FHIR “RLObservationNPO”. Maggiori informazioni sul profilo (quali ad esempio cardinalità, formato, ecc…) sono disponibili sul sito di Simplifier.
+Nella tabella sottostante si riportano le principali caratteristiche degli attributi della risorsa Observation che aderisce al profilo FHIR “RLObservationPLO”. Maggiori informazioni sul profilo (quali ad esempio cardinalità, formato, ecc…) sono disponibili sul sito di Simplifier.
 
 |Percorso JSON|Formato|Descrizione|
 |-
