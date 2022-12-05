@@ -1,12 +1,2 @@
-- name: Index
-  filename: Index.page.md
-- name: esempio-RLOrganizationL1
-  filename: esempio-RLOrganizationL1.page.md
-- name: esempio-RLOrganizationL2
-  filename: esempio-RLOrganizationL2.page.md
-- name: esempio-RLOrganizationL3
-  filename: esempio-RLOrganizationL3.page.md
-- name: esempio-Practitioner
-  filename: esempio-Practitioner.page.md
-- name: esempio-PractitionerRole
-  filename: esempio-PractitionerRole.page.md
+- name: Libreria Esempi
+  filename: Libreria-Esempio.page.md
