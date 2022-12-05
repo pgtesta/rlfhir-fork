@@ -93,7 +93,7 @@ Organization L1 con data fine validità superiore alla data odierna o nulla
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 I parametri di ricerca definiti nel profilo RLOrganizationL1 sono definiti nella seguente tabella:
 

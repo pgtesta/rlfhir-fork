@@ -127,7 +127,7 @@ restituirà tutte i consultori (CONS) afferenti alla ASST Bergamo Est (030720) c
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Serch parameter
+## Search parameter
 
 I parametri di ricerca definiti nel profilo RLOrganizationL2 sono definiti nella seguente tabella:
 
