@@ -58,7 +58,7 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/Medicina-specifica.page.md}}
+{{pagelink:Home/Esempi/esempio-RLOrganizationL3.page.md}}
 <br>
 </div>
 

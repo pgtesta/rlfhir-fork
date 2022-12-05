@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "example-Patient-DimissioniProtette",
+  "id": "esempio-Patient-DimissioniProtette",
   "meta": {
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientDimissioniProtette"

@@ -63,7 +63,7 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/Martino-Rossi.page.md}}
+{{pagelink:Home/Esempi/esempio-RLPractitioner.page.md}}
 <br>
 </div>
 

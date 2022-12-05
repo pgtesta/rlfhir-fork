@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "example-Patient-Cittadino",
+  "id": "esempio-Patient-Cittadino",
   "meta": {
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"

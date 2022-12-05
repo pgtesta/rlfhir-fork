@@ -58,7 +58,7 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/Presidio-Ospedaliero-di-Vimercate.page.md}}
+{{pagelink:Home/Esempi/esempio-RLOrganizationL2.page.md}}
 <br>
 </div>
 
