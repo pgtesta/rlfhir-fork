@@ -88,7 +88,8 @@ L’esito della ricerca permette di recuperare l’ultima versione delle valutaz
 | URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=\{_codiceLivello2_\}&source.identifier=\{_codiceFiscaleAssistito_\}&status=completed&_include=QuestionnaireResponse:questionna |
 
 A titolo esemplificativo, la chiamata: 
-  QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=03014300&source.identifier=RSSMRA80A01F205X&status=completed&_include=QuestionnaireResponse:questionnaire
+
+    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=03014300&source.identifier=RSSMRA80A01F205X&status=completed&_include=QuestionnaireResponse:questionnaire
 
 Restituirà l’ultima versione della valutazione, e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
 

@@ -98,7 +98,7 @@ L’esito della ricerca permette di recuperare le informazioni relative ai proge
 
 A titolo esemplificativo, la chiamata: 
 
-  CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:20:31.9048963+00:00&_lastUpdated=lt2022-11-30T16:20:31.9048963+00:00&status=active&_include=CarePlan:activity-reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:20:31.9048963+00:00&_lastUpdated=lt2022-11-30T16:20:31.9048963+00:00&status=active&_include=CarePlan:activity-reference&_include=CarePlan:subject
 
 Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 2 03014300 e creati e/o modificati in data compresa nel seguente intervallo di tempo: 2022-11-18T16:20:31.9048963+00:00 e 2022-11-30T16:20:31.9048963+00:00.
 
@@ -118,7 +118,8 @@ L’esito della ricerca permette di recuperare le informazioni relative ai proge
 |     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=\{_codiceLivello2_\}&subject.identifier= \{_codiceFiscaleAssistito_\}&_include=CarePlan:activity-reference&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
-  CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&subject.identifier= RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject
+
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&subject.identifier= RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject
 
 Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla struttura con codice livello 2 03014300. Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 

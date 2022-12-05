@@ -89,7 +89,8 @@ L’esito della ricerca permette di recuperare le informazioni relative alle sos
 | URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=\{_numeroPratica_\} |
 
 A titolo esemplificativo, la chiamata: 
-  ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=000001
+
+    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=000001
 
 Restituirà, se presenti, tutte le sospensioni temporanee afferenti alla pratica numero 000001.
 
@@ -110,7 +111,8 @@ Il parametro da valorizzare per effettuare la ricerca per entrambi i profili int
 | URL | ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=\{_numeroPratica_\} |
 
 A titolo esemplificativo, la chiamata: 
-  ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001
+  
+    ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001
 
 Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni afferenti alla pratica numero 000001.
 
