@@ -13,6 +13,3 @@ ed è possibile consultare le risorse FHIR rilasciate e attualmente in uso.
 Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, di conseguenza le risorse potrebbero essere soggette a revisione e modifiche.
 </div>
 
-
-## Indice
-{{index:root}}

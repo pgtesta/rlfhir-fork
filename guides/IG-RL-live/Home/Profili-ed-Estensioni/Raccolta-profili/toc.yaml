@@ -1,0 +1,26 @@
+- name: FQL
+  filename: FQL.page.md
+- name: Modello pagina profilo
+  filename: Modello-pagina-profilo.page.md
+- name: RLOrganizationL1
+  filename: RLOrganizationL1.page.md
+- name: RLOrganizationL2
+  filename: RLOrganizationL2.page.md
+- name: RLOrganizationL3
+  filename: RLOrganizationL3.page.md
+- name: RLPractitioner
+  filename: RLPractitioner.page.md
+- name: RLPractitionerRole
+  filename: RLPractitionerRole.page.md
+- name: RLCarePlanProgettoIndividuale
+  filename: RLCarePlanProgettoIndividuale.page.md
+- name: RLParientCittadino
+  filename: RLParientCittadino.page.md
+- name: RLQuestionnaireResponseValutazione
+  filename: RLQuestionnaireResponseValutazione.page.md
+- name: RLProcedurePrestazione
+  filename: RLProcedurePrestazione.page.md
+- name: RLServiceRequestSospensioneADI
+  filename: RLServiceRequestSospensioneADI.page.md
+- name: RLServiceRequestRivalutazione
+  filename: RLServiceRequestRivalutazione.page.md

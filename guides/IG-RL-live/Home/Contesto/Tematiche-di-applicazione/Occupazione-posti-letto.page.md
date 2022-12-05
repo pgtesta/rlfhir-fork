@@ -16,7 +16,7 @@ Il seguente elenco definisce il principale contenuto informativo che sarà dispo
 
 La risorsa FHIR cardine di questo caso d’uso è “Observation” che rappresenta, in generale, una qualsiasi misura o asserzione fatta su un paziente, un dispositivo o qualsiasi altro soggetto. L’Observation è referenziata alla risorsa Organization che esprime il soggetto, ossia la struttura, a cui si applica la misura.
 
-{{render:guides-IG-RL-pics-diagramma-UML-Observation}} 
+{{render:guides-IG-RL-draft-pics-diagramma-UML-Observation}} 
 
 ## Richiesta
 
