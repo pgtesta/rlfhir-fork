@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
   "name": "RLProcedurePrestazione",
   "status": "draft",
-  "description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale",
+  "description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -73,7 +73,7 @@
         "id": "Procedure.code.coding.code",
         "path": "Procedure.code.coding.code",
         "short": "Codice della prestazione",
-        "comment": "DA DEFINIRE"
+        "comment": "Da definire"
       },
       {
         "id": "Procedure.code.coding.display",

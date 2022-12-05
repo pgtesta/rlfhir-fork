@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestOssigenoterapia",
   "meta": {
-    "lastUpdated": "2022-10-19T09:02:04.6635789+00:00"
+    "lastUpdated": "2022-12-05T10:46:42.2739402+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
   "name": "RLMedicationRequestOssigenoterapia",
@@ -112,7 +112,7 @@
         "id": "MedicationRequest.encounter",
         "path": "MedicationRequest.encounter",
         "short": "Riferimento ai dettagli dell'accesso del paziente alla struttura di prossimità",
-        "definition": "Reference alla risorsa RLEncounterAccesso",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

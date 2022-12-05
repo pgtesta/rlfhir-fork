@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLEncounterAccesso",
   "meta": {
-    "lastUpdated": "2022-10-19T09:12:41.1529635+00:00"
+    "lastUpdated": "2022-12-05T09:54:18.0532808+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso",
   "name": "RLEncounterAccesso",
@@ -72,6 +72,7 @@
         "path": "Encounter.extension",
         "sliceName": "tipologiaBisogno",
         "short": "Codice e descrizione della tipologia del bisogno rilevata al cittadino",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 0,
         "max": "1",
@@ -111,15 +112,15 @@
       {
         "id": "Encounter.class",
         "path": "Encounter.class",
-        "short": "Motivo dell'accoglienza",
-        "definition": "La codifica delle informazioni è la seguente: \r\n01: inviato da MMG\r\n02: accesso spontaneo\r\n03: dimissione protetta",
+        "short": "Motivo della segnalazione",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Encounter.type",
         "path": "Encounter.type",
         "short": "Tipologia di accesso",
-        "definition": "La codifica delle informazioni è la seguente: \r\n01: accesso amministrativo\r\n02: accesso socio-sanotario",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -155,6 +156,29 @@
         "short": "Ultima data possibile per l'erogazione dell'intervento educazionale",
         "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
         "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "short": "Motivo della segnalazione e setting assistenziale proposto"
+      },
+      {
+        "id": "Encounter.reasonCode.coding",
+        "path": "Encounter.reasonCode.coding",
+        "short": "Motivo della segnalazione e setting assistenziale proposto",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.code",
+        "path": "Encounter.reasonCode.coding.code",
+        "short": "Codice del motivo della segnalazione e setting assistenziale proposto",
+        "definition": "Codice numerico di 2 cifre"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.display",
+        "path": "Encounter.reasonCode.coding.display",
+        "short": "Descrizione del motivo della segnalazione e setting assistenziale proposto",
+        "definition": "Stringa alfanumerica al più di 200 caratteri"
       },
       {
         "id": "Encounter.serviceProvider",

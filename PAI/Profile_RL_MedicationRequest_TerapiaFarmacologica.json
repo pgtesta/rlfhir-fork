@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestTerapiaFarmacologica",
   "meta": {
-    "lastUpdated": "2022-10-19T08:38:02.1118637+00:00"
+    "lastUpdated": "2022-12-05T10:42:14.9468287+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
   "name": "RLMedicationRequestTerapiaFarmacologica",
@@ -102,7 +102,7 @@
         "id": "MedicationRequest.encounter",
         "path": "MedicationRequest.encounter",
         "short": "Riferimento ai dettagli dell'accesso del paziente alla struttura di prossimità",
-        "definition": "Reference alla risorsa RLEncounterAccesso",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

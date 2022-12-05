@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioSanitari",
   "meta": {
-    "lastUpdated": "2022-11-18T16:30:03.6311182+00:00"
+    "lastUpdated": "2022-12-05T10:40:20.0819577+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari",
   "name": "RLServiceRequestServiziSocioSanitari",
@@ -63,6 +63,24 @@
             "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "ServiceRequest.extension:dataDimissione",
+        "path": "ServiceRequest.extension",
+        "sliceName": "dataDimissione",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "ServiceRequest.identifier",
@@ -126,7 +144,7 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "short": "Codice e descrizione del servizio sociosanitario",
+        "short": "Codice e descrizione della tipologia di servizio sociosanitario (UdO) da attivare",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -151,6 +169,7 @@
         "id": "ServiceRequest.quantity[x]",
         "path": "ServiceRequest.quantity[x]",
         "short": "Numero di accessi domiciliari previsti",
+        "definition": "Valore numerico al più di 3 cifre",
         "type": [
           {
             "code": "Quantity"
@@ -181,6 +200,7 @@
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
         "short": "Dettagli dell'accesso del paziente che ha portato alla definizione del servizio sociosanitario",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -204,7 +224,8 @@
         "id": "ServiceRequest.occurrence[x].end",
         "path": "ServiceRequest.occurrence[x].end",
         "short": "Data di fine prevista del ricovero domiciliare",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR"
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "ServiceRequest.requester",

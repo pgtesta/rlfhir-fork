@@ -76,7 +76,22 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "short": "Codice e descrizione della prestazione sociale",
+        "short": "Codice e descrizione della prestazione sociale"
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "short": "Codice e descrizione della prestazione sociale"
+      },
+      {
+        "id": "ServiceRequest.code.coding.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione sociale",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "ServiceRequest.code.coding.display",
+        "path": "ServiceRequest.code.coding.display",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -98,14 +113,13 @@
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
         "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
-        "comment": "Il dato è detenuto dal SGDT"
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino"
       },
       {
         "id": "ServiceRequest.requester",
         "path": "ServiceRequest.requester",
         "short": "Profilo del professionista sanitario richedente della prestazione",
         "definition": "Reference al profilo RLPractionerRole del professionista sanitario che ha richiesto la prestazione per il paziente",
-        "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
@@ -119,8 +133,7 @@
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
         "short": "Note / commenti aggiuntivi",
-        "definition": "Stringa alfanumerica al più di 1000 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "definition": "Stringa alfanumerica al più di 1000 caratteri"
       }
     ]
   }

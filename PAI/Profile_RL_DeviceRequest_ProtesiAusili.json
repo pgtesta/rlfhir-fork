@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLDeviceRequestProtesiAusili",
   "meta": {
-    "lastUpdated": "2022-10-19T09:11:09.612479+00:00"
+    "lastUpdated": "2022-12-05T10:47:55.5068817+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
   "name": "RLDeviceRequestProtesiAusili",
@@ -113,6 +113,7 @@
         "id": "DeviceRequest.encounter",
         "path": "DeviceRequest.encounter",
         "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della protesi o l'ausilio",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {

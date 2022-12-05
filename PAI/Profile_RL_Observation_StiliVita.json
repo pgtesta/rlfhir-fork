@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLObservationStiliVita",
   "meta": {
-    "lastUpdated": "2022-10-19T09:16:09.1325916+00:00"
+    "lastUpdated": "2022-12-05T10:20:30.122402+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
   "name": "RLObservationStiliVita",
@@ -61,7 +61,8 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "short": "Le tipologie dello stile di vita sono: fumo, alcol, sedentarietà ed eccesso ponderale"
+        "short": "Le tipologie dello stile di vita sono: fumo, alcol, sedentarietà ed eccesso ponderale",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
       },
       {
         "id": "Observation.code.coding.code",
@@ -107,6 +108,7 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Codifica e descrizione dello stato relativo al corrispondende stile di vita",
+        "definition": "Codifica da chiedere a ENG",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

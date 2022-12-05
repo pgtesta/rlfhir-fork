@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLGoalObiettiviSalute",
   "meta": {
-    "lastUpdated": "2022-10-19T09:15:05.6243552+00:00"
+    "lastUpdated": "2022-12-05T10:14:30.6587052+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
   "name": "RLGoalObiettiviSalute",
@@ -45,12 +45,14 @@
       {
         "id": "Goal.description.coding",
         "path": "Goal.description.coding",
-        "short": "Codifica e descrizione dell' obbiettivo di salute definito per il paziente"
+        "short": "Codifica e descrizione dell'obiettivo di salute definito per il paziente",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
       },
       {
         "id": "Goal.description.coding.code",
         "path": "Goal.description.coding.code",
         "short": "Codice dell'obiettivo di salute",
+        "definition": "Codice numerico di 2 cifre",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -78,7 +80,7 @@
       {
         "id": "Goal.note",
         "path": "Goal.note",
-        "short": "Nota contenente l'obbiettivo di salute nel caso non fosse selezionato tra le voci codificate",
+        "short": "Nota contenente l'obiettivo di salute nel caso non fosse selezionato tra le voci codificate",
         "comment": "Il dato è detenuto dal SGDT"
       }
     ]

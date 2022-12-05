@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL2",
   "meta": {
-    "lastUpdated": "2022-10-26T16:22:06.7554461+00:00"
+    "lastUpdated": "2022-12-05T08:52:01.0029933+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
   "name": "RLOrganizationL2",
@@ -189,7 +189,7 @@
         "path": "Organization.type",
         "short": "Descrizione del tipo di presidio",
         "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "I valori della codifica sono rapressentati nella tabella 5.2 presente nel documento consultabile nella sezione 'Documentation' del profilo."
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
       },
       {
         "id": "Organization.type.coding",
@@ -227,7 +227,7 @@
         "path": "Organization.type.coding.code",
         "short": "Descrizione del tipo di struttura L2",
         "definition": "Stringa alfanumerica di al più 3 caratteri.",
-        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
         "min": 1
       },
       {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCommunicationRequestInterventiEducazionali",
   "meta": {
-    "lastUpdated": "2022-10-19T08:40:34.2965487+00:00"
+    "lastUpdated": "2022-12-05T10:43:18.1891996+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali",
   "name": "RLCommunicationRequestInterventiEducazionali",
@@ -70,6 +70,7 @@
         "id": "CommunicationRequest.encounter",
         "path": "CommunicationRequest.encounter",
         "short": "Dettagli dell'accesso del paziente che ha portato alla definizione dell'intervento educazionale",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {

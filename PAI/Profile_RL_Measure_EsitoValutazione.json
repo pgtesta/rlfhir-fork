@@ -3,6 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureEsitoValutazione",
   "name": "RLMeasureEsitoValutazione",
   "status": "draft",
+  "description": "Profilo volto a descrivere l’esito della valutazione al quale il paziente è stato sottoposto.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -14,8 +15,6 @@
       {
         "id": "Measure.title",
         "path": "Measure.title",
-        "short": "Nome della valutazione specifica o scala al quale il paziente è stato sottoposto",
-        "definition": "Stringa alfanumerica di al più 100 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -34,7 +33,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Group",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
             ]
           }
@@ -64,6 +62,12 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Measure.topic",
+        "path": "Measure.topic",
+        "short": "Nome della valutazione specifica o scala al quale il paziente è stato sottoposto",
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
       },
       {
         "id": "Measure.scoring",

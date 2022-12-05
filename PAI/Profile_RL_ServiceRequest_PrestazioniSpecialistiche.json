@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestPrestazioniSpecialistiche",
   "meta": {
-    "lastUpdated": "2022-10-19T08:16:21.4218627+00:00"
+    "lastUpdated": "2022-12-05T10:26:40.5373313+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
   "name": "RLServiceRequestPrestazioniSpecialistiche",
@@ -125,6 +125,7 @@
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
         "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {

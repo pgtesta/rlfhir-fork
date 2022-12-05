@@ -1,8 +1,10 @@
 {
   "resourceType": "StructureDefinition",
+  "id": "RLQuestionnaireResponseValutazione",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione",
   "name": "RLQuestionnaireResponseValutazione",
   "status": "draft",
+  "description": "Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -11,6 +13,38 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "QuestionnaireResponse.extension",
+        "path": "QuestionnaireResponse.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "QuestionnaireResponse.extension:esitoValutazione",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "esitoValutazione",
+        "short": "Riferimento all'esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto",
+        "definition": "Reference al profilo RLMeasureEsitoValutazione contenente l'esito della valutazione",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
       {
         "id": "QuestionnaireResponse.basedOn",
         "path": "QuestionnaireResponse.basedOn",

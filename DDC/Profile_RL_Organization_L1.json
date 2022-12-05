@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL1",
   "meta": {
-    "lastUpdated": "2022-10-25T14:05:09.7668281+00:00"
+    "lastUpdated": "2022-12-05T08:50:43.8868721+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
   "name": "RLOrganizationL1",
@@ -203,7 +203,7 @@
         "path": "Organization.type",
         "short": "Descrizione del tipo di azienda",
         "definition": "Stringa alfanumerica di 3 caratteri",
-        "comment": "La fonte del dato è il campo DS_TIPO_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
         "min": 1
       },
       {
@@ -217,7 +217,7 @@
         "path": "Organization.type.coding.code",
         "short": "Descrizione del tipo di azienda",
         "definition": "Stringa alfanumerica di 3 caratteri",
-        "comment": "La fonte del dato è il campo DS_TIPO_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
         "min": 1
       },
       {

@@ -98,6 +98,7 @@
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
         "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
