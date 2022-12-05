@@ -4,7 +4,8 @@
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente](#periodo-e-causale-della-sospensione-temporanea-del-ricovero-domiciliare-e-la-necessità-di-effettuare-una-rivalutazione-del-paziente)
+    - [Dettagli della necessità di rivalutazione del paziente](#dettagli-della-necessità-di-rivalutazione-del-paziente)
+    - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -71,20 +72,42 @@ Non sono state sviluppate extension per questo profilo.
 
 ## Criteri di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+### Dettagli della necessità di rivalutazione del paziente  
+Questa ricerca viene effettuata nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
+I parametri da valorizzare per effettuare la ricerca sono:
+- requisition: numero pratica del servizio di cure domiciliari.
+-	status: da compilare con il valore “active” (?)
+L’esito della ricerca permette di recuperare la richiesta di rivalutazione non ancora recepite di un determinato paziente attraverso il numero pratica del servizio di cure domiciliari.
 
-### Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente
-Parametri di ricerca:
-- ...
-- ...
-
-L’esito della ricerca permette di recuperare le informazioni relative alla necessità di effettuare una rivalutazione del cittadino.
-
-| SCOPE |     |
+| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari |
 |---|---|
 | VERB | GET |
-| BASE |     |
-| URL |      |
+| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=\{_numeroPratica_\} |
+
+A titolo esemplificativo, la chiamata: 
+  ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=000001
+Restituirà, se presenti, tutte le rivalutazioni afferenti alla pratica numero 000001.
+
+### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
+Questa ricerca permette di reperire il dettaglio delle sospensioni e la necessità di rivalutazione del paziente inerente al periodo che va dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta.
+
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
+
+Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
+-	requisition: numero pratica del servizio di cure domiciliari.
+
+| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione e RLServiceRequestSopensioneADI relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari |
+|---|---|
+| VERB | GET |
+| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
+| URL | ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=\{_numeroPratica_\} |
+
+A titolo esemplificativo, la chiamata: 
+  ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001
+Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni afferenti alla pratica numero 000001.
+
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

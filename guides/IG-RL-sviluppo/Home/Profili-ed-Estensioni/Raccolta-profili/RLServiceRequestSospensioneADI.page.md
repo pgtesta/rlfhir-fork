@@ -85,8 +85,14 @@ L’esito della ricerca permette di recuperare le informazioni relative alle sos
 | SCOPE | Ricerca tutti i profili RLServiceRequestSopensioneADI relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari.    |
 |---|---|
 | VERB | GET |
-| BASE |     |
-| URL |     |
+| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=\{_numeroPratica_\} |
+
+A titolo esemplificativo, la chiamata: 
+  ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=000001
+
+Restituirà, se presenti, tutte le sospensioni temporanee afferenti alla pratica numero 000001.
+
 
 ### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
 
@@ -100,8 +106,14 @@ Il parametro da valorizzare per effettuare la ricerca per entrambi i profili int
 | SCOPE | |
 |---|---|
 | VERB | GET |
-| BASE |     |
-| URL |     |
+| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
+| URL | ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=\{_numeroPratica_\} |
+
+A titolo esemplificativo, la chiamata: 
+  ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001
+
+Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni afferenti alla pratica numero 000001.
+
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

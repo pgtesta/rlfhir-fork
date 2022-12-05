@@ -4,6 +4,7 @@
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
+    - [Ultime valutazioni effettuate da un paziente specifico](#ultime-valutazioni-effettuate-da-un-paziente-specifico)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -82,14 +83,14 @@ L’esito della ricerca permette di recuperare l’ultima versione delle valutaz
 
 |     SCOPE    |Ricerca tutti i profili RLQuestionnaireResponseValutazione in stato completato che si riferiscono ad un determinato paziente (RLPatientCittadino)|
 |---|---|
-|     VERB    |     GET    |
-|     BASE    |          |
-|     URL    |          |
+| VERB | GET |
+| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
+| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=\{_codiceLivello2_\}&source.identifier=\{_codiceFiscaleAssistito_\}&status=completed&_include=QuestionnaireResponse:questionna |
 
 A titolo esemplificativo, la chiamata: 
-QuestionnaireResponse?_profile=https%3A//example.org/fhir/StructureDefinition/ 
+  QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=03014300&source.identifier=RSSMRA80A01F205X&status=completed&_include=QuestionnaireResponse:questionnaire
 
-Restituirà...
+Restituirà l’ultima versione della valutazione, e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
 
 
 <!-- ===================================================FINE SESSIONE=================================================== -->

@@ -84,8 +84,14 @@ L’esito della ricerca permette di recuperare le informazioni relative alle pre
 | SCOPE | Ricerca |
 |---|---|
 | VERB | GET |
-| BASE |    |
-| URL |     |
+| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
+| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.identifier=\{_numeroPratica_\}&_include=Procedure:basedOn&_include=Procedure:subject |
+
+A titolo esemplificativo, la chiamata: 
+  Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.identifier=000001&_include=Procedure:basedOn&_include=Procedure:subject
+
+Restituirà tutte le prestazioni erogate afferenti alla pratica numero 000001.
+
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
