@@ -56,7 +56,7 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/esempio-RLPractitionerRole.page.md}}
+{{link:esempio-PractitionerRole}}
 <br>
 </div>
 

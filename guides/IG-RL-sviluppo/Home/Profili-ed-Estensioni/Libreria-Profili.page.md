@@ -36,7 +36,7 @@
         <th>Link Simplifier</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="myTable">
       <tr>
         <td>ADI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedurePrestazione.page.md}}</td>

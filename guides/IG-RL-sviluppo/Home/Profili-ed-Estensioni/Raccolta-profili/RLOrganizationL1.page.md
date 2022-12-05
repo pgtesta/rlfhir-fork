@@ -58,7 +58,7 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/esempio-RLOrganizationL1.page.md}}
+{{link:esempio-RLOrganizationL1}}
 <br>
 </div>
 
