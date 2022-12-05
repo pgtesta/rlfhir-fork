@@ -23,5 +23,7 @@
 | ADI | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestSospensione-1}} |
 | ADI | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestSospensione-2}} |
 
-
+Extra: 
+{{link:Esempi-Example-searchfail}}
+{{link:Esempi-Example-exception}}
 
