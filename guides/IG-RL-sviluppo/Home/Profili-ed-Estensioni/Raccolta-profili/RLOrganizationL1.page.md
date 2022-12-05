@@ -5,7 +5,7 @@
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 

@@ -1,18 +1,18 @@
-# RLServiceRequestRivalutazione
+# RLServiceRequestPrestazioniInfermieristiche
 
-- [RLServiceRequestRivalutazione](#rlservicerequestrivalutazione)
+- [RLServiceRequestPrestazioniInfermieristiche](#rlservicerequestprestazioniinfermieristiche)
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente](#periodo-e-causale-della-sospensione-temporanea-del-ricovero-domiciliare-e-la-necessità-di-effettuare-una-rivalutazione-del-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
 ## Descrizione
-Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) volto a notificare la necessità di una rivalutazione di un paziente attualmente in ricovero domiciliare.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, text: qui}}.
+Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che contiene le informazioni relative ad una prestazione infermieristiche afferente ad un progetto individuale di un cittadino.
+
+La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, text: qui}}.
 
 <br>
 <div class="tab">
@@ -27,38 +27,37 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
 Al momento non ci sono esempi disponibili. 
-<br>
 </div>
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
@@ -73,19 +72,6 @@ Non sono state sviluppate extension per questo profilo.
 
 Attualmente non sono stati definiti criteri di ricerca.
 
-### Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente
-Parametri di ricerca:
-- ...
-- ...
-
-L’esito della ricerca permette di recuperare le informazioni relative alla necessità di effettuare una rivalutazione del cittadino.
-
-| SCOPE |     |
-|---|---|
-| VERB | GET |
-| BASE |     |
-| URL |      |
-
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Search parameter
@@ -96,4 +82,9 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## Value set
 
-Attualmente non sono definiti value set specifici per il profilo RLServiceRequestRivalutazione.
+Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestPrestazioniInfermieristiche.
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| UlterioriDettagli | Ulteriori dettagli riguardo la prestazione infermieristica da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| Code| Codice e descrizione della prestazione infermieristica | |

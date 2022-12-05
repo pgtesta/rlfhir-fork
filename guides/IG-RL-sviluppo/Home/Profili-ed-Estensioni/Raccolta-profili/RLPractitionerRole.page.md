@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html)  contenente i ruoli e le qualifiche di un determinato medico prescrittore presente nel profilo RLPractitionerRole.
+Profilo declinato a partire dalla risorsa standard FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) contenente i ruoli e le qualifiche di un determinato medico prescrittore presente nel profilo RLPractitionerRole.
 
 La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, text: qui}}.
 

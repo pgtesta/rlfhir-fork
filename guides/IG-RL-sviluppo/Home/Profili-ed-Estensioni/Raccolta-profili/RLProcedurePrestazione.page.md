@@ -5,7 +5,7 @@
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare aggiornate alla data e ora di richiesta](#dettaglio-delle-prestazioni-erogate-al-paziente-in-regime-di-ricovero-domiciliare-aggiornate-alla-data-e-ora-di-richiesta)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
@@ -89,7 +89,7 @@ L’esito della ricerca permette di recuperare le informazioni relative alle pre
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa Procedure.
 

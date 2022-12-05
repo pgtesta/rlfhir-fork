@@ -4,8 +4,7 @@
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente](#periodo-e-causale-della-sospensione-temporanea-del-ricovero-domiciliare-e-la-necessità-di-effettuare-una-rivalutazione-del-paziente)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
@@ -71,15 +70,32 @@ Non sono state sviluppate extension per questo profilo.
 
 ## Criteri di ricerca
 
-### Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente
-Parametri di ricerca:
-- ...
-- ...
+### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta 
+Il dettaglio delle sospensioni è inteso come riassuntivo del periodo che va dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta. 
 
-L’esito della ricerca permette di recuperare le informazioni relative alla sospensione temporanea del ricovero domiciliare del cittadino.
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
 
+I parametri da valorizzare per effettuare la ricerca sono:
+-	requisition: numero pratica del servizio di cure domiciliari.
 
-| SCOPE |     |
+L’esito della ricerca permette di recuperare le informazioni relative alle sospensioni temporanee del ricovero domiciliare del cittadino che si sono verificate a partire dalla data di attivazione del ricovero domiciliare.
+
+| SCOPE | Ricerca tutti i profili RLServiceRequestSopensioneADI relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari.    |
+|---|---|
+| VERB | GET |
+| BASE |     |
+| URL |     |
+
+### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
+
+Questa ricerca permette di reperire il dettaglio delle sospensioni e la necessità di rivalutazione del paziente inerente al periodo che va dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta.
+
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
+
+Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
+-	requisition: numero pratica del servizio di cure domiciliari.
+
+| SCOPE | |
 |---|---|
 | VERB | GET |
 | BASE |     |
@@ -87,7 +103,7 @@ L’esito della ricerca permette di recuperare le informazioni relative alla sos
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa ServiceRequest.
 

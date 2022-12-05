@@ -78,4 +78,11 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
 ## Value set
-Attualmente non sono definiti value set specifici per il profilo RLPatientCittadino.
+Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCittadino:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| maritalStatus | Stato civile del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| titoloDiStudio | Titolo di studio del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente   {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| posizione DellaProfessione | Posizione lavorativa del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| situazionePensionistica | Situazione pensionistica del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |

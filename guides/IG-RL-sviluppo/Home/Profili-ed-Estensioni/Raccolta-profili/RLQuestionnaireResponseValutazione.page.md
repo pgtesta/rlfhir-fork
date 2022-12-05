@@ -4,12 +4,12 @@
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
 ## Descrizione
-Profilo declinato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per il dettaglio delle risposte ai quesiti della valutazione (semplice o multidimensionale) alla quale il paziente è stato sottoposto.
+Profilo declinato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per il dettaglio delle risposte ai quesiti delle valutazioni dei bisogni alla quale il paziente è stato sottoposto.
 
 La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, text: qui}}.
 
@@ -70,11 +70,31 @@ Non sono state sviluppate extension per questo profilo.
 
 ## Criteri di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+### Ultime valutazioni effettuate da un paziente specifico
+
+I parametri da valorizzare per effettuare la ricerca sono:
+-	status: da compilare con il valore “completed” 
+-	source.reference(RLPatientiCittadino).identifier: da compilare con il codice fiscale del paziente 
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).type.coding.code: da compilare con il valore “C-DOM”
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
+
+L’esito della ricerca permette di recuperare l’ultima versione delle valutazioni a cui un paziente specifico assegnato ad un determinato ente erogatore di cure domiciliari è stato sottoposto.
+
+|     SCOPE    |Ricerca tutti i profili RLQuestionnaireResponseValutazione in stato completato che si riferiscono ad un determinato paziente (RLPatientCittadino)|
+|---|---|
+|     VERB    |     GET    |
+|     BASE    |          |
+|     URL    |          |
+
+A titolo esemplificativo, la chiamata: 
+QuestionnaireResponse?_profile=https%3A//example.org/fhir/StructureDefinition/ 
+
+Restituirà...
+
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa QuestionnaireResponse.
 

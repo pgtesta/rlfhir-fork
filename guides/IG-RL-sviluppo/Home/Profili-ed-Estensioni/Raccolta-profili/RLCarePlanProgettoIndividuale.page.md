@@ -83,13 +83,14 @@ Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLCarePlanP
 ###	Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
 Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
 I parametri da valorizzare per effettuare la ricerca sono:
-- status
-- activity.reference(RLServiceRequestServiziSociosanitari).code
-- activity.reference(RLServiceRequestServiziSociosanitari).performer
+-	status: da compilare con il valore “active”
+-	activity.reference(RLServiceRequestServiziSociosanitari).code.coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSociosanitari).performer: codice L2 dell’ente erogatore di interesse
+-	lastUpdated: data e ora dell’ultimo aggiornamento dei dati 
 
-L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSociosanitari_) di una determinata tipologia di UdO sociosanitaria e per il quali è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
+L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario di una determinata tipologia di UdO sociosanitaria e per il quali è stato assegnato un determinato ente erogatore responsabile della presa in carico.
 
-|     SCOPE    |    Ricerca tutti i CarePlan in stato attivo che contengono almeno una ServiceRequest relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
+|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio (RLOrganizationL2). |
 |---|---|
 |     VERB    |     GET    |
 |     BASE    |          |
@@ -102,16 +103,15 @@ A titolo esemplificativo, la chiamata:
 Restituirà..
 
 ### Progetto individuale attivo di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
-Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
+Questo criterio di ricerca permette di fruire dello storico dei progetti individuali con il dettaglio dell’attivazione di uno specifico servizio sociosanitario assegnato ad un ente erogatore per un determinato paziente 
 I parametri da valorizzare per effettuare la ricerca sono:
-- status
-- activity.reference(RLServiceRequestServiziSociosanitari).code
-- activity.reference(RLServiceRequestServiziSociosanitari).performer
-- activity.reference(RLPatientCittadino).identifier
+-	activity.reference(RLServiceRequestServiziSociosanitari).code coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSociosanitari).performer: codice L2 dell’ente erogatore di interesse
+-	subject.reference(RLPatientCittadino).identifier: da compilare con il codice fiscale del paziente
+L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione di un servizio sociosanitario di una determinata tipologia di UdO sociosanitaria e per il quali è stato assegnato l’ente erogatore responsabile della presa in carico.
 
-L’esito della ricerca permette di recuperare le informazioni relative al progetto individuale atttivo di un cittadino per il quale è prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSociosanitari_) di una determinata tipologia di UdO sociosanitaria e per il quale è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
 
-|     SCOPE    |     Ricerca iltutti i CarePlan in stato attivo relativo ad un determinato cittadino che   contieneengono almeno una ServiceRequest   relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM,   RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
+|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio (profilo RLOrganizationL2). |
 |---|---|
 |     VERB    |     GET    |
 |     BASE    |          |
@@ -125,7 +125,7 @@ Restituirà..
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa CarePlan.
 
@@ -135,4 +135,4 @@ Attualmente non sono definiti Search Parameters oltre ai campi standard della ri
 
 Attualmente non sono presenti value set nei campi del profilo RLCarePlanProgettoIndividuale.
 
-<br>
+<br> 
