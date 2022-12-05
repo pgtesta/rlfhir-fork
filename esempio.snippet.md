@@ -1,6 +1,6 @@
-## {{page-title}}
+## ASST della Brianza
 
-La pagina Simplifier del profilo è consultabile qui: {{link:struttura-L1}}
+La pagina Simplifier della risorsa è consultabile qui: {{link:esempio-RLOrganizationL1}}
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
@@ -9,10 +9,10 @@ La pagina Simplifier del profilo è consultabile qui: {{link:struttura-L1}}
 
 <div id="JSON View" class="tabcontent" style="display:block">
   <h3>JSON View</h3>
-{{json:struttura-L1}}
+{{json:esempio-RLOrganizationL1}}
 </div> 
 
 <div id="XML View" class="tabcontent" >
   <h3>XML View</h3>
-{{xml:struttura-L1}}
+{{xml:esempio-RLOrganizationL1}}
 </div>
