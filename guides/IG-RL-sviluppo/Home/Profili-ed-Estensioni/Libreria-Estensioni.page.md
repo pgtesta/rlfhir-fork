@@ -35,7 +35,7 @@
           <th>Usato in</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="myTable">
         <tr>
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanEsenzioni}}</td>
           <td>Esenzioni</td>
