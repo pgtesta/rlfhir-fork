@@ -149,6 +149,6 @@
           <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMedicoPrescrittore.page.md}}</td>
         </tr>
       </tbody>
-      </table>
+    </table>
   </body>
 </html>
