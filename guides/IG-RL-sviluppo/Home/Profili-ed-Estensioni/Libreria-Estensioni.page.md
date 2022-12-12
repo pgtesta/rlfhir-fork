@@ -55,14 +55,16 @@
         <td>DistrettoCode</td>
         <td>Distretto territoriale così definito dalla legge regionale 22-2021 della Regione Lombardia</td>
         <td>Organization.Address</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
       </tr>
       <tr>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode}}</td>
         <td>IstatCode</td>
         <td>Codice ISTAT</td>
         <td>Organization.Address</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
       </tr>
       <tr>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationASSTAfferenza}}</td>
@@ -97,28 +99,34 @@
         <td>DataFineValidita</td>
         <td>Data di fine della validità di esercizio dell'ente descritto dal profilo</td>
         <td>Organization</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}</td>
       </tr>
       <tr>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}}</td>
         <td>DataInizioValidita</td>
         <td>Data di inizio della validità di esercizio dell'ente descritto dal profilo</td>
         <td>Organization</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}</td>
       </tr>
       <tr>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert}}</td>
         <td>DataInsert</td>
         <td>Data di inserimento del record</td>
         <td>Organization</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
       </tr>
       <tr>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}}</td>
         <td>DataUpdate</td>
         <td>Data di aggiornamento del record</td>
         <td>Organization</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}, 
+        {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}</td>
       </tr>
       <tr>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert}}</td>
