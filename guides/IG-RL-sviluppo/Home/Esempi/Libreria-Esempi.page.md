@@ -14,14 +14,14 @@
 | ADI | RLPatientCittadino | {{link:esempio-Patient-Cittadino}} |
 | DP | RLPatientDimissioniProtette | {{link:esempio-Patient-DimissioniProtette}} |
 | DP | RLRelatedPersonCareGiverDimissioniProtette | {{link:esempio-Patient-DimissioniProtette}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneCarePlan-1}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneCarePlan-2}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneProcedure-1}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneQuestionnaireResponse-1}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestRivalutazione-1}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestRivalutazione-2}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestSospensione-1}} |
-| ADI | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestSospensione-2}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneCarePlan-1}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneCarePlan-2}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneProcedure-1}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneQuestionnaireResponse-1}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestRivalutazione-1}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestRivalutazione-2}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestSospensione-1}} |
+| C-DOM | Bundle | {{link:esempio-Bundle-InterrogazioneServiceRequestSospensione-2}} |
 
 ### Extra: 
 
