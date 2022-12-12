@@ -14,7 +14,7 @@ Raccolta di acronimi e termini usati nel progetto:
 | DDC | Distribuzione Dati Codificati |
 | UDO | Unità d'Offerta |
 | DP | Dimissione Protette |
-| PI | Piano Assistenziale Individuale |
+| PI | Progetto Individuale (Piano Assistenziale Individuale) |
 | RSA | Residenza Sanitaria Assistenziale |
 | PLO | Numero Posti Occupati |
 | L1 | Codice   identificativo di livello 1 degli enti aderenti al progetto SISS. La risorsa   FHIR che descrive questa tipologia di struttura è RLOrganizationL1 |
