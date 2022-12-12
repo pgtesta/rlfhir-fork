@@ -36,72 +36,72 @@
         <th>Link Simplifier</th>
       </tr>
     </thead>
-    <tbody id="myTable">
+    <tbody>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedurePrestazione.page.md}}</td>
         <td>Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale</td>
         <td><a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireResponseValutazione.page.md}}</td>
         <td>Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto</td>
         <td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione.page.md}}</td>
         <td>Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSospensioneADI.page.md}}</td>
         <td>Profilo che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleOperatoreADI.page.md}}</td>
         <td>Profilo contentente le tipologie di operatori ADI</td>
         <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireTipologiaValutazione.page.md}}</td>
         <td>Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto</td>
         <td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioSanitari.page.md}}</td>
         <td>Profilo volto a contenere le informazioni riguardo il servizio sociosanitario da attivare ad un cittadino nell’ambito del suo progetto individuale</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCittadino.page.md}}</td>
         <td>Dettagli anagrafici del cittadino</td>
         <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanProgettoIndividuale.page.md}}</td>
         <td>Profilo contenente tutte le attività e le informazioni definite in un progetto individuale di un cittadino redatto sul Sistema di Gestione Digitale del Territorio</td>
         <td><a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale}}</td>
       </tr>
       <tr>
-        <td>ADI</td>
+        <td>C-DOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterAccesso.page.md}}</td>
         <td>Profilo volto a descrivere i dettagli dell’accesso del cittadino alla struttura di prossimità</td>
         <td><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></td>
@@ -113,6 +113,13 @@
         <td>Profilo che contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR</td>
         <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore}}</td>
+      </tr>
+      <tr>
+        <td>DDC</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMedicoPrescrittore.page.md}}</td>
+        <td>(missing)</td>
+        <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}</td>
       </tr>
       <tr>
         <td>DDC</td>
@@ -137,10 +144,10 @@
       </tr>
       <tr>
         <td>DDC</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMedicoPrescrittore.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole.page.md}}</td>
         <td>Risorsa che raccoglie i ruoli e le qualifiche di un determinato medico prescrittore</td>
         <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole}}</td>
       </tr>
       <tr>
         <td>PI</td>
@@ -187,7 +194,7 @@
       <tr>
         <td>PI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLGoalObiettiviSalute.page.md}}</td>
-        <td>Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI)</td>
+        <td>Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PAI)</td>
         <td><a href="http://hl7.org/fhir/R4/goal.html">Goal</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute}}</td>
       </tr>
