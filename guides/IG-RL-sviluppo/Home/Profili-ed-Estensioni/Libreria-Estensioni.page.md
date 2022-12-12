@@ -176,7 +176,7 @@
           <td>DataInsert</td>
           <td>Data di inserimento del record</td>
           <td>Practitioner</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitioner.page.md}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerMedicoPrescrittore.page.md}}</td>
         </tr>
         <tr>
           <td>
@@ -185,7 +185,7 @@
           <td>DataUpdate</td>
           <td>Data dell'ultima modifica del record</td>
           <td>Practitioner</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitioner.page.md}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerMedicoPrescrittore.page.md}}</td>
         </tr>
         <tr>
           <td>
@@ -194,7 +194,7 @@
           <td>DataInsert</td>
           <td>Data di inserimento del record</td>
           <td>PractitionerRole</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole.page.md}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMedicoPrescrittore.page.md}}</td>
         </tr>
         <tr>
           <td>
@@ -203,7 +203,7 @@
           <td>DataUpdate</td>
           <td>Data dell'ultima modifica del record</td>
           <td>PractitionerRole</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole.page.md}}</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMedicoPrescrittore.page.md}}</td>
         </tr>
       </tbody>
     </table>

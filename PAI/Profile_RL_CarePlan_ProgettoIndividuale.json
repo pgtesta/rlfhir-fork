@@ -136,14 +136,14 @@
         "id": "CarePlan.author",
         "path": "CarePlan.author",
         "short": "Case manager del progetto individuale",
-        "definition": "Reference al profilo RLPractitioner e RLPractitionerRole inerenti al case manager del progetto individuale",
+        "definition": "Reference al profilo RLPractitionerMedicoPrescrittore e RLPractitionerRoleMedicoPrescrittore inerenti al case manager del progetto individuale",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitioner"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
             ]
           }
         ]

@@ -109,10 +109,10 @@
       </tr>
       <tr>
         <td>DDC</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitioner.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerMedicoPrescrittore.page.md}}</td>
         <td>Profilo che contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR</td>
         <td><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitioner}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore}}</td>
       </tr>
       <tr>
         <td>DDC</td>
@@ -137,10 +137,10 @@
       </tr>
       <tr>
         <td>DDC</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRole.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMedicoPrescrittore.page.md}}</td>
         <td>Risorsa che raccoglie i ruoli e le qualifiche di un determinato medico prescrittore</td>
         <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}</td>
       </tr>
       <tr>
         <td>PI</td>

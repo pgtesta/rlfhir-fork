@@ -15,7 +15,7 @@
     },
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLPractitionerRole"
+      "code": "RLPractitionerRoleMedicoPrescrittore"
     }
   ],
   "fhirVersion": "4.0.1",

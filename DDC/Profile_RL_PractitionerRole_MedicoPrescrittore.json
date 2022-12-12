@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "RLPractitionerRole",
+  "id": "RLPractitionerRoleMedicoPrescrittore",
   "meta": {
     "lastUpdated": "2022-09-23T16:45:52.0778712+00:00"
   },
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole",
-  "name": "RLPractitionerRole",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
+  "name": "RLPractitionerRoleMedicoPrescrittore",
   "status": "active",
   "experimental": false,
   "description": "Risorsa che raccoglie i ruoli e le qualifiche di un determinato medico prescrittore",
@@ -139,13 +139,13 @@
         "id": "PractitionerRole.practitioner",
         "path": "PractitionerRole.practitioner",
         "short": "Reference al medico prescrittore",
-        "definition": "Reference al medico prescrittore mappato nel profilo RLPractitioner.",
+        "definition": "Reference al medico prescrittore mappato nel profilo RLPractitionerMedicoPrescrittore.",
         "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitioner"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
             ]
           }
         ]
