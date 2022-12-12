@@ -187,7 +187,7 @@
       <tr>
         <td>PI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLGoalObiettiviSalute.page.md}}</td>
-        <td>Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PAI)</td>
+        <td>Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI)</td>
         <td><a href="http://hl7.org/fhir/R4/goal.html">Goal</a></td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute}}</td>
       </tr>

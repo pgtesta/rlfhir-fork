@@ -1,25 +1,15 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "RLCarePlanVersionePAI",
-  "meta": {
-    "lastUpdated": "2022-09-23T14:36:03.6198216+00:00"
-  },
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-  "name": "RLCarePlanVersionePAI",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneDataPresaInCarico",
+  "name": "RLProcedurePrestazioneDataPresaInCarico",
   "status": "draft",
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "PI"
-    }
-  ],
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "CarePlan"
+      "expression": "Procedure"
     }
   ],
   "type": "Extension",
@@ -30,14 +20,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneDataPresaInCarico"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "unsignedInt"
+            "code": "dateTime"
           }
         ]
       }

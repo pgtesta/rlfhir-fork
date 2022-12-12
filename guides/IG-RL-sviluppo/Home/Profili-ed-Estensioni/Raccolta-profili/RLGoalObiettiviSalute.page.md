@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Goal](http://hl7.org/fhir/R4/goal.html) che descrive gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PAI). Gli obiettivi di salute sono definiti dal case manager tre le seguenti opzioni:
+Profilo declinato a partire dalla risorsa standard FHIR [Goal](http://hl7.org/fhir/R4/goal.html) che descrive gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI). Gli obiettivi di salute sono definiti dal case manager tre le seguenti opzioni:
 -	Controllo episodi di riacutizzazione
 -	Mantenimento dell'autonomia
 -	Mantenimento del corretto stile di vita

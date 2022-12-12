@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2022-12-05T10:45:00.7684139+00:00"
+    "lastUpdated": "2022-12-06T10:34:08.2590591+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -11,7 +11,7 @@
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "PAI"
+      "code": "PI"
     }
   ],
   "fhirVersion": "4.0.1",
@@ -183,13 +183,13 @@
           "rules": "open"
         },
         "short": "il campo contiene quattro riferimenti: allergie del paziente, esito della valutazione del paziente, stile di vita del paziente ed esenzioni relative al cittadino",
-        "definition": "Reference ai profili: RLAllergyIntolleranceAllergie contenente i dettagli delle allergie, RLMeasureEsitoValutazione contenente i dettagli delle valutazione del paziente, RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, RLCoverageEsenzione contenente le esenzioni relative al cittadino",
+        "definition": "Reference ai profili RLAllergyIntolleranceAllergie contenente i dettagli delle allergie, RLObservationEsitoValutazione contenente gli esisti delle valutazioni effettuate dal paziente, RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, RLCoverageEsenzione contenente le esenzioni relative al cittadino",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntolleranceAllergie",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureEsitoValutazione",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni"
             ]
@@ -217,13 +217,13 @@
         "path": "CarePlan.supportingInfo",
         "sliceName": "EsitoValutazione",
         "short": "Esito della valutazione del paziente",
-        "definition": "Reference ai profilo RLMeasureEsitoValutazione contente lo score di una determinata valutazione del paziente",
+        "definition": "Reference al profilo RLObservationEsitoValutazione contenente lo score di una determinata valutazione del paziente",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureEsitoValutazione"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
             ]
           }
         ]

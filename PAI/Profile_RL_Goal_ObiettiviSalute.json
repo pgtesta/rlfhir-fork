@@ -7,11 +7,11 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
   "name": "RLGoalObiettiviSalute",
   "status": "draft",
-  "description": "Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PAI).",
+  "description": "Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI).",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "PAI"
+      "code": "PI"
     }
   ],
   "fhirVersion": "4.0.1",

@@ -1,0 +1,135 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
+  "name": "RLObservationEsitoValutazione",
+  "status": "draft",
+  "description": "Profilo volto a descrivere l’esito della valutazione al quale il paziente è stato sottoposto.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato della valutazione",
+        "definition": "Valore fisso su \"registered\"",
+        "fixedCode": "registered"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Codifica della valutazione al quale il paziente è stato sottoposto"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "short": "Nome della valutazione specifica al quale il paziente è stato sottoposto",
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Paziente sottoposto alla valutazione",
+        "definition": "Reference alla risorsa RLPatientCittadino",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Data e ora dell'ultima modifica",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Profilo del professionista sanitario che ha effettualto la valutazione",
+        "definition": "Reference al profilo RLPractionerRole del professionista sanitario che compila la valutazione",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Score della scheda Triage",
+        "definition": "Valore numerico compreso tra 0 e 14",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto. Attualmente è disponibile la scheda Triage",
+        "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "short": "Dettaglio dell'esisto della scheda HomeCare",
+        "definition": "Questo campo viene valorizzato solo se è stata effettuata la valutazione MD di secondo livello",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "short": "Codifica dei risultati delle elaborazioni PVC e PHP",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.component.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "short": "Descrizione del risultato dell'elaborazioe PVC o PHC"
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Contenuto informativo del risultato",
+        "definition": "In base alla tipologia di risultato relativo all'indicatore della sezione PVC o PHP i possibili datatype sono: \r\nvalueQuantity (Quantity)\r\nvalueCodableConcept (CodableConcept) \r\nvalueString (string) \r\nvalueBoolean (boolean) \r\nvalueInteger (integer)\r\nvalueRange (Range) \r\nvalueRatio (Ratio)\r\nvalueSampledData (SampledData)\r\nvalueTime (time) \r\nvalueDateTime (dateTime) \r\nvaluePeriod (Periond)",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.component.referenceRange",
+        "path": "Observation.component.referenceRange",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+      }
+    ]
+  }
+}

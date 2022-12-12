@@ -30,7 +30,6 @@
         "id": "Patient.extension:cittadinanza",
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
-        "short": "Cittadinanza del paziente",
         "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
@@ -55,7 +54,6 @@
         "id": "Patient.extension:titoloDiStudio",
         "path": "Patient.extension",
         "sliceName": "titoloDiStudio",
-        "short": "Titolo di studio del paziente",
         "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
@@ -79,7 +77,6 @@
         "id": "Patient.extension:posizioneDellaProfessione",
         "path": "Patient.extension",
         "sliceName": "posizioneDellaProfessione",
-        "short": "Posizione della professione del paziente",
         "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
@@ -103,7 +100,6 @@
         "id": "Patient.extension:situazionePensionistica",
         "path": "Patient.extension",
         "sliceName": "situazionePensionistica",
-        "short": "Situazione pensionistica del paziente",
         "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
@@ -127,7 +123,6 @@
         "id": "Patient.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
         "path": "Patient.extension",
         "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
-        "short": "TEAM numero identificazione istituzione competente",
         "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
@@ -257,6 +252,20 @@
         "id": "Patient.maritalStatus.coding.display",
         "path": "Patient.maritalStatus.coding.display",
         "short": "Descrizione dello stato civile del paziente"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "short": "Riferimento al profilo del MMG/PLS che assiste il cittadino",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+            ]
+          }
+        ]
       }
     ]
   }
