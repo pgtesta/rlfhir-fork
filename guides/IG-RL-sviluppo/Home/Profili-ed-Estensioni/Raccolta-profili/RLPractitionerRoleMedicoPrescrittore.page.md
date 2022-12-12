@@ -1,6 +1,6 @@
 # RLPractitionerRoleMedicoPrescrittore
 
-- [RLPractitionerRoleMedicoPrescrittore](#rlpractitionerrole)
+- [RLPractitionerRoleMedicoPrescrittore](#rlpractitionerrolemedicoprescrittore)
   - [Descrizione](#descrizione)
   - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
