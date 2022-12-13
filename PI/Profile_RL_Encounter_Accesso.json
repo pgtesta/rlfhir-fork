@@ -12,6 +12,10 @@
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
       "code": "PI"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "C-DOM"
     }
   ],
   "fhirVersion": "4.0.1",
