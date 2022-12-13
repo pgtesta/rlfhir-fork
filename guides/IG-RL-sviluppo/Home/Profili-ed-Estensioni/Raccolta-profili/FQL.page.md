@@ -60,7 +60,6 @@ where type = 'Extension'
 select
 	Nome: name, 
 	Base: context.expression,
-	Tipo_variabile: differential.element.type.code,
 	Descrizione: description,
 	Link_simplifier: url
 order by
