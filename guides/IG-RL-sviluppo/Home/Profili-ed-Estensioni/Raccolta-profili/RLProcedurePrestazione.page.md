@@ -89,7 +89,7 @@ L’esito della ricerca permette di recuperare le informazioni relative alle pre
 
 A titolo esemplificativo, la chiamata: 
 
-   Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.identifier=000001&_include=Procedure:basedOn&_include=Procedure:subject
+    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.identifier=000001&_include=Procedure:basedOn&_include=Procedure:subject
 
 Restituirà tutte le prestazioni erogate afferenti alla pratica numero 000001.
 
