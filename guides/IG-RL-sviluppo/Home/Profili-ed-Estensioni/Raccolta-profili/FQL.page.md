@@ -26,9 +26,9 @@ select
 	Tag: keyword.code,
 	Nome_profilo: name, 
 	Risorsa_base: type,
-	Descrizione: description, 
+	Descrizione_profilo: description, 
 	Estensioni: differential.element.type.profile,
-	Canonical: url
+	Canonical_profilo: url
 order by
 	Tag, status, name
 ```
@@ -47,7 +47,7 @@ select
 	Base: context.expression,
 	Tipo_variabile: differential.element.type.code,
 	Descrizione: description,
-	Link_simplifier: url
+	Canonical: url
 order by
 	Tag, name
 ```
@@ -58,10 +58,10 @@ order by
 	StructureDefinition
 where type = 'Extension'
 select
-	Nome: name, 
+	Nome_extension: name, 
 	Base: context.expression,
-	Descrizione: description,
-	Link_simplifier: url
+	Descrizione_extension: description,
+	Canonical_extension: url
 order by
 	name
 ```
