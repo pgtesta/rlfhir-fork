@@ -54,7 +54,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataUpdate.json"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataUpdate"
             ]
           }
         ],
