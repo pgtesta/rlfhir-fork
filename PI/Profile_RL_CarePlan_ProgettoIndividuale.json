@@ -183,12 +183,12 @@
           "rules": "open"
         },
         "short": "il campo contiene quattro riferimenti: allergie del paziente, esito della valutazione del paziente, stile di vita del paziente ed esenzioni relative al cittadino",
-        "definition": "Reference ai profili RLAllergyIntolleranceAllergie contenente i dettagli delle allergie, RLObservationEsitoValutazione contenente gli esisti delle valutazioni effettuate dal paziente, RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, RLCoverageEsenzione contenente le esenzioni relative al cittadino",
+        "definition": "Reference ai profili RLAllergyIntoleranceAllergie contenente i dettagli delle allergie, RLObservationEsitoValutazione contenente gli esisti delle valutazioni effettuate dal paziente, RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, RLCoverageEsenzione contenente le esenzioni relative al cittadino",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntolleranceAllergie",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni"
@@ -201,13 +201,13 @@
         "path": "CarePlan.supportingInfo",
         "sliceName": "Allergie",
         "short": "Allergie del paziente",
-        "definition": "Reference ai profilo RLAllergyIntolleranceAllergie contenente i dettagli delle allergie del paziente",
+        "definition": "Reference ai profilo RLAllergyIntoleranceAllergie contenente i dettagli delle allergie del paziente",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntolleranceAllergie"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie"
             ]
           }
         ]

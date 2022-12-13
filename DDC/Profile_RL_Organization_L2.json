@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL2",
   "meta": {
-    "lastUpdated": "2022-12-05T08:52:01.0029933+00:00"
+    "lastUpdated": "2022-12-06T08:20:41.3459927+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
   "name": "RLOrganizationL2",
@@ -107,52 +107,32 @@
         ]
       },
       {
-        "id": "Organization.extension:AsstAmministrativa",
+        "id": "Organization.extension:AsstAfferenza",
         "path": "Organization.extension",
-        "sliceName": "AsstAmministrativa",
-        "short": "ASST alla quale il presidio afferisce amministrativamente",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_ASST_TERRITORIALE_LR22 della tabella LR22_l2",
+        "sliceName": "AsstAfferenza",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAmministrativa"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza"
             ]
           }
-        ]
+        ],
+        "isModifier": false
       },
       {
-        "id": "Organization.extension:AtsTerritoriale",
+        "id": "Organization.extension:AtsAfferenza",
         "path": "Organization.extension",
-        "sliceName": "AtsTerritoriale",
-        "short": "ATS alla quale il presidio afferisce territorialmente",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_ATS_TERRITORIALE_LR22 della tabella LR22_l2",
+        "sliceName": "AtsAfferenza",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsTerritoriale"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:AsstTerritoriale",
-        "path": "Organization.extension",
-        "sliceName": "AsstTerritoriale",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstTerritoriale"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsAfferenza"
             ]
           }
         ],
@@ -189,7 +169,7 @@
         "path": "Organization.type",
         "short": "Descrizione del tipo di presidio",
         "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "comment": "I valori della codifica sono rapressentati nella tabella 5.2 presente nel documento consultabile nella sezione 'Documentation' del profilo."
       },
       {
         "id": "Organization.type.coding",
@@ -227,7 +207,7 @@
         "path": "Organization.type.coding.code",
         "short": "Descrizione del tipo di struttura L2",
         "definition": "Stringa alfanumerica di al più 3 caratteri.",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
+        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2",
         "min": 1
       },
       {
