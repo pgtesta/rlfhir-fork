@@ -1,74 +1,80 @@
 {
-  "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza",
-  "name": "RLMessageHeaderControlloCoerenza",
-  "status": "draft",
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "MessageHeader",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "MessageHeader.event[x]",
-        "path": "MessageHeader.event[x]",
-        "short": "Codice identificativo della natura del messaggio",
-        "type": [
-          {
-            "code": "Coding"
-          }
-        ]
-      },
-      {
-        "id": "MessageHeader.event[x].code",
-        "path": "MessageHeader.event[x].code",
-        "short": "Codice identificativo della natura del messaggio",
-        "definition": "\"1\" - Evento di fallimento di controlli di coerenza"
-      },
-      {
-        "id": "MessageHeader.event[x].display",
-        "path": "MessageHeader.event[x].display",
-        "short": "Descrizione",
-        "definition": "\"1\" - Evento di fallimento di controlli di coerenza"
-      },
-      {
-        "id": "MessageHeader.destination",
-        "path": "MessageHeader.destination",
-        "short": "Applicativo destinatario"
-      },
-      {
-        "id": "MessageHeader.destination.name",
-        "path": "MessageHeader.destination.name",
-        "short": "Ente erogatore"
-      },
-      {
-        "id": "MessageHeader.destination.endpoint",
-        "path": "MessageHeader.destination.endpoint",
-        "short": "Endpoint applicativo destinatario"
-      },
-      {
-        "id": "MessageHeader.source",
-        "path": "MessageHeader.source",
-        "short": "Applicativo sorgente"
-      },
-      {
-        "id": "MessageHeader.source.name",
-        "path": "MessageHeader.source.name",
-        "short": "Server FHIR NPRI"
-      },
-      {
-        "id": "MessageHeader.source.endpoint",
-        "path": "MessageHeader.source.endpoint",
-        "short": "Endpoint applicativo sorgente"
-      },
-      {
-        "id": "MessageHeader.focus",
-        "path": "MessageHeader.focus",
-        "short": "Codifica risposta validazione",
-        "definition": "Reference al profilo RLOperationOutcome"
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza",
+	"name": "RLMessageHeaderControlloCoerenza",
+	"status": "draft",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "MessageHeader",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "MessageHeader.event[x]",
+				"path": "MessageHeader.event[x]",
+				"short": "Codice identificativo della natura del messaggio",
+				"type": [
+					{
+						"code": "Coding"
+					}
+				]
+			},
+			{
+				"id": "MessageHeader.event[x].code",
+				"path": "MessageHeader.event[x].code",
+				"short": "Codice identificativo della natura del messaggio",
+				"definition": "\"1\" - Evento di fallimento di controlli di coerenza"
+			},
+			{
+				"id": "MessageHeader.event[x].display",
+				"path": "MessageHeader.event[x].display",
+				"short": "Descrizione",
+				"definition": "\"1\" - Evento di fallimento di controlli di coerenza"
+			},
+			{
+				"id": "MessageHeader.destination",
+				"path": "MessageHeader.destination",
+				"short": "Applicativo destinatario"
+			},
+			{
+				"id": "MessageHeader.destination.name",
+				"path": "MessageHeader.destination.name",
+				"short": "Ente erogatore"
+			},
+			{
+				"id": "MessageHeader.destination.endpoint",
+				"path": "MessageHeader.destination.endpoint",
+				"short": "Endpoint applicativo destinatario"
+			},
+			{
+				"id": "MessageHeader.source",
+				"path": "MessageHeader.source",
+				"short": "Applicativo sorgente"
+			},
+			{
+				"id": "MessageHeader.source.name",
+				"path": "MessageHeader.source.name",
+				"short": "Server FHIR NPRI"
+			},
+			{
+				"id": "MessageHeader.source.endpoint",
+				"path": "MessageHeader.source.endpoint",
+				"short": "Endpoint applicativo sorgente"
+			},
+			{
+				"id": "MessageHeader.focus",
+				"path": "MessageHeader.focus",
+				"short": "Codifica risposta validazione",
+				"definition": "Reference al profilo RLOperationOutcome"
+			}
+		]
+	}
 }

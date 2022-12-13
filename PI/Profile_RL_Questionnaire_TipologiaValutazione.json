@@ -1,37 +1,43 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "RLQuestionnaireTipologiaValutazione",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione",
-  "name": "RLQuestionnaireTipologiaValutazione",
-  "status": "draft",
-  "description": "Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.",
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "Questionnaire",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Questionnaire.title",
-        "path": "Questionnaire.title",
-        "short": "Nome della valutazione",
-        "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "comment": "Le valutazioni previste attualmente sono: \r\n- SchedaTriage \r\n- Scheda SIAD"
-      },
-      {
-        "id": "Questionnaire.status",
-        "path": "Questionnaire.status",
-        "short": "Stato del nome della valutazione",
-        "definition": "Valore fisso su \"active\"",
-        "fixedCode": "active"
-      },
-      {
-        "id": "Questionnaire.item.item",
-        "path": "Questionnaire.item.item",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "RLQuestionnaireTipologiaValutazione",
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione",
+	"name": "RLQuestionnaireTipologiaValutazione",
+	"status": "draft",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"description": "Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Questionnaire",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Questionnaire.title",
+				"path": "Questionnaire.title",
+				"short": "Nome della valutazione",
+				"definition": "Stringa alfanumerica al più di 50 caratteri",
+				"comment": "Le valutazioni previste attualmente sono: \r\n- SchedaTriage \r\n- Scheda SIAD"
+			},
+			{
+				"id": "Questionnaire.status",
+				"path": "Questionnaire.status",
+				"short": "Stato del nome della valutazione",
+				"definition": "Valore fisso su \"active\"",
+				"fixedCode": "active"
+			},
+			{
+				"id": "Questionnaire.item.item",
+				"path": "Questionnaire.item.item",
+				"contentReference": "http://hl7.org/fhir/StructureDefinition/Questionnaire#Questionnaire.item"
+			}
+		]
+	}
 }

@@ -1,205 +1,211 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "UUID",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
-  "name": "RLProcedurePrestazione",
-  "status": "draft",
-  "description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.",
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "Procedure",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Procedure.extension",
-        "path": "Procedure.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
-        "id": "Procedure.extension:dataPresaInCarico",
-        "path": "Procedure.extension",
-        "sliceName": "dataPresaInCarico",
-        "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneDataPresaInCarico"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Procedure.extension:dataPresaInCarico.value[x]",
-        "path": "Procedure.extension.value[x]",
-        "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR"
-      },
-      {
-        "id": "Procedure.extension:modalitaErogazione",
-        "path": "Procedure.extension",
-        "sliceName": "modalitaErogazione",
-        "short": "Modalità di erogazione",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneModalitaErogazione"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Procedure.extension:modalitaErogazione.value[x]",
-        "path": "Procedure.extension.value[x]",
-        "short": "Modalità di erogazione",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Procedure.extension:modalitaErogazione.value[x].coding.code",
-        "path": "Procedure.extension.value[x].coding.code",
-        "short": "Codice della modalità di erogazione",
-        "definition": "Codice numerico di al più 3 caratteri",
-        "comment": "I codici della modalità di erogazione sono ricavate dal tracciato SIAD 3"
-      },
-      {
-        "id": "Procedure.extension:modalitaErogazione.value[x].coding.display",
-        "path": "Procedure.extension.value[x].coding.display",
-        "short": "Descrizione della modalità di erogazione",
-        "definition": "Stringa alfanumerica di al più di 50 caratteri",
-        "comment": "Le descrizioni della modalità di erogazione sono ricavate dal tracciato SIAD 3"
-      },
-      {
-        "id": "Procedure.basedOn",
-        "path": "Procedure.basedOn",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "profile",
-              "path": "reference"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Procedure.basedOn:RLServiceRequestServiziSocioSanitari",
-        "path": "Procedure.basedOn",
-        "sliceName": "RLServiceRequestServiziSocioSanitari",
-        "short": "Riferimento alla richiesta di attivazione delle cure domiciliari",
-        "definition": "Reference al profilo RLServiceRequestServiziSocioSanitari contente i dettagli della richiesta di attivazione delle cure domiciliari",
-        "comment": "Campo da compilare nel caso in cui la prestazione sia erogata in setting assistenziale domiciliare",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Procedure.basedOn:RLCarePlanProgettoIndividuale",
-        "path": "Procedure.basedOn",
-        "sliceName": "RLCarePlanProgettoIndividuale",
-        "short": "Riferimento al progetto individuale contentente la richiesta di attivazione delle cure domiciliari",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Procedure.status",
-        "path": "Procedure.status",
-        "short": "Stato della prestazione",
-        "definition": "Valore fisso su \"active\"",
-        "fixedCode": "active"
-      },
-      {
-        "id": "Procedure.code",
-        "path": "Procedure.code",
-        "short": "Codice e descrizione della prestazione"
-      },
-      {
-        "id": "Procedure.code.coding.code",
-        "path": "Procedure.code.coding.code",
-        "short": "Codice della prestazione",
-        "comment": "Da definire"
-      },
-      {
-        "id": "Procedure.code.coding.display",
-        "path": "Procedure.code.coding.display",
-        "short": "Descrizione della prestazione",
-        "definition": "Stringa alfanumerica di al più di 200 caratteri",
-        "comment": "Le descrizioni delle prestazioni sono ricavate dal tracciato SIAD 3"
-      },
-      {
-        "id": "Procedure.subject",
-        "path": "Procedure.subject",
-        "short": "Paziente al quale deve essere erogata la prestazione",
-        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Procedure.performed[x]",
-        "path": "Procedure.performed[x]",
-        "short": "Data (e ora, se disponibile) in cui la prestazione è stata erogata al paziente",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR. \r\nNel caso in cui fosse disponibile anche l'ora compilare con il formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "Procedure.performer.actor",
-        "path": "Procedure.performer.actor",
-        "short": "Reference alla tipologia di operatore che ha effettuato la prestazione",
-        "definition": "Reference ai profilo RLPractionerRoleOperatoreADI del operatore sanitario che ha effettuato la prestazione al paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
-            ]
-          }
-        ]
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "UUID",
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
+	"name": "RLProcedurePrestazione",
+	"status": "draft",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Procedure",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Procedure.extension",
+				"path": "Procedure.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 0
+			},
+			{
+				"id": "Procedure.extension:dataPresaInCarico",
+				"path": "Procedure.extension",
+				"sliceName": "dataPresaInCarico",
+				"short": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneDataPresaInCarico"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Procedure.extension:dataPresaInCarico.value[x]",
+				"path": "Procedure.extension.value[x]",
+				"short": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR"
+			},
+			{
+				"id": "Procedure.extension:modalitaErogazione",
+				"path": "Procedure.extension",
+				"sliceName": "modalitaErogazione",
+				"short": "Modalità di erogazione",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneModalitaErogazione"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Procedure.extension:modalitaErogazione.value[x]",
+				"path": "Procedure.extension.value[x]",
+				"short": "Modalità di erogazione",
+				"type": [
+					{
+						"code": "CodeableConcept"
+					}
+				]
+			},
+			{
+				"id": "Procedure.extension:modalitaErogazione.value[x].coding.code",
+				"path": "Procedure.extension.value[x].coding.code",
+				"short": "Codice della modalità di erogazione",
+				"definition": "Codice numerico di al più 3 caratteri",
+				"comment": "I codici della modalità di erogazione sono ricavate dal tracciato SIAD 3"
+			},
+			{
+				"id": "Procedure.extension:modalitaErogazione.value[x].coding.display",
+				"path": "Procedure.extension.value[x].coding.display",
+				"short": "Descrizione della modalità di erogazione",
+				"definition": "Stringa alfanumerica di al più di 50 caratteri",
+				"comment": "Le descrizioni della modalità di erogazione sono ricavate dal tracciato SIAD 3"
+			},
+			{
+				"id": "Procedure.basedOn",
+				"path": "Procedure.basedOn",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "profile",
+							"path": "reference"
+						}
+					],
+					"rules": "open"
+				}
+			},
+			{
+				"id": "Procedure.basedOn:RLServiceRequestServiziSocioSanitari",
+				"path": "Procedure.basedOn",
+				"sliceName": "RLServiceRequestServiziSocioSanitari",
+				"short": "Riferimento alla richiesta di attivazione delle cure domiciliari",
+				"definition": "Reference al profilo RLServiceRequestServiziSocioSanitari contente i dettagli della richiesta di attivazione delle cure domiciliari",
+				"comment": "Campo da compilare nel caso in cui la prestazione sia erogata in setting assistenziale domiciliare",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari"
+						]
+					}
+				]
+			},
+			{
+				"id": "Procedure.basedOn:RLCarePlanProgettoIndividuale",
+				"path": "Procedure.basedOn",
+				"sliceName": "RLCarePlanProgettoIndividuale",
+				"short": "Riferimento al progetto individuale contentente la richiesta di attivazione delle cure domiciliari",
+				"definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+						]
+					}
+				]
+			},
+			{
+				"id": "Procedure.status",
+				"path": "Procedure.status",
+				"short": "Stato della prestazione",
+				"definition": "Valore fisso su \"active\"",
+				"fixedCode": "active"
+			},
+			{
+				"id": "Procedure.code",
+				"path": "Procedure.code",
+				"short": "Codice e descrizione della prestazione"
+			},
+			{
+				"id": "Procedure.code.coding.code",
+				"path": "Procedure.code.coding.code",
+				"short": "Codice della prestazione",
+				"comment": "Da definire"
+			},
+			{
+				"id": "Procedure.code.coding.display",
+				"path": "Procedure.code.coding.display",
+				"short": "Descrizione della prestazione",
+				"definition": "Stringa alfanumerica di al più di 200 caratteri",
+				"comment": "Le descrizioni delle prestazioni sono ricavate dal tracciato SIAD 3"
+			},
+			{
+				"id": "Procedure.subject",
+				"path": "Procedure.subject",
+				"short": "Paziente al quale deve essere erogata la prestazione",
+				"definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+						]
+					}
+				]
+			},
+			{
+				"id": "Procedure.performed[x]",
+				"path": "Procedure.performed[x]",
+				"short": "Data (e ora, se disponibile) in cui la prestazione è stata erogata al paziente",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR. \r\nNel caso in cui fosse disponibile anche l'ora compilare con il formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+				"type": [
+					{
+						"code": "dateTime"
+					}
+				]
+			},
+			{
+				"id": "Procedure.performer.actor",
+				"path": "Procedure.performer.actor",
+				"short": "Reference alla tipologia di operatore che ha effettuato la prestazione",
+				"definition": "Reference ai profilo RLPractionerRoleOperatoreADI del operatore sanitario che ha effettuato la prestazione al paziente",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+						]
+					}
+				]
+			}
+		]
+	}
 }

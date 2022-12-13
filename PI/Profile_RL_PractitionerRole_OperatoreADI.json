@@ -1,37 +1,43 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "UUID",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI",
-  "name": "RLPractitionerRoleOperatoreADI",
-  "status": "draft",
-  "description": "Profilo contentente le tipologie di operatori ADI",
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "PractitionerRole",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "PractitionerRole.code",
-        "path": "PractitionerRole.code",
-        "short": "Codice e descrizione della tipologia di operatore ADI"
-      },
-      {
-        "id": "PractitionerRole.code.coding.code",
-        "path": "PractitionerRole.code.coding.code",
-        "short": "Codice della tipologia di operatore ADI",
-        "definition": "Valore numerico di al più 2 cifre",
-        "comment": "Le descrizioni della tipologia di operatore sono ricavate dal tracciato SIAD 3"
-      },
-      {
-        "id": "PractitionerRole.code.coding.display",
-        "path": "PractitionerRole.code.coding.display",
-        "short": "Descrizione della tipologia di operatore ADI",
-        "definition": "Stringa alfanumerica di al più 100 caratteri",
-        "comment": "Le descrizioni della tipologia di operatore sono ricavate dal tracciato SIAD 3"
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "UUID",
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI",
+	"name": "RLPractitionerRoleOperatoreADI",
+	"status": "draft",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"description": "Profilo contentente le tipologie di operatori ADI",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "PractitionerRole",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "PractitionerRole.code",
+				"path": "PractitionerRole.code",
+				"short": "Codice e descrizione della tipologia di operatore ADI"
+			},
+			{
+				"id": "PractitionerRole.code.coding.code",
+				"path": "PractitionerRole.code.coding.code",
+				"short": "Codice della tipologia di operatore ADI",
+				"definition": "Valore numerico di al più 2 cifre",
+				"comment": "Le descrizioni della tipologia di operatore sono ricavate dal tracciato SIAD 3"
+			},
+			{
+				"id": "PractitionerRole.code.coding.display",
+				"path": "PractitionerRole.code.coding.display",
+				"short": "Descrizione della tipologia di operatore ADI",
+				"definition": "Stringa alfanumerica di al più 100 caratteri",
+				"comment": "Le descrizioni della tipologia di operatore sono ricavate dal tracciato SIAD 3"
+			}
+		]
+	}
 }

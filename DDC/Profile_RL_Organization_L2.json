@@ -1,462 +1,466 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "RLOrganizationL2",
-  "meta": {
-    "lastUpdated": "2022-12-06T08:20:41.3459927+00:00"
-  },
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
-  "name": "RLOrganizationL2",
-  "status": "active",
-  "experimental": false,
-  "description": "Profilo che descrive un’unità d’offerta identificata univocamente da un codice L2",
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "DDC"
-    }
-  ],
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "Organization",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Organization.extension",
-        "path": "Organization.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 2
-      },
-      {
-        "id": "Organization.extension:DataInizioValidita",
-        "path": "Organization.extension",
-        "sliceName": "DataInizioValidita",
-        "short": "Data di inizio della validità di esercizio del presidio",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA della tabella LR22_l2",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:DataFineValidita",
-        "path": "Organization.extension",
-        "sliceName": "DataFineValidita",
-        "short": "Data di fine della validità di esercizio del presidio",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_FINE_VALIDITA della tabella LR22_l2",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:DataInsert",
-        "path": "Organization.extension",
-        "sliceName": "DataInsert",
-        "short": "Data di inserimento del record",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INSERT della tabella V_LIVELLO_2_DDC",
-        "min": 1,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:DataUpdate",
-        "path": "Organization.extension",
-        "sliceName": "DataUpdate",
-        "short": "Data di aggiornamento del record",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_UPDATE della tabella V_LIVELLO_2_DDC",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:AsstAfferenza",
-        "path": "Organization.extension",
-        "sliceName": "AsstAfferenza",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Organization.extension:AtsAfferenza",
-        "path": "Organization.extension",
-        "sliceName": "AtsAfferenza",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsAfferenza"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Organization.identifier",
-        "path": "Organization.identifier",
-        "short": "Codice ministeriale del presidio",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella LR22_L2"
-      },
-      {
-        "id": "Organization.identifier.system",
-        "path": "Organization.identifier.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
-      },
-      {
-        "id": "Organization.identifier.value",
-        "path": "Organization.identifier.value",
-        "short": "Codice di livello 2 del presidio",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella LR22_L2",
-        "min": 1,
-        "maxLength": 8,
-        "binding": {
-          "strength": "required",
-          "description": "Struttura L2"
-        }
-      },
-      {
-        "id": "Organization.type",
-        "path": "Organization.type",
-        "short": "Descrizione del tipo di presidio",
-        "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "I valori della codifica sono rapressentati nella tabella 5.2 presente nel documento consultabile nella sezione 'Documentation' del profilo."
-      },
-      {
-        "id": "Organization.type.coding",
-        "path": "Organization.type.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Organization.type.coding.system",
-        "path": "Organization.type.coding.system",
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
-      },
-      {
-        "id": "Organization.type.coding:TipoPresidio",
-        "path": "Organization.type.coding",
-        "sliceName": "TipoPresidio",
-        "short": "Descrizione del tipo di presidio",
-        "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2"
-      },
-      {
-        "id": "Organization.type.coding:TipoPresidio.system",
-        "path": "Organization.type.coding.system",
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
-      },
-      {
-        "id": "Organization.type.coding:TipoPresidio.code",
-        "path": "Organization.type.coding.code",
-        "short": "Descrizione del tipo di struttura L2",
-        "definition": "Stringa alfanumerica di al più 3 caratteri.",
-        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2",
-        "min": 1
-      },
-      {
-        "id": "Organization.name",
-        "path": "Organization.name",
-        "short": "Denominazione del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_LIVELLO_2 della tabella LR22_l2",
-        "min": 1,
-        "maxLength": 1000
-      },
-      {
-        "id": "Organization.telecom",
-        "path": "Organization.telecom",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "system"
-            }
-          ],
-          "rules": "open"
-        },
-        "short": "Contatti del presidio",
-        "definition": "Telefono, mail, fax ed url del sito internet"
-      },
-      {
-        "id": "Organization.telecom.system",
-        "path": "Organization.telecom.system",
-        "short": "phone | email | fax | url",
-        "definition": "Ogni ripetizione conterrà un valore tra phone | email | fax | url",
-        "min": 1
-      },
-      {
-        "id": "Organization.telecom:phone",
-        "path": "Organization.telecom",
-        "sliceName": "phone",
-        "short": "Numero di telefono del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato sono i campi NR_TEL1 e NR_TEL2  della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:phone.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "phone"
-      },
-      {
-        "id": "Organization.telecom:phone.value",
-        "path": "Organization.telecom.value",
-        "short": "Numero di telefono del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato sono i campi NR_TEL1 e NR_TEL2  della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:mail",
-        "path": "Organization.telecom",
-        "sliceName": "mail",
-        "short": "Indirizzo mail del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_MAIL della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:mail.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "mail"
-      },
-      {
-        "id": "Organization.telecom:mail.value",
-        "path": "Organization.telecom.value",
-        "short": "Indirizzo mail del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_MAIL della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:fax",
-        "path": "Organization.telecom",
-        "sliceName": "fax",
-        "short": "Numero di fax del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo NR_FAX della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:fax.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "fax"
-      },
-      {
-        "id": "Organization.telecom:fax.value",
-        "path": "Organization.telecom.value",
-        "short": "Numero di fax del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo NR_FAX della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:url",
-        "path": "Organization.telecom",
-        "sliceName": "url",
-        "short": "Indirizzo della pagina web del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_SITO_WEB della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.telecom:url.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "url"
-      },
-      {
-        "id": "Organization.telecom:url.value",
-        "path": "Organization.telecom.value",
-        "short": "Indirizzo della pagina web del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_SITO_WEB della tabella V_LIVELLO_2_DDC"
-      },
-      {
-        "id": "Organization.address",
-        "path": "Organization.address",
-        "short": "Indirizzo della struttura L2",
-        "definition": "Indirizzo della struttura L2"
-      },
-      {
-        "id": "Organization.address.extension",
-        "path": "Organization.address.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
-        "id": "Organization.address.extension:DistrettoCode",
-        "path": "Organization.address.extension",
-        "sliceName": "DistrettoCode",
-        "short": "Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_DISTRETTO_LR22 della tabella LR22_l2",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.address.extension:IstatCode",
-        "path": "Organization.address.extension",
-        "sliceName": "IstatCode",
-        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_COMUNE_ISTAT della tabella LR22_l2",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.address.use",
-        "path": "Organization.address.use",
-        "short": "Da valorizzare con 'work'",
-        "definition": "Valore costante secondo lo standard FHIR",
-        "fixedCode": "work"
-      },
-      {
-        "id": "Organization.address.type",
-        "path": "Organization.address.type",
-        "short": "Da valorizzare con 'physical'",
-        "definition": "Valore costante secondo lo standard FHIR",
-        "fixedCode": "physical"
-      },
-      {
-        "id": "Organization.address.line",
-        "path": "Organization.address.line",
-        "short": "Indirizzo e numero civico dell'azienda",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato sono i campi DS_INDIRIZZO_NORM della tabella LR22_l2"
-      },
-      {
-        "id": "Organization.address.district",
-        "path": "Organization.address.district",
-        "short": "Sigla della provincia in cui l'ente è ubicato",
-        "definition": "Stringa alfabetica di due caratteri",
-        "comment": "La fonte del dato è il campo CD_SIGLA_PROVINCIA della tabella V_LIVELLO_2_DDC",
-        "maxLength": 2,
-        "binding": {
-          "strength": "example",
-          "description": "Sigla della provincia"
-        }
-      },
-      {
-        "id": "Organization.address.postalCode",
-        "path": "Organization.address.postalCode",
-        "short": "Codice di avviamento postale (CAP) dell'indirizzo",
-        "definition": "Stringa numerica di 5 cifre",
-        "comment": "La fonte del dato è il campo CD_CAP_NORM della tabella LR22_l2"
-      },
-      {
-        "id": "Organization.partOf",
-        "path": "Organization.partOf",
-        "short": "Reference all'ente L1 di appartenenza",
-        "definition": "Reference al profilo Organization L1",
-        "type": [
-          {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
-                "valueBoolean": true
-              }
-            ],
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.partOf.type",
-        "path": "Organization.partOf.type",
-        "short": "Da valorizzare con 'organization'",
-        "definition": "Valore costante secondo lo standard FHIR",
-        "fixedUri": "Organization"
-      },
-      {
-        "id": "Organization.partOf.identifier",
-        "path": "Organization.partOf.identifier",
-        "short": "identificativo dell'ente L1 di appartentenza"
-      },
-      {
-        "id": "Organization.partOf.identifier.system",
-        "path": "Organization.partOf.identifier.system",
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
-      },
-      {
-        "id": "Organization.partOf.identifier.value",
-        "path": "Organization.partOf.identifier.value",
-        "short": "identificativo dell'ente L1 di appartentenza"
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "RLOrganizationL2",
+	"meta": {
+		"lastUpdated": "2022-12-06T08:20:41.3459927+00:00"
+	},
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
+	"name": "RLOrganizationL2",
+	"status": "active",
+	"experimental": false,
+	"description": "Profilo che descrive un’unità d’offerta identificata univocamente da un codice L2",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "DDC"
+		},
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Organization",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Organization.extension",
+				"path": "Organization.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 2
+			},
+			{
+				"id": "Organization.extension:DataInizioValidita",
+				"path": "Organization.extension",
+				"sliceName": "DataInizioValidita",
+				"short": "Data di inizio della validità di esercizio del presidio",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA della tabella LR22_l2",
+				"min": 1,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.extension:DataFineValidita",
+				"path": "Organization.extension",
+				"sliceName": "DataFineValidita",
+				"short": "Data di fine della validità di esercizio del presidio",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"comment": "La fonte del dato è il campo DT_FINE_VALIDITA della tabella LR22_l2",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.extension:DataInsert",
+				"path": "Organization.extension",
+				"sliceName": "DataInsert",
+				"short": "Data di inserimento del record",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"comment": "La fonte del dato è il campo DT_INSERT della tabella V_LIVELLO_2_DDC",
+				"min": 1,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.extension:DataUpdate",
+				"path": "Organization.extension",
+				"sliceName": "DataUpdate",
+				"short": "Data di aggiornamento del record",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"comment": "La fonte del dato è il campo DT_UPDATE della tabella V_LIVELLO_2_DDC",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.extension:AsstAfferenza",
+				"path": "Organization.extension",
+				"sliceName": "AsstAfferenza",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Organization.extension:AtsAfferenza",
+				"path": "Organization.extension",
+				"sliceName": "AtsAfferenza",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsAfferenza"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Organization.identifier",
+				"path": "Organization.identifier",
+				"short": "Codice ministeriale del presidio",
+				"definition": "Stringa numerica di 6 cifre",
+				"comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella LR22_L2"
+			},
+			{
+				"id": "Organization.identifier.system",
+				"path": "Organization.identifier.system",
+				"min": 1,
+				"fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+			},
+			{
+				"id": "Organization.identifier.value",
+				"path": "Organization.identifier.value",
+				"short": "Codice di livello 2 del presidio",
+				"definition": "Stringa numerica di 6 cifre",
+				"comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella LR22_L2",
+				"min": 1,
+				"maxLength": 8,
+				"binding": {
+					"strength": "required",
+					"description": "Struttura L2"
+				}
+			},
+			{
+				"id": "Organization.type",
+				"path": "Organization.type",
+				"short": "Descrizione del tipo di presidio",
+				"definition": "Stringa alfabetica di 3 caratteri",
+				"comment": "I valori della codifica sono rapressentati nella tabella 5.2 presente nel documento consultabile nella sezione 'Documentation' del profilo."
+			},
+			{
+				"id": "Organization.type.coding",
+				"path": "Organization.type.coding",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "code"
+						}
+					],
+					"rules": "open"
+				}
+			},
+			{
+				"id": "Organization.type.coding.system",
+				"path": "Organization.type.coding.system",
+				"fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+			},
+			{
+				"id": "Organization.type.coding:TipoPresidio",
+				"path": "Organization.type.coding",
+				"sliceName": "TipoPresidio",
+				"short": "Descrizione del tipo di presidio",
+				"definition": "Stringa alfabetica di 3 caratteri",
+				"comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2"
+			},
+			{
+				"id": "Organization.type.coding:TipoPresidio.system",
+				"path": "Organization.type.coding.system",
+				"fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+			},
+			{
+				"id": "Organization.type.coding:TipoPresidio.code",
+				"path": "Organization.type.coding.code",
+				"short": "Descrizione del tipo di struttura L2",
+				"definition": "Stringa alfanumerica di al più 3 caratteri.",
+				"comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2",
+				"min": 1
+			},
+			{
+				"id": "Organization.name",
+				"path": "Organization.name",
+				"short": "Denominazione del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo DS_LIVELLO_2 della tabella LR22_l2",
+				"min": 1,
+				"maxLength": 1000
+			},
+			{
+				"id": "Organization.telecom",
+				"path": "Organization.telecom",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "system"
+						}
+					],
+					"rules": "open"
+				},
+				"short": "Contatti del presidio",
+				"definition": "Telefono, mail, fax ed url del sito internet"
+			},
+			{
+				"id": "Organization.telecom.system",
+				"path": "Organization.telecom.system",
+				"short": "phone | email | fax | url",
+				"definition": "Ogni ripetizione conterrà un valore tra phone | email | fax | url",
+				"min": 1
+			},
+			{
+				"id": "Organization.telecom:phone",
+				"path": "Organization.telecom",
+				"sliceName": "phone",
+				"short": "Numero di telefono del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato sono i campi NR_TEL1 e NR_TEL2  della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:phone.system",
+				"path": "Organization.telecom.system",
+				"fixedCode": "phone"
+			},
+			{
+				"id": "Organization.telecom:phone.value",
+				"path": "Organization.telecom.value",
+				"short": "Numero di telefono del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato sono i campi NR_TEL1 e NR_TEL2  della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:mail",
+				"path": "Organization.telecom",
+				"sliceName": "mail",
+				"short": "Indirizzo mail del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo DS_MAIL della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:mail.system",
+				"path": "Organization.telecom.system",
+				"fixedCode": "mail"
+			},
+			{
+				"id": "Organization.telecom:mail.value",
+				"path": "Organization.telecom.value",
+				"short": "Indirizzo mail del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo DS_MAIL della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:fax",
+				"path": "Organization.telecom",
+				"sliceName": "fax",
+				"short": "Numero di fax del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo NR_FAX della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:fax.system",
+				"path": "Organization.telecom.system",
+				"fixedCode": "fax"
+			},
+			{
+				"id": "Organization.telecom:fax.value",
+				"path": "Organization.telecom.value",
+				"short": "Numero di fax del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo NR_FAX della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:url",
+				"path": "Organization.telecom",
+				"sliceName": "url",
+				"short": "Indirizzo della pagina web del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo DS_SITO_WEB della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.telecom:url.system",
+				"path": "Organization.telecom.system",
+				"fixedCode": "url"
+			},
+			{
+				"id": "Organization.telecom:url.value",
+				"path": "Organization.telecom.value",
+				"short": "Indirizzo della pagina web del presidio",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato è il campo DS_SITO_WEB della tabella V_LIVELLO_2_DDC"
+			},
+			{
+				"id": "Organization.address",
+				"path": "Organization.address",
+				"short": "Indirizzo della struttura L2",
+				"definition": "Indirizzo della struttura L2"
+			},
+			{
+				"id": "Organization.address.extension",
+				"path": "Organization.address.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 0
+			},
+			{
+				"id": "Organization.address.extension:DistrettoCode",
+				"path": "Organization.address.extension",
+				"sliceName": "DistrettoCode",
+				"short": "Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo",
+				"definition": "Stringa numerica di 6 cifre",
+				"comment": "La fonte del dato è il campo CD_DISTRETTO_LR22 della tabella LR22_l2",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.address.extension:IstatCode",
+				"path": "Organization.address.extension",
+				"sliceName": "IstatCode",
+				"short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
+				"definition": "Stringa numerica di 6 cifre",
+				"comment": "La fonte del dato è il campo CD_COMUNE_ISTAT della tabella LR22_l2",
+				"min": 0,
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.address.use",
+				"path": "Organization.address.use",
+				"short": "Da valorizzare con 'work'",
+				"definition": "Valore costante secondo lo standard FHIR",
+				"fixedCode": "work"
+			},
+			{
+				"id": "Organization.address.type",
+				"path": "Organization.address.type",
+				"short": "Da valorizzare con 'physical'",
+				"definition": "Valore costante secondo lo standard FHIR",
+				"fixedCode": "physical"
+			},
+			{
+				"id": "Organization.address.line",
+				"path": "Organization.address.line",
+				"short": "Indirizzo e numero civico dell'azienda",
+				"definition": "Stringa alfanumerica massimo di 1000 caratteri",
+				"comment": "La fonte del dato sono i campi DS_INDIRIZZO_NORM della tabella LR22_l2"
+			},
+			{
+				"id": "Organization.address.district",
+				"path": "Organization.address.district",
+				"short": "Sigla della provincia in cui l'ente è ubicato",
+				"definition": "Stringa alfabetica di due caratteri",
+				"comment": "La fonte del dato è il campo CD_SIGLA_PROVINCIA della tabella V_LIVELLO_2_DDC",
+				"maxLength": 2,
+				"binding": {
+					"strength": "example",
+					"description": "Sigla della provincia"
+				}
+			},
+			{
+				"id": "Organization.address.postalCode",
+				"path": "Organization.address.postalCode",
+				"short": "Codice di avviamento postale (CAP) dell'indirizzo",
+				"definition": "Stringa numerica di 5 cifre",
+				"comment": "La fonte del dato è il campo CD_CAP_NORM della tabella LR22_l2"
+			},
+			{
+				"id": "Organization.partOf",
+				"path": "Organization.partOf",
+				"short": "Reference all'ente L1 di appartenenza",
+				"definition": "Reference al profilo Organization L1",
+				"type": [
+					{
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+								"valueBoolean": true
+							}
+						],
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+						]
+					}
+				]
+			},
+			{
+				"id": "Organization.partOf.type",
+				"path": "Organization.partOf.type",
+				"short": "Da valorizzare con 'organization'",
+				"definition": "Valore costante secondo lo standard FHIR",
+				"fixedUri": "Organization"
+			},
+			{
+				"id": "Organization.partOf.identifier",
+				"path": "Organization.partOf.identifier",
+				"short": "identificativo dell'ente L1 di appartentenza"
+			},
+			{
+				"id": "Organization.partOf.identifier.system",
+				"path": "Organization.partOf.identifier.system",
+				"fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+			},
+			{
+				"id": "Organization.partOf.identifier.value",
+				"path": "Organization.partOf.identifier.value",
+				"short": "identificativo dell'ente L1 di appartentenza"
+			}
+		]
+	}
 }

@@ -1,117 +1,121 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "RLPractitionerMedicoPrescrittore",
-  "meta": {
-    "lastUpdated": "2022-10-25T10:24:26.8255353+00:00"
-  },
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
-  "name": "RLPractitionerMedicoPrescrittore",
-  "status": "active",
-  "experimental": false,
-  "description": "Profilo che contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR.",
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "DDC"
-    }
-  ],
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "Practitioner",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "Practitioner",
-        "path": "Practitioner",
-        "comment": "Questa risorsa contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR, che comprenda le diverse tipologie di medici a cui è data facoltà di prescrivere prestazioni e farmaci dispensati dal SSR. L’elenco contiene anche i medici non più attivi da 6 mesi."
-      },
-      {
-        "id": "Practitioner.extension",
-        "path": "Practitioner.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
-        "id": "Practitioner.extension:DataUpdate",
-        "path": "Practitioner.extension",
-        "sliceName": "DataUpdate",
-        "short": "Data dell'ultima modifica del record",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_ULTV della tabella V_MEDICI_GDC_DDC",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Practitioner.extension:DataInsert",
-        "path": "Practitioner.extension",
-        "sliceName": "DataInsert",
-        "short": "Data di inserimento del record",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INSER della tabella V_MEDICI_GDC_DDC",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Practitioner.identifier",
-        "path": "Practitioner.identifier",
-        "short": "Codice fiscale del medico prescrittore",
-        "definition": "Stringa alfanumerica di 16 caratteri",
-        "comment": "La fonte del dato è il campo CD_FISCALE della tabella V_MEDICI_GDC_DDC",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Practitioner.name",
-        "path": "Practitioner.name",
-        "short": "Nominativo del medico prescrittore",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Practitioner.name.family",
-        "path": "Practitioner.name.family",
-        "short": "Cognome del medico prescrittore",
-        "definition": "Stringa alfanumerica di max 40 caratteri.",
-        "comment": "La fonte del dato è il campo DS_COGNOME della tabella V_MEDICI_GDC_DDC",
-        "min": 1
-      },
-      {
-        "id": "Practitioner.name.given",
-        "path": "Practitioner.name.given",
-        "short": "Nome del medico prescrittore",
-        "definition": "Stringa alfanumerica di max 40 caratteri.",
-        "comment": "La fonte del dato è il campo DS_NOME della tabella V_MEDICI_GDC_DDC",
-        "min": 1
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "RLPractitionerMedicoPrescrittore",
+	"meta": {
+		"lastUpdated": "2022-10-25T10:24:26.8255353+00:00"
+	},
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
+	"name": "RLPractitionerMedicoPrescrittore",
+	"status": "active",
+	"experimental": false,
+	"description": "Profilo che contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR.",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "DDC"
+		},
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "Practitioner",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "Practitioner",
+				"path": "Practitioner",
+				"comment": "Questa risorsa contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR, che comprenda le diverse tipologie di medici a cui è data facoltà di prescrivere prestazioni e farmaci dispensati dal SSR. L’elenco contiene anche i medici non più attivi da 6 mesi."
+			},
+			{
+				"id": "Practitioner.extension",
+				"path": "Practitioner.extension",
+				"slicing": {
+					"discriminator": [
+						{
+							"type": "value",
+							"path": "url"
+						}
+					],
+					"rules": "open"
+				},
+				"min": 0
+			},
+			{
+				"id": "Practitioner.extension:DataUpdate",
+				"path": "Practitioner.extension",
+				"sliceName": "DataUpdate",
+				"short": "Data dell'ultima modifica del record",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"comment": "La fonte del dato è il campo DT_ULTV della tabella V_MEDICI_GDC_DDC",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Practitioner.extension:DataInsert",
+				"path": "Practitioner.extension",
+				"sliceName": "DataInsert",
+				"short": "Data di inserimento del record",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+				"comment": "La fonte del dato è il campo DT_INSER della tabella V_MEDICI_GDC_DDC",
+				"min": 0,
+				"max": "1",
+				"type": [
+					{
+						"code": "Extension",
+						"profile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert"
+						]
+					}
+				],
+				"isModifier": false
+			},
+			{
+				"id": "Practitioner.identifier",
+				"path": "Practitioner.identifier",
+				"short": "Codice fiscale del medico prescrittore",
+				"definition": "Stringa alfanumerica di 16 caratteri",
+				"comment": "La fonte del dato è il campo CD_FISCALE della tabella V_MEDICI_GDC_DDC",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Practitioner.name",
+				"path": "Practitioner.name",
+				"short": "Nominativo del medico prescrittore",
+				"min": 1,
+				"max": "1"
+			},
+			{
+				"id": "Practitioner.name.family",
+				"path": "Practitioner.name.family",
+				"short": "Cognome del medico prescrittore",
+				"definition": "Stringa alfanumerica di max 40 caratteri.",
+				"comment": "La fonte del dato è il campo DS_COGNOME della tabella V_MEDICI_GDC_DDC",
+				"min": 1
+			},
+			{
+				"id": "Practitioner.name.given",
+				"path": "Practitioner.name.given",
+				"short": "Nome del medico prescrittore",
+				"definition": "Stringa alfanumerica di max 40 caratteri.",
+				"comment": "La fonte del dato è il campo DS_NOME della tabella V_MEDICI_GDC_DDC",
+				"min": 1
+			}
+		]
+	}
 }

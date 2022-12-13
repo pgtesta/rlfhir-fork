@@ -1,82 +1,88 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "UUID",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione",
-  "name": "RLServiceRequestRivalutazione",
-  "status": "draft",
-  "description": "Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare",
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
-  "type": "ServiceRequest",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-  "derivation": "constraint",
-  "differential": {
-    "element": [
-      {
-        "id": "ServiceRequest.identifier",
-        "path": "ServiceRequest.identifier",
-        "short": "Codice identificativo della richiesta di rivalutazione del paziente",
-        "definition": "{codiceL1}_{codiceL2}_{numeroPratica}_{progressivo a 6 cifre es.000001}"
-      },
-      {
-        "id": "ServiceRequest.basedOn",
-        "path": "ServiceRequest.basedOn",
-        "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ServiceRequest.requisition",
-        "path": "ServiceRequest.requisition",
-        "short": "Numero pratica del ricovero domiciliare"
-      },
-      {
-        "id": "ServiceRequest.status",
-        "path": "ServiceRequest.status",
-        "short": "Stato del ricovero domiciliare",
-        "definition": "Valore fisso su \"active\"",
-        "fixedCode": "active"
-      },
-      {
-        "id": "ServiceRequest.intent",
-        "path": "ServiceRequest.intent",
-        "short": "Intento della richesta",
-        "definition": "Valore fisso su \"proposal\"",
-        "fixedCode": "proposal"
-      },
-      {
-        "id": "ServiceRequest.subject",
-        "path": "ServiceRequest.subject",
-        "short": "Paziente al quale deve essere erogata la prestazione",
-        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ServiceRequest.occurrence[x]",
-        "path": "ServiceRequest.occurrence[x]",
-        "short": "Data (e ora, se disponibile) in cui è stata ichiesta la rivalutazione la rivalutazione del paziente",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR. \r\nNel caso in cui fosse disponibile anche l'ora compilare con il formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      }
-    ]
-  }
+	"resourceType": "StructureDefinition",
+	"id": "UUID",
+	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione",
+	"name": "RLServiceRequestRivalutazione",
+	"status": "draft",
+	"keyword": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+			"code": "C-DOM"
+		}
+	],
+	"description": "Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare",
+	"fhirVersion": "4.0.1",
+	"kind": "resource",
+	"abstract": false,
+	"type": "ServiceRequest",
+	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+	"derivation": "constraint",
+	"differential": {
+		"element": [
+			{
+				"id": "ServiceRequest.identifier",
+				"path": "ServiceRequest.identifier",
+				"short": "Codice identificativo della richiesta di rivalutazione del paziente",
+				"definition": "{codiceL1}_{codiceL2}_{numeroPratica}_{progressivo a 6 cifre es.000001}"
+			},
+			{
+				"id": "ServiceRequest.basedOn",
+				"path": "ServiceRequest.basedOn",
+				"short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
+				"definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+						]
+					}
+				]
+			},
+			{
+				"id": "ServiceRequest.requisition",
+				"path": "ServiceRequest.requisition",
+				"short": "Numero pratica del ricovero domiciliare"
+			},
+			{
+				"id": "ServiceRequest.status",
+				"path": "ServiceRequest.status",
+				"short": "Stato del ricovero domiciliare",
+				"definition": "Valore fisso su \"active\"",
+				"fixedCode": "active"
+			},
+			{
+				"id": "ServiceRequest.intent",
+				"path": "ServiceRequest.intent",
+				"short": "Intento della richesta",
+				"definition": "Valore fisso su \"proposal\"",
+				"fixedCode": "proposal"
+			},
+			{
+				"id": "ServiceRequest.subject",
+				"path": "ServiceRequest.subject",
+				"short": "Paziente al quale deve essere erogata la prestazione",
+				"definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+				"type": [
+					{
+						"code": "Reference",
+						"targetProfile": [
+							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+						]
+					}
+				]
+			},
+			{
+				"id": "ServiceRequest.occurrence[x]",
+				"path": "ServiceRequest.occurrence[x]",
+				"short": "Data (e ora, se disponibile) in cui è stata ichiesta la rivalutazione la rivalutazione del paziente",
+				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR. \r\nNel caso in cui fosse disponibile anche l'ora compilare con il formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+				"type": [
+					{
+						"code": "dateTime"
+					}
+				]
+			}
+		]
+	}
 }
