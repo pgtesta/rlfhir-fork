@@ -1,4 +1,5 @@
 # Profili
+<!--
 @```
 from
 	StructureDefinition
@@ -11,6 +12,22 @@ select
 	Riferimenti: differential.element.type.targetProfile,
 	Estensioni: differential.element.type.profile,
 	Descrizione: description,
+	Canonical: url
+order by
+	Tag, status, name
+```
+-->
+
+@```
+from
+	StructureDefinition
+where kind = 'resource'
+select
+	Tag: keyword.code,
+	Nome_profilo: name, 
+	Risorsa_base: type,
+	Descrizione: description, 
+	Estensioni: differential.element.type.profile,
 	Canonical: url
 order by
 	Tag, status, name
