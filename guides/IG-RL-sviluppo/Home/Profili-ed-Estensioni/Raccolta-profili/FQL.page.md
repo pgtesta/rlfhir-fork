@@ -34,6 +34,7 @@ order by
 ```
 
 # Estensioni 
+<!--
 @```
     from
 	StructureDefinition
@@ -48,5 +49,20 @@ select
 	Descrizione: description,
 	Link_simplifier: url
 order by
-	Tag, status, name
+	Tag, name
+```
+-->
+
+@```
+    from
+	StructureDefinition
+where type = 'Extension'
+select
+	Nome: name, 
+	Base: context.expression,
+	Tipo_variabile: differential.element.type.code,
+	Descrizione: description,
+	Link_simplifier: url
+order by
+	name
 ```
