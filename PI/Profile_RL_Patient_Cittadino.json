@@ -1,282 +1,282 @@
 {
-	"resourceType": "StructureDefinition",
-	"id": "RLPatientCittadino",
-	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino",
-	"name": "RLPatientCittadino",
-	"status": "draft",
-	"keyword": [
-		{
-			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-			"code": "PI"
-		},
-		{
-			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-			"code": "C-DOM"
-		}
-	],
-	"fhirVersion": "4.0.1",
-	"kind": "resource",
-	"abstract": false,
-	"type": "Patient",
-	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
-	"derivation": "constraint",
-	"differential": {
-		"element": [
-			{
-				"id": "Patient.extension",
-				"path": "Patient.extension",
-				"slicing": {
-					"discriminator": [
-						{
-							"type": "value",
-							"path": "url"
-						}
-					],
-					"rules": "open"
-				},
-				"min": 0
-			},
-			{
-				"id": "Patient.extension:cittadinanza",
-				"path": "Patient.extension",
-				"sliceName": "cittadinanza",
-				"comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Patient.extension:cittadinanza.value[x]",
-				"path": "Patient.extension.value[x]",
-				"short": "Codice che rappresenta la cittadinanza del paziente",
-				"definition": "Collegamento al sito ISTAT",
-				"comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
-			},
-			{
-				"id": "Patient.extension:titoloDiStudio",
-				"path": "Patient.extension",
-				"sliceName": "titoloDiStudio",
-				"comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Patient.extension:titoloDiStudio.value[x]",
-				"path": "Patient.extension.value[x]",
-				"short": "Codice che rappresenta il titolo di studio del paziente",
-				"comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
-			},
-			{
-				"id": "Patient.extension:posizioneDellaProfessione",
-				"path": "Patient.extension",
-				"sliceName": "posizioneDellaProfessione",
-				"comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Patient.extension:posizioneDellaProfessione.value[x]",
-				"path": "Patient.extension.value[x]",
-				"short": "Codice che rappresenta la posizione della professione del paziente",
-				"comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
-			},
-			{
-				"id": "Patient.extension:situazionePensionistica",
-				"path": "Patient.extension",
-				"sliceName": "situazionePensionistica",
-				"comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Patient.extension:situazionePensionistica.value[x]",
-				"path": "Patient.extension.value[x]",
-				"short": "Codice che rappresenta la situazione pensionistica del paziente",
-				"comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
-			},
-			{
-				"id": "Patient.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
-				"path": "Patient.extension",
-				"sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
-				"comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Patient.identifier",
-				"path": "Patient.identifier",
-				"slicing": {
-					"discriminator": [
-						{
-							"type": "type",
-							"path": "$this"
-						}
-					],
-					"rules": "open"
-				},
-				"comment": "NAR"
-			},
-			{
-				"id": "Patient.identifier:CF",
-				"path": "Patient.identifier",
-				"sliceName": "CF",
-				"short": "Codice fiscale del paziente"
-			},
-			{
-				"id": "Patient.identifier:CF.value",
-				"path": "Patient.identifier.value",
-				"short": "Codice fiscale del paziente"
-			},
-			{
-				"id": "Patient.identifier:tesseraTEAM",
-				"path": "Patient.identifier",
-				"sliceName": "tesseraTEAM",
-				"short": "Numero identificazione tessera sanitaria europea",
-				"comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
-			},
-			{
-				"id": "Patient.identifier:tesseraTEAM.type",
-				"path": "Patient.identifier.type",
-				"short": "Nazione"
-			},
-			{
-				"id": "Patient.identifier:tesseraTEAM.value",
-				"path": "Patient.identifier.value",
-				"short": "Numero identificazione tessera sanitaria"
-			},
-			{
-				"id": "Patient.identifier:tesseraTEAM.period",
-				"path": "Patient.identifier.period",
-				"short": "Data scadenza tessera sanitaria"
-			},
-			{
-				"id": "Patient.active",
-				"path": "Patient.active",
-				"short": "Indicazione sullo stato del paziente"
-			},
-			{
-				"id": "Patient.name",
-				"path": "Patient.name",
-				"short": "Nominativo del paziente"
-			},
-			{
-				"id": "Patient.name.family",
-				"path": "Patient.name.family",
-				"short": "Cognome del paziente",
-				"definition": "Stringa alfabetica di massimo 40 caratteri",
-				"comment": "NAR"
-			},
-			{
-				"id": "Patient.name.given",
-				"path": "Patient.name.given",
-				"short": "Nome del paziente",
-				"definition": "Stringa alfabetica di massimo 40 caratteri"
-			},
-			{
-				"id": "Patient.gender",
-				"path": "Patient.gender",
-				"short": "Sesso del paziente",
-				"comment": "NAR"
-			},
-			{
-				"id": "Patient.birthDate",
-				"path": "Patient.birthDate",
-				"short": "Data di nascita del paziente",
-				"definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-				"comment": "NAR"
-			},
-			{
-				"id": "Patient.address.use",
-				"path": "Patient.address.use",
-				"short": "Tipologia di luogo di residenza o domicilio del paziente",
-				"definition": "La codifica delle informazioni è la seguente: \r\n1 - Propria Residenza\r\n2 - Domicilio presso familiari\r\n3 - Domicilio presso Casa Albergo\r\n4 - Domicilio presso Comunità per minori\r\n5 - Domicilio presso Comunità per disabili\r\n6 - Domicilio presso Case Alloggio\r\n9 - Altro"
-			},
-			{
-				"id": "Patient.address.country",
-				"path": "Patient.address.country",
-				"short": "Codice Stato Estero di residenza del paziente",
-				"definition": "Collegamento al sito ISTAT",
-				"comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
-			},
-			{
-				"id": "Patient.maritalStatus",
-				"path": "Patient.maritalStatus",
-				"short": "Stato civile del paziente",
-				"comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
-			},
-			{
-				"id": "Patient.maritalStatus.coding",
-				"path": "Patient.maritalStatus.coding",
-				"comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
-			},
-			{
-				"id": "Patient.maritalStatus.coding.code",
-				"path": "Patient.maritalStatus.coding.code",
-				"short": "Codice dello stato civile del paziente"
-			},
-			{
-				"id": "Patient.maritalStatus.coding.display",
-				"path": "Patient.maritalStatus.coding.display",
-				"short": "Descrizione dello stato civile del paziente"
-			},
-			{
-				"id": "Patient.generalPractitioner",
-				"path": "Patient.generalPractitioner",
-				"short": "Riferimento al profilo del MMG/PLS che assiste il cittadino",
-				"definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
-						]
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "StructureDefinition",
+  "id": "RLPatientCittadino",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino",
+  "name": "RLPatientCittadino",
+  "status": "draft",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "C-DOM"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Patient.extension:cittadinanza",
+        "path": "Patient.extension",
+        "sliceName": "cittadinanza",
+        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:cittadinanza.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice che rappresenta la cittadinanza del paziente",
+        "definition": "Collegamento al sito ISTAT",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio",
+        "path": "Patient.extension",
+        "sliceName": "titoloDiStudio",
+        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice che rappresenta il titolo di studio del paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione",
+        "path": "Patient.extension",
+        "sliceName": "posizioneDellaProfessione",
+        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice che rappresenta la posizione della professione del paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica",
+        "path": "Patient.extension",
+        "sliceName": "situazionePensionistica",
+        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice che rappresenta la situazione pensionistica del paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Patient.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
+        "path": "Patient.extension",
+        "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
+        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "NAR"
+      },
+      {
+        "id": "Patient.identifier:CF",
+        "path": "Patient.identifier",
+        "sliceName": "CF",
+        "short": "Codice fiscale del paziente"
+      },
+      {
+        "id": "Patient.identifier:CF.value",
+        "path": "Patient.identifier.value",
+        "short": "Codice fiscale del paziente"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM",
+        "path": "Patient.identifier",
+        "sliceName": "tesseraTEAM",
+        "short": "Numero identificazione tessera sanitaria europea",
+        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.type",
+        "path": "Patient.identifier.type",
+        "short": "Nazione"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.value",
+        "path": "Patient.identifier.value",
+        "short": "Numero identificazione tessera sanitaria"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.period",
+        "path": "Patient.identifier.period",
+        "short": "Data scadenza tessera sanitaria"
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "short": "Indicazione sullo stato del paziente"
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Nominativo del paziente"
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "short": "Cognome del paziente",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "comment": "NAR"
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "short": "Nome del paziente",
+        "definition": "Stringa alfabetica di massimo 40 caratteri"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "Sesso del paziente",
+        "comment": "NAR"
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "Data di nascita del paziente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "NAR"
+      },
+      {
+        "id": "Patient.address.use",
+        "path": "Patient.address.use",
+        "short": "Tipologia di luogo di residenza o domicilio del paziente",
+        "definition": "La codifica delle informazioni è la seguente: \r\n1 - Propria Residenza\r\n2 - Domicilio presso familiari\r\n3 - Domicilio presso Casa Albergo\r\n4 - Domicilio presso Comunità per minori\r\n5 - Domicilio presso Comunità per disabili\r\n6 - Domicilio presso Case Alloggio\r\n9 - Altro"
+      },
+      {
+        "id": "Patient.address.country",
+        "path": "Patient.address.country",
+        "short": "Codice Stato Estero di residenza del paziente",
+        "definition": "Collegamento al sito ISTAT",
+        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "short": "Stato civile del paziente",
+        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
+      },
+      {
+        "id": "Patient.maritalStatus.coding",
+        "path": "Patient.maritalStatus.coding",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Patient.maritalStatus.coding.code",
+        "path": "Patient.maritalStatus.coding.code",
+        "short": "Codice dello stato civile del paziente"
+      },
+      {
+        "id": "Patient.maritalStatus.coding.display",
+        "path": "Patient.maritalStatus.coding.display",
+        "short": "Descrizione dello stato civile del paziente"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "short": "Riferimento al profilo del MMG/PLS che assiste il cittadino",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

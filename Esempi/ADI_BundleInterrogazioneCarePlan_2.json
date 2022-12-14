@@ -1,33 +1,32 @@
 {
-    "resourceType": "Bundle",
-    "id": "esempio-Bundle-InterrogazioneCarePlan-2",
-    "type": "searchset",
-    "timestamp": "2022-12-05T14:21:11Z",
-    "total": 1,
-    "link": [
-        {
-            "relation": "self",
-            "url": "{base_url}CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&subject.identifier= RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject"
+  "resourceType": "Bundle",
+  "id": "esempio-Bundle-InterrogazioneCarePlan-2",
+  "type": "searchset",
+  "timestamp": "2022-12-05T14:21:11Z",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "{base_url}CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&subject.identifier= RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "{base_url}CarePlan/c273a7a2-01bc-11ed-bcb1-02001700b287",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "c273a7a2-01bc-11ed-bcb1-02001700b287",
+        "meta": {
+          "lastUpdated": "2022-12-02T14:25:26Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+          ],
+          "versionId": "3"
         }
-    ],
-    "entry": [
-        {
-            "fullUrl": "{base_url}CarePlan/c273a7a2-01bc-11ed-bcb1-02001700b287",
-            "resource": {
-                "resourceType": "CarePlan",
-                "id": "c273a7a2-01bc-11ed-bcb1-02001700b287",
-                "meta": {
-                    "lastUpdated": "2022-12-02T14:25:26Z",
-                    "profile": [
-                        "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-                    ],
-                    "versionId": "3"
-                }
-
-            },
-            "search": {
-                "mode": "match"
-            }
-        }
-    ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
 }

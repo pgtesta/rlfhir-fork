@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI",
   "name": "RLServiceRequestSospensioneADI",
   "status": "draft",
-   "keyword": [
+  "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
       "code": "C-DOM"

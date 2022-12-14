@@ -1,204 +1,204 @@
 {
-	"resourceType": "StructureDefinition",
-	"id": "RLEncounterAccesso",
-	"meta": {
-		"lastUpdated": "2022-12-05T09:54:18.0532808+00:00"
-	},
-	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso",
-	"name": "RLEncounterAccesso",
-	"status": "draft",
-	"description": "Profilo volto a descrivere i dettagli dell’accesso del cittadino alla struttura di prossimità.",
-	"keyword": [
-		{
-			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-			"code": "PI"
-		},
-		{
-			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-			"code": "C-DOM"
-		}
-	],
-	"fhirVersion": "4.0.1",
-	"kind": "resource",
-	"abstract": false,
-	"type": "Encounter",
-	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
-	"derivation": "constraint",
-	"differential": {
-		"element": [
-			{
-				"id": "Encounter.extension",
-				"path": "Encounter.extension",
-				"slicing": {
-					"discriminator": [
-						{
-							"type": "value",
-							"path": "url"
-						}
-					],
-					"rules": "open"
-				},
-				"min": 0
-			},
-			{
-				"id": "Encounter.extension:progettoIndividuale",
-				"path": "Encounter.extension",
-				"sliceName": "progettoIndividuale",
-				"short": "Riferimento al progetto individule derivato dall'accesso",
-				"definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
-				"comment": "Il dato è detenuto dal SGDT",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterReferenceCarePlan"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Encounter.extension:progettoIndividuale.value[x]",
-				"path": "Encounter.extension.value[x]",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-						]
-					}
-				]
-			},
-			{
-				"id": "Encounter.extension:tipologiaBisogno",
-				"path": "Encounter.extension",
-				"sliceName": "tipologiaBisogno",
-				"short": "Codice e descrizione della tipologia del bisogno rilevata al cittadino",
-				"definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
-				"comment": "Il dato è detenuto dal SGDT",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterTipoBisogno"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "Encounter.extension:tipologiaBisogno.value[x]",
-				"path": "Encounter.extension.value[x]",
-				"type": [
-					{
-						"code": "string"
-					}
-				]
-			},
-			{
-				"id": "Encounter.identifier",
-				"path": "Encounter.identifier",
-				"short": "Codice identificativo univoco dell'accesso",
-				"definition": "Stringa alfanumerica",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "Encounter.status",
-				"path": "Encounter.status",
-				"short": "Stato dell'accesso",
-				"definition": "Arrived: equivalente allo stato 'Da valutare' del SGDT\r\nTriaged: equivalente allo stato 'Attivazione percorso' del SGDT\r\nIn Progess: equivalente allo stato 'Attivazione percorso' del SGDT\r\nFinished: equivalente allo stato 'Chiuso' del SGDT",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "Encounter.class",
-				"path": "Encounter.class",
-				"short": "Motivo della segnalazione",
-				"definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "Encounter.type",
-				"path": "Encounter.type",
-				"short": "Tipologia di accesso",
-				"definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "Encounter.subject",
-				"path": "Encounter.subject",
-				"short": "Paziente che ha effettuato l'accesso alla struttura di prossimità",
-				"definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
-				"comment": "Il dato è detenuto dal SGDT",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-						]
-					}
-				]
-			},
-			{
-				"id": "Encounter.period",
-				"path": "Encounter.period",
-				"short": "Periodo temporale nel quale è stata svolta la procedura d'accesso"
-			},
-			{
-				"id": "Encounter.period.start",
-				"path": "Encounter.period.start",
-				"short": "Data ed ora dell'accesso",
-				"definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "Encounter.period.end",
-				"path": "Encounter.period.end",
-				"short": "Ultima data possibile per l'erogazione dell'intervento educazionale",
-				"definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "Encounter.reasonCode",
-				"path": "Encounter.reasonCode",
-				"short": "Motivo della segnalazione e setting assistenziale proposto"
-			},
-			{
-				"id": "Encounter.reasonCode.coding",
-				"path": "Encounter.reasonCode.coding",
-				"short": "Motivo della segnalazione e setting assistenziale proposto",
-				"definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
-			},
-			{
-				"id": "Encounter.reasonCode.coding.code",
-				"path": "Encounter.reasonCode.coding.code",
-				"short": "Codice del motivo della segnalazione e setting assistenziale proposto",
-				"definition": "Codice numerico di 2 cifre"
-			},
-			{
-				"id": "Encounter.reasonCode.coding.display",
-				"path": "Encounter.reasonCode.coding.display",
-				"short": "Descrizione del motivo della segnalazione e setting assistenziale proposto",
-				"definition": "Stringa alfanumerica al più di 200 caratteri"
-			},
-			{
-				"id": "Encounter.serviceProvider",
-				"path": "Encounter.serviceProvider",
-				"short": "Struttura di prossimità nella quale è stato registrato l'accesso",
-				"definition": "Reference al profilo RLOrganizationL2 contenente le informazione della struttura di prossimità  nella quale è stato registrato l'accesso",
-				"comment": "Il dato è detenuto dal SGDT",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
-						]
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "StructureDefinition",
+  "id": "RLEncounterAccesso",
+  "meta": {
+    "lastUpdated": "2022-12-05T09:54:18.0532808+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso",
+  "name": "RLEncounterAccesso",
+  "status": "draft",
+  "description": "Profilo volto a descrivere i dettagli dell’accesso del cittadino alla struttura di prossimità.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "C-DOM"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.extension",
+        "path": "Encounter.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Encounter.extension:progettoIndividuale",
+        "path": "Encounter.extension",
+        "sliceName": "progettoIndividuale",
+        "short": "Riferimento al progetto individule derivato dall'accesso",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterReferenceCarePlan"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:progettoIndividuale.value[x]",
+        "path": "Encounter.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.extension:tipologiaBisogno",
+        "path": "Encounter.extension",
+        "sliceName": "tipologiaBisogno",
+        "short": "Codice e descrizione della tipologia del bisogno rilevata al cittadino",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterTipoBisogno"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.extension:tipologiaBisogno.value[x]",
+        "path": "Encounter.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "short": "Codice identificativo univoco dell'accesso",
+        "definition": "Stringa alfanumerica",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "short": "Stato dell'accesso",
+        "definition": "Arrived: equivalente allo stato 'Da valutare' del SGDT\r\nTriaged: equivalente allo stato 'Attivazione percorso' del SGDT\r\nIn Progess: equivalente allo stato 'Attivazione percorso' del SGDT\r\nFinished: equivalente allo stato 'Chiuso' del SGDT",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "short": "Motivo della segnalazione",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "short": "Tipologia di accesso",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "short": "Paziente che ha effettuato l'accesso alla struttura di prossimità",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "short": "Periodo temporale nel quale è stata svolta la procedura d'accesso"
+      },
+      {
+        "id": "Encounter.period.start",
+        "path": "Encounter.period.start",
+        "short": "Data ed ora dell'accesso",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.period.end",
+        "path": "Encounter.period.end",
+        "short": "Ultima data possibile per l'erogazione dell'intervento educazionale",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "short": "Motivo della segnalazione e setting assistenziale proposto"
+      },
+      {
+        "id": "Encounter.reasonCode.coding",
+        "path": "Encounter.reasonCode.coding",
+        "short": "Motivo della segnalazione e setting assistenziale proposto",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.code",
+        "path": "Encounter.reasonCode.coding.code",
+        "short": "Codice del motivo della segnalazione e setting assistenziale proposto",
+        "definition": "Codice numerico di 2 cifre"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.display",
+        "path": "Encounter.reasonCode.coding.display",
+        "short": "Descrizione del motivo della segnalazione e setting assistenziale proposto",
+        "definition": "Stringa alfanumerica al più di 200 caratteri"
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "short": "Struttura di prossimità nella quale è stato registrato l'accesso",
+        "definition": "Reference al profilo RLOrganizationL2 contenente le informazione della struttura di prossimità  nella quale è stato registrato l'accesso",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

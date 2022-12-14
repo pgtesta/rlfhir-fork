@@ -1,146 +1,147 @@
 {
-	"resourceType": "StructureDefinition",
-	"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali",
-	"name": "RLServiceRequestPrestazioniSociali",
-	"status": "draft",
-	"keyword": [
-		{
-			"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-			"code": "PI"
-		}
-	],
-	"fhirVersion": "4.0.1",
-	"kind": "resource",
-	"abstract": false,
-	"type": "ServiceRequest",
-	"baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
-	"derivation": "constraint",
-	"differential": {
-		"element": [
-			{
-				"id": "ServiceRequest.extension",
-				"path": "ServiceRequest.extension",
-				"slicing": {
-					"discriminator": [
-						{
-							"type": "value",
-							"path": "url"
-						}
-					],
-					"rules": "open"
-				},
-				"min": 0
-			},
-			{
-				"id": "ServiceRequest.extension:ulterioriDettagli",
-				"path": "ServiceRequest.extension",
-				"sliceName": "ulterioriDettagli",
-				"short": "Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare",
-				"definition": "La codifica delle informazioni è la seguente: \r\n01: prestazione erogabile in regime di telemedicina",
-				"comment": "I valori della codifica sono rappresentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo.",
-				"min": 0,
-				"max": "1",
-				"type": [
-					{
-						"code": "Extension",
-						"profile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli"
-						]
-					}
-				],
-				"isModifier": false
-			},
-			{
-				"id": "ServiceRequest.basedOn",
-				"path": "ServiceRequest.basedOn",
-				"short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
-				"definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
-				"comment": "Il dato è detenuto dal SGDT",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-						]
-					}
-				]
-			},
-			{
-				"id": "ServiceRequest.status",
-				"path": "ServiceRequest.status",
-				"short": "Stato della prestazione specialistica",
-				"definition": "Valore fisso su \"active\"",
-				"fixedCode": "active"
-			},
-			{
-				"id": "ServiceRequest.intent",
-				"path": "ServiceRequest.intent",
-				"short": "Intento della richesta",
-				"definition": "Valore fisso su \"order\" (la richiesta autorizza l'azione di un professionista)",
-				"fixedCode": "order"
-			},
-			{
-				"id": "ServiceRequest.code",
-				"path": "ServiceRequest.code",
-				"short": "Codice e descrizione della prestazione sociale"
-			},
-			{
-				"id": "ServiceRequest.code.coding",
-				"path": "ServiceRequest.code.coding",
-				"short": "Codice e descrizione della prestazione sociale"
-			},
-			{
-				"id": "ServiceRequest.code.coding.code",
-				"path": "ServiceRequest.code.coding.code",
-				"short": "Codice della prestazione sociale",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "ServiceRequest.code.coding.display",
-				"path": "ServiceRequest.code.coding.display",
-				"comment": "Il dato è detenuto dal SGDT"
-			},
-			{
-				"id": "ServiceRequest.subject",
-				"path": "ServiceRequest.subject",
-				"short": "Paziente al quale deve essere erogata la prestazione",
-				"definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
-				"comment": "Il dato è detenuto dal SGDT",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-						]
-					}
-				]
-			},
-			{
-				"id": "ServiceRequest.encounter",
-				"path": "ServiceRequest.encounter",
-				"short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
-				"definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino"
-			},
-			{
-				"id": "ServiceRequest.requester",
-				"path": "ServiceRequest.requester",
-				"short": "Profilo del professionista sanitario richedente della prestazione",
-				"definition": "Reference al profilo RLPractionerRole del professionista sanitario che ha richiesto la prestazione per il paziente",
-				"type": [
-					{
-						"code": "Reference",
-						"targetProfile": [
-							"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
-						]
-					}
-				]
-			},
-			{
-				"id": "ServiceRequest.note",
-				"path": "ServiceRequest.note",
-				"short": "Note / commenti aggiuntivi",
-				"definition": "Stringa alfanumerica al più di 1000 caratteri"
-			}
-		]
-	}
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali",
+  "name": "RLServiceRequestPrestazioniSociali",
+  "status": "draft",
+  "description": "Profilo volto a contenere le informazioni relative ad una prestazione sociale afferente ad un progetto individuale di un cittadino.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.extension",
+        "path": "ServiceRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli",
+        "path": "ServiceRequest.extension",
+        "sliceName": "ulterioriDettagli",
+        "short": "Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare",
+        "definition": "La codifica delle informazioni è la seguente: \r\n01: prestazione erogabile in regime di telemedicina",
+        "comment": "I valori della codifica sono rappresentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "short": "Stato della prestazione specialistica",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "short": "Intento della richesta",
+        "definition": "Valore fisso su \"order\" (la richiesta autorizza l'azione di un professionista)",
+        "fixedCode": "order"
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "short": "Codice e descrizione della prestazione sociale"
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "short": "Codice e descrizione della prestazione sociale"
+      },
+      {
+        "id": "ServiceRequest.code.coding.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione sociale",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "ServiceRequest.code.coding.display",
+        "path": "ServiceRequest.code.coding.display",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "short": "Paziente al quale deve essere erogata la prestazione",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino"
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "short": "Profilo del professionista sanitario richedente della prestazione",
+        "definition": "Reference al profilo RLPractionerRole del professionista sanitario che ha richiesto la prestazione per il paziente",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
+        "short": "Note / commenti aggiuntivi",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri"
+      }
+    ]
+  }
 }
