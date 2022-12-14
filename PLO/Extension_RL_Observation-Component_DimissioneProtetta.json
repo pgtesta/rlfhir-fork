@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDimissioneProtetta",
   "name": "RLObservationComponentDimissioneProtetta",
+  "description": "Dimissione Protetta",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

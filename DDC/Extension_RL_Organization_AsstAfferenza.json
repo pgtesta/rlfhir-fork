@@ -3,6 +3,7 @@
   "id": "RLOrganizationAsstAfferenza",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza",
   "name": "RLOrganizationAsstAfferenza",
+  "description": "ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
   "status": "active",
   "experimental": false,
   "fhirVersion": "4.0.1",

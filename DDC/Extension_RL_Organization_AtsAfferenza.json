@@ -3,6 +3,7 @@
   "id": "RLOrganizationAtsAfferenza",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsAfferenza",
   "name": "RLOrganizationAtsAfferenza",
+  "description": "ATS alla quale il presidio afferisce",
   "status": "active",
   "experimental": false,
   "fhirVersion": "4.0.1",

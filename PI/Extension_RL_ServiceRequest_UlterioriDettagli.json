@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli",
   "name": "RLServiceRequestUlterioriDettagli",
+  "description": "Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare",
   "status": "draft",
   "keyword": [
     {

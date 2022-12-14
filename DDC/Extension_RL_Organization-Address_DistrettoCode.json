@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
   "name": "RLOrganizationAddressDistrettoCode",
+  "description": "Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo",
   "status": "active",
   "experimental": false,
   "keyword": [

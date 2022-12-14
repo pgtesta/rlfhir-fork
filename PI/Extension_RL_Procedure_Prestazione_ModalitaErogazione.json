@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneModalitaErogazione",
   "name": "RLProcedurePrestazioneModalitaErogazione",
+  "description": "Modalità di erogazione",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

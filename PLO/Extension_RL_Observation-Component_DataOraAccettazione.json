@@ -3,6 +3,7 @@
   "id": "RLObservationComponentDataOraAccettazione",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraAccettazione",
   "name": "RLObservationComponentDataOraAccettazione",
+  "description": "Data e ora di accettazione",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

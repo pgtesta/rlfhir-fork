@@ -114,6 +114,9 @@
         "id": "Organization.extension:AsstAfferenza",
         "path": "Organization.extension",
         "sliceName": "AsstAfferenza",
+        "short": "ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_ASST_TERRITORIALE della tabella LR22_L2",
         "min": 0,
         "max": "1",
         "type": [
@@ -130,6 +133,8 @@
         "id": "Organization.extension:AtsAfferenza",
         "path": "Organization.extension",
         "sliceName": "AtsAfferenza",
+        "short": "ATS alla quale il presidio afferisce",
+        "comment": "La fonte del dato è il campo CD_ATS_TERRITORIALE della tabella LR22_L2",
         "min": 0,
         "max": "1",
         "type": [

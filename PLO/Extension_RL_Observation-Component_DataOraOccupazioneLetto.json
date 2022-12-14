@@ -3,6 +3,7 @@
   "id": "RLObservationComponentDataOraOccupazioneLetto",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraOccupazioneLetto",
   "name": "RLObservationComponentDataOraOccupazioneLetto",
+  "description": "Data e ora di occupazione posto letto",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
   "name": "RLOrganizationDataCessazione",
+  "description": "Data di cessazione dell'ente",
   "status": "active",
   "experimental": false,
   "keyword": [

@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterReferenceCarePlan",
   "name": "RLEncounterReferenceCarePlan",
+  "description": "Riferimento al progetto individuale derivato dall'accesso",
   "status": "draft",
   "keyword": [
     {

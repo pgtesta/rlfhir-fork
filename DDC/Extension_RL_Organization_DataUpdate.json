@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
   "name": "RLOrganizationDataUpdate",
+  "description": "Data di aggiornamento del record",
   "status": "active",
   "experimental": false,
   "keyword": [

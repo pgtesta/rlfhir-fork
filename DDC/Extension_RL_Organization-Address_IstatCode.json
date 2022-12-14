@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
   "name": "RLOrganizationAddressIstatCode",
+  "description": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
   "status": "active",
   "experimental": false,
   "keyword": [

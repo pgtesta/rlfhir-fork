@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
   "name": "RLOrganzationDataCostituzione",
+  "description": "Data di costituzione dell'ente",
   "status": "active",
   "experimental": false,
   "keyword": [

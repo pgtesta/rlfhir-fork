@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
   "name": "RLOrganizationDataFineValidita",
+  "description": "Data di fine della validità di esercizio dell'ente",
   "status": "active",
   "experimental": false,
   "keyword": [

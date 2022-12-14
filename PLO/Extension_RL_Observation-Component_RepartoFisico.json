@@ -3,6 +3,7 @@
   "id": "RLObservationComponentRepartoFisico",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRepartoFisico",
   "name": "RLObservationComponentRepartoFisico",
+  "description": "Reparto Fisico",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

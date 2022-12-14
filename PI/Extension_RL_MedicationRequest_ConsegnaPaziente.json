@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaPaziente",
   "name": "RLMedicationRequestConsegnaPaziente",
+  "description": "Flag riguardo la consegna a domicilio del farmaco al paziente",
   "status": "draft",
   "keyword": [
     {

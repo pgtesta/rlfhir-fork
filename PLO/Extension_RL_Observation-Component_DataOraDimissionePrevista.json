@@ -3,6 +3,7 @@
   "id": "RLObservationComponentDataOraDimissionePrevista",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraDimissionePrevista",
   "name": "RLObservationComponentDataOraDimissionePrevista",
+  "description": "Data e ora di dimissione prevista",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

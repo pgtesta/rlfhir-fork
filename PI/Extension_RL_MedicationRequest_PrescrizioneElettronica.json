@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPrescrizioneElettronica",
   "name": "RLMedicationRequestPrescrizioneElettronica",
+  "description": "Flag riguardo la necessità di una prescrizione elettronica per il paziente",
   "status": "draft",
   "keyword": [
     {

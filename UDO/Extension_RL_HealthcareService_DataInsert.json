@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataInsert",
   "name": "RLHealthcareServiceDataInsert",
+  "description": "Data inserimento",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert",
   "name": "RLPractitionerRoleDataInsert",
+  "description": "Data di inserimento del record",
   "status": "active",
   "experimental": false,
   "keyword": [

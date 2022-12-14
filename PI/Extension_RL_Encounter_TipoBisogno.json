@@ -6,6 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterTipoBisogno",
   "name": "RLEncounterTipoBisogno",
+  "description": "Codice e descrizione della tipologia del bisogno rilevata al cittadino",
   "status": "draft",
   "keyword": [
     {
