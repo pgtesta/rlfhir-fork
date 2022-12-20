@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/DataInsert"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
       },
       {
         "id": "Extension.value[x]",

@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom",
+  "name": "RLLocationLuogoPrestazioneCureDom",
+  "status": "draft",
+  "description": "Profilo contenente il dettaglio della tipologia del luogo in cui viene erogata una prestazione al paziente in regime di ricovero domiciliare.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "short": "Codice della tipologia di luogo di erogazione",
+        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Location.physicalType.coding.code",
+        "path": "Location.physicalType.coding.code",
+        "short": "Codice della tipologia di luogo di erogazione",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "I codici della della tipologia di luogo di erogazione delle prestazioni di cure domiciliari sono ricavatii dal tracciato SIAD 1"
+      },
+      {
+        "id": "Location.physicalType.coding.display",
+        "path": "Location.physicalType.coding.display",
+        "short": "Descrizione della tipologia di luogo di erogazione",
+        "definition": "Stringa alfanumerica di al più di 100 caratteri",
+        "comment": "Le descrizioni della tipologia di luogo di erogazione delle prestazioni di cure domiciliari sono ricavatii dal tracciato SIAD 1"
+      }
+    ]
+  }
+}

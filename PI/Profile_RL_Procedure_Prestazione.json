@@ -4,13 +4,13 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
   "name": "RLProcedurePrestazione",
   "status": "draft",
+  "description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
       "code": "C-DOM"
     }
   ],
-  "description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -202,6 +202,20 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.location",
+        "path": "Procedure.location",
+        "short": "Reference alla tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari",
+        "definition": "Reference al profilo RLLocationLuogoPrestazioneCureDom",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom"
             ]
           }
         ]
