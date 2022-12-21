@@ -5,6 +5,12 @@
   "name": "RLHealthcareServiceRSAInfoBase",
   "status": "draft",
   "description": "Profilo che descrive i servizi offerti e le informazioni caratteristiche di una specifica RSA.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "RSA"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
