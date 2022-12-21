@@ -9,20 +9,6 @@
   "description": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
   "status": "active",
   "experimental": false,
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "DDC"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLOrganizationL1"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLOrganizationL2"
-    }
-  ],
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

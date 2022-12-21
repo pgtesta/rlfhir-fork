@@ -8,12 +8,6 @@
   "name": "RLDeviceRequestConsegnaPaziente",
   "description": "Flag riguardo la consegna a domicilio dell'ausilio al paziente",
   "status": "draft",
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "PI"
-    }
-  ],
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

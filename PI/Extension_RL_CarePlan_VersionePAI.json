@@ -8,12 +8,6 @@
   "name": "RLCarePlanVersionePAI",
   "description": "Versione del progetto individuale",
   "status": "draft",
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "PI"
-    }
-  ],
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

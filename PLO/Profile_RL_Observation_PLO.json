@@ -5,6 +5,12 @@
   "name": "RLObservationPLO",
   "status": "draft",
   "description": "Questo profilo riporta le informazioni relative ai posti letto occupati per ogni reparto (OrganizationL3)",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PLO"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

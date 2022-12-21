@@ -9,25 +9,6 @@
   "description": "Data di inserimento del record",
   "status": "active",
   "experimental": false,
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "DDC"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLPractitionerMedicoPrescrittore"
-    }
-  ],
-  "fhirVersion": "4.0.1",
-  "kind": "complex-type",
-  "abstract": false,
-  "context": [
-    {
-      "type": "element",
-      "expression": "Practitioner"
-    }
-  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",

@@ -9,24 +9,6 @@
   "description": "Data di fine della validità di esercizio dell'ente",
   "status": "active",
   "experimental": false,
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "DDC"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLOrganizationL1"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLOrganizationL2"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Profili",
-      "code": "RLOrganizationL3"
-    }
-  ],
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

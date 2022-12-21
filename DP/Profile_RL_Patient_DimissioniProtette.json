@@ -3,6 +3,12 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientDimissioniProtette",
   "name": "RLPatientDimissioniProtette",
   "status": "draft",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DP"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
