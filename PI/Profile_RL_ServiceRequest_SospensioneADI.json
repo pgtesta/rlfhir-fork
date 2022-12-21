@@ -4,13 +4,13 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI",
   "name": "RLServiceRequestSospensioneADI",
   "status": "draft",
+  "description": "Profilo che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
       "code": "C-DOM"
     }
   ],
-  "description": "Profilo che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

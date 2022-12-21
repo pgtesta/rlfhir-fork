@@ -3,13 +3,13 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
   "name": "RLObservationEsitoValutazione",
   "status": "draft",
+  "description": "Profilo volto a descrivere l’esito della valutazione al quale il paziente è stato sottoposto.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "C-DOM"
+      "code": "PI"
     }
   ],
-  "description": "Profilo volto a descrivere l’esito della valutazione al quale il paziente è stato sottoposto.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -6,7 +6,7 @@
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "C-DOM"
+      "code": "PI"
     }
   ],
   "fhirVersion": "4.0.1",

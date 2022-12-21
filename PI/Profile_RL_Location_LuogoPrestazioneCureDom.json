@@ -4,6 +4,12 @@
   "name": "RLLocationLuogoPrestazioneCureDom",
   "status": "draft",
   "description": "Profilo contenente il dettaglio della tipologia del luogo in cui viene erogata una prestazione al paziente in regime di ricovero domiciliare.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -4,13 +4,13 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione",
   "name": "RLQuestionnaireResponseValutazione",
   "status": "draft",
+  "description": "Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "C-DOM"
+      "code": "PI"
     }
   ],
-  "description": "Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

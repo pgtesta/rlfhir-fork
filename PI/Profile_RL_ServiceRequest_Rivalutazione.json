@@ -4,13 +4,13 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione",
   "name": "RLServiceRequestRivalutazione",
   "status": "draft",
+  "description": "Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
       "code": "C-DOM"
     }
   ],
-  "description": "Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
