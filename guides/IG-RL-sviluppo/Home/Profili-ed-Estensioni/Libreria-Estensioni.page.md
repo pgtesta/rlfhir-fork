@@ -25,7 +25,7 @@
       <input id="myInput" type="text" placeholder="Cerca.." />
     </div>
     <br />
-    <table>
+    <table class="libreria">
     <thead>
       <tr>
         <th>Nome estensione</th>
