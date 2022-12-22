@@ -2,7 +2,6 @@
 
 - [RLQuestionnaireResponseValutazione](#rlquestionnaireresponsevalutazione)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Ultime valutazioni effettuate da un paziente specifico](#ultime-valutazioni-effettuate-da-un-paziente-specifico)
   - [Search parameter](#search-parameter)

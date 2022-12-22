@@ -2,7 +2,6 @@
 
 - [RLServiceRequestServiziSocioSanitari](#rlservicerequestservizisociosanitari)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)

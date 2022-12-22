@@ -2,7 +2,6 @@
 
 - [RLProcedurePrestazione](#rlprocedureprestazione)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare aggiornate alla data e ora di richiesta](#dettaglio-delle-prestazioni-erogate-al-paziente-in-regime-di-ricovero-domiciliare-aggiornate-alla-data-e-ora-di-richiesta)
   - [Search parameter](#search-parameter)
