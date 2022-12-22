@@ -2,7 +2,6 @@
 
 - [RLCarePlanProgettoIndividuale](#rlcareplanprogettoindividuale)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetti-individuali-attivi-contenenti-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
     - [Progetto individuale attivo di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetto-individuale-attivo-di-un-paziente-contenente-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
@@ -62,17 +61,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 Al momento non ci sono esempi disponibili.
 <br>
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLCarePlanProgettoIndividuale:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI}} | VersionePAI | Versione del progetto individuale | CarePlan |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanEsenzioni}} | Esenzioni | Esenzioni relative al cittadino | CarePlan |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

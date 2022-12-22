@@ -65,11 +65,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Extension
-Non sono state sviluppate extension per questo profilo.
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
 ## Criteri di ricerca
 
 ### Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare aggiornate alla data e ora di richiesta

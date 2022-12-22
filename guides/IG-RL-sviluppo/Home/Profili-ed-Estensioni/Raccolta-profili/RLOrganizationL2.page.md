@@ -2,7 +2,6 @@
 
 - [RLOrganizationL2](#rlorganizationl2)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-un-codice-l1-con-data-fine-validità-superiore-ad-una-certa-data)
     - [Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia](#organization-l2-appartenenti-ad-un-codice-l1-con-data-validità-superiore-ad-una-certa-data-e-di-una-specifica-tipologia)
@@ -61,22 +60,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 {{link:esempio-RLOrganizationL2}}
 <br>
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL2:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}} | DataInizioValidita | Data di inizio della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}} | DataFineValidita | Data di fine della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert}} | DataInsert | Data di inserimento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}} | DataUpdate | Data di aggiornamento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationASSTAfferenza}} | ASSTAfferenza | ASST sotto la quale l'ente eroga servizi sociosanitari sul   territorio di competenza | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationATSAfferenza}} | ATSAfferenza | ATS alla quale il presidio afferisce territorialmente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode}} | DistrettoCode | Distretto territoriale così definito dalla legge regionale   22-2021 della Regione Lombardia | Organization.Address |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode}} | IstatCode | Codice ISTAT | Organization.Address |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

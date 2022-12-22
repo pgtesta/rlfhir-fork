@@ -2,7 +2,6 @@
 
 - [RLOrganizationL1](#rlorganizationl1)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
   - [Search parameter](#search-parameter)
@@ -61,22 +60,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 {{link:esempio-RLOrganizationL1}}
 <br>
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL1:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione}} | DataCessazione | Data di cessazione dell'ente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert}} | DataInsert | Data di inserimento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}} | DataUpdate | Data di aggiornamento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione}} | DataCostituzione | Data di costituzione dell'ente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}} | DataInizioValidita | Data di inizio della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}} | DataFineValidita | Data di fine della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode}} | IstatCode | Codice ISTAT | Organization.Address |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode}} | DistrettoCode | Distretto territoriale così definito dalla legge regionale   22-2021 della Regione Lombardia | Organization.Address |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

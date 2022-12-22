@@ -2,7 +2,6 @@
 
 - [RLObservationStiliVita](#rlobservationstilivita)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
@@ -65,11 +64,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 Al momento non ci sono esempi disponibili. 
 <br>
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-## Extension
-Non sono state sviluppate extension per questo profilo.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

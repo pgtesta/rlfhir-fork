@@ -69,16 +69,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLPractitionerMedicoPrescrittore:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate}} | DataUpdate | Data dell'ultima modifica del record | Practitioner |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert}} | DataInsert | Data di inserimento del record | Practitioner |
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
 ## Criteri di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.

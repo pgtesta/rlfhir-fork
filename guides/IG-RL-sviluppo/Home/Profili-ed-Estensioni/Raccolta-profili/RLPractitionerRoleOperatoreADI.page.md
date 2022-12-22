@@ -62,11 +62,6 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
-## Extension
-Non sono state sviluppate extension per questo profilo.
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
 ## Criteri di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.

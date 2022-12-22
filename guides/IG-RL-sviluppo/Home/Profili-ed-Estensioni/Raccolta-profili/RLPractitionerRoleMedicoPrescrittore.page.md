@@ -2,7 +2,6 @@
 
 - [RLPractitionerRoleMedicoPrescrittore](#rlpractitionerrolemedicoprescrittore)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
@@ -59,16 +58,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 {{link:esempio-PractitionerRole}}
 <br>
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLPractitionerRoleMedicoPrescrittore:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate}} | DataUpdate | Data dell'ultima modifica del record | PractitionerRole |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert}} | DataInsert | Data di inserimento del record | PractitionerRole |
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

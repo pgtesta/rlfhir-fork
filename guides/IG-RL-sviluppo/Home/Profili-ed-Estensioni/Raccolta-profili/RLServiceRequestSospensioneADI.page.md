@@ -2,7 +2,6 @@
 
 - [RLServiceRequestSospensioneADI](#rlservicerequestsospensioneadi)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta)
     - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
@@ -61,12 +60,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
   <h3>Esempi</h3>
 Al momento non ci sono esempi disponibili. 
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-## Extension
-
-Non sono state sviluppate extension per questo profilo.
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 

@@ -2,7 +2,6 @@
 
 - [RLOrganizationL3](#rlorganizationl3)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Oganization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data](#oganization-l3-appartenenti-ad-un-codice-l2-con-data-fine-validità-superiore-ad-una-certa-data)
   - [Search parameter](#search-parameter)
@@ -61,17 +60,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 {{link:esempio-RLOrganizationL3}}
 <br>
 </div>
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
-
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL3:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}} | DataInizioValidita | Data di inizio della validità di esercizio dell'ente descritto dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}} | DataFineValidita | Data di fine della validità di esercizio dell'ente descritto dal profilo | Organization |
-
 
 <!-- ===================================================FINE SESSIONE=================================================== -->
 
