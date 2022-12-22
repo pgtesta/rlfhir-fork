@@ -397,12 +397,17 @@ body header .guide-title {
  Contenuti aggiunti custom per progetto RL FHIR - by Reply
 -------------------------------------------------------- */
 
-/* Tabelle scorrevoli orizontalmente */
+/* Tabelle scorrevoli orizzontalmente */
 table{
     display: block;
     overflow-x: auto;
     white-space: normal;
     border-collapse: collapse;
+}
+
+/* bordi tabelle*/
+table, td, th {
+    border: 1px solid;
 }
 
 /* Padding celle tabelle*/
