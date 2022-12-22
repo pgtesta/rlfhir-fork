@@ -46,21 +46,21 @@
     <body>
         <header>
             <div class="container">
-                <table class="intestazione" width="100%">
+                <table class="intestazione no-border" width="100%">
                     <col style="width:20%">
 	                <col style="width:60%">
-                    <tr>    
-                        <td>
+                    <tr class="no-border">    
+                        <td class="no-border">
                          <div class="col-md-4">
                              <a href="https://www.siss.regione.lombardia.it/wps/portal/site/siss">
                              <img src="{{content}}/{{style-folder}}/logo-siss.jpg"  alt="logo Regione Lombardia" width="170" >
                         </div>
                         </td>
-                        <td>
+                        <td class="no-border">
                              <p class="guide-title">{{ guide-title }} v{{ guide-version }}</p>
                         </td>
                     </tr>
-                </table
+                </table>
             </div>
         </header>
         
@@ -87,15 +87,15 @@
             
             <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
                 <div class="container">
-                    <table class="intestazione" width="100%" >
-                        <tr>
-                           <td><b>Powered by</b> SIMPLIFIER.NET</td>
-                           <td> | </td>
-                           <td><b>IG: </b> {{ guide-title }}</td>
-                           <td> | </td>
-                           <td><span><b>IG version:</b> {{ guide-version }}</span></td>
-                           <td> | </td>
-                           <td><span><b>FHIR version:</b> {{ guide-fhir-version }}</span></td>
+                    <table class="intestazione no-border" width="100%" >
+                        <tr class="no-border">
+                           <td class="no-border"><b>Powered by</b> SIMPLIFIER.NET</td>
+                           <td class="no-border"> | </td>
+                           <td class="no-border"><b>IG: </b> {{ guide-title }}</td>
+                           <td class="no-border"> | </td>
+                           <td class="no-border"><span><b>IG version:</b> {{ guide-version }}</span></td>
+                           <td class="no-border"> | </td>
+                           <td class="no-border"><span><b>FHIR version:</b> {{ guide-fhir-version }}</span></td>
                         </tr> 
                     </table>
                     <table width="100%">

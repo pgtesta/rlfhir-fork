@@ -406,8 +406,12 @@ table{
 }
 
 /* bordi tabelle*/
-.libreria table, td, th {
+table, td, th {
     border: 0.5px solid #ccc;
+}
+
+.no-border{
+    border: none
 }
 
 /* Padding celle tabelle*/
