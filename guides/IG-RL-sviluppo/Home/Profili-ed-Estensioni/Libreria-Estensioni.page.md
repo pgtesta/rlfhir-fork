@@ -222,10 +222,10 @@
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}}</td>
       </tr>
       <tr>
-        <td>RLOrganzationDataCostituzione</td>
+        <td>RLOrganizationDataCostituzione</td>
         <td>Organization</td>
         <td>Data di costituzione dell'ente</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganzationDataCostituzione}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione}}</td>
       </tr>
       <tr>
         <td>RLPatientCittadinanza</td>
