@@ -2,8 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
   "name": "RLQuestionnaireResponseEsitoValutazione",
-  "description": "Riferimento all'esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto",
   "status": "draft",
+  "description": "Riferimento all'esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -33,7 +33,10 @@
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "Reference"
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+            ]
           }
         ]
       }

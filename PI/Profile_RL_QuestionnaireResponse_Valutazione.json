@@ -52,18 +52,6 @@
         "isModifier": false
       },
       {
-        "id": "QuestionnaireResponse.extension:esitoValutazione.value[x]",
-        "path": "QuestionnaireResponse.extension.value[x]",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-            ]
-          }
-        ]
-      },
-      {
         "id": "QuestionnaireResponse.basedOn",
         "path": "QuestionnaireResponse.basedOn",
         "short": "Riferimento al progetto individule nel quale è previsto l'esito della valutazione",
