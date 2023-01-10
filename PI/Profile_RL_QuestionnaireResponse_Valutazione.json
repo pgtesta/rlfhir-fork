@@ -52,6 +52,18 @@
         "isModifier": false
       },
       {
+        "id": "QuestionnaireResponse.extension:esitoValutazione.value[x]",
+        "path": "QuestionnaireResponse.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+            ]
+          }
+        ]
+      },
+      {
         "id": "QuestionnaireResponse.basedOn",
         "path": "QuestionnaireResponse.basedOn",
         "short": "Riferimento al progetto individule nel quale è previsto l'esito della valutazione",
@@ -139,16 +151,6 @@
         "short": "Contenuto informativo della risposta",
         "definition": "In base alla tipologia di risposta relativa al singolo quesito i possibili campi e i relativi datatype sono: \r\nvalueBoolean (boolean) \r\nvalueDecimal (decimal) \r\nvalueInteger (integer) \r\nvalueDate (date) \r\nvalueDateTime (dateTime) \r\nvalueTime (time) \r\nvalueString (string) \r\nvalueUri (uri) \r\nvalueAttachment (Attachment)\r\nvalueCoding (Coding)\r\nvalueQuantity (Quantity) \r\nvalueReference (Reference)",
         "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "QuestionnaireResponse.item.answer.item",
-        "path": "QuestionnaireResponse.item.answer.item",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item"
-      },
-      {
-        "id": "QuestionnaireResponse.item.item",
-        "path": "QuestionnaireResponse.item.item",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse#QuestionnaireResponse.item"
       }
     ]
   }
