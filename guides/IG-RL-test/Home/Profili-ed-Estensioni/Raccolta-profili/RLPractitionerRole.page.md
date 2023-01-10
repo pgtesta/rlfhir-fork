@@ -60,7 +60,7 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Extension
 Di seguito la descrizione delle extension inerenti al profilo RLPractitionerRole:
@@ -70,19 +70,19 @@ Di seguito la descrizione delle extension inerenti al profilo RLPractitionerRole
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate}} | DataUpdate | Data dell'ultima modifica del record | PractitionerRole |
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert}} | DataInsert | Data di inserimento del record | PractitionerRole |
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa PractitionerRole.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 

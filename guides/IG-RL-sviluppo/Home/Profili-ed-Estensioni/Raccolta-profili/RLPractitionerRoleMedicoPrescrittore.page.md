@@ -59,19 +59,19 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa PractitionerRole.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 

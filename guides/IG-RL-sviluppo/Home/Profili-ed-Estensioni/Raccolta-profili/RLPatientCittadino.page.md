@@ -59,17 +59,17 @@ Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 Attualmente non sono stati definiti criteri di ricerca.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCittadino:

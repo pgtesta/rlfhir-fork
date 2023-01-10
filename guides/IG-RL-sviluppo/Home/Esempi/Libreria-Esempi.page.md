@@ -1,4 +1,4 @@
-## {{page-title}}
+# {{page-title}}
 
 | Tag | Profilo | Link Simplifier |
 |---|---|---|

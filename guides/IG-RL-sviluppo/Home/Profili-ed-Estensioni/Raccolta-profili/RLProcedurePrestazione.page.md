@@ -62,43 +62,49 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 
 ### Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare aggiornate alla data e ora di richiesta
-Il dettaglio delle prestazioni è inteso come riassuntivo del periodo che va dalla data di attivazione  del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta. 
-I parametri da valorizzare per effettuare la ricerca sono:
--	basedOn.reference(RLServiceRequestServiziSociosanitari).identifier
--	basedOn.reference(RLServiceRequestServiziSociosanitari).code
 
 L’esito della ricerca permette di recuperare le informazioni relative alle prestazioni erogate dall’ente erogatore della presa in carico al cittadino in regime di ricovero domiciliare aggiornate alla data corrente della richiesta.
 
+Il dettaglio delle prestazioni è inteso come riassuntivo del periodo che va dalla data di attivazione  del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta. 
+I parametri da valorizzare per effettuare la ricerca sono:
+-	basedOn.reference(RLServiceRequestServiziSociosanitari).identifier
+-	basedOn.reference(RLServiceRequestServiziSociosanitari).code.coding.code
+- basedOn.reference(RLServiceRequestServiziSociosanitari).performer.identifier
 
 | SCOPE | Ricerca |
 |---|---|
 | VERB | GET |
-| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
-| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.identifier=\{_numeroPratica_\}&_include=Procedure:basedOn&_include=Procedure:subject |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| BASE_APISOURCE | https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/<versione>/erogazione-adi |
+| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&basedOn:ServiceRequest.code.coding.code=C-DOM&basedOn:ServiceRequest.performer.identifier=\{_codiceLivello2_\}&basedOn:ServiceRequest.identifier=\{_numeroPratica_\}&_include=Procedure:basedOn&_include=Procedure:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.identifier=000001&_include=Procedure:basedOn&_include=Procedure:subject
+    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&basedOn:ServiceRequest.code.coding.code=C-DOM&basedOn:ServiceRequest.performer.identifier=03014300&basedOn:ServiceRequest.identifier=000001&_include=Procedure:basedOn&_include=Procedure:subject
 
-Restituirà tutte le prestazioni erogate afferenti alla pratica numero 000001.
+Restituirà tutte le prestazioni erogate per pratica numero "000001" e afferenti alla struttura "03014300".
+
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
 
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa Procedure.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 
-Nella seguente tabella sono elencati i value-set relativi al profilo RLProcedurePrestazione.
+<font style="color:red">Nella seguente tabella sono elencati i value-set relativi al profilo RLProcedurePrestazione.</font>
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|

@@ -60,22 +60,22 @@ Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Extension
 Non sono state sviluppate extension per questo profilo.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 Attualmente non sono stati definiti criteri di ricerca.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 Attualmente non sono definiti value set specifici per il profilo RLPatientCittadino.

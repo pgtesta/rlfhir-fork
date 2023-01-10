@@ -63,7 +63,7 @@ Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 
 ## Extension
@@ -74,7 +74,7 @@ Di seguito la descrizione delle extension inerenti al profilo RLCarePlanProgetto
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI}} | VersionePAI | Versione del progetto individuale | CarePlan |
 | {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanEsenzioni}} | Esenzioni | Esenzioni relative al cittadino | CarePlan |
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 
@@ -123,13 +123,13 @@ A titolo esemplificativo, la chiamata:
 
 Restituirà..
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Seacrh parameter
 
 Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa CarePlan.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 

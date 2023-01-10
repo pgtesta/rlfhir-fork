@@ -63,12 +63,12 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Extension
 Non sono state sviluppate extension per questo profilo.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 
@@ -87,13 +87,13 @@ L’esito della ricerca permette di recuperare le informazioni relative alle pre
 | BASE |    |
 | URL |     |
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Seacrh parameter
 
 Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa Procedure.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 

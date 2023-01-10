@@ -3,7 +3,7 @@
 - [RLQuestionnaireResponseValutazione](#rlquestionnaireresponsevalutazione)
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Ultime valutazioni effettuate da un paziente specifico](#ultime-valutazioni-effettuate-da-un-paziente-specifico)
+    - [Valutazioni aggiornate per un paziente specifico](#valutazioni-aggiornate-per-un-paziente-specifico)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -60,40 +60,44 @@ Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Criteri di ricerca
 
-### Ultime valutazioni effettuate da un paziente specifico
+### Valutazioni aggiornate per un paziente specifico
+
+La ricerca permette di recuperare l’ultima versione delle valutazioni a cui un paziente specifico assegnato ad un determinato ente erogatore di cure domiciliari è stato sottoposto.
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “completed” 
 -	source.reference(RLPatientiCittadino).identifier: da compilare con il codice fiscale del paziente 
 -	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).type.coding.code: da compilare con il valore “C-DOM”
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
-
-L’esito della ricerca permette di recuperare l’ultima versione delle valutazioni a cui un paziente specifico assegnato ad un determinato ente erogatore di cure domiciliari è stato sottoposto.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari
+-basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier.
 
 |     SCOPE    |Ricerca tutti i profili RLQuestionnaireResponseValutazione in stato completato che si riferiscono ad un determinato paziente (RLPatientCittadino)|
 |---|---|
 | VERB | GET |
-| BASE | https://api.servizirl.it/c/operatori.siss/\[ambitoTBD\]/v1.0.0/\[servizioTBD\]/\[fhir_resource_name\] |
-| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=\{_codiceLivello2_\}&source.identifier=\{_codiceFiscaleAssistito_\}&status=completed&_include=QuestionnaireResponse:questionna |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
+| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn.activity.reference.code.coding.code=C-DOM&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}&basedOn.activity.reference.identifier=\{_numeroPratica_\}&source.identifier=\{_codiceFiscaleAssistito_\}&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione |
 
 A titolo esemplificativo, la chiamata: 
 
-    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=03014300&source.identifier=RSSMRA80A01F205X&status=completed&_include=QuestionnaireResponse:questionnaire
+    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn:CarePlan.activity.reference.code.coding.code=C-DOM&basedOn:CarePlan.activity.reference.performer.identifier=03014300&basedOn.activity.reference.identifier=000001&source.identifier=RSSMRA80A01F205&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione
 
-Restituirà l’ultima versione della valutazione, e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
+Restituirà l’ultima versione della valutazione afferente alla pratica "000001", e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
 
-
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa QuestionnaireResponse.
 
-<!-- ===================================================FINE SESSIONE=================================================== -->
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 
