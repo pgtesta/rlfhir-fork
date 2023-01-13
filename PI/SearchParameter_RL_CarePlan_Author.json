@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLCarePlanAuthor",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLCarePlanAuthor",
+  "name": "RLCarePlanAuthor",
+  "status": "draft",
+  "description": "Parametro di ricerca utilizzato per cercare l'identifier di una Organization di tipo L1",
+  "code": "author",
+  "base": [
+    "CarePlan"
+  ],
+  "type": "reference",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanAuthor').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

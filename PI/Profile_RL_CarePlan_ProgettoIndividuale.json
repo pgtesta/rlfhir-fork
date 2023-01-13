@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2022-12-06T10:34:08.2590591+00:00"
+    "lastUpdated": "2023-01-13T14:46:24.4287869+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -135,15 +135,14 @@
       {
         "id": "CarePlan.author",
         "path": "CarePlan.author",
-        "short": "Case manager del progetto individuale",
-        "definition": "Reference al profilo RLPractitionerMedicoPrescrittore e RLPractitionerRoleMedicoPrescrittore inerenti al case manager del progetto individuale",
+        "short": "ASST che ha prodotto il progetto individuale",
+        "definition": "Reference al profilo RLOrganizationL1 inerente all'ASST produttrice del progetto individuale",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
             ]
           }
         ]
@@ -151,9 +150,18 @@
       {
         "id": "CarePlan.contributor",
         "path": "CarePlan.contributor",
-        "short": "Unità di valutazione multidimensionale",
-        "definition": "Reference alla Risorsa RLCareTeam",
-        "comment": "Il dato è detenuto dal SGDT"
+        "short": "Case manager del progetto individuale",
+        "definition": "Reference al profilo RLPractitioner e RLPractitionerRole inerenti al case manager del progetto individuale",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+            ]
+          }
+        ]
       },
       {
         "id": "CarePlan.addresses",
