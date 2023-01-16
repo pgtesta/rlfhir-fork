@@ -2,5 +2,5 @@
   filename: Panoramica-di-progetto.page.md
 - name: Tematiche di applicazione
   filename: Tematiche-di-applicazione
-- name: API
-  filename: API.page.md
+- name: API RESTful
+  filename: API-RESTful.page.md
