@@ -111,7 +111,7 @@ I parametri da valorizzare per effettuare la ricerca sono:
 |     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio (profilo RLOrganizationL2). |
 |---|---|
 |     VERB    |     GET    |
-| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| BASE_APIMANAGER | {{link:Home-Contesto-API-RESTful}} , text:<base_API_Manager>}} |
 | BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
 |     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&activity.reference.identifier=\{_numeroPratica_\}&subject.identifier=\{_codiceFiscale_\}&_include=CarePlan:activity.reference&_include=CarePlan:subject |
 

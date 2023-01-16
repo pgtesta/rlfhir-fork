@@ -20,16 +20,16 @@ order by
 
 @```
 from
-    StructureDefinition
+	StructureDefinition
 where kind = 'resource'
 select
-    Tag: keyword.code,
-    Nome_profilo: name, 
-    Risorsa_base: type,
-    Descrizione_profilo: description, 
-    Estensioni: differential.element.type.profile,
-    Canonical_profilo: url,
-    status
+	Tag: keyword.code,
+	Nome_profilo: name, 
+	Risorsa_base: type,
+	Descrizione_profilo: description, 
+	Estensioni: differential.element.type.profile,
+	Canonical_profilo: url,
+	status
 order by
-    Tag, name
+	Tag, name
 ```
