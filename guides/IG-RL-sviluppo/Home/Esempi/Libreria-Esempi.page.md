@@ -22,10 +22,10 @@
 | PLO | RLObservationPLO | {{link:esempio-PLO-RepartiOspedale}} |
 | RSA | RLHealthcareServiceRSAInfoBase | {{link:esempio-RSAInfoBase}} |
 | UDO | RLHealthcareServiceUDO | {{link:esempio-UDO}} |
+| Errori, C-DOM |OperationOutcome: parameter not supported  | {{link:Esempi-Example-searchfail}} |
+| Errori, C-DOM |OperationOutcome: general exception  | {{link:Esempi-Example-exception}} |
 
-### Extra: 
 
-{{link:Esempi-Example-searchfail}}
 
-{{link:Esempi-Example-exception}}
+
 

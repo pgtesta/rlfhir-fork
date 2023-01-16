@@ -11,7 +11,7 @@ Il base_url con cui accedere a tali servizi è il seguente:
 L'elenco delle API esposte è:
 
 |Metodo HTTP|URL|Detentore del dato|
-|-|-|-|
+|---|---|---|
 |GET|<base_API_Manager>/_CarePlan_|SGDT|
 |GET|<base_API_Manager>/_QuestionnaireResponse_|SGDT|
 |GET|<base_API_Manager>/_Organization_|DDC FHIR Server|
@@ -33,7 +33,7 @@ dove:
 L'elenco delle API esposte è:
 
 |Metodo HTTP|URL|Detentore del dato|
-|-|-|-|
+|---|---|---|
 |GET|<base_API_Ente>/_Procedure_|Ente Erogatore|
 |GET|<base_API_Ente>/_ServiceRequest_|Ente Erogatore|
 |POST|<base_API_Ente>/_MessageHeader_|Ente Erogatore|
@@ -42,7 +42,7 @@ L'elenco delle API esposte è:
 Le chiamate HTTP relative all'integrazione FHIR devono contenere i seguenti header:
 
 |Nome header|Valore|Descrizione|
-|-|-|-|
+|---|---|---|
 |Content-Type|application/fhir+json|mime type del formato di scambio|
 |Authorization | Bearer \<valore\> | \<valore\>: rappresenta il valore dell’Access Token ottenuto in precedenza invocando i servizi di autenticazione di API Manager |
 
