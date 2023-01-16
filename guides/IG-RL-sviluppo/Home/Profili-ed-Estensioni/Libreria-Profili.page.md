@@ -30,7 +30,7 @@
     <thead>
       <tr>
         <th>Tag</th>
-        <th>Nome profilo</th>
+        <th>Nome profilo e pagina di dettaglio</th>
         <th>Risorsa base</th>
         <th>Descrizione</th>
         <th>Link Simplifier</th>

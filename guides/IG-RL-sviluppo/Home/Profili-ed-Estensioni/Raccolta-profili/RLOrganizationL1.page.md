@@ -77,13 +77,17 @@ Organization L1 con data fine validità superiore alla data odierna o nulla
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
+ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- _profile
+- identifier
+- part-of
 
-I parametri di ricerca definiti nel profilo RLOrganizationL1 sono definiti nella seguente tabella:
+I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization , sono definiti nella seguente tabella:
 
-| Nome | Descrizione | URL | Espressione |
-|---|---|---|---|
-| RLOrganizationDataFineValidita | Parametro di ricerca di strutture SISS di livello 1 e livello 2   specificando la data di fine validità. | https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
-| RLOrganizationDataInizioValidita | Parametro di ricerca di strutture SISS di livello 1 e livello 2   specificando la data di inserimento. | https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
+| Nome e   link Simplifier | Descrizione | Codice |
+|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di fine validità. | dataFineValidita |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di inserimento. | dataInizioValidita |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
