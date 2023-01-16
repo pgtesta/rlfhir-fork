@@ -1,12 +1,14 @@
 # {{page-title}}
 
-## SGDT --> Ente:
+## Flussi
 
-### SGDT--> NPRI FHIR
+### SGDT --> Ente
+
+#### SGDT--> NPRI FHIR
 
         <<url_da_definire>>
 
-### NPRI FHIR --> Ente
+#### NPRI FHIR --> Ente
 i servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
 Il base_url con cui accedere a tali servizi è il seguente:
 
@@ -18,13 +20,13 @@ dove:
 - <codice_Cudes_L1> = codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
 - <resource_name> = _Procedure_, _ServiceRequest_
 
-## Ente --> SGDT:
+### Ente --> SGDT
 
-### Ente --> NPRI FHIR
+#### Ente --> NPRI FHIR
 
         <<url_da_definire>>
 
-### NPRI FHIR --> SGDT [ref. 6.2]
+#### NPRI FHIR --> SGDT [ref. 6.2]
 I servizi FHIR esposti da SGDT sono accessibili attraverso il componente API Manager.
 Il base_url con cui accedere a tali servizi è il seguente:
 
