@@ -3,7 +3,7 @@
 - [RLOrganizationL3](#rlorganizationl3)
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Oganization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data](#oganization-l3-appartenenti-ad-un-codice-l2-con-data-fine-validità-superiore-ad-una-certa-data)
+    - [Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data](#organization-l3-appartenenti-ad-un-codice-l2-con-data-fine-validità-superiore-ad-una-certa-data)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -65,15 +65,14 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 ## Criteri di ricerca
 
-### Oganization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data
-Parametri di ricerca:
--	dataFineValidità
--	partOf 
+### Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data
+I parametri da valorizzare per effettuare la ricerca sono:
+-	dataFineValidità: data di interesse
+-	partOf.reference(RLOrganizationL2).identifier
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L3, descritto nel profilo _RLOrganizationL3_, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L2 (profilo _RLOrganizationL2_).
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L3,  con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L2.
 
-
-| SCOPE | Ricerca tutte le Organization con profilo L3 la cui data di fine validità è maggiore di una data di riferimento e che sono parte di un determinato codice L2    |
+| SCOPE | Ricerca tutti i profili RLOrganizationL3 la cui data di fine validità è maggiore di una data di riferimento e che sono parte di un determinato codice L2 (RLOrganizationL2)    |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
@@ -82,8 +81,15 @@ L’esito della ricerca permette di recuperare le informazioni relative alle str
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- _profile
+- partof
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Organization.
+I parametri di ricerca del profilo RLOrganizationL3, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
+
+| Nome e link Simplifier | Descrizione | Codice |
+|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello   2 specificando la data di inserimento. | dataInizioValidita |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

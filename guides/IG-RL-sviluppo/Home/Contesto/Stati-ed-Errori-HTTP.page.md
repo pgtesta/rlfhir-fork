@@ -3,7 +3,7 @@
 L'esito delle chiamate FHIR è definito dal codice di stato HTTP e dal contenuto del messaggio restituito.
 In aggiunta ai normali codici di stato HTTP, i seguenti codici sono utilizzati per descrivere stati o errori relativi a FHIR.
 
-## Ricerce
+## Ricerche
 
 In caso la ricerca non possa essere eseguita, la risposta contiene il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa OperationOutcome nel contenuto.
 

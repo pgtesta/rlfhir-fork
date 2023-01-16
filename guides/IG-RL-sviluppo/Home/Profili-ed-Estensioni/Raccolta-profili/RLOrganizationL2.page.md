@@ -4,6 +4,7 @@
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-un-codice-l1-con-data-fine-validità-superiore-ad-una-certa-data)
+    - [Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-una-asst-di-afferenza-con-data-fine-validità-superiore-ad-una-certa-data)
     - [Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia](#organization-l2-appartenenti-ad-un-codice-l1-con-data-validità-superiore-ad-una-certa-data-e-di-una-specifica-tipologia)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
@@ -68,13 +69,14 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLOrganizationL2.
 
 ###	Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data
-Parametri di ricerca:
-- dataFineValidità
-- partOf 
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2, descritto nel profilo _RLOrganizationL2_, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L1 (profilo _RLOrganizationL1_).
+I parametri da valorizzare per effettuare la ricerca sono:
+- dataFineValidità: data di interesse
+-	partOf.reference(RLOrganizationL1).identifier:  codice L1 dell’ente di interesse
 
-| SCOPE | Ricerca tutte le Organization con profilo L2 la cui data di fine validità è maggiore di una data di riferimento e che sono parte   di un determinato codice L1 |
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L1.
+
+| SCOPE | Ricerca tutti i profili RLOrganizationL2 la cui data di fine validità è maggiore di una data di riferimento e che afferiscono ad una determinata struttura identificata dal codice L1 (RLOrganizationL1) |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
@@ -86,16 +88,34 @@ A titolo esemplificativo, la chiamata:
 
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
+### Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data
+I parametri da valorizzare per effettuare la ricerca sono:
+-	dataFineValidità: data di interesse
+-	ASSTAfferenza.reference(RLOrganizationL1).identifier:  codice L1 dell’ASST di interesse
+
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata ASST.
+
+| SCOPE | Ricerca tutti i profili RLOrganizationL2 la cui data di fine validità è maggiore di una data di riferimento e che afferiscono ad una determinata ASST (RLOrganizationL1) |
+|---|---|
+| VERB | GET |
+| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}&partof:Organization.identifier=\{_codicelivelloL1_\} |
+
+A titolo esemplificativo, la chiamata: 
+
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05…
+
+restituirà tutte le strutture afferenti alla ASST.. 
+
 ### Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia
-Parametri di ricerca:
-- dataFineValidità
-- partOf 
-- type
+I parametri da valorizzare per effettuare la ricerca sono:
+-	dataFineValidità: data di interesse
+-	ASSTAfferenza.reference(RLOrganizationL1).identifier:  codice L1 dell’ASST di interesse
+-	type.coding.code: codice della tipologia di UdO
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2, descritte nel profilo _RLOrganizationL2_, di una determinata tipologia di unità d’offerta (UdO) sociosanitaria, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L1 (profilo _RLOrganizationL1_).
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 di una determinata tipologia di unità d’offerta (UdO) sociosanitaria, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata ASST.
 
-
-| SCOPE | Ricerca tutte le Organization con profilo L2 la cui data di fine validità è maggiore di una data di riferimento e che sono parte di un determinato codice L1 afferente ad una ASST Territoriale |
+| SCOPE | Ricerca tutti i profili RLOrganizationL12 la cui data di fine validità è maggiore di una data di riferimento, che sono afferenti ad una determinata ASST (RLOrganizationL1) e sono di una o più tipologie (es. RIC,RSA) |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
@@ -104,20 +124,28 @@ type={_tipoRicercato1,...,tipoRicercatoN_} |
 
 A titolo esemplificativo, la chiamata:
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/ RLOrganizationL2&dataFineValidita=gt2018-04-05 &partof:Organization.identifier=030720&type=CONS
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/ RLOrganizationL2&dataFineValidita=gt2018-04-05 & type=CONS….
 
-restituirà tutte i consultori (CONS) afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
+restituirà tutte i consultori (CONS) afferenti alla ASST… 
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- _profile
+- identifier
+- partof
+- type
+
 I parametri di ricerca definiti nel profilo RLOrganizationL2 sono definiti nella seguente tabella:
 
-| Nome | Descrizione | URL | Espressione |
-|---|---|---|---|
-| RLOrganizationDataFineValidita | Parametro di ricerca di strutture SISS di livello 1 e livello 2   specificando la data di fine validità. | https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
-| RLOrganizationDataInizioValidita | Parametro di ricerca di strutture SISS di   livello 1 e livello 2 specificando la data di inserimento. | https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
+| Nome e link Simplifier | Descrizione | Codice |
+|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationASSTAfferenza}} | ASSTAfferenza | ASSTAfferenza |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello   2 specificando la data di fine validità. | dataFineValidita |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello   2 specificando la data di inserimento. | dataInizioValidita |
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
