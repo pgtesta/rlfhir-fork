@@ -23,7 +23,7 @@ Nell'header sarà inoltre specificato che le informazioni saranno scambiate in f
 i servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
 Il base_url con cui accedere a tali servizi è il seguente:
 
-        <<url_ente>> = https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/v1.0.0/erogazione-adi/<resource_name>
+        **<<url_ente>>** = https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/v1.0.0/erogazione-adi/<resource_name>
 
 dove:
 - _nome\_host\_Ente_ = alias corrispondente all’indirizzo IP dell’Ente definito sul canale protetto; la risoluzione dell’alias è inserita nel DNS di ARIAspa
@@ -41,6 +41,6 @@ dove:
 I servizi FHIR esposti da SGDT sono accessibili attraverso il componente API Manager.
 Il base_url con cui accedere a tali servizi è il seguente:
 
-        <<url_sgdt>> = https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri/<resource_name> 
+        **<<url_sgdt>>** = https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri/<resource_name> 
 
-resource_name : _CarePlan_, _QuestionnaireResponse_
+con resource_name: _CarePlan_, _QuestionnaireResponse_
