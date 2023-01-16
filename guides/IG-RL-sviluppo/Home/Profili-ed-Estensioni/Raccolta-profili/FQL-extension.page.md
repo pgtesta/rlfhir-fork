@@ -19,7 +19,7 @@ order by
 -->
 
 @```
-    from
+from
 	StructureDefinition
 where type = 'Extension'
 select

@@ -1,4 +1,4 @@
-# Seacrh Parameters
+# Search Parameters
 <!--
 @```
 from
@@ -12,5 +12,6 @@ select
 from
 	SearchParameter
 select
-	name, status, description, base, code, type, comparator, url 
+	name, status, description, base, code, type, comparator, url
+order by name
 ```
