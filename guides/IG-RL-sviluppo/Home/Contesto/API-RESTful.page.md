@@ -17,25 +17,25 @@ Nell'header sarà inoltre specificato che le informazioni saranno scambiate in f
 
 ### SGDT--> NPRI FHIR
 
-<<url_da_definire>>
+        <<url_da_definire>>
 
 ### NPRI FHIR --> Ente
 i servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
 Il base_url con cui accedere a tali servizi è il seguente:
 
-        <<url_ente>> = https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/v1.0.0/erogazione-adi/<resource_name>
+        <<url_ente>> = https://<nome_host_Ente>/<contesto_FHIR>/<codice_Cudes_L1>/v1.0.0/erogazione-adi/<resource_name>
 
 dove:
 - <nome_host_Ente> = alias corrispondente all’indirizzo IP dell’Ente definito sul canale protetto; la risoluzione dell’alias è inserita nel DNS di ARIAspa
-- <contesto_FHIR> = fhir per la Produzione reale; fhirtest per la Produzione virtuale, da utilizzare per i test delle integrazioni propedeutici all’avvio in produzione 
-- <codiceCudesL1> = codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
-- <resource_name> = _Procedure_ , _ServiceRequest_
+- <contesto_FHIR> = fhir per la Produzione reale; fhirtest per la Produzione virtuale, da utilizzare per i test delle integrazioni propedeutici all’avvio in produzione
+- <codice_Cudes_L1> = codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
+- <resource_name> = _Procedure_, _ServiceRequest_
 
 ## Ente --> SGDT:
 
 ### Ente --> NPRI FHIR
 
- <<url_da_definire>>
+        <<url_da_definire>>
 
 ### NPRI FHIR --> SGDT [ref. 6.2]
 I servizi FHIR esposti da SGDT sono accessibili attraverso il componente API Manager.
