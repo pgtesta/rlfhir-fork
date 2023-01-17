@@ -60,54 +60,6 @@
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterTipoBisogno}}</td>
       </tr>
       <tr>
-        <td>RLHealthcareServiceCharacteristicPeriod</td>
-        <td>HealthcareService.characteristic</td>
-        <td>Periodo di attività</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceCharacteristicPeriod}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceCharacteristicValue</td>
-        <td>HealthcareService.characteristic</td>
-        <td>Numero posti letto</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceCharacteristicValue}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceDataInsert</td>
-        <td>HealthcareService</td>
-        <td>Data inserimento</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataInsert}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceDataUpdate</td>
-        <td>HealthcareService</td>
-        <td>Data aggiornamento</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataUpdate}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceParcheggio</td>
-        <td>HealthcareService</td>
-        <td>(missing)</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceReferenteStruttura</td>
-        <td>HealthcareService</td>
-        <td>persona principale di contatto della struttura</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceReferenteStruttura}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceRettaSociale</td>
-        <td>HealthcareService</td>
-        <td>Estensione per il valore della retta sociale minima e massima</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRettaSociale}}</td>
-      </tr>
-      <tr>
-        <td>RLHealthcareServiceTempiMediPresaInCarico</td>
-        <td>HealthcareService</td>
-        <td>Estensione per la definizione dei tempi medi di presa in carico</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceTempiMediPresaInCarico}}</td>
-      </tr>
-      <tr>
         <td>RLMedicationRequestConsegnaPaziente</td>
         <td>MedicationRequest</td>
         <td>Flag riguardo la consegna a domicilio del farmaco al paziente</td>
