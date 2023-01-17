@@ -120,54 +120,6 @@
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPrescrizioneElettronica}}</td>
       </tr>
       <tr>
-        <td>RLObservationComponentAreaDegenza</td>
-        <td>Observation.component</td>
-        <td>Area degenza</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentAreaDegenza}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentDataOraAccettazione</td>
-        <td>Observation.component</td>
-        <td>Data e ora di accettazione</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraAccettazione}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentDataOraDimissionePrevista</td>
-        <td>Observation.component</td>
-        <td>Data e ora di dimissione prevista</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraDimissionePrevista}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentDataOraOccupazioneLetto</td>
-        <td>Observation.component</td>
-        <td>Data e ora di occupazione posto letto</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraOccupazioneLetto}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentDimissioneProtetta</td>
-        <td>Observation.component</td>
-        <td>Dimissione Protetta</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDimissioneProtetta}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentRegimeRicovero</td>
-        <td>Observation.component</td>
-        <td>Regime ricovero</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRegimeRicovero}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentRepartoClinico</td>
-        <td>Observation.component</td>
-        <td>Reparto clinico</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRepartoClinico}}</td>
-      </tr>
-      <tr>
-        <td>RLObservationComponentRepartoFisico</td>
-        <td>Observation.component</td>
-        <td>Reparto Fisico</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRepartoFisico}}</td>
-      </tr>
-      <tr>
         <td>RLOrganizationAddressDistrettoCode</td>
         <td>Address</td>
         <td>Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo</td>

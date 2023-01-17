@@ -94,20 +94,6 @@
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}</td>
       </tr>
       <tr>
-        <td>DP</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientDimissioniProtette.page.md}}</td>
-        <td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td>
-        <td>(missing)</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientDimissioniProtette}}</td>
-      </tr>
-      <tr>
-        <td>DP</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLRelatedPersonCareGiverDimissioniProtette.page.md}}</td>
-        <td><a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a></td>
-        <td>(missing)</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLRelatedPersonCareGiverDimissioniProtette}}</td>
-      </tr>
-      <tr>
         <td>PI</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntoleranceAllergie.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></td>
@@ -274,27 +260,6 @@
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>Profilo volto a contenere le informazioni riguardo il servizio sociosanitario da attivare ad un cittadino nell’ambito del suo progetto individuale.</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari}}</td>
-      </tr>
-      <tr>
-        <td>PLO</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPLO.page.md}}</td>
-        <td><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></td>
-        <td>Questo profilo riporta le informazioni relative ai posti letto occupati per ogni reparto (OrganizationL3)</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPLO}}</td>
-      </tr>
-      <tr>
-        <td>RSA</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLHealthcareServiceRSAInfoBase.page.md}}</td>
-        <td><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></td>
-        <td>Profilo che descrive i servizi offerti e le informazioni caratteristiche di una specifica RSA.</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRSAInfoBase}}</td>
-      </tr>
-      <tr>
-        <td>UDO</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLHealthcareServiceUDO.page.md}}</td>
-        <td><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></td>
-        <td>(missing)</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceUDO}}</td>
       </tr>
     </tbody>
     </table>
