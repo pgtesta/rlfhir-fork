@@ -3,7 +3,8 @@
 - [RLServiceRequestRivalutazione](#rlservicerequestrivalutazione)
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
+    - [Dettagli della necessità di rivalutazione del paziente](#dettagli-della-necessità-di-rivalutazione-del-paziente)
+    - [Dettagli della sospensione temporanea del ricovero domiciliare di un paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-di-un-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -64,20 +65,19 @@ Al momento non ci sono esempi disponibili.
 
 ## Criteri di ricerca
 
-### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
+### Dettagli della necessità di rivalutazione del paziente
 
-La ricerca contiene il dettaglio delle sospensioni e la necessità di rivalutazione del paziente inerente al periodo che va dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta.
+Questa ricerca viene effettuata da un’ASST nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
 
 L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
 
-Questa ricerca viene effettuata nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
-
 I parametri da valorizzare per effettuare la ricerca sono:
-- profile: tipologia di profilo che potrà assumere i valori di  RLServiceRequestRivalutazione e/o RLServiceRequestSospensioneADI
-- requisition: numero pratica del servizio di cure domiciliari.
-- basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
+-	requisition: numero pratica del servizio di cure domiciliari.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
-| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari |
+L’esito della ricerca sarà un bundle contenente le informazioni inerenti alla richiesta di rivalutazione di un determinato paziente attraverso il numero pratica del servizio di cure domiciliari.
+
+| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari  |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
@@ -99,6 +99,25 @@ Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relati
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 - _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
+
+### Dettagli della sospensione temporanea del ricovero domiciliare di un paziente
+
+Questa ricerca viene effettuata da un’ASST per reperire il dettaglio delle sospensioni temporanee del ricovero domiciliare di un paziente 
+
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
+
+I parametri da valorizzare per effettuare la ricerca sono:
+-	requisition: numero pratica del servizio di cure domiciliari.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+
+L’esito della ricerca sarà un bundle contenente le informazioni inerenti alle sospensioni temporanee del ricovero di cure domiciliare di un determinato paziente
+
+| SCOPE |  |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER |  |
+| BASE_APISOURCE |  |
+| URL |  |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

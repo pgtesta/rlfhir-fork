@@ -3,7 +3,7 @@
 - [RLQuestionnaireResponseValutazione](#rlquestionnaireresponsevalutazione)
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Valutazioni aggiornate per un paziente specifico](#valutazioni-aggiornate-per-un-paziente-specifico)
+    - [Ultime valutazioni effettuate da un paziente](#ultime-valutazioni-effettuate-da-un-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -64,16 +64,16 @@ Al momento non ci sono esempi disponibili.
 
 ## Criteri di ricerca
 
-### Valutazioni aggiornate per un paziente specifico
+### Ultime valutazioni effettuate da un paziente
 
-La ricerca permette di recuperare l’ultima versione delle valutazioni a cui un paziente specifico assegnato ad un determinato ente erogatore di cure domiciliari è stato sottoposto.
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanitari per recuperare la versione più aggiornata delle valutazioni effettuate da un paziente specifico.
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “completed” 
--	source.reference(RLPatientiCittadino).identifier: da compilare con il codice fiscale del paziente 
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).type.coding.code: da compilare con il valore “C-DOM”
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari
--basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier.
+-	source.reference(RLPatientiCittadino).identifier: codice fiscale del paziente 
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier: codice identificativo del servizio sociosanitario d’interesse
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio sociosanitario.
+
 
 |     SCOPE    |Ricerca tutti i profili RLQuestionnaireResponseValutazione in stato completato che si riferiscono ad un determinato paziente (RLPatientCittadino)|
 |---|---|

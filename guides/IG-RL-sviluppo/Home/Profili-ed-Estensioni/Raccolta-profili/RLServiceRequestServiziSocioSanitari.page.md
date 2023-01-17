@@ -18,8 +18,8 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
  <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
   <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
   <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+ <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+ <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
 </div>
@@ -77,7 +77,9 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestServiziSocioSanitari.
 
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|  Nome |  Descrizione |  Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione del servizio sociosanitario da attivare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i servizi sociosanitari è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
-| ReasonCode| Codice e descrizione dei percorsi di cure domiciliari | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i percorsi di cure domiciliari è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}|
+|  DettagliPrenotazione | Dettagli delle prenotazioni |Il riferimento alla lista esaustiva delle codifiche è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+|  Code |  Codice e descrizione del servizio sociosanitario da attivare |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i servizi sociosanitari è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+|  ReasonCode |  Codice e descrizione dei percorsi di cure domiciliari |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i percorsi di cure domiciliari è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+|  causaleDimissione |  Codice e descrizione della causale di dimissione |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo le causali di dimissione è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |

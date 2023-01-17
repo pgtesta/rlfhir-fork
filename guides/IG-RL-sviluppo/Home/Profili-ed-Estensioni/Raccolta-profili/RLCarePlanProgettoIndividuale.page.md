@@ -3,8 +3,8 @@
 - [RLCarePlanProgettoIndividuale](#rlcareplanprogettoindividuale)
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetti-individuali-attivi-contenenti-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
-    - [Storico progetti individuali di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#storico-progetti-individuali-di-un-paziente-contenente-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
+    - [Progetti individuali attivi](#progetti-individuali-attivi)
+    - [Progetti individuali di un paziente](#progetti-individuali-di-un-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -68,19 +68,20 @@ Al momento non ci sono esempi disponibili.
 
 Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLCarePlanProgettoIndividuale.
 
-###	Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
+###	Progetti individuali attivi
 
-La ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario di una determinata tipologia di UdO sociosanitaria e per il quale è stato assegnato un determinato ente erogatore responsabile della presa in carico.
-
-Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità.
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanitari con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
+Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio sociosanitario da attivare al cittadino. 
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
 -	activity.reference(RLServiceRequestServiziSociosanitari).code.coding.code: codice del servizio sociosanitario d’interesse
--	activity.reference(RLServiceRequestServiziSociosanitari).performer: codice L2 dell’ente erogatore di interesse
+-	author.reference(RLOrgnizationL1).identifier: codice L1 dell’ASST che ha prodotto il progetto individuale
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati 
 
-|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio (RLOrganizationL2). |
+L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare il contenuto informativo relativo all’attivazione di un servizio sociosanitario previsto nei progetti individuali attivi prodotti da un’ASST.
+
+|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo prodotti da una determinata ASST (RLOrganizationL1) che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.). |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
@@ -97,18 +98,19 @@ Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dett
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 - _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
 
-### Storico progetti individuali di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
+### Progetti individuali di un paziente
 
-La ricerca permette di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione di un servizio sociosanitario di una determinata tipologia di UdO sociosanitaria e per il quali è stato assegnato l’ente erogatore responsabile della presa in carico.
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanitari con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un servizio sociosanitario.
+L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	activity.reference(RLServiceRequestServiziSociosanitari).code coding.code: codice del servizio sociosanitario d’interesse
--	activity.reference(RLServiceRequestServiziSociosanitari).performer: codice L2 dell’ente erogatore di interesse
-- activity.reference(RLServiceRequestServiziSociosanitari).identifier
--	subject.reference(RLPatientCittadino).identifier: da compilare con il codice fiscale del paziente
+-	activity.reference(RLServiceRequestServiziSociosanitari).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
+-	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
+ 
+L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione presso l’Ente Erogatore stesso di un servizio sociosanitario.
 
-
-|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio (profilo RLOrganizationL2). |
+|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.).  |
 |---|---|
 |     VERB    |     GET    |
 | BASE_APIMANAGER | {{link:Home-Contesto-API-RESTful}} , text:<base_API_Manager>}} |
