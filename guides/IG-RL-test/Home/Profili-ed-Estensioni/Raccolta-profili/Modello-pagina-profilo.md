@@ -2,7 +2,6 @@
 
 - [RLOrganizationL1](#rlorganizationl1)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
     - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
   - [Seacrh parameter](#seacrh-parameter)
@@ -62,20 +61,6 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 Al momento non ci sono esempi disponibili. 
 <br>
 </div>
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Extension
-
-Non sono state sviluppate extension per questo profilo.
-
-Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL1:
-
-| Nome Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione}} | DataCessazione | Data di cessazione dell'ente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert}} | DataInsert | Data di inserimento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}} | DataUpdate | Data di aggiornamento del record | Organization |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

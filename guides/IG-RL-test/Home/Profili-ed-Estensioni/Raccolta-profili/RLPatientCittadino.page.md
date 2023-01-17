@@ -2,7 +2,6 @@
 
 - [RLPatientCittadino](#rlpatientcittadino)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
@@ -62,11 +61,6 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Extension
-Non sono state sviluppate extension per questo profilo.
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
 ## Criteri di ricerca
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -78,4 +72,11 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
-Attualmente non sono definiti value set specifici per il profilo RLPatientCittadino.
+Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCittadino:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| maritalStatus | Stato civile del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| titoloDiStudio | Titolo di studio del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente   {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| posizione DellaProfessione | Posizione lavorativa del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| situazionePensionistica | Situazione pensionistica del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |

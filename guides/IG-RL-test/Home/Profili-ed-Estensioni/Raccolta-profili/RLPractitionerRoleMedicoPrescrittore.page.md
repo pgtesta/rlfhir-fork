@@ -1,17 +1,16 @@
-# RLPractitionerRole
+# RLPractitionerRoleMedicoPrescrittore
 
-- [RLPractitionerRole](#rlpractitionerrole)
+- [RLPractitionerRoleMedicoPrescrittore](#rlpractitionerrolemedicoprescrittore)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html)  contenente i ruoli e le qualifiche di un determinato medico prescrittore presente nel profilo RLPractitionerRole.
+Profilo declinato a partire dalla risorsa standard FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) contenente i ruoli e le qualifiche di un determinato medico prescrittore presente nel profilo RLPractitionerRoleMedicoPrescrittore.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, text: qui}}.
+La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, text: qui}}.
 
 <br>
 <div class="tab">
@@ -26,49 +25,39 @@ La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRole, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/esempio-RLPractitionerRole.page.md}}
+{{link:esempio-PractitionerRole}}
 <br>
 </div>
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLPractitionerRole:
-
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate}} | DataUpdate | Data dell'ultima modifica del record | PractitionerRole |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert}} | DataInsert | Data di inserimento del record | PractitionerRole |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -86,7 +75,7 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## Value set
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRole:
+Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRoleMedicoPrescrittore:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|

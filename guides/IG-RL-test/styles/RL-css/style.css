@@ -2,6 +2,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-size: 14px;
 }
 
 #ig-viewer {
@@ -208,49 +209,40 @@ p {
     font-family: "Courier New" Courier monospace;
 }
 
-h1,
-h2 {
-    color: #297a38;
-}
-
-h3,
-h4 {
-    color: #0059b3;
-}
-
 h1 {
+    color: #297a38;
     font-family: Fira Sans Medium, sans-serif;
     background-color: #ededed;
     font-weight: bold;
     padding: 0.5em;
-    font-size: 1.65em;
-    line-height: 80%;
+    font-size: 22px;
 }
 
 h2 {
+    color: #297a38;
     font-family: Fira Sans Medium, sans-serif;
     font-weight: bolder;
-    font-size: 1.4em;
-    line-height: 70%;
+    font-size: 20px;
 }
 
 h3 {
+    color: #0059b3;
     font-family: Fira Sans Medium, sans-serif;
     font-weight: bolder;
-    font-size: 1.2em;
-    line-height: 50%;
+    font-size: 18px;
 }
 
 h4 {
+    color: #0059b3;
     font-family: Fira Sans Medium, sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 16px;
 }
 
 h5 {
     color: black;
     font-family: Fira Sans Medium, sans-serif;
-    font-size: 0.9em;
+    font-size: 16;
     font-weight: bold;
 }
 
@@ -344,7 +336,6 @@ pre {
     cursor: pointer;
     padding: 8px 10px;
     transition: 0.3s;
-    font-size: 14px;
 }
 
 /* Change background color of buttons on hover */
@@ -397,9 +388,8 @@ body {
 body header .guide-title {
     color: #297a38;
     font-family: Fira Sans Medium, sans-serif;
-    font-size: 1.35em;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 80%;
     margin-top: 20px;
 }
 
@@ -407,12 +397,21 @@ body header .guide-title {
  Contenuti aggiunti custom per progetto RL FHIR - by Reply
 -------------------------------------------------------- */
 
-/* Tabelle scorrevoli orizontalmente */
+/* Tabelle scorrevoli orizzontalmente */
 table{
     display: block;
     overflow-x: auto;
     white-space: normal;
     border-collapse: collapse;
+}
+
+/* bordi tabelle*/
+table, td, th {
+    border: 0.5px solid #ccc;
+}
+
+.no-border{
+    border: none
 }
 
 /* Padding celle tabelle*/

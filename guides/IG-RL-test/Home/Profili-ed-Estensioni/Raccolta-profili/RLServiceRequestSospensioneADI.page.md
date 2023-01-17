@@ -2,10 +2,9 @@
 
 - [RLServiceRequestSospensioneADI](#rlservicerequestsospensioneadi)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente](#periodo-e-causale-della-sospensione-temporanea-del-ricovero-domiciliare-e-la-necessità-di-effettuare-una-rivalutazione-del-paziente)
-  - [Seacrh parameter](#seacrh-parameter)
+    - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
+  - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
@@ -63,31 +62,46 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Extension
-
-Non sono state sviluppate extension per questo profilo.
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
 ## Criteri di ricerca
 
-### Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente
-Parametri di ricerca:
-- ...
-- ...
+### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
 
-L’esito della ricerca permette di recuperare le informazioni relative alla sospensione temporanea del ricovero domiciliare del cittadino.
+La ricerca contiene il dettaglio delle sospensioni e la necessità di rivalutazione del paziente inerente al periodo che va dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta.
 
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
 
-| SCOPE |     |
+Questa ricerca viene effettuata nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
+
+I parametri da valorizzare per effettuare la ricerca sono:
+- profile: tipologia di profilo che potrà assumere i valori di  RLServiceRequestRivalutazione e/o RLServiceRequestSospensioneADI
+- requisition: numero pratica del servizio di cure domiciliari.
+- basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
+
+| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari |
 |---|---|
 | VERB | GET |
-| BASE |     |
-| URL |     |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| BASE_APISOURCE | https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/<versione>/erogazione-adi |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=\{_numeroPratica_\}&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
 
+A titolo esemplificativo, la chiamata: 
+  
+    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+
+Restituirà, se presenti, tutte le sospensioni richieste per la pratica numero "000001" afferente alla struttura "03014300".
+
+La chiamata:
+  
+    ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+
+Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "000001" afferente alla struttura "03014300".
+
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa ServiceRequest.
 

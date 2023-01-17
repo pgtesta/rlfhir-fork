@@ -2,10 +2,10 @@
 
 - [RLServiceRequestRivalutazione](#rlservicerequestrivalutazione)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
   - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente](#periodo-e-causale-della-sospensione-temporanea-del-ricovero-domiciliare-e-la-necessità-di-effettuare-una-rivalutazione-del-paziente)
-  - [Seacrh parameter](#seacrh-parameter)
+    - [Dettagli della necessità di rivalutazione del paziente](#dettagli-della-necessità-di-rivalutazione-del-paziente)
+    - [Dettagli della sospensione temporanea del ricovero domiciliare di un paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-di-un-paziente)
+  - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
@@ -63,32 +63,65 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Extension
-
-Non sono state sviluppate extension per questo profilo.
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
 ## Criteri di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+### Dettagli della necessità di rivalutazione del paziente
 
-### Periodo e causale della sospensione temporanea del ricovero domiciliare e la necessità di effettuare una rivalutazione del paziente
-Parametri di ricerca:
-- ...
-- ...
+Questa ricerca viene effettuata da un’ASST nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
 
-L’esito della ricerca permette di recuperare le informazioni relative alla necessità di effettuare una rivalutazione del cittadino.
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
 
-| SCOPE |     |
+I parametri da valorizzare per effettuare la ricerca sono:
+-	requisition: numero pratica del servizio di cure domiciliari.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+
+L’esito della ricerca sarà un bundle contenente le informazioni inerenti alla richiesta di rivalutazione di un determinato paziente attraverso il numero pratica del servizio di cure domiciliari.
+
+| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari  |
 |---|---|
 | VERB | GET |
-| BASE |     |
-| URL |      |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| BASE_APISOURCE | https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/<versione>/erogazione-adi |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=\{_numeroPratica_\}&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
+
+A titolo esemplificativo, la chiamate: 
+  
+    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+
+Restituirà, se presenti, tutte le rivalutazioni necessarie alla pratica numero "000001" afferente alla struttura "03014300".
+
+La chiamata:
+  
+    ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+
+Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "000001" afferente alla struttura "03014300".
+
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
+
+### Dettagli della sospensione temporanea del ricovero domiciliare di un paziente
+
+Questa ricerca viene effettuata da un’ASST per reperire il dettaglio delle sospensioni temporanee del ricovero domiciliare di un paziente 
+
+L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
+
+I parametri da valorizzare per effettuare la ricerca sono:
+-	requisition: numero pratica del servizio di cure domiciliari.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+
+L’esito della ricerca sarà un bundle contenente le informazioni inerenti alle sospensioni temporanee del ricovero di cure domiciliare di un determinato paziente
+
+| SCOPE |  |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER |  |
+| BASE_APISOURCE |  |
+| URL |  |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa ServiceRequest.
 

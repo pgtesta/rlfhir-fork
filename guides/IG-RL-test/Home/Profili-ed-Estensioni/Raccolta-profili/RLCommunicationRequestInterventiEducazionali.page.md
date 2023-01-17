@@ -1,0 +1,82 @@
+# RLCommunicationRequestInterventiEducazionali
+
+- [RLCommunicationRequestInterventiEducazionali](#rlcommunicationrequestinterventieducazionali)
+  - [Descrizione](#descrizione)
+  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Search parameter](#search-parameter)
+  - [Value set](#value-set)
+
+## Descrizione
+
+Profilo declinato a partire dalla risorsa standard FHIR [CommunicationRequest](http://hl7.org/fhir/R4/communicationrequest.html) che descrive il tipo di intervento educazionale, le modalità di erogazione e la frequenza di erogazione definite durante la stesura del progetto individuale del paziente.
+
+La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, text: qui}}.
+
+<br>
+<div class="tab">
+ <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+  <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
+  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
+  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
+</div>
+
+<div id="Snapshot View" class="tabcontent" style="display:block">
+  <h3>Snapshot View</h3>
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, snapshot}}
+</div>
+
+<div id="Differential View" class="tabcontent">
+  <h3>Differential View</h3>
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, diff}}
+</div>
+
+<div id="Hybrid View" class="tabcontent">
+  <h3>Hybrid View</h3>
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, hybrid}}
+</div>
+
+<div id="Table View" class="tabcontent">
+  <h3>Table View</h3>
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, snapshot}}
+</div>
+
+<div id="XML View" class="tabcontent">
+  <h3>XML View</h3>
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, snapshot}}
+</div>
+
+<div id="JSON View" class="tabcontent">
+  <h3>JSON View</h3>
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, snapshot}}
+</div>
+
+<div id="Esempi" class="tabcontent">
+  <h3>Esempi</h3>
+Al momento non ci sono esempi disponibili. 
+<br>
+</div>
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Criteri di ricerca
+
+Attualmente non sono stati definiti criteri di ricerca.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Search parameter
+
+Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa CommunicationRequest.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Value set
+
+Nella seguente tabella sono elencati i value set relativi al profilo RLCommunicationRequestInterventiEducazionali:
+
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| medium | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | Il riferimento alla lista esaustiva dei canali di comunicazione è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
