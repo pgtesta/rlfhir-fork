@@ -10,6 +10,6 @@ ed è possibile consultare le risorse FHIR rilasciate e attualmente in uso.
 </div>
 
 <div class="alert alert-danger">
-Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, di conseguenza le risorse potrebbero essere soggette a revisione e modifiche.
+Questa guida di implementazione fa riferimento all'ambiente di <b>test</b>, di conseguenza le risorse potrebbero essere soggette a revisione e modifiche.
 </div>
 
