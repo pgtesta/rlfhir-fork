@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLOrganizationAsstAfferenza",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationAsstAfferenza",
+  "name": "RLOrganizationAsstAfferenza",
+  "status": "active",
+  "description": "AsstTerritoriale",
+  "code": "asstTerritoriale",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}
