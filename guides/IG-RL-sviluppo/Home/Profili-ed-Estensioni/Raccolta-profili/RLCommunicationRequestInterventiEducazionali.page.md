@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [CommunicationRequest](http://hl7.org/fhir/R4/communicationrequest.html) che descrive il tipo di intervento educazionale, le modalità di erogazione e la frequenza di erogazione definite durante la stesura del progetto individuale del paziente.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali, text: qui}}.
 
 <br>
 <div class="tab">

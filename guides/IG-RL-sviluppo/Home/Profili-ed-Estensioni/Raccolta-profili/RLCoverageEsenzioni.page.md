@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Coverage](http://hl7.org/fhir/R4/coverage.html) che contiene i dettagli inerenti alle esenzioni di cui il paziente beneficia, la cui codifica è ricavata dalla tabella delle codifiche SISS delle esenzioni.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, text: qui}}.
 
 <br>
 <div class="tab">

@@ -1,6 +1,6 @@
 ## Dr. Martino Rossi
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:esempio-Practitioner}}
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:esempio-Practitioner}}
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>

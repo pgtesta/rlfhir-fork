@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:esempio-RLOrganizationL1}}
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:esempio-RLOrganizationL1}}
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>

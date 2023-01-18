@@ -11,7 +11,7 @@
 ## Descrizione
 Profilo declinato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per il dettaglio delle risposte ai quesiti delle valutazioni dei bisogni alla quale il paziente è stato sottoposto.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, text: qui}}.
 
 <br>
 <div class="tab">
@@ -94,8 +94,12 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa QuestionnaireResponse.
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- _include
+- _profile
+- based-on
+- source
+- status
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

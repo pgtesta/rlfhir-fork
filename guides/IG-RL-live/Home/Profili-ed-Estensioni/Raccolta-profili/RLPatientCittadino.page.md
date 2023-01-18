@@ -11,7 +11,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Patient](http://hl7.org/fhir/R4/patient.html) contenente i dettagli anagrafici del cittadino.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, text: qui}}.
 
 <br>
 <div class="tab">

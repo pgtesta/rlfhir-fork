@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere l’esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto.
 
-La pagina Simplifier della risorsa è consultabile qui: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, text: qui}}.
 
 <br>
 <div class="tab">
