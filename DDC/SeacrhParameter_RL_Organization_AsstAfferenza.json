@@ -4,8 +4,8 @@
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationAsstAfferenza",
   "name": "RLOrganizationAsstAfferenza",
   "status": "active",
-  "description": "AsstTerritoriale",
-  "code": "asstTerritoriale",
+  "description": "AsstAfferenza",
+  "code": "asstAfferenza",
   "base": [
     "Organization"
   ],
