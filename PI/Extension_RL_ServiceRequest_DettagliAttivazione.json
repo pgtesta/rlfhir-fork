@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione",
+  "name": "RLServiceRequestDettagliAttivazione",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:strutturaTerritorialeProssimita",
+        "path": "Extension.extension",
+        "sliceName": "strutturaTerritorialeProssimita",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:strutturaTerritorialeProssimita.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "strutturaTerritorialeProssimita"
+      },
+      {
+        "id": "Extension.extension:strutturaTerritorialeProssimita.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:consultazioneCatalogoOfferta",
+        "path": "Extension.extension",
+        "sliceName": "consultazioneCatalogoOfferta",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:consultazioneCatalogoOfferta.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "consultazioneCatalogoOfferta"
+      },
+      {
+        "id": "Extension.extension:consultazioneCatalogoOfferta.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

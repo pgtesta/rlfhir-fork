@@ -293,7 +293,7 @@
         "id": "CarePlan.activity.reference",
         "path": "CarePlan.activity.reference",
         "short": "Dettagli delle possibili attività inserite nel progetto individuali",
-        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioSanitari,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili,\r\n-RLServiceRequestPrestazioniInfermieristiche",
+        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioAssistenziali,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili,\r\n-RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -302,7 +302,7 @@
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventiEducazionali",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili"

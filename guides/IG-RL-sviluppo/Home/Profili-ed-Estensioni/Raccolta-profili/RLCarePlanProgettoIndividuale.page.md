@@ -75,13 +75,13 @@ Premesso che esiste un'unica versione del progetto individuale in stato “attiv
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
--	activity.reference(RLServiceRequestServiziSociosanitari).code.coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).code.coding.code: codice del servizio sociosanitario d’interesse
 -	author.reference(RLOrgnizationL1).identifier: codice L1 dell’ASST che ha prodotto il progetto individuale
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati 
 
 L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare il contenuto informativo relativo all’attivazione di un servizio sociosanitario previsto nei progetti individuali attivi prodotti da un’ASST.
 
-|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo prodotti da una determinata ASST (RLOrganizationL1) che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.). |
+|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo prodotti da una determinata ASST (RLOrganizationL1) che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.). |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
@@ -104,13 +104,13 @@ Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanit
 L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
 
 I parametri da valorizzare per effettuare la ricerca sono:
--	activity.reference(RLServiceRequestServiziSociosanitari).code coding.code: codice del servizio sociosanitario d’interesse
--	activity.reference(RLServiceRequestServiziSociosanitari).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).code coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
 -	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
  
 L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione presso l’Ente Erogatore stesso di un servizio sociosanitario.
 
-|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSociosanitari relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.).  |
+|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.).  |
 |---|---|
 |     VERB    |     GET    |
 | BASE_APIMANAGER | {{link:Home-Contesto-API-RESTful}} , text:<base_API_Manager>}} |

@@ -142,7 +142,7 @@ I parametri di ricerca definiti nel profilo RLOrganizationL2 sono definiti nella
 
 | Nome e link Simplifier | Descrizione | Codice |
 |---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationASSTAfferenza}} | ASSTAfferenza | ASSTAfferenza |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationASSTAfferenza}} | ASST di afferenza | asstAfferenza |
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello   2 specificando la data di fine validità. | dataFineValidita |
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello   2 specificando la data di inserimento. | dataInizioValidita |
 

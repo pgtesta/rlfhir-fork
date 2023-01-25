@@ -216,10 +216,10 @@
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliPrenotazione}}</td>
       </tr>
       <tr>
-        <td>RLServiceRequestServiziSocioSanitariCausaleDimissione</td>
+        <td>RLServiceRequestCausaleDimissione</td>
         <td>ServiceRequest</td>
         <td>Nel caso in cui il codice del servizio sociosanitario (campo code) sia "C-DOM" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitariCausaleDimissione}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione}}</td>
       </tr>
       <tr>
         <td>RLServiceRequestUlterioriDettagli</td>

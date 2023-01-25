@@ -1,6 +1,6 @@
-# RLServiceRequestServiziSocioSanitari
+# RLServiceRequestServiziSocioAssistenziali
 
-- [RLServiceRequestServiziSocioSanitari](#rlservicerequestservizisociosanitari)
+- [RLServiceRequestServiziSocioAssistenziali](#RLServiceRequestServiziSocioAssistenziali)
   - [Descrizione](#descrizione)
   - [Criteri di ricerca](#criteri-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -11,7 +11,7 @@
 
 Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che contiene le informazioni relative ad un servizio socio-sanitario da attivare al cittadino erogato da un ente erogatore presente nella rete territoriale.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, text: qui}}.
 
 <br>
 <div class="tab">
@@ -26,32 +26,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -78,7 +78,7 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 ## Value set
 
-Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestServiziSocioSanitari.
+Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestServiziSocioAssistenziali.
 
 |  Nome |  Descrizione |  Riferimento al dettaglio della codifica |
 |---|---|---|

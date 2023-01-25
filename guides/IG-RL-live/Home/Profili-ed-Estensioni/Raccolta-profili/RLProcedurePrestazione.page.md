@@ -75,8 +75,8 @@ Non sono state sviluppate extension per questo profilo.
 ### Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare aggiornate alla data e ora di richiesta
 Il dettaglio delle prestazioni è inteso come riassuntivo del periodo che va dalla data di attivazione  del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta. 
 I parametri da valorizzare per effettuare la ricerca sono:
--	basedOn.reference(RLServiceRequestServiziSociosanitari).identifier
--	basedOn.reference(RLServiceRequestServiziSociosanitari).code
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).identifier
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).code
 
 L’esito della ricerca permette di recuperare le informazioni relative alle prestazioni erogate dall’ente erogatore della presa in carico al cittadino in regime di ricovero domiciliare aggiornate alla data corrente della richiesta.
 

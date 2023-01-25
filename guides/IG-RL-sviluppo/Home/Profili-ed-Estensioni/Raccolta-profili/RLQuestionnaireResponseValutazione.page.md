@@ -71,8 +71,8 @@ Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanit
 I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “completed” 
 -	source.reference(RLPatientiCittadino).identifier: codice fiscale del paziente 
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier: codice identificativo del servizio sociosanitario d’interesse
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio sociosanitario.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario d’interesse
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio sociosanitario.
 
 
 |     SCOPE    |Ricerca tutti i profili RLQuestionnaireResponseValutazione in stato completato che si riferiscono ad un determinato paziente (RLPatientCittadino)|

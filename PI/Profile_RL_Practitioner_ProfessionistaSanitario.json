@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPractitionerProfessionistaSanitario",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario",
+  "name": "RLPractitionerProfessionistaSanitario",
+  "status": "draft",
+  "description": "Profilo contenente i dettagli anagrafici di un professionista sanitario",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "short": "Codice fiscale del professionista sanitario",
+        "definition": "Stringa alfanumerica di 16 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "short": "Nominativo del professionista sanitario"
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "short": "Cognome del professionista sanitario",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "short": "Nome del professionista sanitario",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

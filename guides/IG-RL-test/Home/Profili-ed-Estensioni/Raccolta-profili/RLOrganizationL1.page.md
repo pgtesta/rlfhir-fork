@@ -82,7 +82,7 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 - identifier
 - partof
 
-I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization , sono definiti nella seguente tabella:
+I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
 | Nome e link Simplifier | Descrizione | Codice |
 |---|---|---|

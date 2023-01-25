@@ -73,7 +73,7 @@ L’associazione al paziente è definita tramite il numero pratica del servizio 
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	requisition: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
 L’esito della ricerca sarà un bundle contenente le informazioni inerenti alla richiesta di rivalutazione di un determinato paziente attraverso il numero pratica del servizio di cure domiciliari.
 
@@ -108,7 +108,7 @@ L’associazione al paziente è definita tramite il numero pratica del servizio 
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	requisition: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
 L’esito della ricerca sarà un bundle contenente le informazioni inerenti alle sospensioni temporanee del ricovero di cure domiciliare di un determinato paziente
 

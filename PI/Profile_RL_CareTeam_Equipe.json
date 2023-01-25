@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLCareTeamEquipe",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition//RLCareTeamEquipe",
+  "name": "RLCareTeamEquipe",
+  "status": "draft",
+  "description": "Profilo volto a definire un equipe di professionisti sanitari",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CareTeam",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CareTeam",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CareTeam.status",
+        "path": "CareTeam.status",
+        "short": "Stato dell'aggregazione dell'equipe",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      },
+      {
+        "id": "CareTeam.name",
+        "path": "CareTeam.name",
+        "short": "Nome dell'equipe",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CareTeam.period",
+        "path": "CareTeam.period",
+        "short": "Periodo di attività dell'equipe"
+      },
+      {
+        "id": "CareTeam.period.start",
+        "path": "CareTeam.period.start",
+        "short": "Data inizio attività",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR.",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CareTeam.period.end",
+        "path": "CareTeam.period.end",
+        "short": "Data cessazione attività",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR.",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CareTeam.participant",
+        "path": "CareTeam.participant",
+        "short": "Elenco dei professionisti sanitari che compongono l'equipe"
+      },
+      {
+        "id": "CareTeam.participant.member",
+        "path": "CareTeam.participant.member",
+        "short": "Riferimento al professionista sanitario",
+        "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

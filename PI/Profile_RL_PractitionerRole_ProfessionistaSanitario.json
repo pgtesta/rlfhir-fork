@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPractitionerRoleProfessionistaSanitario",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario",
+  "name": "RLPractitionerRoleProfessionistaSanitario",
+  "status": "draft",
+  "description": "Profilo contentente la tipologia del professionista sanitario con riferimento al dettaglio anagrafico",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "short": "Periodo di abilitazione del professionista sanitario"
+      },
+      {
+        "id": "PractitionerRole.period.start",
+        "path": "PractitionerRole.period.start",
+        "short": "Data inizio abilitazione da professionista sanitario",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "PractitionerRole.period.end",
+        "path": "PractitionerRole.period.end",
+        "short": "Data fine abilitazione da professionista sanitario",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "short": "Riferimento al profilo anagrafico del professionista sanitario",
+        "definition": "Reference al profilo RLPractitionerProfessionistaSanitario",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "short": "Riferimento all'ASST cui il professionista sanitario esercita la professione",
+        "definition": "Reference al profilo RLOrganizationL1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "short": "Codice e descrizione della qualifica del professionista sanitario"
+      },
+      {
+        "id": "PractitionerRole.code.coding",
+        "path": "PractitionerRole.code.coding",
+        "short": "Codice e descrizione della qualifica del professionista sanitario"
+      },
+      {
+        "id": "PractitionerRole.code.coding.code",
+        "path": "PractitionerRole.code.coding.code",
+        "short": "Codice della qualifica del professionista sanitario",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "PractitionerRole.code.coding.display",
+        "path": "PractitionerRole.code.coding.display",
+        "short": "Descrizione della qualifica del professionista sanitario",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

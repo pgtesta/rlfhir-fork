@@ -75,7 +75,7 @@ Questa ricerca viene effettuata nel momento in cui deve essere appurato se un pa
 I parametri da valorizzare per effettuare la ricerca sono:
 - profile: tipologia di profilo che potrà assumere i valori di  RLServiceRequestRivalutazione e/o RLServiceRequestSospensioneADI
 - requisition: numero pratica del servizio di cure domiciliari.
-- basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
+- basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
 
 | SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari |
 |---|---|

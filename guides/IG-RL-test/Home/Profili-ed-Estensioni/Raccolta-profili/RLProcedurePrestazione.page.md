@@ -11,8 +11,6 @@
 ## Descrizione
 Profilo declinato a partire dalla risorsa generica FHIR [Procedure](http://hl7.org/fhir/R4/procedure.html) che contiene il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.
 
-Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni anagrafiche e di contatto relative alle strutture di tipo ente L1. In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie e possono essere ASST o ATS così come MMG/PLS.
-
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione, text: qui}}.
 
 <br>
@@ -58,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/ASST-della-Brianza.page.md}}
+  Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
@@ -73,12 +71,12 @@ Questa ricerca deve essere effettuata da un’ASST per ottenere il dettaglio del
 L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
 
 I parametri da valorizzare per effettuare la ricerca sono:
--	basedOn.reference(RLServiceRequestServiziSociosanitari).identifier: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOrganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).identifier: numero pratica del servizio di cure domiciliari.
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOrganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
 L’esito della ricerca produrrà un bundle contenente le informazioni relative alle prestazioni effettuate dall’ente erogatore della presa in carico del cittadino in regime di ricovero domiciliare aggiornate alla data corrente della richiesta.
 
-| SCOPE | Ricerca tutti i profili RLProcedurePrestazione che sono riferiti ad una pratica di erogazione di cure domiciliare (profilo RLServiceRequestServiziSociosanitari) |
+| SCOPE | Ricerca tutti i profili RLProcedurePrestazione che sono riferiti ad una pratica di erogazione di cure domiciliare (profilo RLServiceRequestServiziSocioAssistenziali) |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
@@ -100,7 +98,11 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa Procedure.
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- _include
+- _profile
+- based-on
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

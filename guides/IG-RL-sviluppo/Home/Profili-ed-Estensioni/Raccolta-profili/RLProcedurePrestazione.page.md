@@ -71,12 +71,12 @@ Questa ricerca deve essere effettuata da un’ASST per ottenere il dettaglio del
 L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
 
 I parametri da valorizzare per effettuare la ricerca sono:
--	basedOn.reference(RLServiceRequestServiziSociosanitari).identifier: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOrganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).identifier: numero pratica del servizio di cure domiciliari.
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOrganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
 L’esito della ricerca produrrà un bundle contenente le informazioni relative alle prestazioni effettuate dall’ente erogatore della presa in carico del cittadino in regime di ricovero domiciliare aggiornate alla data corrente della richiesta.
 
-| SCOPE | Ricerca tutti i profili RLProcedurePrestazione che sono riferiti ad una pratica di erogazione di cure domiciliare (profilo RLServiceRequestServiziSociosanitari) |
+| SCOPE | Ricerca tutti i profili RLProcedurePrestazione che sono riferiti ad una pratica di erogazione di cure domiciliare (profilo RLServiceRequestServiziSocioAssistenziali) |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |

@@ -84,10 +84,10 @@ Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLCarePlanP
 Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
 I parametri da valorizzare per effettuare la ricerca sono:
 - status
-- activity.reference(RLServiceRequestServiziSociosanitari).code
-- activity.reference(RLServiceRequestServiziSociosanitari).performer
+- activity.reference(RLServiceRequestServiziSocioAssistenziali).code
+- activity.reference(RLServiceRequestServiziSocioAssistenziali).performer
 
-L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSociosanitari_) di una determinata tipologia di UdO sociosanitaria e per il quali è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
+L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSocioAssistenziali_) di una determinata tipologia di UdO sociosanitaria e per il quali è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
 
 |     SCOPE    |    Ricerca tutti i CarePlan in stato attivo che contengono almeno una ServiceRequest relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
 |---|---|
@@ -105,11 +105,11 @@ Restituirà..
 Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
 I parametri da valorizzare per effettuare la ricerca sono:
 - status
-- activity.reference(RLServiceRequestServiziSociosanitari).code
-- activity.reference(RLServiceRequestServiziSociosanitari).performer
+- activity.reference(RLServiceRequestServiziSocioAssistenziali).code
+- activity.reference(RLServiceRequestServiziSocioAssistenziali).performer
 - activity.reference(RLPatientCittadino).identifier
 
-L’esito della ricerca permette di recuperare le informazioni relative al progetto individuale atttivo di un cittadino per il quale è prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSociosanitari_) di una determinata tipologia di UdO sociosanitaria e per il quale è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
+L’esito della ricerca permette di recuperare le informazioni relative al progetto individuale atttivo di un cittadino per il quale è prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSocioAssistenziali_) di una determinata tipologia di UdO sociosanitaria e per il quale è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
 
 |     SCOPE    |     Ricerca iltutti i CarePlan in stato attivo relativo ad un determinato cittadino che   contieneengono almeno una ServiceRequest   relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM,   RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
 |---|---|

@@ -129,17 +129,17 @@
         }
       },
       {
-        "id": "Procedure.basedOn:RLServiceRequestServiziSocioSanitari",
+        "id": "Procedure.basedOn:RLServiceRequestServiziSocioAssistenziali",
         "path": "Procedure.basedOn",
-        "sliceName": "RLServiceRequestServiziSocioSanitari",
+        "sliceName": "RLServiceRequestServiziSocioAssistenziali",
         "short": "Riferimento alla richiesta di attivazione delle cure domiciliari",
-        "definition": "Reference al profilo RLServiceRequestServiziSocioSanitari contente i dettagli della richiesta di attivazione delle cure domiciliari",
+        "definition": "Reference al profilo RLServiceRequestServiziSocioAssistenziali contente i dettagli della richiesta di attivazione delle cure domiciliari",
         "comment": "Campo da compilare nel caso in cui la prestazione sia erogata in setting assistenziale domiciliare",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
             ]
           }
         ]

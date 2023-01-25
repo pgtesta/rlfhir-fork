@@ -109,10 +109,10 @@
       </tr>
       <tr>
         <td>PI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCommunicationRequestInterventiEducazionali.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestInterventoEducazionale.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a></td>
         <td>Profilo volto a descrivere l’intervento educazionale di cui il paziente necessita come definito dal suo progetto individuale.</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale}}</td>
       </tr>
       <tr>
         <td>PI</td>
@@ -256,10 +256,10 @@
       </tr>
       <tr>
         <td>PI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioSanitari.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioAssistenziali.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>Profilo volto a contenere le informazioni riguardo il servizio sociosanitario da attivare ad un cittadino nell’ambito del suo progetto individuale.</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali}}</td>
       </tr>
     </tbody>
     </table>
