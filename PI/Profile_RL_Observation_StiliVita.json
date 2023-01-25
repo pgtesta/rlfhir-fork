@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLObservationStiliVita",
   "meta": {
-    "lastUpdated": "2022-12-05T10:20:30.122402+00:00"
+    "lastUpdated": "2023-01-23T14:45:48.8658134+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
   "name": "RLObservationStiliVita",
@@ -56,26 +56,26 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Codifica dello stile di vita"
+        "short": "Codifica dello stile di vita",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli stili di vita contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
-        "short": "Le tipologie dello stile di vita sono: fumo, alcol, sedentarietà ed eccesso ponderale",
-        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "short": "Le tipologie dello stile di vita sono: fumo, alcol, sedentarietà ed eccesso ponderale"
       },
       {
         "id": "Observation.code.coding.code",
         "path": "Observation.code.coding.code",
         "short": "Codice della tipologia dello stile di vita",
+        "definition": "Codice numerico di 2 cifre",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Observation.code.coding.display",
         "path": "Observation.code.coding.display",
         "short": "Descrizione della tipologia dello stile di vita",
-        "definition": "Stringa alfabetica di al più 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "definition": "Stringa alfabetica di al più 50 caratteri"
       },
       {
         "id": "Observation.subject",
@@ -108,7 +108,7 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Codifica e descrizione dello stato relativo al corrispondende stile di vita",
-        "definition": "Codifica da chiedere a ENG",
+        "definition": "Codifica in fase di definizione",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -125,7 +125,7 @@
         "id": "Observation.value[x].coding.code",
         "path": "Observation.value[x].coding.code",
         "short": "Codice dell'osservazione sullo stile di vita",
-        "comment": "I valori della codifica sono rapressentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo. \r\nIl dato è detenuto dal SGDT."
+        "comment": "Il dato è detenuto dal SGDT."
       },
       {
         "id": "Observation.value[x].coding.display",
@@ -133,11 +133,6 @@
         "short": "Codice dell'osservazione sullo stile di vita",
         "definition": "Stringa alfanumerica di al più 1000 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "Observation.component.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
       }
     ]
   }

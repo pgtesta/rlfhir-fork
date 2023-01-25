@@ -120,21 +120,24 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
+        "id": "Observation.component.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "short": "Codice della valutazione specifica al quale iil paziente è stato sottoposto",
+        "definition": "Stringa alfanumerica di 4 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
         "id": "Observation.component.code.coding.display",
         "path": "Observation.component.code.coding.display",
-        "short": "Descrizione del risultato dell'elaborazioe PVC o PHC"
+        "short": "Descrizione del risultato dell'elaborazioe PVC o PHC",
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
       },
       {
         "id": "Observation.component.value[x]",
         "path": "Observation.component.value[x]",
         "short": "Contenuto informativo del risultato",
-        "definition": "In base alla tipologia di risultato relativo all'indicatore della sezione PVC o PHP i possibili datatype sono: \r\nvalueQuantity (Quantity)\r\nvalueCodableConcept (CodableConcept) \r\nvalueString (string) \r\nvalueBoolean (boolean) \r\nvalueInteger (integer)\r\nvalueRange (Range) \r\nvalueRatio (Ratio)\r\nvalueSampledData (SampledData)\r\nvalueTime (time) \r\nvalueDateTime (dateTime) \r\nvaluePeriod (Periond)",
+        "definition": "In base alla tipologia di risultato relativo all'indicatore della sezione PVC o PHP i possibili datatype sono: \r\n- valueQuantity (Quantity)\r\n- valueCodableConcept (CodableConcept) \r\n- valueString (string) \r\n- valueBoolean (boolean) \r\n- valueInteger (integer)\r\n- valueRange (Range) \r\n- valueRatio (Ratio)\r\n- valueSampledData (SampledData)\r\n- valueTime (time) \r\n- valueDateTime (dateTime) \r\n- valuePeriod (Periond)",
         "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "Observation.component.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
       }
     ]
   }

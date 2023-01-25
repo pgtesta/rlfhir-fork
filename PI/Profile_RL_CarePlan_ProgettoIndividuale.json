@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2023-01-13T14:46:24.4287869+00:00"
+    "lastUpdated": "2023-01-23T13:57:30.7020157+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -66,14 +66,14 @@
         "id": "CarePlan.status",
         "path": "CarePlan.status",
         "short": "Stato del progetto individuale",
-        "definition": "Active: equivalente allo stato 'Attivo' del SGDT\r\nOn-hold: equivalente allo stato 'Da compilare' del SGDT\r\nDraft: equivalente allo stato 'In compilazione' del SGDT\r\nCompleted: equivalente allo stato 'Chiuso' del SGDT",
+        "definition": "- Active: equivalente allo stato 'Attivo' del SGDT\r\n- On-hold: equivalente allo stato 'Da compilare' del SGDT\r\n- Draft: equivalente allo stato 'In compilazione' del SGDT\r\n- Completed: equivalente allo stato 'Chiuso' del SGDT",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "CarePlan.intent",
         "path": "CarePlan.intent",
         "short": "Intento del progetto individuale",
-        "definition": "Valore fisso su \"order\" (la richiesta autorizza l'azione di un professionista)",
+        "definition": "Valore fisso su \"order\"",
         "fixedCode": "order"
       },
       {
@@ -150,9 +150,10 @@
       {
         "id": "CarePlan.contributor",
         "path": "CarePlan.contributor",
-        "short": "Case manager del progetto individuale",
-        "definition": "Reference al profilo RLPractitioner e RLPractitionerRole inerenti al case manager del progetto individuale",
+        "short": "Case manager del progetto individuale. La figura del case manager può essere identificata in un professionista santatirio o in un equipe di professionisti sanitari.",
+        "definition": "- Reference al profilo RLPractitionerRoleProfessionistaSanitario nel caso in cui il case manager sia un professionista sanitario. \r\n- Reference al profilo RLCareTeamEquipe nel caso in cui il case manager sia un equipe di professionisti sanitari.",
         "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -190,8 +191,8 @@
           ],
           "rules": "open"
         },
-        "short": "il campo contiene quattro riferimenti: allergie del paziente, esito della valutazione del paziente, stile di vita del paziente ed esenzioni relative al cittadino",
-        "definition": "Reference ai profili RLAllergyIntoleranceAllergie contenente i dettagli delle allergie, RLObservationEsitoValutazione contenente gli esisti delle valutazioni effettuate dal paziente, RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, RLCoverageEsenzione contenente le esenzioni relative al cittadino",
+        "short": "Il campo contiene quattro riferimenti: allergie del paziente, esito della valutazione del paziente, stile di vita del paziente ed esenzioni relative al cittadino",
+        "definition": "Reference ai profili:\r\n- RLAllergyIntoleranceAllergie contenente i dettagli delle allergie, \r\n- RLObservationEsitoValutazione contenente gli esisti delle valutazioni effettuate dal paziente, \r\n- RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, \r\n- RLCoverageEsenzione contenente le esenzioni relative al cittadino",
         "type": [
           {
             "code": "Reference",
@@ -210,7 +211,7 @@
         "sliceName": "Allergie",
         "short": "Allergie del paziente",
         "definition": "Reference ai profilo RLAllergyIntoleranceAllergie contenente i dettagli delle allergie del paziente",
-        "comment": "Il dato è detenuto dal SGDT",
+        "comment": "Il dato è detenuto dal SGDT ma non è attualmente inserito all'interno del progetto individuale",
         "type": [
           {
             "code": "Reference",
@@ -242,7 +243,7 @@
         "sliceName": "StileVita",
         "short": "Stile di vita del paziente",
         "definition": "Reference ai profilo RLObservationStiliVita contente i dettagli sullo stile di vita del paziente",
-        "comment": "Il dato è detenuto dal SGDT",
+        "comment": "Il dato è detenuto dal SGDT ma non è attualmente inserito all'interno del progetto individuale",
         "type": [
           {
             "code": "Reference",
@@ -292,7 +293,7 @@
         "id": "CarePlan.activity.reference",
         "path": "CarePlan.activity.reference",
         "short": "Dettagli delle possibili attività inserite nel progetto individuali",
-        "definition": "Reference ai profili RLServiceRequestPrestazioniSpecialistiche, RLMedicationRequestTerapiaFarmacologica, RLServiceRequestServiziSocioSanitari, RLMedicationRequestOssigenoterapia, RLCommunicationRequestInterventiEducazionali",
+        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioSanitari,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili,\r\n-RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -302,7 +303,9 @@
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestInterventiEducazionali"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventiEducazionali",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili"
             ]
           }
         ]

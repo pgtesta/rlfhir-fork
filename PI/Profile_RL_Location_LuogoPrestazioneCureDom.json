@@ -21,15 +21,14 @@
       {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
-        "short": "Codice della tipologia di luogo di erogazione",
-        "definition": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "short": "Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Location.physicalType.coding.code",
         "path": "Location.physicalType.coding.code",
         "short": "Codice della tipologia di luogo di erogazione",
-        "definition": "Stringa numerica di 1 carattere",
-        "comment": "I codici della della tipologia di luogo di erogazione delle prestazioni di cure domiciliari sono ricavatii dal tracciato SIAD 1"
+        "definition": "Stringa numerica di 1 carattere"
       },
       {
         "id": "Location.physicalType.coding.display",

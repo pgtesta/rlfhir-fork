@@ -37,7 +37,7 @@
         "id": "Procedure.extension:dataPresaInCarico",
         "path": "Procedure.extension",
         "sliceName": "dataPresaInCarico",
-        "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
+        "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore nel caso sia stata erogata in regime di ricovero domiciliare.",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "min": 0,
         "max": "1",
@@ -45,7 +45,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneDataPresaInCarico"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico"
             ]
           }
         ],
@@ -61,14 +61,15 @@
         "id": "Procedure.extension:modalitaErogazione",
         "path": "Procedure.extension",
         "sliceName": "modalitaErogazione",
-        "short": "Modalità di erogazione",
+        "short": "Codice e descrizione della modalità di erogazione della prestazione",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle modalità di erogazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazioneModalitaErogazione"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione"
             ]
           }
         ],
@@ -88,8 +89,7 @@
         "id": "Procedure.extension:modalitaErogazione.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice della modalità di erogazione",
-        "definition": "Codice numerico di al più 3 caratteri",
-        "comment": "I codici della modalità di erogazione sono ricavate dal tracciato SIAD 3"
+        "definition": "Codice numerico di al più 2 caratteri"
       },
       {
         "id": "Procedure.extension:modalitaErogazione.value[x].coding.display",
@@ -97,6 +97,23 @@
         "short": "Descrizione della modalità di erogazione",
         "definition": "Stringa alfanumerica di al più di 50 caratteri",
         "comment": "Le descrizioni della modalità di erogazione sono ricavate dal tracciato SIAD 3"
+      },
+      {
+        "id": "Procedure.extension:numeroAccesso",
+        "path": "Procedure.extension",
+        "sliceName": "numeroAccesso",
+        "short": "Questo campo è valorizzare solo nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. Il valore di default è '1' ed indica che la prestazione definita nel campo 'code' erogata nella data indicata nel campo 'perfomedDateTime' è stata effettuata durante il primo accesso giornaliero dell'opertore. Nel caso in cui la stessa prestazione venga erogata più volte nell'arco della stessa giornata tramite accessi domiciliari multipli questo campo deve essere incrementatato in modo coerente. Si specifica che deve sempre essere creata un istanza del per ogni singola prestazione, anche se questa sia erogata più volte durante lo stesso accesso domiciliare.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "Procedure.basedOn",
@@ -152,13 +169,14 @@
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "short": "Codice e descrizione della prestazione"
+        "short": "Codice e descrizione della prestazione",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie di prestazioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Procedure.code.coding.code",
         "path": "Procedure.code.coding.code",
         "short": "Codice della prestazione",
-        "comment": "Da definire"
+        "definition": "Stringa alfanumerica di 10 caratteri"
       },
       {
         "id": "Procedure.code.coding.display",
@@ -193,23 +211,21 @@
         ]
       },
       {
-        "id": "Procedure.performer.actor",
-        "path": "Procedure.performer.actor",
-        "short": "Reference alla tipologia di operatore che ha effettuato la prestazione",
-        "definition": "Reference ai profilo RLPractionerRoleOperatoreADI del operatore sanitario che ha effettuato la prestazione al paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
-            ]
-          }
-        ]
+        "id": "Procedure.performer",
+        "path": "Procedure.performer",
+        "short": "Operatore sanitario che ha erogato la prestazione"
+      },
+      {
+        "id": "Procedure.performer.function",
+        "path": "Procedure.performer.function",
+        "short": "Nel caso di una prestazione erogata in regime di ricovero domiciliare questo campo contiene la tipologia di operatore che ha effettuato la prestazione",
+        "definition": "Codice numerico di un carattere",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie degli operatori ADI contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Procedure.location",
         "path": "Procedure.location",
-        "short": "Reference alla tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari",
+        "short": "Reference alla tipologia di luogo in cui  le prestazioni vengono erogate. Attulalmente il riferimento deifinsce solo le tipologie inerenti alla prestazioni erogate agli assisititi in regime di ricovero domicilare",
         "definition": "Reference al profilo RLLocationLuogoPrestazioneCureDom",
         "type": [
           {

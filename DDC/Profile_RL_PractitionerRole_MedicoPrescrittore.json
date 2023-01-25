@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerRoleMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2022-09-23T16:45:52.0778712+00:00"
+    "lastUpdated": "2023-01-23T14:01:20.6357849+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
   "name": "RLPractitionerRoleMedicoPrescrittore",
@@ -38,9 +38,9 @@
         "min": 2
       },
       {
-        "id": "PractitionerRole.extension:DataInsert",
+        "id": "PractitionerRole.extension:dataInsert",
         "path": "PractitionerRole.extension",
-        "sliceName": "DataInsert",
+        "sliceName": "dataInsert",
         "short": "Data di inserimento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "La fonte del dato è il campo DT_INSER della tabella V_MEDICI_GDC_DDC",
@@ -57,9 +57,9 @@
         "isModifier": false
       },
       {
-        "id": "PractitionerRole.extension:DataUpdate",
+        "id": "PractitionerRole.extension:dataUpdate",
         "path": "PractitionerRole.extension",
-        "sliceName": "DataUpdate",
+        "sliceName": "dataUpdate",
         "short": "Data dell'ultima modifica del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "La fonte del dato è il campo DT_ULTV della tabella V_MEDICI_GDC_DDC",
@@ -169,7 +169,7 @@
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
         "short": "Codice e descrizione della qualifica del medico prescrittore",
-        "definition": "Per le specifiche della codifica e descrizione consultare la tabella B - Qualifica dei medici prescrittori del documento DC-DDC-SIAA#02 V2.32",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle qualifiche dei medici prescrittori contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
         "max": "1"
       },

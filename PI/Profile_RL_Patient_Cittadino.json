@@ -4,6 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino",
   "name": "RLPatientCittadino",
   "status": "draft",
+  "description": "Profilo contenente i dettagli anagrafici di un cittadino",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
@@ -36,7 +37,7 @@
         "id": "Patient.extension:cittadinanza",
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
-        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
         "type": [
@@ -60,7 +61,7 @@
         "id": "Patient.extension:titoloDiStudio",
         "path": "Patient.extension",
         "sliceName": "titoloDiStudio",
-        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
         "type": [
@@ -83,7 +84,7 @@
         "id": "Patient.extension:posizioneDellaProfessione",
         "path": "Patient.extension",
         "sliceName": "posizioneDellaProfessione",
-        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
         "type": [
@@ -106,7 +107,7 @@
         "id": "Patient.extension:situazionePensionistica",
         "path": "Patient.extension",
         "sliceName": "situazionePensionistica",
-        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
         "type": [
@@ -154,13 +155,21 @@
           ],
           "rules": "open"
         },
-        "comment": "NAR"
+        "comment": "NAR",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient.identifier:CF",
         "path": "Patient.identifier",
         "sliceName": "CF",
-        "short": "Codice fiscale del paziente"
+        "short": "Codice fiscale del paziente",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:CF.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
       },
       {
         "id": "Patient.identifier:CF.value",
@@ -172,12 +181,18 @@
         "path": "Patient.identifier",
         "sliceName": "tesseraTEAM",
         "short": "Numero identificazione tessera sanitaria europea",
-        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
+        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "max": "1"
       },
       {
         "id": "Patient.identifier:tesseraTEAM.type",
         "path": "Patient.identifier.type",
         "short": "Nazione"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/fhir/sid/tesseraTEAM"
       },
       {
         "id": "Patient.identifier:tesseraTEAM.value",
@@ -197,39 +212,45 @@
       {
         "id": "Patient.name",
         "path": "Patient.name",
-        "short": "Nominativo del paziente"
+        "short": "Nominativo del paziente",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient.name.family",
         "path": "Patient.name.family",
         "short": "Cognome del paziente",
         "definition": "Stringa alfabetica di massimo 40 caratteri",
-        "comment": "NAR"
+        "comment": "NAR",
+        "min": 1
       },
       {
         "id": "Patient.name.given",
         "path": "Patient.name.given",
         "short": "Nome del paziente",
-        "definition": "Stringa alfabetica di massimo 40 caratteri"
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient.gender",
         "path": "Patient.gender",
         "short": "Sesso del paziente",
-        "comment": "NAR"
+        "comment": "NAR",
+        "min": 1
       },
       {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
         "short": "Data di nascita del paziente",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "NAR"
+        "comment": "NAR",
+        "min": 1
       },
       {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
-        "short": "Tipologia di luogo di residenza o domicilio del paziente",
-        "definition": "La codifica delle informazioni è la seguente: \r\n1 - Propria Residenza\r\n2 - Domicilio presso familiari\r\n3 - Domicilio presso Casa Albergo\r\n4 - Domicilio presso Comunità per minori\r\n5 - Domicilio presso Comunità per disabili\r\n6 - Domicilio presso Case Alloggio\r\n9 - Altro"
+        "short": "Tipologia di luogo di residenza o domicilio del paziente"
       },
       {
         "id": "Patient.address.country",
@@ -242,12 +263,7 @@
         "id": "Patient.maritalStatus",
         "path": "Patient.maritalStatus",
         "short": "Stato civile del paziente",
-        "comment": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
-      },
-      {
-        "id": "Patient.maritalStatus.coding",
-        "path": "Patient.maritalStatus.coding",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
       },
       {
         "id": "Patient.maritalStatus.coding.code",

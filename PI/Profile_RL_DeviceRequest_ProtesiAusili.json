@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLDeviceRequestProtesiAusili",
   "meta": {
-    "lastUpdated": "2022-12-05T10:47:55.5068817+00:00"
+    "lastUpdated": "2023-01-25T09:45:16.6990192+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
   "name": "RLDeviceRequestProtesiAusili",
@@ -37,17 +37,17 @@
         "min": 0
       },
       {
-        "id": "DeviceRequest.extension:consegnaPaziente",
+        "id": "DeviceRequest.extension:prescrizioneElettronica",
         "path": "DeviceRequest.extension",
-        "sliceName": "consegnaPaziente",
-        "short": "Flag riguardo la consegna a domicilio dell'ausilio al paziente",
+        "sliceName": "prescrizioneElettronica",
+        "short": "Flag riguardo la necessità di una prescrizione elettronica per il paziente",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestConsegnaPaziente"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestPrescrizioneElettronica"
             ]
           }
         ],
@@ -79,20 +79,31 @@
         "id": "DeviceRequest.intent",
         "path": "DeviceRequest.intent",
         "short": "Intento della richesta",
-        "definition": "Valore fisso su \"order\" (la richiesta autorizza l'azione di un professionista)",
+        "definition": "Valore fisso su \"order\"",
         "fixedCode": "order"
       },
       {
         "id": "DeviceRequest.code[x]",
         "path": "DeviceRequest.code[x]",
         "short": "Codice e descrizione dell'ausilio di protesica",
-        "definition": "Il codice è una stringa alfanumerica di al più 26 caratteri.\r\nLa descrizione è una stringra alfanumerica di al più 1024 caratteri.",
-        "comment": "Il dato è detenuto dal SGDT. \r\nLe fonti dei dati sono i campi CD_AUSILIO e DS_AUSILIO della tabella ausili di protesica dei Dati Codificati",
         "type": [
           {
             "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "DeviceRequest.code[x].coding.code",
+        "path": "DeviceRequest.code[x].coding.code",
+        "short": "Codice dell'ausilio di protesica",
+        "definition": "Stringa alfanumerica di al più 26 caratteri",
+        "comment": "La fonte del dato è il campo CD_AUSILIO della tabella ausili di protesica dei Dati Codificati"
+      },
+      {
+        "id": "DeviceRequest.code[x].coding.display",
+        "path": "DeviceRequest.code[x].coding.display",
+        "short": "Descrizione dell'ausilio di protesica",
+        "definition": "Stringra alfanumerica di al più 1024 caratteri."
       },
       {
         "id": "DeviceRequest.subject",
@@ -110,26 +121,28 @@
         ]
       },
       {
-        "id": "DeviceRequest.encounter",
-        "path": "DeviceRequest.encounter",
-        "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della protesi o l'ausilio",
-        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "DeviceRequest.requester",
-        "path": "DeviceRequest.requester",
-        "short": "Profilo del professionista sanitario richiedente la fonitura della protesi o l'ausilio",
-        "definition": "Reference ai profilo RLPractioner del professionista sanitario che ha richiesto  l'attivazione della protesi o l'ausilio",
-        "comment": "Il dato è detenuto dal SGDT",
+        "id": "DeviceRequest.occurrence[x]",
+        "path": "DeviceRequest.occurrence[x]",
+        "short": "Periodo di utilizzo della protesi o dell'ausilio",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
-            ]
+            "code": "Period"
           }
         ]
+      },
+      {
+        "id": "DeviceRequest.occurrence[x].start",
+        "path": "DeviceRequest.occurrence[x].start",
+        "short": "Data di inizio del period di utilizzo",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato a detenuto dal SGDT"
+      },
+      {
+        "id": "DeviceRequest.occurrence[x].end",
+        "path": "DeviceRequest.occurrence[x].end",
+        "short": "Data di fine del periodo di utilizzo",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato a detenuto dal SGDT"
       },
       {
         "id": "DeviceRequest.note",

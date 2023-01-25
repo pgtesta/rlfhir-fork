@@ -23,7 +23,7 @@
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "short": "Codice identificativo della richiesta di rivalutazione del paziente",
-        "definition": "{codiceL1}_{codiceL2}_{numeroPratica}_{progressivo a 6 cifre es.000001}"
+        "definition": "{codiceL2}{numeroPratica}_R{progressivo a 6 cifre es.000001}"
       },
       {
         "id": "ServiceRequest.basedOn",

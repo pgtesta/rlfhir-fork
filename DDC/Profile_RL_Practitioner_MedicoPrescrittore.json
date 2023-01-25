@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2022-10-25T10:24:26.8255353+00:00"
+    "lastUpdated": "2023-01-23T14:00:22.9356971+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
   "name": "RLPractitionerMedicoPrescrittore",
@@ -43,9 +43,9 @@
         "min": 0
       },
       {
-        "id": "Practitioner.extension:DataUpdate",
+        "id": "Practitioner.extension:dataUpdate",
         "path": "Practitioner.extension",
-        "sliceName": "DataUpdate",
+        "sliceName": "dataUpdate",
         "short": "Data dell'ultima modifica del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "La fonte del dato è il campo DT_ULTV della tabella V_MEDICI_GDC_DDC",
@@ -62,9 +62,9 @@
         "isModifier": false
       },
       {
-        "id": "Practitioner.extension:DataInsert",
+        "id": "Practitioner.extension:dataInsert",
         "path": "Practitioner.extension",
-        "sliceName": "DataInsert",
+        "sliceName": "dataInsert",
         "short": "Data di inserimento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "La fonte del dato è il campo DT_INSER della tabella V_MEDICI_GDC_DDC",

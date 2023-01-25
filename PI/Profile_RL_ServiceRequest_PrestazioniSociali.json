@@ -52,6 +52,41 @@
         "isModifier": false
       },
       {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension",
+        "path": "ServiceRequest.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:erogabileTelemedicina",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "erogabileTelemedicina",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:prenotabileStrutturaProssimita",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "prenotabileStrutturaProssimita",
+        "min": 0,
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:prescrizioneElettronica",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "prescrizioneElettronica",
+        "min": 0,
+        "max": "0"
+      },
+      {
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
@@ -99,6 +134,7 @@
       {
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione della prestazione sociale",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -112,26 +148,6 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ServiceRequest.encounter",
-        "path": "ServiceRequest.encounter",
-        "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
-        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino"
-      },
-      {
-        "id": "ServiceRequest.requester",
-        "path": "ServiceRequest.requester",
-        "short": "Profilo del professionista sanitario richedente della prestazione",
-        "definition": "Reference al profilo RLPractionerRole del professionista sanitario che ha richiesto la prestazione per il paziente",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
             ]
           }
         ]

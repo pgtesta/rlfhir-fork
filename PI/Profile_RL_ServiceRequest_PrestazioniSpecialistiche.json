@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestPrestazioniSpecialistiche",
   "meta": {
-    "lastUpdated": "2022-12-05T10:26:40.5373313+00:00"
+    "lastUpdated": "2023-01-25T09:42:33.192371+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
   "name": "RLServiceRequestPrestazioniSpecialistiche",
@@ -41,8 +41,8 @@
         "path": "ServiceRequest.extension",
         "sliceName": "ulterioriDettagli",
         "short": "Ulteriori dettaglio riguardo la prestazione specialistica e/o diagnostica da erogare",
-        "definition": "La codifica delle informazioni è la seguente: \r\n01 - prestazione erogabile in regime di telemedicina\r\n02 - prestazione prenotabile in struttura di prossimità\r\n03 - prescrizione elettronica",
-        "comment": "I valori della codifica sono rapressentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo.\r\nIl dato è detenuto dal SGDT",
+        "definition": "- prestazione erogabile in regime di telemedicina\r\n- prestazione prenotabile in struttura di prossimità\r\n- prescrizione elettronica",
+        "comment": "Il dato è detenuto dal SGDT",
         "min": 0,
         "max": "1",
         "type": [
@@ -56,13 +56,42 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:ulterioriDettagli.value[x]",
-        "path": "ServiceRequest.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension",
+        "path": "ServiceRequest.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:erogabileTelemedicina",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "erogabileTelemedicina",
+        "short": "Prestazione erogabile in regime di telemedicina",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:prenotabileStrutturaProssimita",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "prenotabileStrutturaProssimita",
+        "short": "Prestazione prenotabile in struttura di prossimità",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:prescrizioneElettronica",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "prescrizioneElettronica",
+        "short": "Prescrizione elettronica",
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.basedOn",
@@ -107,6 +136,16 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
+        "id": "ServiceRequest.code.coding.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione espressa in codifica regionale SISS"
+      },
+      {
+        "id": "ServiceRequest.code.coding.display",
+        "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione della prestazione espressa in codifica regionale SISS"
+      },
+      {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
         "short": "Paziente al quale deve essere erogata la prestazione",
@@ -120,13 +159,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "ServiceRequest.encounter",
-        "path": "ServiceRequest.encounter",
-        "short": "Dettagli dell'accesso del paziente che ha portato alla definizione della prestazione",
-        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
-        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "ServiceRequest.occurrence[x]",
@@ -155,17 +187,7 @@
       {
         "id": "ServiceRequest.requester",
         "path": "ServiceRequest.requester",
-        "short": "Profilo del professionista sanitario richedente della prestazione",
-        "definition": "Reference ai profilo RLPractionerRole del professionista sanitario che ha richiesto la prestazione per il paziente",
-        "comment": "Il dato è detenuto dal SGDT",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
-            ]
-          }
-        ]
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "ServiceRequest.note",

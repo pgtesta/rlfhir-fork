@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestOssigenoterapia",
   "meta": {
-    "lastUpdated": "2022-12-05T10:46:42.2739402+00:00"
+    "lastUpdated": "2023-01-25T09:44:45.3717464+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
   "name": "RLMedicationRequestOssigenoterapia",
@@ -37,30 +37,21 @@
         "min": 0
       },
       {
-        "id": "MedicationRequest.extension:prescrizioneElettronica",
+        "id": "MedicationRequest.extension:consegnaOssigenoDomicilio",
         "path": "MedicationRequest.extension",
-        "sliceName": "prescrizioneElettronica",
-        "short": "Flag riguardo la necessità di una prescrizione elettronica per il paziente",
+        "sliceName": "consegnaOssigenoDomicilio",
+        "short": "Flag riguardo la consegna a domicilio dell'ossigeno al paziente",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPrescrizioneElettronica"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaOssigenoDomicilio"
             ]
           }
         ],
         "isModifier": false
-      },
-      {
-        "id": "MedicationRequest.extension:prescrizioneElettronica.value[x]",
-        "path": "MedicationRequest.extension.value[x]",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ]
       },
       {
         "id": "MedicationRequest.status",
@@ -80,6 +71,7 @@
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
         "short": "Codifica del farmaco",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di ossigenoterapia contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "type": [
           {
             "code": "CodeableConcept"
@@ -89,9 +81,20 @@
       {
         "id": "MedicationRequest.medication[x].coding",
         "path": "MedicationRequest.medication[x].coding",
-        "short": "Codice e descrizione del farmaco",
-        "definition": "Codifica della possibile ossigenoterapie:\r\n01 - ossigeno gassoso\r\n02 - ossigeno liquido\r\n03 - ossigeno concentratore",
-        "comment": "I valori della codifica sono rapressentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo. \r\nIl dato è detenuto dal SGDT"
+        "short": "Codice e descrizione del farmaco"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "short": "Codice del farmaco",
+        "definition": "Stringa alfanumerica di 3 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding.display",
+        "path": "MedicationRequest.medication[x].coding.display",
+        "short": "Descrizione del farmaco",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "MedicationRequest.subject",
@@ -104,36 +107,6 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "MedicationRequest.encounter",
-        "path": "MedicationRequest.encounter",
-        "short": "Riferimento ai dettagli dell'accesso del paziente alla struttura di prossimità",
-        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
-        "comment": "Il dato è detenuto dal SGDT",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "MedicationRequest.requester",
-        "path": "MedicationRequest.requester",
-        "short": "Profilo del professionista sanitario richedente della terapia",
-        "definition": "Reference al profilo RLPractionerRole del professionista sanitario richiedente della terapia",
-        "comment": "Il dato è detenuto dal SGDT",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
             ]
           }
         ]
@@ -163,18 +136,55 @@
       {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
-        "short": "Posologia del farmaco"
+        "short": "Dettagli dell'ossignenoterapia"
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing",
         "path": "MedicationRequest.dosageInstruction.timing",
-        "short": "Data di inizio e fine per cui il paziente necessita della prescrizione di ossigeno e durata (in ore) della terapia",
+        "short": "Durata dell'ossigenoterapia",
         "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "short": "Periodo terapeutico",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+        "short": "Data di inizio della terapia",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+        "short": "Data di fine della terapia",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.duration",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.duration",
+        "short": "Durata della sessione terapeutica",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+        "short": "Unità temporale della durata della sessione terapeutica",
+        "definition": "Valori definiti dallo standard FHIR:\r\n- s: secondo \r\n- min: minuto \r\n- h: ora\r\n- d: giorno\r\n- wk: settimana\r\n- mo: mese\r\n- a: anno",
+        "comment": "Data di fine della terapia"
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-        "short": "Dosaggio del farmaco",
+        "short": "Frazione inspirata di ossigeno (%FiO2)",
         "type": [
           {
             "code": "Quantity"
@@ -184,13 +194,20 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
-        "short": "Frazione inspirata di ossigeno (%FiO2)",
+        "short": "Valore della frazione inspirata",
         "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
+        "short": "Unità di misura",
+        "comment": "Il dato è detenuto dal SGDT",
+        "fixedString": "%FiO2"
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
-        "short": "Quantità del farmaco per unità di tempo",
+        "short": "Quantità di ossigeno per unità di tempo",
         "type": [
           {
             "code": "Quantity"
@@ -200,8 +217,15 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].value",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].value",
-        "short": "Flusso di ossigeno espresso in [L/min]",
+        "short": "Valore flusso di ossigeno espresso in [L/min]",
         "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].unit",
+        "short": "Unità di misura",
+        "comment": "Il dato è detenuto dal SGDT",
+        "fixedString": "L/min"
       }
     ]
   }

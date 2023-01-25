@@ -21,7 +21,7 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
-        "short": "Codice e descrizione della patologia"
+        "short": "Codice e descrizione del problema rilevato durante la valutazione infermieristica"
       },
       {
         "id": "Condition.code.coding",

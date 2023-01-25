@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionPatologiaPrimariaSecondariaAddizionale",
   "meta": {
-    "lastUpdated": "2022-10-19T09:14:09.2684213+00:00"
+    "lastUpdated": "2023-01-23T14:46:58.7435672+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale",
   "name": "RLConditionPatologiaPrimariaSecondariaAddizionale",
@@ -90,11 +90,6 @@
         "short": "Data e ora di registrazione della patologia",
         "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
         "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "Condition.note",
-        "path": "Condition.note",
-        "short": "Indicare se patologia primaria, secondaria o addizionale"
       }
     ]
   }

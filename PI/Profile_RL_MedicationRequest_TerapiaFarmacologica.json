@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestTerapiaFarmacologica",
   "meta": {
-    "lastUpdated": "2022-12-05T10:42:14.9468287+00:00"
+    "lastUpdated": "2023-01-25T09:43:43.2188467+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
   "name": "RLMedicationRequestTerapiaFarmacologica",
@@ -70,7 +70,8 @@
       {
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
-        "short": "Codifica del farmaco",
+        "short": "Codice e descrizione del farmaco per ATC o AIC oppure per GE",
+        "comment": "La fonte del dato corrisponde alle tabelle FARMACI_RD (Anagrafica AIC), V_GRUPPI_EQUIVALENZA_DDC e V_FARMACO_GRUPPO_DDC (Anagrafica GE)",
         "type": [
           {
             "code": "CodeableConcept"
@@ -80,8 +81,68 @@
       {
         "id": "MedicationRequest.medication[x].coding",
         "path": "MedicationRequest.medication[x].coding",
-        "short": "Codice e descrizione del farmaco per ATC o AIC oppure per GE",
-        "comment": "La fonte del dato corrisponde alle tabelle FARMACI_RD (Anagrafica AIC), V_GRUPPI_EQUIVALENZA_DDC e V_FARMACO_GRUPPO_DDC (Anagrafica GE)"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:ATC",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "ATC",
+        "short": "Codice e descrizione del farmaco per ATC"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:ATC.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "short": "Codifica del farmaco"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:ATC.display",
+        "path": "MedicationRequest.medication[x].coding.display",
+        "short": "Descrizione codifica del farmaco"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:AIC",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "AIC",
+        "short": "Codice e descrizione del farmaco per AIC"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:AIC.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "short": "Sistema di codifica"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:AIC.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "short": "Codifica del farmaco"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:AIC.display",
+        "path": "MedicationRequest.medication[x].coding.display",
+        "short": "Descrizione codifica del farmaco"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:sliceCoding",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "sliceCoding",
+        "short": "Codice e descrizione del farmaco per GE"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:sliceCoding.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "short": "Sistema di codifica"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:sliceCoding.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "short": "Codifica del farmaco"
       },
       {
         "id": "MedicationRequest.subject",
@@ -94,36 +155,6 @@
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "MedicationRequest.encounter",
-        "path": "MedicationRequest.encounter",
-        "short": "Riferimento ai dettagli dell'accesso del paziente alla struttura di prossimità",
-        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
-        "comment": "Il dato è detenuto dal SGDT",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "MedicationRequest.requester",
-        "path": "MedicationRequest.requester",
-        "short": "Profilo del professionista sanitario richedente della terapia",
-        "definition": "Reference al profilo RLPractionerRole del professionista sanitario richiedente della terapia",
-        "comment": "Il dato è detenuto dal SGDT",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
             ]
           }
         ]
@@ -157,22 +188,56 @@
         "definition": "Dosaggio del farmaco, via di sommistrazione, frequenza di assunzione"
       },
       {
-        "id": "MedicationRequest.dosageInstruction.additionalInstruction",
-        "path": "MedicationRequest.dosageInstruction.additionalInstruction",
-        "short": "Instruzioni aggiuntive",
-        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "id": "MedicationRequest.dosageInstruction.timing",
+        "path": "MedicationRequest.dosageInstruction.timing",
+        "short": "Frequenza di assunzione del farmaco"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "short": "Periodo di assunzione del farmaco",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+        "short": "Data di inizio di assunzione del farmaco",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
-        "id": "MedicationRequest.dosageInstruction.timing",
-        "path": "MedicationRequest.dosageInstruction.timing",
-        "short": "frequenza di assunzione del farmaco",
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+        "short": "Data di fine di assunzione del farmaco",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
+        "short": "Frequenza di assunzione del farmaco",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.period",
+        "short": "Coefficiente per il quale la frequeza di assunzione ('frequency') si estente rispetto l'unità temporale di assunzione ('periodUnit').",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+        "short": "Unità temporale di assunzione",
+        "definition": "Valori definiti dallo standard FHIR:\r\n- s: secondo \r\n- min: minuto \r\n- h: ora\r\n- d: giorno\r\n- wk: settimana\r\n- mo: mese\r\n- a: anno",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "MedicationRequest.dosageInstruction.route",
         "path": "MedicationRequest.dosageInstruction.route",
-        "short": "via di sommistrazione del farmaco",
+        "short": "Via di sommistrazione del farmaco",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -188,7 +253,13 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
-        "short": "Quantità ed unità di misura del dosaggio del farmaco",
+        "short": "Quantità del dosaggio del farmaco",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
+        "short": "Unità di misura del dosaggio del farmaco",
         "comment": "Il dato è detenuto dal SGDT"
       }
     ]

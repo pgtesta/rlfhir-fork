@@ -23,7 +23,7 @@
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "short": "Codice identificativo della sospensione temporanea",
-        "definition": "{codiceL1}_{codiceL2}_{numeroPratica}_{progressivo a 6 cifre es.000001}"
+        "definition": "{codiceL2}{numeroPratica}_S{progressivo a 6 cifre es.000001}"
       },
       {
         "id": "ServiceRequest.basedOn",
@@ -97,21 +97,25 @@
       {
         "id": "ServiceRequest.reasonCode",
         "path": "ServiceRequest.reasonCode",
-        "short": "Motivo della sospensione temporanea"
+        "short": "Motivo della sospensione temporanea",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei motivi della sospensione temporanea del ricovero domiciliare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding",
+        "path": "ServiceRequest.reasonCode.coding",
+        "short": "Codice e descrizione della sospensione temporanea"
       },
       {
         "id": "ServiceRequest.reasonCode.coding.code",
         "path": "ServiceRequest.reasonCode.coding.code",
         "short": "Codice della sospensione temporanea",
-        "definition": "Codice numerico di una cifra",
-        "comment": "I codici dei motivi della sospensione temporanea sono ricavati dal tracciato SIAD 5"
+        "definition": "Stringa numerica di una cifra"
       },
       {
         "id": "ServiceRequest.reasonCode.coding.display",
         "path": "ServiceRequest.reasonCode.coding.display",
         "short": "Descizione della sospensione temporanea",
-        "definition": "Stringa alfanumerica di al più 100 caratteri",
-        "comment": "Le descrizione dei motivi della sospensione temporanea sono ricavate dal tracciato SIAD 5"
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
       }
     ]
   }
