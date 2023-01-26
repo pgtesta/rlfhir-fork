@@ -79,7 +79,6 @@ I parametri da valorizzare per effettuare la ricerca sono:
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
 | URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn.activity.reference.code.coding.code=CDOM&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}&basedOn.activity.reference.identifier=\{_numeroPratica_\}&source.identifier=\{_codiceFiscaleAssistito_\}&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione |
 
 A titolo esemplificativo, la chiamata: 

@@ -85,7 +85,6 @@ L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
 | URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
@@ -113,8 +112,7 @@ L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore
 |     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativo ai servizi sociosanitari di una determinata tipologia (es. CDOM, RSA, ecc.).  |
 |---|---|
 |     VERB    |     GET    |
-| BASE_APIMANAGER | {{link:Home-Contesto-API-RESTful}} , text:<base_API_Manager>}} |
-| BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 |     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&activity.reference.identifier=\{_numeroPratica_\}&subject.identifier=\{_codiceFiscale_\}&_include=CarePlan:activity.reference&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
