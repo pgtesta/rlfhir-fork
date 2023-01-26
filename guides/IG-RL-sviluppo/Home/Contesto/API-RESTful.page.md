@@ -25,10 +25,10 @@ Il base_url con cui accedere a tali servizi è il seguente:
         <base_API_Ente> = https://<nome_host_Ente>/<contesto_FHIR>/<codice_Cudes_L1>/v1.0.0/<tipologia_servizio_sociosanitario>
 
 dove:
-- <nome_host_Ente> = alias corrispondente all’indirizzo IP dell’Ente definito sul canale protetto; la risoluzione dell’alias è inserita nel DNS di ARIAspa
-- <contesto_FHIR> = fhir per la Produzione reale; fhirtest per la Produzione virtuale, da utilizzare per i test delle integrazioni propedeutici all’avvio in produzione
-- <codice_Cudes_L1> = codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
-- <tipologia_servizio_sociosanitario> = nome della tipologia del servizio sociosanitario offerto dall'erogatore, ad esempio _erogazione-adi_
+- <nome_host_Ente>: alias corrispondente all’indirizzo IP dell’Ente definito sul canale protetto; la risoluzione dell’alias è inserita nel DNS di ARIAspa
+- <contesto_FHIR>: fhir per la Produzione reale; fhirtest per la Produzione virtuale, da utilizzare per i test delle integrazioni propedeutici all’avvio in produzione
+- <codice_Cudes_L1>: codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
+- <tipologia_servizio_sociosanitario>: nome della tipologia del servizio sociosanitario offerto dall'erogatore, ad esempio _erogazione-adi_.
 
 L'elenco delle API esposte è:
 
@@ -36,7 +36,7 @@ L'elenco delle API esposte è:
 |---|---|---|
 |GET|<base_API_Ente>/_Procedure_|Ente Erogatore|
 |GET|<base_API_Ente>/_ServiceRequest_|Ente Erogatore|
-|POST|<base_API_Ente>/_MessageHeader_|Ente Erogatore|
+|POST|<base_API_Ente>/_Bundle_|Ente Erogatore|
 
 ## Header 
 Le chiamate HTTP relative all'integrazione FHIR devono contenere i seguenti header:
