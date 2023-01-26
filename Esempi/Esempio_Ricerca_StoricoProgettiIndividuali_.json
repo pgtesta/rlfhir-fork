@@ -1,0 +1,447 @@
+{
+	"resourceType": "Bundle",
+	"id": "10bb101f-a121-4264-a920-67be9cb82c74",
+	"type": "searchset",
+	"timestamp": "2023-01-01T10:36:03Z",
+	"total": 2,
+	"entry": [
+		{
+			"fullUrl": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "CarePlan",
+				"id": "365db2ec-973c-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+					],
+					"versionId": "2"
+				},
+				"identifier": [
+					{
+						"value": "PI2023000000001"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"subject": {
+					"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"encounter": {
+					"reference": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
+					"display": "Accesso"
+				},
+				"period": {
+					"start": "2020-06-20",
+					"end": "2023-02-20"
+				},
+				"created": "2020-06-20",
+				"author": {
+					"reference": "Organization/c8f77b34-974f-45ud-a8fc-0242ac120002",
+					"display": "ASST VIMERCATE"
+				},
+				"contributor": [
+					{
+						"reference": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
+						"display": "Medico Prescrittore"
+					}
+				],
+				"addresses": [
+					{
+						"reference": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
+						"display": "Patologia Primaria"
+					}
+				],
+				"supportingInfo": [
+					{
+						"reference": "Observation/eaa18194-974f-11ed-a8fc-0242ac120002",
+						"display": "Esito Valutazione"
+					}
+				],
+				"goal": [
+					{
+						"reference": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
+						"display": "Obiettivi Salute"
+					}
+				],
+				"activity": [
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/f1471fc2-974f-11ed-a8fc-0242ac120002",
+								"display": "Prestazioni specialistiche"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "MedicationRequest/fd5e5398-974f-11ed-a8fc-0242ac120002",
+								"display": "Ossigenoterapia"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+								"display": "Terapia farmacologica"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+								"display": "Servizi Socio Assistenziali"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/22a7ca4e-9750-11ed-a8fc-0242ac120002",
+								"display": "Intervento Educazionale"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "DeviceRequest/2c9f4810-9750-11ed-a8fc-0242ac120002",
+								"display": "Protesi Ausili"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/9f9d22e4-9cbc-11ed-a8fc-0242ac120002",
+								"display": "Prestazioni Infermieristiche"
+							}
+						]
+					}
+				],
+				"note": [
+					{
+						"text": "Questo PAI ha come obiettivo il controllo dell'evoluzione della malattia"
+					}
+				],
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+						"valueUnsignedInt": "01"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "CarePlan",
+				"id": "365db2ec-973c-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "PI2023000000001"
+					}
+				],
+				"status": "Completed",
+				"intent": "order",
+				"subject": {
+					"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"encounter": {
+					"reference": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
+					"display": "Accesso"
+				},
+				"period": {
+					"start": "2020-06-20",
+					"end": "2023-02-20"
+				},
+				"created": "2020-06-20",
+				"author": {
+					"reference": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
+					"display": "ASST DELLA BRIANZA"
+				},
+				"contributor": [
+					{
+						"reference": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
+						"display": "Medico Prescrittore"
+					}
+				],
+				"addresses": [
+					{
+						"reference": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
+						"display": "Patologia Primaria"
+					}
+				],
+				"supportingInfo": [
+					{
+						"reference": "Observation/eaa18194-974f-11ed-a8fc-0242ac120002",
+						"display": "Esito Valutazione"
+					}
+				],
+				"goal": [
+					{
+						"reference": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
+						"display": "Obiettivi Salute"
+					}
+				],
+				"activity": [
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/f1471fc2-974f-11ed-a8fc-0242ac120002",
+								"display": "Prestazioni specialistiche"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "MedicationRequest/fd5e5398-974f-11ed-a8fc-0242ac120002",
+								"display": "Ossigenoterapia"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+								"display": "Terapia farmacologica"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+								"display": "Servizi Socio Assistenziali"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/22a7ca4e-9750-11ed-a8fc-0242ac120002",
+								"display": "Intervento Educazionale"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "DeviceRequest/2c9f4810-9750-11ed-a8fc-0242ac120002",
+								"display": "Protesi Ausili"
+							}
+						]
+					},
+					{
+						"reference": [
+							{
+								"reference": "ServiceRequest/9f9d22e4-9cbc-11ed-a8fc-0242ac120002",
+								"display": "Prestazioni Infermieristiche"
+							}
+						]
+					}
+				],
+				"note": [
+					{
+						"text": "Questo PAI ha come obiettivo il controllo dell'evoluzione della malattia"
+					}
+				],
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+						"valueUnsignedInt": "01"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "b7807e00-9745-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.it/sid/codiceFiscale ",
+						"value": "RSSMRA80A01F205X"
+					}
+				],
+				"active": true,
+				"name": [
+					{
+						"family": "Rossi",
+						"given": [
+							"Mario"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "1980-01-01",
+				"address": [
+					{
+						"use": "1",
+						"city": "MILANO",
+						"state": "MI",
+						"postalCode": "20152",
+						"line": [
+							"Via Bensi, 1"
+						],
+						"country": "IT"
+					}
+				],
+				"maritalStatus": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceISTATStatoCivile",
+							"code": "2",
+							"display": "Coniugato"
+						}
+					]
+				},
+				"generalPractitioner": {
+					"reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+					"display": "Medico Prescrittore"
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
+						"valueCode": "-1"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
+						"valueCode": "5"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
+						"valueCode": "2"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
+						"valueCode": "3"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
+						"valueString": "0123456789"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "14aec1c2-9750-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "000021"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+						"display": "CarePlan Progetto Individuale"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipologiaUdO",
+							"code": "ADI",
+							"display": "ASSISTENZA DOMICILIARE INTEGRATA"
+						}
+					]
+				},
+				"valueQuantity": {
+					"value": 1
+				},
+				"subject": {
+					"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2022-01-01",
+					"end": "2023-02-01"
+				},
+				"requester": {
+					"reference": "PractitionerRole/e318fc48-97d8-11ed-a8fc-0242ac120002",
+					"display": "Medico prescrittore"
+				},
+				"performer": {
+					"reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
+					"display": "Presidio Ospedaliero di Vimercate"
+				},
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "TBD",
+								"code": "TBD",
+								"display": "TBD"
+							}
+						]
+					}
+				],
+				"note": [
+					{
+						"text": "Commenti aggiuntivi"
+					}
+				],
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione",
+						"extension": [
+							{
+								"url": "strutturaTerritorialeProssimita",
+								"valueBoolean": true
+							},
+							{
+								"url": "consultazioneCatalogoOfferta",
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "TBD",
+									"code": "TBD",
+									"display": "TBD"
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	]
+}

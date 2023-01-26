@@ -185,11 +185,6 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
-        "id": "ServiceRequest.requester",
-        "path": "ServiceRequest.requester",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
         "short": "Note / commenti aggiuntivi",

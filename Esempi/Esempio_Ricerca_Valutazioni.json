@@ -1,0 +1,130 @@
+{
+	"resourceType": "Bundle",
+	"id": "c0996f74-9812-11ed-a8fc-0242ac120002",
+	"type": "searchset",
+	"timestamp": "2023-01-01T10:36:03Z",
+	"total": 1,
+	"entry": [
+		{
+			"fullUrl": "QuestionnaireResponse/d3541270-9814-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "QuestionnaireResponse",
+				"id": "d3541270-9814-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+					],
+					"versionId": "1"
+				},
+				"basedOn": {
+					"reference": "CarePlan/b7480958-989e-11ed-a8fc-0242ac120002",
+					"display": "Progetto Individuale"
+				},
+				"questionnaire": {
+					"reference": "Questionnaire/d8a3cd40-981b-11ed-a8fc-0242ac120002",
+					"display": "Tipologia Valutazione"
+				},
+				"status": "completed",
+				"authored": "2013-02-19T14:15:00Z",
+				"author": {
+					"reference": "Practitioner/bafe8c48-989e-11ed-a8fc-0242ac120002",
+					"display": "Medico Prescrittore"
+				},
+				"source": {
+					"reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"item": [
+					{
+						"linkId": "TBD",
+						"text": "TBD",
+						"answer": [
+							{
+								"valueString": "TBD"
+							}
+						]
+					}
+				],
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+						"valueReference": "Observation/bd49fd5c-981c-11ed-a8fc-0242ac120002"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Questionnaire/d8a3cd40-981b-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "Questionnaire",
+				"id": "d8a3cd40-981b-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione"
+					],
+					"versionId": "1"
+				},
+				"title": "Scheda triage",
+				"status": "active"
+			}
+		},
+		{
+			"fullUrl": "Observation/bd49fd5c-981c-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "bd49fd5c-981c-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+					],
+					"versionId": "1"
+				},
+				"status": "registered",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Valutazione",
+							"code": "Codice Valutazione - TBD",
+							"display": "Descrizione Valutazione - TBD"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"effectiveDateTime": "2023-04-03T15:30:10Z",
+				"performer": [
+					{
+						"reference": "PractitionerRole/d252b662-989e-11ed-a8fc-0242ac120002",
+						"display": "Medico Prescrittore"
+					}
+				],
+				"valueInteger": 5,
+				"derivedFrom": [
+					{
+						"reference": "QuestionnaireResponse/d3541270-9814-11ed-a8fc-0242ac120002",
+						"display": "Valutazione"
+					}
+				],
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"system": "TBD",
+									"code": "TBD",
+									"display": "TBD"
+								}
+							]
+						},
+						"valueString": "TBD"
+					}
+				]
+			}
+		}
+	]
+}

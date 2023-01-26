@@ -124,7 +124,7 @@
       {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
-        "short": "Codice identificativo del servizio sociosanitario da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
+        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
         "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 6 cifre (da 000001 a 999999)",
         "comment": "Il dato è detenuto dal SGDT"
       },
@@ -160,7 +160,7 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "short": "Codice e descrizione della tipologia di servizio sociosanitario (UdO) da attivare",
+        "short": "Codice e descrizione della tipologia di servizio socioassistenziale (UdO) da attivare",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia UdO contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
