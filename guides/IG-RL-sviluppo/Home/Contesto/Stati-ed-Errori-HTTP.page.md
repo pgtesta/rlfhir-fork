@@ -7,7 +7,8 @@ Nella pagina {{pagelink:Home/Esempi/Libreria-Esempi.page.md, Libreria Esempi}}, 
 
 ## Ricerche
 
-In caso la ricerca non possa essere eseguita, la risposta contiene il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa OperationOutcome nel contenuto.
+In caso una ricerca venga eseguita correttamente, verrà restituito uno stato HTTP della categoria 2xx e il corpo della risposta conterrà una risorsa FHIR di tipo Bundle.
+In caso non possa essere eseguita, la risposta contiene il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa nel corpo.
 
 |Codice Stato|Descrizione|
 |---|---|
@@ -18,6 +19,8 @@ In caso la ricerca non possa essere eseguita, la risposta contiene il codice di 
 |500 Internal Server Error | Messaggio di errore generico|
 
 ## Creazioni
+In caso una chiamata di creazione (ad esempio POST) vada a buon fine, verrà restituito al chiamante uno stato HTTP della categoria 2xx.
+In caso tale chiamata vada in errore, la risposta contiene il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa OperationOutcome nel corpo.
 
 |Codice Stato|Descrizione|
 |---|---|

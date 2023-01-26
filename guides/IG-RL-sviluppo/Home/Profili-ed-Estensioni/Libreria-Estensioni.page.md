@@ -254,7 +254,7 @@
       <tr>
         <td>RLServiceRequestDataDimissione</td>
         <td>ServiceRequest</td>
-        <td>Nel caso in cui il codice del servizio sociosanitario (campo code) sia "C-DOM" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare</td>
+        <td>Nel caso in cui il codice del servizio sociosanitario (campo code) sia "CDOM" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione}}</td>
       </tr>
       <tr>
@@ -266,7 +266,7 @@
       <tr>
         <td>RLServiceRequestCausaleDimissione</td>
         <td>ServiceRequest</td>
-        <td>Nel caso in cui il codice del servizio sociosanitario (campo code) sia "C-DOM" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare</td>
+        <td>Nel caso in cui il codice del servizio sociosanitario (campo code) sia "CDOM" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione}}</td>
       </tr>
       <tr>

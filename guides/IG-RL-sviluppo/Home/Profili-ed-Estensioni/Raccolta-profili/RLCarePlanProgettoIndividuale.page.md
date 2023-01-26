@@ -81,16 +81,16 @@ I parametri da valorizzare per effettuare la ricerca sono:
 
 L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare il contenuto informativo relativo all’attivazione di un servizio sociosanitario previsto nei progetti individuali attivi prodotti da un’ASST.
 
-|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo prodotti da una determinata ASST (RLOrganizationL1) che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativa ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.). |
+|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo prodotti da una determinata ASST (RLOrganizationL1) che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativa ai servizi sociosanitari di una determinata tipologia (es. CDOM, RSA, ecc.). |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
-| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject |
+| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&activity.reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject
 
 Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 2 "03014300" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 
@@ -110,16 +110,16 @@ I parametri da valorizzare per effettuare la ricerca sono:
  
 L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione presso l’Ente Erogatore stesso di un servizio sociosanitario.
 
-|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativo ai servizi sociosanitari di una determinata tipologia (es. C-DOM, RSA, ecc.).  |
+|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativo ai servizi sociosanitari di una determinata tipologia (es. CDOM, RSA, ecc.).  |
 |---|---|
 |     VERB    |     GET    |
 | BASE_APIMANAGER | {{link:Home-Contesto-API-RESTful}} , text:<base_API_Manager>}} |
 | BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
-|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&activity.reference.identifier=\{_numeroPratica_\}&subject.identifier=\{_codiceFiscale_\}&_include=CarePlan:activity.reference&_include=CarePlan:subject |
+|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&activity.reference.identifier=\{_numeroPratica_\}&subject.identifier=\{_codiceFiscale_\}&_include=CarePlan:activity.reference&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&activity.reference.performer.identifier=03014300&activity.reference.identifier=000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=03014300&activity.reference.identifier=000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
 
 Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "000001" della struttura con codice livello 2 "03014300". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 

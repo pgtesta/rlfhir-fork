@@ -7,7 +7,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "{base_url}CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=C-DOM&activity-reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:20:31.9048963+00:00&_lastUpdated=lt2022-11-30T16:20:31.9048963+00:00&status=active&_include=CarePlan:activity-reference&_include=CarePlan:subject"
+      "url": "{base_url}CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference.code=CDOM&activity-reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:20:31.9048963+00:00&_lastUpdated=lt2022-11-30T16:20:31.9048963+00:00&status=active&_include=CarePlan:activity-reference&_include=CarePlan:subject"
     }
   ],
   "entry": [

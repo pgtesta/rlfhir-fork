@@ -124,8 +124,8 @@
       {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
-        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
-        "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 6 cifre (da 000001 a 999999)",
+        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (CDOM) il codice corrisponde al numero della pratica",
+        "definition": "Nel caso delle cure domiciliari (CDOM) è un codice numerico progressivo di 6 cifre (da 000001 a 999999)",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -184,7 +184,7 @@
       {
         "id": "ServiceRequest.quantity[x]",
         "path": "ServiceRequest.quantity[x]",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il numero di accessi domiciliari previsti",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"CDOM\" questo campo viene popolato con il numero di accessi domiciliari previsti",
         "type": [
           {
             "code": "Quantity"
@@ -215,7 +215,7 @@
       {
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
-        "short": "Periodo di erogazione del servizio di cure domiciliari (C-DOM)",
+        "short": "Periodo di erogazione del servizio di cure domiciliari (CDOM)",
         "type": [
           {
             "code": "Period"
@@ -254,7 +254,7 @@
       {
         "id": "ServiceRequest.reasonCode",
         "path": "ServiceRequest.reasonCode",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo viene popolato con il percorso di cure domiciliari del paziente",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"CDOM\" questo viene popolato con il percorso di cure domiciliari del paziente",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei percorsi di cure domiciliari contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {

@@ -8,7 +8,7 @@
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "C-DOM"
+      "code": "CDOM"
     }
   ],
   "fhirVersion": "4.0.1",

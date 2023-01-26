@@ -38,21 +38,21 @@
     </thead>
     <tbody id="myTable">
       <tr>
-        <td>C-DOM</td>
+        <td>CDOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleOperatoreADI.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
         <td>Profilo contentente le tipologie di operatori ADI</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI}}</td>
       </tr>
       <tr>
-        <td>C-DOM</td>
+        <td>CDOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione}}</td>
       </tr>
       <tr>
-        <td>C-DOM</td>
+        <td>CDOM</td>
         <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSospensioneADI.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
         <td>Profilo che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente</td>

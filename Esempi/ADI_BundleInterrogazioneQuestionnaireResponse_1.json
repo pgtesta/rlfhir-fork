@@ -7,7 +7,7 @@
   "link": [
     {
       "relation": "self",
-      "url": "{base_url}QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=C-DOM&based-on.activity-reference.performer.identifier=03014300&source.identifier=RSSMRA80A01F205X&status=completed&_include=QuestionnaireResponse:questionnaire"
+      "url": "{base_url}QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on.activity-reference.code=CDOM&based-on.activity-reference.performer.identifier=03014300&source.identifier=RSSMRA80A01F205X&status=completed&_include=QuestionnaireResponse:questionnaire"
     }
   ],
   "entry": [
