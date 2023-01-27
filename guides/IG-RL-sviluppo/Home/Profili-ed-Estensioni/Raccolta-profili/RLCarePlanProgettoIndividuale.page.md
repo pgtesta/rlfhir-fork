@@ -81,17 +81,17 @@ I parametri da valorizzare per effettuare la ricerca sono:
 
 L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare il contenuto informativo relativo all’attivazione di un servizio sociosanitario previsto nei progetti individuali attivi prodotti da un’ASST.
 
-|     SCOPE    |    Ricerca tutti i profili RLCarePlanProgettoIndividuale in stato attivo prodotti da una determinata ASST (RLOrganizationL1) che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativa ai servizi sociosanitari di una determinata tipologia (es. CDOM, RSA, ecc.). |
+|     SCOPE    | Progetti individuali attivi |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject |
+| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity.reference.code.coding.code=CDOM<br>&author.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=03014300&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=CarePlan:activity.reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&author.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
 
-Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 2 "03014300" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
+Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 1 "030701" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche tutte le informazioni associate referenziate nel profilo.
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
