@@ -1,0 +1,49 @@
+{
+    "resourceType": "ValueSet",
+    "id": "Codifica delle dotazioni strutturali",
+    "url": "http://example.com/fhir/valuesets/CodificaDotazioniStrutturali",
+    "version": "1.0",
+    "name": "Codifica delle dotazioni strutturali",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://example.com/fhir/codesystems/ServiziRSA",
+                "concept": [
+                    {
+                        "code": "DS01",
+                        "display": "Presenza aree verdi"
+                    },
+                    {
+                        "code": "DS02",
+                        "display": "Zone dedicate alle relazioni sociali"
+                    },
+                    {
+                        "code": "DS03",
+                        "display": "Spazi riservati ad attività occupazionali e di laboratorio"
+                    },
+                    {
+                        "code": "DS04",
+                        "display": "Presenza wi-fi"
+                    },
+                    {
+                        "code": "DS05",
+                        "display": "Aria condizionata"
+                    },
+                    {
+                        "code": "DS06",
+                        "display": "Presenza ossigeno centralizzato"
+                    },
+                    {
+                        "code": "DS07",
+                        "display": "Parcheggio"
+                    },
+                    {
+                        "code": "DS08",
+                        "display": "Raggiungibile con mezzi di trasporto pubblici"
+                    }
+                ]
+            }
+        ]
+    }
+}
