@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLServiceRe
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| medium | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | Il riferimento alla lista esaustiva dei canali di comunicazione è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
+| medium | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | Il riferimento alla lista esaustiva dei canali di comunicazione è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}   |

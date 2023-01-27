@@ -109,17 +109,17 @@ I parametri da valorizzare per effettuare la ricerca sono:
  
 L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione presso l’Ente Erogatore stesso di un servizio sociosanitario.
 
-|     SCOPE    |Ricerca tutti i profili RLCarePlanProgettoIndividuale che si riferiscono ad un determinato assistito (RLPatientCittadino) e che contengono almeno una reference al profilo RLServiceRequestServiziSocioAssistenziali relativo ai servizi sociosanitari di una determinata tipologia (es. CDOM, RSA, ecc.).  |
+|     SCOPE    |Progetti individuali di un paziente|
 |---|---|
 |     VERB    |     GET    |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=\{_codiceLivelloL2_\}&activity.reference.identifier=\{_numeroPratica_\}&subject.identifier=\{_codiceFiscale_\}&_include=CarePlan:activity.reference&_include=CarePlan:subject |
+|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity.reference.code.coding.code=CDOM<br>&activity.reference.identifier=\{_numeroPratica_\}<br>&subject.identifier=\{_codiceFiscale_\}<br>&_include=CarePlan:activity.reference<br>&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.performer.identifier=03014300&activity.reference.identifier=000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.identifier=2022000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
 
-Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "000001" della struttura con codice livello 2 "03014300". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
+Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "2022000001". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_

@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione della tipologia di operatore ADI | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 3 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| code | Codice e descrizione della tipologia di operatore ADI | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 3 è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |

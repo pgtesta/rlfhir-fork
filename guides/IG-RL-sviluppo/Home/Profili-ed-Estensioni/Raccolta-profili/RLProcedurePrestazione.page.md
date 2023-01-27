@@ -112,5 +112,5 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLProcedure
 
 | Nome  | Descrizione  | Riferimento al dettaglio della codifica  |
 |---|---|---|
-| modalitaErogazione  | Codice e descrizione della modalità di erogazione  | Il riferimento alla lista esaustiva delle modalità di erogazione ricavate dal tracciato SIAD 3 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}  |
-| Code  | Codice e descrizione della prestazione  | Il riferimento alla lista esaustiva delle prestazioni ricavate dal tracciato SIAD 3 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}  |
+| modalitaErogazione  | Codice e descrizione della modalità di erogazione  | Il riferimento alla lista esaustiva delle modalità di erogazione ricavate dal tracciato SIAD 3 è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}  |
+| Code  | Codice e descrizione della prestazione  | Il riferimento alla lista esaustiva delle prestazioni ricavate dal tracciato SIAD 3 è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}  |

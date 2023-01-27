@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Ulteriori dettagli | Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| Ulteriori dettagli | Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
 | Code | Codice e descrizione della prestazione specialistica | Catalogo regionale del SISS |

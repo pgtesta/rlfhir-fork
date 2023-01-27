@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLObservati
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e nome della tipologia di valutazione specifica | Il riferimento alla lista esaustiva delle tipologie di valutazioni specifiche è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| code | Codice e nome della tipologia di valutazione specifica | Il riferimento alla lista esaustiva delle tipologie di valutazioni specifiche è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
