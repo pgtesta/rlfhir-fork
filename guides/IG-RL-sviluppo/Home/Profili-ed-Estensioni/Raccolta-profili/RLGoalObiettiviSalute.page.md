@@ -17,7 +17,7 @@ Profilo declinato a partire dalla risorsa standard FHIR [Goal](http://hl7.org/fh
 -	Altro (se si seleziona la voce altro, deve essere possibile inserire i dettagli all’interno di un campo di testo libero)
 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute}}.
 
 <br>
 <div class="tab">

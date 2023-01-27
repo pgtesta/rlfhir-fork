@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Encounter](http://hl7.org/fhir/R4/encounter.html) volto a descrivere le informazioni di base dell’accesso alla struttura di prossimità e della tipologia di bisogno di un cittadino.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso}}.
 
 <br>
 <div class="tab">

@@ -16,7 +16,7 @@ Profilo declinato a partire dalla risorsa standard FHIR [Observation](http://hl7
 -	Eccesso ponderale
 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita}}.
 
 <br>
 <div class="tab">

@@ -17,7 +17,7 @@ In particolare, il file contiene l’elenco dei:
 
 Dato che un medico può lavorare (o lavorava) come prescrittore per più di una struttura, è possibile la presenza di più record relativi allo stesso codice fiscale. 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore}}.
 
 <br>
 <div class="tab">

@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [DeviceRequest](http://hl7.org/fhir/R4/devicerequest.html) che contiene le informazioni necessarie per la fornitura al paziente della protesi o dell’ausilio definito in fase di stesura del progetto individuale.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili}}.
 
 <br>
 <div class="tab">

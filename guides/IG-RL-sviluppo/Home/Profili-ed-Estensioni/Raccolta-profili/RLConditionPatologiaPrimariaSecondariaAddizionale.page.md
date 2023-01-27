@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Condition](http://hl7.org/fhir/R4/condition.html) che contiene i dettagli inerenti alla patologia primaria, secondaria o addizionale relativa ad un paziente, la cui codifica è ricavata dalla tabella delle codifiche SISS delle diagnosi.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale}}.
 
 <br>
 <div class="tab">

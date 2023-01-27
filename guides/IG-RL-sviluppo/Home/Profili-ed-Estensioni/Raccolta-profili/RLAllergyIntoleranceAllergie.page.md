@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html) che contiene le informazioni riguardo le allergie del paziente in forma testuale.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie}}.
 
 <br>
 <div class="tab">

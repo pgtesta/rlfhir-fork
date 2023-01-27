@@ -11,7 +11,7 @@
 ## Descrizione
 Profilo declinato a partire dalla risorsa generica FHIR [Procedure](http://hl7.org/fhir/R4/procedure.html) che contiene il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione}}.
 
 <br>
 <div class="tab">
