@@ -16,7 +16,6 @@
   - [Tabella della tipologia di bisogno](#tabella-della-tipologia-di-bisogno)
   - [Tabella del motivo della segnalazione](#tabella-del-motivo-della-segnalazione)
   - [Tabella della tipologia di accesso](#tabella-della-tipologia-di-accesso)
-  - [Tabella del motivo della segnalazione e setting assistenziale proposto](#tabella-del-motivo-della-segnalazione-e-setting-assistenziale-proposto)
   - [Tabella degli obiettivi di salute](#tabella-degli-obiettivi-di-salute)
   - [Tabella degli stili di vita](#tabella-degli-stili-di-vita)
   - [Tabella dei percorsi di cure domiciliari](#tabella-dei-percorsi-di-cure-domiciliari)
@@ -241,24 +240,6 @@
 |---|---|
 |  01 |  Amministrativo |
 |  02 |  Dimissione Protetta |
-
-## Tabella del motivo della segnalazione e setting assistenziale proposto
-|  Codice |  Descrizione |
-|---|---|
-|  01 |  Assistenza In Struttura Diurna |
-|  02 |  Assistenza Residenziale |
-|  03 |  Assistenza Riabilitativa |
-|  04 |  Attivazione Di Servizi Domiciliari Di Natura Socio-Assistenziale (Sad) |
-|  05 |  Attivazione Servizi Domiciliari Di Natura Socio-Sanitaria ( Adi) |
-|  06 |  Colloquio Di Orientamento Sociale |
-|  07 |  Cure Domiciliari |
-|  08 |  Hospice |
-|  09 |  Inserimento Presso Struttura Riabilitativa |
-|  10 |  Presa In Carico Cronicità |
-|  11 |  Richiesta Di Inserimento Presso Strutture Residenziali (Rsa, Rsd) |
-|  12 |  Ricovero Reparto Sub-Acuti |
-|  13 |  Telemonitoraggio / Teleassistenza |
-|  99 |  Altro |
 
 ## Tabella degli obiettivi di salute
 |  Codice |  Descrizione |
