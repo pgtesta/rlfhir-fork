@@ -1,0 +1,97 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "CodeSystem-SGDT-QualificaProfessionistaSanitario",
+	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-QualificaProfessionistaSanitario",
+	"version": "1.0.0",
+	"name": "SGDT Qualifica Professionista Sanitario",
+	"status": "draft",
+	"date": "2023-01-24",
+	"description": "CodeSystem relativo alla qualifica del professionista sanitario",
+	"content": "complete",
+	"concept": [
+		{
+			"code": "PROFSAN01",
+			"display": "Diabetologo"
+		},
+		{
+			"code": "PROFSAN02",
+			"display": "Fisioterapista"
+		},
+		{
+			"code": "PROFSAN03",
+			"display": "Infermiere"
+		},
+		{
+			"code": "PROFSAN04",
+			"display": "Medico di Medicina Generale"
+		},
+		{
+			"code": "PROFSAN05",
+			"display": "Ostetrica"
+		},
+		{
+			"code": "PROFSAN06",
+			"display": "Pediatra"
+		},
+		{
+			"code": "PROFSAN07",
+			"display": "Pneumologo"
+		},
+		{
+			"code": "PROFSAN08",
+			"display": "Psicologo"
+		},
+		{
+			"code": "PROFSAN09",
+			"display": "Chirurgo"
+		},
+		{
+			"code": "PROFSAN10",
+			"display": "Anestesista"
+		},
+		{
+			"code": "PROFSAN11",
+			"display": "Cardiologo"
+		},
+		{
+			"code": "PROFSAN12",
+			"display": "Assistente Sociale"
+		},
+		{
+			"code": "PROFSAN13",
+			"display": "Ginecologo"
+		},
+		{
+			"code": "PROFSAN14",
+			"display": "Geriatra"
+		},
+		{
+			"code": "PROFSAN15",
+			"display": "Internista"
+		},
+		{
+			"code": "PROFSAN16",
+			"display": "Neurologo"
+		},
+		{
+			"code": "PROFSAN17",
+			"display": "Reumatologo"
+		},
+		{
+			"code": "PROFSAN18",
+			"display": "Neuropsichiatra"
+		},
+		{
+			"code": "PROFSAN19",
+			"display": "Fisiatra"
+		},
+		{
+			"code": "PROFSAN20",
+			"display": "Otorino"
+		},
+		{
+			"code": "PROFSAN21",
+			"display": "Oculista"
+		}
+	]
+}

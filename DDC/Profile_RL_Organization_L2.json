@@ -213,7 +213,12 @@
         "short": "Descrizione del tipo di struttura L2",
         "definition": "Stringa alfanumerica di al più 3 caratteri.",
         "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia UdO",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2"
+        }
       },
       {
         "id": "Organization.name",

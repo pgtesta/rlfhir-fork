@@ -109,7 +109,12 @@
         "id": "ServiceRequest.reasonCode.coding.code",
         "path": "ServiceRequest.reasonCode.coding.code",
         "short": "Codice della sospensione temporanea",
-        "definition": "Stringa numerica di una cifra"
+        "definition": "Stringa numerica di una cifra",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo ai motivi della sospensione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione"
+        }
       },
       {
         "id": "ServiceRequest.reasonCode.coding.display",

@@ -218,7 +218,12 @@
         "short": "Descrizione del tipo di azienda",
         "definition": "Stringa alfanumerica di 3 caratteri",
         "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alle tipologia di enti di livello 1",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1"
+        }
       },
       {
         "id": "Organization.name",

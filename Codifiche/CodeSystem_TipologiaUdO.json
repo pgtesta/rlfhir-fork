@@ -1,153 +1,153 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-DDC-DescL2",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DescL2",
-	"version": "1.0.0",
-	"name": "DDC Desc L2",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla tipologia UdO",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "TOX",
-			"display": "SERVIZI RESIDENZIALI E SEMIRESIDENZIALI AREA DIPENDENZE"
-		},
-		{
-			"code": "HOSPICE",
-			"display": "HOSPICE"
-		},
-		{
-			"code": "RSA",
-			"display": "RESIDENZE SANITARIO ASSISTENZIALI PER ANZIANI"
-		},
-		{
-			"code": "CDD",
-			"display": "CENTRO DIURNO DISABILI"
-		},
-		{
-			"code": "CSS",
-			"display": "COMUNITÀ SOCIO SANITARIA"
-		},
-		{
-			"code": "CDI",
-			"display": "CENTRO DIURNO INTEGRATO"
-		},
-		{
-			"code": "CONS",
-			"display": "CONSULTORIO"
-		},
-		{
-			"code": "RSD",
-			"display": "RESIDENZE SOCIOSANITARIE ASSISTENZIALI PER DISABILI"
-		},
-		{
-			"code": "SMI",
-			"display": "SERVIZI MULTIDISCIPLINARI INTEGRATI"
-		},
-		{
-			"code": "SERT",
-			"display": "SERVIZIO PER LE TOSSICODIPENDENZE"
-		},
-		{
-			"code": "UOCP",
-			"display": "UNITÀ OPERATIVA CURE PALLIATIVE"
-		},
-		{
-			"code": "INT",
-			"display": "CURE INTERMEDIE"
-		},
-		{
-			"code": "RCI",
-			"display": "SERVIZI RIABILITATIVI NON RESIDENZIALI E CURE INTERMEDIE"
-		},
-		{
-			"code": "RIA",
-			"display": "SERVIZI RIABILITATIVI NON RESIDENZIALI"
-		},
-		{
-			"code": "SRM",
-			"display": "SERVIZIO TERAPEUTICO RIABILITATIVO MINORI"
-		},
-		{
-			"code": "AMB",
-			"display": "STRUTTURA AMBULATORIALE"
-		},
-		{
-			"code": "ODO",
-			"display": "ODONTOSTOMATOLOGIA MONOSPECIALISTICA"
-		},
-		{
-			"code": "RIC",
-			"display": "STRUTTURA DI RICOVERO"
-		},
-		{
-			"code": "RAS",
-			"display": "STRUTTURA DI RACCOLTA SANGUE"
-		},
-		{
-			"code": "MLA",
-			"display": "SERVIZIO DI MEDICINA DI LABORATORIO"
-		},
-		{
-			"code": "SUA",
-			"display": "STRUTTURA DI CURE SUB ACUTE"
-		},
-		{
-			"code": "AMS",
-			"display": "AMBULATORIO DI MEDICINA SPORTIVA"
-		},
-		{
-			"code": "NPI",
-			"display": "NEUROPSICHIATRIA INFANTILE"
-		},
-		{
-			"code": "SMS",
-			"display": "STUDIO PROF.LE DI MEDICINA SPORTIVA"
-		},
-		{
-			"code": "PSI",
-			"display": "STRUTTURA PSICHIATRICA"
-		},
-		{
-			"code": "RCD",
-			"display": "RICOVERO A CICLO DIURNO"
-		},
-		{
-			"code": "ADI",
-			"display": "ASSISTENZA DOMICILIARE INTEGRATA"
-		},
-		{
-			"code": "UCPDOM",
-			"display": "UNITÀ OPERATIVA CURE PALLIATIVE DOMICILIARI"
-		},
-		{
-			"code": "CDC",
-			"display": "CASA DI COMUNITA'"
-		},
-		{
-			"code": "COT",
-			"display": "CENTRALE OPERATIVA TERRITORIALE"
-		},
-		{
-			"code": "CAL",
-			"display": "CENTRO DI ASSISTENZA LIMITATA (DIALISI)"
-		},
-		{
-			"code": "PAR",
-			"display": "POSTACUTA RESIDENZIALE"
-		},
-		{
-			"code": "REMS",
-			"display": "RESIDENZA ESECUZIONE DELLE MISURE DI SICUREZZA"
-		},
-		{
-			"code": "TERM",
-			"display": "CENTRO DI ASSISTENZA IDROTERMALE"
-		},
-		{
-			"code": "MAINF",
-			"display": "CENTRO MALATTIE INFETTIVE"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-DDC-DescL2",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DescL2",
+  "version": "1.0.0",
+  "name": "DDC Desc L2",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla tipologia UdO",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "TOX",
+      "display": "SERVIZI RESIDENZIALI E SEMIRESIDENZIALI AREA DIPENDENZE"
+    },
+    {
+      "code": "HOSPICE",
+      "display": "HOSPICE"
+    },
+    {
+      "code": "RSA",
+      "display": "RESIDENZE SANITARIO ASSISTENZIALI PER ANZIANI"
+    },
+    {
+      "code": "CDD",
+      "display": "CENTRO DIURNO DISABILI"
+    },
+    {
+      "code": "CSS",
+      "display": "COMUNITÀ SOCIO SANITARIA"
+    },
+    {
+      "code": "CDI",
+      "display": "CENTRO DIURNO INTEGRATO"
+    },
+    {
+      "code": "CONS",
+      "display": "CONSULTORIO"
+    },
+    {
+      "code": "RSD",
+      "display": "RESIDENZE SOCIOSANITARIE ASSISTENZIALI PER DISABILI"
+    },
+    {
+      "code": "SMI",
+      "display": "SERVIZI MULTIDISCIPLINARI INTEGRATI"
+    },
+    {
+      "code": "SERT",
+      "display": "SERVIZIO PER LE TOSSICODIPENDENZE"
+    },
+    {
+      "code": "UOCP",
+      "display": "UNITÀ OPERATIVA CURE PALLIATIVE"
+    },
+    {
+      "code": "INT",
+      "display": "CURE INTERMEDIE"
+    },
+    {
+      "code": "RCI",
+      "display": "SERVIZI RIABILITATIVI NON RESIDENZIALI E CURE INTERMEDIE"
+    },
+    {
+      "code": "RIA",
+      "display": "SERVIZI RIABILITATIVI NON RESIDENZIALI"
+    },
+    {
+      "code": "SRM",
+      "display": "SERVIZIO TERAPEUTICO RIABILITATIVO MINORI"
+    },
+    {
+      "code": "AMB",
+      "display": "STRUTTURA AMBULATORIALE"
+    },
+    {
+      "code": "ODO",
+      "display": "ODONTOSTOMATOLOGIA MONOSPECIALISTICA"
+    },
+    {
+      "code": "RIC",
+      "display": "STRUTTURA DI RICOVERO"
+    },
+    {
+      "code": "RAS",
+      "display": "STRUTTURA DI RACCOLTA SANGUE"
+    },
+    {
+      "code": "MLA",
+      "display": "SERVIZIO DI MEDICINA DI LABORATORIO"
+    },
+    {
+      "code": "SUA",
+      "display": "STRUTTURA DI CURE SUB ACUTE"
+    },
+    {
+      "code": "AMS",
+      "display": "AMBULATORIO DI MEDICINA SPORTIVA"
+    },
+    {
+      "code": "NPI",
+      "display": "NEUROPSICHIATRIA INFANTILE"
+    },
+    {
+      "code": "SMS",
+      "display": "STUDIO PROF.LE DI MEDICINA SPORTIVA"
+    },
+    {
+      "code": "PSI",
+      "display": "STRUTTURA PSICHIATRICA"
+    },
+    {
+      "code": "RCD",
+      "display": "RICOVERO A CICLO DIURNO"
+    },
+    {
+      "code": "ADI",
+      "display": "ASSISTENZA DOMICILIARE INTEGRATA"
+    },
+    {
+      "code": "UCPDOM",
+      "display": "UNITÀ OPERATIVA CURE PALLIATIVE DOMICILIARI"
+    },
+    {
+      "code": "CDC",
+      "display": "CASA DI COMUNITA'"
+    },
+    {
+      "code": "COT",
+      "display": "CENTRALE OPERATIVA TERRITORIALE"
+    },
+    {
+      "code": "CAL",
+      "display": "CENTRO DI ASSISTENZA LIMITATA (DIALISI)"
+    },
+    {
+      "code": "PAR",
+      "display": "POSTACUTA RESIDENZIALE"
+    },
+    {
+      "code": "REMS",
+      "display": "RESIDENZA ESECUZIONE DELLE MISURE DI SICUREZZA"
+    },
+    {
+      "code": "TERM",
+      "display": "CENTRO DI ASSISTENZA IDROTERMALE"
+    },
+    {
+      "code": "MAINF",
+      "display": "CENTRO MALATTIE INFETTIVE"
+    }
+  ]
 }

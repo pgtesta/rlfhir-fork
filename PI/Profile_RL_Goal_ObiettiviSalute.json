@@ -52,7 +52,12 @@
         "id": "Goal.description.coding.code",
         "path": "Goal.description.coding.code",
         "short": "Codice dell'obiettivo di salute",
-        "definition": "Codice numerico di 2 cifre"
+        "definition": "Codice numerico di 2 cifre",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo agli obiettivi salute",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute"
+        }
       },
       {
         "id": "Goal.description.coding.display",

@@ -1,29 +1,29 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SGDT-StiliVita",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-StiliVita",
-	"version": "1.0.0",
-	"name": "SGDT Stili Vita",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo agli stili di vita",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "01",
-			"display": "Fumo"
-		},
-		{
-			"code": "02",
-			"display": "Alcol"
-		},
-		{
-			"code": "03",
-			"display": "Sedentarietà"
-		},
-		{
-			"code": "04",
-			"display": "Eccesso Ponderale"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-StiliVita",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-StiliVita",
+  "version": "1.0.0",
+  "name": "SGDT Stili Vita",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo agli stili di vita",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Fumo"
+    },
+    {
+      "code": "02",
+      "display": "Alcol"
+    },
+    {
+      "code": "03",
+      "display": "Sedentarietà"
+    },
+    {
+      "code": "04",
+      "display": "Eccesso Ponderale"
+    }
+  ]
 }

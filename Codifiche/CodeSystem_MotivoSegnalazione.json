@@ -1,25 +1,25 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SGDT_MotivoSegnalazione",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-MotivoSegnalazione",
-	"version": "1.0.0",
-	"name": "SGDT Motivo Segnalazione",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo al motivo della segnalazione",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "01",
-			"display": "Accesso Spontaneo"
-		},
-		{
-			"code": "02",
-			"display": "Dimissione Protetta"
-		},
-		{
-			"code": "03",
-			"display": "Inviato da MMG"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT_MotivoSegnalazione",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-MotivoSegnalazione",
+  "version": "1.0.0",
+  "name": "SGDT Motivo Segnalazione",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo al motivo della segnalazione",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Accesso Spontaneo"
+    },
+    {
+      "code": "02",
+      "display": "Dimissione Protetta"
+    },
+    {
+      "code": "03",
+      "display": "Inviato da MMG"
+    }
+  ]
 }

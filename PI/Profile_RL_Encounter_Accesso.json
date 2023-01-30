@@ -48,7 +48,12 @@
         "path": "Encounter.class.code",
         "short": "Codice della tipologia di accesso",
         "definition": "Stringa alfanumerica di 5 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di accesso",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso"
+        }
       },
       {
         "id": "Encounter.class.display",
@@ -98,7 +103,12 @@
         "id": "Encounter.reasonCode.coding.code",
         "path": "Encounter.reasonCode.coding.code",
         "short": "Codice del motivo della segnalazione",
-        "definition": "Codice numerico di 2 cifre"
+        "definition": "Codice numerico di 2 cifre",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo al motivo della segnalazione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione"
+        }
       },
       {
         "id": "Encounter.reasonCode.coding.display",

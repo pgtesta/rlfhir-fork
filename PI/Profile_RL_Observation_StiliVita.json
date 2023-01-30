@@ -69,7 +69,12 @@
         "path": "Observation.code.coding.code",
         "short": "Codice della tipologia dello stile di vita",
         "definition": "Codice numerico di 2 cifre",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo agli stili di vita",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-StiliVita"
+        }
       },
       {
         "id": "Observation.code.coding.display",

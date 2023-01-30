@@ -34,7 +34,12 @@
         "id": "PractitionerRole.code.coding.code",
         "path": "PractitionerRole.code.coding.code",
         "short": "Codice della tipologia di operatore ADI",
-        "definition": "Valore numerico di al più 2 cifre"
+        "definition": "Valore numerico di al più 2 cifre",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di operatore ADI",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore"
+        }
       },
       {
         "id": "PractitionerRole.code.coding.display",

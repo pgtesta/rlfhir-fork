@@ -184,7 +184,12 @@
         "short": "Codice della qualifica del medico prescrittore",
         "definition": "Singolo carattere alfabetico",
         "comment": "La fonte del dato è il campo CD_TIPO_PRESCRITTORE della tabella V_MEDICI_GDC_DDC",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alle qualifiche dei medici prescrittori",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore"
+        }
       },
       {
         "id": "PractitionerRole.code.coding.display",

@@ -1,28 +1,28 @@
 {
-	"resourceType": "ValueSet",
-	"id": "ValueSet-SGDT_TipologiaAccesso",
-	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
-	"version": "1.0.0",
-	"name": "SGDT TipologiaAccesso",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "ValueSet relativo alla tipologia di accesso",
-	"compose": {
-		"include": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaAccesso",
-				"version": "1.0.0",
-				"concept": [
-					{
-						"code": "01",
-						"display": "Amministrativo"
-					},
-					{
-						"code": "02",
-						"display": "Dimissione Protetta"
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT_TipologiaAccesso",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
+  "version": "1.0.0",
+  "name": "SGDT TipologiaAccesso",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla tipologia di accesso",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaAccesso",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "01",
+            "display": "Amministrativo"
+          },
+          {
+            "code": "02",
+            "display": "Dimissione Protetta"
+          }
+        ]
+      }
+    ]
+  }
 }

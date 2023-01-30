@@ -89,7 +89,12 @@
         "id": "Procedure.extension:modalitaErogazione.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice della modalità di erogazione",
-        "definition": "Codice numerico di al più 2 caratteri"
+        "definition": "Codice numerico di al più 2 caratteri",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla modalità di erogazione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione"
+        }
       },
       {
         "id": "Procedure.extension:modalitaErogazione.value[x].coding.display",
@@ -176,7 +181,12 @@
         "id": "Procedure.code.coding.code",
         "path": "Procedure.code.coding.code",
         "short": "Codice della prestazione",
-        "definition": "Stringa alfanumerica di 10 caratteri"
+        "definition": "Stringa alfanumerica di 10 caratteri",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di prestazione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione"
+        }
       },
       {
         "id": "Procedure.code.coding.display",
@@ -221,6 +231,26 @@
         "short": "Nel caso di una prestazione erogata in regime di ricovero domiciliare questo campo contiene la tipologia di operatore che ha effettuato la prestazione",
         "definition": "Codice numerico di un carattere",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie degli operatori ADI contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "Procedure.performer.function.coding",
+        "path": "Procedure.performer.function.coding",
+        "short": "Tipologia di operatore che ha effettuato la prestazione"
+      },
+      {
+        "id": "Procedure.performer.function.coding.code",
+        "path": "Procedure.performer.function.coding.code",
+        "short": "Codice tipologia di operatore che ha effettuato la prestazione",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di operatore ADI",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore"
+        }
+      },
+      {
+        "id": "Procedure.performer.function.coding.display",
+        "path": "Procedure.performer.function.coding.display",
+        "short": "Descrizione tipologia di operatore che ha effettuato la prestazione"
       },
       {
         "id": "Procedure.location",

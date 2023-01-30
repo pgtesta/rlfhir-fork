@@ -1,53 +1,53 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-DDC-TipoPrescrittore",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-TipoPrescrittore",
-	"version": "1.0.0",
-	"name": "DDC Tipo Prescrittore",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alle qualifiche dei medici prescrittori",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "A",
-			"display": "Specialista ambulatoriale (ex SUMAI)"
-		},
-		{
-			"code": "C",
-			"display": "Specialista di struttura privata accreditata"
-		},
-		{
-			"code": "D",
-			"display": "Dipendente dei servizi territoriali ASL / ATS"
-		},
-		{
-			"code": "F",
-			"display": "Medico di medicina generale"
-		},
-		{
-			"code": "G",
-			"display": "Guardia medica"
-		},
-		{
-			"code": "H",
-			"display": "Ospedaliero"
-		},
-		{
-			"code": "P",
-			"display": "Pediatra di libera scelta"
-		},
-		{
-			"code": "T",
-			"display": "Guardia medica turistica"
-		},
-		{
-			"code": "U",
-			"display": "Medico di azienda ospedaliera-universitaria"
-		},
-		{
-			"code": "Z",
-			"display": "Altra specializzazione"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-DDC-TipoPrescrittore",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-TipoPrescrittore",
+  "version": "1.0.0",
+  "name": "DDC Tipo Prescrittore",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alle qualifiche dei medici prescrittori",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "A",
+      "display": "Specialista ambulatoriale (ex SUMAI)"
+    },
+    {
+      "code": "C",
+      "display": "Specialista di struttura privata accreditata"
+    },
+    {
+      "code": "D",
+      "display": "Dipendente dei servizi territoriali ASL / ATS"
+    },
+    {
+      "code": "F",
+      "display": "Medico di medicina generale"
+    },
+    {
+      "code": "G",
+      "display": "Guardia medica"
+    },
+    {
+      "code": "H",
+      "display": "Ospedaliero"
+    },
+    {
+      "code": "P",
+      "display": "Pediatra di libera scelta"
+    },
+    {
+      "code": "T",
+      "display": "Guardia medica turistica"
+    },
+    {
+      "code": "U",
+      "display": "Medico di azienda ospedaliera-universitaria"
+    },
+    {
+      "code": "Z",
+      "display": "Altra specializzazione"
+    }
+  ]
 }

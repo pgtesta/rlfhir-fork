@@ -173,7 +173,12 @@
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice dell'unità di offerta",
         "definition": "Stringa alfanumerica al più di 10 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia UdO",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2"
+        }
       },
       {
         "id": "ServiceRequest.code.coding.display",
@@ -267,7 +272,12 @@
         "path": "ServiceRequest.reasonCode.coding.code",
         "short": "Codice del percorso di cure domiciliari",
         "definition": "Stringa alfanumerica al più di 10 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo ai percorsi di cure domiciliari",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom"
+        }
       },
       {
         "id": "ServiceRequest.reasonCode.coding.display",

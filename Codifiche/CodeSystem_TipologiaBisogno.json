@@ -1,21 +1,21 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-TipologiaBisogno",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipologiaBisogno",
-	"version": "1.0.0",
-	"name": "Tipologia Bisogno",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla tipologia di bisogno",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "01",
-			"display": "Complesso"
-		},
-		{
-			"code": "02",
-			"display": "Semplice"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-TipologiaBisogno",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipologiaBisogno",
+  "version": "1.0.0",
+  "name": "Tipologia Bisogno",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla tipologia di bisogno",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "Complesso"
+    },
+    {
+      "code": "02",
+      "display": "Semplice"
+    }
+  ]
 }
