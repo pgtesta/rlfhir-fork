@@ -1,0 +1,32 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ValueSet-SGDT_MotivoSegnalazione",
+	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
+	"version": "1.0.0",
+	"name": "SGDT Motivo Segnalazione",
+	"status": "draft",
+	"date": "2023-01-24",
+	"description": "ValueSet relativo al motivo della segnalazione",
+	"compose": {
+		"include": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-MotivoSegnalazione",
+				"version": "1.0.0",
+				"concept": [
+					{
+						"code": "01",
+						"display": "Accesso Spontaneo"
+					},
+					{
+						"code": "02",
+						"display": "Dimissione Protetta"
+					},
+					{
+						"code": "03",
+						"display": "Inviato da MMG"
+					}
+				]
+			}
+		]
+	}
+}

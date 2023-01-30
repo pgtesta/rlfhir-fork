@@ -1,0 +1,100 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ValueSet-DDC-DescL1",
+	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DescL1",
+	"version": "1.0.0",
+	"name": "DDC Desc L1",
+	"status": "draft",
+	"date": "2023-01-24",
+	"description": "ValueSet relativo alle tipologia di enti di livello 1",
+	"compose": {
+		"include": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DescL1",
+				"version": "1.0",
+				"concept": [
+					{
+						"code": "AO",
+						"display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
+					},
+					{
+						"code": "APC",
+						"display": "Associazione temporanea di imprese nel contesto Presa in Carico"
+					},
+					{
+						"code": "ASL",
+						"display": "Agenzia di Tutela della Salute"
+					},
+					{
+						"code": "AXL",
+						"display": "ASL non-lombarda (contesto Celiachia)"
+					},
+					{
+						"code": "APT",
+						"display": "Azienda Speciale (contesto Uffici di Piano)"
+					},
+					{
+						"code": "CDT",
+						"display": "Centro di Tariffazione per le farmacie"
+					},
+					{
+						"code": "COM",
+						"display": "Comune"
+					},
+					{
+						"code": "CPC",
+						"display": "Cooperativa di Presa in Carico"
+					},
+					{
+						"code": "CRG",
+						"display": "Gestore CReG"
+					},
+					{
+						"code": "ENT",
+						"display": "Ente gestore di strutture sociosanitarie private accreditate e/o non accreditate"
+					},
+					{
+						"code": "FAR",
+						"display": "Farmacia"
+					},
+					{
+						"code": "FOR",
+						"display": "Fornitore (per esempio nel contesto della Protesica)"
+					},
+					{
+						"code": "GDO",
+						"display": "Grande Distribuzione Organizzata (per esempio nel contesto della Celiachia)"
+					},
+					{
+						"code": "LI",
+						"display": "ARIA SpA già Lombardia Informatica (Aderente di tipo istituzionale e non sanitario)"
+					},
+					{
+						"code": "MMG",
+						"display": "Medico di Medicina Generale/ Pediatra di Libera Scelta"
+					},
+					{
+						"code": "NEG",
+						"display": "Negozio (per esempio nel contesto della Celiachia)"
+					},
+					{
+						"code": "PRF",
+						"display": "Prefettura"
+					},
+					{
+						"code": "RL",
+						"display": "Regione Lombardia (Aderente di tipo istituzionale e non sanitario)"
+					},
+					{
+						"code": "ZOO",
+						"display": "Istituto Zooprofilattico"
+					},
+					{
+						"code": "ALT",
+						"display": "Altro"
+					}
+				]
+			}
+		]
+	}
+}
