@@ -4,9 +4,9 @@
 from
 	CodeSystem
 select
-	name,
-	description,
-	url
+	Nome: name,
+	Descrizione: description,
+	URL: url
 order by
 	name 
 ```
