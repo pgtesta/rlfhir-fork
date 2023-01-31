@@ -2,8 +2,8 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
   "name": "RLPatientCittadinanza",
-  "description": "Cittadinanza del paziente",
   "status": "draft",
+  "description": "Cittadinanza del paziente",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -34,6 +34,9 @@
         "type": [
           {
             "code": "code"
+          },
+          {
+            "code": "CodeableConcept"
           }
         ]
       }

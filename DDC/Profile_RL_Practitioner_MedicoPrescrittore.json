@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-01-23T14:00:22.9356971+00:00"
+    "lastUpdated": "2023-01-31T15:57:15.1665388+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
   "name": "RLPractitionerMedicoPrescrittore",
@@ -48,7 +48,7 @@
         "sliceName": "dataUpdate",
         "short": "Data dell'ultima modifica del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_ULTV della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DT_ULTV dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "max": "1",
         "type": [
@@ -67,7 +67,7 @@
         "sliceName": "dataInsert",
         "short": "Data di inserimento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INSER della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DT_INSER dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "max": "1",
         "type": [
@@ -85,7 +85,7 @@
         "path": "Practitioner.identifier",
         "short": "Codice fiscale del medico prescrittore",
         "definition": "Stringa alfanumerica di 16 caratteri",
-        "comment": "La fonte del dato è il campo CD_FISCALE della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo  CD_FISCALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documeto DC-DDC-SIAA#01",
         "min": 1,
         "max": "1"
       },
@@ -101,7 +101,7 @@
         "path": "Practitioner.name.family",
         "short": "Cognome del medico prescrittore",
         "definition": "Stringa alfanumerica di max 40 caratteri.",
-        "comment": "La fonte del dato è il campo DS_COGNOME della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DS_COGNOME dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
@@ -109,8 +109,46 @@
         "path": "Practitioner.name.given",
         "short": "Nome del medico prescrittore",
         "definition": "Stringa alfanumerica di max 40 caratteri.",
-        "comment": "La fonte del dato è il campo DS_NOME della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DS_NOME dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "short": "Codifica della qualifica del medico prescrittore"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.code",
+        "path": "Practitioner.qualification.code.coding.code",
+        "short": "Codice della qualifica del medico prescrittore",
+        "definition": "Singolo carattere alfabetico",
+        "comment": "La fonte del dato è il campo CD_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alle qualifiche dei medici prescrittori",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-TipoPrescrittore"
+        }
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.display",
+        "path": "Practitioner.qualification.code.coding.display",
+        "short": "Descrizione della qualifica del medico prescrittore",
+        "definition": "Stringa alfanumerica di al più 70 caratteri",
+        "comment": "La fonte del dato è il campo DS_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "Practitioner.qualification.issuer",
+        "path": "Practitioner.qualification.issuer",
+        "short": "Reference all'ente L1 in cui il medico prescrittore lavora",
+        "comment": "La fonte del dato è il campo CD_STRUTTURA dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
       }
     ]
   }

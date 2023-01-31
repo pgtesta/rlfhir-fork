@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerRoleMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-01-23T14:01:20.6357849+00:00"
+    "lastUpdated": "2023-01-31T15:49:10.9380655+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
   "name": "RLPractitionerRoleMedicoPrescrittore",
@@ -43,7 +43,7 @@
         "sliceName": "dataInsert",
         "short": "Data di inserimento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INSER della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DT_INSER dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1,
         "max": "1",
         "type": [
@@ -62,7 +62,7 @@
         "sliceName": "dataUpdate",
         "short": "Data dell'ultima modifica del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_ULTV della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DT_ULTV dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1,
         "max": "1",
         "type": [
@@ -94,7 +94,7 @@
         "sliceName": "CD_REGIONALE",
         "short": "Codice regionale valorizzato solo per prescrittori di tipo MMG e PDF",
         "definition": "Stringa numerica di 5 caratteri.",
-        "comment": "La fonte del dato è il campo CD_REGIONALE della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo CD_REGIONALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "max": "1"
       },
       {
@@ -103,7 +103,7 @@
         "sliceName": "CD_MEDICO_SPEC",
         "short": "Codice regionale per gli specialisti",
         "definition": "Stringa alfanumerica di 6 caratteri",
-        "comment": "La fonte del dato è il campo CD_MEDICO_SPEC della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo CD_MEDICO_SPEC dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "max": "1"
       },
       {
@@ -111,7 +111,7 @@
         "path": "PractitionerRole.active",
         "short": "Indicazione sullo stato del medico prescrittore",
         "definition": "Può assumere i valori:\n• true se il campo CD_STATO è uguale ad A (attivo).\r\n• false se il campo CD_STATO è uguale ad C(cessato, medico che non può prescrivere su ricettario RUR).",
-        "comment": "La fonte del dato è il campo CD_STATO della tabella V_MEDICI_GDC_DDC.",
+        "comment": "La fonte del dato è il campo CD_STATO dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
@@ -125,7 +125,7 @@
         "path": "PractitionerRole.period.start",
         "short": "Data inizio attività medico",
         "definition": "Data in cui il medico ha iniziato l’attività di prescrittore presso la struttura (menzionata nel campo organization)\r\nFormato: YYYY-MM-DD secondo lo standard FHIR.",
-        "comment": "La fonte del dato è il campo DT_INIZIO della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DT_INIZIO dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
@@ -155,7 +155,7 @@
         "path": "PractitionerRole.organization",
         "short": "Reference all'ente L2 in cui il medico prescrittore esercita",
         "definition": "Reference all'ente L2 in cui il medico prescrittore esercita la specifica professione.",
-        "comment": "Basato sul campo ID_LIVELLO_2 della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo ID_LIVELLO_2 dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "type": [
           {
             "code": "Reference",
@@ -183,7 +183,7 @@
         "path": "PractitionerRole.code.coding.code",
         "short": "Codice della qualifica del medico prescrittore",
         "definition": "Singolo carattere alfabetico",
-        "comment": "La fonte del dato è il campo CD_TIPO_PRESCRITTORE della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo CD_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -196,7 +196,7 @@
         "path": "PractitionerRole.code.coding.display",
         "short": "Descrizione della qualifica del medico prescrittore",
         "definition": "Stringa alfanumerica di al più 70 caratteri.",
-        "comment": "La fonte del dato è il campo DS_TIPO_PRESCRITTORE della tabella V_MEDICI_GDC_DDC",
+        "comment": "La fonte del dato è il campo DS_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       }
     ]

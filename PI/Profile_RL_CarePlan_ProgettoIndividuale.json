@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2023-01-23T13:57:30.7020157+00:00"
+    "lastUpdated": "2023-01-31T17:25:44.2756377+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -66,7 +66,7 @@
         "id": "CarePlan.status",
         "path": "CarePlan.status",
         "short": "Stato del progetto individuale",
-        "definition": "- Active: equivalente allo stato 'Attivo' del SGDT\r\n- On-hold: equivalente allo stato 'Da compilare' del SGDT\r\n- Draft: equivalente allo stato 'In compilazione' del SGDT\r\n- Completed: equivalente allo stato 'Chiuso' del SGDT",
+        "definition": "- Active: equivalente allo stato 'Attivo' del SGDT\r\n- Completed: equivalente allo stato 'Chiuso' del SGDT",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
@@ -167,8 +167,8 @@
       {
         "id": "CarePlan.addresses",
         "path": "CarePlan.addresses",
-        "short": "Patologia primaria, patologie secondarie, patologia addizionale",
-        "definition": "Reference ai profili RLConditionPatologiaPrimariaSecondariaAddizzionale inerenti alle patologie pregresse e le condizioni di salute del paziente",
+        "short": "Patologia primaria, patologie secondarie e patologia ulteriore",
+        "definition": "Reference ai profili RLConditionPatologiaPrimariaSecondariaUlteriore inerenti alle patologie pregresse e le condizioni di salute del paziente",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -293,7 +293,7 @@
         "id": "CarePlan.activity.reference",
         "path": "CarePlan.activity.reference",
         "short": "Dettagli delle possibili attività inserite nel progetto individuali",
-        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica, \r\n- RLServiceRequestServiziSocioAssistenziali,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili, \r\n- RLServiceRequestPrestazioniInfermieristiche",
+        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioSanitari,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili, , \r\n- RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

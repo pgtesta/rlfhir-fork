@@ -52,6 +52,48 @@
         "isModifier": false
       },
       {
+        "id": "QuestionnaireResponse.extension:tipologiaValutazione",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "tipologiaValutazione",
+        "short": "Tipologia di valutazione",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologia di valutazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding",
+        "path": "QuestionnaireResponse.extension.value[x].coding",
+        "short": "Codice e descrizione della tipologia di valutazione"
+      },
+      {
+        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.code",
+        "path": "QuestionnaireResponse.extension.value[x].coding.code",
+        "short": "Codice della tipologia di valutazione",
+        "definition": "Stringa alfanumerica di un carattere",
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di valutazione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione"
+        }
+      },
+      {
+        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.display",
+        "path": "QuestionnaireResponse.extension.value[x].coding.display",
+        "short": "Descrizione della tipologia di valutazione",
+        "definition": "Stringa alfanumerica di al più di 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
         "id": "QuestionnaireResponse.basedOn",
         "path": "QuestionnaireResponse.basedOn",
         "short": "Riferimento al progetto individule nel quale è previsto l'esito della valutazione",
@@ -68,7 +110,7 @@
       {
         "id": "QuestionnaireResponse.questionnaire",
         "path": "QuestionnaireResponse.questionnaire",
-        "short": "Tipologia di valutazione",
+        "short": "Valutazione",
         "definition": "Reference alla risorsa RLQuestionnaireValutazione contenente il nome della valutazione",
         "type": [
           {
@@ -97,7 +139,7 @@
         "id": "QuestionnaireResponse.author",
         "path": "QuestionnaireResponse.author",
         "short": "Riferimento del professionista sanitario che ha eseguito la valutazione",
-        "definition": "Reference al profilo RLPractioner del professionista sanitario che ha eseguito la valutazione",
+        "definition": "Reference al profilo RLPractionerProfessionistaSanitario del professionista sanitario che ha eseguito la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

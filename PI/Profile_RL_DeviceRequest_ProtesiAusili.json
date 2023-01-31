@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLDeviceRequestProtesiAusili",
   "meta": {
-    "lastUpdated": "2023-01-25T09:45:16.6990192+00:00"
+    "lastUpdated": "2023-01-31T17:18:03.1619943+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
   "name": "RLDeviceRequestProtesiAusili",
@@ -97,13 +97,14 @@
         "path": "DeviceRequest.code[x].coding.code",
         "short": "Codice dell'ausilio di protesica",
         "definition": "Stringa alfanumerica di al più 26 caratteri",
-        "comment": "La fonte del dato è il campo CD_AUSILIO della tabella ausili di protesica dei Dati Codificati"
+        "comment": "La fonte del dato è il campo CD_AUSILIO della tabella ausili di Protesica i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "DeviceRequest.code[x].coding.display",
         "path": "DeviceRequest.code[x].coding.display",
         "short": "Descrizione dell'ausilio di protesica",
-        "definition": "Stringra alfanumerica di al più 1024 caratteri."
+        "definition": "Stringra alfanumerica di al più 1024 caratteri.",
+        "comment": "La fonte del dato è il campo DS_AUSILIO della tabella ausili di Protesica i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "DeviceRequest.subject",

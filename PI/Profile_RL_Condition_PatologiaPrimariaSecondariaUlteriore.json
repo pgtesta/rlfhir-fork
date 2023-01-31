@@ -2,12 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionPatologiaPrimariaSecondariaUlteriore",
   "meta": {
-    "lastUpdated": "2023-01-23T14:46:58.7435672+00:00"
+    "lastUpdated": "2023-01-31T17:31:06.824176+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore",
   "name": "RLConditionPatologiaPrimariaSecondariaUlteriore",
   "status": "draft",
-  "description": "Profilo volto a descrivere la patologia, le eventuali patologie secondarie ed addizionali di un paziente.",
+  "description": "Profilo volto a descrivere la patologia primaria, le eventuali patologie secondarie ed ulteriori di un paziente.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
@@ -25,23 +25,26 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "short": "Descrizione della tipolgia di patologia"
+        "short": "Descrizione della tipolgia di patologia",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di patologia contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Condition.category.coding",
         "path": "Condition.category.coding",
         "short": "Codice e descrizione della tipologia di patologia",
-        "definition": "La tipologia può essere: primaria, secondaria, addizzionale"
+        "definition": "La tipologia può essere: primaria, secondaria o ulteriore"
       },
       {
         "id": "Condition.category.coding.code",
         "path": "Condition.category.coding.code",
         "short": "Codice della tipologia di patologia",
+        "definition": "Stringa alfanumerica di un carattere",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Condition.category.coding.display",
         "path": "Condition.category.coding.display",
+        "short": "Descrizione della tipolgia di patologia",
         "definition": "Stringa alfabeta al più di 50 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
@@ -51,23 +54,18 @@
         "short": "Codice e descrizione della patologia"
       },
       {
-        "id": "Condition.code.coding",
-        "path": "Condition.code.coding",
-        "short": "Codice e descrizione della patologia"
-      },
-      {
         "id": "Condition.code.coding.code",
         "path": "Condition.code.coding.code",
         "short": "Codice della patologia",
         "definition": "Stringa alfanumerica di al più 10 caratteri.",
-        "comment": "La fonte del dato è il campo CD_DIAGNOSI della tabella della codifica SISS delle diagnosi"
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Condition.code.coding.display",
         "path": "Condition.code.coding.display",
         "short": "Descrizione della patologia",
         "definition": "Stringa alfanumerica di al più 250 caratteri.",
-        "comment": "La fonte del dato è il campo DS_DIAGNOSI della tabella della codifica SISS delle diagnosi"
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Condition.subject",

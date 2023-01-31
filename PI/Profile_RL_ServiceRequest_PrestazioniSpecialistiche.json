@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestPrestazioniSpecialistiche",
   "meta": {
-    "lastUpdated": "2023-01-25T09:42:33.192371+00:00"
+    "lastUpdated": "2023-01-31T17:08:41.399826+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
   "name": "RLServiceRequestPrestazioniSpecialistiche",
@@ -132,18 +132,22 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "short": "Codice e descrizione della prestazione espresse in codifica regionale SISS",
+        "short": "Codifica della prestazione specialistica",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "ServiceRequest.code.coding.code",
         "path": "ServiceRequest.code.coding.code",
-        "short": "Codice della prestazione espressa in codifica regionale SISS"
+        "short": "Codice della prestazione specialistica",
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
-        "short": "Descrizione della prestazione espressa in codifica regionale SISS"
+        "short": "Descrizione della prestazione specialistica",
+        "definition": "Stringa alfanumerica di al più 70 caratteri",
+        "comment": "La fonte del dato è il campo DS_PRESTAZIONE_SISS dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "ServiceRequest.subject",

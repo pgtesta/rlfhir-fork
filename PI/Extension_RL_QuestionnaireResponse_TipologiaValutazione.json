@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
-  "name": "RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+  "name": "RLQuestionnaireResponseTipologiaValutazione",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
@@ -9,7 +9,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Patient.identifier"
+      "expression": "QuestionnaireResponse"
     }
   ],
   "type": "Extension",
@@ -20,19 +20,19 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "TEAM numero identificazione istituzione competente"
+        "short": "Tipologia Valutazione"
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
       }

@@ -45,18 +45,20 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Intervento educazionale da attivare",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli interventi educazionali contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "ServiceRequest.code.coding.code",
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice dell'intervento educazionale",
+        "definition": "Stringa alfanumerica di 5 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
-        "short": "Descrizione dell'intervento educazionale"
+        "short": "Descrizione dell'intervento educazionale",
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
       },
       {
         "id": "ServiceRequest.subject",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-01-25T09:43:04.5923614+00:00"
+    "lastUpdated": "2023-01-31T17:09:13.3344896+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -146,7 +146,7 @@
       {
         "id": "ServiceRequest.status",
         "path": "ServiceRequest.status",
-        "short": "Stato dell'attivazione del servizio sociosanitario",
+        "short": "Stato dell'attivazione del servizio socioassistenziale",
         "definition": "Valore fisso su \"active\"",
         "fixedCode": "active"
       },

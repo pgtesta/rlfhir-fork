@@ -37,6 +37,7 @@
         "id": "Patient.extension:cittadinanza",
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
+        "short": "Cittadinanza del cittadino",
         "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
@@ -53,15 +54,21 @@
       {
         "id": "Patient.extension:cittadinanza.value[x]",
         "path": "Patient.extension.value[x]",
-        "short": "Codice che rappresenta la cittadinanza del paziente",
-        "definition": "Collegamento al sito ISTAT",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "short": "Codice ISTAT della nazione di cittadinanza del cittadino",
+        "definition": "Stringa alfabetica di 3 caratteri",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
       },
       {
         "id": "Patient.extension:titoloDiStudio",
         "path": "Patient.extension",
         "sliceName": "titoloDiStudio",
-        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "short": "Titolo di studio del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei titoli di studio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 0,
         "max": "1",
         "type": [
@@ -77,14 +84,31 @@
       {
         "id": "Patient.extension:titoloDiStudio.value[x]",
         "path": "Patient.extension.value[x]",
-        "short": "Codice che rappresenta il titolo di studio del paziente",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice del titolo di studio del cittadino",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descizione che rappresenta il titolo di studio del cittadino",
+        "definition": "Stringa alfanumerica al più di 50 caratteri"
       },
       {
         "id": "Patient.extension:posizioneDellaProfessione",
         "path": "Patient.extension",
         "sliceName": "posizioneDellaProfessione",
-        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "short": "Posizione della professione del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle professioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 0,
         "max": "1",
         "type": [
@@ -100,14 +124,31 @@
       {
         "id": "Patient.extension:posizioneDellaProfessione.value[x]",
         "path": "Patient.extension.value[x]",
-        "short": "Codice che rappresenta la posizione della professione del paziente",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice della professione del cittadino",
+        "definition": "Stringa numerica di 2 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione della professione del cittadino",
+        "definition": "Stringa alfanumerica al più di 200 caratteri"
       },
       {
         "id": "Patient.extension:situazionePensionistica",
         "path": "Patient.extension",
         "sliceName": "situazionePensionistica",
-        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "short": "Situazione pensionistica del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della situazione pensionistica contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 0,
         "max": "1",
         "type": [
@@ -123,25 +164,147 @@
       {
         "id": "Patient.extension:situazionePensionistica.value[x]",
         "path": "Patient.extension.value[x]",
-        "short": "Codice che rappresenta la situazione pensionistica del paziente",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
-        "id": "Patient.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
+        "id": "Patient.extension:situazionePensionistica.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice della situazione pensionistica del cittadino",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione della situazione pensionistica del cittadino",
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:luogoDiNascita",
         "path": "Patient.extension",
-        "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
-        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "sliceName": "luogoDiNascita",
+        "short": "Luogo di nascita del cittadino",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita"
             ]
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Patient.extension:luogoDiNascita.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Se il cittadino è nato in Italia il campo contiente il codice ISTAT del comune di nascita. Se il cittadino è nasto all'estero il campo contiente il codice \"999\" seguito dal codice ISTAT della nazione di nascita. Per gli apolidi o non rilevati il campo riporta il codice \"999999\".",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:ATSResidenza",
+        "path": "Patient.extension",
+        "sliceName": "ATSResidenza",
+        "short": "ATS di residenza del cittadino",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:ATSResidenza.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice L1 dell'ATS in cui il cittadino risiede",
+        "definition": "Stringa numerica di 6 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:responsabilitaGenitoriale",
+        "path": "Patient.extension",
+        "sliceName": "responsabilitaGenitoriale",
+        "short": "Responsabilità genitoriale nei confronti dell’assistito se minorenne",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del cittadino contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientResponsabilitaGenitoriale"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice della responsabilità genitoriale nei confronti dell’assistito, se minorenne",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione della responsabilità genitoriale nei confronti dell’assistito, se minorenne",
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:tipologiaCittadino",
+        "path": "Patient.extension",
+        "sliceName": "tipologiaCittadino",
+        "short": "Condizione clinica prevalente dell’assistito",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del cittadino contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:tipologiaCittadino.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice che rappresenta la condizione clinica prevalente dell’assistito",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:tipologiaCittadino.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione della condizione clinica prevalente dell’assistito",
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.identifier",
@@ -177,12 +340,61 @@
         "short": "Codice fiscale del paziente"
       },
       {
+        "id": "Patient.identifier:STP",
+        "path": "Patient.identifier",
+        "sliceName": "STP",
+        "short": "Codice STP del cittadino",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:STP.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/fhir/sid/STP"
+      },
+      {
+        "id": "Patient.identifier:STP.value",
+        "path": "Patient.identifier.value",
+        "short": "Codice STP del cittadino"
+      },
+      {
         "id": "Patient.identifier:tesseraTEAM",
         "path": "Patient.identifier",
         "sliceName": "tesseraTEAM",
         "short": "Numero identificazione tessera sanitaria europea",
         "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "max": "1"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.extension",
+        "path": "Patient.identifier.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.extension:myExtension",
+        "path": "Patient.identifier.extension",
+        "sliceName": "myExtension",
+        "short": "Numero di identificazione dell’istituzione” o ”identifica-tion number of the institution” indicata sulla TEAM",
+        "comment": "Punto 7 della tessara TEAM",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "Patient.identifier:tesseraTEAM.type",
@@ -197,12 +409,14 @@
       {
         "id": "Patient.identifier:tesseraTEAM.value",
         "path": "Patient.identifier.value",
-        "short": "Numero identificazione tessera sanitaria"
+        "short": "Numero identificazione tessera sanitaria europea",
+        "comment": "Punto 8 della tessara TEAM"
       },
       {
         "id": "Patient.identifier:tesseraTEAM.period",
         "path": "Patient.identifier.period",
-        "short": "Data scadenza tessera sanitaria"
+        "short": "Data scadenza tessera sanitaria",
+        "comment": "Punto 9 della tessara TEAM"
       },
       {
         "id": "Patient.active",
@@ -221,7 +435,7 @@
         "path": "Patient.name.family",
         "short": "Cognome del paziente",
         "definition": "Stringa alfabetica di massimo 40 caratteri",
-        "comment": "NAR",
+        "comment": "Il dato è detenuto dal SGDT",
         "min": 1
       },
       {
@@ -244,36 +458,47 @@
         "path": "Patient.birthDate",
         "short": "Data di nascita del paziente",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "NAR",
+        "comment": "Il dato è detenuto dal SGDT",
         "min": 1
       },
       {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
-        "short": "Tipologia di luogo di residenza o domicilio del paziente"
+        "definition": "Valore fisso su \"home\"",
+        "fixedCode": "home"
+      },
+      {
+        "id": "Patient.address.city",
+        "path": "Patient.address.city",
+        "short": "Codice ISTAT della città di domicilio del cittadino",
+        "definition": "Stringa numerica di 6 cifre"
       },
       {
         "id": "Patient.address.country",
         "path": "Patient.address.country",
         "short": "Codice Stato Estero di residenza del paziente",
         "definition": "Collegamento al sito ISTAT",
-        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.maritalStatus",
         "path": "Patient.maritalStatus",
         "short": "Stato civile del paziente",
-        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari"
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dello stato civile contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Patient.maritalStatus.coding.code",
         "path": "Patient.maritalStatus.coding.code",
-        "short": "Codice dello stato civile del paziente"
+        "short": "Codice dello stato civile del paziente",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.maritalStatus.coding.display",
         "path": "Patient.maritalStatus.coding.display",
-        "short": "Descrizione dello stato civile del paziente"
+        "short": "Descrizione dello stato civile del paziente",
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.generalPractitioner",
