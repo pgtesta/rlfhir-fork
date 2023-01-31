@@ -1,12 +1,4 @@
-- name: CodeSystem e ValueSet
-  filename: CodeSystem-e-ValueSet.page.md
 - name: Libreria ValueSet
   filename: Libreria-ValueSet.page.md
 - name: Libreria CodeSystem
   filename: Libreria-CodeSystem.page.md
-- name: ValueSets and CodeSystems
-  filename: ValueSetsandCodeSystems.page.md
-- name: All ValueSets
-  filename: AllValueSets
-- name: All CodeSystems
-  filename: AllCodeSystems

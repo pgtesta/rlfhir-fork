@@ -1,0 +1,73 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "CodeSystem-SIAD-CausaleDimissione",
+	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-CausaleDimissione",
+	"version": "1.0.0",
+	"name": "SIAD Causale Dimissione",
+	"status": "draft",
+	"date": "2023-01-24",
+	"description": "CodeSystem relativo causale di dimissione",
+	"content": "complete",
+	"concept": [
+		{
+			"code": "01",
+			"display": "Completamento del programma assistenziale"
+		},
+		{
+			"code": "02",
+			"display": "Ricovero in ospedale"
+		},
+		{
+			"code": "03",
+			"display": "Decesso a domicilio"
+		},
+		{
+			"code": "04",
+			"display": "Decesso in ospedale"
+		},
+		{
+			"code": "05",
+			"display": "Trasferimento in residenza sanitaria (RSA – RSD – Istituto di riabilitazione)"
+		},
+		{
+			"code": "06",
+			"display": "Trasferimento in Hospice"
+		},
+		{
+			"code": "07",
+			"display": "Decesso in Hospice"
+		},
+		{
+			"code": "08",
+			"display": "Trasferimento ad altra tipologia di cure domiciliari (ospedalizzazione domiciliare, SAD)"
+		},
+		{
+			"code": "09",
+			"display": "Cambio residenza"
+		},
+		{
+			"code": "10",
+			"display": "Cambio Medico"
+		},
+		{
+			"code": "11",
+			"display": "Volontà dell’utente"
+		},
+		{
+			"code": "12",
+			"display": "Chiusura Amministrativa in Assenza di sospensione qualora non vi siano prestazioni per 6 Mesi"
+		},
+		{
+			"code": "98",
+			"display": "Chiusura Amministrativa con riapertura nell’anno successivo in assenza di sospensione"
+		},
+		{
+			"code": "99",
+			"display": "Altro"
+		},
+		{
+			"code": "97",
+			"display": "Chiusura amministrativa per riassetto territoriale"
+		}
+	]
+}
