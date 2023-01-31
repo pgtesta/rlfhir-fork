@@ -1,2 +1,8 @@
 - name: CodeSystem e ValueSet
   filename: CodeSystem-e-ValueSet.page.md
+- name: ValueSets and CodeSystems
+  filename: ValueSetsandCodeSystems.page.md
+- name: All ValueSets
+  filename: AllValueSets
+- name: All CodeSystems
+  filename: AllCodeSystems
