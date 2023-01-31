@@ -82,7 +82,7 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 |  Nome |  Descrizione |  Riferimento al dettaglio della codifica |
 |---|---|---|
-|  DettagliPrenotazione | Dettagli delle prenotazioni |Il riferimento alla lista esaustiva delle codifiche è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
-|  Code |  Codice e descrizione del servizio sociosanitario da attivare |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i servizi sociosanitari è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
-|  ReasonCode |  Codice e descrizione dei percorsi di cure domiciliari |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i percorsi di cure domiciliari è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
-|  causaleDimissione |  Codice e descrizione della causale di dimissione |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo le causali di dimissione è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
+|  DettagliPrenotazione | Dettagli delle prenotazioni |Il riferimento alla lista esaustiva delle codifiche è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+|  Code |  Codice e descrizione del servizio sociosanitario da attivare |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i servizi sociosanitari è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+|  ReasonCode |  Codice e descrizione dei percorsi di cure domiciliari |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo i percorsi di cure domiciliari è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+|  causaleDimissione |  Codice e descrizione della causale di dimissione |  Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo le causali di dimissione è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

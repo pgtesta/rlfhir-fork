@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codifica delle qualifiche dei medici prescrittori | Il riferimento alla lista esaustiva della tipologia di qualifiche dei medici prescrittori è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
+| code | Codifica delle qualifiche dei medici prescrittori | Il riferimento alla lista esaustiva della tipologia di qualifiche dei medici prescrittori è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

@@ -85,4 +85,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLObservati
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione dello stile di vita | Il riferimento alla lista esaustiva degli stili di vita è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
+| code | Codice e descrizione dello stile di vita | Il riferimento alla lista esaustiva degli stili di vita è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

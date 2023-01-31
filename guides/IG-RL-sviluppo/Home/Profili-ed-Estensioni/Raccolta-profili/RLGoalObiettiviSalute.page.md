@@ -86,4 +86,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLGoalObiet
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione dell’obiettivo di salute | Il riferimento alla lista esaustiva degli obiettivi di salute è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}|
+| Code | Codice e descrizione dell’obiettivo di salute | Il riferimento alla lista esaustiva degli obiettivi di salute è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}|

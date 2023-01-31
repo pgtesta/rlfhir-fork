@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLDeviceReq
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| codeCodeableConcept | Codice e descrizione dell'ausilio di protesica| Il riferimento alla lista esaustiva degli ausili di protesica è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}   |
+| codeCodeableConcept | Codice e descrizione dell'ausilio di protesica| Il riferimento alla lista esaustiva degli ausili di protesica è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
 

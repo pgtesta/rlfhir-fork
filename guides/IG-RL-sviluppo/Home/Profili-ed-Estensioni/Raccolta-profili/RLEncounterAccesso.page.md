@@ -79,7 +79,7 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLEncounter
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| TipologiaBisogno | Codice e descrizione della tipologia del bisogno rilevata al cittadino| Il riferimento alla lista esaustiva delle tipologie di bisogni è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}   |
-| Class | Motivo della segnalazione | Il riferimento alla lista esaustiva dei motivi delle segnalazioni è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}   |
-| Type | Tipologia di accesso | Il riferimento alla lista esaustiva delle tipologie di accesso è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}   |
-| ReasonCode |Motivo della segnalazione e setting assistenziale proposto| Il riferimento alla lista esaustiva dei motivi delle segnalazioni e setting assistenziali proposti è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}}   |
+| TipologiaBisogno | Codice e descrizione della tipologia del bisogno rilevata al cittadino| Il riferimento alla lista esaustiva delle tipologie di bisogni è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| Class | Motivo della segnalazione | Il riferimento alla lista esaustiva dei motivi delle segnalazioni è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| Type | Tipologia di accesso | Il riferimento alla lista esaustiva delle tipologie di accesso è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| ReasonCode |Motivo della segnalazione e setting assistenziale proposto| Il riferimento alla lista esaustiva dei motivi delle segnalazioni e setting assistenziali proposti è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |

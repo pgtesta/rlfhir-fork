@@ -77,7 +77,7 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCi
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| maritalStatus | Stato civile del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente  {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
-| titoloDiStudio | Titolo di studio del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente   {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
-| posizione DellaProfessione | Posizione lavorativa del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
-| situazionePensionistica | Situazione pensionistica del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/Terminologia/CodeSystem-e-ValueSet.page.md, text:link}} |
+| maritalStatus | Stato civile del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| titoloDiStudio | Titolo di studio del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente   {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| posizione DellaProfessione | Posizione lavorativa del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| situazionePensionistica | Situazione pensionistica del cittadino | Il riferimento alla lista esaustiva delle tipologie di operatore ADI ricavate dal tracciato SIAD 1 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
