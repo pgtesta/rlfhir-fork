@@ -5,6 +5,12 @@
   "name": "RLPractitionerRoleProfessionistaSanitario",
   "status": "draft",
   "description": "Profilo contentente la tipologia del professionista sanitario con riferimento al dettaglio anagrafico",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

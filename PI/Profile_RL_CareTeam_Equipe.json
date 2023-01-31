@@ -5,6 +5,12 @@
   "name": "RLCareTeamEquipe",
   "status": "draft",
   "description": "Profilo volto a definire un equipe di professionisti sanitari",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

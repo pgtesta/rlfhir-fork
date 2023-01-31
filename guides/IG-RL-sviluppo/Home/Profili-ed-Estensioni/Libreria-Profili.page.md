@@ -228,10 +228,10 @@
       </tr>
       <tr>
         <td>PI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireTipologiaValutazione.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireValutazione.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
         <td>Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione}}</td>
       </tr>
       <tr>
         <td>PI</td>

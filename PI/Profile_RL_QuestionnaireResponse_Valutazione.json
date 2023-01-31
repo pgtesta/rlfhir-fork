@@ -69,12 +69,12 @@
         "id": "QuestionnaireResponse.questionnaire",
         "path": "QuestionnaireResponse.questionnaire",
         "short": "Tipologia di valutazione",
-        "definition": "Reference alla risorsa RLQuestionnaireTipologiaValutazione contenente il nome della valutazione",
+        "definition": "Reference alla risorsa RLQuestionnaireValutazione contenente il nome della valutazione",
         "type": [
           {
             "code": "canonical",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
             ]
           }
         ]
