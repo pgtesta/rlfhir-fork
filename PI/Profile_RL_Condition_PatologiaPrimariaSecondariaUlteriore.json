@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "RLConditionPatologiaPrimariaSecondariaAddizionale",
+  "id": "RLConditionPatologiaPrimariaSecondariaUlteriore",
   "meta": {
     "lastUpdated": "2023-01-23T14:46:58.7435672+00:00"
   },
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale",
-  "name": "RLConditionPatologiaPrimariaSecondariaAddizionale",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore",
+  "name": "RLConditionPatologiaPrimariaSecondariaUlteriore",
   "status": "draft",
   "description": "Profilo volto a descrivere la patologia, le eventuali patologie secondarie ed addizionali di un paziente.",
   "keyword": [

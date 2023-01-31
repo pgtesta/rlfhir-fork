@@ -116,10 +116,10 @@
       </tr>
       <tr>
         <td>PI</td>
-        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionPatologiaPrimariaSecondariaAddizionale.page.md}}</td>
+        <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionPatologiaPrimariaSecondariaUlteriore.page.md}}</td>
         <td><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td>
         <td>Profilo volto a descrivere la patologia, le eventuali patologie secondarie ed addizionali di un paziente.</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale}}</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore}}</td>
       </tr>
       <tr>
         <td>PI</td>
