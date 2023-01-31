@@ -1,25 +1,25 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SGDT-TipologiaValutazione",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
-	"version": "1.0.0",
-	"name": "SGDT Tipologia Valutazione",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla tipologia di valutazioni specifiche",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "VAL1",
-			"display": "Scheda Triage"
-		},
-		{
-			"code": "VAL2",
-			"display": "Scheda semplificata SIAD"
-		},
-		{
-			"code": "VAL3",
-			"display": "InterRAI HomeCare"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-Valutazione",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-Valutazione",
+  "version": "1.0.0",
+  "name": "SGDT Valutazione",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica delle valutazioni specifiche",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "VAL1",
+      "display": "Scheda Triage"
+    },
+    {
+      "code": "VAL2",
+      "display": "Scheda semplificata SIAD"
+    },
+    {
+      "code": "VAL3",
+      "display": "InterRAI HomeCare"
+    }
+  ]
 }

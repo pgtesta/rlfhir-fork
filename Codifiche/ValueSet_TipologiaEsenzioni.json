@@ -1,36 +1,36 @@
 {
-	"resourceType": "ValueSet",
-	"id": "ValueSet-SGDT-TipologiaEsenzioni",
-	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni",
-	"version": "1.0.0",
-	"name": "SGDT Tipologia Esenzioni",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "ValueSet relativo alla tipologia di esenzioni",
-	"compose": {
-		"include": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaEsenzioni",
-				"version": "1.0",
-				"concept": [
-					{
-						"code": "PA",
-						"display": "Patologia"
-					},
-					{
-						"code": "RA",
-						"display": "Rare"
-					},
-					{
-						"code": "RE",
-						"display": "Reddito"
-					},
-					{
-						"code": "IN",
-						"display": "Invalidità"
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT-TipologiaEsenzioni",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni",
+  "version": "1.0.0",
+  "name": "SGDT Tipologia Esenzioni",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla tipologia di esenzioni",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaEsenzioni",
+        "version": "1.0",
+        "concept": [
+          {
+            "code": "PA",
+            "display": "Patologia"
+          },
+          {
+            "code": "RA",
+            "display": "Rare"
+          },
+          {
+            "code": "RE",
+            "display": "Reddito"
+          },
+          {
+            "code": "IN",
+            "display": "Invalidità"
+          }
+        ]
+      }
+    ]
+  }
 }

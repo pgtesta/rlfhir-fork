@@ -1,21 +1,21 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SGDT-ModalitaErogazioneIntEdu",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-ModalitaErogazioneIntEdu",
-	"version": "1.0.0",
-	"name": "SGDT Modalità Erogazione Int Edu",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla modalità di erogazione dell'intervento educazionale",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "INTEDU1",
-			"display": "Intervento erogabile in presenza"
-		},
-		{
-			"code": "INTEDU2",
-			"display": "Intervento erogabile da remoto"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-ModalitaErogazioneIntEdu",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-ModalitaErogazioneIntEdu",
+  "version": "1.0.0",
+  "name": "SGDT Modalità Erogazione Int Edu",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla modalità di erogazione dell'intervento educazionale",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "INTEDU1",
+      "display": "Intervento erogabile in presenza"
+    },
+    {
+      "code": "INTEDU2",
+      "display": "Intervento erogabile da remoto"
+    }
+  ]
 }
