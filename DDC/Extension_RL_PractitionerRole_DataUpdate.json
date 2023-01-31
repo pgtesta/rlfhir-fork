@@ -9,6 +9,13 @@
   "description": "Data dell'ultima modifica del record",
   "status": "active",
   "experimental": false,
+  "fhirVersion": "4.0.1",
+  "context": [
+    {
+      "type": "element",
+      "expression": "PractitionerRole"
+    }
+  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
