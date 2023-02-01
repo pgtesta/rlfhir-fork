@@ -2,7 +2,7 @@
 
 - [RLOrganizationL3](#rlorganizationl3)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data](#organization-l3-appartenenti-ad-un-codice-l2-con-data-fine-validità-superiore-ad-una-certa-data)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)

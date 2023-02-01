@@ -2,7 +2,7 @@
 
 - [RLOrganizationL1](#rlorganizationl1)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)

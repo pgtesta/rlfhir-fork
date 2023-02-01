@@ -2,7 +2,7 @@
 
 - [RLObservationEsitoValutazione](#rlobservationesitovalutazione)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 

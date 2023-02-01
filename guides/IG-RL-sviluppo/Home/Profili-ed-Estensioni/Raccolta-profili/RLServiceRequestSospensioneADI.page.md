@@ -2,15 +2,14 @@
 
 - [RLServiceRequestSospensioneADI](#rlservicerequestsospensioneadi)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
 ## Descrizione
-
-Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente.
+Il profilo RLServiceRequestSopensioneADI è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e riporta i dettagli della sospensione temporanea del ricovero domiciliare di un paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI}}.
 
