@@ -2,7 +2,7 @@
 
 - [RLOrganizationL3](#rlorganizationl3)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data](#organization-l3-appartenenti-ad-un-codice-l2-con-data-fine-validità-superiore-ad-una-certa-data)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
@@ -12,7 +12,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni identificative e descrittive relative ad un reparto di ricovero identificato da un codice di tipo L3. In questo profilo è definito il riferimento alle strutture ospedaliere di tipo L2 alla quale il reparto afferisce. 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3}}.
 
 <br>
 <div class="tab">
@@ -63,7 +63,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data
 I parametri da valorizzare per effettuare la ricerca sono:

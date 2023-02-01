@@ -2,7 +2,7 @@
 
 - [RLServiceRequestRivalutazione](#rlservicerequestrivalutazione)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Dettagli della necessità di rivalutazione del paziente](#dettagli-della-necessità-di-rivalutazione-del-paziente)
     - [Dettagli della sospensione temporanea del ricovero domiciliare di un paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-di-un-paziente)
   - [Search parameter](#search-parameter)
@@ -10,9 +10,9 @@
 
 
 ## Descrizione
-Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) volto a notificare la necessità di una rivalutazione di un paziente attualmente in ricovero domiciliare.
+Il profilo RLServiceRequestRivalutazione è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) ed è volto a notificare la necessità di una rivalutazione di un paziente attualmente in ricovero domiciliare.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione}}.
 
 <br>
 <div class="tab">
@@ -63,7 +63,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Dettagli della necessità di rivalutazione del paziente
 
@@ -81,8 +81,8 @@ L’esito della ricerca sarà un bundle contenente le informazioni inerenti alla
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| BASE_APISOURCE | https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/<versione>/erogazione-adi |
-| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=\{_numeroPratica_\}&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
+| BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione<br>&requisition=\{_numeroPratica_\}<br>&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
 
 A titolo esemplificativo, la chiamate: 
   

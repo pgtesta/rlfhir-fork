@@ -2,7 +2,7 @@
 
 - [RLPractitionerRoleMedicoPrescrittore](#rlpractitionerrolemedicoprescrittore)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) contenente i ruoli e le qualifiche di un determinato medico prescrittore presente nel profilo RLPractitionerRoleMedicoPrescrittore.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}.
 
 <br>
 <div class="tab">
@@ -61,7 +61,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codifica delle qualifiche dei medici prescrittori | Il riferimento alla lista esaustiva della tipologia di qualifiche dei medici prescrittori è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| code | Codifica delle qualifiche dei medici prescrittori | Il riferimento alla lista esaustiva della tipologia di qualifiche dei medici prescrittori è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

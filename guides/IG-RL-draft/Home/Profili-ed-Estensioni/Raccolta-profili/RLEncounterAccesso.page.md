@@ -2,7 +2,7 @@
 
 - [RLEncounterAccesso](#rlencounteraccesso)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Encounter](http://hl7.org/fhir/R4/encounter.html) volto a descrivere le informazioni di base dell’accesso alla struttura di prossimità e della tipologia di bisogno di un cittadino.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso}}.
 
 <br>
 <div class="tab">
@@ -61,7 +61,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -79,7 +79,7 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLEncounter
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| TipologiaBisogno | Codice e descrizione della tipologia del bisogno rilevata al cittadino| Il riferimento alla lista esaustiva delle tipologie di bisogni è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
-| Class | Motivo della segnalazione | Il riferimento alla lista esaustiva dei motivi delle segnalazioni è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
-| Type | Tipologia di accesso | Il riferimento alla lista esaustiva delle tipologie di accesso è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
-| ReasonCode |Motivo della segnalazione e setting assistenziale proposto| Il riferimento alla lista esaustiva dei motivi delle segnalazioni e setting assistenziali proposti è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
+| TipologiaBisogno | Codice e descrizione della tipologia del bisogno rilevata al cittadino| Il riferimento alla lista esaustiva delle tipologie di bisogni è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| Class | Motivo della segnalazione | Il riferimento alla lista esaustiva dei motivi delle segnalazioni è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| Type | Tipologia di accesso | Il riferimento alla lista esaustiva delle tipologie di accesso è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| ReasonCode |Motivo della segnalazione e setting assistenziale proposto| Il riferimento alla lista esaustiva dei motivi delle segnalazioni e setting assistenziali proposti è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |

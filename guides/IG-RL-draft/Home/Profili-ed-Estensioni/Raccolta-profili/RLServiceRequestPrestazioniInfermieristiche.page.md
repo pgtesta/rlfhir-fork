@@ -2,7 +2,7 @@
 
 - [RLServiceRequestPrestazioniInfermieristiche](#rlservicerequestprestazioniinfermieristiche)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -11,7 +11,7 @@
 
 Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che contiene le informazioni relative ad una prestazione infermieristiche afferente ad un progetto individuale di un cittadino.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche}}.
 
 <br>
 <div class="tab">
@@ -61,7 +61,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| UlterioriDettagli | Ulteriori dettagli riguardo la prestazione infermieristica da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| UlterioriDettagli | Ulteriori dettagli riguardo la prestazione infermieristica da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
 | Code| Codice e descrizione della prestazione infermieristica | |

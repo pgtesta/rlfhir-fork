@@ -1,16 +1,16 @@
-# RLMedicationRequestTerapiaFarmacologica
+# RLLocationLuogoPrestazioneCureDom
 
-- [RLMedicationRequestTerapiaFarmacologica](#rlmedicationrequestterapiafarmacologica)
+- [RLLocationLuogoPrestazioneCureDom](#rllocationluogoprestazionecuredom)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
+
 ## Descrizione
+Il profilo RLLocationLuogoPrestazioneCureDom è stato strutturato a partire dalla risorsa generica FHIR [Location](http://hl7.org/fhir/R4/location.html) per descrivere la tipologia del luogo in cui viene erogata una prestazione ad un paziente in regime di ricovero domiciliare.
 
-Profilo declinato a partire dalla risorsa standard FHIR [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) che contiene la codifica del farmaco per ATC, AIC (nome commerciale) o Gruppo di equivalenza, la posologia ed ulteriori informazioni definite in fase di redazione del progetto individuale di un cittadino.
-
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom}}.
 
 <br>
 <div class="tab">
@@ -25,58 +25,56 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
 Al momento non ci sono esempi disponibili. 
-<br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+Attualmente non sono state definite tipologie di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa MedicationRequest.
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLMedicationRequestTerapiaFarmacologica:
+Nella seguente tabella sono elencati i value-set relativi al profilo RLLocationLuogoPrestazioneCureDom.
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| medicationCodeableConcept | Codice e descrizione del farmaco per ATC o AIC oppure per GE |  |
+| physicalForm | Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

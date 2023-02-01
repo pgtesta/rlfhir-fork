@@ -2,7 +2,7 @@
 
 - [RLOrganizationL2](#rlorganizationl2)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-un-codice-l1-con-data-fine-validità-superiore-ad-una-certa-data)
     - [Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-una-asst-di-afferenza-con-data-fine-validità-superiore-ad-una-certa-data)
     - [Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia](#organization-l2-appartenenti-ad-un-codice-l1-con-data-validità-superiore-ad-una-certa-data-e-di-una-specifica-tipologia)
@@ -13,7 +13,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni anagrafiche e di contatto relative alle strutture identificate da un codice di tipo L2 che erogano servizi sanitari e sociosanitari appartenenti agli enti codificati con codice L1. In Regione Lombardia le strutture univocamente identificate da un codice L2 rappresentano le unità d’offerta (es. RSA, centri diurni integrati, consultori, ecc). In questo profilo è definito il riferimento all’ente di tipo L1 alla quale l’UdO afferisce. 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}.
 
 <br>
 <div class="tab">
@@ -64,7 +64,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLOrganizationL2.
 
@@ -155,4 +155,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLOrganizat
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| type | Codifica del tipo di presidio L2 | Il riferimento alla lista esaustiva della tipologia di UdO è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| type | Codifica del tipo di presidio L2 | Il riferimento alla lista esaustiva della tipologia di UdO è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

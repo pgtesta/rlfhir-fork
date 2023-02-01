@@ -1,16 +1,16 @@
-# RLConditionPatologiaPrimariaSecondariaAddizionale
+# RLQuestionnaireValutazione
 
-- [RLConditionPatologiaPrimariaSecondariaAddizionale](#rlconditionpatologiaprimariasecondariaaddizionale)
+- [RLQuestionnaireValutazione](#rlquestionnairevalutazione)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
+
 ## Descrizione
+Il profilo RLQuestionnaireResponseValutazione è stato strutturato a partire dalla risorsa generica FHIR [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) per descrivere la specifica valutazione al quale il paziente è stato sottoposto.
 
-Profilo declinato a partire dalla risorsa standard FHIR [Condition](http://hl7.org/fhir/R4/condition.html) che contiene i dettagli inerenti alla patologia primaria, secondaria o addizionale relativa ad un paziente, la cui codifica è ricavata dalla tabella delle codifiche SISS delle diagnosi.
-
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione}}.
 
 <br>
 <div class="tab">
@@ -25,32 +25,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaAddizionale, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -61,7 +61,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -69,11 +69,10 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Condition.
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 
-Attualmente non sono definiti value set specifici per il profilo RLConditionPatologiaPrimariaSecondariaAddizionale.
-
+Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireValutazione.

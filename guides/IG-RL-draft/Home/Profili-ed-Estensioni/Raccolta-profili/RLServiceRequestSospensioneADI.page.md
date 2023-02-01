@@ -2,17 +2,16 @@
 
 - [RLServiceRequestSospensioneADI](#rlservicerequestsospensioneadi)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
 ## Descrizione
+Il profilo RLServiceRequestSopensioneADI è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e riporta i dettagli della sospensione temporanea del ricovero domiciliare di un paziente.
 
-Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente.
-
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI}}.
 
 <br>
 <div class="tab">
@@ -62,7 +61,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
 
@@ -81,8 +80,8 @@ I parametri da valorizzare per effettuare la ricerca sono:
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| BASE_APISOURCE | https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/<versione>/erogazione-adi |
-| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=\{_numeroPratica_\}&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
+| BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI<br>&requisition=\{_numeroPratica_\}<br>&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
 
 A titolo esemplificativo, la chiamata: 
   
@@ -115,4 +114,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione del motivo della sospensione temporanea | Il riferimento alla lista esaustiva dei motivi della sospensione temporanea ricavate dal tracciato SIAD 5 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| Code | Codice e descrizione del motivo della sospensione temporanea | Il riferimento alla lista esaustiva dei motivi della sospensione temporanea ricavate dal tracciato SIAD 5 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |

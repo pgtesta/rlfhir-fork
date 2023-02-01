@@ -2,16 +2,16 @@
 
 - [RLQuestionnaireResponseValutazione](#rlquestionnaireresponsevalutazione)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Ultime valutazioni effettuate da un paziente](#ultime-valutazioni-effettuate-da-un-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
 ## Descrizione
-Profilo declinato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per il dettaglio delle risposte ai quesiti delle valutazioni dei bisogni alla quale il paziente è stato sottoposto.
+Il profilo RLQuestionnaireResponseValutazione è stato strutturato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per riportare il dettaglio delle risposte ai quesiti delle valutazioni dei bisogni alla quale un assistito è stato sottoposto.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}.
 
 <br>
 <div class="tab">
@@ -62,25 +62,22 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Ultime valutazioni effettuate da un paziente
 
-Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanitari per recuperare la versione più aggiornata delle valutazioni effettuate da un paziente specifico.
-
-I parametri da valorizzare per effettuare la ricerca sono:
+Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassistenziali per recuperare la versione più aggiornata delle valutazioni effettuate da un paziente che ha attivo o sta attivando un determinato servizio socioassistenziale.
+ I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “completed” 
 -	source.reference(RLPatientiCittadino).identifier: codice fiscale del paziente 
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario d’interesse
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio sociosanitario.
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier: codice identificativo del servizio socioassistenziale d’interesse
+-	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio socioassistenziale.
 
-
-|     SCOPE    |Ricerca tutti i profili RLQuestionnaireResponseValutazione in stato completato che si riferiscono ad un determinato paziente (RLPatientCittadino)|
+|     SCOPE    |Ultime valutazioni effettuate da un paziente|
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| BASE_APISOURCE | <font style="color:red">endpoint FHIR SGDT</font> |
-| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn.activity.reference.code.coding.code=CDOM&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}&basedOn.activity.reference.identifier=\{_numeroPratica_\}&source.identifier=\{_codiceFiscaleAssistito_\}&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione |
+| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<b>&basedOn.activity.reference.code.coding.code=CDOM<b>&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}<b>&basedOn.activity.reference.identifier=\{_numeroPratica_\}<b>&source.identifier=\{_codiceFiscaleAssistito_\}<b>&status=completed<b>&_include=QuestionnaireResponse:questionnaire<b>&_include=QuestionnaireResponse:extension.esitoValutazione |
 
 A titolo esemplificativo, la chiamata: 
 
@@ -94,7 +91,7 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di seguito i parametri di ricerca del profilo  RLQuestionnaireResponseValutazione: 
 - _include
 - _profile
 - based-on

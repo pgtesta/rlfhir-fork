@@ -1,16 +1,17 @@
-# RLQuestionnaireTipologiaValutazione
+# RLCareTeamEquipe
 
-- [RLQuestionnaireTipologiaValutazione](#rlquestionnairetipologiavalutazione)
+- [RLCareTeamEquipe](#rlcareteamequipe)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
 
 ## Descrizione
-Profilo declinato a partire dalla risorsa generica FHIR [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) per descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, text: qui}}.
+Il profilo RLCareTeamEquipe è stato strutturato a partire dalla risorsa generica FHIR [CareTeam](http://hl7.org/fhir/R4/careteam.html) con il fine di definire la composizione di un’equipe di professionisti sanitari. L’equipe può ricoprire il ruolo di case manager di un progetto individuale di un assistito.
+
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe}}.
 
 <br>
 <div class="tab">
@@ -25,54 +26,54 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent" style="display:block">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireTipologiaValutazione, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili. 
+Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
-
-Attualmente non sono stati definiti criteri di ricerca.
+## Tipologie di ricerca
+Attualmente non sono state definite tipologie di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Questionnaire.
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 
-Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireTipologiaValutazione.
+Attualmente non sono definiti value set specifici per il profilo RLCareTeamEquipe.
+
+<br> 

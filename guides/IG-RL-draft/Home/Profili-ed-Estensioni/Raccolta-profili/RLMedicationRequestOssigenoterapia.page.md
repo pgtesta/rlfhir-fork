@@ -2,7 +2,7 @@
 
 - [RLMedicationRequestOssigenoterapia](#rlmedicationrequestossigenoterapia)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) che contiene le informazioni riguardo l’ossigenoterapia prescritta ad un cittadino in fase di redazione del progetto individuale.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia}}.
 
 <br>
 <div class="tab">
@@ -61,7 +61,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 

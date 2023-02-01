@@ -2,7 +2,7 @@
 
 - [RLServiceRequestInterventoEducazionale](#rlservicerequestinterventoeducazionale)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -10,7 +10,7 @@
 
 Profilo declinato a partire dalla risorsa standard FHIR [CommunicationRequest](http://hl7.org/fhir/R4/communicationrequest.html) che descrive il tipo di intervento educazionale, le modalità di erogazione e la frequenza di erogazione definite durante la stesura del progetto individuale del paziente.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale}}.
 
 <br>
 <div class="tab">
@@ -61,7 +61,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLServiceRe
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| medium | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | Il riferimento alla lista esaustiva dei canali di comunicazione è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
+| medium | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | Il riferimento alla lista esaustiva dei canali di comunicazione è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |

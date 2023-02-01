@@ -2,7 +2,7 @@
 
 - [RLObservationStiliVita](#rlobservationstilivita)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -16,7 +16,7 @@ Profilo declinato a partire dalla risorsa standard FHIR [Observation](http://hl7
 -	Eccesso ponderale
 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita}}.
 
 <br>
 <div class="tab">
@@ -67,7 +67,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
@@ -85,4 +85,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLObservati
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione dello stile di vita | Il riferimento alla lista esaustiva degli stili di vita è consultabile al seguente  {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}} |
+| code | Codice e descrizione dello stile di vita | Il riferimento alla lista esaustiva degli stili di vita è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
