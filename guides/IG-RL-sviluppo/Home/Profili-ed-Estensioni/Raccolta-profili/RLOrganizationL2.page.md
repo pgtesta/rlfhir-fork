@@ -64,7 +64,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLOrganizationL2.
 

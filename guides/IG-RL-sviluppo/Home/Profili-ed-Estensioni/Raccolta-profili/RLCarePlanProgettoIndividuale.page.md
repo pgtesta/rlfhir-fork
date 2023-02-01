@@ -2,7 +2,7 @@
 
 - [RLCarePlanProgettoIndividuale](#rlcareplanprogettoindividuale)
   - [Descrizione](#descrizione)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Progetti individuali attivi](#progetti-individuali-attivi)
     - [Progetti individuali di un paziente](#progetti-individuali-di-un-paziente)
   - [Search parameter](#search-parameter)
@@ -11,7 +11,7 @@
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa generica FHIR [CarePlan](http://hl7.org/fhir/R4/careplan.html) per descrivere il progetto individuale di un cittadino. All’interno del profilo sono contenute informazioni generali quali: durata del progetto, obiettivi di salute, case manager, esiti delle valutazioni, patologie principali, secondarie e addizionali, allergie, esenzioni e stili di vita del cittadino; così come le attività di natura clinica, infermieristica e sociale che compongono il progetto. 
+Il profilo RLCarePlanProgettoIndividuale è stato strutturato a partire dalla risorsa generica FHIR [CarePlan](http://hl7.org/fhir/R4/careplan.html) per descrivere il progetto individuale di un assistito. Il contenuto informativo contiene i dettagli delle attività e dei servizi sanitari, socioassistenziali, infermieristici e sociali che devono essere attivati al paziente. Inoltre, sono riportate varie informazioni generali quali: durata del progetto, obiettivi di salute, case manager, esiti delle valutazioni, patologie principali, secondarie e ulteriori, allergie, esenzioni e stili di vita dell’assistito. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale}}.
 
@@ -64,22 +64,17 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
-
-Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLCarePlanProgettoIndividuale.
+## Tipologie di ricerca
 
 ###	Progetti individuali attivi
 
-Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanitari con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
-Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio sociosanitario da attivare al cittadino. 
-
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
+Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
--	activity.reference(RLServiceRequestServiziSocioAssistenziali).code.coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSociosanitari).code.coding.code: codice del servizio socioassistenziale d’interesse
 -	author.reference(RLOrgnizationL1).identifier: codice L1 dell’ASST che ha prodotto il progetto individuale
--	lastUpdated: data e ora dell’ultimo aggiornamento dei dati 
-
-L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare il contenuto informativo relativo all’attivazione di un servizio sociosanitario previsto nei progetti individuali attivi prodotti da un’ASST.
+-	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
 
 |     SCOPE    | Progetti individuali attivi |
 |---|---|
@@ -99,15 +94,12 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 
 ### Progetti individuali di un paziente
 
-Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi sociosanitari con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un servizio sociosanitario.
-L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
-
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un determinato servizio socioassistenziale.
+L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio socioassistenziale affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
 I parametri da valorizzare per effettuare la ricerca sono:
--	activity.reference(RLServiceRequestServiziSocioAssistenziali).code coding.code: codice del servizio sociosanitario d’interesse
--	activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
+-	activity.reference(RLServiceRequestServiziSociosanitari).code coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSociosanitari).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
 -	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
- 
-L’esito della ricerca produrrà un bundle che permetterà all’Ente Erogatore di recuperare le informazioni relative ai progetti individuali redatti a un cittadino per i quale è stata prevista l’attivazione presso l’Ente Erogatore stesso di un servizio sociosanitario.
 
 |     SCOPE    |Progetti individuali di un paziente|
 |---|---|
@@ -129,7 +121,7 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di seguito i parametri di ricerca del profilo RLCarePlanProgettoIndividuale: 
 - _include
 - _lastUpdated
 - _profile

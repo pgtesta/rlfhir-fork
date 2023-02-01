@@ -63,7 +63,7 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Dettagli della necessità di rivalutazione del paziente
 

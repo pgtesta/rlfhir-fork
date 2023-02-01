@@ -62,7 +62,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ###	Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare
 

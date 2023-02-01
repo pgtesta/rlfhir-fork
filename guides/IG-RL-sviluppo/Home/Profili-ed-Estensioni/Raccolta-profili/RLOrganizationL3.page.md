@@ -63,7 +63,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data
 I parametri da valorizzare per effettuare la ricerca sono:

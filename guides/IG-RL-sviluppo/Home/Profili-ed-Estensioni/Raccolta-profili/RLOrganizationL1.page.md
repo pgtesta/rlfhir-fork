@@ -63,7 +63,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 ### Enti L1 attualmente attivi
 Organization L1 con data fine validità superiore alla data odierna o nulla

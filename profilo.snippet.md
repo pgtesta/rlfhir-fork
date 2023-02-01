@@ -79,7 +79,7 @@ Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL1:
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Criteri di ricerca
+## Tipologie di ricerca
 
 Attualmente non sono stati definiti criteri di ricerca.
 
