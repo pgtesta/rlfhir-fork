@@ -1,33 +1,33 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SIAD-TipologiaPaziente",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TipologiaPaziente",
-	"version": "1.0.0",
-	"name": "SIAD Tipologia Paziente",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla codifica della tipologia del paziente",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "1",
-			"display": "Paziente ordinario: utenza tipica"
-		},
-		{
-			"code": "2",
-			"display": "Paziente in Stato Vegetativo (DGR 6220)"
-		},
-		{
-			"code": "3",
-			"display": "Paziente affetto da malattie del motoneurone (circ. 20)"
-		},
-		{
-			"code": "4",
-			"display": "Paziente affetto da HIV"
-		},
-		{
-			"code": "5",
-			"display": "Terminale"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SIAD-TipologiaPaziente",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TipologiaPaziente",
+  "version": "1.0.0",
+  "name": "SIAD Tipologia Paziente",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica della tipologia del paziente",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Paziente ordinario: utenza tipica"
+    },
+    {
+      "code": "2",
+      "display": "Paziente in Stato Vegetativo (DGR 6220)"
+    },
+    {
+      "code": "3",
+      "display": "Paziente affetto da malattie del motoneurone (circ. 20)"
+    },
+    {
+      "code": "4",
+      "display": "Paziente affetto da HIV"
+    },
+    {
+      "code": "5",
+      "display": "Terminale"
+    }
+  ]
 }

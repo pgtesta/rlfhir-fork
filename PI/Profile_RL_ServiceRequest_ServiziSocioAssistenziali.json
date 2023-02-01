@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-01-31T17:09:13.3344896+00:00"
+    "lastUpdated": "2023-02-01T08:25:06.555932+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -113,13 +113,64 @@
         "path": "ServiceRequest.extension.value[x].coding.code",
         "short": "Codice del soggetto che ha proposto la presa in carico dell'assistito",
         "definition": "Stringa numerica di 1 carattere",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica del soggetto che ha proposto la presa in carico",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC"
+        }
       },
       {
         "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding.display",
         "path": "ServiceRequest.extension.value[x].coding.display",
         "short": "Descrizione del soggetto che ha proposto la presa in carico dell'assistito",
         "definition": "Stringa alfanumerica al più di 100 caratteri"
+      },
+      {
+        "id": "ServiceRequest.extension:causaleDimissione",
+        "path": "ServiceRequest.extension",
+        "sliceName": "causaleDimissione",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"CDOM\" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della causale di dimissione di un ricovero domiciliare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:causaleDimissione.value[x]",
+        "path": "ServiceRequest.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:causaleDimissione.value[x].coding.code",
+        "path": "ServiceRequest.extension.value[x].coding.code",
+        "short": "Codice del soggetto che ha proposto la presa in carico dell'assistito",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla causale di dimissione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione"
+        }
+      },
+      {
+        "id": "ServiceRequest.extension:causaleDimissione.value[x].coding.display",
+        "path": "ServiceRequest.extension.value[x].coding.display",
+        "short": "Descrizione del soggetto che ha proposto la presa in carico dell'assistito",
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "ServiceRequest.identifier",
