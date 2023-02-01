@@ -207,7 +207,7 @@
           </td>
           <td>Profilo volto a definire un equipe di professionisti sanitari</td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition//RLCareTeamEquipe}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe}}
           </td>
         </tr>
         <tr>
