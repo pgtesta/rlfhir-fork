@@ -80,8 +80,8 @@ I parametri da valorizzare per effettuare la ricerca sono:
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| BASE_APISOURCE | https://<nome_host_Ente>/<contesto_FHIR>/<codiceCudesL1>/<versione>/erogazione-adi |
-| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=\{_numeroPratica_\}&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
+| BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI<br>&requisition=\{_numeroPratica_\}<br>&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
 
 A titolo esemplificativo, la chiamata: 
   
