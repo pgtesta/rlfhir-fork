@@ -29,7 +29,7 @@
         "authored": "2013-02-19T14:15:00Z",
         "author": {
           "reference": "Practitioner/bafe8c48-989e-11ed-a8fc-0242ac120002",
-          "display": "Medico Prescrittore"
+          "display": "Professionista sanitario"
         },
         "source": {
           "reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
@@ -37,7 +37,7 @@
         },
         "item": [
           {
-            "linkId": "TBD",
+            "linkId": "12345",
             "text": "TBD",
             "answer": [
               {
@@ -50,7 +50,19 @@
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
             "valueReference": "Observation/bd49fd5c-981c-11ed-a8fc-0242ac120002"
-          }
+          },
+		  					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaValutazione",
+									"code": "I",
+									"display": "Prima Valutazione"
+								}
+							]
+						}
+					}
         ]
       }
     },
@@ -86,9 +98,9 @@
         "code": {
           "coding": [
             {
-              "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Valutazione",
-              "code": "Codice Valutazione - TBD",
-              "display": "Descrizione Valutazione - TBD"
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+              "code": "VAL1",
+              "display": "Scheda Triage"
             }
           ]
         },

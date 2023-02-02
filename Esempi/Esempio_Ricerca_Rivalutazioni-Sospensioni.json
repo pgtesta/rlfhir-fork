@@ -1,93 +1,93 @@
 {
-  "resourceType": "Bundle",
-  "id": "99e55290-98a7-11ed-a8fc-0242ac120002",
-  "type": "searchset",
-  "timestamp": "2023-01-01T10:36:03Z",
-  "total": 2,
-  "entry": [
-    {
-      "fullUrl": "ServiceRequest/a07c4faa-98a7-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "ServiceRequest",
-        "id": "a07c4faa-98a7-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-01T10:36:03Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "0300780000001_R000001"
-          }
-        ],
-        "basedOn": [
-          {
-            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-            "display": "CarePlan Progetto Individuale"
-          }
-        ],
-        "requisition": {
-          "value": "1234567890"
-        },
-        "status": "active",
-        "intent": "proposal",
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "occurrenceDateTime": "2022-02-02"
-      }
-    },
-    {
-      "fullUrl": "ServiceRequest/883ffc6a-98a8-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "ServiceRequest",
-        "id": "883ffc6a-98a8-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-01T10:36:03Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "0300780000001_S000002"
-          }
-        ],
-        "basedOn": [
-          {
-            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-            "display": "CarePlan Progetto Individuale"
-          }
-        ],
-        "requisition": {
-          "value": "1234567890"
-        },
-        "status": "on-hold",
-        "intent": "directive",
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "occurrencePeriod": {
-          "start": "2022-01-01",
-          "end": "2023-02-01"
-        },
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "TBD",
-                "code": "Codice della sospensione temporanea - TBD",
-                "display": "Descizione della sospensione temporanea - TBD"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
+	"resourceType": "Bundle",
+	"id": "99e55290-98a7-11ed-a8fc-0242ac120002",
+	"type": "searchset",
+	"timestamp": "2023-01-01T10:36:03Z",
+	"total": 2,
+	"entry": [
+		{
+			"fullUrl": "ServiceRequest/a07c4faa-98a7-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "a07c4faa-98a7-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "0300780000001_R000001"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+						"display": "CarePlan Progetto Individuale"
+					}
+				],
+				"requisition": {
+					"value": "1234567890"
+				},
+				"status": "active",
+				"intent": "proposal",
+				"subject": {
+					"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"occurrenceDateTime": "2022-02-02"
+			}
+		},
+		{
+			"fullUrl": "ServiceRequest/883ffc6a-98a8-11ed-a8fc-0242ac120002",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "883ffc6a-98a8-11ed-a8fc-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-01T10:36:03Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "0300780000001_S000002"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+						"display": "CarePlan Progetto Individuale"
+					}
+				],
+				"requisition": {
+					"value": "1234567890"
+				},
+				"status": "on-hold",
+				"intent": "directive",
+				"subject": {
+					"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2022-01-01",
+					"end": "2023-02-01"
+				},
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione",
+								"code": "1",
+								"display": "Ricovero in ospedale"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
 }
