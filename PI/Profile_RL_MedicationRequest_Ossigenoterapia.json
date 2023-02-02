@@ -88,7 +88,12 @@
         "path": "MedicationRequest.medication[x].coding.code",
         "short": "Codice del farmaco",
         "definition": "Stringa alfanumerica di 3 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di ossigenoterapia",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaOssigeno"
+        }
       },
       {
         "id": "MedicationRequest.medication[x].coding.display",

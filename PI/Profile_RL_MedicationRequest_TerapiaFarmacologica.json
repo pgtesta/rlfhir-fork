@@ -100,7 +100,12 @@
       {
         "id": "MedicationRequest.medication[x].coding:ATC.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "Codifica del farmaco"
+        "short": "Codifica del farmaco",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica l'anagrafica dei farmaci secondo la codifica ministeriale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco"
+        }
       },
       {
         "id": "MedicationRequest.medication[x].coding:ATC.display",
@@ -121,7 +126,12 @@
       {
         "id": "MedicationRequest.medication[x].coding:AIC.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "Codifica del farmaco"
+        "short": "Codifica del farmaco",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica l'anagrafica dei farmaci secondo la codifica ministeriale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco"
+        }
       },
       {
         "id": "MedicationRequest.medication[x].coding:AIC.display",
@@ -129,20 +139,30 @@
         "short": "Descrizione codifica del farmaco"
       },
       {
-        "id": "MedicationRequest.medication[x].coding:sliceCoding",
+        "id": "MedicationRequest.medication[x].coding:GE",
         "path": "MedicationRequest.medication[x].coding",
-        "sliceName": "sliceCoding",
+        "sliceName": "GE",
         "short": "Codice e descrizione del farmaco per GE"
       },
       {
-        "id": "MedicationRequest.medication[x].coding:sliceCoding.system",
+        "id": "MedicationRequest.medication[x].coding:GE.system",
         "path": "MedicationRequest.medication[x].coding.system",
         "short": "Sistema di codifica"
       },
       {
-        "id": "MedicationRequest.medication[x].coding:sliceCoding.code",
+        "id": "MedicationRequest.medication[x].coding:GE.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "Codifica del farmaco"
+        "short": "Codifica del farmaco",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica l'anagrafica dei farmaci secondo la codifica ministeriale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:GE.display",
+        "path": "MedicationRequest.medication[x].coding.display",
+        "short": "Descrizione codifica del farmaco"
       },
       {
         "id": "MedicationRequest.subject",

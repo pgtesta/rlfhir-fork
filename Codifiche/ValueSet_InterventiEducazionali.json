@@ -1,52 +1,52 @@
 {
-	"resourceType": "ValueSet",
-	"id": "ValueSet-SGDT-InterventiEducazionali",
-	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali",
-	"version": "1.0.0",
-	"name": "SGDT Interventi Educazionali",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "ValueSet relativo alla codifica degli interventi educazionali",
-	"compose": {
-		"include": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-InterventiEducazionali",
-				"version": "1.0.0",
-				"concept": [
-					{
-						"code": "EDU01",
-						"display": "Alcool"
-					},
-					{
-						"code": "EDU02",
-						"display": "Altro"
-					},
-					{
-						"code": "EDU03",
-						"display": "Educazione terapeutica (inclusa protesica)"
-					},
-					{
-						"code": "EDU04",
-						"display": "Fumo"
-					},
-					{
-						"code": "EDU05",
-						"display": "Nutrizionale di gruppo"
-					},
-					{
-						"code": "EDU06",
-						"display": "Nutrizionale individuale"
-					},
-					{
-						"code": "EDU07",
-						"display": "Psicologico"
-					},
-					{
-						"code": "EDU08",
-						"display": "Terapia educazionale diabetico"
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT-InterventiEducazionali",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali",
+  "version": "1.0.0",
+  "name": "SGDT Interventi Educazionali",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla codifica degli interventi educazionali",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-InterventiEducazionali",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "EDU01",
+            "display": "Alcool"
+          },
+          {
+            "code": "EDU02",
+            "display": "Altro"
+          },
+          {
+            "code": "EDU03",
+            "display": "Educazione terapeutica (inclusa protesica)"
+          },
+          {
+            "code": "EDU04",
+            "display": "Fumo"
+          },
+          {
+            "code": "EDU05",
+            "display": "Nutrizionale di gruppo"
+          },
+          {
+            "code": "EDU06",
+            "display": "Nutrizionale individuale"
+          },
+          {
+            "code": "EDU07",
+            "display": "Psicologico"
+          },
+          {
+            "code": "EDU08",
+            "display": "Terapia educazionale diabetico"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -158,8 +158,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe"
             ]
           }
         ]
@@ -293,7 +293,7 @@
         "id": "CarePlan.activity.reference",
         "path": "CarePlan.activity.reference",
         "short": "Dettagli delle possibili attività inserite nel progetto individuali",
-        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioSanitari,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili, , \r\n- RLServiceRequestPrestazioniInfermieristiche",
+        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioSanitari,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili, \r\n- RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

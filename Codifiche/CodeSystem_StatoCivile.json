@@ -1,37 +1,37 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SIAD-StatoCivile",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-StatoCivile",
-	"version": "1.0.0",
-	"name": "SIAD Stato Civile",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla codifica dello stato civile",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "1",
-			"display": "Celibe/nubile"
-		},
-		{
-			"code": "2",
-			"display": "Coniugato/a"
-		},
-		{
-			"code": "3",
-			"display": "Separato/a"
-		},
-		{
-			"code": "4",
-			"display": "Divorziato/a"
-		},
-		{
-			"code": "5",
-			"display": "Vedovo/a"
-		},
-		{
-			"code": "9",
-			"display": "Non dichiarato"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SIAD-StatoCivile",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-StatoCivile",
+  "version": "1.0.0",
+  "name": "SIAD Stato Civile",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica dello stato civile",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Celibe/nubile"
+    },
+    {
+      "code": "2",
+      "display": "Coniugato/a"
+    },
+    {
+      "code": "3",
+      "display": "Separato/a"
+    },
+    {
+      "code": "4",
+      "display": "Divorziato/a"
+    },
+    {
+      "code": "5",
+      "display": "Vedovo/a"
+    },
+    {
+      "code": "9",
+      "display": "Non dichiarato"
+    }
+  ]
 }

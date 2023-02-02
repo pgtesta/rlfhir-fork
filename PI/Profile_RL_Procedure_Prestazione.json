@@ -142,7 +142,12 @@
         "id": "Procedure.extension:tipoAccesso.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice del tipo di accesso",
-        "definition": "Stringa numerica di una cifra"
+        "definition": "Stringa numerica di una cifra",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica del tipo di accesso",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso"
+        }
       },
       {
         "id": "Procedure.extension:tipoAccesso.value[x].coding.display",

@@ -43,9 +43,14 @@
       {
         "id": "Coverage.type.coding.code",
         "path": "Coverage.type.coding.code",
-        "short": "Codice che indica la tipologia dell’esenzione.",
+        "short": "Codice che indica la tipologia dell’esenzione",
         "definition": "Stringa alfabetica di 2 caratteri",
-        "comment": "La fonte del dato è il campo CD_TIPO_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\""
+        "comment": "La fonte del dato è il campo CD_TIPO_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\"",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di esenzioni",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni"
+        }
       },
       {
         "id": "Coverage.type.coding.display",

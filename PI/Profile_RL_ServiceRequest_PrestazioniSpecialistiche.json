@@ -140,14 +140,19 @@
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice della prestazione specialistica",
         "definition": "Stringa alfanumerica di al più 10 caratteri",
-        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS della tabella delle prestazioni specialisitiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica le prestazioni specialistiche SISS",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS"
+        }
       },
       {
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione della prestazione specialistica",
         "definition": "Stringa alfanumerica di al più 70 caratteri",
-        "comment": "La fonte del dato è il campo DS_PRESTAZIONE_SISS dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+        "comment": "La fonte del dato è il campo DS_PRESTAZIONE_SISS della tabella delle prestazioni specialisitiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "ServiceRequest.subject",

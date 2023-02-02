@@ -25,7 +25,7 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "short": "Descrizione della tipolgia di patologia",
+        "short": "Tipologia della patologia",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di patologia contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
@@ -39,7 +39,12 @@
         "path": "Condition.category.coding.code",
         "short": "Codice della tipologia di patologia",
         "definition": "Stringa alfanumerica di un carattere",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica la tipologia di patologia",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia"
+        }
       },
       {
         "id": "Condition.category.coding.display",
@@ -51,7 +56,7 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
-        "short": "Codice e descrizione della patologia"
+        "short": "Codifica della patologia in condifica ICD-9-CM"
       },
       {
         "id": "Condition.code.coding.code",

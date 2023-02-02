@@ -1,97 +1,97 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-SIAD-PosizioneProfessione",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-PosizioneProfessione",
-	"version": "1.0.0",
-	"name": "SIAD Posizione Professione",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla codifica della posizione professionale",
-	"content": "complete",
-	"concept": [
-		{
-			"code": "01",
-			"display": "imprenditore"
-		},
-		{
-			"code": "02",
-			"display": "dirigente"
-		},
-		{
-			"code": "03",
-			"display": "impiegato, insegnante"
-		},
-		{
-			"code": "04",
-			"display": "artigiano, coltivatore diretto, commerciante, altro"
-		},
-		{
-			"code": "05",
-			"display": "operaio, salariato agricolo, altro lavoratore"
-		},
-		{
-			"code": "06",
-			"display": "lavorante a domicilio"
-		},
-		{
-			"code": "07",
-			"display": "coadiuvante in aziende a conduzione familiare"
-		},
-		{
-			"code": "08",
-			"display": "casalinga (che ha svolto lavoro retribuito)"
-		},
-		{
-			"code": "09",
-			"display": "pensionato (che ha lavorato)"
-		},
-		{
-			"code": "10",
-			"display": "invalido, inabile (anche se pensionato)"
-		},
-		{
-			"code": "11",
-			"display": "disoccupato (attualmente)"
-		},
-		{
-			"code": "12",
-			"display": "altro (che ha svolto lavoro retribuito)"
-		},
-		{
-			"code": "13",
-			"display": "scolaro, studente, bambino"
-		},
-		{
-			"code": "14",
-			"display": "casalinga (che non ha mai svolto lavoro retribuito, anche se con pensione)"
-		},
-		{
-			"code": "15",
-			"display": "in cerca di prima occupazione"
-		},
-		{
-			"code": "16",
-			"display": "valido, inabile (che non ha mai svolto lavoro retribuito)"
-		},
-		{
-			"code": "17",
-			"display": "lavoro a partita IVA"
-		},
-		{
-			"code": "18",
-			"display": "lavoro dipendente"
-		},
-		{
-			"code": "19",
-			"display": "part-time"
-		},
-		{
-			"code": "20",
-			"display": "tempo indeterminato"
-		},
-		{
-			"code": "21",
-			"display": "altro"
-		}
-	]
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SIAD-PosizioneProfessione",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-PosizioneProfessione",
+  "version": "1.0.0",
+  "name": "SIAD Posizione Professione",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica della posizione professionale",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "imprenditore"
+    },
+    {
+      "code": "02",
+      "display": "dirigente"
+    },
+    {
+      "code": "03",
+      "display": "impiegato, insegnante"
+    },
+    {
+      "code": "04",
+      "display": "artigiano, coltivatore diretto, commerciante, altro"
+    },
+    {
+      "code": "05",
+      "display": "operaio, salariato agricolo, altro lavoratore"
+    },
+    {
+      "code": "06",
+      "display": "lavorante a domicilio"
+    },
+    {
+      "code": "07",
+      "display": "coadiuvante in aziende a conduzione familiare"
+    },
+    {
+      "code": "08",
+      "display": "casalinga (che ha svolto lavoro retribuito)"
+    },
+    {
+      "code": "09",
+      "display": "pensionato (che ha lavorato)"
+    },
+    {
+      "code": "10",
+      "display": "invalido, inabile (anche se pensionato)"
+    },
+    {
+      "code": "11",
+      "display": "disoccupato (attualmente)"
+    },
+    {
+      "code": "12",
+      "display": "altro (che ha svolto lavoro retribuito)"
+    },
+    {
+      "code": "13",
+      "display": "scolaro, studente, bambino"
+    },
+    {
+      "code": "14",
+      "display": "casalinga (che non ha mai svolto lavoro retribuito, anche se con pensione)"
+    },
+    {
+      "code": "15",
+      "display": "in cerca di prima occupazione"
+    },
+    {
+      "code": "16",
+      "display": "valido, inabile (che non ha mai svolto lavoro retribuito)"
+    },
+    {
+      "code": "17",
+      "display": "lavoro a partita IVA"
+    },
+    {
+      "code": "18",
+      "display": "lavoro dipendente"
+    },
+    {
+      "code": "19",
+      "display": "part-time"
+    },
+    {
+      "code": "20",
+      "display": "tempo indeterminato"
+    },
+    {
+      "code": "21",
+      "display": "altro"
+    }
+  ]
 }

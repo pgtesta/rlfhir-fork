@@ -83,7 +83,7 @@
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di valutazione",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaValutazione"
         }
       },
       {
@@ -145,7 +145,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractionerProfessionistaSanitario"
             ]
           }
         ]
