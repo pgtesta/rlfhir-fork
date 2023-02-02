@@ -10,6 +10,6 @@
 ## IG Draft
 |Versione|Data rilascio|
 |---|---|
-|{{pagelink:Home/pagine-dettaglio/draft_3.0.0.page.md, text:3.0.0}}| 09/01/2023 | 
+|{{pagelink:Home/pagine-dettaglio/draft_3.0.0.page.md, text:3.0.0}}| 01/02/2023 | 
 
 ## IG Produzione
