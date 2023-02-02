@@ -1,4 +1,4 @@
-# {{page-title}}
+# IG RLFHIR Sviluppo 2.5.0-beta
 
 ## Novità
 - Aggiunta la pagina che raccoglia tutti gli endpoint
