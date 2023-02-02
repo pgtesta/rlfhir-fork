@@ -68,7 +68,7 @@
             <td>CDOM</td>
             <td>Bundle</td>
             <td>Ricerca storico progetti individuali</td>
-            <td>{{link:10bb101f-a121-4264-a920-67be9cb82c74}}</td>
+            <td>{{link:52dd708g-a121-4264-a920-67be9cb82c74}}</td>
             </tr>
             <tr>
             <td>CDOM</td>
