@@ -95,7 +95,7 @@ Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli rel
 Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
 -	requisition: numero pratica del servizio di cure domiciliari.
 
-| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e delle rivalutazioni di un paziente |
+| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e necessità di rivalutazione di un paziente |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER |  |
