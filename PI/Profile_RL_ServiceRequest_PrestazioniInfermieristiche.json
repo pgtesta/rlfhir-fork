@@ -118,6 +118,18 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Codice e descrizione della prestazione infermieristica",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle prestazioni infermieristiche contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "ServiceRequest.code.coding.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione infermieristica",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "ServiceRequest.code.coding.display",
+        "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione della prestazione infermieristica",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {

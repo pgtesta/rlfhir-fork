@@ -31,6 +31,18 @@
         "short": "Codifica della valutazione al quale il paziente è stato sottoposto"
       },
       {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "short": "Codice della valutazione specifica al quale il paziente è stato sottoposto",
+        "definition": "Stringa alfanumerica di 4 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica delle valutazioni",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione"
+        }
+      },
+      {
         "id": "Observation.code.coding.display",
         "path": "Observation.code.coding.display",
         "short": "Nome della valutazione specifica al quale il paziente è stato sottoposto",

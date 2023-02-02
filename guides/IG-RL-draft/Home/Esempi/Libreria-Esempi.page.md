@@ -49,7 +49,7 @@
             <tr>
             <td>CDOM</td>
             <td>Bundle</td>
-            <td>Ricerca sospensioni</td>
+            <td>Ricerca rivalutazioni e sospensioni</td>
             <td>{{link:99e55290-98a7-11ed-a8fc-0242ac120002}}</td>
             </tr>
             <tr>

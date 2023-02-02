@@ -3,7 +3,7 @@
 - [RLServiceRequestSospensioneADI](#rlservicerequestsospensioneadi)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente-aggiornate-alla-data-e-ora-di-richiesta-e-della-necessità-di-rivalutazione-del-paziente)
+    - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -63,20 +63,14 @@ Al momento non ci sono esempi disponibili.
 
 ## Tipologie di ricerca
 
-### Dettagli della sospensione temporanea del ricovero domiciliare del paziente aggiornate alla data e ora di richiesta e della necessità di rivalutazione del paziente
+### Dettagli della sospensione temporanea del ricovero domiciliare del paziente 
 
-La ricerca contiene il dettaglio delle sospensioni e la necessità di rivalutazione del paziente inerente al periodo che va dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) alla data corrente della richiesta.
-
-L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
-
-Questa ricerca viene effettuata nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
+Questa ricerca deve essere effettuata da un’ASST per ottenere le informazioni riassuntive delle sospensioni temporanee del ricovero domiciliare di un paziente. L’elenco delle sospensioni temporanee è generato a partire dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) ed aggiornato alla data corrente della richiesta. Mediante il numero pratica del servizio e cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
 
 I parametri da valorizzare per effettuare la ricerca sono:
-- profile: tipologia di profilo che potrà assumere i valori di  RLServiceRequestRivalutazione e/o RLServiceRequestSospensioneADI
-- requisition: numero pratica del servizio di cure domiciliari.
-- basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio di cure domiciliari.
+-	requisition: numero pratica del servizio di cure domiciliari.
 
-| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari |
+| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare del paziente |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
@@ -94,6 +88,18 @@ La chiamata:
     ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
 
 Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "000001" afferente alla struttura "03014300".
+
+Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli relativi alla necessità di rivalutazione del paziente, strutturati nel profilo RLServiceRequestSopensioneADI, vengono di seguito riportate le informazioni per effettuare la ricerca congiunta.
+
+Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
+-	requisition: numero pratica del servizio di cure domiciliari.
+
+| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e necessità di rivalutazione del paziente |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER |  |
+| BASE_APISOURCE |  |
+| URL |  |
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_

@@ -80,7 +80,12 @@
         "id": "PractitionerRole.code.coding.code",
         "path": "PractitionerRole.code.coding.code",
         "short": "Codice della qualifica del professionista sanitario",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla qualifica del professionista sanitario",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario"
+        }
       },
       {
         "id": "PractitionerRole.code.coding.display",

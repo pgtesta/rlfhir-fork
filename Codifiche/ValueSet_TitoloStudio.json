@@ -1,56 +1,56 @@
 {
-	"resourceType": "ValueSet",
-	"id": "ValueSet-SIAD-TitoloStudio",
-	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio",
-	"version": "1.0.0",
-	"name": "SIAD Titolo Studio",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "ValueSet relativo alla codifica del titolo di studio",
-	"compose": {
-		"include": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TitoloStudio",
-				"version": "1.0.0",
-				"concept": [
-					{
-						"code": "1",
-						"display": "Nessuno"
-					},
-					{
-						"code": "2",
-						"display": "Licenza elementare"
-					},
-					{
-						"code": "3",
-						"display": "Licenza media inferiore"
-					},
-					{
-						"code": "4",
-						"display": "Diploma media superiore"
-					},
-					{
-						"code": "5",
-						"display": "Diploma universitario"
-					},
-					{
-						"code": "6",
-						"display": "Laurea"
-					},
-					{
-						"code": "7",
-						"display": "Laurea specialistica"
-					},
-					{
-						"code": "8",
-						"display": "Dottorato/Master"
-					},
-					{
-						"code": "9",
-						"display": "Altro"
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SIAD-TitoloStudio",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio",
+  "version": "1.0.0",
+  "name": "SIAD Titolo Studio",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla codifica del titolo di studio",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TitoloStudio",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Nessuno"
+          },
+          {
+            "code": "2",
+            "display": "Licenza elementare"
+          },
+          {
+            "code": "3",
+            "display": "Licenza media inferiore"
+          },
+          {
+            "code": "4",
+            "display": "Diploma media superiore"
+          },
+          {
+            "code": "5",
+            "display": "Diploma universitario"
+          },
+          {
+            "code": "6",
+            "display": "Laurea"
+          },
+          {
+            "code": "7",
+            "display": "Laurea specialistica"
+          },
+          {
+            "code": "8",
+            "display": "Dottorato/Master"
+          },
+          {
+            "code": "9",
+            "display": "Altro"
+          }
+        ]
+      }
+    ]
+  }
 }

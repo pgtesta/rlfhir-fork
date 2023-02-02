@@ -97,7 +97,12 @@
         "path": "DeviceRequest.code[x].coding.code",
         "short": "Codice dell'ausilio di protesica",
         "definition": "Stringa alfanumerica di al più 26 caratteri",
-        "comment": "La fonte del dato è il campo CD_AUSILIO della tabella ausili di Protesica i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+        "comment": "La fonte del dato è il campo CD_AUSILIO della tabella ausili di Protesica i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica gli ausili di protesica",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi"
+        }
       },
       {
         "id": "DeviceRequest.code[x].coding.display",

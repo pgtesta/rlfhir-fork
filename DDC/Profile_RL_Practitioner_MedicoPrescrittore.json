@@ -126,7 +126,7 @@
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alle qualifiche dei medici prescrittori",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-TipoPrescrittore"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore"
         }
       },
       {

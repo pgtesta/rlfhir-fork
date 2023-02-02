@@ -52,7 +52,12 @@
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice dell'intervento educazionale",
         "definition": "Stringa alfanumerica di 5 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica degli interventi educazionali",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali"
+        }
       },
       {
         "id": "ServiceRequest.code.coding.display",
@@ -109,7 +114,12 @@
         "path": "ServiceRequest.locationCode.coding.code",
         "short": "Codice della modalità di erogazione dell'intervento educazionale",
         "definition": "Stringa alfanumerica di 7 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla modalità di erogazione dell'intervento educazionale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu"
+        }
       },
       {
         "id": "ServiceRequest.locationCode.coding.display",
