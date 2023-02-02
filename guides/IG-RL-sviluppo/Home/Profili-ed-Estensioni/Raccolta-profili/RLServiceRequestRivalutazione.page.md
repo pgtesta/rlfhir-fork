@@ -4,7 +4,6 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Dettagli della necessità di rivalutazione del paziente](#dettagli-della-necessità-di-rivalutazione-del-paziente)
-    - [Dettagli della sospensione temporanea del ricovero domiciliare di un paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-di-un-paziente)
   - [Search parameter](#search-parameter)
   - [Value set](#value-set)
 
@@ -67,17 +66,12 @@ Al momento non ci sono esempi disponibili.
 
 ### Dettagli della necessità di rivalutazione del paziente
 
-Questa ricerca viene effettuata da un’ASST nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. 
+Questa ricerca deve essere utilizzata da un’ASST nel momento in cui deve essere appurato se un paziente attualmente in ricovero domiciliare necessita di una rivalutazione. Mediante il numero pratica del servizio e cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
 
-L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
-
-I parametri da valorizzare per effettuare la ricerca sono:
+Il parametro da valorizzare per effettuare la ricerca è:
 -	requisition: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
-L’esito della ricerca sarà un bundle contenente le informazioni inerenti alla richiesta di rivalutazione di un determinato paziente attraverso il numero pratica del servizio di cure domiciliari.
-
-| SCOPE | Ricerca tutti i profili RLServiceRequestRivalutazione relativi ad un cittadino tramite il numero pratica del servizio di cure domiciliari  |
+| SCOPE | Dettagli della necessità di rivalutazione del paziente  |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
@@ -96,28 +90,22 @@ La chiamata:
 
 Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "000001" afferente alla struttura "03014300".
 
-<em><font style="color:green">
-_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
-- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
+Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli relativi alle sospensioni temporanee dei servizi di cure domiciliari del paziente, strutturati nel profilo RLServiceRequestRivalutazione, vengono di seguito riportate le informazioni per effettuare la ricerca congiunta.
 
-### Dettagli della sospensione temporanea del ricovero domiciliare di un paziente
-
-Questa ricerca viene effettuata da un’ASST per reperire il dettaglio delle sospensioni temporanee del ricovero domiciliare di un paziente 
-
-L’associazione al paziente è definita tramite il numero pratica del servizio di cure domiciliari.
-
-I parametri da valorizzare per effettuare la ricerca sono:
+Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
 -	requisition: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOganizationL2).identifier: codice L2 dell’Ente Erogatore che ha in carico il paziente
 
-L’esito della ricerca sarà un bundle contenente le informazioni inerenti alle sospensioni temporanee del ricovero di cure domiciliare di un determinato paziente
-
-| SCOPE |  |
+| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e delle rivalutazioni di un paziente |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER |  |
 | BASE_APISOURCE |  |
 | URL |  |
+
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
