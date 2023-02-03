@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta esempi</h1>
+    <h1>Raccolta esempi</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolti tutti gli esempi creati per il progetto.

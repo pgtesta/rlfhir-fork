@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta profili in uso</h1>
+    <h1>Raccolta profili in uso</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolti tutti i profili attivi; ad ogni

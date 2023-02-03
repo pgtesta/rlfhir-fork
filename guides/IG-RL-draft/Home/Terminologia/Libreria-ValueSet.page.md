@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta ValueSet in uso</h1>
+    <h1>Raccolta ValueSet in uso</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolti i ValueSet sviluppati
