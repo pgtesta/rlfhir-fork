@@ -61,7 +61,7 @@
             <tr>
             <td>CDOM</td>
             <td>Bundle</td>
-            <td>Ricerca sospensioni ADI</td>
+            <td>Ricerca sospensioni</td>
             <td>{{link:8109d344-98a8-11ed-a8fc-0242ac120002}}</td>
             </tr>
             <tr>
@@ -73,7 +73,7 @@
             <tr>
             <td>CDOM</td>
             <td>Bundle</td>
-            <td>Ricerva valutazioni</td>
+            <td>Ricerca valutazioni</td>
             <td>{{link:c0996f74-9812-11ed-a8fc-0242ac120002}}</td>
             </tr>
             <tr>
