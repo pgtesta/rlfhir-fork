@@ -1,0 +1,104 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "CodeSystem-OperationOutcome-CodiciErrore",
+    "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/OperationOutcome-CodiciErrore",
+    "version": "1.0.0",
+    "name": "Codici Errore",
+    "status": "draft",
+    "date": "2023-01-24",
+    "description": "CodeSystem relativo ai codici di errori ottenuti in risposta all'interrogazione di API FHIR. Per chi espone API, si raccomanda l'utilizzo degli attributi code e display per maggiore leggibilita."
+    "caseSensitive": false,
+    "content": "complete",
+    "concept":  [
+	    {
+            "code": "ACCESS_UNAUTHORIZED",
+            "display": "Accesso non autorizzato",
+            "definition": "Per eseguire la richiesta e' necessaria l'autorizzazione. Corrisponde HTTP Status Code 401"
+        },
+        {
+            "code": "ACCESS_DENIED",
+            "display": "Accesso negato per processare la richiesta",
+            "definition": "Il sistema o l'utente non sono autorizzati per la specifica richiesta. Corrisponde HTTP Status Code 403"
+        },
+        {
+            "code": "ACCESS_DENIED_LEVEL",
+            "display": "Accesso negato, sono necessari privilegi piu elevati per processare la richiesta",
+            "definition": "La richiesta necessita di privilegi piu' elevati di quelli utilizzati per essere elaborata. Corrisponde HTTP Status Code 403"
+        },
+        {
+            "code": "ACCESS_TOKEN_EXPIRED",
+            "display": "Token di accesso scaduto",
+            "definition": "Il token di accesso e' scaduto o non piu valido. Corrisponde HTTP Status Code 401"
+        },
+        {
+            "code": "ACCESS_TOKEN_INVALID",
+            "display": "Token di accesso non valido",
+            "definition": "Il token non puo' essere recuperato dall'header. Corrisponde HTTP Status Code 401"
+        },
+        {
+            "code": "ACCESS_TOKEN_MISSING",
+            "display": "Token di accesso mancante",
+            "definition": "Il token di accesso deve essere passato nell'header. Corrisponde HTTP Status Code 400"
+        },
+        {
+            "code": "TOO_MANY_REQUESTS",
+            "display": "Raggiunto il numero massimo di connessioni",
+            "definition": "La richiesta è stata rifiutata perche' si e' raggiunto il massimo numero di connessioni possibili. Si prega di riprovare piu' tardi. Corrisponde HTTP Status Code 429"
+        },
+        {
+            "code": "METHOD_NOT_ALLOWED",
+            "display": "Metodo non consentito",
+            "definition": "Il metodo o verbo utilizzato non e' consentito per lo specifico endpoint. Corrisponde HTTP Status Code 405"
+        },
+        {
+            "code": "SERVICE_UNAVAILABLE",
+            "display": "Servizio non disponibile, riprovare piu tardi",
+            "definition": "Errore nel processare la richiesta, riprovare piu' tardi. Corrisponde HTTP Status Code 503"
+        },
+        {
+            "code": "SERVICE_ERROR",
+            "display": "Servizio non disponibile, errore inaspettato",
+            "definition": "Errore interno nel server o nel servizio esposto. Il problema potrebbe essere limitato alla specifica richiesta. Corrisponde HTTP Status Code 500"
+        },
+        {
+            "code": "RESOURCE_NOT_FOUND",
+            "display": "Risorsa non trovata",
+            "definition": "L'URL utilizzato non corrisponde ad una risorsa o API valida. Corrisponde HTTP Status Code 404"
+        },
+		{
+            "code": "BAD_REQUEST",
+            "display": "Richiesta sbagliata",
+            "definition": "La richiesta non puo' essere processata. Corrisponde HTTP Status Code 400"
+        },
+        {
+            "code": "MISSING_HEADER",
+            "display": "Header obbligatorio mancante",
+            "definition": "Uno o piu' header obbligatori sono mancanti. Corrisponde HTTP Status Code 400"
+        },
+        {
+            "code": "VALIDATION_ERROR",
+            "display": "Errore di validazione su parametro o valore",
+            "definition": "Uno o piu' parametri o valori non sono corretti. Corrisponde HTTP Status Code 400"
+        },
+        {
+            "code": "MISSING_VALUE",
+            "display": "Valore obbligatorio mancante",
+            "definition": "Uno o piu' valori non sono corretti. Corrisponde HTTP Status Code 400"
+        },
+        {
+            "code": "NOT_ACCEPTABLE",
+            "display": "Contenuto non accettabile",
+            "definition": "La tipologia di contenuto specificata non e' accettabile. Corrisponde HTTP Status Code 406"
+        },
+		{
+            "code": "NOT_PROCESSABLE",
+            "display": "Risorsa non processabile",
+            "definition": "La risorsa sottomessa non soddisfa i profili,regole o criteri FHIR definiti. Corrisponde HTTP Status Code 422"
+        },
+		{
+            "code": "COHERENCE_ERROR",
+            "display": "Errore sulla coerenza dei dati",
+            "definition": "I dati restituiti non sono coerenti rispetto a criteri di business predefiniti. Corrisponde HTTP Status Code 447"
+        }
+    ]
+}

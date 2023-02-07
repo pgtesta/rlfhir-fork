@@ -1,0 +1,29 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "CodeSystem-OperationOutcome-DettagliErrore",
+    "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/OperationOutcome-DettagliErrore",
+    "version": "1.0.0",
+    "name": "Dettagli Errore",
+    "status": "draft",
+    "date": "2023-01-24",
+    "description": "CodeSystem relativo ai dettagli degli errori ottenuti in risposta all'interrogazione di API FHIR. Per chi espone API, si raccomanda l'utilizzo degli attributi code e display per maggiore leggibilita."
+    "caseSensitive": false,
+    "content": "complete",
+    "concept":  [
+		{
+            "code": "RSRC_VERSION_INCOH",
+            "display": "Incoerenza sul versione della risorsa",
+            "definition": "L'attributo version di una o piu risorse FHIR deve essere maggiore o uguale a quanto consultato in precedenza."
+        },
+		{
+            "code": "RSRC_LUPD_INCOH",
+            "display": "Incoerenza su lastUpdate della risorsa",
+            "definition": "L'attributo lastUpdate di una o piu risorse FHIR deve essere minore o uguale all'attributo timestamp del relativo bundle."
+        },
+		{
+            "code": "BNDL_TS_INCOH",
+            "display": "Incoerenza su timestamp del bundle",
+            "definition": "L'attributo timestamp del bundle non deve essere antecedente all’intervallo di aggiornamento predefinito."
+        }
+    ]
+}

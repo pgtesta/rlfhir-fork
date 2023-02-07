@@ -32,20 +32,38 @@
       {
         "id": "OperationOutcome.issue.code",
         "path": "OperationOutcome.issue.code",
-        "short": "Problemi di elaborazione",
-        "fixedCode": "processing"
+        "short": "Codice d'errore",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo ai codici di errori ottenuti in risposta all'interrogazione di API FHIR",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore"
+        }
+      },
+      {
+        "id": "OperationOutcome.issue.details",
+        "path": "OperationOutcome.issue.details",
+        "short": "Dettaglio errore"
       },
       {
         "id": "OperationOutcome.issue.details.coding.code",
         "path": "OperationOutcome.issue.details.coding.code",
-        "short": "Codifica dell'errore di elaborazione",
-        "definition": "\"1\" - Bundle non aggiornato con cadenza settimanale\r\n\"2\" - Incongruenza data bundle e e data risorsa\r\n\"3\"  - Versionamento non aggiornato"
+        "short": "Codice di dettaglio dell'errore",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo ai dettagli degli errori ottenuti in risposta all'interrogazione di API FHIR",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore"
+        }
       },
       {
         "id": "OperationOutcome.issue.details.coding.display",
         "path": "OperationOutcome.issue.details.coding.display",
-        "short": "Descrizione dell'errore di elaborazione",
-        "definition": "\"1\" - Bundle non aggiornato con cadenza settimanale\r\n\"2\" - Incongruenza data bundle e e data risorsa\r\n\"3\"  - Versionamento non aggiornato"
+        "short": "Descrizione del dettaglio dell'errore"
+      },
+      {
+        "id": "OperationOutcome.issue.diagnostics",
+        "path": "OperationOutcome.issue.diagnostics",
+        "short": "Informazioni aggiuntive",
+        "definition": "Contiene informazioni aggiuntive e non strutturate sull'errore"
       }
     ]
   }

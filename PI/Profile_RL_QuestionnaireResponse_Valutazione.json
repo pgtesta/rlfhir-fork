@@ -145,7 +145,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractionerProfessionistaSanitario"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
             ]
           }
         ]

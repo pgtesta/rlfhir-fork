@@ -161,7 +161,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
+              "type": "value",
               "path": "reference"
             }
           ],
@@ -203,8 +203,8 @@
         "id": "Procedure.status",
         "path": "Procedure.status",
         "short": "Stato della prestazione",
-        "definition": "Valore fisso su \"active\"",
-        "fixedCode": "active"
+        "definition": "Valore fisso su \"completed\"",
+        "fixedCode": "completed"
       },
       {
         "id": "Procedure.code",
@@ -286,6 +286,20 @@
         "id": "Procedure.performer.function.coding.display",
         "path": "Procedure.performer.function.coding.display",
         "short": "Descrizione tipologia di operatore che ha effettuato la prestazione"
+      },
+      {
+        "id": "Procedure.performer.actor",
+        "path": "Procedure.performer.actor",
+        "short": "Nel caso di una prestazione erogata in regime di ricovero domiciliare questo campo contiene la tipologia di operatore che ha effettuato la prestazione",
+        "definition": "Reference al profilo RLPractitionerRoleOperatoreADI",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+            ]
+          }
+        ]
       },
       {
         "id": "Procedure.location",
