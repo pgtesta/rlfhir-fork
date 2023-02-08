@@ -407,8 +407,8 @@
           "coding": [
             {
               "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS",
-              "code": "TBD",
-              "display": "TBD"
+              "code": "0090042",
+              "display": "ADRENALINA - NORADRENALINA [P]"
             }
           ]
         },
@@ -534,8 +534,8 @@
           "coding": [
             {
               "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
-              "code": "TBD",
-              "display": "TBD"
+              "code": "027224031",
+              "display": "CLEVIAN*GEL 50 G 1%"
             }
           ]
         },
@@ -627,7 +627,7 @@
             }
           ]
         },
-        "valueQuantity": {
+        "quantityQuantity": {
           "value": 1
         },
         "subject": {
@@ -718,6 +718,7 @@
           }
         ],
         "status": "active",
+        "intent": "order",
         "code": {
           "coding": [
             {
@@ -777,8 +778,8 @@
           "coding": [
             {
               "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi",
-              "code": "TBD",
-              "display": "TBD"
+              "code": "122406178",
+              "display": "AGGIUNTIVI: BRACCIOLO RIBALTABILE"
             }
           ]
         },
@@ -825,9 +826,9 @@
         "code": {
           "coding": [
             {
-              "system": "TBD",
-              "code": "TBD",
-              "display": "TBD"
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche",
+              "code": "[ADI]_001",
+              "display": "Accessi domiciliari"
             }
           ]
         },

@@ -1,0 +1,565 @@
+{
+	"resourceType": "Bundle",
+	"id": "65cc8edc-a79e-11ed-a847-02001700b287",
+	"type": "message",
+	"timestamp": "2023-02-08T10:50:27Z",
+	"entry": [
+		{
+			"fullUrl": "MessageHeader/65cc88ba-a79e-11ed-a847-02001700b287",
+			"resource": {
+				"resourceType": "MessageHeader",
+				"id": "65cc88ba-a79e-11ed-a847-02001700b287",
+				"eventCoding": {
+					"code": "1",
+					"display": "1 - Evento di fallimento di controlli di coerenza"
+				},
+				"destination": [
+					{
+						"name": "NPRI_DDCFHIRSERVER",
+						"endpoint": "http://127.0.0.1:52773/csp/healthshare/ddcfhirserver/fhir/r4n"
+					}
+				],
+				"source": {
+					"name": "NPRIFHIRGTW",
+					"endpoint": "http://127.0.0.1:52773/api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri"
+				},
+				"focus": [
+					{
+						"reference": "OperationOutcome/65cc88c4-a79e-11ed-a847-02001700b287"
+					},
+					{
+						"reference": "Bundle/65c9e682-a79e-11ed-a25f-02001700b287"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "OperationOutcome/65cc88c4-a79e-11ed-a847-02001700b287",
+			"resource": {
+				"resourceType": "OperationOutcome",
+				"id": "65cc88c4-a79e-11ed-a847-02001700b287",
+				"issue": [
+					{
+						"severity": "error",
+						"code": "business-rule",
+						"details": {
+							"coding": [
+								{
+									"code": "3",
+									"display": "Versionamento non aggiornato"
+								}
+							]
+						},
+						"diagnostics": "Fallito il controllo di coerenza: 3. La risorsa da controllare e': Organization/11f6b3ee-82f2-11ed-b856-02001700b287"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "Bundle/65c9e682-a79e-11ed-a25f-02001700b287",
+			"resource": {
+				"resourceType": "Bundle",
+				"id": "65c9e682-a79e-11ed-a25f-02001700b287",
+				"type": "searchset",
+				"timestamp": "2023-02-08T10:50:27Z",
+				"total": 4,
+				"link": [
+					{
+						"relation": "self",
+						"url": "http://127.0.0.1:52773/csp/healthshare/ddcfhirserver/fhir/r4n/Organization?_profile=https%3A//fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&partof:Organization.identifier=030701&type=CONS"
+					}
+				],
+				"entry": [
+					{
+						"fullUrl": "http://127.0.0.1:52773/csp/healthshare/ddcfhirserver/fhir/r4n/Organization/11f6b3ee-82f2-11ed-b856-02001700b287",
+						"resource": {
+							"resourceType": "Organization",
+							"id": "11f6b3ee-82f2-11ed-b856-02001700b287",
+							"meta": {
+								"lastUpdated": "2023-02-07T16:56:53Z",
+								"profile": [
+									"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+								],
+								"versionId": "47"
+							},
+							"identifier": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+									"value": "000495"
+								}
+							],
+							"type": [
+								{
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+											"code": "CONS"
+										}
+									]
+								}
+							],
+							"name": "CONSULTORIO INTERDECANALE IL CAMINETTO - ONLUS",
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "02/66228281"
+								},
+								{
+									"system": "email",
+									"value": "SEGRETERIA@CONSULTORIOMINORD.IT"
+								},
+								{
+									"system": "url",
+									"value": "WWW.CONSULTORIOMINORD.IT"
+								}
+							],
+							"address": [
+								{
+									"use": "work",
+									"type": "physical",
+									"line": [
+										"PIAZZA BRUZZANO,8"
+									],
+									"city": "MILANO",
+									"district": "MI",
+									"postalCode": "20161",
+									"extension": [
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+											"valueString": "015146"
+										},
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
+											"valueCodeableConcept": {
+												"coding": [
+													{
+														"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
+														"code": "22109"
+													}
+												]
+											}
+										}
+									]
+								}
+							],
+							"partOf": {
+								"reference": "Organization/7d0ed10e-d5df-11ec-af94-02001700b287"
+							},
+							"extension": [
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+									"valueDate": "2022-11-21"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+									"valueDate": "2022-04-13"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAsst",
+												"code": "030701",
+												"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+											}
+										]
+									}
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAts",
+												"code": "030321",
+												"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+											}
+										]
+									}
+								}
+							]
+						},
+						"search": {
+							"mode": "match"
+						}
+					},
+					{
+						"fullUrl": "http://127.0.0.1:52773/csp/healthshare/ddcfhirserver/fhir/r4n/Organization/11fe2e4e-82f2-11ed-b856-02001700b287",
+						"resource": {
+							"resourceType": "Organization",
+							"id": "11fe2e4e-82f2-11ed-b856-02001700b287",
+							"meta": {
+								"lastUpdated": "2023-02-07T16:56:53Z",
+								"profile": [
+									"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+								],
+								"versionId": "47"
+							},
+							"identifier": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+									"value": "000506"
+								}
+							],
+							"type": [
+								{
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+											"code": "CONS"
+										}
+									]
+								}
+							],
+							"name": "CONSULTORIO LA FAMIGLIA - ONLUS",
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "02/6081065"
+								},
+								{
+									"system": "email",
+									"value": "CONS.LAFAMIGLIA@TISCALI.IT"
+								},
+								{
+									"system": "url",
+									"value": "WWW.CONSULTORIOLAFAMIGLIAMILANO.IT"
+								}
+							],
+							"address": [
+								{
+									"use": "work",
+									"type": "physical",
+									"line": [
+										"VIA FRANCESCO ARESE,18"
+									],
+									"city": "MILANO",
+									"district": "MI",
+									"postalCode": "20159",
+									"extension": [
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+											"valueString": "015146"
+										},
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
+											"valueCodeableConcept": {
+												"coding": [
+													{
+														"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
+														"code": "22109"
+													}
+												]
+											}
+										}
+									]
+								}
+							],
+							"partOf": {
+								"reference": "Organization/7d0ed10e-d5df-11ec-af94-02001700b287"
+							},
+							"extension": [
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+									"valueDate": "2022-11-21"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+									"valueDate": "2022-04-13"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAsst",
+												"code": "030701",
+												"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+											}
+										]
+									}
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAts",
+												"code": "030321",
+												"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+											}
+										]
+									}
+								}
+							]
+						},
+						"search": {
+							"mode": "match"
+						}
+					},
+					{
+						"fullUrl": "http://127.0.0.1:52773/csp/healthshare/ddcfhirserver/fhir/r4n/Organization/3894750e-82f2-11ed-b856-02001700b287",
+						"resource": {
+							"resourceType": "Organization",
+							"id": "3894750e-82f2-11ed-b856-02001700b287",
+							"meta": {
+								"lastUpdated": "2023-02-07T16:58:39Z",
+								"profile": [
+									"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+								],
+								"versionId": "47"
+							},
+							"identifier": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+									"value": "002256"
+								}
+							],
+							"type": [
+								{
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+											"code": "CONS"
+										}
+									]
+								}
+							],
+							"name": "CONSULTORIO FAMILIARE PUBBLICO",
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "0264446502"
+								},
+								{
+									"system": "email",
+									"value": "CONSULTORIO.CHERASCO@OSPEDALENIGUARDA.IT"
+								},
+								{
+									"system": "url",
+									"value": "WWW.ATS-MILANO.IT"
+								}
+							],
+							"address": [
+								{
+									"use": "work",
+									"type": "physical",
+									"line": [
+										"VIA CHERASCO,7"
+									],
+									"city": "MILANO",
+									"district": "MI",
+									"postalCode": "20162",
+									"extension": [
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+											"valueString": "015146"
+										},
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
+											"valueCodeableConcept": {
+												"coding": [
+													{
+														"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
+														"code": "22109"
+													}
+												]
+											}
+										}
+									]
+								}
+							],
+							"partOf": {
+								"reference": "Organization/7d0ed10e-d5df-11ec-af94-02001700b287"
+							},
+							"extension": [
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+									"valueDate": "2022-11-21"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+									"valueDate": "2022-04-13"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAsst",
+												"code": "030701",
+												"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+											}
+										]
+									}
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAts",
+												"code": "030321",
+												"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+											}
+										]
+									}
+								}
+							]
+						},
+						"search": {
+							"mode": "match"
+						}
+					},
+					{
+						"fullUrl": "http://127.0.0.1:52773/csp/healthshare/ddcfhirserver/fhir/r4n/Organization/3895fcee-82f2-11ed-b856-02001700b287",
+						"resource": {
+							"resourceType": "Organization",
+							"id": "3895fcee-82f2-11ed-b856-02001700b287",
+							"meta": {
+								"lastUpdated": "2023-02-07T16:58:39Z",
+								"profile": [
+									"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+								],
+								"versionId": "47"
+							},
+							"identifier": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+									"value": "002257"
+								}
+							],
+							"type": [
+								{
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+											"code": "CONS"
+										}
+									]
+								}
+							],
+							"name": "CONSULTORIO FAMILIARE PUBBLICO",
+							"telecom": [
+								{
+									"system": "phone",
+									"value": "0264443331"
+								},
+								{
+									"system": "email",
+									"value": "CONSULTORIO.VALDIBONDO@OSPEDALENIGUARDA.IT"
+								},
+								{
+									"system": "url",
+									"value": "WWW.ATS-MILANO.IT"
+								}
+							],
+							"address": [
+								{
+									"use": "work",
+									"type": "physical",
+									"line": [
+										"VIA VAL DI BONDO,11"
+									],
+									"city": "MILANO",
+									"district": "MI",
+									"postalCode": "20161",
+									"extension": [
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+											"valueString": "015146"
+										},
+										{
+											"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
+											"valueCodeableConcept": {
+												"coding": [
+													{
+														"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
+														"code": "22109"
+													}
+												]
+											}
+										}
+									]
+								}
+							],
+							"partOf": {
+								"reference": "Organization/7d0ed10e-d5df-11ec-af94-02001700b287"
+							},
+							"extension": [
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+									"valueDate": "2022-11-21"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+									"valueDate": "2022-04-13"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+									"valueDate": "9999-12-31"
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAsst",
+												"code": "030701",
+												"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+											}
+										]
+									}
+								},
+								{
+									"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsTerritoriale",
+									"valueCodeableConcept": {
+										"coding": [
+											{
+												"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAts",
+												"code": "030321",
+												"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+											}
+										]
+									}
+								}
+							]
+						},
+						"search": {
+							"mode": "match"
+						}
+					}
+				]
+			}
+		}
+	]
+}

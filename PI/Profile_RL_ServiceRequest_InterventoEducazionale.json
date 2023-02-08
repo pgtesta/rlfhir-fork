@@ -42,6 +42,13 @@
         "fixedCode": "active"
       },
       {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "short": "Intento della richesta",
+        "definition": "Valore fisso su \"order\" (la richiesta autorizza l'azione di un professionista)",
+        "fixedCode": "order"
+      },
+      {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Intervento educazionale da attivare",

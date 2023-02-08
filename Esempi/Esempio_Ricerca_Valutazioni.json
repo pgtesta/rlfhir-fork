@@ -49,7 +49,9 @@
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
-            "valueReference": "Observation/bd49fd5c-981c-11ed-a8fc-0242ac120002"
+            "valueReference": {
+              "reference": "Observation/bd49fd5c-981c-11ed-a8fc-0242ac120002"
+            }
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
