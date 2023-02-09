@@ -84,6 +84,8 @@ A titolo esemplificativo, la chiamate:
 
 Restituirà, se presenti, tutte le rivalutazioni necessarie alla pratica numero "2022000001" afferente alla struttura "03014300".
 
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-rivalutazioni}}.
+
 Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli relativi alle sospensioni temporanee dei servizi di cure domiciliari del paziente, strutturati nel profilo RLServiceRequestSopensioneADI, vengono di seguito riportate le informazioni per effettuare la ricerca congiunta.
 
 Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
@@ -101,6 +103,8 @@ La chiamata:
     ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=2022000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
 
 Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "2022000001" afferente alla struttura "03014300".
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-rivalutazioni-sospensioni}}.
 
 
 <em><font style="color:green">

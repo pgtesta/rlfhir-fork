@@ -81,9 +81,11 @@ Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassis
 
 A titolo esemplificativo, la chiamata: 
 
-    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn:CarePlan.activity.reference.code.coding.code=CDOM&basedOn:CarePlan.activity.reference.performer.identifier=03014300&basedOn.activity.reference.identifier=000001&source.identifier=RSSMRA80A01F205&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione
+    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn:CarePlan.activity.reference.code.coding.code=CDOM&basedOn:CarePlan.activity.reference.performer.identifier=03014300&basedOn.activity.reference.identifier=2022000001&source.identifier=RSSMRA80A01F205&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione
 
-Restituirà l’ultima versione della valutazione afferente alla pratica "000001", e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
+Restituirà l’ultima versione della valutazione afferente alla pratica "2022000001", e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-valutazioni}}.
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_

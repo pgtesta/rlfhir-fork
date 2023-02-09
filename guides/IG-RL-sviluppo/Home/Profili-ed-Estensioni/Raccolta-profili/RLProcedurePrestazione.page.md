@@ -83,9 +83,11 @@ I parametri da valorizzare per effettuare la ricerca sono:
 
 A titolo esemplificativo, la chiamata: 
 
-  Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&basedOn:ServiceRequest.code.coding.code=CDOM&basedOn:ServiceRequest.performer.identifier=03014300&basedOn:ServiceRequest.identifier=000001&_include=Procedure:basedOn&_include=Procedure:subject
+  Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&basedOn:ServiceRequest.code.coding.code=CDOM&basedOn:ServiceRequest.performer.identifier=03014300&basedOn:ServiceRequest.identifier=2022000001&_include=Procedure:basedOn&_include=Procedure:subject
 
-Restituirà tutte le prestazioni erogate per pratica numero "000001" e afferenti alla struttura "03014300".
+Restituirà tutte le prestazioni erogate per pratica numero "2022000001" e afferenti alla struttura "03014300".
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-prestazioni-erogate}}.
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
