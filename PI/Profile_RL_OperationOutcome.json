@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome",
   "name": "RLOperationOutcome",
+  "id": "RLOperationOutcome",
   "status": "draft",
   "keyword": [
     {
