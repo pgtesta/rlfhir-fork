@@ -424,14 +424,14 @@
         <tr>
           <td>PI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcomeControlloCoerenza.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcome.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>
           </td>
           <td>(missing)</td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeControlloCoerenza}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome}}
           </td>
         </tr>
         <tr>
