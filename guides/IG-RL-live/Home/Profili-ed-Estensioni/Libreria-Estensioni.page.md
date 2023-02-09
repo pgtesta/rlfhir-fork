@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta estensioni in uso</h1>
+    <h1>Raccolta estensioni in uso</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolte tutte le estensioni sviluppate

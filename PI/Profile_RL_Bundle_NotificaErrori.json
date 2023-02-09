@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNotificaErrori",
+  "name": "RLBundleNotificaErrori",
+  "status": "draft",
+  "description": "Profilo volto a contenere le informazioni utili a tener traccia delle risorse che falliscono i controlli di coerenza.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.id",
+        "path": "Bundle.id",
+        "short": "UUID del bundle"
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "Tipologia del bundle",
+        "definition": "Valore fisso a \"message\"",
+        "fixedCode": "message"
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "short": "Data e ora di creazione del bundle"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "short": "Risorse contenute nel bundle"
+      },
+      {
+        "id": "Bundle.entry.fullUrl",
+        "path": "Bundle.entry.fullUrl",
+        "short": "Nome della risorsa e identificativo univoco",
+        "definition": "Composto nel seguente modo: \"NomeRisorsa/UUID\""
+      },
+      {
+        "id": "Bundle.entry.resource",
+        "path": "Bundle.entry.resource",
+        "short": "Nome della risorsa",
+        "definition": "Il bundle deve contenere come prime due risorse RLMessageHeaderControlloCoerenza e RLOperationOutcome.\r\n\r\nIn aggiunta può contenere o un ulteriore Bundle risultante da ricerche di prestazioni (RLProcedurePrestazione), rivalutazioni (RLServiceRequestRivalutazione) e/o sospensioni (RLServiceRequestSospensioneADI), oppure una singola risorsa tra: RLProcedurePrestazione, RLServiceRequestRivalutazione e RLServiceRequestSospensioneADI.",
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry.resource.id",
+        "path": "Bundle.entry.resource.id",
+        "short": "UUID della risorsa"
+      }
+    ]
+  }
+}

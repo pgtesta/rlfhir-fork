@@ -15,16 +15,16 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <br>
 <div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+  <button class="tablinks active" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+  <button class="tablinks" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
   <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
+  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
+<div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, snapshot}}
 </div>
@@ -34,7 +34,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, diff}}
 </div>
 
-<div id="Hybrid View" class="tabcontent">
+<div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione, hybrid}}
 </div>
@@ -80,27 +80,32 @@ Il parametro da valorizzare per effettuare la ricerca è:
 
 A titolo esemplificativo, la chiamate: 
   
-    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione&requisition=2022000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
 
-Restituirà, se presenti, tutte le rivalutazioni necessarie alla pratica numero "000001" afferente alla struttura "03014300".
+Restituirà, se presenti, tutte le rivalutazioni necessarie alla pratica numero "2022000001" afferente alla struttura "03014300".
 
-La chiamata:
-  
-    ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-rivalutazioni}}.
 
-Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "000001" afferente alla struttura "03014300".
-
-Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli relativi alle sospensioni temporanee dei servizi di cure domiciliari del paziente, strutturati nel profilo RLServiceRequestRivalutazione, vengono di seguito riportate le informazioni per effettuare la ricerca congiunta.
+Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli relativi alle sospensioni temporanee dei servizi di cure domiciliari del paziente, strutturati nel profilo RLServiceRequestSopensioneADI, vengono di seguito riportate le informazioni per effettuare la ricerca congiunta.
 
 Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
 -	requisition: numero pratica del servizio di cure domiciliari.
 
-| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e necessità di rivalutazione di un paziente |
+| SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e necessità di rivalutazione del paziente |
 |---|---|
 | VERB | GET |
-| BASE_APIMANAGER |  |
-| BASE_APISOURCE |  |
-| URL |  |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
+| URL | ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI)<br>&requisition=\{numeroPratica\}<br>&basedOn:CarePlan.activity.reference.performer.identifier=\{codiceLivello2\} |
+
+La chiamata:
+  
+    ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=2022000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+
+Restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "2022000001" afferente alla struttura "03014300".
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-rivalutazioni-sospensioni}}.
+
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_

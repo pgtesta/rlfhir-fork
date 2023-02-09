@@ -124,7 +124,12 @@
         "id": "ServiceRequest.code.coding.code",
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice della prestazione infermieristica",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica delle prestazioni infermieristiche",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche"
+        }
       },
       {
         "id": "ServiceRequest.code.coding.display",

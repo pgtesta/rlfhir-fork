@@ -1,0 +1,110 @@
+{
+  "resourceType": "Patient",
+  "id": "esempio-Patient-Cittadino",
+  "meta": {
+    "lastUpdated": "2023-01-01T10:36:03Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "RSSMRA80A01F205X"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Mario"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1980-01-01",
+  "address": [
+    {
+      "use": "home",
+      "city": "015146",
+      "country": "IT"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
+        "code": "2",
+        "display": "Coniugato/a"
+      }
+    ]
+  },
+  "generalPractitioner": {
+    "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+    "display": "Medico Prescrittore"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
+      "valueCode": "ITA"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio",
+            "code": "6",
+            "display": "Laurea"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione",
+            "code": "01",
+            "display": "imprenditore"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica",
+            "code": "5",
+            "display": "Invalidità"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
+      "valueCode": "015146"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
+      "valueCode": "TBD"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente",
+            "code": "1",
+            "display": "Paziente ordinario: utenza tipica"
+          }
+        ]
+      }
+    }
+  ]
+}

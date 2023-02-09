@@ -1,0 +1,222 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-OperationOutcome-CodiciErrore",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore",
+  "version": "1.0.0",
+  "name": "Codici Errore",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo ai codici di errori ottenuti in risposta all'interrogazione di API FHIR. Per chi espone API, si raccomanda l'utilizzo degli attributi code e display per maggiore leggibilita.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/OperationOutcome-CodiciErrore",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "ACCESS_UNAUTHORIZED",
+            "display": "Accesso non autorizzato"
+          },
+          {
+            "code": "ACCESS_DENIED",
+            "display": "Accesso negato per processare la richiesta"
+          },
+          {
+            "code": "ACCESS_DENIED_LEVEL",
+            "display": "Accesso negato, sono necessari privilegi piu elevati per processare la richiesta"
+          },
+          {
+            "code": "ACCESS_TOKEN_EXPIRED",
+            "display": "Token di accesso scaduto"
+          },
+          {
+            "code": "ACCESS_TOKEN_INVALID",
+            "display": "Token di accesso non valido"
+          },
+          {
+            "code": "ACCESS_TOKEN_MISSING",
+            "display": "Token di accesso mancante"
+          },
+          {
+            "code": "TOO_MANY_REQUESTS",
+            "display": "Raggiunto il numero massimo di connessioni"
+          },
+          {
+            "code": "METHOD_NOT_ALLOWED",
+            "display": "Metodo non consentito"
+          },
+          {
+            "code": "SERVICE_UNAVAILABLE",
+            "display": "Servizio non disponibile, riprovare piu tardi"
+          },
+          {
+            "code": "SERVICE_ERROR",
+            "display": "Servizio non disponibile, errore inaspettato"
+          },
+          {
+            "code": "RESOURCE_NOT_FOUND",
+            "display": "Risorsa non trovata"
+          },
+          {
+            "code": "BAD_REQUEST",
+            "display": "Richiesta sbagliata"
+          },
+          {
+            "code": "MISSING_HEADER",
+            "display": "Header obbligatorio mancante"
+          },
+          {
+            "code": "VALIDATION_ERROR",
+            "display": "Errore di validazione su parametro o valore"
+          },
+          {
+            "code": "MISSING_VALUE",
+            "display": "Valore obbligatorio mancante"
+          },
+          {
+            "code": "NOT_ACCEPTABLE",
+            "display": "Contenuto non accettabile"
+          },
+          {
+            "code": "NOT_PROCESSABLE",
+            "display": "Risorsa non processabile"
+          },
+          {
+            "code": "COHERENCE_ERROR",
+            "display": "Errore sulla coerenza dei dati"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/issue-type",
+        "version": "4.3.0",
+        "concept": [
+          {
+            "code": "invalid",
+            "display": "Invalid Content"
+          },
+          {
+            "code": "structure",
+            "display": "Structural Issue"
+          },
+          {
+            "code": "required",
+            "display": "Required element missing"
+          },
+          {
+            "code": "value",
+            "display": "Element value invalid"
+          },
+          {
+            "code": "invariant",
+            "display": "Validation rule failed"
+          },
+          {
+            "code": "security",
+            "display": "Security Problem"
+          },
+          {
+            "code": "login",
+            "display": "Login Required"
+          },
+          {
+            "code": "unknown",
+            "display": "Unknown User"
+          },
+          {
+            "code": "expired",
+            "display": "Session Expired"
+          },
+          {
+            "code": "forbidden",
+            "display": "Forbidden"
+          },
+          {
+            "code": "suppressed",
+            "display": "Information Suppressed"
+          },
+          {
+            "code": "processing",
+            "display": "Processing Failure"
+          },
+          {
+            "code": "not-supported",
+            "display": "Content not supported"
+          },
+          {
+            "code": "duplicate",
+            "display": "Duplicate"
+          },
+          {
+            "code": "multiple-matches",
+            "display": "Multiple Matches"
+          },
+          {
+            "code": "not-found",
+            "display": "Not Found"
+          },
+          {
+            "code": "deleted",
+            "display": "Deleted"
+          },
+          {
+            "code": "too-long",
+            "display": "Content Too Long"
+          },
+          {
+            "code": "code-invalid",
+            "display": "Invalid Code"
+          },
+          {
+            "code": "extension",
+            "display": "Unacceptable Extension"
+          },
+          {
+            "code": "too-costly",
+            "display": "Operation Too Costly"
+          },
+          {
+            "code": "business-rule",
+            "display": "Business Rule Violation"
+          },
+          {
+            "code": "conflict",
+            "display": "Edit Version Conflict"
+          },
+          {
+            "code": "transient",
+            "display": "Transient Issue"
+          },
+          {
+            "code": "lock-error",
+            "display": "Lock Error"
+          },
+          {
+            "code": "no-store",
+            "display": "No Store Available"
+          },
+          {
+            "code": "exception",
+            "display": "Exception"
+          },
+          {
+            "code": "timeout",
+            "display": "Timeout"
+          },
+          {
+            "code": "incomplete",
+            "display": "Incomplete Results"
+          },
+          {
+            "code": "throttled",
+            "display": "Throttled"
+          },
+          {
+            "code": "informational",
+            "display": "Informational Note"
+          }
+        ]
+      }
+    ]
+  }
+}

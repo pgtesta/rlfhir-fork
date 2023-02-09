@@ -79,7 +79,7 @@
         "id": "Observation.performer",
         "path": "Observation.performer",
         "short": "Profilo del professionista sanitario che ha effettualto la valutazione",
-        "definition": "Reference al profilo RLPractionerRole del professionista sanitario che compila la valutazione",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore del professionista sanitario che compila la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

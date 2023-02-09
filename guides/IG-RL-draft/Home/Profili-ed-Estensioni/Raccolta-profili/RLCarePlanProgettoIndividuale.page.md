@@ -17,16 +17,16 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <br>
 <div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+  <button class="tablinks active" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+  <button class="tablinks" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
   <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
+  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
+<div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, snapshot}}
 </div>
@@ -36,7 +36,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, diff}}
 </div>
 
-<div id="Hybrid View" class="tabcontent">
+<div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, hybrid}}
 </div>
@@ -88,6 +88,8 @@ A titolo esemplificativo, la chiamata:
 
 Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 1 "030701" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche tutte le informazioni associate referenziate nel profilo.
 
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-pi-attivi}}.
+
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 - _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
@@ -112,6 +114,8 @@ A titolo esemplificativo, la chiamata:
     CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.identifier=2022000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
 
 Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "2022000001". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-storico-pi}}.
 
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_

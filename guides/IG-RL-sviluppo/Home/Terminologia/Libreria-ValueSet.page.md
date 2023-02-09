@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta ValueSet in uso</h1>
+    <h1>Raccolta ValueSet in uso</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolti i ValueSet sviluppati
@@ -62,8 +62,8 @@
 				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco}}
 			</td>
 			<td>
-				ValueSet che identifica l'anagrafica dei farmaci secondo
-				la codifica ministeriale
+				ValueSet che identifica l'anagrafica dei farmaci secondo la codifica
+				ministeriale
 			</td>
 			<td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco</td>
 			</tr>
@@ -90,6 +90,32 @@
 			<td>ValueSet relativo ai motivi della sospensione</td>
 			<td>
 				https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione
+			</td>
+			</tr>
+			<tr>
+			<td>
+				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore}}
+			</td>
+			<td>
+				ValueSet relativo ai codici di errori ottenuti in risposta
+				all'interrogazione di API FHIR. Per chi espone API, si raccomanda
+				l'utilizzo degli attributi code e display per maggiore leggibilita.
+			</td>
+			<td>
+				https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore
+			</td>
+			</tr>
+			<tr>
+			<td>
+				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore}}
+			</td>
+			<td>
+				ValueSet relativo ai dettagli degli errori ottenuti in risposta
+				all'interrogazione di API FHIR. Per chi espone API, si raccomanda
+				l'utilizzo degli attributi code e display per maggiore leggibilita.
+			</td>
+			<td>
+				https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore
 			</td>
 			</tr>
 			<tr>
@@ -124,8 +150,8 @@
 				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu}}
 			</td>
 			<td>
-				ValueSet relativo alla modalità di erogazione
-				dell'intervento educazionale
+				ValueSet relativo alla modalità di erogazione dell'intervento
+				educazionale
 			</td>
 			<td>
 				https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu
@@ -146,6 +172,26 @@
 			</td>
 			<td>ValueSet relativo ai percorsi di cure domiciliari</td>
 			<td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom</td>
+			</tr>
+			<tr>
+			<td>
+				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche}}
+			</td>
+			<td>
+				ValueSet relativo alla codifica delle prestazioni infermieristiche
+			</td>
+			<td>
+				https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche
+			</td>
+			</tr>
+			<tr>
+			<td>
+				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico}}
+			</td>
+			<td>ValueSet relativo alla codifica dei problemi infermieristici</td>
+			<td>
+				https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico
+			</td>
 			</tr>
 			<tr>
 			<td>
@@ -229,8 +275,8 @@
 				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}}
 			</td>
 			<td>
-				ValueSet relativo alla tipologia di luogo in cui
-				vengono erogate le prestazioni di cure domiciliari
+				ValueSet relativo alla tipologia di luogo in cui vengono erogate le
+				prestazioni di cure domiciliari
 			</td>
 			<td>
 				https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo
@@ -250,8 +296,8 @@
 				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC}}
 			</td>
 			<td>
-				ValueSet relativo alla codifica del soggetto che ha
-				proposto la presa in carico
+				ValueSet relativo alla codifica del soggetto che ha proposto la presa in
+				carico
 			</td>
 			<td>
 				https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC
@@ -261,10 +307,7 @@
 			<td>
 				{{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale}}
 			</td>
-			<td>
-				ValueSet relativo alla codifica delle
-				responsabilità genitoriale
-			</td>
+			<td>ValueSet relativo alla codifica delle responsabilità genitoriale</td>
 			<td>
 				https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale
 			</td>
@@ -327,6 +370,6 @@
 			</td>
 			</tr>
 		</tbody>
-	</table>
+		</table>
   </body>
 </html>

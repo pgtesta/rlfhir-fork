@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta estensioni in uso</h1>
+    <h1>Raccolta estensioni in uso</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolte tutte le estensioni sviluppate
@@ -323,6 +323,14 @@
           </td>
         </tr>
         <tr>
+          <td>RLPatientATSResidenza</td>
+          <td>Patient</td>
+          <td>(missing)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza}}
+          </td>
+        </tr>
+        <tr>
           <td>RLPatientCittadinanza</td>
           <td>Patient</td>
           <td>Cittadinanza del paziente</td>
@@ -331,11 +339,27 @@
           </td>
         </tr>
         <tr>
+          <td>RLPatientLuogoDiNascita</td>
+          <td>Patient</td>
+          <td>(missing)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita}}
+          </td>
+        </tr>
+        <tr>
           <td>RLPatientPosizioneDellaProfessione</td>
           <td>Patient</td>
           <td>Posizione della professione del paziente</td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione}}
+          </td>
+        </tr>
+        <tr>
+          <td>RLPatientResponsabilitaGenitoriale</td>
+          <td>Patient</td>
+          <td>(missing)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientResponsabilitaGenitoriale}}
           </td>
         </tr>
         <tr>
@@ -348,10 +372,18 @@
         </tr>
         <tr>
           <td>RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente</td>
-          <td>Patient</td>
+          <td>Patient.identifier</td>
           <td>(missing)</td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente}}
+          </td>
+        </tr>
+        <tr>
+          <td>RLPatientTipologiaCittadino</td>
+          <td>Patient</td>
+          <td>(missing)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino}}
           </td>
         </tr>
         <tr>
@@ -422,6 +454,14 @@
           </td>
         </tr>
         <tr>
+          <td>RLProcedureTipoAccesso</td>
+          <td>Procedure</td>
+          <td>(missing)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso}}
+          </td>
+        </tr>
+        <tr>
           <td>RLQuestionnaireResponseEsitoValutazione</td>
           <td>QuestionnaireResponse</td>
           <td>
@@ -431,6 +471,14 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione}}
+          </td>
+        </tr>
+        <tr>
+          <td>RLQuestionnaireResponseTipologiaValutazione</td>
+          <td>QuestionnaireResponse</td>
+          <td>(missing)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione}}
           </td>
         </tr>
         <tr>

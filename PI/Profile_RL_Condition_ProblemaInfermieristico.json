@@ -32,7 +32,12 @@
         "id": "Condition.code.coding.code",
         "path": "Condition.code.coding.code",
         "short": "Codice del problema",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica dei problemi infermieristici",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico"
+        }
       },
       {
         "id": "Condition.code.coding.display",

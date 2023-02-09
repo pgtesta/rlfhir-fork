@@ -13,7 +13,7 @@
     </script>
   </head>
   <body>
-    <h1>Racolta profili in uso</h1>
+    <h1>Raccolta profili in uso</h1>
     <div>
       <p>
         Nella tabella sottostante sono raccolti tutti i profili attivi; ad ogni
@@ -37,6 +37,22 @@
         </tr>
       </thead>
       <tbody id="myTable">
+        <tr>
+          <td>Errori</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleNotificaErrori.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a contenere le informazioni utili a
+            tener traccia delle risorse che falliscono i controlli di coerenza.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNotificaErrori}}
+          </td>
+        </tr>
         <tr>
           <td>CDOM</td>
           <td>
@@ -219,8 +235,8 @@
             <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
           </td>
           <td>
-            Profilo volto a descrivere la patologia, le
-            eventuali patologie secondarie ed addizionali di un
+            Profilo volto a descrivere la patologia primaria, le
+            eventuali patologie secondarie ed ulteriori di un
             paziente.
           </td>
           <td>
@@ -408,14 +424,14 @@
         <tr>
           <td>PI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcomeControlloCoerenza.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcome.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>
           </td>
           <td>(missing)</td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeControlloCoerenza}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome}}
           </td>
         </tr>
         <tr>
