@@ -113,6 +113,8 @@ A titolo esemplificativo, la chiamata:
 
 Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "2022000001". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-pi-attivi}}.
+
 <em><font style="color:green">
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 - _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
