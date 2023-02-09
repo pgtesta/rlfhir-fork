@@ -1,6 +1,6 @@
 {
   "resourceType": "OperationOutcome",
-  "id": "searchfail",
+  "id": "esempio-searchfail",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"\n>      <p>The \"name\" parameter has the modifier \"exact\" which is not supported by this server</p>\n    </div>"

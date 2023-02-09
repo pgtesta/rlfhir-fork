@@ -116,7 +116,7 @@ Nella tabella sottostante si riportano le principali caratteristiche degli attri
 |*Organization.search.mode*|string|“include”|
 
 Di seguito un esempio di Bundle di risposta con esito positivo:
-{{json:bundle_esempio}}
+{{json:esempio-bundle-PLO-esitopositivo}}
 
 ### Risposta esito positivo senza risultati
 

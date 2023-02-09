@@ -1,6 +1,6 @@
 {
   "resourceType": "OperationOutcome",
-  "id": "exception",
+  "id": "esempio-exception",
   "text": {
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"\n>      <p>SQL Link Communication Error (dbx = 34234)</p>\n    </div>"
