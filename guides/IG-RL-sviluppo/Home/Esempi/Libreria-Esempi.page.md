@@ -124,6 +124,18 @@
           <td>OperationOutcome: eccezione generica</td>
           <td>{{link:esempio-exception}}</td>
         </tr>
+        <tr>
+          <td>Errori</td>
+          <td>Bundle</td>
+          <td>(missing)</td>
+          <td>{{link:esempio-bundle-notifica-errori-bundle}}</td>
+        </tr>
+        <tr>
+          <td>Errori</td>
+          <td>Bundle</td>
+          <td>(missing)</td>
+          <td>{{link:esempio-bundle-notifica-errori-resource}}</td>
+        </tr>
       </tbody>
     </table>
   </body>
