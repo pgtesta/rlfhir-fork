@@ -44,13 +44,13 @@
         "id": "Bundle.entry.resource",
         "path": "Bundle.entry.resource",
         "short": "Nome della risorsa",
-        "definition": "Il bundle deve contenere come prime due risorse RLMessageHeaderControlloCoerenza e RLOperationOutcomeControlloCoerenza.\r\n\r\nIn aggiunta può contenere o un ulteriore Bundle risultante da ricerche di prestazioni (RLProcedurePrestazione), rivalutazioni (RLServiceRequestRivalutazione) e/o sospensioni (RLServiceRequestSospensioneADI), oppure una singola risorsa tra: RLProcedurePrestazione, RLServiceRequestRivalutazione e RLServiceRequestSospensioneADI.",
+        "definition": "Il bundle deve contenere come prime due risorse RLMessageHeaderControlloCoerenza e RLOperationOutcome.\r\n\r\nIn aggiunta può contenere o un ulteriore Bundle risultante da ricerche di prestazioni (RLProcedurePrestazione), rivalutazioni (RLServiceRequestRivalutazione) e/o sospensioni (RLServiceRequestSospensioneADI), oppure una singola risorsa tra: RLProcedurePrestazione, RLServiceRequestRivalutazione e RLServiceRequestSospensioneADI.",
         "type": [
           {
             "code": "Resource",
             "profile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeControlloCoerenza",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI"

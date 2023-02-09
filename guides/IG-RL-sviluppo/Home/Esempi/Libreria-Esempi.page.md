@@ -24,7 +24,7 @@
       <input id="myInput" type="text" placeholder="Cerca.." />
     </div>
     <br/>
-    <table>
+    <table style="width: fit-content">
       <thead>
         <tr>
           <th>Tag</th>
@@ -116,13 +116,13 @@
           <td>Errori, CDOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: parametro non supportato</td>
-          <td>{{link:esempio-searchfail}}</td>
+          <td>{{link:Examples-Example-searchfail}}</td>
         </tr>
         <tr>
           <td>Errori, CDOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: eccezione generica</td>
-          <td>{{link:esempio-exception}}</td>
+          <td>{{link:Examples-Example-exception}}</td>
         </tr>
         <tr>
           <td>Errori</td>
