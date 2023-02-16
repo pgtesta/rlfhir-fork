@@ -1,0 +1,63 @@
+{
+	"resourceType": "ServiceRequest",
+	"id": "esempio-ServiceRequest-PrestazioniSpecialistiche",
+	"meta": {
+		"lastUpdated": "2023-01-01T10:36:03Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche"
+		],
+		"versionId": "1"
+	},
+	"basedOn": [
+		{
+			"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+			"display": "CarePlan Progetto Individuale"
+		}
+	],
+	"requisition": {
+		"value": "A13848392"
+	},
+	"status": "active",
+	"intent": "order",
+	"code": {
+		"coding": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS",
+				"code": "0090042",
+				"display": "ADRENALINA - NORADRENALINA [P]"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+		"display": "Mario Rossi"
+	},
+	"occurrencePeriod": {
+		"start": "2022-01-01",
+		"end": "2023-02-01"
+	},
+	"note": [
+		{
+			"text": "Commenti aggiuntivi"
+		}
+	],
+	"extension": [
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli",
+			"extension": [
+				{
+					"url": "erogabileTelemedicina",
+					"valueBoolean": true
+				},
+				{
+					"url": "prenotabileStrutturaProssimita",
+					"valueBoolean": false
+				},
+				{
+					"url": "prescrizioneElettronica",
+					"valueBoolean": true
+				}
+			]
+		}
+	]
+}

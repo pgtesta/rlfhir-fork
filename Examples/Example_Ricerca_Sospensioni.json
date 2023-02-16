@@ -53,6 +53,250 @@
           }
         ]
       }
+    },
+    {
+      "fullUrl": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "365db2ec-973c-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-01-01T10:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+          ],
+          "versionId": "1"
+        },
+        "identifier": [
+          {
+            "value": "PI2023000000001"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "encounter": {
+          "reference": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
+          "display": "Accesso"
+        },
+        "period": {
+          "start": "2020-06-20",
+          "end": "2023-02-20"
+        },
+        "created": "2020-06-20",
+        "author": {
+          "reference": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
+          "display": "ASST DELLA BRIANZA"
+        },
+        "contributor": [
+          {
+            "reference": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
+            "display": "Professionista Sanitario"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
+            "display": "Patologia Primaria"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/eaa18194-974f-11ed-a8fc-0242ac120002",
+            "display": "Esito Valutazione"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
+            "display": "Obiettivi Salute"
+          }
+        ],
+        "activity": [
+          {
+            "reference": [
+              {
+                "reference": "ServiceRequest/f1471fc2-974f-11ed-a8fc-0242ac120002",
+                "display": "Prestazioni specialistiche"
+              }
+            ]
+          },
+          {
+            "reference": [
+              {
+                "reference": "MedicationRequest/fd5e5398-974f-11ed-a8fc-0242ac120002",
+                "display": "Ossigenoterapia"
+              }
+            ]
+          },
+          {
+            "reference": [
+              {
+                "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+                "display": "Terapia farmacologica"
+              }
+            ]
+          },
+          {
+            "reference": [
+              {
+                "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+                "display": "Servizi Socio Assistenziali"
+              }
+            ]
+          },
+          {
+            "reference": [
+              {
+                "reference": "ServiceRequest/22a7ca4e-9750-11ed-a8fc-0242ac120002",
+                "display": "Intervento Educazionale"
+              }
+            ]
+          },
+          {
+            "reference": [
+              {
+                "reference": "DeviceRequest/2c9f4810-9750-11ed-a8fc-0242ac120002",
+                "display": "Protesi Ausili"
+              }
+            ]
+          },
+          {
+            "reference": [
+              {
+                "reference": "ServiceRequest/9f9d22e4-9cbc-11ed-a8fc-0242ac120002",
+                "display": "Prestazioni Infermieristiche"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Questo PAI ha come obiettivo il controllo dell'evoluzione della malattia"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+            "valueUnsignedInt": "01"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "b7807e00-9745-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-01-01T10:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+          ],
+          "versionId": "1"
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "RSSMRA80A01F205X"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Rossi",
+            "given": [
+              "Mario"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1980-01-01",
+        "address": [
+          {
+            "use": "home",
+            "city": "015146",
+            "country": "IT"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
+              "code": "2",
+              "display": "Coniugato/a"
+            }
+          ]
+        },
+        "generalPractitioner": {
+          "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+          "display": "Medico Prescrittore"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
+            "valueCode": "ITA"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio",
+                  "code": "6",
+                  "display": "Laurea"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione",
+                  "code": "01",
+                  "display": "imprenditore"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica",
+                  "code": "5",
+                  "display": "Invalidità"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
+            "valueCode": "015146"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
+            "valueCode": "030321"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente",
+                  "code": "1",
+                  "display": "Paziente ordinario: utenza tipica"
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }

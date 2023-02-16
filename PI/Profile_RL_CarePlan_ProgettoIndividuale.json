@@ -58,6 +58,16 @@
       {
         "id": "CarePlan.identifier",
         "path": "CarePlan.identifier",
+        "short": "Identificativo univoco del progetto"
+      },
+      {
+        "id": "CarePlan.identifier.system",
+        "path": "CarePlan.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI"
+      },
+      {
+        "id": "CarePlan.identifier.value",
+        "path": "CarePlan.identifier.value",
         "short": "Identificativo univoco del progetto",
         "definition": "Stringa alfanumerica di 15 caratteri",
         "comment": "Il dato è detenuto dal SGDT"

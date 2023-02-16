@@ -1,4 +1,4 @@
-# Stati ed Errori HTTP
+# Stati ed Errori
 
 L'esito delle chiamate FHIR è definito dal codice di stato HTTP e dal contenuto del messaggio restituito.
 In aggiunta ai normali codici di stato HTTP, i seguenti codici sono utilizzati per descrivere stati o errori relativi a FHIR.

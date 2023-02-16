@@ -1,0 +1,67 @@
+{
+	"resourceType": "MedicationRequest",
+	"id": "esempio-MedicationRequest-Ossigenoterapia",
+	"meta": {
+		"lastUpdated": "2023-01-01T10:36:03Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia"
+		],
+		"versionId": "1"
+	},
+	"status": "active",
+	"intent": "order",
+	"medicationCodeableConcept": {
+		"coding": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaOssigeno",
+				"code": "OT1",
+				"display": "Ossigeno gassoso"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+		"display": "Mario Rossi"
+	},
+	"basedOn": {
+		"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+		"display": "Progetto individuale"
+	},
+	"note": [
+		{
+			"text": "Commenti aggiuntivi"
+		}
+	],
+	"dosageInstruction": [
+		{
+			"timing": {
+				"repeat": {
+					"boundsPeriod": {
+						"start": "2022-01-01",
+						"end": "2023-02-01"
+					}
+				}
+			},
+			"doseAndRate": [
+				{
+					"doseQuantity": {
+						"value": 2,
+						"unit": "%FiO2"
+					}
+				},
+				{
+					"rateQuantity": {
+						"value": 2,
+						"unit": "L/min"
+					}
+				}
+			]
+		}
+	],
+	"extension": [
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoADomicilio",
+			"valueBoolean": true
+		}
+	]
+}

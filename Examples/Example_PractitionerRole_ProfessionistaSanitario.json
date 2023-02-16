@@ -1,0 +1,34 @@
+{
+	"resourceType": "PractitionerRole",
+	"id": "esempio-PractitionerRole-ProfessionistaSanitario",
+	"meta": {
+		"lastUpdated": "2023-01-01T10:36:03Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+		],
+		"versionId": "1"
+	},
+	"period": {
+		"start": "2012-01-01",
+		"end": "2023-03-31"
+	},
+	"practitioner": {
+		"reference": "Practitioner/3a14db34-a959-11ed-afa1-0242ac120002",
+		"display": "Dr Luca Verdi"
+	},
+	"organization": {
+		"reference": "Organization/52b1a05a-a959-11ed-afa1-0242ac120002",
+		"display": "ASST DELLA BRIANZA"
+	},
+	"code": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario",
+					"code": "PROFSAN04",
+					"display": "Medico di Medicina Generale"
+				}
+			]
+		}
+	]
+}

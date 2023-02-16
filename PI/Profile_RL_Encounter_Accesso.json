@@ -25,6 +25,16 @@
       {
         "id": "Encounter.identifier",
         "path": "Encounter.identifier",
+        "short": "Codice identificativo univoco dell'accesso"
+      },
+      {
+        "id": "Encounter.identifier.system",
+        "path": "Encounter.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoAccesso"
+      },
+      {
+        "id": "Encounter.identifier.value",
+        "path": "Encounter.identifier.value",
         "short": "Codice identificativo univoco dell'accesso",
         "definition": "Stringa alfanumerica",
         "comment": "Il dato è detenuto dal SGDT"

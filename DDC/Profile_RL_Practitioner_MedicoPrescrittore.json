@@ -84,10 +84,20 @@
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
         "short": "Codice fiscale del medico prescrittore",
-        "definition": "Stringa alfanumerica di 16 caratteri",
-        "comment": "La fonte del dato è il campo  CD_FISCALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documeto DC-DDC-SIAA#01",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "short": "Codice fiscale del medico prescrittore",
+        "definition": "Stringa alfanumerica di 16 caratteri",
+        "comment": "La fonte del dato è il campo  CD_FISCALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documeto DC-DDC-SIAA#01"
       },
       {
         "id": "Practitioner.name",

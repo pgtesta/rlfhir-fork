@@ -73,7 +73,15 @@
         "id": "MessageHeader.focus",
         "path": "MessageHeader.focus",
         "short": "Codifica risposta validazione",
-        "definition": "Reference al profilo RLOperationOutcome"
+        "definition": "Reference al profilo RLOperationOutcome",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome"
+            ]
+          }
+        ]
       }
     ]
   }

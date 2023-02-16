@@ -220,7 +220,7 @@
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di prestazione",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPrestazione"
         }
       },
       {

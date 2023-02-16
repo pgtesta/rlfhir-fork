@@ -22,6 +22,16 @@
       {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
+        "short": "Codice fiscale del professionista sanitario"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
         "short": "Codice fiscale del professionista sanitario",
         "definition": "Stringa alfanumerica di 16 caratteri",
         "comment": "Il dato è detenuto dal SGDT"

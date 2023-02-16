@@ -363,7 +363,7 @@
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
-            "valueCode": "TBD"
+            "valueCode": "030321"
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",
@@ -695,6 +695,10 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
+            "valueDateTime": "2022-01-01"
           }
         ]
       }

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-02-01T08:25:06.555932+00:00"
+    "lastUpdated": "2023-02-15T11:06:07.3458647+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -173,6 +173,24 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
+        "id": "ServiceRequest.extension:dataDimissione",
+        "path": "ServiceRequest.extension",
+        "sliceName": "dataDimissione",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"CDOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (CDOM) il codice corrisponde al numero della pratica",
@@ -271,7 +289,7 @@
       {
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
-        "short": "Periodo di erogazione del servizio di cure domiciliari (CDOM)",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il periodo di ricovero domiciliare",
         "type": [
           {
             "code": "Period"
