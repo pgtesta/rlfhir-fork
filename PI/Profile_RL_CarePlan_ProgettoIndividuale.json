@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2023-01-31T17:25:44.2756377+00:00"
+    "lastUpdated": "2023-02-16T16:21:02.4634375+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -222,6 +222,7 @@
         "short": "Allergie del paziente",
         "definition": "Reference ai profilo RLAllergyIntoleranceAllergie contenente i dettagli delle allergie del paziente",
         "comment": "Il dato è detenuto dal SGDT ma non è attualmente inserito all'interno del progetto individuale",
+        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -254,6 +255,7 @@
         "short": "Stile di vita del paziente",
         "definition": "Reference ai profilo RLObservationStiliVita contente i dettagli sullo stile di vita del paziente",
         "comment": "Il dato è detenuto dal SGDT ma non è attualmente inserito all'interno del progetto individuale",
+        "max": "0",
         "type": [
           {
             "code": "Reference",
@@ -270,6 +272,7 @@
         "short": "Esenzioni relative al paziente",
         "definition": "Reference al profilo RLCoverageEsenzione contenente le esenzioni relative al cittadino",
         "comment": "Il dato è acquisto dal servizio di identificazione del cittadino del SISS",
+        "max": "0",
         "type": [
           {
             "code": "Reference",
