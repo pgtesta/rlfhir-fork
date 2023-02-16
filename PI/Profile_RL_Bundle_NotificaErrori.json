@@ -4,7 +4,12 @@
   "name": "RLBundleNotificaErrori",
   "status": "draft",
   "description": "Profilo volto a contenere le informazioni utili a tener traccia delle risorse che falliscono i controlli di coerenza.",
-  "fhirVersion": "4.0.1",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],"fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Bundle",
