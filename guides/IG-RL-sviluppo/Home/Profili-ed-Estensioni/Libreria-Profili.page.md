@@ -26,7 +26,7 @@
       <input id="myInput" type="text" placeholder="Cerca.." />
     </div>
     <br />
-    <table>
+    <table  style="width: fit-content">
       <thead>
         <tr>
           <th>Tag</th>

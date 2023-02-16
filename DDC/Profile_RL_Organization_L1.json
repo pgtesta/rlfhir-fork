@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL1",
   "meta": {
-    "lastUpdated": "2023-01-23T14:00:44.9975524+00:00"
+    "lastUpdated": "2023-02-16T15:52:06.5505433+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
   "name": "RLOrganizationL1",
@@ -169,6 +169,11 @@
         }
       },
       {
+        "id": "Organization.identifier:CF.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
         "id": "Organization.identifier:CF.value",
         "path": "Organization.identifier.value",
         "short": "Codice fiscale dell'ente",
@@ -188,7 +193,7 @@
       {
         "id": "Organization.identifier:L1.system",
         "path": "Organization.identifier.system",
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte"
       },
       {
         "id": "Organization.identifier:L1.value",
@@ -319,6 +324,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Organization.address.extension:DistrettoCode.url",
+        "path": "Organization.address.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
       },
       {
         "id": "Organization.address.extension:DistrettoCode.value[x]",

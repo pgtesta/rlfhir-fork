@@ -3,6 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza",
   "name": "RLMessageHeaderControlloCoerenza",
   "status": "draft",
+  "description": "Profilo volto a notificare all'ente chiamato la presenza di errori di coerenza dei dati inviati.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",

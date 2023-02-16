@@ -4,6 +4,7 @@
   "name": "RLOperationOutcome",
   "id": "RLOperationOutcome",
   "status": "draft",
+  "description": "Profilo volto a restituire il dettaglio del controllo di coerenza non superato.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",

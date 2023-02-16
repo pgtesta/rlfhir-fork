@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
-  "id": "CodeSystem-SIAD-PrestazioneADI",
-  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-PrestazioneADI",
+  "id": "CodeSystem-SIAD-PrestazioniADI",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-PrestazioniADI",
   "version": "1.0.0",
   "name": "SIAD Prestazione ADI",
   "status": "draft",

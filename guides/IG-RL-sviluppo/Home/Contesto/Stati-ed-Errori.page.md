@@ -6,9 +6,11 @@ In aggiunta ai normali codici di stato HTTP, i seguenti codici sono utilizzati p
 Nella pagina {{pagelink:Home/Esempi/Libreria-Esempi.page.md, Libreria Esempi}}, sono inoltre presenti alcuni esempi di errore.
 
 ## Ricerche
-
 In caso una ricerca venga eseguita correttamente, verrà restituito uno stato HTTP della categoria 2xx e il corpo della risposta conterrà una risorsa FHIR di tipo Bundle.
-In caso non possa essere eseguita, la risposta contiene il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa nel corpo.
+In caso tale chiamata vada in errore, la risposta conterrà il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa OperationOutcome nel corpo. Il profilo OperationOutcome è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome}}.
+
+Per consultare l'associazione completa tra i codici http e i codici di errore utilizzati nell'Operation Outcome di risposta si può fare riferimento al seguente codesystem: {{link:CodeSystem-OperationOutcome-CodiciErrore}}.
+
 
 |Codice Stato|Descrizione|
 |---|---|
@@ -20,8 +22,7 @@ In caso non possa essere eseguita, la risposta contiene il codice di errore HTTP
 
 ## Creazioni
 In caso una chiamata di creazione (ad esempio POST) vada a buon fine, verrà restituito al chiamante uno stato HTTP della categoria 2xx.
-In caso tale chiamata vada in errore, la risposta conterrà il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa OperationOutcome nel corpo. Il profilo OperationOutcome è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome}}.
-
+In caso non possa essere eseguita, la risposta contiene il codice di errore HTTP delle categorie 4xx e 5xx e la risorsa nel corpo.
 
 |Codice Stato|Descrizione|
 |---|---|
@@ -32,4 +33,3 @@ In caso tale chiamata vada in errore, la risposta conterrà il codice di errore 
 |422 Unprocessable Entity | La risorsa da creare non soddisfa i profili o regole criteri FHIR definiti|
 |500 Internal Server Error | Messaggio di errore generico|
 
-Per consultare l'associazione completa tra i codici http e i codici di errore utilizzati nell'Operation Outcome di risposta si può fare riferimento al seguente codesystem: {{link:CodeSystem-OperationOutcome-CodiciErrore}}.
