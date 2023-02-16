@@ -26,7 +26,7 @@
       <input id="myInput" type="text" placeholder="Cerca.." />
     </div>
     <br />
-    <table  style="width: fit-content">
+    <table style="width: fit-content">
       <thead>
         <tr>
           <th>Tag</th>
@@ -37,22 +37,6 @@
         </tr>
       </thead>
       <tbody id="myTable">
-        <tr>
-          <td>Errori</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleNotificaErrori.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
-          </td>
-          <td>
-            Profilo volto a contenere le informazioni utili a
-            tener traccia delle risorse che falliscono i controlli di coerenza.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNotificaErrori}}
-          </td>
-        </tr>
         <tr>
           <td>CDOM</td>
           <td>
@@ -177,6 +161,23 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}
+          </td>
+        </tr>
+        <tr>
+          <td>Errori</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleNotificaErrori.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a contenere le informazioni utili a
+            tener traccia delle risorse che falliscono i controlli
+            di coerenza.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNotificaErrori}}
           </td>
         </tr>
         <tr>
@@ -384,7 +385,10 @@
           <td>
             <a href="http://hl7.org/fhir/R4/messageheader.html">MessageHeader</a>
           </td>
-          <td>(missing)</td>
+          <td>
+            Profilo volto a notificare all'ente chiamato la presenza
+            di errori di coerenza dei dati inviati.
+          </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza}}
           </td>
@@ -429,7 +433,10 @@
           <td>
             <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>
           </td>
-          <td>(missing)</td>
+          <td>
+            Profilo volto a restituire il dettaglio del controllo
+            di coerenza non superato.
+          </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome}}
           </td>
