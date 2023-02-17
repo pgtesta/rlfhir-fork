@@ -9,7 +9,7 @@ Questa versione della Implementation Guide fa riferimento agli elementi FHIR con
 ## Novità
 ### Risorse FHIR
 - modificati i valueset e codesystem
-- modificati i profili: RLPractitionerRoleMedicoPrescrittore, RLPractitionerMedicoPrescrittore, RLOrganizationL1
+- modificati i profili: RLPractitionerRoleMedicoPrescrittore, RLPractitionerMedicoPrescrittore, RLOrganizationL1, RLServiceRequestServiziSocioAssistenziali, RLProcedurePrestazioni, RLOperationOutcome, RLMessageHeaderControlloCoerenza, RLCarePlanProgettoIndividuale, RLBundleNotificaErrori
 - aggiunti gli esempi per i profili: RLObservationEsitoValutazione, RLMedicationRequestTerapiaFarmacologica, RLMedicationRequestRequestOssigenoterapia, RLGoalObiettiviSalute, RLEncounterEncounterAccesso, RLDeviceRequestProtesiAusili, RLConditionPatologiaPrimariaSecondariaUlteriore, RLCareTeamTeamEquipe, RLCarePlanProgettoIndividuale, RLServiceRequestServiziSocioAssistenziali, RLPractitionerRoleProfessionistaSanitario, RLPractitionerRoleOperatoreADI, RLPractitionerProfessionistaSanitario, RLServiceRequestInterventoEducazionale, RLServiceRequestPrestazioniInfermieristiche, RLServiceRequestPrestazioniSpecialistiche, RLServiceRequestRivalutazione, RLServiceRequestServiziSocioAssistenziali, RLServiceRequestSospensioneADI, RLBundleNotificaErrori
 
 ### Implementation Guide
