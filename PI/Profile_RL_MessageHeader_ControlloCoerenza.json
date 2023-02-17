@@ -3,6 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderControlloCoerenza",
   "name": "RLMessageHeaderControlloCoerenza",
   "status": "draft",
+  "description": "Profilo volto a notificare all'ente chiamato la presenza di errori di coerenza dei dati inviati.",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
@@ -73,7 +74,15 @@
         "id": "MessageHeader.focus",
         "path": "MessageHeader.focus",
         "short": "Codifica risposta validazione",
-        "definition": "Reference al profilo RLOperationOutcome"
+        "definition": "Reference al profilo RLOperationOutcome",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome"
+            ]
+          }
+        ]
       }
     ]
   }

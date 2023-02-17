@@ -1,0 +1,36 @@
+{
+	"resourceType": "Condition",
+	"id": "esempio-Condition-PatologiaPrimariaSecondariaUlteriore",
+	"meta": {
+		"lastUpdated": "2023-01-01T10:36:03Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
+		],
+		"versionId": "1"
+	},
+	"category": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia",
+					"code": "1",
+					"display": "Patologia primaria"
+				}
+			]
+		}
+	],
+	"code": {
+		"coding": [
+			{
+				"system": "TBD",
+				"code": "TBD",
+				"display": "TBD"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+		"display": "Mario Rossi"
+	},
+	"recordedDate": "2022-05-24"
+}

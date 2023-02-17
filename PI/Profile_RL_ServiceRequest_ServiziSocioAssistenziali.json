@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-02-01T08:25:06.555932+00:00"
+    "lastUpdated": "2023-02-16T16:01:07.7972333+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -86,6 +86,11 @@
         "max": "1"
       },
       {
+        "id": "ServiceRequest.extension:dettagliAttivazione.url",
+        "path": "ServiceRequest.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione"
+      },
+      {
         "id": "ServiceRequest.extension:soggettoProponentePIC",
         "path": "ServiceRequest.extension",
         "sliceName": "soggettoProponentePIC",
@@ -104,9 +109,18 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding",
-        "path": "ServiceRequest.extension.value[x].coding",
-        "short": "Codice e descrizione del soggetto che ha proposto la presa in carico dell'assistito"
+        "id": "ServiceRequest.extension:soggettoProponentePIC.url",
+        "path": "ServiceRequest.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC"
+      },
+      {
+        "id": "ServiceRequest.extension:soggettoProponentePIC.value[x]",
+        "path": "ServiceRequest.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
         "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding.code",
@@ -145,6 +159,11 @@
         "isModifier": false
       },
       {
+        "id": "ServiceRequest.extension:causaleDimissione.url",
+        "path": "ServiceRequest.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione"
+      },
+      {
         "id": "ServiceRequest.extension:causaleDimissione.value[x]",
         "path": "ServiceRequest.extension.value[x]",
         "type": [
@@ -173,8 +192,36 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
+        "id": "ServiceRequest.extension:dataDimissione",
+        "path": "ServiceRequest.extension",
+        "sliceName": "dataDimissione",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"CDOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
+        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (CDOM) il codice corrisponde al numero della pratica"
+      },
+      {
+        "id": "ServiceRequest.identifier.system",
+        "path": "ServiceRequest.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenzaiel"
+      },
+      {
+        "id": "ServiceRequest.identifier.value",
+        "path": "ServiceRequest.identifier.value",
         "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (CDOM) il codice corrisponde al numero della pratica",
         "definition": "Nel caso delle cure domiciliari (CDOM) è un codice numerico progressivo di 6 cifre (da 000001 a 999999)",
         "comment": "Il dato è detenuto dal SGDT"
@@ -271,7 +318,7 @@
       {
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
-        "short": "Periodo di erogazione del servizio di cure domiciliari (CDOM)",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il periodo di ricovero domiciliare",
         "type": [
           {
             "code": "Period"

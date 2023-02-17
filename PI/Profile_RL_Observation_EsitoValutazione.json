@@ -132,13 +132,6 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
-        "id": "Observation.component.code.coding.code",
-        "path": "Observation.component.code.coding.code",
-        "short": "Codice della valutazione specifica al quale iil paziente è stato sottoposto",
-        "definition": "Stringa alfanumerica di 4 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
         "id": "Observation.component.code.coding.display",
         "path": "Observation.component.code.coding.display",
         "short": "Descrizione del risultato dell'elaborazioe PVC o PHC",

@@ -92,7 +92,7 @@
     },
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
-      "valueCode": "TBD"
+      "valueCode": "030321"
     },
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",

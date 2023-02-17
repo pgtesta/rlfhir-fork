@@ -1,0 +1,25 @@
+{
+	"resourceType": "Goal",
+	"id": "esempio-Goal-ObiettiviSalute",
+	"meta": {
+		"lastUpdated": "2023-01-01T10:36:03Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
+		],
+		"versionId": "1"
+	},
+	"lifecycleStatus": "planned",
+	"description": {
+		"coding": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute",
+				"code": "01",
+				"display": "Controllo episodi di riacutizzazione"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+		"display": "Mario Rossi"
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"resourceType": "ServiceRequest",
+	"id": "esempio-ServiceRequest-PrestazioniInfermieristiche",
+	"meta": {
+		"lastUpdated": "2023-01-01T10:36:03Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche"
+		],
+		"versionId": "1"
+	},
+	"basedOn": [
+		{
+			"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+			"display": "CarePlan Progetto Individuale"
+		}
+	],
+	"status": "active",
+	"intent": "order",
+	"code": {
+		"coding": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche",
+				"code": "[ADI]_001",
+				"display": "Accessi domiciliari"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+		"display": "Mario Rossi"
+	},
+	"occurrenceTiming": {
+		"repeat": {
+			"boundsPeriod": {
+				"start": "2022-01-01",
+				"end": "2023-02-01"
+			},
+			"frequency": 1,
+			"period": 1,
+			"periodUnit": "d"
+		}
+	},
+	"reasonReference": {
+		"reference": "Condition/3d38668c-9cc0-11ed-a8fc-0242ac120002",
+		"display": "Problema infermieristico "
+	},
+	"note": [
+		{
+			"text": "Commenti aggiuntivi"
+		}
+	]
+}

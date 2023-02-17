@@ -38,7 +38,6 @@
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
         "short": "Cittadinanza del cittadino",
-        "definition": "Il campo deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "min": 0,
         "max": "1",
         "type": [
@@ -52,11 +51,16 @@
         "isModifier": false
       },
       {
+        "id": "Patient.extension:cittadinanza.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza"
+      },
+      {
         "id": "Patient.extension:cittadinanza.value[x]",
         "path": "Patient.extension.value[x]",
         "short": "Codice ISTAT della nazione di cittadinanza del cittadino",
         "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
+        "comment": "il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "code"
@@ -80,6 +84,11 @@
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio"
       },
       {
         "id": "Patient.extension:titoloDiStudio.value[x]",
@@ -106,7 +115,8 @@
         "id": "Patient.extension:titoloDiStudio.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descizione che rappresenta il titolo di studio del cittadino",
-        "definition": "Stringa alfanumerica al più di 50 caratteri"
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.extension:posizioneDellaProfessione",
@@ -125,6 +135,11 @@
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione"
       },
       {
         "id": "Patient.extension:posizioneDellaProfessione.value[x]",
@@ -172,6 +187,11 @@
         "isModifier": false
       },
       {
+        "id": "Patient.extension:situazionePensionistica.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica"
+      },
+      {
         "id": "Patient.extension:situazionePensionistica.value[x]",
         "path": "Patient.extension.value[x]",
         "type": [
@@ -217,6 +237,11 @@
         "isModifier": false
       },
       {
+        "id": "Patient.extension:luogoDiNascita.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita"
+      },
+      {
         "id": "Patient.extension:luogoDiNascita.value[x]",
         "path": "Patient.extension.value[x]",
         "short": "Se il cittadino è nato in Italia il campo contiente il codice ISTAT del comune di nascita. Se il cittadino è nasto all'estero il campo contiente il codice \"999\" seguito dal codice ISTAT della nazione di nascita. Per gli apolidi o non rilevati il campo riporta il codice \"999999\".",
@@ -244,6 +269,11 @@
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Patient.extension:ATSResidenza.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
       },
       {
         "id": "Patient.extension:ATSResidenza.value[x]",
@@ -276,23 +306,35 @@
         "isModifier": false
       },
       {
+        "id": "Patient.extension:responsabilitaGenitoriale.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientResponsabilitaGenitoriale"
+      },
+      {
+        "id": "Patient.extension:responsabilitaGenitoriale.value[x]",
+        "path": "Patient.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
-        "short": "Codice della responsabilità genitoriale nei confronti dell’assistito, se minorenne",
+        "short": "Codice della responsabilità genitoriale nei confronti dell’assistito, se minorenne.",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
         "binding": {
           "strength": "required",
-          "description": "ValueSet relativo alla codifica delle responsabilità genitoriale",
           "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale"
         }
       },
       {
         "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
-        "short": "Descrizione della responsabilità genitoriale nei confronti dell’assistito, se minorenne",
-        "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "short": "Descrizione della responsabilità genitoriale nei confronti dell’assistito, se minorenne.",
+        "definition": "Stringa alfanumerica al più di 50 caratteri"
       },
       {
         "id": "Patient.extension:tipologiaCittadino",
@@ -313,6 +355,20 @@
         "isModifier": false
       },
       {
+        "id": "Patient.extension:tipologiaCittadino.url",
+        "path": "Patient.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino"
+      },
+      {
+        "id": "Patient.extension:tipologiaCittadino.value[x]",
+        "path": "Patient.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
         "id": "Patient.extension:tipologiaCittadino.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
         "short": "Codice che rappresenta la condizione clinica prevalente dell’assistito",
@@ -327,7 +383,6 @@
       {
         "id": "Patient.extension:tipologiaCittadino.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
-        "short": "Descrizione della condizione clinica prevalente dell’assistito",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
@@ -374,7 +429,7 @@
       {
         "id": "Patient.identifier:STP.system",
         "path": "Patient.identifier.system",
-        "fixedUri": "http://hl7.it/fhir/sid/STP"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/stp"
       },
       {
         "id": "Patient.identifier:STP.value",
@@ -404,9 +459,9 @@
         "min": 0
       },
       {
-        "id": "Patient.identifier:tesseraTEAM.extension:myExtension",
+        "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
         "path": "Patient.identifier.extension",
-        "sliceName": "myExtension",
+        "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
         "short": "Numero di identificazione dell’istituzione” o ”identifica-tion number of the institution” indicata sulla TEAM",
         "comment": "Punto 7 della tessara TEAM",
         "min": 0,
@@ -429,7 +484,7 @@
       {
         "id": "Patient.identifier:tesseraTEAM.system",
         "path": "Patient.identifier.system",
-        "fixedUri": "http://hl7.it/fhir/sid/tesseraTEAM"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
       },
       {
         "id": "Patient.identifier:tesseraTEAM.value",
@@ -475,7 +530,6 @@
         "id": "Patient.gender",
         "path": "Patient.gender",
         "short": "Sesso del paziente",
-        "comment": "NAR",
         "min": 1
       },
       {
@@ -487,6 +541,11 @@
         "min": 1
       },
       {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "short": "Domicilio del cittadino"
+      },
+      {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
         "definition": "Valore fisso su \"home\"",
@@ -496,13 +555,14 @@
         "id": "Patient.address.city",
         "path": "Patient.address.city",
         "short": "Codice ISTAT della città di domicilio del cittadino",
-        "definition": "Stringa numerica di 6 cifre"
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.address.country",
         "path": "Patient.address.country",
         "short": "Codice Stato Estero di residenza del paziente",
-        "definition": "Collegamento al sito ISTAT",
+        "definition": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il cittadino è in carico ad un ente erogatre di cure domiciliari",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {

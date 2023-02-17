@@ -9,12 +9,8 @@
   },
   "identifier": [
     {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceRegionale",
+      "system": "https://fhir.siss.regione.lombardia.it/sid/codiceRegionaleMedicoPrescrittore",
       "value": "123456789"
-    },
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceMedicoSpecialista",
-      "value": "135985"
     }
   ],
   "active": true,

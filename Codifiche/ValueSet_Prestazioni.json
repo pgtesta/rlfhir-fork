@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
   "id": "ValueSet-TipologiaPrestazione",
-  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni",
   "version": "1.0.0",
-  "name": "SGDT Tipologia Prestazione",
+  "name": "Prestazione",
   "status": "draft",
   "date": "2023-01-24",
   "description": "ValueSet relativo alla tipologia di prestazione",
   "compose": {
     "include": [
       {
-        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaPrestazione",
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-PrestazioniADI",
         "version": "1.0.0",
         "concept": [
           {

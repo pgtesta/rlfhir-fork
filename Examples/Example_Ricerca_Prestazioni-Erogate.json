@@ -201,6 +201,10 @@
                 }
               ]
             }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
+            "valueDateTime": "2022-01-01"
           }
         ]
       }
@@ -416,7 +420,7 @@
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
-            "valueCode": "TBD"
+            "valueCode": "030321"
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",
@@ -429,6 +433,54 @@
                 }
               ]
             }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "Location",
+        "id": "a6ec490e-98a1-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-01-01T10:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom"
+          ],
+          "versionId": "1"
+        },
+        "physicalType": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo",
+              "code": "1",
+              "display": "Propria Residenza"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/a6ec490e-98a1-11ed-a8fc-0242ac990002",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "a6ec490e-98a1-11ed-a8fc-0242ac990002",
+        "meta": {
+          "lastUpdated": "2023-01-01T10:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+          ],
+          "versionId": "1"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore",
+                "code": "3",
+                "display": "Infermiere"
+              }
+            ]
           }
         ]
       }

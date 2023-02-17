@@ -1,20 +1,20 @@
 {
   "resourceType": "OperationOutcome",
   "id": "esempio-searchfail",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"\n>      <p>The \"name\" parameter has the modifier \"exact\" which is not supported by this server</p>\n    </div>"
-  },
   "issue": [
     {
-      "severity": "fatal",
-      "code": "code-invalid",
+      "severity": "error",
+      "code": "VALIDATION_ERROR",
       "details": {
-        "text": "The \"name\" parameter has the modifier \"exact\" which is not supported by this server"
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore",
+            "code": "RSRC_VERSION_INCOH",
+            "display": "Incoerenza sul versione della risorsa"
+          }
+        ]
       },
-      "location": [
-        "http.name:exact"
-      ]
+      "diagnostics": "Fallito il controllo di coerenza: RSRC_VERSION_INCOH. La risorsa da controllare e': Organization/11f6b3ee-82f2-11ed-b856-02001700b287"
     }
   ]
 }

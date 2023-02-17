@@ -31,13 +31,6 @@
         "fixedCode": "planned"
       },
       {
-        "id": "Goal.achievementStatus",
-        "path": "Goal.achievementStatus",
-        "short": "Stato di raggiungimento dell'obbiettivo di salute",
-        "definition": "Da definire una codifica il linea con i valori dello standard",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
         "id": "Goal.description",
         "path": "Goal.description",
         "short": "Codifica e descrizione dell' obbiettivo di salute definito per il paziente"
