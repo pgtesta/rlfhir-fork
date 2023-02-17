@@ -127,19 +127,13 @@
         <tr>
           <td>Errori</td>
           <td>Bundle</td>
-          <td>
-            Esempio di messaggio di notifica errore di coerenza in caso di ricerca
-            tramite parametri
-          </td>
+          <td>Esempio di messaggio di notifica errore di coerenza in caso di ricerca tramite parametri</td>
           <td>{{link:esempio-bundle-notifica-errori-bundle}}</td>
         </tr>
         <tr>
           <td>Errori</td>
           <td>Bundle</td>
-          <td>
-            Esempio di messaggio di notifica errore di coerenza in caso di ricerca
-            tramite ID
-          </td>
+          <td>Esempio di messaggio di notifica errore di coerenza in caso di ricerca tramite ID</td>
           <td>{{link:esempio-bundle-notifica-errori-resource}}</td>
         </tr>
         <tr>
@@ -199,9 +193,7 @@
         <tr>
           <td>PI</td>
           <td>Condition</td>
-          <td>
-            Esempio del profilo RLConditionPatologiaPrimariaSecondariaUlteriore
-          </td>
+          <td>Esempio del profilo RLConditionPatologiaPrimariaSecondariaUlteriore</td>
           <td>{{link:esempio-Condition-PatologiaPrimariaSecondariaUlteriore}}</td>
         </tr>
         <tr>
@@ -243,16 +235,14 @@
         <tr>
           <td>PLO</td>
           <td>Bundle</td>
-          <td>
-            Esempio di bundle di risposta per il numero di posti letto occupati
-          </td>
+          <td>Esempio di bundle di risposta per il numero di posti letto occupati</td>
           <td>{{link:esempio-bundle-PLO-esitopositivo}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestInterventoEducazionale</td>
-          <td>{{link:Examples-Example-ServiceRequest-InverventoEducazionale}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-InterventoEducazionale}}</td>
         </tr>
         <tr>
           <td>PI</td>
