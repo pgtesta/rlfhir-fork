@@ -1,4 +1,5 @@
 # IG RLFHIR Sviluppo 2.5.1-beta
+Versione rilasciata il 25/01/2023
 
 ## Novità
 - modifiche cartella PI e DDC
