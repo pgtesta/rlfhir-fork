@@ -116,13 +116,13 @@
           <td>Errori, CDOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: parametro non supportato</td>
-          <td>{{link:esempio-searchfail}}</td>
+          <td>{{link:Examples-Example-searchfail}}</td>
         </tr>
         <tr>
           <td>Errori, CDOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: eccezione generica</td>
-          <td>{{link:esempio-exception}}</td>
+          <td>{{link:Examples-Example-exception}}</td>
         </tr>
         <tr>
           <td>Errori</td>
@@ -220,7 +220,7 @@
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestServiziSocioAssistenziali</td>
-          <td>{{link:esempio-ServiceRequest-ServiziSocioAssistenziali}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-ServiziSocioAssistenziali}}</td>
         </tr>
         <tr>
           <td>PI</td>
@@ -252,37 +252,37 @@
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestInterventoEducazionale</td>
-          <td>{{link:esempio-ServiceRequest-InterventoEducazionale}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-InverventoEducazionale}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestPrestazioniInfermieristiche</td>
-          <td>{{link:esempio-ServiceRequest-PrestazioniInfermieristiche}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-PrestazioniInfermieristiche}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestPrestazioniSpecialistiche</td>
-          <td>{{link:esempio-ServiceRequest-PrestazioniSpecialistiche}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-PrestazioniSpecialistiche}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestRivalutazione</td>
-          <td>{{link:esempio-ServiceRequest-Rivalutazione}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-Rivalutazione}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestServiziSocioAssistenziali</td>
-          <td>{{link:esempio-ServiceRequest-ServiziSocioAssistenziali}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-ServiziSocioAssistenziali}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestSospensioneADI</td>
-          <td>{{link:esempio-ServiceRequest-SospensioneADI}}</td>
+          <td>{{link:Examples-Example-ServiceRequest-SospensioneADI}}</td>
         </tr>
       </tbody>
     </table>
