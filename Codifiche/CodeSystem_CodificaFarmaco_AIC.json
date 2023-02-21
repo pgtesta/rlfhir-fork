@@ -1,0 +1,11 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "CodeSystem-DDC-Farmaco-AIC",
+	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC",
+	"version": "1.0.0",
+	"name": "DDC Farmaco AIC",
+	"status": "draft",
+	"date": "2023-01-24",
+	"description": "CodeSystem che identifica l'anagrafica dei farmaci secondo la codifica ministeriale AIC",
+	"content": "complete"
+}
