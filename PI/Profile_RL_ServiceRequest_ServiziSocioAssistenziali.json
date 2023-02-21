@@ -217,7 +217,7 @@
       {
         "id": "ServiceRequest.identifier.system",
         "path": "ServiceRequest.identifier.system",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenzaiel"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale"
       },
       {
         "id": "ServiceRequest.identifier.value",

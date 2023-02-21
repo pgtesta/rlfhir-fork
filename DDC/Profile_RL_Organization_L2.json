@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL2",
   "meta": {
-    "lastUpdated": "2022-12-06T08:20:41.3459927+00:00"
+    "lastUpdated": "2023-02-21T09:19:56.7167202+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
   "name": "RLOrganizationL2",
@@ -172,22 +172,9 @@
       {
         "id": "Organization.type",
         "path": "Organization.type",
-        "short": "Descrizione del tipo di presidio",
+        "short": "Codifica del tipo di presidio",
         "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "I valori della codifica sono rapressentati nella tabella 5.2 presente nel documento consultabile nella sezione 'Documentation' del profilo."
-      },
-      {
-        "id": "Organization.type.coding",
-        "path": "Organization.type.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "code"
-            }
-          ],
-          "rules": "open"
-        }
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
       },
       {
         "id": "Organization.type.coding.system",
@@ -195,30 +182,16 @@
         "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
       },
       {
-        "id": "Organization.type.coding:TipoPresidio",
-        "path": "Organization.type.coding",
-        "sliceName": "TipoPresidio",
-        "short": "Descrizione del tipo di presidio",
-        "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2"
-      },
-      {
-        "id": "Organization.type.coding:TipoPresidio.system",
-        "path": "Organization.type.coding.system",
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
-      },
-      {
-        "id": "Organization.type.coding:TipoPresidio.code",
+        "id": "Organization.type.coding.code",
         "path": "Organization.type.coding.code",
-        "short": "Descrizione del tipo di struttura L2",
-        "definition": "Stringa alfanumerica di al più 3 caratteri.",
-        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2_LR22 della tabella LR22_l2",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "description": "ValueSet relativo alla tipologia UdO",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2"
-        }
+        "short": "Codice del tipo di presidio",
+        "definition": "Stringa alfabetica di 3 caratteri",
+        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+      },
+      {
+        "id": "Organization.type.coding.display",
+        "path": "Organization.type.coding.display",
+        "short": "Descrizione del tipo di presidio"
       },
       {
         "id": "Organization.name",
@@ -432,12 +405,6 @@
         "definition": "Reference al profilo Organization L1",
         "type": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
-                "valueBoolean": true
-              }
-            ],
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"

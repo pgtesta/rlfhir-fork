@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "ValueSet-SGDT_TipologiaAccesso",
+  "id": "ValueSet-SGDT-TipologiaAccesso",
   "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
   "version": "1.0.0",
   "name": "SGDT TipologiaAccesso",
@@ -14,12 +14,12 @@
         "version": "1.0.0",
         "concept": [
           {
-            "code": "01",
+            "code": "ACCAM",
             "display": "Amministrativo"
           },
           {
-            "code": "02",
-            "display": "Dimissione Protetta"
+            "code": "ACCSS",
+            "display": "Socio-sanitario"
           }
         ]
       }

@@ -79,13 +79,13 @@
         "id": "Observation.performer",
         "path": "Observation.performer",
         "short": "Profilo del professionista sanitario che ha effettualto la valutazione",
-        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore del professionista sanitario che compila la valutazione",
+        "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario del professionista sanitario che compila la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
             ]
           }
         ]

@@ -1,44 +1,44 @@
 {
-	"resourceType": "Encounter",
-	"id": "esempio-Encounter-Accesso",
-	"meta": {
-		"lastUpdated": "2023-01-01T10:36:03Z",
-		"profile": [
-			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
-		],
-		"versionId": "1"
-	},
-	"identifier": [
-		{
-			"value": "2023000000001"
-		}
-	],
-	"status": "in-progress",
-	"class": {
-		"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
-		"code": "01",
-		"display": "Amministrativo"
-	},
-	"subject": {
-		"reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002",
-		"display": "Mario Rossi"
-	},
-	"period": {
-		"start": "2023-01-01T10:36:03Z"
-	},
-	"reasonCode": [
-		{
-			"coding": [
-				{
-					"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
-					"code": "01",
-					"display": "Accesso Spontaneo"
-				}
-			]
-		}
-	],
-	"serviceProvider": {
-		"reference": "Organization/e5002d24-a958-11ed-afa1-0242ac120002",
-		"display": "ASST DELLA BRIANZA"
-	}
+  "resourceType": "Encounter",
+  "id": "esempio-Encounter-Accesso",
+  "meta": {
+    "lastUpdated": "2023-01-01T10:36:03Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "value": "2023000000001"
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
+    "code": "01",
+    "display": "Amministrativo"
+  },
+  "subject": {
+    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "period": {
+    "start": "2023-01-01T10:36:03Z"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
+          "code": "01",
+          "display": "Accesso Spontaneo"
+        }
+      ]
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/e5002d24-a958-11ed-afa1-0242ac120002",
+    "display": "ASST DELLA BRIANZA"
+  }
 }

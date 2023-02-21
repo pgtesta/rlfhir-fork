@@ -21,7 +21,8 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
-        "short": "Codice e descrizione del problema rilevato durante la valutazione infermieristica"
+        "short": "Codice e descrizione del problema rilevato durante la valutazione infermieristica",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei problemi infermieristici contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Condition.code.coding",
@@ -31,7 +32,8 @@
       {
         "id": "Condition.code.coding.code",
         "path": "Condition.code.coding.code",
-        "short": "Codice del problema",
+        "short": "Codice del problema infermieristico",
+        "definition": "Stringa alfanumerica di al più 19 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
         "binding": {
           "strength": "required",
@@ -42,13 +44,14 @@
       {
         "id": "Condition.code.coding.display",
         "path": "Condition.code.coding.display",
-        "short": "Descrizione del problema",
+        "short": "Descrizione del problema infermieristico",
+        "definition": "Stringa alfanumerica di al più 300 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Condition.subject",
         "path": "Condition.subject",
-        "short": "Paziente al quale è stato riscontrato il problema",
+        "short": "Paziente al quale è stato riscontrato il problema infermieristico",
         "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [

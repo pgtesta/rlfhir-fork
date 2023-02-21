@@ -52,11 +52,6 @@
         "isModifier": false
       },
       {
-        "id": "Procedure.extension:dataPresaInCarico.url",
-        "path": "Procedure.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico"
-      },
-      {
         "id": "Procedure.extension:dataPresaInCarico.value[x]",
         "path": "Procedure.extension.value[x]",
         "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
@@ -79,11 +74,6 @@
           }
         ],
         "isModifier": false
-      },
-      {
-        "id": "Procedure.extension:modalitaErogazione.url",
-        "path": "Procedure.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione"
       },
       {
         "id": "Procedure.extension:modalitaErogazione.value[x]",
@@ -149,20 +139,6 @@
         "isModifier": false
       },
       {
-        "id": "Procedure.extension:tipoAccesso.url",
-        "path": "Procedure.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso"
-      },
-      {
-        "id": "Procedure.extension:tipoAccesso.value[x]",
-        "path": "Procedure.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
         "id": "Procedure.extension:tipoAccesso.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice del tipo di accesso",
@@ -225,10 +201,42 @@
         "fixedCode": "completed"
       },
       {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "short": "Setting assistenziale nel quale la prestazione viene erogata",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie di setting assistenziale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "Procedure.category.coding",
+        "path": "Procedure.category.coding",
+        "short": "Codice e descrizione del setting assistenziale"
+      },
+      {
+        "id": "Procedure.category.coding.code",
+        "path": "Procedure.category.coding.code",
+        "short": "Codice del setting assistenziale",
+        "definition": "Stringa alfanumerica di al più di 10 caratteri",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica del setting assistenziale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale"
+        }
+      },
+      {
+        "id": "Procedure.category.coding.display",
+        "path": "Procedure.category.coding.display",
+        "short": "Descrizione del setting assistenziale",
+        "definition": "Stringa alfanumerica di al più di 100 caratteri"
+      },
+      {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "short": "Codice e descrizione della prestazione",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie di prestazioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "short": "Codifica della prestazione. Il contenuto informativo è vincolato dal setting assistenziale nel quale la prestazione viene erogata."
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "short": "Codice e descrizione della prestazione"
       },
       {
         "id": "Procedure.code.coding.code",
@@ -238,14 +246,15 @@
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di prestazione",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPrestazione"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni"
         }
       },
       {
         "id": "Procedure.code.coding.display",
         "path": "Procedure.code.coding.display",
         "short": "Descrizione della prestazione",
-        "definition": "Stringa alfanumerica di al più di 200 caratteri"
+        "definition": "Stringa alfanumerica di al più di 200 caratteri",
+        "comment": "A seconda del setting assistenzale in cui la prestazione viene erogata è definita un'apposita codifica consultabile nella Tabella delle prestazioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Procedure.subject",

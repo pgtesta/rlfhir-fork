@@ -1,52 +1,52 @@
 {
-	"resourceType": "ServiceRequest",
-	"id": "esempio-ServiceRequest-InterventoEducazionale",
-	"meta": {
-		"lastUpdated": "2023-01-01T10:36:03Z",
-		"profile": [
-			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale"
-		],
-		"versionId": "1"
-	},
-	"basedOn": [
-		{
-			"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-			"display": "CarePlan Progetto Individuale"
-		}
-	],
-	"status": "active",
-	"intent": "order",
-	"code": {
-		"coding": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali",
-				"code": "EDU05",
-				"display": "Nutrizionale di gruppo"
-			}
-		]
-	},
-	"subject": {
-		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-		"display": "Mario Rossi"
-	},
-	"occurrencePeriod": {
-		"start": "2022-01-01",
-		"end": "2023-02-01"
-	},
-	"locationCode": [
-		{
-			"coding": [
-				{
-					"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu",
-					"code": "INTEDU1",
-					"display": "Intervento erogabile in presenza"
-				}
-			]
-		}
-	],
-	"note": [
-		{
-			"text": "Commenti aggiuntivi"
-		}
-	]
+  "resourceType": "ServiceRequest",
+  "id": "esempio-ServiceRequest-InterventoEducazionale",
+  "meta": {
+    "lastUpdated": "2023-01-01T10:36:03Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale"
+    ],
+    "versionId": "1"
+  },
+  "basedOn": [
+    {
+      "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+      "display": "CarePlan Progetto Individuale"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali",
+        "code": "EDU05",
+        "display": "Nutrizionale di gruppo"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "occurrencePeriod": {
+    "start": "2022-01-01",
+    "end": "2023-02-01"
+  },
+  "locationCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu",
+          "code": "INTEDU1",
+          "display": "Intervento erogabile in presenza"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Commenti aggiuntivi"
+    }
+  ]
 }
