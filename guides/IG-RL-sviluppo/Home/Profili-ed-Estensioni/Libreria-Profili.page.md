@@ -290,6 +290,6 @@
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali}}</td>
         </tr>
       </tbody>
-      </table>
+    </table>
   </body>
 </html>
