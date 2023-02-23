@@ -56,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  Al momento non ci sono esempi disponibili.
+  {{link:esempio-Procedure-Prestazione}}
 <br>
 </div>
 
