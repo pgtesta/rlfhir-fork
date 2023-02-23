@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "ValueSet-SGDT_MotivoSegnalazione",
+  "id": "ValueSet-SGDT-MotivoSegnalazione",
   "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
   "version": "1.0.0",
   "name": "SGDT Motivo Segnalazione",
@@ -19,11 +19,19 @@
           },
           {
             "code": "02",
-            "display": "Dimissione Protetta"
+            "display": "Attivazione Cure Domiciliari (ADI)"
           },
           {
             "code": "03",
+            "display": "Dimissione Protetta"
+          },
+          {
+            "code": "04",
             "display": "Inviato da MMG"
+          },
+          {
+            "code": "05",
+            "display": "Visita Continuità Assistenziale"
           }
         ]
       }

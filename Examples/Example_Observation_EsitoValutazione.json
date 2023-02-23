@@ -2,7 +2,7 @@
   "resourceType": "Observation",
   "id": "esempio-Observation-EsitoValutazione",
   "meta": {
-    "lastUpdated": "2023-01-01T10:36:03Z",
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
     ],
@@ -22,18 +22,18 @@
     "reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
     "display": "Mario Rossi"
   },
-  "effectiveDateTime": "2023-04-03T15:30:10Z",
+  "effectiveDateTime": "2023-01-15T08:32:56+01:00",
   "performer": [
     {
       "reference": "PractitionerRole/d252b662-989e-11ed-a8fc-0242ac120002",
-      "display": "Medico Prescrittore"
+      "display": "Infermiere"
     }
   ],
   "valueInteger": 5,
   "derivedFrom": [
     {
       "reference": "QuestionnaireResponse/d3541270-9814-11ed-a8fc-0242ac120002",
-      "display": "Valutazione"
+      "display": "Scheda Triage"
     }
   ]
 }

@@ -59,7 +59,27 @@
     },
     {
       "code": "PERCDOM13",
-      "display": "Cure Domiciliari Integrate - Alta Intensità"
+      "display": "ADI - Liv I"
+    },
+    {
+      "code": "PERCDOM14",
+      "display": "ADI - Liv II"
+    },
+    {
+      "code": "PERCDOM15",
+      "display": "ADI - Liv IIIA"
+    },
+    {
+      "code": "PERCDOM16",
+      "display": "ADI - Liv IIB"
+    },
+    {
+      "code": "PERCDOM17",
+      "display": "ADI - Liv IIIC"
+    },
+    {
+      "code": "PERCDOM18",
+      "display": "ADI – Alta Intensità"
     }
   ]
 }

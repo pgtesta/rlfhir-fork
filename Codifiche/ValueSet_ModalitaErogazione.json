@@ -18,27 +18,27 @@
             "display": "Presenza"
           },
           {
-            "code": "2.1",
+            "code": "21",
             "display": "Televisita"
           },
           {
-            "code": "2.2",
+            "code": "22",
             "display": "Teleconsulto"
           },
           {
-            "code": "2.3",
+            "code": "23",
             "display": "Teleconsulenza"
           },
           {
-            "code": "2.4",
+            "code": "24",
             "display": "Teleassistenza"
           },
           {
-            "code": "2.5",
+            "code": "25",
             "display": "Telemonitoraggio"
           },
           {
-            "code": "2.6",
+            "code": "26",
             "display": "Teleriabilitazione"
           }
         ]

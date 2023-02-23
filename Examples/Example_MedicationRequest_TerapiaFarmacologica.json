@@ -2,7 +2,7 @@
   "resourceType": "MedicationRequest",
   "id": "esempio-MedicationRequest-TerapiaFarmacologica",
   "meta": {
-    "lastUpdated": "2023-01-01T10:36:03Z",
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
     ],
@@ -25,11 +25,11 @@
   },
   "basedOn": {
     "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-    "display": "Progetto individuale"
+    "display": "PI-2023000000001"
   },
   "note": [
     {
-      "text": "Commenti aggiuntivi"
+      "text": "Rivalutare mensilmente se prorogare la terapia"
     }
   ],
   "dosageInstruction": [
@@ -37,8 +37,8 @@
       "timing": {
         "repeat": {
           "boundsPeriod": {
-            "start": "2022-01-01",
-            "end": "2023-02-01"
+            "start": "2023-01-21T08:32:56+01:00",
+            "end": "2023-03-21T08:32:56+01:00"
           },
           "frequency": 1,
           "period": 1,
