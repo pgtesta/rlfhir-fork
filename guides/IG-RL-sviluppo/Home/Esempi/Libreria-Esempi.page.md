@@ -150,9 +150,51 @@
           </tr>
           <tr>
           <td>PI</td>
-          <td>Observation</td>
-          <td>Esempio del profilo RLObservationEsitoValutazione</td>
-          <td>{{link:esempio-Observation-EsitoValutazione}}</td>
+          <td>CarePlan</td>
+          <td>Esempio del profilo RLCarePlanProgettoIndividuale</td>
+          <td>{{link:esempio-CarePlan-Progetto-Individuale}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>CareTeam</td>
+          <td>Esempio del profilo RLCareTeamTeamEquipe</td>
+          <td>{{link:esempio-CareTeam-Equipe}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>Condition</td>
+          <td>Esempio del profilo RLConditionPatologiaPrimaria</td>
+          <td>{{link:esempio-Condition-PatologiaPrimaria}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>Condition</td>
+          <td>Esempio del profilo RLConditionPatologiaSecondaria</td>
+          <td>{{link:esempio-Condition-PatologiaSecondaria}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>DeviceRequest</td>
+          <td>Esempio del profilo RLDeviceRequestProtesiAusili</td>
+          <td>{{link:esempio-DeviceRequest-ProtesiAusili}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>Encounter</td>
+          <td>Esempio del profilo RLEncounterEncounterAccesso</td>
+          <td>{{link:esempio-Encounter-Accesso}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>Goal</td>
+          <td>Esempio del profilo RLGoalObiettiviSalute</td>
+          <td>{{link:esempio-Goal-ObiettiviSalute}}</td>
+          </tr>
+          <tr>
+          <td>PI</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationLuogoPrestazioneCureDom</td>
+          <td>{{link:esempio-Location-LuogoPrestazioneCureDom}}</td>
           </tr>
           <tr>
           <td>PI</td>
@@ -168,33 +210,15 @@
           </tr>
           <tr>
           <td>PI</td>
-          <td>Goal</td>
-          <td>Esempio del profilo RLGoalObiettiviSalute</td>
-          <td>{{link:esempio-Goal-ObiettiviSalute}}</td>
+          <td>Observation</td>
+          <td>Esempio del profilo RLObservationEsitoValutazione</td>
+          <td>{{link:esempio-Observation-EsitoValutazione}}</td>
           </tr>
           <tr>
           <td>PI</td>
-          <td>Encounter</td>
-          <td>Esempio del profilo RLEncounterEncounterAccesso</td>
-          <td>{{link:esempio-Encounter-Accesso}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>DeviceRequest</td>
-          <td>Esempio del profilo RLDeviceRequestProtesiAusili</td>
-          <td>{{link:esempio-DeviceRequest-ProtesiAusili}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>CareTeam</td>
-          <td>Esempio del profilo RLCareTeamTeamEquipe</td>
-          <td>{{link:esempio-CareTeam-Equipe}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>CarePlan</td>
-          <td>Esempio del profilo RLCarePlanProgettoIndividuale</td>
-          <td>{{link:esempio-CarePlan-Progetto-Individuale}}</td>
+          <td>Practitioner</td>
+          <td>Esempio del profilo RLPractitionerProfessionistaSanitario</td>
+          <td>{{link:esempio-Practitioner-ProfessionistaSanitario}}</td>
           </tr>
           <tr>
           <td>PI</td>
@@ -204,9 +228,9 @@
           </tr>
           <tr>
           <td>PI</td>
-          <td>Practitioner</td>
-          <td>Esempio del profilo RLPractitionerProfessionistaSanitario</td>
-          <td>{{link:esempio-Practitioner-ProfessionistaSanitario}}</td>
+          <td>Procedure</td>
+          <td>Esempio del profilo RLProcedurePrestazione</td>
+          <td>{{link:esempio-Procedure-Prestazione}}</td>
           </tr>
           <tr>
           <td>PI</td>
@@ -252,30 +276,6 @@
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestSospensioneADI</td>
           <td>{{link:Examples-Example-ServiceRequest-SospensioneADI}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>Procedure</td>
-          <td>Esempio del profilo RLProcedurePrestazione</td>
-          <td>{{link:esempio-Procedure-Prestazione}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>Location</td>
-          <td>Esempio del profilo RLLocationLuogoPrestazioneCureDom</td>
-          <td>{{link:esempio-Location-LuogoPrestazioneCureDom}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>Condition</td>
-          <td>Esempio del profilo RLConditionPatologiaPrimaria</td>
-          <td>{{link:esempio-Condition-PatologiaPrimaria}}</td>
-          </tr>
-          <tr>
-          <td>PI</td>
-          <td>Condition</td>
-          <td>Esempio del profilo RLConditionPatologiaSecondaria</td>
-          <td>{{link:esempio-Condition-PatologiaSecondaria}}</td>
           </tr>
       </tbody>
     </table>
