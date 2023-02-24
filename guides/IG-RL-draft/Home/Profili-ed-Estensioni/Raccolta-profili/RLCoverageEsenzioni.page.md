@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Coverage](http://hl7.org/fhir/R4/coverage.html) che contiene i dettagli inerenti alle esenzioni di cui il paziente beneficia, la cui codifica è ricavata dalla tabella delle codifiche SISS delle esenzioni.
+Il profilo RLCoverageEsenzioni è stato strutturato a partire dalla risorsa generica FHIR [Coverage](http://hl7.org/fhir/R4/coverage.html) e contiene i dettagli inerenti alle esenzioni di cui il paziente beneficia. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni}}.
 
@@ -55,7 +55,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili. 
+  Al momento non ci sono esempi disponibili. 
 <br>
 </div>
 
@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLCoverageE
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type | Codice e descrizione dell'esenzione|    |
+| type | Codice e descrizione dell'esenzione|  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni}}  |

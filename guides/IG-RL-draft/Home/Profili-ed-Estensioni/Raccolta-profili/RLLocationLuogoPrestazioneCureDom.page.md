@@ -4,7 +4,7 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -55,7 +55,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili. 
+  {{link:esempio-Location-LuogoPrestazioneCureDom}}
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
@@ -77,4 +77,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLLocationL
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| physicalForm | Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| physicalForm | Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}} |

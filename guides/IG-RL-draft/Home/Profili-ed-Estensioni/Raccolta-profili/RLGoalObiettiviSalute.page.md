@@ -4,18 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Goal](http://hl7.org/fhir/R4/goal.html) che descrive gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI). Gli obiettivi di salute sono definiti dal case manager tre le seguenti opzioni:
--	Controllo episodi di riacutizzazione
--	Mantenimento dell'autonomia
--	Mantenimento del corretto stile di vita
--	Controllo dell'evoluzione della malattia
--	Aderenza alla terapia
--	Altro (se si seleziona la voce altro, deve essere possibile inserire i dettagli all’interno di un campo di testo libero)
-
+Il profilo RLGoalObiettiviSaluteè stato strutturato a partire dalla risorsa generica FHIR [Goal](http://hl7.org/fhir/R4/goal.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute}}.
 
@@ -86,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLGoalObiet
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione dell’obiettivo di salute | Il riferimento alla lista esaustiva degli obiettivi di salute è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}|
+| Description | Codice e descrizione dell’obiettivo di salute | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute}}|

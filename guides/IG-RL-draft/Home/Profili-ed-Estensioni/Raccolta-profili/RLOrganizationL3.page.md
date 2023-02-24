@@ -70,7 +70,7 @@ I parametri da valorizzare per effettuare la ricerca sono:
 -	dataFineValidità: data di interesse
 -	partOf.reference(RLOrganizationL2).identifier
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L3,  con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L2.
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L3, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L2.
 
 | SCOPE | Ricerca tutti i profili RLOrganizationL3 la cui data di fine validità è maggiore di una data di riferimento e che sono parte di un determinato codice L2 (RLOrganizationL2)    |
 |---|---|
@@ -83,13 +83,14 @@ L’esito della ricerca permette di recuperare le informazioni relative alle str
 ## Search parameter
 Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
 - _profile
-- partof
+- partof: parametro di ricerca standard dell'ente di codice L2 di appartenenza
 
 I parametri di ricerca del profilo RLOrganizationL3, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
 | Nome e link Simplifier | Descrizione | Codice |
 |---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello   2 specificando la data di inserimento. | dataInizioValidita |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 3 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 3 specificando la data di inserimento. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

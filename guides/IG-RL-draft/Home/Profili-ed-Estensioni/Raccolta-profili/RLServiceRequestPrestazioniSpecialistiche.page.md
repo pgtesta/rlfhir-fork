@@ -4,12 +4,12 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che contiene le informazioni relative ad una prestazione specialistica e/o diagnostica pianificata all’interno di un progetto individuale di un cittadino.
+Il profilo RLServiceRequestPrestazioniSpecialisticheè stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e contiene le informazioni relative ad una prestazione specialistica e/o diagnostica pianificata all’interno di un progetto individuale di un cittadino.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche}}.
 
@@ -79,5 +79,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Ulteriori dettagli | Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
 | Code | Codice e descrizione della prestazione specialistica | Catalogo regionale del SISS |

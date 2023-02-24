@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) che contiene le informazioni riguardo l’ossigenoterapia prescritta ad un cittadino in fase di redazione del progetto individuale.
+Il profilo RLMedicationRequestOssigenoterapia è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) e riporta le informazioni riguardo l’ossigenoterapia prescritta ad un cittadino in fase di redazione del progetto individuale.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia}}.
 
@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMedicatio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| medicationCodeableConcept | Codice e descrizione dell’ossigenoterapia da attivare |  |
+| medicationCodeableConcept | Codice e descrizione dell’ossigenoterapia da attivare |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaOssigeno}}|

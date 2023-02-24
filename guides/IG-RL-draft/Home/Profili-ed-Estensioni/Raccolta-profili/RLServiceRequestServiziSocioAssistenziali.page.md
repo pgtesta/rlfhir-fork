@@ -4,7 +4,7 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -81,7 +81,7 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione del servizio sociosanitario da attivare | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della tipologia UdO”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| ReasonCode | Codice e descrizione dei percorsi di cure domiciliari | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica dei percorsi di cure domiciliari”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| causaleDimissione  | Codice e descrizione della causale di dimissione | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della causale di dimissione di un ricovero domiciliare”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| soggettoProponentePIC | Codice e descrizione del soggetto che ha proposto la presa in carico dell'assistito | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica del soggetto che ha proposto la presa in carico”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| Code | Codice e descrizione del servizio sociosanitario da attivare |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}}| 
+| ReasonCode | Codice e descrizione dei percorsi di cure domiciliari |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom}}| 
+| causaleDimissione  | Codice e descrizione della causale di dimissione |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione}}| 
+| soggettoProponentePIC | Codice e descrizione del soggetto che ha proposto la presa in carico dell'assistito |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC}}| 
