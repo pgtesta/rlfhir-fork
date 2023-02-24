@@ -56,14 +56,19 @@
       {
         "id": "Condition.code",
         "path": "Condition.code",
-        "short": "Codifica della patologia in condifica ICD-9-CM"
+        "short": "Codifica della patologia in codifica ICD-9-CM"
       },
       {
         "id": "Condition.code.coding.code",
         "path": "Condition.code.coding.code",
         "short": "Codice della patologia",
         "definition": "Stringa alfanumerica di al più 10 caratteri.",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica della patologia in ICD-9-CM",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM"
+        }
       },
       {
         "id": "Condition.code.coding.display",

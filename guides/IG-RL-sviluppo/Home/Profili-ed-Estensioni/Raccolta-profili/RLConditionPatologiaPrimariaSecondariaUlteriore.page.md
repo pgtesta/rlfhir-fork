@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Condition](http://hl7.org/fhir/R4/condition.html) che contiene i dettagli inerenti alla patologia primaria, secondaria o addizionale relativa ad un paziente, la cui codifica è ricavata dalla tabella delle codifiche SISS delle diagnosi.
+Il profilo RLConditionPatologiaPrimariaSecondariaUlteriore è stato strutturato a partire dalla risorsa generica FHIR  [Condition](http://hl7.org/fhir/R4/condition.html) e contiene le informazioni sulla patologia primaria, l’eventuale patologia secondaria o ulteriore relativa ad un paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore}}.
 
@@ -55,8 +55,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-Condition-PatologiaPrimariaSecondariaUlteriore}}
-<br>
+  Patologia primaria: {{link:esempio-Condition-PatologiaPrimaria}}
+  <br>
+  Patologia secondaria: {{link:esempio-Condition-PatologiaSecondaria}}
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
@@ -73,7 +74,8 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLConditionPatologiaPrimariaSecondariaUlteriore.
-
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| Category | Tipologia di patologia | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia}} |

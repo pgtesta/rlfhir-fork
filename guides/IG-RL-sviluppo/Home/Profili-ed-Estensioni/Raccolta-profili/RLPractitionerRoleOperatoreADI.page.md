@@ -73,10 +73,10 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRoleOperatoreADI:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione della tipologia di operatore ADI | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica delle tipologie degli operatori ADI”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| code | Codice e descrizione della tipologia di operatore ADI | Codifica delle qualifiche dei medici prescrittori | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}} |

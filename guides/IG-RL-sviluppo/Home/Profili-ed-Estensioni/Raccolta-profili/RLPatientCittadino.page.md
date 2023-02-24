@@ -4,7 +4,7 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
@@ -72,14 +72,14 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCittadino:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| maritalStatus | Stato civile del cittadino | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica dello stato civile”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| titoloDiStudio | Titolo di studio del cittadino | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica del titolo di studio”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| posizioneDellaProfessione | Posizione lavorativa del cittadino | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della posizione professionale”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| situazionePensionistica | Situazione pensionistica del cittadino | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della situazione pensionistica”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| responsabilitaGenitoriale | Responsabilità genitoriale nei confronti dell’assistito se minorenne | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della responsabilità genitoriale”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| tipologiaPaziente | Condizione clinica prevalente dell’assistito | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della tipologia del paziente”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| maritalStatus | Stato civile del cittadino | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile}} |
+| titoloDiStudio | Titolo di studio del cittadino | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio}} |
+| posizioneDellaProfessione | Posizione lavorativa del cittadino | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione}} |
+| situazionePensionistica | Situazione pensionistica del cittadino | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica}} |
+| responsabilitaGenitoriale | Responsabilità genitoriale nei confronti dell’assistito se minorenne | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale}} |
+| tipologiaPaziente | Condizione clinica prevalente dell’assistito | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente}} |

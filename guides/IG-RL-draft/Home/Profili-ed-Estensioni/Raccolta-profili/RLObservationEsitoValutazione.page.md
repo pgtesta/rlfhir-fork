@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere l’esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto.
+Il profilo RLObservationEsitoValutazione è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere l’esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione}}.
 
@@ -73,10 +73,10 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLObservationEsitoValutazione:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e nome della tipologia di valutazione specifica | Il riferimento alla lista esaustiva delle tipologie di valutazioni specifiche è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| code | Codice e nome della tipologia di valutazione specifica | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaValutazione}} |

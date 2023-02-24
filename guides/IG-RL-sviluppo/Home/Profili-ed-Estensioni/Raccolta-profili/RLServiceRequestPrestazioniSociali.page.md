@@ -4,12 +4,12 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) che contiene le informazioni relative ad una prestazione sociale afferente ad un progetto individuale di un cittadino.
+Il profilo RLServiceRequestPrestazioniSociali è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html)e contiene le informazioni relative ad una prestazione sociale pianificata all’interno di un progetto individuale di un cittadino.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali}}.
 
@@ -73,11 +73,10 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestPrestazioniSociali.
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| UlterioriDettagli | Ulteriori dettagli riguardo la prestazione sociale da erogare | Il riferimento alla lista esaustiva dei dettagli ulteriori riguardo la prestazione è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
 | Code| Codice e descrizione della prestazione sociale | |

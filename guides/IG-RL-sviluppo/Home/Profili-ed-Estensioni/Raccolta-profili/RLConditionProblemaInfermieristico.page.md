@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Condition](http://hl7.org/fhir/R4/condition.html) che contiene i dettagli inerenti al problema infermieristico relativo ad un paziente, la cui codifica è ricavata dalla tabella delle codifiche SISS delle diagnosi.
+Il profilo RLConditionProblemaInfermieristico è stato strutturato a partire dalla risorsa generica FHIR [Condition](http://hl7.org/fhir/R4/condition.html)e riporta i dettagli inerenti al problema infermieristico individuato per un paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemaInfermieristico}}.
 
@@ -73,7 +73,9 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLConditionProblemaInfermieristico.
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| Code |Codice e descrizione del problema infermieristico|  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico}} |
 

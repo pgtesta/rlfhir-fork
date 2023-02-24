@@ -1,107 +1,95 @@
 {
-	"resourceType": "ServiceRequest",
-	"id": "esempio-ServiceRequest-ServiziSocioAssistenziali",
-	"meta": {
-		"lastUpdated": "2023-01-01T10:36:03Z",
-		"profile": [
-			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
-		],
-		"versionId": "1"
-	},
-	"identifier": [
-		{
-			"value": "000021"
-		}
-	],
-	"basedOn": [
-		{
-			"reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-			"display": "CarePlan Progetto Individuale"
-		}
-	],
-	"status": "active",
-	"intent": "order",
-	"code": {
-		"coding": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
-				"code": "ADI",
-				"display": "ASSISTENZA DOMICILIARE INTEGRATA"
-			}
-		]
-	},
-	"quantityQuantity": {
-		"value": 1
-	},
-	"subject": {
-		"reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-		"display": "Mario Rossi"
-	},
-	"occurrencePeriod": {
-		"start": "2022-01-01",
-		"end": "2023-02-01"
-	},
-	"performer": {
-		"reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
-		"display": "Presidio Ospedaliero di Vimercate"
-	},
-	"reasonCode": [
-		{
-			"coding": [
-				{
-					"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
-					"code": "PERCDOM02",
-					"display": "Cure Domiciliari Base - Prestazionale Generico"
-				}
-			]
-		}
-	],
-	"note": [
-		{
-			"text": "Commenti aggiuntivi"
-		}
-	],
-	"extension": [
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione",
-			"extension": [
-				{
-					"url": "strutturaTerritorialeProssimita",
-					"valueBoolean": true
-				},
-				{
-					"url": "consultazioneCatalogoOfferta",
-					"valueBoolean": false
-				}
-			]
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
-			"valueCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
-						"code": "2",
-						"display": "MMG / PLS"
-					}
-				]
-			}
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione",
-			"valueCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione",
-						"code": "99",
-						"display": "Altro"
-					}
-				]
-			}
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
-			"valueDateTime": "2022-01-01"
-		}
-	]
+  "resourceType": "ServiceRequest",
+  "id": "esempio-ServiceRequest-ServiziSocioAssistenziali",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale",
+      "value": "2023000021"
+    }
+  ],
+  "basedOn": [
+    {
+      "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+      "display": "PI-2023000000001"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+        "code": "C-DOM",
+        "display": "CURE DOMICILIARI"
+      }
+    ]
+  },
+  "quantityQuantity": {
+    "value": 18
+  },
+  "subject": {
+    "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "occurrencePeriod": {
+    "start": "2023-02-01T08:32:56+01:00",
+    "end": "2023-04-01T08:32:56+01:00"
+  },
+  "performer": {
+    "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
+    "display": "FONDAZIONE MADDALENA GRASSI"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
+          "code": "PERCDOM02",
+          "display": "Cure Domiciliari Base - Prestazionale Generico"
+        }
+      ]
+    }
+  ],
+  "note": [
+    {
+      "text": "Presa in carico confermata dall'ente"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
+            "code": "2",
+            "display": "MMG / PLS"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione",
+            "code": "01",
+            "display": "Completamento del programma assistenziale"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
+      "valueDateTime": "2023-03-30T08:32:56+01:00"
+    }
+  ]
 }

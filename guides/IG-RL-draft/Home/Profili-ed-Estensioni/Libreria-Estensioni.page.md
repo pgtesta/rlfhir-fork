@@ -66,6 +66,54 @@
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterTipoBisogno}}</td>
         </tr>
         <tr>
+          <td>RLHealthcareServiceCharacteristicPeriod</td>
+          <td>HealthcareService.characteristic</td>
+          <td>Periodo di attività</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceCharacteristicPeriod}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceCharacteristicValue</td>
+          <td>HealthcareService.characteristic</td>
+          <td>Numero posti letto</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceCharacteristicValue}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceDataInsert</td>
+          <td>HealthcareService</td>
+          <td>Data inserimento</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataInsert}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceDataUpdate</td>
+          <td>HealthcareService</td>
+          <td>Data aggiornamento</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceDataUpdate}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceParcheggio</td>
+          <td>HealthcareService</td>
+          <td>(missing)</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceReferenteStruttura</td>
+          <td>HealthcareService</td>
+          <td>persona principale di contatto della struttura</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceReferenteStruttura}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceRettaSociale</td>
+          <td>HealthcareService</td>
+          <td>Estensione per il valore della retta sociale minima e massima</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRettaSociale}}</td>
+        </tr>
+        <tr>
+          <td>RLHealthcareServiceTempiMediPresaInCarico</td>
+          <td>HealthcareService</td>
+          <td>Estensione per la definizione dei tempi medi di presa in carico</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceTempiMediPresaInCarico}}</td>
+        </tr>
+        <tr>
           <td>RLMedicationRequestConsegnaOssigenoDomicilio</td>
           <td>MedicationRequest</td>
           <td>(missing)</td>
@@ -82,6 +130,54 @@
           <td>MedicationRequest</td>
           <td>Flag riguardo la necessità di una prescrizione elettronica per il paziente</td>
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPrescrizioneElettronica}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentAreaDegenza</td>
+          <td>Observation.component</td>
+          <td>Area degenza</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentAreaDegenza}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentDataOraAccettazione</td>
+          <td>Observation.component</td>
+          <td>Data e ora di accettazione</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraAccettazione}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentDataOraDimissionePrevista</td>
+          <td>Observation.component</td>
+          <td>Data e ora di dimissione prevista</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraDimissionePrevista}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentDataOraOccupazioneLetto</td>
+          <td>Observation.component</td>
+          <td>Data e ora di occupazione posto letto</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDataOraOccupazioneLetto}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentDimissioneProtetta</td>
+          <td>Observation.component</td>
+          <td>Dimissione Protetta</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentDimissioneProtetta}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentRegimeRicovero</td>
+          <td>Observation.component</td>
+          <td>Regime ricovero</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRegimeRicovero}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentRepartoClinico</td>
+          <td>Observation.component</td>
+          <td>Reparto clinico</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRepartoClinico}}</td>
+        </tr>
+        <tr>
+          <td>RLObservationComponentRepartoFisico</td>
+          <td>Observation.component</td>
+          <td>Reparto Fisico</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRepartoFisico}}</td>
         </tr>
         <tr>
           <td>RLOrganizationAddressDistrettoCode</td>

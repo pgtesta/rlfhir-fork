@@ -102,6 +102,6 @@ Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di segu
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireResponseValutazione.

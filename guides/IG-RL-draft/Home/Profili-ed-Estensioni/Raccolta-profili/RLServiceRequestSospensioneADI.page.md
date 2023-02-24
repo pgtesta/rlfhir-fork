@@ -5,7 +5,7 @@
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Dettagli della sospensione temporanea del ricovero domiciliare del paziente](#dettagli-della-sospensione-temporanea-del-ricovero-domiciliare-del-paziente)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -118,10 +118,10 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestSospensioneADI.
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione del motivo della sospensione temporanea | Il riferimento alla lista esaustiva dei motivi della sospensione temporanea ricavate dal tracciato SIAD 5 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| Code | Codice e descrizione del motivo della sospensione temporanea | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione}} |

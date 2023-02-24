@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) che contiene la codifica del farmaco per ATC, AIC (nome commerciale) o Gruppo di equivalenza, la posologia ed ulteriori informazioni definite in fase di redazione del progetto individuale di un cittadino.
+Il profilo MedicationRequestTerapiaFarmacologica è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](http://hl7.org/fhir/R4/medicationrequest.html) e contiene la codifica del farmaco per ATC, AIC (nome commerciale) o Gruppo di equivalenza, la posologia ed ulteriori informazioni definite in fase di redazione del progetto individuale di un cittadino.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica}}.
 
@@ -73,7 +73,7 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLMedicationRequestTerapiaFarmacologica:
 

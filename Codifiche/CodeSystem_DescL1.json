@@ -10,7 +10,7 @@
   "content": "complete",
   "concept": [
     {
-      "code": "AO",
+      "code": "ASST",
       "display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
     },
     {
@@ -18,7 +18,7 @@
       "display": "Associazione temporanea di imprese nel contesto Presa in Carico"
     },
     {
-      "code": "ASL",
+      "code": "ATS",
       "display": "Agenzia di Tutela della Salute"
     },
     {

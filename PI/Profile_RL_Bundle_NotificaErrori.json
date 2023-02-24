@@ -9,7 +9,8 @@
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
       "code": "Errori"
     }
-  ],"fhirVersion": "4.0.1",
+  ],
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Bundle",

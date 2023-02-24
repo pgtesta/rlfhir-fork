@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-SettingAssistenziale",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-SettingAssistenziale",
+  "version": "1.0.0",
+  "name": "SGDT Setting Assistenziale",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica del setting assistenziale",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "CDOM",
+      "display": "Cure domiciliari"
+    }
+  ]
+}

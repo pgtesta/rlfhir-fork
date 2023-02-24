@@ -5,7 +5,7 @@
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare](#dettaglio-delle-prestazioni-erogate-al-paziente-in-regime-di-ricovero-domiciliare)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -56,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  Al momento non ci sono esempi disponibili.
+  {{link:esempio-Procedure-Prestazione}}
 <br>
 </div>
 
@@ -106,13 +106,14 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value-set relativi al profilo RLProcedurePrestazione.
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| modalitaErogazione | Codice e descrizione della modalità di erogazione | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica delle modalità di erogazione di una prestazione di cure domiciliari”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| Code | Codice e descrizione delle prestazioni dei servizi di cure domiciliari | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica delle prestazioni dei servizi di cure domiciliari”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| performer.function | Codice e descrizione della tipologia di operatore che ha effettuato la prestazione | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica delle tipologie degli operatori ADI”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
-| tipoAccesso | Codice e descrizione del tipo di accesso | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica del tipo di accesso”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| modalitaErogazione | Codice e descrizione della modalità di erogazione della prestazione erogata in regime di ricovero domiciliare | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione}} |
+| Category | Codice e descrizione dei setting assistenziali delle prestazioni | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale}} |
+| Code | Codice e descrizione delle prestazioni  | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}. Sulla base del setting assistenziale di interesse è possibile consultare la relativa codifica delle prestazioni erogabili|
+| performer.function | Codice e descrizione della tipologia di operatore che ha effettuato la prestazione | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}} |
+| tipoAccesso | Codice e descrizione del tipo di accesso | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso}} |

@@ -55,7 +55,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-PractitionerRole-ProfessionistaSanitario}}
+  {{link:esempio-PractitionerRole-ProfessionistaSanitario}}
 <br>
 </div>
 
@@ -71,9 +71,9 @@ Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRoleProfessionistaSanitario:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione della qualifica del professionista sanitario | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della qualifica del professionista sanitario”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| code | Codice e descrizione della qualifica del professionista sanitario | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario}} |

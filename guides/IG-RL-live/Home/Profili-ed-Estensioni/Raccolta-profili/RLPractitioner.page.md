@@ -91,6 +91,6 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono definiti value set specifici per il profilo RLPractitioner.

@@ -37,60 +37,6 @@
         "min": 0
       },
       {
-        "id": "ServiceRequest.extension:dettagliAttivazione",
-        "path": "ServiceRequest.extension",
-        "sliceName": "dettagliAttivazione",
-        "short": "Dettagli riguardo le modalità di attivazione del servizio socioassistenziale",
-        "definition": "- prenotabile presso struttura territoriale di prossimità\r\n- consultazione del catalogo dell'offerta",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "ServiceRequest.extension:dettagliAttivazione.extension",
-        "path": "ServiceRequest.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
-        "id": "ServiceRequest.extension:dettagliAttivazione.extension:strutturaTerritorialeProssimita",
-        "path": "ServiceRequest.extension.extension",
-        "sliceName": "strutturaTerritorialeProssimita",
-        "short": "Prenotabile presso struttura territoriale di prossimità",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "ServiceRequest.extension:dettagliAttivazione.extension:consultazioneCatalogoOfferta",
-        "path": "ServiceRequest.extension.extension",
-        "sliceName": "consultazioneCatalogoOfferta",
-        "short": "Consultazione del catalogo dell'offerta",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "ServiceRequest.extension:dettagliAttivazione.url",
-        "path": "ServiceRequest.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDettagliAttivazione"
-      },
-      {
         "id": "ServiceRequest.extension:soggettoProponentePIC",
         "path": "ServiceRequest.extension",
         "sliceName": "soggettoProponentePIC",
@@ -217,7 +163,7 @@
       {
         "id": "ServiceRequest.identifier.system",
         "path": "ServiceRequest.identifier.system",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenzaiel"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale"
       },
       {
         "id": "ServiceRequest.identifier.value",

@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) contenente i ruoli e le qualifiche di un determinato medico prescrittore presente nel profilo RLPractitionerRoleMedicoPrescrittore.
+Il profilo RLPractitionerRoleMedicoPrescrittore è stato strutturato a partire dalla risorsa generica FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) per descrivere le diverse tipologie di medici a cui è data facoltà di prescrivere prestazioni e farmaci dispensati dal SSR. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}.
 
@@ -73,10 +73,11 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRoleMedicoPrescrittore:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codifica delle qualifiche dei medici prescrittori | Il riferimento alla lista esaustiva della tipologia di qualifiche dei medici prescrittori è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| code | Codifica delle qualifiche dei medici prescrittori | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
+

@@ -4,11 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html) che contiene le informazioni riguardo le allergie del paziente in forma testuale.
+Il profilo RLAllergyIntoleranceAllergie è stato strutturato a partire dalla risorsa generica FHIR [AllergyIntolerance](http://hl7.org/fhir/R4/allergyintolerance.html) per riportare informazioni riguardo le allergie del paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie}}.
 
@@ -73,6 +73,6 @@ Attualmente non sono definiti Search Parameters oltre ai campi standard della ri
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono presenti value set nei campi del profilo RLAllergyIntoleranceAllergie.

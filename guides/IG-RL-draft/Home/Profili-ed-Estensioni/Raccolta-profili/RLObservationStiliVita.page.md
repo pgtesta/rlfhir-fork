@@ -4,17 +4,11 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Observation](http://hl7.org/fhir/R4/observation.html) volto a descrivere le informazioni riguardo le osservazioni sugli stili di vita del paziente tra le seguenti tipologie:
-
--	Fumo
--	Alcol
--	Sedentarietà
--	Eccesso ponderale
-
+Il profilo RLObservationStiliVita è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) ed è volto a contenere i dati raccolti riguardo gli stili di vita del paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita}}.
 
@@ -79,10 +73,10 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLObservationStiliVita:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione dello stile di vita | Il riferimento alla lista esaustiva degli stili di vita è consultabile al seguente  {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| code | Codice e descrizione dello stile di vita | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-StiliVita}} |

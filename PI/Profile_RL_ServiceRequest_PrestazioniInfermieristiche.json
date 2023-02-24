@@ -124,6 +124,7 @@
         "id": "ServiceRequest.code.coding.code",
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice della prestazione infermieristica",
+        "definition": "Stringa alfanumerica di al più 28 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
         "binding": {
           "strength": "required",
@@ -135,6 +136,7 @@
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione della prestazione infermieristica",
+        "definition": "Stringa alfanumerica di al più 200 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
