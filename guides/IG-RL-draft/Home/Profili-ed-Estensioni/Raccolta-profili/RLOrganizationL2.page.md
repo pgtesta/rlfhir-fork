@@ -149,7 +149,7 @@ I parametri di ricerca definiti nel profilo RLOrganizationL2 sono definiti nella
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLOrganizationL2:
 

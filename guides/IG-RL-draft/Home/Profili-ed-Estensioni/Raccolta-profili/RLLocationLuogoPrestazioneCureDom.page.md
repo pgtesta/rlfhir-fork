@@ -71,7 +71,7 @@ Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value-set relativi al profilo RLLocationLuogoPrestazioneCureDom.
 

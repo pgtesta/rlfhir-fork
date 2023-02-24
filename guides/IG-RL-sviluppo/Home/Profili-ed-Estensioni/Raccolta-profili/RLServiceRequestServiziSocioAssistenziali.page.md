@@ -75,7 +75,7 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRequestServiziSocioAssistenziali.
 

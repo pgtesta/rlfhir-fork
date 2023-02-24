@@ -149,7 +149,7 @@ I parametri di ricerca del profilo RLOrganizationL2, oltre ai campi standard del
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLOrganizationL2:
 

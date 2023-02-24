@@ -73,7 +73,7 @@ Attualmente non sono definiti Search Parameters oltre ai campi standard della ri
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLServiceRequestInterventoEducazionale:
 

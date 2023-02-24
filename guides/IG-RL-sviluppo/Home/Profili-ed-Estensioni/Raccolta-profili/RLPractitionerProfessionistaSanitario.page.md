@@ -70,5 +70,5 @@ Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 Attualmente non sono definiti value set specifici per il profilo RLPractitionerProfessionistaSanitario.

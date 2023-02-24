@@ -94,6 +94,6 @@ I parametri di ricerca del profilo RLOrganizationL3, oltre ai campi standard del
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono definiti value set specifici per il profilo RLOrganizationL3.

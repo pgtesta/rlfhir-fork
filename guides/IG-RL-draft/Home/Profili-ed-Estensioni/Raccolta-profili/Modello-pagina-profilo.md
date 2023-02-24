@@ -92,7 +92,7 @@ I parametri di ricerca definiti nel profilo RLOrganizationL1 sono definiti nella
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono definiti value set specifici per il profilo RLOrganizationL1.
 

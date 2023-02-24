@@ -4,7 +4,7 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
@@ -73,11 +73,11 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRoleMedicoPrescrittore:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codifica delle qualifiche dei medici prescrittori | La codifica esaustiva è definita dal valueset {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
+| code | Codifica delle qualifiche dei medici prescrittori | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
 

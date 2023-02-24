@@ -135,7 +135,7 @@ Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di segu
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono presenti value set nei campi del profilo RLCarePlanProgettoIndividuale.
 

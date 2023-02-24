@@ -122,6 +122,6 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono definiti value set specifici per il profilo RLServiceRequestRivalutazione.

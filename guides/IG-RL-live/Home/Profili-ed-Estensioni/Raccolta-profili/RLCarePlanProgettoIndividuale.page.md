@@ -131,7 +131,7 @@ Attualmente non sono definiti Search Parameters oltre ai campi standard della ri
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Value set
+## ValueSet
 
 Attualmente non sono presenti value set nei campi del profilo RLCarePlanProgettoIndividuale.
 
