@@ -9,8 +9,7 @@
 
 
 ## Descrizione
-
-Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni anagrafiche e di contatto relative alle strutture di tipo ente L1. In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie e possono essere ASST o ATS così come MMG/PLS.
+Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) ed è volto a contenere le informazioni anagrafiche e di contatto relative alle strutture di tipo ente L1. In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie e possono essere ASST o ATS così come MMG/PLS. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}.
 
@@ -57,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-RLOrganizationL1}}
+  {{link:esempio-RLOrganizationL1}}
 <br>
 </div>
 
@@ -66,13 +65,14 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ## Tipologie di ricerca
 
 ### Enti L1 attualmente attivi
-Organization L1 con data fine validità superiore alla data odierna o nulla
+I parametri da valorizzare per effettuare la ricerca sono:
+-	DataFineValidita: data di interesse
 
-| SCOPE | Ricerca tutte le Organization con profilo L2 la cui   data di fine validità è maggiore di una data di riferimento e che sono parte   di un determinato codice L1    |
+| SCOPE | Organization L1 con data fine validità superiore alla data odierna o nulla    |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{datadiRiferimento\}&partof:Organization.identifier=\{codicelivelloL1\}    |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL1<br>&dataFineValidita=\{datadiRiferimento\}    |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -84,17 +84,17 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
-| Nome e link Simplifier | Descrizione | Codice |
-|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di fine validità. | dataFineValidita |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di inserimento. | dataInizioValidita |
+| Nome | Descrizione | URL e link Simplifier | Espressione |
+|---|---|---|---|
+| RLOrganizationDataFineValidita | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
+| RLOrganizationDataInizioValidita  | Parametro di ricerca di strutture SISS di livello 1 specificando la data di   inserimento.  | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Value set
 
-Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1.
+Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | Codifica del tipo di azienda L1    | Il riferimento alla lista esaustiva della tipologia di enti di   livello 1 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| type    | Codifica del tipo di azienda L1    | Il riferimento alla lista esaustiva della tipologia di enti di livello 1 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
