@@ -7,15 +7,12 @@
   - [Value set](#value-set)
 
 ## Descrizione
+Il profilo RLPractitionerRoleMedicoPrescrittore è stato strutturato a partire dalla risorsa generica FHIR [Practitioner](http://hl7.org/fhir/R4/practitioner.html) per contenere i dettagli anagrafici dei medici prescrittori della Regione Lombardia destinatari dei ricettari RUR. 
 
-Profilo declinato a partire dalla risorsa standard FHIR [Practitioner](http://hl7.org/fhir/R4/practitioner.html) contenente l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR. Sono descritte le diverse tipologie di medici a cui è data facoltà di prescrivere prestazioni e farmaci dispensati dal SSR. 
-
-In particolare, il file contiene l’elenco dei:
+In particolare, il profilo contiene l’anagrafica dei seguenti medici:
 - Medici di Medicina Generale e Pediatri di Libera Scelta, i cui dati anagrafici sono conosciuti dai servizi NAR di Scelta&Revoca.
 -	Medici di ATS che operano nelle strutture dell’azienda, come guardia medica, medico incaricato ecc. I dati di questi medici sono recuperabili dei processi di consegna dei ricettari (RUR) ministeriali.
 - Medici di Aziende Sanitarie Ospedaliere sia pubbliche che private anch’essi destinatari di ricettari (RUR).
-
-Dato che un medico può lavorare (o lavorava) come prescrittore per più di una struttura, è possibile la presenza di più record relativi allo stesso codice fiscale. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore}}.
 

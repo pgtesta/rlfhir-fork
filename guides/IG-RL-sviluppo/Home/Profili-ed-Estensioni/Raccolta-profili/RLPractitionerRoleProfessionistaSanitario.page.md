@@ -76,4 +76,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione della qualifica del professionista sanitario | Il riferimento alla codifica esaustiva, definito nella tabella “Codifica della qualifica del professionista sanitario”, è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| code | Codice e descrizione della qualifica del professionista sanitario | La codifica esaustiva è definita dal valueset {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario}} |

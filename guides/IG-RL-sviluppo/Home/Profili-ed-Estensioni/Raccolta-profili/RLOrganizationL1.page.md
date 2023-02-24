@@ -72,7 +72,7 @@ I parametri da valorizzare per effettuare la ricerca sono:
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL1<br>&dataFineValidita=\{datadiRiferimento\}    |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL1<br>&dataFineValidita=\{_datadiRiferimento_\}    |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -84,10 +84,10 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
-| Nome | Descrizione | URL e link Simplifier | Espressione |
-|---|---|---|---|
-| RLOrganizationDataFineValidita | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
-| RLOrganizationDataInizioValidita  | Parametro di ricerca di strutture SISS di livello 1 specificando la data di   inserimento.  | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
+| Nome e link Simplifier | Descrizione | Espressione |
+|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di   inserimento.  |  extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
