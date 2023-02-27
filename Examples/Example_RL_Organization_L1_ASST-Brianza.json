@@ -9,7 +9,7 @@
   },
   "identifier": [
     {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+      "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte",
       "value": "030717"
     },
     {
@@ -21,8 +21,9 @@
     {
       "coding": [
         {
-          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
-          "code": "AO"
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1",
+          "code": "ASST",
+          "display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
         }
       ]
     }
@@ -67,7 +68,7 @@
             "coding": [
               {
                 "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
-                "code": "codice_distretto"
+                "code": "TBD"
               }
             ]
           }

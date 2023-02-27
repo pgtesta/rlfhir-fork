@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaOssigenoDomicilio",
   "name": "RLMedicationRequestConsegnaOssigenoDomicilio",
+  "description": "Flag riguardo la consegna dell'ossigeno a domicilio",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

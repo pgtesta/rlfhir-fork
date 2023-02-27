@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientResponsabilitaGenitoriale",
   "name": "RLPatientResponsabilitaGenitoriale",
+  "description": "Codice della responsabilità genitoriale nei confronti dell'assistito se minorenne",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

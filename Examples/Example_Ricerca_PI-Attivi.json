@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "id": "esempio-ricerca-pi-attivi",
   "type": "searchset",
-  "timestamp": "2023-01-16T08:32:56+01:00",
+  "timestamp": "2023-01-16T08:32:56.239+01:00",
   "total": 1,
   "entry": [
     {
@@ -11,7 +11,7 @@
         "resourceType": "CarePlan",
         "id": "365db2ec-973c-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
           ],
@@ -33,9 +33,9 @@
           "display": "Accesso"
         },
         "period": {
-          "start": "2023-01-15T08:32:56+01:00"
+          "start": "2023-01-15T08:32:56.239+01:00"
         },
-        "created": "2023-01-11T08:32:56+01:00",
+        "created": "2023-01-11T08:32:56.239+01:00",
         "author": {
           "reference": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
           "display": "ASST DELLA BRIANZA"
@@ -105,7 +105,7 @@
         "resourceType": "Patient",
         "id": "b7807e00-9745-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
           ],
@@ -218,7 +218,7 @@
         "resourceType": "MedicationRequest",
         "id": "088c489c-9750-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
           ],
@@ -253,8 +253,8 @@
             "timing": {
               "repeat": {
                 "boundsPeriod": {
-                  "start": "2023-01-21T08:32:56+01:00",
-                  "end": "2023-03-21T08:32:56+01:00"
+                  "start": "2023-01-21T08:32:56.239+01:00",
+                  "end": "2023-03-21T08:32:56.239+01:00"
                 },
                 "frequency": 1,
                 "period": 1,
@@ -295,7 +295,7 @@
         "resourceType": "ServiceRequest",
         "id": "14aec1c2-9750-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
           ],
@@ -332,8 +332,8 @@
           "display": "Mario Rossi"
         },
         "occurrencePeriod": {
-          "start": "2023-02-01T08:32:56+01:00",
-          "end": "2023-04-01T08:32:56+01:00"
+          "start": "2023-02-01T08:32:56.239+01:00",
+          "end": "2023-04-01T08:32:56.239+01:00"
         },
         "performer": {
           "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
@@ -382,7 +382,7 @@
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
-            "valueDateTime": "2023-03-30T08:32:56+01:00"
+            "valueDateTime": "2023-03-30T08:32:56.239+01:00"
           }
         ]
       }
@@ -393,7 +393,7 @@
         "resourceType": "Encounter",
         "id": "c559333c-974f-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
           ],
@@ -416,7 +416,7 @@
           "display": "Mario Rossi"
         },
         "period": {
-          "start": "2023-01-15T08:32:56+01:00"
+          "start": "2023-01-15T08:32:56.239+01:00"
         },
         "reasonCode": [
           {
@@ -441,14 +441,14 @@
         "resourceType": "Organization",
         "id": "c8f77b34-974f-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
           ]
         },
         "identifier": [
           {
-            "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte",
             "value": "030717"
           },
           {
@@ -460,8 +460,9 @@
           {
             "coding": [
               {
-                "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
-                "code": "AO"
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1",
+                "code": "ASST",
+                "display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
               }
             ]
           }
@@ -548,15 +549,15 @@
         "resourceType": "PractitionerRole",
         "id": "d711fc58-974f-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
           ],
           "versionId": "1"
         },
         "period": {
-          "start": "2012-01-01T08:32:56+01:00",
-          "end": "2023-03-31T08:32:56+01:00"
+          "start": "2012-01-01T08:32:56.239+01:00",
+          "end": "2023-03-31T08:32:56.239+01:00"
         },
         "practitioner": {
           "reference": "Practitioner/3a14db34-a959-11ed-afa1-0242ac120002",
@@ -585,7 +586,7 @@
         "resourceType": "Condition",
         "id": "e243606c-974f-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
           ],
@@ -624,7 +625,7 @@
         "resourceType": "Condition",
         "id": "e028bc4c-b134-11ed-afa1-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
           ],
@@ -663,7 +664,7 @@
         "resourceType": "Observation",
         "id": "bnm18194-974f-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
           ],
@@ -683,7 +684,7 @@
           "reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
           "display": "Mario Rossi"
         },
-        "effectiveDateTime": "2023-01-15T08:32:56+01:00",
+        "effectiveDateTime": "2023-01-15T08:32:56.239+01:00",
         "performer": [
           {
             "reference": "PractitionerRole/d252b662-989e-11ed-a8fc-0242ac120002",
@@ -705,7 +706,7 @@
         "resourceType": "Goal",
         "id": "eaa18194-974f-11ed-a8fc-0242ac120002",
         "meta": {
-          "lastUpdated": "2023-01-11T08:32:56+01:00",
+          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
           ],

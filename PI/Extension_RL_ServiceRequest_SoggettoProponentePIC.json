@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
   "name": "RLServiceRequestSoggettoProponentePIC",
+  "description": "Codice del soggetto che ha proposto la presa in carico dell'assistito",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

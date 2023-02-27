@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",
   "name": "RLPatientTipologiaCittadino",
+  "description": "Codice relativo alla condizione clinica prevalente del paziente",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
