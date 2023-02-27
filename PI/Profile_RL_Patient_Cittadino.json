@@ -462,7 +462,7 @@
         "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
         "path": "Patient.identifier.extension",
         "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
-        "short": "Numero di identificazione dell’istituzione” o ”identifica-tion number of the institution” indicata sulla TEAM",
+        "short": "Numero di identificazione dell’istituzione” o ”identification number of the institution” indicata sulla tessera TEAM",
         "comment": "Punto 7 della tessara TEAM",
         "min": 0,
         "max": "1",

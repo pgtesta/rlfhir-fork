@@ -212,12 +212,6 @@
         "min": 1
       },
       {
-        "id": "Organization.type.coding.system",
-        "path": "Organization.type.coding.system",
-        "min": 1,
-        "fixedUri": "http://www.hl7.it/fhir/base/CodeSystem-minsan-hsp.html"
-      },
-      {
         "id": "Organization.type.coding.code",
         "path": "Organization.type.coding.code",
         "short": "Descrizione del tipo di azienda",

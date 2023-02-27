@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
   "name": "RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
+  "description": "Numero di identificazione dell'istituzione indicata sulla tessera TEAM",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

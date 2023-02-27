@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
   "name": "RLQuestionnaireResponseTipologiaValutazione",
+  "description": "Codice della tipologia di valutazione",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

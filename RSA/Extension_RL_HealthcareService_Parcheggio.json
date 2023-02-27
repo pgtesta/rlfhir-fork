@@ -3,6 +3,7 @@
   "id": "RLHealthcareServiceParcheggio",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio",
   "name": "RLHealthcareServiceParcheggio",
+  "description": "Informazioni relative al parcheggio",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
