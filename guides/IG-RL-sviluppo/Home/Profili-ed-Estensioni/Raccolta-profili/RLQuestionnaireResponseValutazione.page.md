@@ -5,7 +5,7 @@
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Ultime valutazioni effettuate da un paziente](#ultime-valutazioni-effettuate-da-un-paziente)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -77,7 +77,7 @@ Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassis
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<b>&basedOn.activity.reference.code.coding.code=CDOM<b>&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}<b>&basedOn.activity.reference.identifier=\{_numeroPratica_\}<b>&source.identifier=\{_codiceFiscaleAssistito_\}<b>&status=completed<b>&_include=QuestionnaireResponse:questionnaire<b>&_include=QuestionnaireResponse:extension.esitoValutazione |
+| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<br>&basedOn.activity.reference.code.coding.code=CDOM<br>&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}<br>&basedOn.activity.reference.identifier=\{_numeroPratica_\}<br>&source.identifier=\{_codiceFiscaleAssistito_\}<br>&status=completed<br>&_include=QuestionnaireResponse:questionnaire<br>&_include=QuestionnaireResponse:extension.esitoValutazione |
 
 A titolo esemplificativo, la chiamata: 
 
