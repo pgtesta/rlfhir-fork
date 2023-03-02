@@ -8,6 +8,7 @@
     ],
     "versionId": "1"
   },
+  "status": "active",
   "name": "Peter James Charlmers Care Plan for Inpatient Encounter",
   "period": {
     "start": "2013-01-01",

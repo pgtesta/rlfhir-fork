@@ -10,6 +10,10 @@
   "content": "complete",
   "concept": [
     {
+      "code": "C-DOM",
+      "display": "CURE DOMICILIARI"
+    },
+    {
       "code": "TOX",
       "display": "SERVIZI RESIDENZIALI E SEMIRESIDENZIALI AREA DIPENDENZE"
     },
