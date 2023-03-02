@@ -6,7 +6,7 @@
     - [Progetti individuali attivi](#progetti-individuali-attivi)
     - [Progetti individuali di un paziente](#progetti-individuali-di-un-paziente)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -69,11 +69,15 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ###	Progetti individuali attivi
 
 Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
+
 Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. 
-I parametri da valorizzare per effettuare la ricerca sono:
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
 -	activity.reference(RLServiceRequestServiziSociosanitari).code.coding.code: codice del servizio socioassistenziale d’interesse
 -	author.reference(RLOrgnizationL1).identifier: codice L1 dell’ASST che ha prodotto il progetto individuale
+
+Inoltre, è possibile valorizzare il seguente parametro:
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
 
 |     SCOPE    | Progetti individuali attivi |
@@ -97,8 +101,10 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 ### Progetti individuali di un paziente
 
 Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un determinato servizio socioassistenziale.
+
 L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio socioassistenziale affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
-I parametri da valorizzare per effettuare la ricerca sono:
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	activity.reference(RLServiceRequestServiziSociosanitari).code coding.code: codice del servizio sociosanitario d’interesse
 -	activity.reference(RLServiceRequestServiziSociosanitari).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
 -	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito

@@ -70,7 +70,7 @@ Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLOrganizat
 
 ###	Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data
 
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 - dataFineValidità: data di interesse
 -	partOf.reference(RLOrganizationL1).identifier:  codice L1 dell’ente di interesse
 
@@ -89,7 +89,7 @@ A titolo esemplificativo, la chiamata:
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
 ### Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	dataFineValidità: data di interesse
 -	ASSTAfferenza.reference(RLOrganizationL1).identifier:  codice L1 dell’ASST di interesse
 
@@ -108,7 +108,7 @@ A titolo esemplificativo, la chiamata:
 restituirà tutte le strutture afferenti alla ASST.. 
 
 ### Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	dataFineValidità: data di interesse
 -	ASSTAfferenza.reference(RLOrganizationL1).identifier:  codice L1 dell’ASST di interesse
 -	type.coding.code: codice della tipologia di UdO

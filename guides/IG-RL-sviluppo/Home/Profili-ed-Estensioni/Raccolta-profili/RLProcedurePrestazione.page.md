@@ -70,7 +70,7 @@ Questa ricerca deve essere effettuata da un’ASST per ottenere il dettaglio del
 
 L’elenco delle prestazioni è generato a partire dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) ed aggiornato alla data corrente della richiesta. Ogni istanza del profilo deve riferirsi ad una singola e specifica prestazione erogata. Dunque, anche nel caso in cui una prestazione sia erogata più volte durante un singolo accesso il bundle generato contiene un numero di istanze del profilo pari al numero di volte in cui la prestazione è stata effettuata.
 
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	basedOn.reference(RLServiceRequestServiziSociosanitari).identifier: numero pratica del servizio di cure domiciliari.
 -	basedOn.reference(RLServiceRequestServiziSociosanitari).performer.reference(RLOrganizationL2).identifier: codice CUDES L2 dell’Ente Erogatore che ha in carico il pazient
 

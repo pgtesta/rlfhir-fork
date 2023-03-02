@@ -66,7 +66,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ## Tipologie di ricerca
 
 ### Organization L3 appartenenti ad un codice L2 con data fine validità superiore ad una certa data
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	dataFineValidità: data di interesse
 -	partOf.reference(RLOrganizationL2).identifier
 

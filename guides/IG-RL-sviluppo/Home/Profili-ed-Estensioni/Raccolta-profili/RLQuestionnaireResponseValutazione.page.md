@@ -67,7 +67,7 @@ Al momento non ci sono esempi disponibili.
 ### Ultime valutazioni effettuate da un paziente
 
 Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassistenziali per recuperare la versione più aggiornata delle valutazioni effettuate da un paziente che ha attivo o sta attivando un determinato servizio socioassistenziale.
- I parametri da valorizzare per effettuare la ricerca sono:
+ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	status: da compilare con il valore “completed” 
 -	source.reference(RLPatientiCittadino).identifier: codice fiscale del paziente 
 -	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier: codice identificativo del servizio socioassistenziale d’interesse
