@@ -242,17 +242,17 @@
         </tr>
         <tr>
           <td>PI</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireResponseValutazione.page.md}}</td>
-          <td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td>
-          <td>Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.</td>
-          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}</td>
-        </tr>
-        <tr>
-          <td>PI</td>
           <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireValutazione.page.md}}</td>
           <td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
           <td>Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.</td>
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione}}</td>
+        </tr>
+        <tr>
+          <td>PI</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireResponseValutazione.page.md}}</td>
+          <td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td>
+          <td>Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}</td>
         </tr>
         <tr>
           <td>PI</td>

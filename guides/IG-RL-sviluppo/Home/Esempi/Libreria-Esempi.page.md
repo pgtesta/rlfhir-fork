@@ -123,7 +123,7 @@
           <td>Bundle</td>
           <td>
               Esempio di messaggio di notifica errore di coerenza in caso
-              di&nbsp;&nbsp;&nbsp;ricerca tramite parametri
+              di ricerca tramite parametri
           </td>
           <td>{{link:esempio-bundle-notifica-errori-bundle}}</td>
           </tr>
@@ -132,7 +132,7 @@
           <td>Bundle</td>
           <td>
               Esempio di messaggio di notifica errore di coerenza in caso
-              di&nbsp;&nbsp;&nbsp;ricerca tramite ID
+              di ricerca tramite ID
           </td>
           <td>{{link:esempio-bundle-notifica-errori-resource}}</td>
           </tr>
@@ -243,7 +243,7 @@
           <td>ServiceRequest</td>
           <td>
               Esempio del
-              profilo&nbsp;&nbsp;&nbsp;RLServiceRequestPrestazioniInfermieristiche
+              profilo RLServiceRequestPrestazioniInfermieristiche
           </td>
           <td>
               {{link:Examples-Example-ServiceRequest-PrestazioniInfermieristiche}}
