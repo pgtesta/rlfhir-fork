@@ -61,20 +61,16 @@
   ],
   "activity": [
     {
-      "reference": [
-        {
-          "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
-          "display": "Terapia farmacologica"
-        }
-      ]
+      "reference": {
+        "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+        "display": "Terapia farmacologica"
+      }
     },
     {
-      "reference": [
-        {
-          "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
-          "display": "Servizi Socio Assistenziali"
-        }
-      ]
+      "reference": {
+        "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+        "display": "Servizi Socio Assistenziali"
+      }
     }
   ],
   "note": [
