@@ -7,7 +7,7 @@
     - [Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-una-asst-di-afferenza-con-data-fine-validità-superiore-ad-una-certa-data)
     - [Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia](#organization-l2-appartenenti-ad-un-codice-l1-con-data-validità-superiore-ad-una-certa-data-e-di-una-specifica-tipologia)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 

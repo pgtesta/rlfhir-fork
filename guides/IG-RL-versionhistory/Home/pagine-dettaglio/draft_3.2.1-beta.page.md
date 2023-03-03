@@ -4,7 +4,7 @@ Versione rilasciata il 03/03/2023.
 
 La guida è consultabile a questo [link](https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.1-beta).
 
-Questa versione della Implementation Guide fa riferimento agli elementi FHIR contenuti nel pacchetto [rl.fhir.r4 0.0.4](https://simplifier.net/packages/rl.fhir.r4/0.0.4).
+Questa versione della Implementation Guide fa riferimento agli elementi FHIR contenuti nel pacchetto [rl.fhir.r4.draft 0.0.5](https://simplifier.net/packages/rl.fhir.r4.draft/0.0.5).
 
 ## Novità
 ### Risorse FHIR

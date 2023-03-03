@@ -5,7 +5,7 @@
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -65,7 +65,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ## Tipologie di ricerca
 
 ### Enti L1 attualmente attivi
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	DataFineValidita: data di interesse
 
 | SCOPE | Organization L1 con data fine validità superiore alla data odierna o nulla    |

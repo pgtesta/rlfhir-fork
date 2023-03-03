@@ -4,7 +4,7 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 Il profilo RLPractitionerProfessionistaSanitario è stato strutturato a partire dalla risorsa generica FHIR [Practitioner](http://hl7.org/fhir/R4/practitioner.html) e contiene le informazioni anagrafiche di un professionista sanitario che opera nell’ambito della sanità territoriale e che può ricoprire il ruolo di case manager di un progetto individuale di un assistito.

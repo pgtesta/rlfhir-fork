@@ -35,55 +35,55 @@
       </thead>
       <tbody id="myTable">
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca prestazioni erogate</td>
           <td>{{link:esempio-ricerca-prestazioni-erogate}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca progetti individuali attivi</td>
           <td>{{link:esempio-ricerca-pi-attivi}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca rivalutazioni e sospensioni</td>
           <td>{{link:esempio-ricerca-rivalutazioni-sospensioni}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca rivalutazioni</td>
           <td>{{link:esempio-ricerca-rivalutazioni}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca sospensioni</td>
           <td>{{link:esempio-ricerca-sospensione}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca storico progetti individuali</td>
           <td>{{link:esempio-ricerca-storico-pi}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca valutazioni</td>
           <td>{{link:esempio-ricerca-valutazioni}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>Patient</td>
           <td>Esempio del profilo RLPatientCittadino</td>
           <td>{{link:esempio-Patient-Cittadino}}</td>
           </tr>
           <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>PractitionerRole</td>
           <td>Esempio del profilo RLPractitionerRoleOperatoreADI</td>
           <td>{{link:esempio-PractitionerRole-OperatoreADI}}</td>
@@ -123,7 +123,7 @@
           <td>Bundle</td>
           <td>
               Esempio di messaggio di notifica errore di coerenza in caso
-              di&nbsp;&nbsp;&nbsp;ricerca tramite parametri
+              di ricerca tramite parametri
           </td>
           <td>{{link:esempio-bundle-notifica-errori-bundle}}</td>
           </tr>
@@ -132,18 +132,18 @@
           <td>Bundle</td>
           <td>
               Esempio di messaggio di notifica errore di coerenza in caso
-              di&nbsp;&nbsp;&nbsp;ricerca tramite ID
+              di ricerca tramite ID
           </td>
           <td>{{link:esempio-bundle-notifica-errori-resource}}</td>
           </tr>
           <tr>
-          <td>Errori, CDOM</td>
+          <td>Errori, C-DOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: parametro non supportato</td>
           <td>{{link:Examples-Example-searchfail}}</td>
           </tr>
           <tr>
-          <td>Errori, CDOM</td>
+          <td>Errori, C-DOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: eccezione generica</td>
           <td>{{link:Examples-Example-exception}}</td>
@@ -243,7 +243,7 @@
           <td>ServiceRequest</td>
           <td>
               Esempio del
-              profilo&nbsp;&nbsp;&nbsp;RLServiceRequestPrestazioniInfermieristiche
+              profilo RLServiceRequestPrestazioniInfermieristiche
           </td>
           <td>
               {{link:Examples-Example-ServiceRequest-PrestazioniInfermieristiche}}

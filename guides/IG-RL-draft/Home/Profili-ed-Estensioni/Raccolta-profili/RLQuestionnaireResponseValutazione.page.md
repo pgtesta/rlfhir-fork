@@ -5,7 +5,7 @@
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Ultime valutazioni effettuate da un paziente](#ultime-valutazioni-effettuate-da-un-paziente)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -67,7 +67,7 @@ Al momento non ci sono esempi disponibili.
 ### Ultime valutazioni effettuate da un paziente
 
 Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassistenziali per recuperare la versione più aggiornata delle valutazioni effettuate da un paziente che ha attivo o sta attivando un determinato servizio socioassistenziale.
- I parametri da valorizzare per effettuare la ricerca sono:
+ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	status: da compilare con il valore “completed” 
 -	source.reference(RLPatientiCittadino).identifier: codice fiscale del paziente 
 -	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier: codice identificativo del servizio socioassistenziale d’interesse
@@ -77,11 +77,12 @@ Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassis
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<b>&basedOn.activity.reference.code.coding.code=CDOM<b>&basedOn.activity.reference.performer.identifier=\{_codiceLivello2_\}<b>&basedOn.activity.reference.identifier=\{_numeroPratica_\}<b>&source.identifier=\{_codiceFiscaleAssistito_\}<b>&status=completed<b>&_include=QuestionnaireResponse:questionnaire<b>&_include=QuestionnaireResponse:extension.esitoValutazione |
+| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<br>&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:CarePlan.activity-reference:ServiceRequest.identifier=\{_numeroPratica_\}<br>&source:Patient.identifier=\{_codiceFiscaleAssistito_\}<br>&status=completed<br>&_include=QuestionnaireResponse:questionnaire<br>&_include=QuestionnaireResponse:extension.esitoValutazione
+ |
 
 A titolo esemplificativo, la chiamata: 
 
-    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&basedOn:CarePlan.activity.reference.code.coding.code=CDOM&basedOn:CarePlan.activity.reference.performer.identifier=03014300&basedOn.activity.reference.identifier=2022000001&source.identifier=RSSMRA80A01F205&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione
+    QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=03014300&based-on:CarePlan.activity-reference:ServiceRequest.identifier=2022000001&source:Patient.identifier=RSSMRA80A01F205&status=completed&_include=QuestionnaireResponse:questionnaire&_include=QuestionnaireResponse:extension.esitoValutazione
 
 Restituirà l’ultima versione della valutazione afferente alla pratica "2022000001", e la tipologia della stessa, effettuata al paziente con codice fiscale “RSSMRA80A01F205”.
 

@@ -67,7 +67,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 Questa ricerca deve essere effettuata da un’ASST per ottenere le informazioni riassuntive delle sospensioni temporanee del ricovero domiciliare di un paziente. L’elenco delle sospensioni temporanee è generato a partire dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) ed aggiornato alla data corrente della richiesta. Mediante il numero pratica del servizio e cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
 
-I parametri da valorizzare per effettuare la ricerca sono:
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	requisition: numero pratica del servizio di cure domiciliari.
 
 | SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare del paziente |
@@ -75,11 +75,11 @@ I parametri da valorizzare per effettuare la ricerca sono:
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
-| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI<br>&requisition=\{_numeroPratica_\}<br>&basedOn:CarePlan.activity.reference.performer.identifier=\{_codiceLivello2_\} |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI<br>&requisition=\{_numeroPratica_\}<br>&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\} |
 
 A titolo esemplificativo, la chiamata: 
   
-    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=2022000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=2022000001&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=03014300
 
 restituirà, se presenti, tutte le sospensioni richieste per la pratica numero "2022000001" afferente alla struttura "03014300".
 
@@ -87,7 +87,7 @@ Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-rice
 
 Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli relativi alla necessità di rivalutazione del paziente, strutturati nel profilo RLServiceRequestRivalutazione, vengono di seguito riportate le informazioni per effettuare la ricerca congiunta.
 
-Il parametro da valorizzare per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
+Il parametro da valorizzare obbligatoriamente per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
 -	requisition: numero pratica del servizio di cure domiciliari.
 
 | SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e necessità di rivalutazione del paziente |
@@ -95,11 +95,11 @@ Il parametro da valorizzare per effettuare la ricerca per entrambi i profili int
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
-| URL | ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI)<br>&requisition=\{numeroPratica\}<br>&basedOn:CarePlan.activity.reference.performer.identifier=\{codiceLivello2\} |
+| URL | ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione,<br>https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI<br>&requisition=\{_numeroPratica_\}<br>&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\} |
 
 La chiamata:
   
-    ServiceRequest?_profile=(https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI OR https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione)&requisition=2022000001&basedOn:CarePlan.activity.reference.performer.identifier=03014300
+    ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione,https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI&requisition=2022000001&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=03014300
 
 restituirà, se presenti, tutte le sospensioni temporanee e rivalutazioni relative pratica numero "2022000001" afferente alla struttura "03014300".
 
