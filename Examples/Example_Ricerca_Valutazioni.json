@@ -21,10 +21,7 @@
           "reference": "CarePlan/b7480958-989e-11ed-a8fc-0242ac120002",
           "display": "PI-2023000000001"
         },
-        "questionnaire": {
-          "reference": "Questionnaire/d8a3cd40-981b-11ed-a8fc-0242ac120002",
-          "display": "Scheda Triage"
-        },
+        "questionnaire": "Questionnaire/d8a3cd40-981b-11ed-a8fc-0242ac120002",
         "status": "completed",
         "authored": "2013-01-11",
         "author": {
@@ -203,6 +200,7 @@
         },
         "identifier": [
           {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
             "value": "PI-2023000000001"
           }
         ],

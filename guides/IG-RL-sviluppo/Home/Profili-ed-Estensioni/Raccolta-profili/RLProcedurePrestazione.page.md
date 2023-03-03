@@ -79,11 +79,11 @@ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
-| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione<br>&basedOn:ServiceRequest.code.coding.code=C-DOM<br>&basedOn:ServiceRequest.performer.identifier=\{_codiceLivello2_\}<br>&basedOn:ServiceRequest.identifier=\{_numeroPratica_\}<br>&_include=Procedure:basedOn<br>&_include=Procedure:subject |
+| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione<br>&based-on:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:ServiceRequest.identifier=\{_numeroPratica_\}<br>&_include=Procedure:based-on<br>&_include=Procedure:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&basedOn:ServiceRequest.code.coding.code=C-DOM&basedOn:ServiceRequest.performer.identifier=03014300&basedOn:ServiceRequest.identifier=2022000001&_include=Procedure:basedOn&_include=Procedure:subject
+    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.performer:Organization.identifier=03014300&based-on:ServiceRequest.identifier=2022000001&_include=Procedure:based-on&_include=Procedure:subjec
 
 Restituirà tutte le prestazioni erogate per pratica numero "2022000001" e afferenti alla struttura "03014300".
 

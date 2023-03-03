@@ -84,11 +84,11 @@ Inoltre, è possibile valorizzare il seguente parametro:
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity.reference.code.coding.code=C-DOM<br>&author.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
+| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.code=C-DOM<br>&author:Organization.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&author.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/CarePlan?&activity-reference:ServiceRequest.code=C-DOM&author:Organization.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
 
 Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 1 "030701" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche tutte le informazioni associate referenziate nel profilo.
 
@@ -113,11 +113,11 @@ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 |---|---|
 |     VERB    |     GET    |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity.reference.code.coding.code=C-DOM<br>&activity.reference.identifier=\{_numeroPratica_\}<br>&subject.identifier=\{_codiceFiscale_\}<br>&_include=CarePlan:activity.reference<br>&_include=CarePlan:subject |
+|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.identifier=\{_numeroPratica_\}<br>&subject:Patient.identifier=\{_codiceFiscale_\}<br>&_include=CarePlan:activity-reference<br>&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=C-DOM&activity.reference.identifier=2022000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.identifier=2022000001&subject:Patient.identifier=RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject
 
 Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "2022000001". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 

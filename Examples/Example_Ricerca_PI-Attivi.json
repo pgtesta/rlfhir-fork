@@ -19,6 +19,7 @@
         },
         "identifier": [
           {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
             "value": "PI-2023000000001"
           }
         ],
