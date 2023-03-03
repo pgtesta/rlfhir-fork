@@ -23,10 +23,12 @@
     "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
     "display": "Mario Rossi"
   },
-  "basedOn": {
-    "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-    "display": "PI-2023000000001"
-  },
+  "basedOn": [
+    {
+      "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+      "display": "PI-2023000000001"
+    }
+  ],
   "note": [
     {
       "text": "Rivalutare mensilmente se prorogare la terapia"

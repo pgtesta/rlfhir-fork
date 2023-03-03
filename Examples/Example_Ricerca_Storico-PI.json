@@ -19,6 +19,7 @@
         },
         "identifier": [
           {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
             "value": "PI-2023000000001"
           }
         ],
@@ -70,20 +71,16 @@
         ],
         "activity": [
           {
-            "reference": [
-              {
-                "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
-                "display": "Terapia farmacologica"
-              }
-            ]
+            "reference": {
+              "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+              "display": "Terapia farmacologica"
+            }
           },
           {
-            "reference": [
-              {
-                "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
-                "display": "Servizi Socio Assistenziali"
-              }
-            ]
+            "reference": {
+              "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+              "display": "Servizi Socio Assistenziali"
+            }
           }
         ],
         "note": [
@@ -113,6 +110,7 @@
         },
         "identifier": [
           {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
             "value": "PI-2022000000001"
           }
         ],
@@ -228,7 +226,7 @@
         },
         "generalPractitioner": {
           "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
-          "display": "Dott. Francesco Verdi"
+          "display": "MMG"
         },
         "extension": [
           {
@@ -321,10 +319,12 @@
           "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
           "display": "Mario Rossi"
         },
-        "basedOn": {
-          "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-          "display": "PI-2023000000001"
-        },
+        "basedOn": [
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
         "note": [
           {
             "text": "Rivalutare mensilmente se prorogare la terapia"
@@ -417,10 +417,12 @@
           "start": "2023-02-01T08:32:56.239+01:00",
           "end": "2023-04-01T08:32:56.239+01:00"
         },
-        "performer": {
-          "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
-          "display": "FONDAZIONE MADDALENA GRASSI"
-        },
+        "performer": [
+          {
+            "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
+            "display": "FONDAZIONE MADDALENA GRASSI"
+          }
+        ],
         "reasonCode": [
           {
             "coding": [

@@ -4,7 +4,7 @@
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 Il profilo RLPractitionerRoleMedicoPrescrittore è stato strutturato a partire dalla risorsa generica FHIR [Practitioner](http://hl7.org/fhir/R4/practitioner.html) per contenere i dettagli anagrafici dei medici prescrittori della Regione Lombardia destinatari dei ricettari RUR. 

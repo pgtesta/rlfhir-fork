@@ -38,21 +38,21 @@
       </thead>
       <tbody id="myTable">
         <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleOperatoreADI.page.md}}</td>
           <td><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></td>
           <td>Profilo contentente le tipologie di operatori ADI</td>
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI}}</td>
         </tr>
         <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione.page.md}}</td>
           <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
           <td>Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare</td>
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione}}</td>
         </tr>
         <tr>
-          <td>CDOM</td>
+          <td>C-DOM</td>
           <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSospensioneADI.page.md}}</td>
           <td><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></td>
           <td>Profilo che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente</td>
@@ -242,17 +242,17 @@
         </tr>
         <tr>
           <td>PI</td>
-          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireResponseValutazione.page.md}}</td>
-          <td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td>
-          <td>Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.</td>
-          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}</td>
-        </tr>
-        <tr>
-          <td>PI</td>
           <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireValutazione.page.md}}</td>
           <td><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></td>
           <td>Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.</td>
           <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione}}</td>
+        </tr>
+        <tr>
+          <td>PI</td>
+          <td>{{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLQuestionnaireResponseValutazione.page.md}}</td>
+          <td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td>
+          <td>Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.</td>
+          <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}</td>
         </tr>
         <tr>
           <td>PI</td>

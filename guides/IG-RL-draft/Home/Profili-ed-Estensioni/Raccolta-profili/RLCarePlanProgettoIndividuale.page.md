@@ -6,7 +6,7 @@
     - [Progetti individuali attivi](#progetti-individuali-attivi)
     - [Progetti individuali di un paziente](#progetti-individuali-di-un-paziente)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -69,22 +69,26 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ###	Progetti individuali attivi
 
 Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
+
 Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. 
-I parametri da valorizzare per effettuare la ricerca sono:
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
--	activity.reference(RLServiceRequestServiziSociosanitari).code.coding.code: codice del servizio socioassistenziale d’interesse
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).code.coding.code: codice del servizio socioassistenziale d’interesse
 -	author.reference(RLOrgnizationL1).identifier: codice L1 dell’ASST che ha prodotto il progetto individuale
+
+Inoltre, è possibile valorizzare il seguente parametro:
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
 
 |     SCOPE    | Progetti individuali attivi |
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity.reference.code.coding.code=CDOM<br>&author.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
+| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.code=C-DOM<br>&author:Organization.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&author.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.code=C-DOM&author:Organization.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
 
 Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 1 "030701" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche tutte le informazioni associate referenziate nel profilo.
 
@@ -97,21 +101,23 @@ _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 ### Progetti individuali di un paziente
 
 Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un determinato servizio socioassistenziale.
+
 L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio socioassistenziale affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
-I parametri da valorizzare per effettuare la ricerca sono:
--	activity.reference(RLServiceRequestServiziSociosanitari).code coding.code: codice del servizio sociosanitario d’interesse
--	activity.reference(RLServiceRequestServiziSociosanitari).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).code coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
 -	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
 
 |     SCOPE    |Progetti individuali di un paziente|
 |---|---|
 |     VERB    |     GET    |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity.reference.code.coding.code=CDOM<br>&activity.reference.identifier=\{_numeroPratica_\}<br>&subject.identifier=\{_codiceFiscale_\}<br>&_include=CarePlan:activity.reference<br>&_include=CarePlan:subject |
+|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.identifier=\{_numeroPratica_\}<br>&subject:Patient.identifier=\{_codiceFiscale_\}<br>&_include=CarePlan:activity-reference<br>&_include=CarePlan:subject |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity.reference.code.coding.code=CDOM&activity.reference.identifier=2022000001&subject.identifier=RSSMRA80A01F205X&_include=CarePlan:activity.reference&_include=CarePlan:subject
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.identifier=2022000001&subject:Patient.identifier=RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject
 
 Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "2022000001". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
 
