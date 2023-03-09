@@ -20,6 +20,39 @@
   "differential": {
     "element": [
       {
+        "id": "Patient.id",
+        "path": "Patient.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta",
+        "path": "Patient.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.versionId",
+        "path": "Patient.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.lastUpdated",
+        "path": "Patient.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.profile",
+        "path": "Patient.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+      },
+      {
         "id": "Patient.extension",
         "path": "Patient.extension",
         "slicing": {
@@ -31,14 +64,14 @@
           ],
           "rules": "open"
         },
-        "min": 0
+        "min": 5
       },
       {
         "id": "Patient.extension:cittadinanza",
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
         "short": "Cittadinanza del cittadino",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -51,16 +84,12 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:cittadinanza.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza"
-      },
-      {
         "id": "Patient.extension:cittadinanza.value[x]",
         "path": "Patient.extension.value[x]",
         "short": "Codice ISTAT della nazione di cittadinanza del cittadino",
         "definition": "Stringa alfabetica di 3 caratteri",
         "comment": "il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "code"
@@ -73,7 +102,7 @@
         "sliceName": "titoloDiStudio",
         "short": "Titolo di studio del cittadino",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei titoli di studio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -86,13 +115,9 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:titoloDiStudio.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio"
-      },
-      {
         "id": "Patient.extension:titoloDiStudio.value[x]",
         "path": "Patient.extension.value[x]",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
@@ -105,6 +130,7 @@
         "short": "Codice del titolo di studio del cittadino",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica del titolo di studio",
@@ -116,7 +142,8 @@
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descizione che rappresenta il titolo di studio del cittadino",
         "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Patient.extension:posizioneDellaProfessione",
@@ -137,11 +164,6 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:posizioneDellaProfessione.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione"
-      },
-      {
         "id": "Patient.extension:posizioneDellaProfessione.value[x]",
         "path": "Patient.extension.value[x]",
         "type": [
@@ -156,6 +178,7 @@
         "short": "Codice della professione del cittadino",
         "definition": "Stringa numerica di 2 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica della posizione professionale",
@@ -166,7 +189,8 @@
         "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descrizione della professione del cittadino",
-        "definition": "Stringa alfanumerica al più di 200 caratteri"
+        "definition": "Stringa alfanumerica al più di 200 caratteri",
+        "min": 1
       },
       {
         "id": "Patient.extension:situazionePensionistica",
@@ -187,11 +211,6 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:situazionePensionistica.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica"
-      },
-      {
         "id": "Patient.extension:situazionePensionistica.value[x]",
         "path": "Patient.extension.value[x]",
         "type": [
@@ -206,6 +225,7 @@
         "short": "Codice della situazione pensionistica del cittadino",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica della situazione pensionistica",
@@ -217,14 +237,15 @@
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descrizione della situazione pensionistica del cittadino",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Patient.extension:luogoDiNascita",
         "path": "Patient.extension",
         "sliceName": "luogoDiNascita",
         "short": "Luogo di nascita del cittadino",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -237,16 +258,12 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:luogoDiNascita.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita"
-      },
-      {
         "id": "Patient.extension:luogoDiNascita.value[x]",
         "path": "Patient.extension.value[x]",
         "short": "Se il cittadino è nato in Italia il campo contiente il codice ISTAT del comune di nascita. Se il cittadino è nasto all'estero il campo contiente il codice \"999\" seguito dal codice ISTAT della nazione di nascita. Per gli apolidi o non rilevati il campo riporta il codice \"999999\".",
         "definition": "Stringa numerica di 6 cifre",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "code"
@@ -258,7 +275,7 @@
         "path": "Patient.extension",
         "sliceName": "ATSResidenza",
         "short": "ATS di residenza del cittadino",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -271,16 +288,12 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:ATSResidenza.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
-      },
-      {
         "id": "Patient.extension:ATSResidenza.value[x]",
         "path": "Patient.extension.value[x]",
         "short": "Codice L1 dell'ATS in cui il cittadino risiede",
         "definition": "Stringa numerica di 6 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "code"
@@ -306,25 +319,12 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:responsabilitaGenitoriale.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientResponsabilitaGenitoriale"
-      },
-      {
-        "id": "Patient.extension:responsabilitaGenitoriale.value[x]",
-        "path": "Patient.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
         "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
         "short": "Codice della responsabilità genitoriale nei confronti dell’assistito, se minorenne.",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale"
@@ -334,7 +334,8 @@
         "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descrizione della responsabilità genitoriale nei confronti dell’assistito, se minorenne.",
-        "definition": "Stringa alfanumerica al più di 50 caratteri"
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "min": 1
       },
       {
         "id": "Patient.extension:tipologiaCittadino",
@@ -342,7 +343,7 @@
         "sliceName": "tipologiaCittadino",
         "short": "Condizione clinica prevalente dell’assistito",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del cittadino contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -355,25 +356,12 @@
         "isModifier": false
       },
       {
-        "id": "Patient.extension:tipologiaCittadino.url",
-        "path": "Patient.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino"
-      },
-      {
-        "id": "Patient.extension:tipologiaCittadino.value[x]",
-        "path": "Patient.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
         "id": "Patient.extension:tipologiaCittadino.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
         "short": "Codice che rappresenta la condizione clinica prevalente dell’assistito",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica della tipologia del paziente",
@@ -384,7 +372,8 @@
         "id": "Patient.extension:tipologiaCittadino.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Patient.identifier",
@@ -412,12 +401,14 @@
       {
         "id": "Patient.identifier:CF.system",
         "path": "Patient.identifier.system",
+        "min": 1,
         "fixedUri": "http://hl7.it/sid/codiceFiscale"
       },
       {
         "id": "Patient.identifier:CF.value",
         "path": "Patient.identifier.value",
-        "short": "Codice fiscale del paziente"
+        "short": "Codice fiscale del paziente",
+        "min": 1
       },
       {
         "id": "Patient.identifier:STP",
@@ -429,12 +420,14 @@
       {
         "id": "Patient.identifier:STP.system",
         "path": "Patient.identifier.system",
+        "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/stp"
       },
       {
         "id": "Patient.identifier:STP.value",
         "path": "Patient.identifier.value",
-        "short": "Codice STP del cittadino"
+        "short": "Codice STP del cittadino",
+        "min": 1
       },
       {
         "id": "Patient.identifier:tesseraTEAM",
@@ -456,7 +449,7 @@
           ],
           "rules": "open"
         },
-        "min": 0
+        "min": 1
       },
       {
         "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
@@ -464,7 +457,7 @@
         "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
         "short": "Numero di identificazione dell’istituzione” o ”identification number of the institution” indicata sulla tessera TEAM",
         "comment": "Punto 7 della tessara TEAM",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -477,26 +470,42 @@
         "isModifier": false
       },
       {
+        "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente.value[x]",
+        "path": "Patient.identifier.extension.value[x]",
+        "min": 1
+      },
+      {
         "id": "Patient.identifier:tesseraTEAM.type",
         "path": "Patient.identifier.type",
-        "short": "Nazione"
+        "short": "Nazione",
+        "min": 1
       },
       {
         "id": "Patient.identifier:tesseraTEAM.system",
         "path": "Patient.identifier.system",
+        "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
       },
       {
         "id": "Patient.identifier:tesseraTEAM.value",
         "path": "Patient.identifier.value",
         "short": "Numero identificazione tessera sanitaria europea",
-        "comment": "Punto 8 della tessara TEAM"
+        "comment": "Punto 8 della tessara TEAM",
+        "min": 1
       },
       {
         "id": "Patient.identifier:tesseraTEAM.period",
         "path": "Patient.identifier.period",
         "short": "Data scadenza tessera sanitaria",
-        "comment": "Punto 9 della tessara TEAM"
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.period.end",
+        "path": "Patient.identifier.period.end",
+        "short": "Data scadenza tessera sanitaria",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Punto 9 della tessara TEAM",
+        "min": 1
       },
       {
         "id": "Patient.active",
@@ -543,33 +552,83 @@
       {
         "id": "Patient.address",
         "path": "Patient.address",
-        "short": "Domicilio del cittadino"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Residenza anagrafica del cittadino",
+        "definition": "Identificazione della residenza fiscale dell’assistito",
+        "min": 1,
+        "max": "1"
       },
       {
-        "id": "Patient.address.use",
+        "id": "Patient.address:residenzaAnagraficaCittadino",
+        "path": "Patient.address",
+        "sliceName": "residenzaAnagraficaCittadino",
+        "short": "Residenza anagrafica del cittadino",
+        "definition": "Identificazione della residenza fiscale dell’assistito",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.use",
         "path": "Patient.address.use",
-        "definition": "Valore fisso su \"home\"",
+        "min": 1,
+        "fixedCode": "billing"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.city",
+        "path": "Patient.address.city",
+        "short": "Codice ISTAT della città di residenza del cittadino",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.country",
+        "path": "Patient.address.country",
+        "short": "Codice Stato Estero di residenza del cittadino. Se il cittadino è residente in Italia il campo deve essere lasciato vuoto",
+        "definition": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il cittadino è in carico ad un ente erogatre di cure domiciliari"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino",
+        "path": "Patient.address",
+        "sliceName": "domicilioCittadino",
+        "short": "Domicilio del cittadino se questo differisce dalla residenza",
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.use",
+        "path": "Patient.address.use",
+        "definition": "valore fisso su \"home\"",
+        "min": 1,
         "fixedCode": "home"
       },
       {
-        "id": "Patient.address.city",
+        "id": "Patient.address:domicilioCittadino.city",
         "path": "Patient.address.city",
         "short": "Codice ISTAT della città di domicilio del cittadino",
         "definition": "Stringa numerica di 6 cifre",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "Patient.address.country",
-        "path": "Patient.address.country",
-        "short": "Codice Stato Estero di residenza del paziente",
-        "definition": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il cittadino è in carico ad un ente erogatre di cure domiciliari",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Patient.maritalStatus",
         "path": "Patient.maritalStatus",
         "short": "Stato civile del paziente",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dello stato civile contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dello stato civile contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
+      },
+      {
+        "id": "Patient.maritalStatus.coding",
+        "path": "Patient.maritalStatus.coding",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient.maritalStatus.coding.code",
@@ -577,6 +636,7 @@
         "short": "Codice dello stato civile del paziente",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica dello stato civile",
@@ -588,13 +648,15 @@
         "path": "Patient.maritalStatus.coding.display",
         "short": "Descrizione dello stato civile del paziente",
         "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
         "short": "Riferimento al profilo del MMG/PLS che assiste il cittadino",
         "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore",
+        "max": "1",
         "type": [
           {
             "code": "Reference",

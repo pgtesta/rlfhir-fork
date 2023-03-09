@@ -8,7 +8,7 @@
 
 
 ## Descrizione
-Il profilo RLQuestionnaireResponseValutazione è stato strutturato a partire dalla risorsa generica FHIR [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) per descrivere la specifica valutazione al quale il paziente è stato sottoposto.
+Il profilo RLQuestionnaireValutazione è stato strutturato a partire dalla risorsa generica FHIR [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) per descrivere la specifica valutazione al quale il paziente è stato sottoposto.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione}}.
 

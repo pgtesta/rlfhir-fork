@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL3",
   "meta": {
-    "lastUpdated": "2022-10-25T10:22:11.2054768+00:00"
+    "lastUpdated": "2023-03-09T11:41:21.8204438+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3",
   "name": "RLOrganizationL3",
@@ -101,7 +101,7 @@
       {
         "id": "Organization.identifier:CodiceInternoReparto.system",
         "path": "Organization.identifier.system",
-        "fixedUri": "https://www.siss.regione.lombardia.it/codesystems/departments"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceInternoReparto"
       },
       {
         "id": "Organization.identifier:CodiceInternoReparto.value",
@@ -118,6 +118,11 @@
         "definition": "Stringa alfanumerica massimo di 12 caratteri",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Organization.identifier:CodiceMinisterialeReparto.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialeReparto"
       },
       {
         "id": "Organization.identifier:CodiceMinisterialeReparto.value",
@@ -143,29 +148,12 @@
         "min": 1,
         "type": [
           {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
-                "valueBoolean": true
-              }
-            ],
             "code": "Reference",
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
             ]
           }
         ]
-      },
-      {
-        "id": "Organization.partOf.reference",
-        "path": "Organization.partOf.reference",
-        "short": "Identificativo dell'ente L2 di appartenenza"
-      },
-      {
-        "id": "Organization.partOf.type",
-        "path": "Organization.partOf.type",
-        "short": "Da valorizzare con 'organization'",
-        "definition": "Valore costante secondo lo standard FHIR"
       }
     ]
   }

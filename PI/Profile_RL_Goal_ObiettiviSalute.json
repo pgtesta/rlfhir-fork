@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLGoalObiettiviSalute",
   "meta": {
-    "lastUpdated": "2023-01-23T14:41:33.0080341+00:00"
+    "lastUpdated": "2023-03-08T12:08:16.0190353+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
   "name": "RLGoalObiettiviSalute",
@@ -23,6 +23,39 @@
   "differential": {
     "element": [
       {
+        "id": "Goal.id",
+        "path": "Goal.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta",
+        "path": "Goal.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta.versionId",
+        "path": "Goal.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta.lastUpdated",
+        "path": "Goal.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta.profile",
+        "path": "Goal.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
+      },
+      {
         "id": "Goal.lifecycleStatus",
         "path": "Goal.lifecycleStatus",
         "short": "Stato dell'obbiettivo di salute",
@@ -33,13 +66,15 @@
       {
         "id": "Goal.description",
         "path": "Goal.description",
-        "short": "Codifica e descrizione dell' obbiettivo di salute definito per il paziente"
+        "short": "Codifica o descrizione dell' obiettivo di salute definito per il paziente"
       },
       {
         "id": "Goal.description.coding",
         "path": "Goal.description.coding",
-        "short": "Codifica e descrizione dell'obiettivo di salute definito per il paziente",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide"
+        "short": "Codifica o descrizione dell' obiettivo di salute definito per il paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli obiettivi di salute contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Goal.description.coding.code",
@@ -55,9 +90,10 @@
       {
         "id": "Goal.description.coding.display",
         "path": "Goal.description.coding.display",
-        "short": "Descrizione dell'obiettivo di salute",
+        "short": "Descrizione dell'obiettivo di salute. Si noti che questo campo può riportare la descrizione del codice associato all'obiettivo di salute codificato oppure una decrizione testuale libera.",
         "definition": "Stringa alfanumerica al più di 200 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Goal.subject",
@@ -75,10 +111,27 @@
         ]
       },
       {
+        "id": "Goal.addresses",
+        "path": "Goal.addresses",
+        "short": "Riferimento al servizio assistenziale dal quale è stato derivato l'obiettivo di salute",
+        "definition": "Reference alla risorsa RLServiceRequestServiziSocioAssistenziali",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Goal.note",
         "path": "Goal.note",
         "short": "Nota contenente l'obiettivo di salute nel caso non fosse selezionato tra le voci codificate",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
       }
     ]
   }

@@ -19,6 +19,39 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.versionId",
+        "path": "Observation.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.lastUpdated",
+        "path": "Observation.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile",
+        "path": "Observation.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "short": "Stato della valutazione",
@@ -36,6 +69,7 @@
         "short": "Codice della valutazione specifica al quale il paziente è stato sottoposto",
         "definition": "Stringa alfanumerica di 4 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica delle valutazioni",
@@ -46,7 +80,8 @@
         "id": "Observation.code.coding.display",
         "path": "Observation.code.coding.display",
         "short": "Nome della valutazione specifica al quale il paziente è stato sottoposto",
-        "definition": "Stringa alfanumerica di al più 100 caratteri"
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
       },
       {
         "id": "Observation.subject",
@@ -54,6 +89,7 @@
         "short": "Paziente sottoposto alla valutazione",
         "definition": "Reference alla risorsa RLPatientCittadino",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -81,6 +117,8 @@
         "short": "Profilo del professionista sanitario che ha effettualto la valutazione",
         "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario del professionista sanitario che compila la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -93,8 +131,8 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Score della scheda Triage",
-        "definition": "Valore numerico compreso tra 0 e 14",
+        "short": "Esito della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito è la scheda triage",
+        "definition": "Nel caso della scheda triage valore numerico compreso tra 0 e 14",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -105,9 +143,11 @@
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto. Attualmente è disponibile la scheda Triage",
+        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
         "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -116,33 +156,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Observation.component",
-        "path": "Observation.component",
-        "short": "Dettaglio dell'esisto della scheda HomeCare",
-        "definition": "Questo campo viene valorizzato solo se è stata effettuata la valutazione MD di secondo livello",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "Observation.component.code",
-        "path": "Observation.component.code",
-        "short": "Codifica dei risultati delle elaborazioni PVC e PHP",
-        "definition": "Stringa alfanumerica di al più 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
-      },
-      {
-        "id": "Observation.component.code.coding.display",
-        "path": "Observation.component.code.coding.display",
-        "short": "Descrizione del risultato dell'elaborazioe PVC o PHC",
-        "definition": "Stringa alfanumerica di al più 100 caratteri"
-      },
-      {
-        "id": "Observation.component.value[x]",
-        "path": "Observation.component.value[x]",
-        "short": "Contenuto informativo del risultato",
-        "definition": "In base alla tipologia di risultato relativo all'indicatore della sezione PVC o PHP i possibili datatype sono: \r\n- valueQuantity (Quantity)\r\n- valueCodableConcept (CodableConcept) \r\n- valueString (string) \r\n- valueBoolean (boolean) \r\n- valueInteger (integer)\r\n- valueRange (Range) \r\n- valueRatio (Ratio)\r\n- valueSampledData (SampledData)\r\n- valueTime (time) \r\n- valueDateTime (dateTime) \r\n- valuePeriod (Periond)",
-        "comment": "Il dato è detenuto dal SGDT"
       }
     ]
   }

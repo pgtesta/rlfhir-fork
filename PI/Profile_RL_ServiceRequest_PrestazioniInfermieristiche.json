@@ -19,6 +19,38 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche"
+      },
+      {
         "id": "ServiceRequest.extension",
         "path": "ServiceRequest.extension",
         "slicing": {
@@ -91,6 +123,8 @@
         "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -118,7 +152,14 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Codice e descrizione della prestazione infermieristica",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle prestazioni infermieristiche contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle prestazioni infermieristiche contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.code.coding.code",
@@ -126,6 +167,7 @@
         "short": "Codice della prestazione infermieristica",
         "definition": "Stringa alfanumerica di al più 28 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica delle prestazioni infermieristiche",
@@ -137,7 +179,8 @@
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione della prestazione infermieristica",
         "definition": "Stringa alfanumerica di al più 200 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.subject",
@@ -158,6 +201,7 @@
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
         "short": "Dettagli temporali per l'erogazione della prestazione infermieristica",
+        "min": 1,
         "type": [
           {
             "code": "Timing"
@@ -165,9 +209,15 @@
         ]
       },
       {
+        "id": "ServiceRequest.occurrence[x].repeat",
+        "path": "ServiceRequest.occurrence[x].repeat",
+        "min": 1
+      },
+      {
         "id": "ServiceRequest.occurrence[x].repeat.bounds[x]",
         "path": "ServiceRequest.occurrence[x].repeat.bounds[x]",
         "short": "Periodo nel quale la prestazione infermieristica deve essere erogata",
+        "min": 1,
         "type": [
           {
             "code": "Period"
@@ -179,32 +229,37 @@
         "path": "ServiceRequest.occurrence[x].repeat.bounds[x].start",
         "short": "Data di inizio periodo di erogazione",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x].repeat.bounds[x].end",
         "path": "ServiceRequest.occurrence[x].repeat.bounds[x].end",
         "short": "Data di fine periodo di erogazione",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x].repeat.frequency",
         "path": "ServiceRequest.occurrence[x].repeat.frequency",
         "short": "Frequenza di erogazione della prestazione",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x].repeat.period",
         "path": "ServiceRequest.occurrence[x].repeat.period",
         "short": "Coefficiente per il quale la frequeza di erogazione ('frequency') si estende rispetto l'unità temporale di erogazione ('periodUnit').",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x].repeat.periodUnit",
         "path": "ServiceRequest.occurrence[x].repeat.periodUnit",
         "short": "Unità temporale di erogazione",
-        "definition": "Valori definiti dallo standard FHIR:\r\n- s: secondo \r\n- min: minuto \r\n- h: ora\r\n- d: giorno\r\n- wk: settimana\r\n- mo: mese\r\n- a: anno"
+        "definition": "Valori definiti dallo standard FHIR:\r\n- s: secondo \r\n- min: minuto \r\n- h: ora\r\n- d: giorno\r\n- wk: settimana\r\n- mo: mese\r\n- a: anno",
+        "min": 1
       },
       {
         "id": "ServiceRequest.reasonReference",
@@ -212,6 +267,7 @@
         "short": "Problema riscontrato durante la valutazione infermieristica",
         "definition": "Reference al profilo RLConditionProblemaInfermieristico",
         "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -226,7 +282,8 @@
         "path": "ServiceRequest.note",
         "short": "Note / commenti aggiuntivi",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
       }
     ]
   }

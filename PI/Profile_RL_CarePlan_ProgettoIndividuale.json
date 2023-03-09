@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2023-02-16T16:21:02.4634375+00:00"
+    "lastUpdated": "2023-03-08T15:37:49.9091983+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -22,6 +22,39 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "CarePlan.id",
+        "path": "CarePlan.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta",
+        "path": "CarePlan.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta.versionId",
+        "path": "CarePlan.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta.lastUpdated",
+        "path": "CarePlan.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta.profile",
+        "path": "CarePlan.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+      },
       {
         "id": "CarePlan.extension",
         "path": "CarePlan.extension",
@@ -43,7 +76,7 @@
         "short": "Versione del progetto individuale",
         "definition": "Stringa numerica di al più 3 cifre",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -58,11 +91,14 @@
       {
         "id": "CarePlan.identifier",
         "path": "CarePlan.identifier",
-        "short": "Identificativo univoco del progetto"
+        "short": "Identificativo univoco del progetto",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "CarePlan.identifier.system",
         "path": "CarePlan.identifier.system",
+        "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI"
       },
       {
@@ -70,7 +106,8 @@
         "path": "CarePlan.identifier.value",
         "short": "Identificativo univoco del progetto",
         "definition": "Stringa alfanumerica di 15 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "CarePlan.status",
@@ -119,14 +156,16 @@
       {
         "id": "CarePlan.period",
         "path": "CarePlan.period",
-        "short": "Periodo temporale nel quale il progetto individuale deve essere eseguito"
+        "short": "Periodo temporale nel quale il progetto individuale deve essere eseguito",
+        "min": 1
       },
       {
         "id": "CarePlan.period.start",
         "path": "CarePlan.period.start",
         "short": "Data di inizio del progetto individuale",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "CarePlan.period.end",
@@ -140,7 +179,8 @@
         "path": "CarePlan.created",
         "short": "Data di creazione del progetto individuale",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "CarePlan.author",
@@ -148,6 +188,7 @@
         "short": "ASST che ha prodotto il progetto individuale",
         "definition": "Reference al profilo RLOrganizationL1 inerente all'ASST produttrice del progetto individuale",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -163,6 +204,7 @@
         "short": "Case manager del progetto individuale. La figura del case manager può essere identificata in un professionista santatirio o in un equipe di professionisti sanitari.",
         "definition": "- Reference al profilo RLPractitionerRoleProfessionistaSanitario nel caso in cui il case manager sia un professionista sanitario. \r\n- Reference al profilo RLCareTeamEquipe nel caso in cui il case manager sia un equipe di professionisti sanitari.",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -300,7 +342,8 @@
       {
         "id": "CarePlan.activity",
         "path": "CarePlan.activity",
-        "short": "Attività previste dal progetto individuale. Le possibili attività sono: prestazioni specialistiche e/o diagnostiche, terapia farmacologica, protesi ed ausili, ossigenoterapia, interventi educazionali e servizi socio-sanitari"
+        "short": "Attività previste dal progetto individuale. Le possibili attività sono: prestazioni specialistiche e/o diagnostiche, prestazioni infermieristiche, servizi socio-assistenziali, terapia farmacologica, protesi ed ausili, ossigenoterapia, interventi educazionali e prestazioni sociali",
+        "min": 1
       },
       {
         "id": "CarePlan.activity.reference",
@@ -308,6 +351,7 @@
         "short": "Dettagli delle possibili attività inserite nel progetto individuali",
         "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioAssistenziali,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili, \r\n- RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -328,7 +372,8 @@
         "path": "CarePlan.note",
         "short": "Note / commenti aggiuntivi",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
       }
     ]
   }

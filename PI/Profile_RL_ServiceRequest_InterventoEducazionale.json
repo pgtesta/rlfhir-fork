@@ -20,11 +20,46 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale"
+      },
+      {
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individule nel quale è previsto l'intervento educazionale",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -52,7 +87,14 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Intervento educazionale da attivare",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli interventi educazionali contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli interventi educazionali contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.code.coding.code",
@@ -60,6 +102,7 @@
         "short": "Codice dell'intervento educazionale",
         "definition": "Stringa alfanumerica di 5 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica degli interventi educazionali",
@@ -70,7 +113,8 @@
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione dell'intervento educazionale",
-        "definition": "Stringa alfanumerica di al più 100 caratteri"
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
       },
       {
         "id": "ServiceRequest.subject",
@@ -91,6 +135,7 @@
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
         "short": "Periodo temporale nel quale l'intervento educazionale deve essere erogato",
+        "min": 1,
         "type": [
           {
             "code": "Period"
@@ -102,19 +147,28 @@
         "path": "ServiceRequest.occurrence[x].start",
         "short": "Prima data possibile per l'erogazione dell'intervento educazionale",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x].end",
         "path": "ServiceRequest.occurrence[x].end",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.locationCode",
         "path": "ServiceRequest.locationCode",
         "short": "Codice e descrizione della modalità di erogazione dell'intervento educazionale",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della modalità di erogazione dell'intervento educazionale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della modalità di erogazione dell'intervento educazionale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding",
+        "path": "ServiceRequest.locationCode.coding",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.locationCode.coding.code",
@@ -122,6 +176,7 @@
         "short": "Codice della modalità di erogazione dell'intervento educazionale",
         "definition": "Stringa alfanumerica di 7 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla modalità di erogazione dell'intervento educazionale",
@@ -132,14 +187,16 @@
         "id": "ServiceRequest.locationCode.coding.display",
         "path": "ServiceRequest.locationCode.coding.display",
         "short": "Descrizione della modalità di erogazione dell'intervento educazionale",
-        "definition": "Stringa alfanumerica di al più 100 caratteri"
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
       },
       {
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
         "short": "Note / commenti aggiuntivi",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
       }
     ]
   }
