@@ -20,10 +20,44 @@
   "differential": {
     "element": [
       {
+        "id": "CareTeam.id",
+        "path": "CareTeam.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta",
+        "path": "CareTeam.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta.versionId",
+        "path": "CareTeam.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta.lastUpdated",
+        "path": "CareTeam.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta.profile",
+        "path": "CareTeam.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe"
+      },
+      {
         "id": "CareTeam.status",
         "path": "CareTeam.status",
         "short": "Stato dell'aggregazione dell'equipe",
         "definition": "Valore fisso su \"active\"",
+        "min": 1,
         "fixedCode": "active"
       },
       {
@@ -31,19 +65,22 @@
         "path": "CareTeam.name",
         "short": "Nome dell'equipe",
         "definition": "Stringa alfanumerica di al più 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "CareTeam.period",
         "path": "CareTeam.period",
-        "short": "Periodo di attività dell'equipe"
+        "short": "Periodo di attività dell'equipe",
+        "min": 1
       },
       {
         "id": "CareTeam.period.start",
         "path": "CareTeam.period.start",
         "short": "Data inizio attività",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR.",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "CareTeam.period.end",
@@ -55,7 +92,8 @@
       {
         "id": "CareTeam.participant",
         "path": "CareTeam.participant",
-        "short": "Elenco dei professionisti sanitari che compongono l'equipe"
+        "short": "Elenco dei professionisti sanitari che compongono l'equipe",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "CareTeam.participant.member",

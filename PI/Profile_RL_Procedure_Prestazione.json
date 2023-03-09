@@ -20,6 +20,39 @@
   "differential": {
     "element": [
       {
+        "id": "Procedure.id",
+        "path": "Procedure.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Procedure.meta",
+        "path": "Procedure.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Procedure.meta.versionId",
+        "path": "Procedure.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Procedure.meta.lastUpdated",
+        "path": "Procedure.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Procedure.meta.profile",
+        "path": "Procedure.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione"
+      },
+      {
         "id": "Procedure.extension",
         "path": "Procedure.extension",
         "slicing": {
@@ -31,13 +64,13 @@
           ],
           "rules": "open"
         },
-        "min": 0
+        "min": 1
       },
       {
         "id": "Procedure.extension:dataPresaInCarico",
         "path": "Procedure.extension",
         "sliceName": "dataPresaInCarico",
-        "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore nel caso sia stata erogata in regime di ricovero domiciliare.",
+        "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore. Il campo deve essere obbligatoriamente valorizzato nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare.",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "min": 0,
         "max": "1",
@@ -63,7 +96,7 @@
         "sliceName": "modalitaErogazione",
         "short": "Codice e descrizione della modalità di erogazione della prestazione",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle modalità di erogazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -86,10 +119,17 @@
         ]
       },
       {
+        "id": "Procedure.extension:modalitaErogazione.value[x].coding",
+        "path": "Procedure.extension.value[x].coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Procedure.extension:modalitaErogazione.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice della modalità di erogazione",
         "definition": "Codice numerico di al più 2 caratteri",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla modalità di erogazione",
@@ -101,13 +141,14 @@
         "path": "Procedure.extension.value[x].coding.display",
         "short": "Descrizione della modalità di erogazione",
         "definition": "Stringa alfanumerica di al più di 50 caratteri",
-        "comment": "Le descrizioni della modalità di erogazione sono ricavate dal tracciato SIAD 3"
+        "comment": "Le descrizioni della modalità di erogazione sono ricavate dal tracciato SIAD 3",
+        "min": 1
       },
       {
         "id": "Procedure.extension:numeroAccesso",
         "path": "Procedure.extension",
         "sliceName": "numeroAccesso",
-        "short": "Questo campo è da valorizzare solo nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. Il valore di default è '1' ed indica che la prestazione definita nel campo 'code' erogata nella data indicata nel campo 'perfomedDateTime' è stata effettuata durante il primo accesso giornaliero dell'opertore. Nel caso in cui la stessa prestazione venga erogata più volte nell'arco della stessa giornata tramite accessi domiciliari multipli questo campo deve essere valorizzazo in modo incrementale coerentemente al numero di accesso. Si specifica che deve sempre essere creata un'istanza del per ogni singola prestazione, anche se questa sia erogata più volte durante lo stesso accesso domiciliare.",
+        "short": "Questo campo è da valorizzare obbligatoriamente nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. Il valore di default è '1' ed indica che la prestazione definita nel campo 'code' erogata nella data indicata nel campo 'perfomedDateTime' è stata effettuata durante il primo accesso giornaliero dell'opertore. Nel caso in cui la stessa prestazione venga erogata più volte nell'arco della stessa giornata tramite accessi domiciliari multipli questo campo deve essere valorizzazo in modo incrementale coerentemente al numero di accesso. Si specifica che deve sempre essere creata un'istanza del per ogni singola prestazione, anche se questa sia erogata più volte durante lo stesso accesso domiciliare.",
         "min": 0,
         "max": "1",
         "type": [
@@ -124,7 +165,7 @@
         "id": "Procedure.extension:tipoAccesso",
         "path": "Procedure.extension",
         "sliceName": "tipoAccesso",
-        "short": "Tipo di accesso",
+        "short": "Tipo di accesso dell'operatore a domicilio dell'assisitito. Il campo deve essere obbligatoriamente valorizzato nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare.",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del tipo di accesso contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 0,
         "max": "1",
@@ -139,15 +180,29 @@
         "isModifier": false
       },
       {
+        "id": "Procedure.extension:tipoAccesso.value[x].coding",
+        "path": "Procedure.extension.value[x].coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Procedure.extension:tipoAccesso.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice del tipo di accesso",
         "definition": "Stringa numerica di una cifra",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica del tipo di accesso",
           "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso"
         }
+      },
+      {
+        "id": "Procedure.extension:tipoAccesso.value[x].coding.display",
+        "path": "Procedure.extension.value[x].coding.display",
+        "short": "Descrizione del tipo di accesso",
+        "definition": "Stringa alfanumerica di al più di 50 caratteri",
+        "min": 1
       },
       {
         "id": "Procedure.basedOn",
@@ -160,7 +215,9 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "min": 2,
+        "max": "2"
       },
       {
         "id": "Procedure.basedOn:RLServiceRequestServiziSocioAssistenziali",
@@ -169,6 +226,8 @@
         "short": "Riferimento alla richiesta di attivazione delle cure domiciliari",
         "definition": "Reference al profilo RLServiceRequestServiziSocioAssistenziali contente i dettagli della richiesta di attivazione delle cure domiciliari",
         "comment": "Campo da compilare nel caso in cui la prestazione sia erogata in setting assistenziale domiciliare",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -184,6 +243,8 @@
         "sliceName": "RLCarePlanProgettoIndividuale",
         "short": "Riferimento al progetto individuale contentente la richiesta di attivazione delle cure domiciliari",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -204,18 +265,22 @@
         "id": "Procedure.category",
         "path": "Procedure.category",
         "short": "Setting assistenziale nel quale la prestazione viene erogata",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie di setting assistenziale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie di setting assistenziale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
       },
       {
         "id": "Procedure.category.coding",
         "path": "Procedure.category.coding",
-        "short": "Codice e descrizione del setting assistenziale"
+        "short": "Codice e descrizione del setting assistenziale",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Procedure.category.coding.code",
         "path": "Procedure.category.coding.code",
         "short": "Codice del setting assistenziale",
         "definition": "Stringa alfanumerica di al più di 10 caratteri",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica del setting assistenziale",
@@ -226,23 +291,28 @@
         "id": "Procedure.category.coding.display",
         "path": "Procedure.category.coding.display",
         "short": "Descrizione del setting assistenziale",
-        "definition": "Stringa alfanumerica di al più di 100 caratteri"
+        "definition": "Stringa alfanumerica di al più di 100 caratteri",
+        "min": 1
       },
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "short": "Codifica della prestazione. Il contenuto informativo è vincolato dal setting assistenziale nel quale la prestazione viene erogata."
+        "short": "Codifica della prestazione. Il contenuto informativo è vincolato dal setting assistenziale nel quale la prestazione viene erogata.",
+        "min": 1
       },
       {
         "id": "Procedure.code.coding",
         "path": "Procedure.code.coding",
-        "short": "Codice e descrizione della prestazione"
+        "short": "Codice e descrizione della prestazione",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Procedure.code.coding.code",
         "path": "Procedure.code.coding.code",
         "short": "Codice della prestazione",
         "definition": "Stringa alfanumerica di 10 caratteri",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di prestazione",
@@ -254,7 +324,8 @@
         "path": "Procedure.code.coding.display",
         "short": "Descrizione della prestazione",
         "definition": "Stringa alfanumerica di al più di 200 caratteri",
-        "comment": "A seconda del setting assistenzale in cui la prestazione viene erogata è definita un'apposita codifica consultabile nella Tabella delle prestazioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "A seconda del setting assistenzale in cui la prestazione viene erogata è definita un'apposita codifica consultabile nella Tabella delle prestazioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
       },
       {
         "id": "Procedure.subject",
@@ -275,6 +346,7 @@
         "path": "Procedure.performed[x]",
         "short": "Data (e ora, se disponibile) in cui la prestazione è stata erogata al paziente",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR. \r\nNel caso in cui fosse disponibile anche l'ora compilare con il formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "min": 1,
         "type": [
           {
             "code": "dateTime"
@@ -284,12 +356,13 @@
       {
         "id": "Procedure.performer",
         "path": "Procedure.performer",
-        "short": "Operatore sanitario che ha erogato la prestazione"
+        "short": "Operatore sanitario che ha erogato la prestazione",
+        "max": "1"
       },
       {
         "id": "Procedure.performer.actor",
         "path": "Procedure.performer.actor",
-        "short": "Nel caso di una prestazione erogata in regime di ricovero domiciliare questo campo contiene la tipologia di operatore che ha effettuato la prestazione",
+        "short": "Nel caso di una prestazione erogata in regime di ricovero domiciliare questo campo deve essere obbligatoriamente compilato per contienere la tipologia di operatore che ha effettuato la prestazione",
         "definition": "Reference al profilo RLPractitionerRoleOperatoreADI",
         "type": [
           {
@@ -305,6 +378,7 @@
         "path": "Procedure.location",
         "short": "Reference alla tipologia di luogo in cui  le prestazioni vengono erogate. Attulalmente il riferimento deifinsce solo le tipologie inerenti alla prestazioni erogate agli assisititi in regime di ricovero domicilare",
         "definition": "Reference al profilo RLLocationLuogoPrestazioneCureDom",
+        "min": 1,
         "type": [
           {
             "code": "Reference",

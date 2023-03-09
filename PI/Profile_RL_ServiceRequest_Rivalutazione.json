@@ -20,16 +20,65 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione"
+      },
+      {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "short": "Codice identificativo della richiesta di rivalutazione del paziente",
-        "definition": "{codiceL2}{numeroPratica}_R{progressivo a 6 cifre es.000001}"
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.identifier.system",
+        "path": "ServiceRequest.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoRichiestaRivalutazionePaziente"
+      },
+      {
+        "id": "ServiceRequest.identifier.value",
+        "path": "ServiceRequest.identifier.value",
+        "short": "Codice identificativo della richiesta di rivalutazione del paziente",
+        "definition": "{codiceL2}{numeroPratica}_R{progressivo a 6 cifre es.000001}",
+        "min": 1
       },
       {
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -42,7 +91,20 @@
       {
         "id": "ServiceRequest.requisition",
         "path": "ServiceRequest.requisition",
-        "short": "Numero pratica del ricovero domiciliare"
+        "short": "Numero pratica del ricovero domiciliare",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requisition.system",
+        "path": "ServiceRequest.requisition.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/numeroPraticaRicoveroDomiciliare"
+      },
+      {
+        "id": "ServiceRequest.requisition.value",
+        "path": "ServiceRequest.requisition.value",
+        "short": "Numero pratica del ricovero domiciliare",
+        "min": 1
       },
       {
         "id": "ServiceRequest.status",
@@ -77,6 +139,7 @@
         "path": "ServiceRequest.occurrence[x]",
         "short": "Data (e ora, se disponibile) in cui è stata ichiesta la rivalutazione la rivalutazione del paziente",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR. \r\nNel caso in cui fosse disponibile anche l'ora compilare con il formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "min": 1,
         "type": [
           {
             "code": "dateTime"

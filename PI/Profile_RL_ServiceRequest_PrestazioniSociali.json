@@ -19,6 +19,39 @@
   "differential": {
     "element": [
       {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali"
+      },
+      {
         "id": "ServiceRequest.extension",
         "path": "ServiceRequest.extension",
         "slicing": {
@@ -92,6 +125,8 @@
         "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -118,24 +153,29 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "short": "Codice e descrizione della prestazione sociale"
+        "short": "Codice e descrizione della prestazione sociale",
+        "min": 1
       },
       {
         "id": "ServiceRequest.code.coding",
         "path": "ServiceRequest.code.coding",
-        "short": "Codice e descrizione della prestazione sociale"
+        "short": "Codice e descrizione della prestazione sociale",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.code.coding.code",
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice della prestazione sociale",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione della prestazione sociale",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.subject",
@@ -156,7 +196,8 @@
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
         "short": "Note / commenti aggiuntivi",
-        "definition": "Stringa alfanumerica al più di 1000 caratteri"
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "max": "1"
       }
     ]
   }

@@ -20,11 +20,45 @@
   "differential": {
     "element": [
       {
+        "id": "Questionnaire.id",
+        "path": "Questionnaire.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta",
+        "path": "Questionnaire.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta.versionId",
+        "path": "Questionnaire.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta.lastUpdated",
+        "path": "Questionnaire.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta.profile",
+        "path": "Questionnaire.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+      },
+      {
         "id": "Questionnaire.title",
         "path": "Questionnaire.title",
         "short": "Nome della valutazione",
         "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "comment": "Le valutazioni previste attualmente sono: \r\n- Scheda Triage \r\n- Scheda semplificata SIAD\r\n- InterRAI HomeCare"
+        "comment": "Le valutazioni previste attualmente sono: \r\n- Scheda Triage \r\n- Scheda semplificata SIAD\r\n- InterRAI HomeCare",
+        "min": 1
       },
       {
         "id": "Questionnaire.status",

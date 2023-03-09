@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-02-16T16:01:07.7972333+00:00"
+    "lastUpdated": "2023-03-08T15:38:47.8253123+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -22,6 +22,38 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento dell risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+      },
       {
         "id": "ServiceRequest.extension",
         "path": "ServiceRequest.extension",
@@ -55,18 +87,10 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:soggettoProponentePIC.url",
-        "path": "ServiceRequest.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC"
-      },
-      {
-        "id": "ServiceRequest.extension:soggettoProponentePIC.value[x]",
-        "path": "ServiceRequest.extension.value[x]",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
+        "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding",
+        "path": "ServiceRequest.extension.value[x].coding",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding.code",
@@ -74,6 +98,7 @@
         "short": "Codice del soggetto che ha proposto la presa in carico dell'assistito",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla codifica del soggetto che ha proposto la presa in carico",
@@ -84,7 +109,8 @@
         "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding.display",
         "path": "ServiceRequest.extension.value[x].coding.display",
         "short": "Descrizione del soggetto che ha proposto la presa in carico dell'assistito",
-        "definition": "Stringa alfanumerica al più di 100 caratteri"
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "min": 1
       },
       {
         "id": "ServiceRequest.extension:causaleDimissione",
@@ -105,11 +131,6 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:causaleDimissione.url",
-        "path": "ServiceRequest.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione"
-      },
-      {
         "id": "ServiceRequest.extension:causaleDimissione.value[x]",
         "path": "ServiceRequest.extension.value[x]",
         "type": [
@@ -119,11 +140,18 @@
         ]
       },
       {
+        "id": "ServiceRequest.extension:causaleDimissione.value[x].coding",
+        "path": "ServiceRequest.extension.value[x].coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "ServiceRequest.extension:causaleDimissione.value[x].coding.code",
         "path": "ServiceRequest.extension.value[x].coding.code",
         "short": "Codice del soggetto che ha proposto la presa in carico dell'assistito",
         "definition": "Stringa numerica di 1 carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla causale di dimissione",
@@ -135,7 +163,8 @@
         "path": "ServiceRequest.extension.value[x].coding.display",
         "short": "Descrizione del soggetto che ha proposto la presa in carico dell'assistito",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.extension:dataDimissione",
@@ -158,11 +187,13 @@
       {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
-        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica"
+        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
+        "max": "1"
       },
       {
         "id": "ServiceRequest.identifier.system",
         "path": "ServiceRequest.identifier.system",
+        "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale"
       },
       {
@@ -170,7 +201,8 @@
         "path": "ServiceRequest.identifier.value",
         "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
         "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 6 cifre (da 000001 a 999999)",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.basedOn",
@@ -178,6 +210,8 @@
         "short": "Riferimento al progetto individuale nel quale è prevista l'attivazione del servizio sociosanitario",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -205,12 +239,15 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Codice e descrizione della tipologia di servizio socioassistenziale (UdO) da attivare",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia UdO contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia UdO contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
       },
       {
         "id": "ServiceRequest.code.coding",
         "path": "ServiceRequest.code.coding",
-        "short": "Codice e descrizione dell'unità di offerta"
+        "short": "Codice e descrizione dell'unità di offerta",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.code.coding.code",
@@ -218,6 +255,7 @@
         "short": "Codice dell'unità di offerta",
         "definition": "Stringa alfanumerica al più di 10 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia UdO",
@@ -228,7 +266,8 @@
         "id": "ServiceRequest.code.coding.display",
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione dell'unità di offerta",
-        "definition": "Stringa alfanumerica al più di 100 caratteri"
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "min": 1
       },
       {
         "id": "ServiceRequest.quantity[x]",
@@ -244,7 +283,8 @@
         "id": "ServiceRequest.quantity[x].value",
         "path": "ServiceRequest.quantity[x].value",
         "short": "Numero di accessi domiciliari previsti",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.subject",
@@ -265,6 +305,7 @@
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
         "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il periodo di ricovero domiciliare",
+        "min": 1,
         "type": [
           {
             "code": "Period"
@@ -276,21 +317,38 @@
         "path": "ServiceRequest.occurrence[x].start",
         "short": "Data di inizio prevista del ricovero domiciliare",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x].end",
         "path": "ServiceRequest.occurrence[x].end",
         "short": "Data di fine prevista del ricovero domiciliare",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.performer",
         "path": "ServiceRequest.performer",
-        "short": "Unità d'offerta che prenderà in carico il paziente",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.performer:organization",
+        "path": "ServiceRequest.performer",
+        "sliceName": "organization",
+        "short": "Unità d'offerta responsabile della presa in carico del paziente",
         "definition": "Reference ai profilo RLOrganizationL2 dell'unità d'offerta che prenderà in carico il paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -301,15 +359,34 @@
         ]
       },
       {
+        "id": "ServiceRequest.performer:practitionerRole",
+        "path": "ServiceRequest.performer",
+        "sliceName": "practitionerRole",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con le tipologie di operatori sanitari necessari all'erogazioni delle prestazioni previste dal percorso di cure domicilari (campo reasonCode",
+        "definition": "Reference ai profilo PractitionerRoleOperatoreADI contenente la tipologia di operatore sanitario di cure domiciliari",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/PractitionerRoleOperatoreADI"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.reasonCode",
         "path": "ServiceRequest.reasonCode",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo viene popolato con il percorso di cure domiciliari del paziente",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei percorsi di cure domiciliari contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il percorso di cure domiciliari del paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei percorsi di cure domiciliari contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
       },
       {
         "id": "ServiceRequest.reasonCode.coding",
         "path": "ServiceRequest.reasonCode.coding",
-        "short": "Codice e descrizione del percorso di cure domiciliari"
+        "short": "Codice e descrizione del percorso di cure domiciliari",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "ServiceRequest.reasonCode.coding.code",
@@ -317,6 +394,7 @@
         "short": "Codice del percorso di cure domiciliari",
         "definition": "Stringa alfanumerica al più di 10 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo ai percorsi di cure domiciliari",
@@ -328,14 +406,16 @@
         "path": "ServiceRequest.reasonCode.coding.display",
         "short": "Descrizione del percorso di cure domiciliari",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
         "short": "Note / commenti aggiuntivi",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
       }
     ]
   }

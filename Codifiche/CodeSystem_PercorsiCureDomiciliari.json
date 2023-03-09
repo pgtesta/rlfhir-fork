@@ -59,27 +59,27 @@
     },
     {
       "code": "PERCDOM13",
-      "display": "ADI - Liv I"
+      "display": "ADI - Alta Intensità"
     },
     {
       "code": "PERCDOM14",
-      "display": "ADI - Liv II"
+      "display": "ADI - Liv I"
     },
     {
       "code": "PERCDOM15",
-      "display": "ADI - Liv IIIA"
+      "display": "ADI - Liv II"
     },
     {
       "code": "PERCDOM16",
-      "display": "ADI - Liv IIB"
+      "display": "ADI - Liv IIIA"
     },
     {
       "code": "PERCDOM17",
-      "display": "ADI - Liv IIIC"
+      "display": "ADI - Liv IIIB"
     },
     {
       "code": "PERCDOM18",
-      "display": "ADI – Alta Intensità"
+      "display": "ADI – Liv IIIC"
     }
   ]
 }

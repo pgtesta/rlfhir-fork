@@ -20,21 +20,130 @@
   "differential": {
     "element": [
       {
+        "id": "PractitionerRole.id",
+        "path": "PractitionerRole.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta",
+        "path": "PractitionerRole.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta.versionId",
+        "path": "PractitionerRole.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta.lastUpdated",
+        "path": "PractitionerRole.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento dell risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta.profile",
+        "path": "PractitionerRole.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+      },
+      {
+        "id": "PractitionerRole.extension",
+        "path": "PractitionerRole.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "PractitionerRole.extension:dettagliAttivazionePercorsoCure",
+        "path": "PractitionerRole.extension",
+        "sliceName": "dettagliAttivazionePercorsoCure",
+        "short": "Riferimento ai dettagli dell'attivazione del percorso di cure domiciliari dove  l'operatore sanitario fornirà assistenza",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDettagliAttivazionePercorsoCure"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.extension:dettagliAttivazionePercorsoCure.value[x].reference",
+        "path": "PractitionerRole.extension.value[x].reference",
+        "short": "Riferimento ai dettagli dell'attivazione del percorso di cure domiciliari dove  l'operatore sanitario fornirà assistenza",
+        "definition": "Reference al profilo RLServiceRequestServiziSocioAssistenziali contente i dttagli dettagli dell'attivazione del percorso di cure domiciliari",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "string",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:numeroAccessi",
+        "path": "PractitionerRole.extension",
+        "sliceName": "numeroAccessi",
+        "short": "Numero di accessi pianificati per l'operatore sanitario rispetto al percorso di cure domiciliari in cui è coinvolto",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleNumeroAccessi"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.extension:numeroAccessi.value[x]",
+        "path": "PractitionerRole.extension.value[x]",
+        "short": "Numero di accessi pianificati per l'operatore sanitario rispetto al percorso di cure domiciliari in cui è coinvolto",
+        "definition": "Valore numerico di al più 3 cifre",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
-        "short": "Codice e descrizione della tipologia di operatore ADI"
+        "short": "Codice e descrizione della tipologia di operatore ADI",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie degli operatori ADI contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "PractitionerRole.code.coding",
         "path": "PractitionerRole.code.coding",
         "short": "Codice e descrizione della tipologia di operatore ADI",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie degli operatori ADI contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie degli operatori ADI contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "PractitionerRole.code.coding.code",
         "path": "PractitionerRole.code.coding.code",
         "short": "Codice della tipologia di operatore ADI",
         "definition": "Valore numerico di al più 2 cifre",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di operatore",
@@ -45,7 +154,8 @@
         "id": "PractitionerRole.code.coding.display",
         "path": "PractitionerRole.code.coding.display",
         "short": "Descrizione della tipologia di operatore ADI",
-        "definition": "Stringa alfanumerica di al più 100 caratteri"
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
       }
     ]
   }

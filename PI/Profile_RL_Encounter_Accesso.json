@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLEncounterAccesso",
   "meta": {
-    "lastUpdated": "2023-01-25T09:38:52.9535747+00:00"
+    "lastUpdated": "2023-03-08T15:39:22.3686697+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso",
   "name": "RLEncounterAccesso",
@@ -23,13 +23,55 @@
   "differential": {
     "element": [
       {
+        "id": "Encounter.id",
+        "path": "Encounter.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta",
+        "path": "Encounter.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.versionId",
+        "path": "Encounter.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.lastUpdated",
+        "path": "Encounter.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.profile",
+        "path": "Encounter.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Encounter.identifier",
         "path": "Encounter.identifier",
-        "short": "Codice identificativo univoco dell'accesso"
+        "short": "Codice identificativo univoco dell'accesso",
+        "max": "1"
       },
       {
         "id": "Encounter.identifier.system",
         "path": "Encounter.identifier.system",
+        "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoAccesso"
       },
       {
@@ -37,7 +79,8 @@
         "path": "Encounter.identifier.value",
         "short": "Codice identificativo univoco dell'accesso",
         "definition": "Stringa alfanumerica",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Encounter.status",
@@ -59,6 +102,7 @@
         "short": "Codice della tipologia di accesso",
         "definition": "Stringa alfanumerica di 5 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di accesso",
@@ -69,7 +113,8 @@
         "id": "Encounter.class.display",
         "path": "Encounter.class.display",
         "short": "Descrizione della tipologia di accesso",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Encounter.subject",
@@ -77,6 +122,7 @@
         "short": "Paziente che ha effettuato l'accesso alla struttura di prossimità",
         "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -89,31 +135,37 @@
       {
         "id": "Encounter.period",
         "path": "Encounter.period",
-        "short": "Periodo temporale nel quale è stata svolta la procedura d'accesso"
+        "short": "Periodo temporale nel quale è stata svolta la procedura d'accesso",
+        "min": 1
       },
       {
         "id": "Encounter.period.start",
         "path": "Encounter.period.start",
         "short": "Data ed ora dell'accesso",
         "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Encounter.reasonCode",
         "path": "Encounter.reasonCode",
         "short": "Motivo della segnalazione",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del motivo della segnalazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del motivo della segnalazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
       },
       {
         "id": "Encounter.reasonCode.coding",
         "path": "Encounter.reasonCode.coding",
-        "short": "Codifica della segnalazione"
+        "short": "Codifica della segnalazione",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Encounter.reasonCode.coding.code",
         "path": "Encounter.reasonCode.coding.code",
         "short": "Codice del motivo della segnalazione",
         "definition": "Codice numerico di 2 cifre",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo al motivo della segnalazione",
@@ -124,7 +176,8 @@
         "id": "Encounter.reasonCode.coding.display",
         "path": "Encounter.reasonCode.coding.display",
         "short": "Descrizione del motivo della segnalazione",
-        "definition": "Stringa alfanumerica al più di 200 caratteri"
+        "definition": "Stringa alfanumerica al più di 200 caratteri",
+        "min": 1
       },
       {
         "id": "Encounter.serviceProvider",

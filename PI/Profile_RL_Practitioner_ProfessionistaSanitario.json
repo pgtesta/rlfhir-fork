@@ -20,13 +20,58 @@
   "differential": {
     "element": [
       {
+        "id": "Practitioner.id",
+        "path": "Practitioner.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta",
+        "path": "Practitioner.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.versionId",
+        "path": "Practitioner.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.lastUpdated",
+        "path": "Practitioner.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.profile",
+        "path": "Practitioner.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
-        "short": "Codice fiscale del professionista sanitario"
+        "short": "Codice fiscale del professionista sanitario",
+        "definition": "Stringa alfanumerica di 16 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Practitioner.identifier.system",
         "path": "Practitioner.identifier.system",
+        "min": 1,
         "fixedUri": "http://hl7.it/sid/codiceFiscale"
       },
       {
@@ -34,26 +79,32 @@
         "path": "Practitioner.identifier.value",
         "short": "Codice fiscale del professionista sanitario",
         "definition": "Stringa alfanumerica di 16 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Practitioner.name",
         "path": "Practitioner.name",
-        "short": "Nominativo del professionista sanitario"
+        "short": "Nominativo del professionista sanitario",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Practitioner.name.family",
         "path": "Practitioner.name.family",
         "short": "Cognome del professionista sanitario",
         "definition": "Stringa alfabetica di massimo 40 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Practitioner.name.given",
         "path": "Practitioner.name.given",
         "short": "Nome del professionista sanitario",
         "definition": "Stringa alfabetica di massimo 40 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1"
       }
     ]
   }

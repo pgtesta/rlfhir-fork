@@ -20,6 +20,39 @@
   "differential": {
     "element": [
       {
+        "id": "QuestionnaireResponse.id",
+        "path": "QuestionnaireResponse.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.meta",
+        "path": "QuestionnaireResponse.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.meta.versionId",
+        "path": "QuestionnaireResponse.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.meta.lastUpdated",
+        "path": "QuestionnaireResponse.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.meta.profile",
+        "path": "QuestionnaireResponse.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+      },
+      {
         "id": "QuestionnaireResponse.extension",
         "path": "QuestionnaireResponse.extension",
         "slicing": {
@@ -31,13 +64,13 @@
           ],
           "rules": "open"
         },
-        "min": 0
+        "min": 1
       },
       {
         "id": "QuestionnaireResponse.extension:esitoValutazione",
         "path": "QuestionnaireResponse.extension",
         "sliceName": "esitoValutazione",
-        "short": "Riferimento all'esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto",
+        "short": "Riferimento all'esito della valutazione, se questa ne prevede uno, al quale il paziente è stato sottoposto",
         "definition": "Reference al profilo RLObservationEsitoValutazione contenente l'esito della valutazione",
         "min": 0,
         "max": "1",
@@ -57,7 +90,7 @@
         "sliceName": "tipologiaValutazione",
         "short": "Tipologia di valutazione",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologia di valutazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -72,7 +105,9 @@
       {
         "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding",
         "path": "QuestionnaireResponse.extension.value[x].coding",
-        "short": "Codice e descrizione della tipologia di valutazione"
+        "short": "Codice e descrizione della tipologia di valutazione",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.code",
@@ -80,6 +115,7 @@
         "short": "Codice della tipologia di valutazione",
         "definition": "Stringa alfanumerica di un carattere",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo alla tipologia di valutazione",
@@ -91,13 +127,16 @@
         "path": "QuestionnaireResponse.extension.value[x].coding.display",
         "short": "Descrizione della tipologia di valutazione",
         "definition": "Stringa alfanumerica di al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "QuestionnaireResponse.basedOn",
         "path": "QuestionnaireResponse.basedOn",
         "short": "Riferimento al progetto individule nel quale è previsto l'esito della valutazione",
         "definition": "Reference alla risorsa RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -112,6 +151,7 @@
         "path": "QuestionnaireResponse.questionnaire",
         "short": "Valutazione",
         "definition": "Reference alla risorsa RLQuestionnaireValutazione contenente il nome della valutazione",
+        "min": 1,
         "type": [
           {
             "code": "canonical",
@@ -133,7 +173,8 @@
         "path": "QuestionnaireResponse.authored",
         "short": "Data della valutazione",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "QuestionnaireResponse.author",
@@ -141,6 +182,7 @@
         "short": "Riferimento del professionista sanitario che ha eseguito la valutazione",
         "definition": "Reference al profilo RLPractionerProfessionistaSanitario del professionista sanitario che ha eseguito la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -156,6 +198,7 @@
         "short": "Paziente sottopposto alla valutazione",
         "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -166,29 +209,38 @@
         ]
       },
       {
+        "id": "QuestionnaireResponse.item",
+        "path": "QuestionnaireResponse.item",
+        "min": 1
+      },
+      {
         "id": "QuestionnaireResponse.item.linkId",
         "path": "QuestionnaireResponse.item.linkId",
         "short": "Identificativo del quesito",
-        "definition": "Stringa alfanumerica al più di 10 caratteri"
+        "definition": "Stringa alfanumerica al più di 10 caratteri definita in generale da un valore numerico incrementale a partire da 1.\r\nNel caso di valutazione multidimensionale InterRAI - HomeCare i linkId sono così definiti:  \r\n\"php.{valore numerico incrementale}\" per la sezione PHP.\r\n\"pvc.{valore numerico incrementale}\" per la sezione PVC."
       },
       {
         "id": "QuestionnaireResponse.item.text",
         "path": "QuestionnaireResponse.item.text",
         "short": "Testo del quesito",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "QuestionnaireResponse.item.answer",
         "path": "QuestionnaireResponse.item.answer",
-        "short": "Riposta al quesito"
+        "short": "Riposta al quesito",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "QuestionnaireResponse.item.answer.value[x]",
         "path": "QuestionnaireResponse.item.answer.value[x]",
         "short": "Contenuto informativo della risposta",
         "definition": "In base alla tipologia di risposta relativa al singolo quesito i possibili campi e i relativi datatype sono: \r\nvalueBoolean (boolean) \r\nvalueDecimal (decimal) \r\nvalueInteger (integer) \r\nvalueDate (date) \r\nvalueDateTime (dateTime) \r\nvalueTime (time) \r\nvalueString (string) \r\nvalueUri (uri) \r\nvalueAttachment (Attachment)\r\nvalueCoding (Coding)\r\nvalueQuantity (Quantity) \r\nvalueReference (Reference)",
-        "comment": "Il dato è detenuto dal SGDT"
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
       }
     ]
   }
