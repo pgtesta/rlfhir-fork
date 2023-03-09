@@ -3,7 +3,7 @@
   "id": "CodeSystem-SGDT-PercorsiCDom",
   "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PercorsiCDom",
   "version": "1.0.0",
-  "name": "SGDT PercorsiCDom",
+  "name": "SGDT Percorsi CDom",
   "status": "draft",
   "date": "2023-01-24",
   "description": "CodeSystem relativo ai percorsi di cure domiciliari",
