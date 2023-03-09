@@ -9,7 +9,7 @@ Questa versione della Implementation Guide fa riferimento agli elementi FHIR con
 ## Novità
 ### Risorse FHIR
 - modificato il valueset e codesystem "SGDT Percorsi CDom"
-- modificati i profili elencatti di seguito. Tra le varie modifiche, si segnala l'aggiunta dei campi "id", "meta.versionId", "meta.lastUpdated", "meta.profile".
+- modificati i profili elencati di seguito; tra le varie modifiche, si segnala l'aggiunta dei campi "id", "meta.versionId": "meta.lastUpdated", "meta.profile".
   - RLOrganizationL2, RLOrganizationL3, RLPractitionerRoleMedicoPrescrittore, RLPractitionerMedicoPrescrittore
   - RLAllergyIntoleranceAllergie, RLCarePlanProgettoIndividuale, RLCareTeamEquipe, RLConditionPatologiaPrimariaSecondariaUlteriore, RLConditionProblemaInfermieristico, RLCoverageEsenzioni, RLDeviceRequestProtesiAusili, RLEncounterAccesso, RLGoalObiettiviSalute, RLLocationLuogoPrestazioneCureDom, RLMedicationRequestOssigenoterapia, RLMedicationRequestTerapiaFarmacologica, RLObservationEsitoValutazione, RLObservationStiliVita, RLPatientCittadino, RLPractitionerRoleOperatoreADI, RLPractitionerRoleProfessionistaSanitario, RLPractitionerProfessionistaSanitario, RLProcedurePrestazione, RLQuestionnaireResponseValutazione, RLQuestionnaireValutazione, RLServiceRequestInterventoEducazionale, RLServiceRequestPrestazioniInfermieristiche, RLServiceRequestPrestazioniSociali, RLServiceRequestPrestazioniSpecialistiche, RLServiceRequestRivalutazione, RLServiceRequestServiziSocioAssistenziali, RLServiceRequestSospensioneADI
 Aggiunte le extension: RLPractitionerRoleDettagliAttivazionePercorsoCure, RLPractitionerRoleNumeroAccessi, 
