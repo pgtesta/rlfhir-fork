@@ -15,4 +15,4 @@ Questa versione della Implementation Guide fa riferimento agli elementi FHIR con
 Aggiunte le extension: RLPractitionerRoleDettagliAttivazionePercorsoCure, RLPractitionerRoleNumeroAccessi, 
 
 ### Implementation Guide
-- Non ci sono modifiche relative alla IG
+- Aggiornata pagina Libreria Estensioni
