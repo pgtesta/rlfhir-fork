@@ -1,20 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "RLOrganizationL2",
-  "meta": {
-    "lastUpdated": "2023-03-09T09:51:36.4102138+00:00"
-  },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
   "name": "RLOrganizationL2",
-  "status": "active",
-  "experimental": false,
-  "description": "Profilo che descrive un’unità d’offerta identificata univocamente da un codice L2",
-  "keyword": [
-    {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
-      "code": "DDC"
-    }
-  ],
+  "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -35,51 +23,43 @@
           ],
           "rules": "open"
         },
-        "min": 2
+        "min": 1
       },
       {
-        "id": "Organization.extension:DataInizioValidita",
+        "id": "Organization.extension:dataCessazione",
         "path": "Organization.extension",
-        "sliceName": "DataInizioValidita",
-        "short": "Data di inizio della validità di esercizio del presidio",
+        "sliceName": "dataCessazione",
+        "short": "Data di cessazione del presidio",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA della tabella MD_SOCIO_SANITA",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.extension:DataFineValidita",
-        "path": "Organization.extension",
-        "sliceName": "DataFineValidita",
-        "short": "Data di fine della validità di esercizio del presidio",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_FINE_VALIDITA della tabella MD_SOCIO_SANITA",
+        "comment": "La fonte del dato è il campo DT_CESSAZIONE della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione"
             ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.extension:dataCessazione.value[x]",
+        "path": "Organization.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
           }
         ]
       },
       {
-        "id": "Organization.extension:DataInsert",
+        "id": "Organization.extension:dataInsert",
         "path": "Organization.extension",
-        "sliceName": "DataInsert",
+        "sliceName": "dataInsert",
         "short": "Data di inserimento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_INSERT della tabella MD_SOCIO_SANITA",
-        "min": 1,
+        "comment": "La fonte del dato è il campo DT_INSERT della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 0,
         "type": [
           {
             "code": "Extension",
@@ -87,15 +67,16 @@
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
             ]
           }
-        ]
+        ],
+        "isModifier": false
       },
       {
-        "id": "Organization.extension:DataUpdate",
+        "id": "Organization.extension:dataUpdate",
         "path": "Organization.extension",
-        "sliceName": "DataUpdate",
+        "sliceName": "dataUpdate",
         "short": "Data di aggiornamento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "comment": "La fonte del dato è il campo DT_UPDATE della tabella MD_SOCIO_SANITA",
+        "comment": "La fonte del dato è il campo DT_UPDATE della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "type": [
           {
@@ -104,51 +85,167 @@
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate"
             ]
           }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.extension:dataCostituzione",
+        "path": "Organization.extension",
+        "sliceName": "dataCostituzione",
+        "short": "Data di costituzione del presidio",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_COSTITUZIONE della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.extension:dataCostituzione.value[x]",
+        "path": "Organization.extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
         ]
       },
       {
-        "id": "Organization.extension:AsstAfferenza",
+        "id": "Organization.extension:dataInizioValidta",
         "path": "Organization.extension",
-        "sliceName": "AsstAfferenza",
-        "short": "ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_ASST_DI_AFFERENZA_LR22 della tabella MD_SOCIO_SANITA",
+        "sliceName": "dataInizioValidta",
+        "short": "Data di inizio della validità di esercizio del presidio",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
             ]
           }
         ],
         "isModifier": false
       },
       {
-        "id": "Organization.extension:AtsAfferenza",
+        "id": "Organization.extension:dataFineValidita",
         "path": "Organization.extension",
-        "sliceName": "AtsAfferenza",
-        "short": "ATS alla quale il presidio afferisce",
-        "comment": "La fonte del dato è il campo CD_ATS_DI_AFFERENZA della tabella MD_SOCIO_SANITA",
+        "sliceName": "dataFineValidita",
+        "short": "Data di fine della validità di esercizio del presidio",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_FINE_VALIDITA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsAfferenza"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
             ]
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento",
+        "path": "Organization.extension",
+        "sliceName": "distrettoAccreditamento",
+        "short": "Distretti nei quali l'ente si è accreditato",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension",
+        "path": "Organization.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:codiceDistretto",
+        "path": "Organization.extension.extension",
+        "sliceName": "codiceDistretto",
+        "min": 1
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:codiceDistretto.value[x]",
+        "path": "Organization.extension.extension.value[x]",
+        "short": "Codice distretto"
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:codiceDistretto.value[x].coding.code",
+        "path": "Organization.extension.extension.value[x].coding.code",
+        "short": "Codice del Distretto nel quale l'ente si è accreditato",
+        "definition": "Stringa alfanumerica di al più 3 caratteri",
+        "comment": "La fonte del dato è il campo CD_DISTRETTO_SANITARIO_LR23 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:codiceDistretto.value[x].coding.display",
+        "path": "Organization.extension.extension.value[x].coding.display",
+        "short": "Nome del Distretto nel quale l'ente si è accreditato",
+        "definition": "Stringa alfanumerica al più di 250 caratteri",
+        "comment": "La fonte del dato è il campo DS_DISTRETTO_SANITARIO_LR23 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:ASSTAfferenza",
+        "path": "Organization.extension.extension",
+        "sliceName": "ASSTAfferenza",
+        "short": "ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
+        "min": 1
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:ASSTAfferenza.value[x]",
+        "path": "Organization.extension.extension.value[x]",
+        "short": "ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_ASST_DI_AFFERENZA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:ATSAfferenza",
+        "path": "Organization.extension.extension",
+        "sliceName": "ATSAfferenza",
+        "short": "ATS alla quale il presidio afferisce",
+        "min": 1
+      },
+      {
+        "id": "Organization.extension:distrettoAccreditamento.extension:ATSAfferenza.value[x]",
+        "path": "Organization.extension.extension.value[x]",
+        "short": "ATS alla quale il presidio afferisce",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_ATS_DI_AFFERENZA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
       },
       {
         "id": "Organization.identifier",
         "path": "Organization.identifier",
         "short": "Codice ministeriale del presidio",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella MD_SOCIO_SANITA"
+        "comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Organization.identifier.system",
@@ -160,33 +257,25 @@
         "id": "Organization.identifier.value",
         "path": "Organization.identifier.value",
         "short": "Codice di livello 2 del presidio",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella MD_SOCIO_SANITA",
-        "min": 1,
-        "maxLength": 8,
-        "binding": {
-          "strength": "required",
-          "description": "Struttura L2"
-        }
+        "definition": "Stringa alfanumerica di al più 13 caratteri",
+        "comment": "La fonte del dato è il campo CD_LIVELLO_2 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
       },
       {
         "id": "Organization.type",
         "path": "Organization.type",
         "short": "Codifica del tipo di presidio",
-        "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "La fonte del dato è il campo CD_TIPO_LIVELLO_2 della tabella MD_SOCIO_SANITA"
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia UdO contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Organization.type.coding.code",
         "path": "Organization.type.coding.code",
         "short": "Codice del tipo di presidio",
-        "definition": "Stringa alfabetica di 3 caratteri",
-        "comment": "Per il dettaglio esaustivo della codifica consultare l'apposita sezione dei value-set del profilo presente nell'Implementation Guide",
-        "binding": {
-          "strength": "required",
-          "description": "ValueSet relativo alla tipologia UdO",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2"
-        }
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "comment": "il dato è detenuto dal SGDT",
+        "min": 1
       },
       {
         "id": "Organization.type.coding.display",
@@ -197,10 +286,9 @@
         "id": "Organization.name",
         "path": "Organization.name",
         "short": "Denominazione del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_LIVELLO_2 della tabella MD_SOCIO_SANITA",
-        "min": 1,
-        "maxLength": 1000
+        "definition": "Stringa alfanumerica di al più 250 caratteri",
+        "comment": "La fonte del dato è il campo DS_LIVELLO_2  della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
       },
       {
         "id": "Organization.telecom",
@@ -209,106 +297,93 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "system"
+              "path": "use"
             }
           ],
           "rules": "open"
         },
         "short": "Contatti del presidio",
-        "definition": "Telefono, mail, fax ed url del sito internet"
-      },
-      {
-        "id": "Organization.telecom.system",
-        "path": "Organization.telecom.system",
-        "short": "phone | email | fax | url",
-        "definition": "Ogni ripetizione conterrà un valore tra phone | email | fax | url",
-        "min": 1
+        "definition": "Telefono, mail, fax ed url del sito internet",
+        "max": "1"
       },
       {
         "id": "Organization.telecom:phone",
         "path": "Organization.telecom",
         "sliceName": "phone",
         "short": "Numero di telefono del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato sono i campi NR_TEL1 e NR_TEL2  della tabella MD_SOCIO_SANITA"
-      },
-      {
-        "id": "Organization.telecom:phone.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "phone"
+        "max": "1"
       },
       {
         "id": "Organization.telecom:phone.value",
         "path": "Organization.telecom.value",
         "short": "Numero di telefono del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato sono i campi NR_TEL1 e NR_TEL2  della tabella MD_SOCIO_SANITA"
+        "comment": "La fonte del dato è il campo NR_TEL1 e NR_TEL2 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
-        "id": "Organization.telecom:mail",
-        "path": "Organization.telecom",
-        "sliceName": "mail",
-        "short": "Indirizzo mail del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_MAIL della tabella MD_SOCIO_SANITA"
-      },
-      {
-        "id": "Organization.telecom:mail.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "mail"
-      },
-      {
-        "id": "Organization.telecom:mail.value",
-        "path": "Organization.telecom.value",
-        "short": "Indirizzo mail del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_MAIL della tabella MD_SOCIO_SANITA"
+        "id": "Organization.telecom:phone.use",
+        "path": "Organization.telecom.use",
+        "fixedCode": "phone"
       },
       {
         "id": "Organization.telecom:fax",
         "path": "Organization.telecom",
         "sliceName": "fax",
         "short": "Numero di fax del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo NR_FAX della tabella MD_SOCIO_SANITA"
-      },
-      {
-        "id": "Organization.telecom:fax.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "fax"
+        "comment": "La fonte del dato è il campo NR_FAX della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1"
       },
       {
         "id": "Organization.telecom:fax.value",
         "path": "Organization.telecom.value",
-        "short": "Numero di fax del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo NR_FAX della tabella MD_SOCIO_SANITA"
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "La fonte del dato è il campo NR_FAX della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "Organization.telecom:fax.use",
+        "path": "Organization.telecom.use",
+        "fixedCode": "fax"
       },
       {
         "id": "Organization.telecom:url",
         "path": "Organization.telecom",
         "sliceName": "url",
         "short": "Indirizzo della pagina web del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_SITO_WEB della tabella MD_SOCIO_SANITA"
-      },
-      {
-        "id": "Organization.telecom:url.system",
-        "path": "Organization.telecom.system",
-        "fixedCode": "url"
+        "max": "1"
       },
       {
         "id": "Organization.telecom:url.value",
         "path": "Organization.telecom.value",
         "short": "Indirizzo della pagina web del presidio",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato è il campo DS_SITO_WEB della tabella MD_SOCIO_SANITA"
+        "definition": "Stringa alfanumerica di al più 250 caratteri"
+      },
+      {
+        "id": "Organization.telecom:url.use",
+        "path": "Organization.telecom.use",
+        "fixedCode": "url"
+      },
+      {
+        "id": "Organization.telecom:mail",
+        "path": "Organization.telecom",
+        "sliceName": "mail",
+        "short": "Indirizzo mail del presidio",
+        "max": "1"
+      },
+      {
+        "id": "Organization.telecom:mail.value",
+        "path": "Organization.telecom.value",
+        "short": "Indirizzo mail del presidio",
+        "comment": "La fonte del dato è il campo DS_EMAIL della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "Organization.telecom:mail.use",
+        "path": "Organization.telecom.use",
+        "fixedCode": "mail"
       },
       {
         "id": "Organization.address",
         "path": "Organization.address",
-        "short": "Indirizzo della struttura L2",
-        "definition": "Indirizzo della struttura L2"
+        "short": "Indirizzo dell'organizzazione",
+        "max": "1"
       },
       {
         "id": "Organization.address.extension",
@@ -325,36 +400,88 @@
         "min": 0
       },
       {
-        "id": "Organization.address.extension:DistrettoCode",
+        "id": "Organization.address.extension:distrettoTerritoriale",
         "path": "Organization.address.extension",
-        "sliceName": "DistrettoCode",
-        "short": "Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_DISTRETTO_LR22 della tabella MD_SOCIO_SANITA",
+        "sliceName": "distrettoTerritoriale",
+        "short": "Distretto nel quale l'ente ha la sede",
         "min": 0,
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale"
             ]
           }
-        ]
+        ],
+        "isModifier": false
       },
       {
-        "id": "Organization.address.extension:IstatCode",
-        "path": "Organization.address.extension",
-        "sliceName": "IstatCode",
-        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_COMUNE_ISTAT della tabella MD_SOCIO_SANITA",
-        "min": 0,
+        "id": "Organization.address.extension:distrettoTerritoriale.extension",
+        "path": "Organization.address.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:codiceDistretto",
+        "path": "Organization.address.extension.extension",
+        "sliceName": "codiceDistretto",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:codiceDistretto.value[x].coding.code",
+        "path": "Organization.address.extension.extension.value[x].coding.code",
+        "short": "Codice del Distretto nel quale l'ente ha la sede",
+        "definition": "Stringa alfanumerica di al più 3 caratteri",
+        "comment": "La fonte del dato è il campo CD_DISTRETTO_SANITARIO_LR23 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:codiceDistretto.value[x].coding.display",
+        "path": "Organization.address.extension.extension.value[x].coding.display",
+        "short": "Nome del Distretto nel quale l'ente ha la sede",
+        "definition": "Stringa alfanumerica al più di 250 caratteri"
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:ASSTAfferenza",
+        "path": "Organization.address.extension.extension",
+        "sliceName": "ASSTAfferenza",
+        "short": "ASST di appartenenza del Distretto",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:ASSTAfferenza.value[x]",
+        "path": "Organization.address.extension.extension.value[x]",
+        "short": "ASST di appartenenza del Distretto",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_ASST_DI_AFFERENZA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:ATSAfferenza",
+        "path": "Organization.address.extension.extension",
+        "sliceName": "ATSAfferenza",
+        "short": "ATS di appartenenza del Distretto",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.address.extension:distrettoTerritoriale.extension:ATSAfferenza.value[x]",
+        "path": "Organization.address.extension.extension.value[x]",
+        "short": "ATS di appartenenza del Distretto",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode"
-            ]
+            "code": "code"
           }
         ]
       },
@@ -363,6 +490,7 @@
         "path": "Organization.address.use",
         "short": "Da valorizzare con 'work'",
         "definition": "Valore costante secondo lo standard FHIR",
+        "min": 1,
         "fixedCode": "work"
       },
       {
@@ -376,39 +504,35 @@
         "id": "Organization.address.line",
         "path": "Organization.address.line",
         "short": "Indirizzo e numero civico dell'azienda",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "comment": "La fonte del dato sono i campi DS_INDIRIZZO_NORM della tabella MD_SOCIO_SANITA"
+        "definition": "Stringa alfanumerica di al più 250 caratteri",
+        "comment": "La fonte del dato è il campo DS_INDIRIZZO_STRUTTURA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1"
       },
       {
         "id": "Organization.address.city",
         "path": "Organization.address.city",
-        "short": "Nome del comune",
-        "comment": "La fonte del dato è il campo DS_COMUNE della tabella MD_SOCIO_SANITA"
+        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_COMUNE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "Organization.address.district",
         "path": "Organization.address.district",
         "short": "Sigla della provincia in cui l'ente è ubicato",
-        "definition": "Stringa alfabetica di due caratteri",
-        "comment": "La fonte del dato è il campo CD_SIGLA_PROVINCIA della tabella MD_SOCIO_SANITA",
-        "maxLength": 2,
-        "binding": {
-          "strength": "example",
-          "description": "Sigla della provincia"
-        }
+        "definition": "Stringa alfanumerica di al più 2 caratteri",
+        "comment": "La fonte del dato è il campo CD_SIGLA_PROVINCIA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "Organization.address.postalCode",
         "path": "Organization.address.postalCode",
         "short": "Codice di avviamento postale (CAP) dell'indirizzo",
-        "definition": "Stringa numerica di 5 cifre",
-        "comment": "La fonte del dato è il campo CD_CAPDIST_NORMALIZZATO della tabella MD_SOCIO_SANITA"
+        "definition": "Stringa alfanumerica di al più 5 caratteri",
+        "comment": "La fonte del dato è il campo CD_CAPDIST della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "Organization.partOf",
         "path": "Organization.partOf",
-        "short": "Reference all'ente L1 di appartenenza",
-        "definition": "Reference al profilo Organization L1",
+        "short": "Riferimento all'ente di codice L1 al quale l'ente di codice L2 afferisce amministrativamente.",
         "type": [
           {
             "code": "Reference",
