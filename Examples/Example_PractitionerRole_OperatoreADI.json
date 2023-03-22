@@ -18,5 +18,17 @@
         }
       ]
     }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDettagliAttivazionePercorsoCure",
+      "valueReference": {
+        "reference": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleNumeroAccessi",
+      "valueInteger": 3
+    }
   ]
 }

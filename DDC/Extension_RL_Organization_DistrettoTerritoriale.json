@@ -73,7 +73,7 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -87,6 +87,15 @@
         "id": "Extension.extension:ATSAfferenza.url",
         "path": "Extension.extension.url",
         "fixedUri": "ATSAfferenza"
+      },
+      {
+        "id": "Extension.extension:ATSAfferenza.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       },
       {
         "id": "Extension.url",

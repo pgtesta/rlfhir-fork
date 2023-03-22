@@ -71,7 +71,7 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
         ]
       },
@@ -93,7 +93,7 @@
         "path": "Extension.extension.value[x]",
         "type": [
           {
-            "code": "code"
+            "code": "CodeableConcept"
           }
         ]
       },
