@@ -1,92 +1,92 @@
 {
-	"resourceType": "ValueSet",
-	"id": "ValueSet-SGDT-PercorsiCDom",
-	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
-	"version": "1.0.0",
-	"name": "SGDT Percorsi CDom",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "ValueSet relativo ai percorsi di cure domiciliari",
-	"compose": {
-		"include": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PercorsiCDom",
-				"version": "1.0",
-				"concept": [
-					{
-						"code": "PERCDOM01",
-						"display": "Cure Domiciliari Base - Prelievo"
-					},
-					{
-						"code": "PERCDOM02",
-						"display": "Cure Domiciliari Base - Prestazionale Generico"
-					},
-					{
-						"code": "PERCDOM03",
-						"display": "Cure Domiciliari Base Percorso - Percorso Gestione Alvo (GA)"
-					},
-					{
-						"code": "PERCDOM04",
-						"display": "Cure Domiciliari Base Percorso - Percorso Gestione Catetere Vescicale (GCV)"
-					},
-					{
-						"code": "PERCDOM05",
-						"display": "Cure Domiciliari Base Percorso - Percorso Gestione Stomie (GS)"
-					},
-					{
-						"code": "PERCDOM06",
-						"display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni A"
-					},
-					{
-						"code": "PERCDOM07",
-						"display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni B"
-					},
-					{
-						"code": "PERCDOM08",
-						"display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni C"
-					},
-					{
-						"code": "PERCDOM09",
-						"display": "ure Domiciliari Integrate Percorso - Percorso Fisioterapia A"
-					},
-					{
-						"code": "PERCDOM10",
-						"display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia B"
-					},
-					{
-						"code": "PERCDOM11",
-						"display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia C"
-					},
-					{
-						"code": "PERCDOM12",
-						"display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia D"
-					},
-					{
-						"code": "PERCDOM13",
-						"display": "ADI - Alta Intensità"
-					},
-					{
-						"code": "PERCDOM14",
-						"display": "ADI - Liv I"
-					},
-					{
-						"code": "PERCDOM15",
-						"display": "ADI - Liv II"
-					},
-					{
-						"code": "PERCDOM16",
-						"display": "ADI - Liv IIIA"
-					},
-					{
-						"code": "PERCDOM17",
-						"display": "ADI - Liv IIIB"
-					},
-					{
-						"code": "PERCDOM18",
-						"display": "ADI – Liv IIIC"
-					}
-				]
-			}
-		]
-	}
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT-PercorsiCDom",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
+  "version": "1.0.0",
+  "name": "SGDT Percorsi CDom",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo ai percorsi di cure domiciliari",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PercorsiCDom",
+        "version": "1.0",
+        "concept": [
+          {
+            "code": "PERCDOM01",
+            "display": "Cure Domiciliari Base - Prelievo"
+          },
+          {
+            "code": "PERCDOM02",
+            "display": "Cure Domiciliari Base - Prestazionale Generico"
+          },
+          {
+            "code": "PERCDOM03",
+            "display": "Cure Domiciliari Base Percorso - Percorso Gestione Alvo (GA)"
+          },
+          {
+            "code": "PERCDOM04",
+            "display": "Cure Domiciliari Base Percorso - Percorso Gestione Catetere Vescicale (GCV)"
+          },
+          {
+            "code": "PERCDOM05",
+            "display": "Cure Domiciliari Base Percorso - Percorso Gestione Stomie (GS)"
+          },
+          {
+            "code": "PERCDOM06",
+            "display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni A"
+          },
+          {
+            "code": "PERCDOM07",
+            "display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni B"
+          },
+          {
+            "code": "PERCDOM08",
+            "display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni C"
+          },
+          {
+            "code": "PERCDOM09",
+            "display": "ure Domiciliari Integrate Percorso - Percorso Fisioterapia A"
+          },
+          {
+            "code": "PERCDOM10",
+            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia B"
+          },
+          {
+            "code": "PERCDOM11",
+            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia C"
+          },
+          {
+            "code": "PERCDOM12",
+            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia D"
+          },
+          {
+            "code": "PERCDOM13",
+            "display": "ADI - Alta Intensità"
+          },
+          {
+            "code": "PERCDOM14",
+            "display": "ADI - Liv I"
+          },
+          {
+            "code": "PERCDOM15",
+            "display": "ADI - Liv II"
+          },
+          {
+            "code": "PERCDOM16",
+            "display": "ADI - Liv IIIA"
+          },
+          {
+            "code": "PERCDOM17",
+            "display": "ADI - Liv IIIB"
+          },
+          {
+            "code": "PERCDOM18",
+            "display": "ADI – Liv IIIC"
+          }
+        ]
+      }
+    ]
+  }
 }

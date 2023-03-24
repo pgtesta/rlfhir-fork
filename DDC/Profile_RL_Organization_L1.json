@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL1",
   "meta": {
-    "lastUpdated": "2023-02-16T15:52:06.5505433+00:00"
+    "lastUpdated": "2023-03-17T09:55:16.2247596+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
   "name": "RLOrganizationL1",
@@ -55,6 +55,11 @@
         ]
       },
       {
+        "id": "Organization.extension:DataCessazione.url",
+        "path": "Organization.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione"
+      },
+      {
         "id": "Organization.extension:DataInsert",
         "path": "Organization.extension",
         "sliceName": "DataInsert",
@@ -70,6 +75,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Organization.extension:DataInsert.url",
+        "path": "Organization.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
       },
       {
         "id": "Organization.extension:DataUpdate",
@@ -89,6 +99,11 @@
         ]
       },
       {
+        "id": "Organization.extension:DataUpdate.url",
+        "path": "Organization.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate"
+      },
+      {
         "id": "Organization.extension:DataCostituzione",
         "path": "Organization.extension",
         "sliceName": "DataCostituzione",
@@ -104,6 +119,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Organization.extension:DataCostituzione.url",
+        "path": "Organization.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione"
       },
       {
         "id": "Organization.extension:DataInizioValidita",
@@ -124,6 +144,11 @@
         ]
       },
       {
+        "id": "Organization.extension:DataInizioValidita.url",
+        "path": "Organization.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
+      },
+      {
         "id": "Organization.extension:DataFineValidita",
         "path": "Organization.extension",
         "sliceName": "DataFineValidita",
@@ -139,6 +164,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Organization.extension:DataFineValidita.url",
+        "path": "Organization.extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
       },
       {
         "id": "Organization.identifier",
@@ -272,64 +302,6 @@
         "definition": "Indirizzo dell'azienda."
       },
       {
-        "id": "Organization.address.extension",
-        "path": "Organization.address.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
-        "id": "Organization.address.extension:IstatCode",
-        "path": "Organization.address.extension",
-        "sliceName": "IstatCode",
-        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
-        "definition": "Stringa numerica di 6 cifre",
-        "comment": "La fonte del dato è il campo CD_COMUNE della tabella V_LIVELLO_1_DDC",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.address.extension:DistrettoCode",
-        "path": "Organization.address.extension",
-        "sliceName": "DistrettoCode",
-        "short": "Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo",
-        "definition": "TBD",
-        "comment": "TBD",
-        "min": 0,
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Organization.address.extension:DistrettoCode.url",
-        "path": "Organization.address.extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode"
-      },
-      {
-        "id": "Organization.address.extension:DistrettoCode.value[x]",
-        "path": "Organization.address.extension.value[x]",
-        "comment": "A stream of bytes, base64 encoded\r\nTBD: CD_DISTRETTO"
-      },
-      {
         "id": "Organization.address.use",
         "path": "Organization.address.use",
         "short": "Da valorizzare con 'work'",
@@ -347,6 +319,13 @@
         "short": "Indirizzo e numero civico dell'azienda",
         "definition": "Stringa alfanumerica al più 1000 caratteri",
         "comment": "La fonte del dato sono i campi DS_INDIRIZZO e NR_CIVICO  della tabella V_LIVELLO_1_DDC"
+      },
+      {
+        "id": "Organization.address.city",
+        "path": "Organization.address.city",
+        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_COMUNE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
       },
       {
         "id": "Organization.address.district",

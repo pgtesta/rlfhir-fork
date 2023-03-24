@@ -2,13 +2,13 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationDataCessazione",
   "meta": {
-    "lastUpdated": "2022-09-23T16:14:12.469239+00:00"
+    "lastUpdated": "2023-03-16T11:12:47.9882202+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
   "name": "RLOrganizationDataCessazione",
-  "description": "Data di cessazione dell'ente",
   "status": "active",
   "experimental": false,
+  "description": "Data di cessazione dell'ente",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -39,6 +39,9 @@
         "type": [
           {
             "code": "date"
+          },
+          {
+            "code": "dateTime"
           }
         ]
       }

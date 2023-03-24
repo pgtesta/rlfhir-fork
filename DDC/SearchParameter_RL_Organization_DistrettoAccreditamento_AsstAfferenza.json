@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLOrganizationDistrettoAccreditamentoAsstAfferenza",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza",
+  "name": "RLOrganizationDistrettoAccreditamentoAsstAfferenza",
+  "status": "active",
+  "description": "distrettoAccreditamento-AsstAfferenza",
+  "code": "distrettoAccreditamentoAsstAfferenza",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='ASSTAfferenza').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

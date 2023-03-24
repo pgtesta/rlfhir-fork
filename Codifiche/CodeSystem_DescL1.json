@@ -10,6 +10,10 @@
   "content": "complete",
   "concept": [
     {
+      "code": "AO",
+      "display": "Azienda Ospedaliera"
+    },
+    {
       "code": "ASST",
       "display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
     },

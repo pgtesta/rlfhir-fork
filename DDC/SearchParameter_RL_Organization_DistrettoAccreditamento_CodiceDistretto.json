@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLOrganizationDistrettoAccreditamentoCodiceDistretto",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto",
+  "name": "RLOrganizationDistrettoAccreditamentoCodiceDistretto",
+  "status": "draft",
+  "description": "distrettoAccreditamento-codiceDistretto",
+  "code": "distrettoAccreditamentoCodiceDistretto",
+  "base": [
+    "Organization"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='codiceDistretto').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}
