@@ -70,7 +70,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
 
-Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. 
+Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. Inoltre, tra le informazioni disponibili riportate nel bundle saranno presenti anche i dettagli delle valutazioni effettuate dagli assistititi e gli eventuali esiti delle stesse. 
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
