@@ -3,15 +3,17 @@
 - [RLOrganizationL2](#rlorganizationl2)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-un-codice-l1-con-data-fine-validità-superiore-ad-una-certa-data)
-    - [Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data](#organization-l2-appartenenti-ad-una-asst-di-afferenza-con-data-fine-validità-superiore-ad-una-certa-data)
-    - [Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia](#organization-l2-appartenenti-ad-un-codice-l1-con-data-validità-superiore-ad-una-certa-data-e-di-una-specifica-tipologia)
+    - [Enti erogatori gestiti amministrativamente da un ente di codice L1](#enti-erogatori-gestiti-amministrativamente-da-un-ente-di-codice-l1)
+    - [Enti erogatori presenti nell’ambito territoriale di una ASST](#enti-erogatori-presenti-nellambito-territoriale-di-una-asst)
+    - [Enti erogatori accreditati nell’ambito territoriale di una ASST](#enti-erogatori-accreditati-nellambito-territoriale-di-una-asst)
+    - [Enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia](#enti-erogatori-accreditati-nellambito-territoriale-di-una-asst-di-una-specifica-tipologia)
+    - [Enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia](#enti-erogatori-accreditati-nellambito-territoriale-di-una-ats-di-una-specifica-tipologia)
+    - [Enti erogatori accreditati in uno specifico distretto](#enti-erogatori-accreditati-in-uno-specifico-distretto)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 ## Descrizione
-
-Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni anagrafiche e di contatto relative alle strutture identificate da un codice di tipo L2 che erogano servizi sanitari e sociosanitari appartenenti agli enti codificati con codice L1. In Regione Lombardia le strutture univocamente identificate da un codice L2 rappresentano le unità d’offerta (es. RSA, centri diurni integrati, consultori, ecc). In questo profilo è definito il riferimento all’ente di tipo L1 alla quale l’UdO afferisce. 
+Il profilo RLOrganizationL2 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) per contenere le informazioni anagrafiche e di contatto delle strutture identificate attraverso un codice regionale di livello 2 (L2).Sebbene in Regione Lombardia le strutture univocamente identificate da un codice L2 siano di varie tipologie, attualmente questo profilo contiene esclusivamente informazioni riguardo enti erogatrori pubblici o privati accreditati di servizi socio assistenziali. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}.
 
@@ -68,15 +70,15 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLOrganizationL2.
 
-###	Organization L2 appartenenti ad un codice L1 con data fine validità superiore ad una certa data
+###	Enti erogatori gestiti amministrativamente da un ente di codice L1
 
-I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
-- dataFineValidità: data di interesse
+Questa ricerca può essere effettuata per ricavare gli entri erogatori di servizi socioassistenziali che afferiscono amministrativamente ad un ente di codice L1. Duque, questa ricerca permette, ad esempio, di ricavare tutte le ASST che afferiscono ad una ATS, oppure tutte le strutture erogatrici di servizi ente privato accreditato.
+
+I parametri da valorizzare per effettuare la ricerca sono:
+-	dataFineValidità: data di interesse
 -	partOf.reference(RLOrganizationL1).identifier:  codice L1 dell’ente di interesse
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata struttura L1.
-
-| SCOPE | Ricerca tutti i profili RLOrganizationL2 la cui data di fine validità è maggiore di una data di riferimento e che afferiscono ad una determinata struttura identificata dal codice L1 (RLOrganizationL1) |
+| SCOPE | Ricerca tutti gli enti erogatori gestiti amministrativamente da un ente di codice L1 |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
@@ -88,14 +90,14 @@ A titolo esemplificativo, la chiamata:
 
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
-### Organization L2 appartenenti ad una ASST di afferenza con data fine validità superiore ad una certa data
-I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+### Enti erogatori presenti nell’ambito territoriale di una ASST
+Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali la cui sede operativa ricade in un distretto afferente ad una determinata ASST. 
+
+I parametri da valorizzare per effettuare la ricerca sono:
 -	dataFineValidità: data di interesse
--	ASSTAfferenza.reference(RLOrganizationL1).identifier:  codice L1 dell’ASST di interesse
+-	distrettoTerritoriale.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata ASST.
-
-| SCOPE | Ricerca tutti i profili RLOrganizationL2 la cui data di fine validità è maggiore di una data di riferimento e che afferiscono ad una determinata ASST (RLOrganizationL1) |
+| SCOPE | Ricerca tutti gli enti erogatori presenti nell’ambito territoriale di una ASST |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
@@ -107,26 +109,39 @@ A titolo esemplificativo, la chiamata:
 
 restituirà tutte le strutture afferenti alla ASST.. 
 
-### Organization L2 appartenenti ad un codice L1 con data validità superiore ad una certa data e di una specifica tipologia
-I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+### Enti erogatori accreditati nell’ambito territoriale di una ASST 
+Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST siano enti erogatori di servizi socioassistenziali (es. cure domiciliari).
+
+I parametri da valorizzare per effettuare la ricerca sono:
 -	dataFineValidità: data di interesse
--	ASSTAfferenza.reference(RLOrganizationL1).identifier:  codice L1 dell’ASST di interesse
+-	distrettoAccreditamento.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
+
+
+### Enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia
+
+Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di uno specifico servizio socioassistenziale (UdO) che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST nel caso siano enti erogatori del servizio socioassistenziale d’interesse (es. cure domiciliari).
+
+I parametri da valorizzare per effettuare la ricerca sono:
+-	dataFineValidità: data di interesse
+-	distrettoAccreditamento.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
 -	type.coding.code: codice della tipologia di UdO
 
-L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 di una determinata tipologia di unità d’offerta (UdO) sociosanitaria, con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata ASST.
 
-| SCOPE | Ricerca tutti i profili RLOrganizationL12 la cui data di fine validità è maggiore di una data di riferimento, che sono afferenti ad una determinata ASST (RLOrganizationL1) e sono di una o più tipologie (es. RIC,RSA) |
-|---|---|
-| VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2& dataFineValidita={_datadiRiferimento_}&partof:Organization.identifier={_codicelivelloL1_}&
-type={_tipoRicercato1,...,tipoRicercatoN_} |
+### Enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia
+Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di uno specifico servizio socioassistenziale (UdO) che si sono accreditati in almeno un distretto afferente ad una ASST o più ASST che afferiscono alla medesima ATS. Verranno restituite dalla ricerca anche le stesse ASST nel caso siano enti erogatori del servizio socioassistenziale d’interesse (es. cure domiciliari).
 
-A titolo esemplificativo, la chiamata:
+Il parametro da valorizzare per effettuare la ricerca è:
+-	dataFineValidità: data di interesse
+-	distrettoAccreditamento.ATSAfferenza.coding.code: codice dell’ATS di afferenza di interesse
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/ RLOrganizationL2&dataFineValidita=gt2018-04-05 & type=CONS….
+L’esito della ricerca permette di recuperare le informazioni relative alle strutture di tipo L2 con data di fine validità superiore ad una data di riferimento ed afferenti ad una determinata ATS.
 
-restituirà tutte i consultori (CONS) afferenti alla ASST… 
+### Enti erogatori accreditati in uno specifico distretto
+Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali che si sono accreditati in uno determinato distretto sanitario.
+
+Il parametro da valorizzare per effettuare la ricerca è:
+-	dataFineValidità: data di interesse
+-	distrettoAccreditamento.codiceDistretto.coding.code: codice del distretto sanitario di interesse
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -142,9 +157,11 @@ I parametri di ricerca del profilo RLOrganizationL2, oltre ai campi standard del
 
 | Nome e link Simplifier | Descrizione | Codice |
 |---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationASSTAfferenza}} | Parametro di ricerca dell’ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza. | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationASSTAfferenza').value |
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 2 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 2 specificando la data di inserimento. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza}} | Parametro di ricerca dell’ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza. | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} | Parametro di ricerca dell’ATS sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza. | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} | Parametro di ricerca del distretto di accreditamento nel quale l'ente eroga servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto').value |
 
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
@@ -155,4 +172,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLOrganizat
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| type | Codifica del tipo di presidio L2 | Il riferimento alla lista esaustiva della tipologia di UdO è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+| type | Codifica del tipo di presidio L2 | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}} |

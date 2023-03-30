@@ -6,6 +6,13 @@
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
+  "description": "Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L2",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    }
+  ],
   "type": "Organization",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
   "derivation": "constraint",
