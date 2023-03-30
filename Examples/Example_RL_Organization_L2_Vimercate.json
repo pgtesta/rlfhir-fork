@@ -5,12 +5,17 @@
     "lastUpdated": "2022-03-30T10:36:03.000+00:00",
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
-    ]
+    ],
+    "versionId": "1"
   },
   "identifier": [
     {
-      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceStruttura",
+      "system": "https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialePresidio",
       "value": "03007800"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoMinisterialePresidio",
+      "value": "12345"
     }
   ],
   "active": true,
@@ -18,8 +23,9 @@
     {
       "coding": [
         {
-          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
-          "code": "RIC"
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+          "code": "RIC",
+          "display": "STRUTTURA DI RICOVERO"
         }
       ]
     }
@@ -27,20 +33,8 @@
   "name": "Presidio Ospedaliero di Vimercate",
   "telecom": [
     {
-      "system": "phone",
-      "value": "(+1) 734-677-7777"
-    },
-    {
-      "system": "fax",
-      "value": "(+1) 734-677-6622"
-    },
-    {
       "system": "email",
       "value": "provamail@vimercate.org"
-    },
-    {
-      "system": "url",
-      "value": "http://asst-vimercate.it"
     }
   ],
   "address": [
@@ -50,29 +44,60 @@
       "line": [
         "Via Santi Cosma e Damiano, 10"
       ],
+      "city": "Milano",
       "district": "MB",
       "postalCode": "20871",
       "extension": [
         {
-          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
-                "code": "codice_distretto"
+          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale",
+          "extension": [
+            {
+              "url": "codiceDistretto",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+                    "code": "22052",
+                    "display": "TBD"
+                  }
+                ]
               }
-            ]
-          }
+            },
+            {
+              "url": "ASSTAfferenza",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+                    "code": "030718",
+                    "display": "ASST PAPA GIOVANNI XXIII"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "ATSAfferenza",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+                    "code": "030325",
+                    "display": "ATS DI BERGAMO"
+                  }
+                ]
+              }
+            }
+          ]
         },
         {
           "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
-          "valueString": "016091"
+          "valueString": "215"
         }
       ]
     }
   ],
   "partOf": {
-    "reference": "Organization/struttura-L1"
+    "reference": "Organization/ea7b0c30-c7f1-11ed-afa1-0242ac120002"
   },
   "extension": [
     {
@@ -92,28 +117,53 @@
       "valueDate": "2035-01-14"
     },
     {
-      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAmministrativa",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAsst",
-            "code": "030701",
-            "display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
-          }
-        ]
-      }
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
+      "valueDate": "2000-01-27"
     },
     {
-      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsTerritoriale",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceAts",
-            "code": "321",
-            "display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
+      "valueDate": "2000-01-27"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+      "extension": [
+        {
+          "url": "codiceDistretto",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+                "code": "22038",
+                "display": "VALLECAMONICA - SEBINO"
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "url": "ASSTAfferenza",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+                "code": "714",
+                "display": "ASST DELLA VALCAMONICA"
+              }
+            ]
+          }
+        },
+        {
+          "url": "ATSAfferenza",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+                "code": "323",
+                "display": "ATS DELLA MONTAGNA"
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }

@@ -9,7 +9,7 @@
 
 
 ## Descrizione
-Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) ed è volto a contenere le informazioni anagrafiche e di contatto relative alle strutture di tipo ente L1. In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie e possono essere ASST o ATS così come MMG/PLS. 
+Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) per contenere le informazioni anagrafiche e di contatto relative agli enti identificate attraverso un codice regionale di livello 1 (L1). In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie, tre le quali ATS, ASST ed enti gestori privati, così come medici di medicina generale e pediatri di libera scelta.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}.
 
@@ -65,7 +65,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ## Tipologie di ricerca
 
 ### Enti L1 attualmente attivi
-I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
+
+I parametri da valorizzare per effettuare la ricerca sono:
 -	DataFineValidita: data di interesse
 
 | SCOPE | Organization L1 con data fine validità superiore alla data odierna o nulla    |
@@ -97,4 +99,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizat
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | Codifica del tipo di azienda L1    | Il riferimento alla lista esaustiva della tipologia di enti di livello 1 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}}   |
+| type    | Codifica del tipo di azienda L1 | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1}}   |

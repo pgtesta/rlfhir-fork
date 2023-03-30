@@ -8,6 +8,7 @@
 |{{pagelink:Home/pagine-dettaglio/draft_3.2.0-beta.page.md, text:3.2.0-beta}}| 24/02/2023 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.0-beta](https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.0-beta) |
 |{{pagelink:Home/pagine-dettaglio/draft_3.2.1-beta.page.md, text:3.2.1-beta}}| 03/03/2023 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.1-beta](https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.1-beta) |
 |{{pagelink:Home/pagine-dettaglio/draft_3.2.2-beta.page.md, text:3.2.2-beta}}| 09/03/2023 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.2-beta](https://simplifier.net/guide/ig-rlfhir-draft?version=3.2.2-beta) |
+|{{pagelink:Home/pagine-dettaglio/draft_3.3.0.page.md, text:3.3.0}}| 30/03/2023 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.3.0](https://simplifier.net/guide/ig-rlfhir-draft?version=3.3.0) |
 
 ## IG Produzione
 |Versione e pagina dettaglio|Data rilascio| URL |

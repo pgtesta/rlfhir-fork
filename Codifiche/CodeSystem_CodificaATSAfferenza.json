@@ -1,11 +1,11 @@
 {
-	"resourceType": "CodeSystem",
-	"id": "CodeSystem-DDC-ATSAfferenza",
-	"url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-ATSAfferenza",
-	"version": "1.0.0",
-	"name": "DDC - ATS Afferenza",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "CodeSystem relativo alla codifica ATS Afferenza",
-	"content": "complete"
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-DDC-ATSAfferenza",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-ATSAfferenza",
+  "version": "1.0.0",
+  "name": "DDC - ATS Afferenza",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica ATS Afferenza",
+  "content": "complete"
 }
