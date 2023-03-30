@@ -26,15 +26,15 @@
     </div>
     <br />
     <table style="width: fit-content">
-      <thead>
-        <tr>
-          <th>Nome estensione</th>
-          <th>Base</th>
-          <th>Descrizione</th>
-          <th>Link simplifier</th>
-        </tr>
-      </thead>
-      <tbody id="myTable">
+    <thead>
+      <tr>
+        <th>Nome estensione</th>
+        <th>Base</th>
+        <th>Descrizione</th>
+        <th>Link simplifier</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
       <tr>
         <td>RLCarePlanVersionePAI</td>
         <td>CarePlan</td>
@@ -84,28 +84,10 @@
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPrescrizioneElettronica}}</td>
       </tr>
       <tr>
-        <td>RLOrganizationAddressDistrettoCode</td>
-        <td>Address</td>
-        <td>Codice del Distretto di appartenenza del comune a cui fa riferimento l'indirizzo</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode}}</td>
-      </tr>
-      <tr>
         <td>RLOrganizationAddressIstatCode</td>
         <td>Address</td>
         <td>Codice ISTAT del comune a cui fa riferimento l'indirizzo</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode}}</td>
-      </tr>
-      <tr>
-        <td>RLOrganizationAsstAfferenza</td>
-        <td>Organization</td>
-        <td>ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAsstAfferenza}}</td>
-      </tr>
-      <tr>
-        <td>RLOrganizationAtsAfferenza</td>
-        <td>Organization</td>
-        <td>ATS alla quale il presidio afferisce</td>
-        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAtsAfferenza}}</td>
       </tr>
       <tr>
         <td>RLOrganizationDataCessazione</td>
@@ -142,6 +124,18 @@
         <td>Organization</td>
         <td>Data di aggiornamento del record</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}}</td>
+      </tr>
+      <tr>
+        <td>RLOrganizationDistrettoAccreditamento</td>
+        <td>Organization</td>
+        <td>0</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento}}</td>
+      </tr>
+      <tr>
+        <td>RLOrganizationDistrettoTerritoriale</td>
+        <td>Organization.address</td>
+        <td>0</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale}}</td>
       </tr>
       <tr>
         <td>RLPatientATSResidenza</td>
