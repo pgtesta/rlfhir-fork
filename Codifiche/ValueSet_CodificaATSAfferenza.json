@@ -1,18 +1,18 @@
 {
-	"resourceType": "ValueSet",
-	"id": "ValueSet-DDC-ATSAfferenza",
-	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
-	"version": "1.0.0",
-	"name": "DDC - ATS Afferenza",
-	"status": "draft",
-	"date": "2023-01-24",
-	"description": "ValueSet relativo alla codifica ATS Afferenza",
-	"compose": {
-		"include": [
-			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-ATSAfferenza",
-				"version": "1.0.0"
-			}
-		]
-	}
+  "resourceType": "ValueSet",
+  "id": "ValueSet-DDC-ATSAfferenza",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+  "version": "1.0.0",
+  "name": "DDC - ATS Afferenza",
+  "status": "draft",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla codifica ATS Afferenza",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-ATSAfferenza",
+        "version": "1.0.0"
+      }
+    ]
+  }
 }

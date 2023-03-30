@@ -1,0 +1,18 @@
+# IG RLFHIR Draft 3.3.0
+
+Versione rilasciata il 30/03/2023. 
+
+La guida è consultabile a questo [link](https://simplifier.net/guide/ig-rlfhir-draft?version=3.3.0).
+
+Questa versione della Implementation Guide fa riferimento agli elementi FHIR contenuti nel pacchetto [rl.fhir.r4.draft 0.0.6](https://simplifier.net/packages/rl.fhir.r4.draft/0.0.6).
+
+## Novità
+### Risorse FHIR
+- modificato il valueset e codesystem "SGDT Percorsi CDom"
+- modificati i profili elencati di seguito; tra le varie modifiche, si segnala l'aggiunta dei campi "id", "meta.versionId": "meta.lastUpdated", "meta.profile".
+  - RLOrganizationL2, RLOrganizationL3, RLPractitionerRoleMedicoPrescrittore, RLPractitionerMedicoPrescrittore
+  - RLAllergyIntoleranceAllergie, RLCarePlanProgettoIndividuale, RLCareTeamEquipe, RLConditionPatologiaPrimariaSecondariaUlteriore, RLConditionProblemaInfermieristico, RLCoverageEsenzioni, RLDeviceRequestProtesiAusili, RLEncounterAccesso, RLGoalObiettiviSalute, RLLocationLuogoPrestazioneCureDom, RLMedicationRequestOssigenoterapia, RLMedicationRequestTerapiaFarmacologica, RLObservationEsitoValutazione, RLObservationStiliVita, RLPatientCittadino, RLPractitionerRoleOperatoreADI, RLPractitionerRoleProfessionistaSanitario, RLPractitionerProfessionistaSanitario, RLProcedurePrestazione, RLQuestionnaireResponseValutazione, RLQuestionnaireValutazione, RLServiceRequestInterventoEducazionale, RLServiceRequestPrestazioniInfermieristiche, RLServiceRequestPrestazioniSociali, RLServiceRequestPrestazioniSpecialistiche, RLServiceRequestRivalutazione, RLServiceRequestServiziSocioAssistenziali, RLServiceRequestSospensioneADI
+Aggiunte le extension: RLPractitionerRoleDettagliAttivazionePercorsoCure, RLPractitionerRoleNumeroAccessi, 
+
+### Implementation Guide
+- Aggiornata pagina Libreria Estensioni
