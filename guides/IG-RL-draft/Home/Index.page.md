@@ -14,9 +14,9 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>test</b>, di c
 </div>
 
 ## Novità
-La versione corrente della guida implementativa ha recepito e gestisce attraverso la progettazione dei profili e dei relativi criteri di ricerca i seguenti concetti:
-- inclusione delle valutazioni effettuate dal paziente nel bundle di risorse contenute in fase di consultazione di un progetto individuale (si veda il criterio di ricerca ”progetti individuali attivi” del profilo RLCarePlanProgettoIndividuale).
-- gestione di due percorsi di cure domiciliari attivati ad un paziente nell’ambito di una stessa pratica e definiti all’interno del progetto individuale (si veda la mappatura della risorsa RLServiceRequestServiziSocioAssistenziali)
+La versione corrente della guida implementativa gestisce i seguenti concetti:
+- Inclusione delle valutazioni del paziente nel bundle di risorse contenute in fase di consultazione di un progetto individuale (si veda il criterio di ricerca ”progetti individuali attivi” del profilo RLCarePlanProgettoIndividuale).
+- Gestione di due percorsi di cure domiciliari attivati ad un paziente nell’ambito di una stessa pratica e definiti all’interno del progetto individuale (si veda la mappatura della risorsa RLServiceRequestServiziSocioAssistenziali).
 
 ## Come leggere questa guida
 Questa guida presenta diverse sezioni che sono elencate nella barra dei menù, presente nella parte alta di ciascuna pagina.

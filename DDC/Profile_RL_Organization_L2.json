@@ -324,7 +324,7 @@
         "id": "Organization.identifier:codiceL2",
         "path": "Organization.identifier",
         "sliceName": "codiceL2",
-        "short": "Codice CUDES del presidio",
+        "short": "Codice CUDES dell'Ente",
         "min": 1,
         "max": "1"
       },
@@ -337,30 +337,30 @@
       {
         "id": "Organization.identifier:codiceL2.value",
         "path": "Organization.identifier.value",
-        "short": "Codice di livello 2 del presidio",
+        "short": "Codice di livello 2 dell'Ente",
         "definition": "Stringa alfanumerica di al più 13 caratteri",
         "min": 1
       },
       {
-        "id": "Organization.identifier:identificativoL2",
+        "id": "Organization.identifier:idUnivocoCredenziale",
         "path": "Organization.identifier",
-        "sliceName": "identificativoL2",
-        "short": "Codice univoco identificativo del presidio",
+        "sliceName": "idUnivocoCredenziale",
+        "short": "Codice identificativo riportato nel campo della sottostruttura di livello 2 della credenziale dell'operatore che opera per l'Ente",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Organization.identifier:identificativoL2.system",
+        "id": "Organization.identifier:idUnivocoCredenziale.system",
         "path": "Organization.identifier.system",
         "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoMinisterialePresidio"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoCredenziale"
       },
       {
-        "id": "Organization.identifier:identificativoL2.value",
+        "id": "Organization.identifier:idUnivocoCredenziale.value",
         "path": "Organization.identifier.value",
-        "short": "Identificativo di livello 2 del presidio",
-        "definition": "Stringa alfanumerica di al più 15 caratteri",
-        "comment": "La fonte del dato è il campo ID_LIVELLO_2 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "short": "Identificativo univoco dell'Ente",
+        "definition": "Stringa alfanumerica al più di 8 caratteri se la struttura è un Ente di ricovero.\r\nStringa alfanumerica al più di 9 caratteri se la struttura è un Ente sociosanitario o di cure domiciliari",
+        "comment": "La fonte del dato è il campo CD_LIVELLO_2 (stringa alfanumerica al più di 8 caratteri) della tabella Master Data delle Strutture Socio Sanitarie se il campo CD_TIPO_MACRO_LIVELLO_2 è valorizzato con 'RIC'. Altrimenti, la fonte del dato è il campo ID_LIVELLO_2 (stringa alfanumerica al più di 9 caratteri). I dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
