@@ -2,29 +2,28 @@
 
 - [RLPatientCittadino](#rlpatientcittadino)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
-  - [Criteri di ricerca](#criteri-di-ricerca)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
-  - [Value set](#value-set)
+  - [ValueSet](#valueset)
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Patient](http://hl7.org/fhir/R4/patient.html) contenente i dettagli anagrafici del cittadino.
+Il profilo RLPatientCittadino è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) e riporta i dettagli anagrafici di un cittadino.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino}}.
 
 <br>
 <div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+  <button class="tablinks active" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+  <button class="tablinks" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
   <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
+  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
+<div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, snapshot}}
 </div>
@@ -34,7 +33,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, diff}}
 </div>
 
-<div id="Hybrid View" class="tabcontent">
+<div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino, hybrid}}
 </div>
@@ -62,20 +61,25 @@ Al momento non ci sono esempi disponibili.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Extension
-Non sono state sviluppate extension per questo profilo.
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Criteri di ricerca
+## Tipologie di ricerca
 Attualmente non sono stati definiti criteri di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- identifier
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
-Attualmente non sono definiti value set specifici per il profilo RLPatientCittadino.
+Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCittadino:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| maritalStatus | Stato civile del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile}} |
+| titoloDiStudio | Titolo di studio del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio}} |
+| posizioneDellaProfessione | Posizione lavorativa del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione}} |
+| situazionePensionistica | Situazione pensionistica del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica}} |
+| responsabilitaGenitoriale | Responsabilità genitoriale nei confronti dell’assistito se minorenne | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale}} |
+| tipologiaPaziente | Condizione clinica prevalente dell’assistito | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente}} |

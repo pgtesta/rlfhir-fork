@@ -1,6 +1,6 @@
-# RLOrganizationL3
+# RLLocationLuogoPrestazioneCureDom
 
-- [RLOrganizationL3](#rlorganizationl3)
+- [RLLocationLuogoPrestazioneCureDom](#rllocationluogoprestazionecuredom)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -8,10 +8,9 @@
 
 
 ## Descrizione
+Il profilo RLLocationLuogoPrestazioneCureDom è stato strutturato a partire dalla risorsa generica FHIR [Location](http://hl7.org/fhir/R4/location.html) per descrivere la tipologia del luogo in cui viene erogata una prestazione ad un paziente in regime di ricovero domiciliare.
 
-Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni identificative e descrittive relative ad un reparto di ricovero identificato da un codice di tipo L3. In questo profilo è definito il riferimento alle strutture ospedaliere di tipo L2 alla quale il reparto afferisce. 
-
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom}}.
 
 <br>
 <div class="tab">
@@ -26,38 +25,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-RLOrganizationL3}}
-<br>
+  {{link:esempio-Location-LuogoPrestazioneCureDom}}
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
@@ -75,4 +73,8 @@ Attualmente non sono definiti Search Parameters.
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLOrganizationL3.
+Nella seguente tabella sono elencati i value-set relativi al profilo RLLocationLuogoPrestazioneCureDom.
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| physicalForm | Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}} |

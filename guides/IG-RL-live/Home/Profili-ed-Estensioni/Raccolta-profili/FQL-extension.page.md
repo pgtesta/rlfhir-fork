@@ -1,22 +1,5 @@
-# Profili
-@```
-from
-	StructureDefinition
-where kind = 'resource'
-select
-	Tag: keyword.code,
-	Nome_profilo: name, 
-	Status: status,
-	Risorsa_base: type, 
-	Riferimenti: differential.element.type.targetProfile,
-	Estensioni: differential.element.type.profile,
-	Descrizione: description,
-	Canonical: url
-order by
-	Tag, status, name
-```
-
 # Estensioni 
+<!--
 @```
     from
 	StructureDefinition
@@ -29,7 +12,21 @@ select
 	Base: context.expression,
 	Tipo_variabile: differential.element.type.code,
 	Descrizione: description,
-	Link_simplifier: url
+	Canonical: url
 order by
-	Tag, status, name
+	Tag, name
+```
+-->
+
+@```
+from
+	StructureDefinition
+where type = 'Extension'
+select
+	Nome_extension: name, 
+	Base: context.expression,
+	Descrizione_extension: description,
+	Canonical_extension: url
+order by
+	name
 ```

@@ -4,8 +4,8 @@
   filename: Contesto
 - name: Profili ed Estensioni
   filename: Profili-ed-Estensioni
-- name: CodeSystem e ValueSet
-  filename: CodeSystem-e-ValueSet
+- name: Terminologia
+  filename: Terminologia
 - name: Esempi
   filename: Esempi
 - name: Contatti
