@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLServiceRe
 
 | Nome    | Descrizione    | Riferimento al dettaglio della codifica    |
 |---|---|---|
-| code | Codice e descrizione dell’intervento educazionale da attivare | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali}} |
-| locationCode | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu}} |
+| code | Codice e descrizione dell’intervento educazionale da attivare | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali}} |
+| locationCode | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu}} |

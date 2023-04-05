@@ -172,4 +172,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLOrganizat
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| type | Codifica del tipo di presidio L2 | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}} |
+| type | Codifica del tipo di presidio L2 | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}} |

@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLEncounter
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| Class | Tipologia di accesso | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso}} |
-| ReasonCode | Motivo della segnalazione | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione}} |
+| Class | Tipologia di accesso | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso}} |
+| ReasonCode | Motivo della segnalazione | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione}} |

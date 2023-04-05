@@ -77,4 +77,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLLocationL
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| physicalForm | Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}} |
+| physicalForm | Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}} |

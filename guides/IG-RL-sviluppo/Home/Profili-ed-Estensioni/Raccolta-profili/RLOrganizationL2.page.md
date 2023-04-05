@@ -3,12 +3,12 @@
 - [RLOrganizationL2](#rlorganizationl2)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Enti erogatori gestiti amministrativamente da un ente di codice L1](#enti-erogatori-gestiti-amministrativamente-da-un-ente-di-codice-l1)
-    - [Enti erogatori presenti nell’ambito territoriale di una ASST](#enti-erogatori-presenti-nellambito-territoriale-di-una-asst)
-    - [Enti erogatori accreditati nell’ambito territoriale di una ASST](#enti-erogatori-accreditati-nellambito-territoriale-di-una-asst)
-    - [Enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia](#enti-erogatori-accreditati-nellambito-territoriale-di-una-asst-di-una-specifica-tipologia)
-    - [Enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia](#enti-erogatori-accreditati-nellambito-territoriale-di-una-ats-di-una-specifica-tipologia)
-    - [Enti erogatori accreditati in uno specifico distretto](#enti-erogatori-accreditati-in-uno-specifico-distretto)
+    - [1. Enti erogatori gestiti amministrativamente da un ente di codice L1](#1-enti-erogatori-gestiti-amministrativamente-da-un-ente-di-codice-l1)
+    - [2. Enti erogatori presenti nell’ambito territoriale di una ASST](#2-enti-erogatori-presenti-nellambito-territoriale-di-una-asst)
+    - [3. Enti erogatori accreditati nell’ambito territoriale di una ASST](#3-enti-erogatori-accreditati-nellambito-territoriale-di-una-asst)
+    - [4. Enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia](#4-enti-erogatori-accreditati-nellambito-territoriale-di-una-asst-di-una-specifica-tipologia)
+    - [5. Enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia](#5-enti-erogatori-accreditati-nellambito-territoriale-di-una-ats-di-una-specifica-tipologia)
+    - [6. Enti erogatori accreditati in uno specifico distretto](#6-enti-erogatori-accreditati-in-uno-specifico-distretto)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -178,14 +178,14 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 I parametri di ricerca del profilo RLOrganizationL2, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
-| Nome e link Simplifier | Descrizione | Espressione |
+| Nome e   link Simplifier | Descrizione | Espressione |
 |---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Data di fine validità per strutture SISS di livello 2. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Data inizio validità per strutture SISS di livello 2. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza}} | ASST nella quale l'Ente erogatore ha la sede operativa | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} | Parametro di ricerca dell’ATS sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza. | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} | Parametro di ricerca del distretto di accreditamento nel quale l'ente eroga servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto').value |
-
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Data di fine validità per strutture SISS. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Data inizio validità per strutture SISS. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza}} | ASST di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='ASSTAfferenza').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} | ATS di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='ATSAfferenza').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} | Distretto di accreditamento nel quale l'Ente eroga i servizi   sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='codiceDistretto').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoTerritorialeASSTAfferenza}} | ASST nella quale l'Ente erogatore ha la sede operativa. | address.extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale').extension.where(url='ASSTAfferenza').value.coding.code |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -195,4 +195,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLOrganizat
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| type | Codifica del tipo di presidio L2 | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}} |
+| type | Codifica del tipo di presidio L2 | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}} |

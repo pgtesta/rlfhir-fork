@@ -81,7 +81,7 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione del servizio sociosanitario da attivare |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}}| 
-| ReasonCode | Codice e descrizione dei percorsi di cure domiciliari |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom}}| 
-| causaleDimissione  | Codice e descrizione della causale di dimissione |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione}}| 
-| soggettoProponentePIC | Codice e descrizione del soggetto che ha proposto la presa in carico dell'assistito |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC}}| 
+| Code | Codice e descrizione del servizio sociosanitario da attivare |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}}| 
+| ReasonCode | Codice e descrizione dei percorsi di cure domiciliari |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom}}| 
+| causaleDimissione  | Codice e descrizione della causale di dimissione |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione}}| 
+| soggettoProponentePIC | Codice e descrizione del soggetto che ha proposto la presa in carico dell'assistito |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC}}| 

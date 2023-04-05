@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMedicatio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| medicationCodeableConcept | Codice e descrizione del farmaco per ATC o AIC oppure per GE |  |
+| medicationCodeableConcept | Codice e descrizione del farmaco per ATC o AIC oppure per GE |  *Codifica in fase di definizione|

@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLObservati
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e nome della tipologia di valutazione specifica | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaValutazione}} |
+| code | Codice e nome della tipologia di valutazione specifica | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaValutazione}} |

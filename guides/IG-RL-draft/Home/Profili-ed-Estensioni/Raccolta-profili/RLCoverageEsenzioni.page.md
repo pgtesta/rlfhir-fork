@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLCoverageE
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type | Codice e descrizione dell'esenzione|  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni}}  |
+| type | Codice e descrizione dell'esenzione|  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni}}  |

@@ -112,8 +112,8 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLProcedure
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| modalitaErogazione | Codice e descrizione della modalità di erogazione della prestazione erogata in regime di ricovero domiciliare | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione}} |
-| Category | Codice e descrizione dei setting assistenziali delle prestazioni | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale}} |
-| Code | Codice e descrizione delle prestazioni  | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}. Sulla base del setting assistenziale di interesse è possibile consultare la relativa codifica delle prestazioni erogabili|
-| performer.function | Codice e descrizione della tipologia di operatore che ha effettuato la prestazione | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}} |
-| tipoAccesso | Codice e descrizione del tipo di accesso | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso}} |
+| modalitaErogazione | Codice e descrizione della modalità di erogazione della prestazione erogata in regime di ricovero domiciliare | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione}} |
+| Category | Codice e descrizione dei setting assistenziali delle prestazioni | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale}} |
+| Code | Codice e descrizione delle prestazioni  | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}. Sulla base del setting assistenziale di interesse è possibile consultare la relativa codifica delle prestazioni erogabili|
+| performer.function | Codice e descrizione della tipologia di operatore che ha effettuato la prestazione | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}} |
+| tipoAccesso | Codice e descrizione del tipo di accesso | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso}} |
