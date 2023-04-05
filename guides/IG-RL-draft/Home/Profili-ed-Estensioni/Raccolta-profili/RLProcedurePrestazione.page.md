@@ -65,14 +65,15 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ## Tipologie di ricerca
 
 ###	Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare
-
-Questa ricerca deve essere effettuata da un’ASST per ottenere il dettaglio delle prestazioni che un Ente Erogatore ha erogato ad un paziente in regime di ricovero domiciliare. Mediante il numero pratica del servizio e cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
+Questa ricerca deve essere effettuata da un’ASST per ottenere il dettaglio delle prestazioni che un Ente ha erogato ad un paziente in regime di ricovero domiciliare. Mediante il numero pratica del servizio di cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
 
 L’elenco delle prestazioni è generato a partire dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) ed aggiornato alla data corrente della richiesta. Ogni istanza del profilo deve riferirsi ad una singola e specifica prestazione erogata. Dunque, anche nel caso in cui una prestazione sia erogata più volte durante un singolo accesso il bundle generato contiene un numero di istanze del profilo pari al numero di volte in cui la prestazione è stata effettuata.
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).identifier: numero pratica del servizio di cure domiciliari.
--	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOrganizationL2).identifier: codice CUDES L2 dell’Ente Erogatore che ha in carico il pazient
+-	basedOn.reference(RLServiceRequestServiziSocioAssistenziali).performer.reference(RLOrganizationL2).identifier: codice CUDES L2 dell’Ente Erogatore che ha in carico il paziente
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
 | SCOPE | Dettaglio delle prestazioni erogate al paziente in regime di ricovero domiciliare |
 |---|---|

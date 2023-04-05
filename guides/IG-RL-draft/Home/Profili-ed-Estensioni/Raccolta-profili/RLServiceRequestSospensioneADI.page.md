@@ -65,10 +65,12 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ### Dettagli della sospensione temporanea del ricovero domiciliare del paziente 
 
-Questa ricerca deve essere effettuata da un’ASST per ottenere le informazioni riassuntive delle sospensioni temporanee del ricovero domiciliare di un paziente. L’elenco delle sospensioni temporanee è generato a partire dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) ed aggiornato alla data corrente della richiesta. Mediante il numero pratica del servizio e cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
+Questa ricerca deve essere effettuata da un’ASST per ottenere le informazioni riassuntive delle sospensioni temporanee del ricovero domiciliare di un paziente. L’elenco delle sospensioni temporanee è generato a partire dalla data di attivazione del ricovero domiciliare (primo accesso di un operatore a domicilio) ed aggiornato alla data corrente della richiesta. Mediante il numero pratica del servizio di cure domiciliari viene definita l’associazione della prestazione erogata con l’assistito.  
 
-I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+Il parametro da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	requisition: numero pratica del servizio di cure domiciliari.
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
 | SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare del paziente |
 |---|---|
@@ -89,6 +91,8 @@ Poiché questa ricerca è di prassi utilizzata per ricavare anche i dettagli rel
 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca per entrambi i profili interessati (RLServiceRequestSopensioneADI e RLServiceRequestRivalutazione) è:
 -	requisition: numero pratica del servizio di cure domiciliari.
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
 | SCOPE | Dettagli della sospensione temporanea del ricovero domiciliare e necessità di rivalutazione del paziente |
 |---|---|

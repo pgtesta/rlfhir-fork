@@ -73,12 +73,13 @@ Questa ricerca deve essere utilizzata dagli Enti Erogatori di servizi socioassis
 -	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).identifier: codice identificativo del servizio socioassistenziale d’interesse
 -	basedOn.reference(RLCarePlanProgettoIndividuale).activity.reference(RLServiceRequestServiziSocioSanitari).perfomer.reference(RLOganizationL2).identifier: codice L2 dell’ente assegnato per l’erogazione del servizio socioassistenziale.
 
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
 |     SCOPE    |Ultime valutazioni effettuate da un paziente|
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<br>&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:CarePlan.activity-reference:ServiceRequest.identifier=\{_numeroPratica_\}<br>&source:Patient.identifier=\{_codiceFiscaleAssistito_\}<br>&status=completed<br>&_include=QuestionnaireResponse:questionnaire<br>&_include=QuestionnaireResponse:extension.esitoValutazione
- |
+| URL | QuestionnaireResponse?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione<br>&based-on:CarePlan.activity-reference:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:CarePlan.activity-reference:ServiceRequest.identifier=\{_numeroPratica_\}<br>&source:Patient.identifier=\{_codiceFiscaleAssistito_\}<br>&status=completed<br>&_include=QuestionnaireResponse:questionnaire<br>&_include=QuestionnaireResponse:extension.esitoValutazione |
 
 A titolo esemplificativo, la chiamata: 
 

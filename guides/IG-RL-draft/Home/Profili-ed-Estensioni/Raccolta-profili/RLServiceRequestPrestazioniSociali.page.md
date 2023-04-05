@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code| Codice e descrizione della prestazione sociale | |
+| Code| Codice e descrizione della prestazione sociale | *Codifica in fase di definizione|

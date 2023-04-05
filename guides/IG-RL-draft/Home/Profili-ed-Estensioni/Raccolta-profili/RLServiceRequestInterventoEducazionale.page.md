@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLServiceRequestInterventiEducazionali è stato strutturato a partire dalla risorsa generica FHIR  [CommunicationRequest](http://hl7.org/fhir/R4/communicationrequest.html) e descrive il tipo di intervento educazionale, le modalità di erogazione e la frequenza di erogazione definite durante la stesura del progetto individuale del paziente.
+Il profilo RLServiceRequestInterventoEducazionale è stato strutturato a partire dalla risorsa generica FHIR  [CommunicationRequest](http://hl7.org/fhir/R4/communicationrequest.html) e descrive il tipo di intervento educazionale, le modalità di erogazione e la frequenza di erogazione definite durante la stesura del progetto individuale del paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale}}.
 

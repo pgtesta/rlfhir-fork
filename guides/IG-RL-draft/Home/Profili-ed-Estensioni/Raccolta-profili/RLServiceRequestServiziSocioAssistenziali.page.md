@@ -67,11 +67,7 @@ Attualmente non sono stati definiti criteri di ricerca.
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
-- code
-- identifier
-- performer
-- type
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

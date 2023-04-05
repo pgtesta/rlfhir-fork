@@ -77,6 +77,6 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLCoverageEsenzioni:
 
-| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+| Nome | Descrizione | Riferimento   al dettaglio della codifica    |
 |---|---|---|
 | type | Codice e descrizione dell'esenzione|  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni}}  |

@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Il profilo RLServiceRequestPrestazioniInfermieristiche è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) per contienere le informazioni relative ad una prestazione infermieristiche pianificata all’interno di un progetto individuale di un cittadino.
+Il profilo RLServiceRequestPrestazioniInfermieristiche è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) per contenere le informazioni relative ad una prestazione infermieristiche pianificata all’interno di un progetto individuale di un cittadino.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche}}.
 
