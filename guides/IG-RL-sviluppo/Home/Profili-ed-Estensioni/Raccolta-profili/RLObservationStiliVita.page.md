@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLObservati
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione dello stile di vita | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-StiliVita}} |
+| code | Codice e descrizione dello stile di vita | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-StiliVita}} |

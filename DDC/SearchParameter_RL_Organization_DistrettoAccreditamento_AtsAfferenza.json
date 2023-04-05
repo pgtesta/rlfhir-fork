@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza",
   "name": "RLOrganizationDistrettoAccreditamentoAtsAfferenza",
   "status": "draft",
-  "description": "distrettoAccreditamento-atsAfferenza",
+  "description": "ATS di afferenza del distretto territoriale sotto la quale l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari.",
   "code": "distrettoAccreditamentoAtsAfferenza",
   "base": [
     "Organization"

@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Il profilo RLServiceRequestPrestazioniInfermieristiche è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) per contienere le informazioni relative ad una prestazione infermieristiche pianificata all’interno di un progetto individuale di un cittadino.
+Il profilo RLServiceRequestPrestazioniInfermieristiche è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) per contenere le informazioni relative ad una prestazione infermieristiche pianificata all’interno di un progetto individuale di un cittadino.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche}}.
 
@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code| Codice e descrizione della prestazione infermieristica | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche}}|
+| Code| Codice e descrizione della prestazione infermieristica | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche}}|

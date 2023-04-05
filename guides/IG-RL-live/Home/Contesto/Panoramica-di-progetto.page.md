@@ -14,11 +14,11 @@ Raccolta di acronimi e termini usati nel progetto:
 | DDC | Distribuzione Dati Codificati |
 | UDO | Unità d'Offerta |
 | DP | Dimissione Protette |
-| PAI | Piano Assistenziale Individuale |
+| PI | Progetto Individuale (Piano Assistenziale Individuale) |
 | RSA | Residenza Sanitaria Assistenziale |
 | PLO | Numero Posti Occupati |
-| L1 | Codice   identificativo di livello 1 degli enti aderenti al progetto SISS. La risorsa   FHIR che descrive questa tipologia di struttura è RLOrganizationL1 |
-| L2 | Codice   identificativo di livello 2 delle strutture di tipo UdO. La risorsa FHIR che   descrive questa tipologia di struttura è RLOrganizationL2. |
+| L1 | Codice   identificativo di livello 1 degli enti aderenti al progetto SISS. La risorsa   FHIR che descrive questa tipologia di struttura è _RLOrganizationL1_ |
+| L2 | Codice identificativo di livello 2 degli Enti Erogatori di servizi socioassistenziali. La risorsa FHIR che descrive questa tipologia di struttura è _RLOrganizationL2_. |
 | UdO | Strutture   presenti nella rete territoriale che rendono disponibili servizi   sociosanitari e assistenziali. |
 | Posti abilitati | Capacità ricettiva in termini di posti letto conformi ai requisiti generali e specifici di esercizio previsti dalla normativa che l’azienda sociosanitaria può occupare per erogare servizi e prestazioni al paziente. |
 | Posti accreditati | Capacità ricettiva in termini di posti letto conformi ai requisiti di accreditamento regionali, oltre i requisiti minimi abilitanti, che l’azienda sociosanitaria garantisce al servizio sanitario regionale per i servizi e prestazioni ai pazienti. Il numero di posti letto accreditati è minore o uguale al numero di posti letto abilitati. |

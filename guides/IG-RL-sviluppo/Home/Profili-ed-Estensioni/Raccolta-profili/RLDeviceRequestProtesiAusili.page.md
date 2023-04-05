@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLDeviceReq
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| codeCodeableConcept | Codice e descrizione dell'ausilio di protesica|   |
+| codeCodeableConcept | Codice e descrizione dell'ausilio di protesica| *Codicia in fase di definizione|
 

@@ -78,4 +78,4 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Category | Tipologia di patologia | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia}} |
+| Category | Tipologia di patologia | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia}} |

@@ -2,31 +2,29 @@
 
 - [RLOrganizationL1](#rlorganizationl1)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
-  - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
-  - [Seacrh parameter](#seacrh-parameter)
-  - [Value set](#value-set)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
+    - [Enti attualmente attivi](#enti-attualmente-attivi)
+  - [Search parameter](#search-parameter)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
+Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html). Contiene le informazioni anagrafiche e di contatto relative agli enti identificati attraverso un codice regionale di livello 1 “L1”, quali ATS, ASST, Enti Erogatori Privati Accreditati, così come Medici di Medicina Generale e Pediatri di Libera Scelta.
 
-Profilo declinato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni anagrafiche e di contatto relative alle strutture di tipo ente L1. In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie e possono essere ASST o ATS così come MMG/PLS.
-
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}.
 
 <br>
 <div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+  <button class="tablinks active" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+  <button class="tablinks" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
   <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
+  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
+<div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1, snapshot}}
 </div>
@@ -36,7 +34,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1, diff}}
 </div>
 
-<div id="Hybrid View" class="tabcontent">
+<div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1, hybrid}}
 </div>
@@ -58,56 +56,45 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{pagelink:Home/Esempi/esempio-RLOrganizationL1.page.md}}
+  {{link:esempio-RLOrganizationL1}}
 <br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLOrganizationL1:
+## Tipologie di ricerca
 
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione}} | DataCessazione | Data di cessazione dell'ente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert}} | DataInsert | Data di inserimento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate}} | DataUpdate | Data di aggiornamento del record | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione}} | DataCostituzione | Data di costituzione dell'ente | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita}} | DataInizioValidita | Data di inizio della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita}} | DataFineValidita | Data di fine della validità di esercizio dell'ente descritto   dal profilo | Organization |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode}} | IstatCode | Codice ISTAT | Organization.Address |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode}} | DistrettoCode | Distretto territoriale così definito dalla legge regionale   22-2021 della Regione Lombardia | Organization.Address |
+### Enti attualmente attivi
+Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
+I parametri da valorizzare per effettuare la ricerca sono:
+-	DataFineValidita: data di interesse
 
-## Criteri di ricerca
-
-### Enti L1 attualmente attivi
-Organization L1 con data fine validità superiore alla data odierna o nulla
-
-| SCOPE | Ricerca tutte le Organization con profilo L2 la cui   data di fine validità è maggiore di una data di riferimento e che sono parte   di un determinato codice L1    |
+| SCOPE | Organization L1 con data fine validità superiore alla data odierna o nulla    |
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{datadiRiferimento\}&partof:Organization.identifier=\{codicelivelloL1\}    |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL1<br>&dataFineValidita=\{_datadiRiferimento_\}    |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+- _profile
+- identifier
 
-I parametri di ricerca definiti nel profilo RLOrganizationL1 sono definiti nella seguente tabella:
+I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
-| Nome | Descrizione | URL | Espressione |
-|---|---|---|---|
-| RLOrganizationDataFineValidita | Parametro di ricerca di strutture SISS di livello 1 e livello 2   specificando la data di fine validità. | https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
-| RLOrganizationDataInizioValidita | Parametro di ricerca di strutture SISS di livello 1 e livello 2   specificando la data di inserimento. | https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
+| Nome e link Simplifier | Descrizione | Espressione |
+|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1.
+Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | Codifica del tipo di azienda L1    | Il riferimento alla lista esaustiva della tipologia di enti di   livello 1 è consultabile al seguente {{pagelink:Home/CodeSystem-e-ValueSet/ValueSet.page.md, text:link}}   |
+| type    | Codifica della tipologia di Ente (L1) | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1}}   |

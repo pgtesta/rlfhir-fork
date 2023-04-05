@@ -2,32 +2,31 @@
 
 - [RLCarePlanProgettoIndividuale](#rlcareplanprogettoindividuale)
   - [Descrizione](#descrizione)
-  - [Extension](#extension)
-  - [Criteri di ricerca](#criteri-di-ricerca)
-    - [Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetti-individuali-attivi-contenenti-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
-    - [Progetto individuale attivo di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore](#progetto-individuale-attivo-di-un-paziente-contenente-esclusivamente-i-dettagli-dellattivazione-di-un-servizio-sociosanitario-affidato-a-un-determinato-ente-erogatore)
-  - [Seacrh parameter](#seacrh-parameter)
-  - [Value set](#value-set)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
+    - [1. Progetti individuali attivi](#1-progetti-individuali-attivi)
+    - [2. Progetti individuali di un paziente](#2-progetti-individuali-di-un-paziente)
+  - [Search parameter](#search-parameter)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa generica FHIR [CarePlan](http://hl7.org/fhir/R4/careplan.html) per descrivere il progetto individuale di un cittadino. All’interno del profilo sono contenute informazioni generali quali: durata del progetto, obiettivi di salute, case manager, esiti delle valutazioni, patologie principali, secondarie e addizionali, allergie, esenzioni e stili di vita del cittadino; così come le attività di natura clinica, infermieristica e sociale che compongono il progetto. 
+Il profilo RLCarePlanProgettoIndividuale è stato strutturato a partire dalla risorsa generica FHIR [CarePlan](http://hl7.org/fhir/R4/careplan.html) per descrivere il progetto individuale di un assistito. Il contenuto informativo contiene i dettagli delle attività e dei servizi sanitari, socioassistenziali, infermieristici e sociali che devono essere attivati al paziente. Inoltre, sono riportate varie informazioni generali quali: durata del progetto, obiettivi di salute, case manager, esiti delle valutazioni, patologie principali, secondarie e ulteriori, allergie, esenzioni e stili di vita dell’assistito. 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, text: qui}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale}}.
 
 <br>
 <div class="tab">
- <button class="tablinks active" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
+  <button class="tablinks active" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
+  <button class="tablinks" onclick="openTab(event, 'Snapshot View')">Snapshot View</button>
   <button class="tablinks" onclick="openTab(event, 'Differential View')">Differential View</button>
-  <button class="tablinks" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
-   <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
-   <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
+  <button class="tablinks" onclick="openTab(event, 'Table View')">Table View</button>
+  <button class="tablinks" onclick="openTab(event, 'XML View')">XML View</button>
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
-  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi</button>
+  <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent" style="display:block">
+<div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, snapshot}}
 </div>
@@ -37,7 +36,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, diff}}
 </div>
 
-<div id="Hybrid View" class="tabcontent">
+<div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale, hybrid}}
 </div>
@@ -59,75 +58,90 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili.
+{{link:esempio-CarePlan-Progetto-Individuale}}
 <br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
+## Tipologie di ricerca
 
-## Extension
-Di seguito la descrizione delle extension inerenti al profilo RLCarePlanProgettoIndividuale:
+###	1. Progetti individuali attivi
 
-| Nome   Extension e link Simplifier | Nome campo esteso | Descrizione | Contesto |
-|---|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI}} | VersionePAI | Versione del progetto individuale | CarePlan |
-| {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanEsenzioni}} | Esenzioni | Esenzioni relative al cittadino | CarePlan |
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assistiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
+Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. Inoltre, tra le informazioni disponibili riportate nel bundle saranno presenti anche i dettagli delle valutazioni effettuate dagli assistititi e gli eventuali esiti delle stesse. 
 
-## Criteri di ricerca
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	status: da compilare con il valore “active”
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).code.coding.code: codice del servizio socioassistenziale d’interesse
+-	author.reference(RLOrgnizationL1).identifier: codice L1 dell’ASST che ha prodotto il progetto individuale
 
-Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLCarePlanProgettoIndividuale.
+Inoltre, è possibile valorizzare il seguente parametro:
+-	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
 
-###	Progetti individuali attivi contenenti esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
-Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
-I parametri da valorizzare per effettuare la ricerca sono:
-- status
-- activity.reference(RLServiceRequestServiziSocioAssistenziali).code
-- activity.reference(RLServiceRequestServiziSocioAssistenziali).performer
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
-L’esito della ricerca permette di recuperare le informazioni relative ai progetti individuali attivi dei cittadini per i quali è stata prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSocioAssistenziali_) di una determinata tipologia di UdO sociosanitaria e per il quali è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
-
-|     SCOPE    |    Ricerca tutti i CarePlan in stato attivo che contengono almeno una ServiceRequest relativa ai servizi sociosanitari di una determinata tipologia (es. CDOM, RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
+|     SCOPE    | Progetti individuali attivi |
 |---|---|
-|     VERB    |     GET    |
-|     BASE    |          |
-|     URL    |          |
+| VERB | GET |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.code=C-DOM<br>&author:Organization.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
 
 A titolo esemplificativo, la chiamata: 
 
-    CarePlan?_profile=https://example.org/fhir/StructureDefinition/ 
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.code=C-DOM&author:Organization.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
 
-Restituirà..
+Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 1 "030701" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche tutte le informazioni associate referenziate nel profilo.
 
-### Progetto individuale attivo di un paziente contenente esclusivamente i dettagli dell’attivazione di un servizio sociosanitario affidato a un determinato ente erogatore
-Esiste sempre un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità. 
-I parametri da valorizzare per effettuare la ricerca sono:
-- status
-- activity.reference(RLServiceRequestServiziSocioAssistenziali).code
-- activity.reference(RLServiceRequestServiziSocioAssistenziali).performer
-- activity.reference(RLPatientCittadino).identifier
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-pi-attivi}}.
 
-L’esito della ricerca permette di recuperare le informazioni relative al progetto individuale atttivo di un cittadino per il quale è prevista l’attivazione di un servizio sociosanitario (profilo _RLServiceRequestServiziSocioAssistenziali_) di una determinata tipologia di UdO sociosanitaria e per il quale è stato individuato l’ente erogatore (profilo _RLOrganizationL2_) responsabile della presa in carico.
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
 
-|     SCOPE    |     Ricerca iltutti i CarePlan in stato attivo relativo ad un determinato cittadino che   contieneengono almeno una ServiceRequest   relativa ai servizi sociosanitari di una determinata tipologia (es. CDOM,   RSA, ecc.) e per il quale è stato individuato l’ente erogatore del servizio.     |
+### 2. Progetti individuali di un paziente
+
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un determinato servizio socioassistenziale.
+
+L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio socioassistenziale affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).code coding.code: codice del servizio sociosanitario d’interesse
+-	activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
+-	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+|     SCOPE    |Progetti individuali di un paziente|
 |---|---|
 |     VERB    |     GET    |
-|     BASE    |          |
-|     URL    |          |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+|     URL    | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.identifier=\{_numeroPratica_\}<br>&subject:Patient.identifier=\{_codiceFiscale_\}<br>&_include=CarePlan:activity-reference<br>&_include=CarePlan:subject |
 
-A titolo esemplificativo, la chiamata:
+A titolo esemplificativo, la chiamata: 
 
-  CarePlan?_profile=https%3A//example.org/fhir/StructureDefinition/ 
+    CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.identifier=2022000001&subject:Patient.identifier=RSSMRA80A01F205X&_include=CarePlan:activity-reference&_include=CarePlan:subject
 
-Restituirà..
+Restituirà lo storico dei progetti contenenti esclusivamente i dettagli del ricovero domiciliare dell’assistito con codice fiscale “RSSMRA80A01F205X”, afferente alla pratica numero "2022000001". Il risultato della ricerca conterrà anche le informazioni inerenti al servizio sociosanitario attivo e al paziente stesso.
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-storico-pi}}.
+
+<em><font style="color:green">
+_Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
+- _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Seacrh parameter
-
-Attualmente non sono definiti Search Parameters oltre ai campi standard della risorsa CarePlan.
+## Search parameter
+Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di seguito i parametri di ricerca del profilo RLCarePlanProgettoIndividuale: 
+- _include
+- _lastUpdated
+- _profile
+- activity-reference
+- status
+- subject
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -135,4 +149,4 @@ Attualmente non sono definiti Search Parameters oltre ai campi standard della ri
 
 Attualmente non sono presenti value set nei campi del profilo RLCarePlanProgettoIndividuale.
 
-<br>
+<br> 

@@ -3,8 +3,8 @@
 - [RLCarePlanProgettoIndividuale](#rlcareplanprogettoindividuale)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Progetti individuali attivi](#progetti-individuali-attivi)
-    - [Progetti individuali di un paziente](#progetti-individuali-di-un-paziente)
+    - [1. Progetti individuali attivi](#1-progetti-individuali-attivi)
+    - [2. Progetti individuali di un paziente](#2-progetti-individuali-di-un-paziente)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -66,9 +66,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-###	Progetti individuali attivi
+###	1. Progetti individuali attivi
 
-Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assisiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
+Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di ottenere l’elenco dei progetti individuali prodotti da un’ASST per gli assistiti che necessitano dell’attivazione di un servizio sociosanitario presso l’Ente Erogatore stesso. 
 
 Premesso che esiste un'unica versione del progetto individuale in stato “attivo” e quindi in corso di validità, all’Ente Erogatore verrà restituito solo ed esclusivamente il dettaglio informativo del servizio socioassistenziale da attivare al cittadino. Inoltre, tra le informazioni disponibili riportate nel bundle saranno presenti anche i dettagli delle valutazioni effettuate dagli assistititi e gli eventuali esiti delle stesse. 
 
@@ -79,6 +79,8 @@ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 
 Inoltre, è possibile valorizzare il seguente parametro:
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
 |     SCOPE    | Progetti individuali attivi |
 |---|---|
@@ -98,7 +100,7 @@ Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-rice
 _Criterio di ricerca applicato per le funzionalità descritte nei documenti:_
 - _DC-COOP-FHIR#01 (Specifiche di cooperazione applicativa nell’ambito delle cure domiciliari)_</font></em>.
 
-### Progetti individuali di un paziente
+### 2. Progetti individuali di un paziente
 
 Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassistenziali con lo scopo di fruire dello storico dei progetti individuali di un assistito che contengono l’attivazione di un determinato servizio socioassistenziale.
 
@@ -108,6 +110,8 @@ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	activity.reference(RLServiceRequestServiziSocioAssistenziali).code coding.code: codice del servizio sociosanitario d’interesse
 -	activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
 -	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
 |     SCOPE    |Progetti individuali di un paziente|
 |---|---|

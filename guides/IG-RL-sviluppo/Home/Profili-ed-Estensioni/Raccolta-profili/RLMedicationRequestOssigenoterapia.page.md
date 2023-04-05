@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMedicatio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| medicationCodeableConcept | Codice e descrizione dell’ossigenoterapia da attivare |  La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaOssigeno}}|
+| medicationCodeableConcept | Codice e descrizione dell’ossigenoterapia da attivare |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaOssigeno}}|

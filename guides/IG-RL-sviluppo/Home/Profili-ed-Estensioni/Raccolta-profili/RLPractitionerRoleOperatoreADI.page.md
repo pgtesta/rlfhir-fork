@@ -1,4 +1,4 @@
-# RLPractitionerRoleOperatoreADI
+ # RLPractitionerRoleOperatoreADI
 
 - [RLPractitionerRoleOperatoreADI](#rlpractitionerroleoperatoreadi)
   - [Descrizione](#descrizione)
@@ -7,8 +7,7 @@
   - [ValueSet](#valueset)
 
 ## Descrizione
-
-Il profilo PractitionerRoleOperatoreADI è stato strutturato a partire dalla risorsa generica FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html)   in modo da contenere le informazioni riguardo le tipologie di operatori che erogano prestazioni agli assistiti in regime di ricovero domiciliare.
+Il profilo PractitionerRoleOperatoreADI è stato strutturato a partire dalla risorsa generica FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) in modo da contenere le informazioni riguardanti le tipologie di operatori che erogano prestazioni agli assistiti in regime di ricovero domiciliare. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI}}.
 
@@ -79,4 +78,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codice e descrizione della tipologia di operatore ADI | Codifica delle qualifiche dei medici prescrittori | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}} |
+| code | Codice e descrizione della tipologia di operatore ADI | Codifica delle qualifiche dei medici prescrittori | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}} |
