@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto",
   "name": "RLOrganizationDistrettoAccreditamentoCodiceDistretto",
   "status": "draft",
-  "description": "distrettoAccreditamento-codiceDistretto",
+  "description": "Distretto di accreditamento nel quale l'Ente eroga i servizi sociosanitari.",
   "code": "distrettoAccreditamentoCodiceDistretto",
   "base": [
     "Organization"

@@ -1,7 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/codiceDistretto",
-  "name": "RL_Organization_codiceDistretto",
+  "name": "RLOrganizationCodiceDistretto",
   "status": "draft",
   "description": "CodiceDistretto",
   "code": "codiceDistretto",

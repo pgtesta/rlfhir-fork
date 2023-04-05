@@ -3,9 +3,6 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
   "name": "RLOrganizationL2",
   "status": "draft",
-  "fhirVersion": "4.0.1",
-  "kind": "resource",
-  "abstract": false,
   "description": "Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L2",
   "keyword": [
     {
@@ -13,6 +10,9 @@
       "code": "DDC"
     }
   ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
   "type": "Organization",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
   "derivation": "constraint",
@@ -366,8 +366,8 @@
       {
         "id": "Organization.type",
         "path": "Organization.type",
-        "short": "Codifica del tipo di presidio",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia UdO contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "short": "Codifica della tipologia del servizio socioassistenziale erogato dall’Ente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del servizio socioassistenziale erogato dall’Ente contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
         "max": "1"
       },
@@ -380,9 +380,9 @@
       {
         "id": "Organization.type.coding.code",
         "path": "Organization.type.coding.code",
-        "short": "Codice del tipo di presidio",
+        "short": "Codice della tipologia del servizio socioassistenziale erogato dall’Ente",
         "definition": "Stringa alfanumerica di al più 10 caratteri",
-        "comment": "il dato è detenuto dal SGDT",
+        "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -393,7 +393,9 @@
       {
         "id": "Organization.type.coding.display",
         "path": "Organization.type.coding.display",
-        "short": "Descrizione del tipo di presidio",
+        "short": "Descrizione della tipologia del servizio socioassistenziale erogato dall’Ente",
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
         "min": 1
       },
       {
@@ -423,7 +425,8 @@
         "id": "Organization.telecom:phone",
         "path": "Organization.telecom",
         "sliceName": "phone",
-        "short": "Numero di telefono del presidio"
+        "short": "Numero di telefono del presidio",
+        "max": "2"
       },
       {
         "id": "Organization.telecom:phone.system",
@@ -441,7 +444,8 @@
         "path": "Organization.telecom",
         "sliceName": "fax",
         "short": "Numero di fax del presidio",
-        "comment": "La fonte del dato è il campo NR_FAX della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+        "comment": "La fonte del dato è il campo NR_FAX della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1"
       },
       {
         "id": "Organization.telecom:fax.system",
@@ -458,7 +462,8 @@
         "id": "Organization.telecom:url",
         "path": "Organization.telecom",
         "sliceName": "url",
-        "short": "Indirizzo della pagina web del presidio"
+        "short": "Indirizzo della pagina web del presidio",
+        "max": "1"
       },
       {
         "id": "Organization.telecom:url.system",
@@ -475,7 +480,8 @@
         "id": "Organization.telecom:mail",
         "path": "Organization.telecom",
         "sliceName": "mail",
-        "short": "Indirizzo mail del presidio"
+        "short": "Indirizzo mail del presidio",
+        "max": "1"
       },
       {
         "id": "Organization.telecom:mail.system",
@@ -514,7 +520,7 @@
         "sliceName": "istatCode",
         "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
         "definition": "Stringa alfanumerica di al più 6 caratteri",
-        "comment": "La fonte del dato è il campo CD_COMUNE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "comment": "La fonte del dato è il campo CD_COMUNE della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
         "type": [
           {

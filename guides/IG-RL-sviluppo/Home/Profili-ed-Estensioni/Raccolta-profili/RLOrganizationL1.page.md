@@ -3,13 +3,13 @@
 - [RLOrganizationL1](#rlorganizationl1)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Enti L1 attualmente attivi](#enti-l1-attualmente-attivi)
+    - [Enti attualmente attivi](#enti-attualmente-attivi)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
 ## Descrizione
-Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) per contenere le informazioni anagrafiche e di contatto relative agli enti identificate attraverso un codice regionale di livello 1 (L1). In Regione Lombardia gli enti univocamente identificati da un codice L1 sono di varie tipologie, tre le quali ATS, ASST ed enti gestori privati, così come medici di medicina generale e pediatri di libera scelta.
+Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html). Contiene le informazioni anagrafiche e di contatto relative agli enti identificati attraverso un codice regionale di livello 1 “L1”, quali ATS, ASST, Enti Erogatori Privati Accreditati, così come Medici di Medicina Generale e Pediatri di Libera Scelta.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}.
 
@@ -64,7 +64,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-### Enti L1 attualmente attivi
+### Enti attualmente attivi
 Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
 
 I parametri da valorizzare per effettuare la ricerca sono:
@@ -82,14 +82,12 @@ I parametri da valorizzare per effettuare la ricerca sono:
 Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
 - _profile
 - identifier
-- partof
 
 I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
 | Nome e link Simplifier | Descrizione | Espressione |
 |---|---|---|
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di   inserimento.  |  extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -99,4 +97,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizat
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | Codifica del tipo di azienda L1 | La codifica esaustiva è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1}}   |
+| type    | Codifica della tipologia di Ente (L1) | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1}}   |
