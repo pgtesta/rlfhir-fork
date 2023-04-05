@@ -13,6 +13,11 @@ ed è possibile consultare le risorse FHIR rilasciate e attualmente in uso.
 Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, di conseguenza le risorse potrebbero essere soggette a revisione e modifiche.
 </div>
 
+## Novità
+La versione corrente della guida implementativa ha recepito e gestisce attraverso la progettazione dei profili e dei relativi criteri di ricerca i seguenti concetti:
+- inclusione delle valutazioni effettuate dal paziente nel bundle di risorse contenute in fase di consultazione di un progetto individuale (si veda il criterio di ricerca ”progetti individuali attivi” del profilo RLCarePlanProgettoIndividuale).
+- gestione di due percorsi di cure domiciliari attivati ad un paziente nell’ambito di una stessa pratica e definiti all’interno del progetto individuale (si veda la mappatura della risorsa RLServiceRequestServiziSocioAssistenziali)
+
 ## Come leggere questa guida
 Questa guida presenta diverse sezioni che sono elencate nella barra dei menù, presente nella parte alta di ciascuna pagina.
 - **Home**: la presente pagina, nonché la pagina iniziale della Implementation Guide.
