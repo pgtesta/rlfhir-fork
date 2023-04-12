@@ -18,6 +18,8 @@ La versione corrente della guida implementativa gestisce i seguenti concetti:
 - Inclusione delle valutazioni del paziente nel bundle di risorse contenute in fase di consultazione di un progetto individuale (si veda il criterio di ricerca ”progetti individuali attivi” del profilo RLCarePlanProgettoIndividuale).
 - Gestione di due percorsi di cure domiciliari attivati ad un paziente nell’ambito di una stessa pratica e definiti all’interno del progetto individuale (si veda la mappatura della risorsa RLServiceRequestServiziSocioAssistenziali).
 
+Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
+
 ## Come leggere questa guida
 Questa guida presenta diverse sezioni che sono elencate nella barra dei menù, presente nella parte alta di ciascuna pagina.
 - **Home**: la presente pagina, nonché la pagina iniziale della Implementation Guide.
