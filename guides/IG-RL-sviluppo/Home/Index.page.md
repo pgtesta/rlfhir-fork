@@ -25,6 +25,4 @@ Questa guida presenta diverse sezioni che sono elencate nella barra dei menù, p
 - **Profili ed Estensioni**: contiene la pagina della libreria di tutti i profili e quella di tutte le estensioni implementate.
 - **Terminologia**: raccoglie la libreria di tutti i value set, ovvero le codifiche utilizzate nei profili.
 - **Esempi**: contiene la pagina con la libreria completa degli esempi.
-- **Contatti**: in questa sezione è possibile recuperare le informazioni di contatto utili
-- **Dowload**: da questa pagina è possibile scaricare l'ultimo package fhir rilasciato, oltre a trovare altri riferimenti a documentazione esterne.
   
