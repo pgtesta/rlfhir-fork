@@ -27,9 +27,8 @@
   "birthDate": "1980-01-01",
   "address": [
     {
-      "use": "home",
-      "city": "015146",
-      "country": "IT"
+      "use": "billing",
+      "city": "015146"
     }
   ],
   "maritalStatus": {
@@ -41,14 +40,16 @@
       }
     ]
   },
-  "generalPractitioner": {
-    "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
-    "display": "Dott. Francesco Verdi"
-  },
+  "generalPractitioner": [
+    {
+      "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+      "display": "Dott. Francesco Verdi"
+    }
+  ],
   "extension": [
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
-      "valueCode": "ITA"
+      "valueCode": "100"
     },
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",

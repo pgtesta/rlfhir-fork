@@ -82,7 +82,7 @@
   "extension": [
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-      "valueUnsignedInt": "01"
+      "valueUnsignedInt": 1
     }
   ]
 }

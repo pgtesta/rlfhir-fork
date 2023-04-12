@@ -38,6 +38,9 @@
           "display": "Mario Rossi"
         },
         "occurrenceDateTime": "2022-02-02"
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -125,9 +128,12 @@
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-            "valueUnsignedInt": "01"
+            "valueUnsignedInt": 1
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -161,9 +167,8 @@
         "birthDate": "1980-01-01",
         "address": [
           {
-            "use": "home",
-            "city": "015146",
-            "country": "IT"
+            "use": "billing",
+            "city": "015146"
           }
         ],
         "maritalStatus": {
@@ -175,10 +180,12 @@
             }
           ]
         },
-        "generalPractitioner": {
-          "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
-          "display": "Medico Prescrittore"
-        },
+        "generalPractitioner": [
+          {
+            "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+            "display": "Medico Prescrittore"
+          }
+        ],
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
@@ -241,6 +248,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     }
   ]

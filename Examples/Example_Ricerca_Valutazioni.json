@@ -17,10 +17,12 @@
           ],
           "versionId": "1"
         },
-        "basedOn": {
-          "reference": "CarePlan/b7480958-989e-11ed-a8fc-0242ac120002",
-          "display": "PI-2023000000001"
-        },
+        "basedOn": [
+          {
+            "reference": "CarePlan/b7480958-989e-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
         "questionnaire": "Questionnaire/d8a3cd40-981b-11ed-a8fc-0242ac120002",
         "status": "completed",
         "authored": "2013-01-11",
@@ -126,6 +128,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -142,6 +147,9 @@
         },
         "title": "Scheda triage",
         "status": "active"
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -184,6 +192,9 @@
             "display": "Valutazione"
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -272,9 +283,12 @@
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-            "valueUnsignedInt": "01"
+            "valueUnsignedInt": 1
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -303,6 +317,9 @@
             ]
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -336,9 +353,8 @@
         "birthDate": "1980-01-01",
         "address": [
           {
-            "use": "home",
-            "city": "015146",
-            "country": "IT"
+            "use": "billing",
+            "city": "015146"
           }
         ],
         "maritalStatus": {
@@ -350,10 +366,12 @@
             }
           ]
         },
-        "generalPractitioner": {
-          "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
-          "display": "MMG"
-        },
+        "generalPractitioner": [
+          {
+            "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+            "display": "MMG"
+          }
+        ],
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
@@ -416,6 +434,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     }
   ]
