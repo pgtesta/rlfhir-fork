@@ -26,15 +26,15 @@
     </div>
     <br />
     <table style="width: fit-content">
-    <thead>
-      <tr>
-        <th>Nome estensione</th>
-        <th>Base</th>
-        <th>Descrizione</th>
-        <th>Link simplifier</th>
-      </tr>
-    </thead>
-    <tbody id="myTable">
+      <thead>
+        <tr>
+          <th>Nome estensione</th>
+          <th>Base</th>
+          <th>Descrizione</th>
+          <th>Link simplifier</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
       <tr>
         <td>RLCarePlanVersionePAI</td>
         <td>CarePlan</td>
@@ -172,6 +172,12 @@
         <td>Patient</td>
         <td>Situazione pensionistica del paziente</td>
         <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica}}</td>
+      </tr>
+      <tr>
+        <td>RLPatientTEAMNomeIdentificazioneIstituzioneCompetente</td>
+        <td>Patient.identifier</td>
+        <td>Nome identificazione istituzione competente</td>
+        <td>{{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente}}</td>
       </tr>
       <tr>
         <td>RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente</td>
