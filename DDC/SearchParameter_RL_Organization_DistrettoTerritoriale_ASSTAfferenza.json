@@ -3,7 +3,7 @@
   "id": "RLOrganizationDistrettoTerritorialeASSTAfferenza",
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoTerritorialeASSTAfferenza",
   "name": "RLOrganizationDistrettoTerritorialeASSTAfferenza",
-  "status": "draft",
+  "status": "active",
   "description": "ASST nella quale l'Ente erogatore ha la sede operativa.",
   "code": "distrettoTerritorialeASSTAfferenza",
   "base": [

@@ -3,7 +3,7 @@
   "id": "RLPatientCittadino",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino",
   "name": "RLPatientCittadino",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo contenente i dettagli anagrafici di un cittadino",
   "keyword": [
     {
@@ -449,13 +449,14 @@
           ],
           "rules": "open"
         },
-        "min": 1
+        "min": 2
       },
       {
         "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
         "path": "Patient.identifier.extension",
         "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
         "short": "Numero di identificazione dell’istituzione” o ”identification number of the institution” indicata sulla tessera TEAM",
+        "definition": "parte a sinistra del separatore “-“",
         "comment": "Punto 7 della tessara TEAM",
         "min": 1,
         "max": "1",
@@ -475,9 +476,29 @@
         "min": 1
       },
       {
+        "id": "Patient.identifier:tesseraTEAM.extension:TEAMNomeIdentificazioneIstituzioneCompetente",
+        "path": "Patient.identifier.extension",
+        "sliceName": "TEAMNomeIdentificazioneIstituzioneCompetente",
+        "short": "Nome identificazione istituzione competente",
+        "definition": "parte a destra del separatore “-“",
+        "comment": "Punto 7 della tessera TEAM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "Patient.identifier:tesseraTEAM.type",
         "path": "Patient.identifier.type",
-        "short": "Nazione",
+        "short": "Sigla della nazione riportata sulla tessera",
+        "definition": "Stringa alfabetica di 2 caratteri",
         "min": 1
       },
       {

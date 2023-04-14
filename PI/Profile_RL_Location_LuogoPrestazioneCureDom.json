@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom",
   "name": "RLLocationLuogoPrestazioneCureDom",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo contenente il dettaglio della tipologia del luogo in cui viene erogata una prestazione al paziente in regime di ricovero domiciliare.",
   "keyword": [
     {

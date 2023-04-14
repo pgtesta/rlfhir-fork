@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DescL1",
   "version": "1.0.0",
   "name": "DDC Desc L1",
-  "status": "draft",
+  "status": "active",
   "date": "2023-01-24",
   "description": "CodeSystem relativo alla tipologia di enti di livello 1",
   "content": "complete",

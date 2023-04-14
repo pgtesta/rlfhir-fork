@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
   "name": "RLObservationStiliVita",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere le osservazioni sugli stili di vita del paziente.",
   "keyword": [
     {

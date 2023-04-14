@@ -3,7 +3,7 @@
   "id": "RLQuestionnaireResponseValutazione",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione",
   "name": "RLQuestionnaireResponseValutazione",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a mostrare il dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
   "keyword": [
     {
@@ -216,8 +216,8 @@
       {
         "id": "QuestionnaireResponse.item.linkId",
         "path": "QuestionnaireResponse.item.linkId",
-        "short": "Identificativo del quesito",
-        "definition": "Stringa alfanumerica al più di 10 caratteri definita in generale da un valore numerico incrementale a partire da 1.\r\nNel caso di valutazione multidimensionale InterRAI - HomeCare i linkId sono così definiti:  \r\n\"php.{valore numerico incrementale}\" per la sezione PHP.\r\n\"pvc.{valore numerico incrementale}\" per la sezione PVC."
+        "short": "Numero identificativo del quesito",
+        "definition": "Stringa alfanumerica al più di 10 caratteri. Se il quesito non avesse un numero identificativo definto è possibile valorizzare il campo con un numero incrementale a partire da 1."
       },
       {
         "id": "QuestionnaireResponse.item.text",

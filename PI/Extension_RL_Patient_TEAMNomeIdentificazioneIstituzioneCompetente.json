@@ -1,16 +1,16 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione",
-  "name": "RLProcedurePrestazioneModalitaErogazione",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente",
+  "name": "RLPatientTEAMNomeIdentificazioneIstituzioneCompetente",
   "status": "active",
-  "description": "Modalità di erogazione",
+  "description": "Nome identificazione istituzione competente",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
   "context": [
     {
       "type": "element",
-      "expression": "Procedure"
+      "expression": "Patient.identifier"
     }
   ],
   "type": "Extension",
@@ -21,17 +21,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "code"
-          },
-          {
-            "code": "CodeableConcept"
+            "code": "string"
           }
         ]
       }

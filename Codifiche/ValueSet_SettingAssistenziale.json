@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
   "version": "1.0.0",
   "name": "SGDT Setting Assistenziale",
-  "status": "draft",
+  "status": "active",
   "date": "2023-01-24",
   "description": "ValueSet relativo alla codifica del setting assistenziale",
   "compose": {

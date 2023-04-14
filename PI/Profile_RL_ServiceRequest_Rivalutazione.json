@@ -3,7 +3,7 @@
   "id": "UUID",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestRivalutazione",
   "name": "RLServiceRequestRivalutazione",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a notificare la necessità di una rivalutazione di un paziente in ricovero domiciliare",
   "keyword": [
     {

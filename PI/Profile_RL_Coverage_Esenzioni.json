@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni",
   "name": "RLCoverageEsenzioni",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere le esenzioni di cui il paziente beneficia",
   "keyword": [
     {

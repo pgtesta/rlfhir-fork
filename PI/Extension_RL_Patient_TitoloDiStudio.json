@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
   "name": "RLPatientTitoloDiStudio",
-  "status": "draft",
+  "status": "active",
   "description": "Titolo di studio del paziente",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

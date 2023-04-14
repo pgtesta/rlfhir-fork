@@ -3,7 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
   "name": "RLPatientATSResidenza",
   "description": "ATS di residenza del paziente",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

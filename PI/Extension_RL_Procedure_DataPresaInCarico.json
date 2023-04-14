@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico",
   "name": "RLProcedurePrestazioneDataPresaInCarico",
-  "status": "draft",
+  "status": "active",
   "description": "Data della presa in carico del paziente da parte dell'Ente Erogatore",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

@@ -3,7 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso",
   "name": "RLProcedureNumeroAccesso",
   "description": "Numero accesso",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

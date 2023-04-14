@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNotificaErrori",
   "name": "RLBundleNotificaErrori",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a contenere le informazioni utili a tener traccia delle risorse che falliscono i controlli di coerenza.",
   "keyword": [
     {

@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore",
   "name": "RLConditionPatologiaPrimariaSecondariaUlteriore",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere la patologia primaria, le eventuali patologie secondarie ed ulteriori di un paziente.",
   "keyword": [
     {

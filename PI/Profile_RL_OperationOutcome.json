@@ -3,7 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome",
   "name": "RLOperationOutcome",
   "id": "RLOperationOutcome",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a restituire il dettaglio del controllo di coerenza non superato.",
   "keyword": [
     {

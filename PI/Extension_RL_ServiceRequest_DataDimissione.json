@@ -3,7 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
   "name": "RLServiceRequestDataDimissione",
   "description": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

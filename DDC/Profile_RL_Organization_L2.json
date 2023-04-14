@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2",
   "name": "RLOrganizationL2",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L2",
   "keyword": [
     {

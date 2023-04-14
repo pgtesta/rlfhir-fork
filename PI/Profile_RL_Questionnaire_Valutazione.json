@@ -3,7 +3,7 @@
   "id": "RLQuestionnaireValutazione",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione",
   "name": "RLQuestionnaireValutazione",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.",
   "keyword": [
     {

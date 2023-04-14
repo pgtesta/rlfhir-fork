@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC",
   "version": "1.0.0",
   "name": "DDC Farmaco ATC",
-  "status": "draft",
+  "status": "active",
   "date": "2023-01-24",
   "description": "CodeSystem che identifica l'anagrafica dei farmaci secondo la codifica ministeriale ATC",
   "content": "complete"

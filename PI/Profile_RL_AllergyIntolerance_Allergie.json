@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie",
   "name": "RLAllergyIntoleranceAllergie",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere le allergie di cui il paziente è affetto.",
   "keyword": [
     {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali",
   "name": "RLServiceRequestPrestazioniSociali",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a contenere le informazioni relative ad una prestazione sociale afferente ad un progetto individuale di un cittadino.",
   "keyword": [
     {

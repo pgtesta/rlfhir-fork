@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
   "name": "RLDeviceRequestProtesiAusili",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere la prostesi o l’ausilio di cui il paziente necessita come definito dal suo progetto individuale.",
   "keyword": [
     {

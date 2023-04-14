@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
   "name": "RLObservationEsitoValutazione",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere l’esito della valutazione al quale il paziente è stato sottoposto.",
   "keyword": [
     {
@@ -156,6 +156,49 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "short": "Esito complesso della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito complesso è la valutazione multidimensionale InterRAI - HomeCare"
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "short": "Codifica degli esisti composti della valutazione multidimensionale InterRAI - HomeCare",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli esisti della  valutazione InterRAI - HomeCare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "Observation.component.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "short": "Codice dell'esisto composto della valutazione. Nel codice viene indicato se l'esisto fa parte della sezione PHP o PVC.",
+        "definition": "Stringa alfanumerica al più di 10 caratteri",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica degli esiti della valutazione InterRAI-HomeCare",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-EsitoInterRAI"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "short": "Descrizione dell'esito composto della valutazione",
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "min": 1
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Contenuto informativo dell'esito",
+        "definition": "In base alla tipologia di risposta relativa al singolo quesito i possibili campi e i relativi datatype sono: \r\n- valueBoolean (boolean) \r\n- valueDecimal (decimal) \r\n- valueInteger (integer) \r\n- valueDate (date) \r\n- valueDateTime (dateTime) \r\n- valueTime (time) \r\n- valueString (string) \r\n- valueUri (uri) \r\n- valueAttachment (Attachment)\r\n- valueCoding (Coding)\r\n- valueQuantity (Quantity) \r\n- valueReference (Reference)",
+        "min": 1
       }
     ]
   }
