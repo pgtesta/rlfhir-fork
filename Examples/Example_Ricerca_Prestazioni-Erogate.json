@@ -28,6 +28,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
         "code": {
           "coding": [
             {
@@ -88,6 +97,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -113,6 +125,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
         "code": {
           "coding": [
             {
@@ -173,6 +194,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -198,6 +222,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
         "code": {
           "coding": [
             {
@@ -258,6 +291,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -283,6 +319,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
         "code": {
           "coding": [
             {
@@ -343,6 +388,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -368,6 +416,15 @@
           }
         ],
         "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
         "code": {
           "coding": [
             {
@@ -428,6 +485,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -476,10 +536,12 @@
           "start": "2023-02-01T10:17:16+01:00",
           "end": "2023-04-01T10:17:16+01:00"
         },
-        "performer": {
-          "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
-          "display": "FONDAZIONE MADDALENA GRASSI"
-        },
+        "performer": [
+          {
+            "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
+            "display": "FONDAZIONE MADDALENA GRASSI"
+          }
+        ],
         "reasonCode": [
           {
             "coding": [
@@ -510,6 +572,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -526,6 +591,7 @@
         },
         "identifier": [
           {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
             "value": "PI-2023000000001"
           }
         ],
@@ -577,20 +643,16 @@
         ],
         "activity": [
           {
-            "reference": [
-              {
-                "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
-                "display": "Terapia farmacologica"
-              }
-            ]
+            "reference": {
+              "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+              "display": "Terapia farmacologica"
+            }
           },
           {
-            "reference": [
-              {
-                "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
-                "display": "Servizi Socio Assistenziali"
-              }
-            ]
+            "reference": {
+              "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+              "display": "Servizi Socio Assistenziali"
+            }
           }
         ],
         "note": [
@@ -601,9 +663,12 @@
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-            "valueUnsignedInt": "01"
+            "valueUnsignedInt": 1
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -637,9 +702,8 @@
         "birthDate": "1980-01-01",
         "address": [
           {
-            "use": "home",
-            "city": "015146",
-            "country": "IT"
+            "use": "billing",
+            "city": "015146"
           }
         ],
         "maritalStatus": {
@@ -651,14 +715,16 @@
             }
           ]
         },
-        "generalPractitioner": {
-          "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
-          "display": "Dott. Francesco Verdi"
-        },
+        "generalPractitioner": [
+          {
+            "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+            "display": "Dott. Francesco Verdi"
+          }
+        ],
         "extension": [
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
-            "valueCode": "ITA"
+            "valueCode": "100"
           },
           {
             "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
@@ -717,6 +783,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -740,6 +809,9 @@
             }
           ]
         }
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -765,6 +837,9 @@
             ]
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -790,6 +865,9 @@
             ]
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     }
   ]

@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaOssigeno",
   "version": "1.0.0",
   "name": "SGDT Tipologia Ossigeno",
-  "status": "draft",
+  "status": "active",
   "date": "2023-01-24",
   "description": "CodeSystem relativo alla tipologia di ossigenoterapia",
   "content": "complete",

@@ -3,7 +3,7 @@
   "id": "RLPractitionerRoleProfessionistaSanitario",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario",
   "name": "RLPractitionerRoleProfessionistaSanitario",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo contentente la tipologia del professionista sanitario con riferimento al dettaglio anagrafico",
   "keyword": [
     {

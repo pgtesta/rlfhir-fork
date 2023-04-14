@@ -3,7 +3,7 @@
   "id": "UUID",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione",
   "name": "RLProcedurePrestazione",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo contentente il dettaglio di una prestazione erogata al paziente in qualsiasi setting assistenziale.",
   "keyword": [
     {

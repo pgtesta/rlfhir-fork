@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TitoloStudio",
   "version": "1.0.0",
   "name": "SIAD Titolo Studio",
-  "status": "draft",
+  "status": "active",
   "date": "2023-01-24",
   "description": "CodeSystem relativo alla codifica del titolo di studio",
   "content": "complete",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
   "name": "RLPatientPosizioneDellaProfessione",
-  "status": "draft",
+  "status": "active",
   "description": "Posizione della professione del paziente",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

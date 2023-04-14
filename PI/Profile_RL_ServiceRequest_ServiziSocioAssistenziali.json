@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a contenere le informazioni riguardanti il servizio socioassistenziale da attivare ad un cittadino nell’ambito del suo progetto individuale.",
   "keyword": [
     {

@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
   "name": "RLMedicationRequestOssigenoterapia",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a contenere le indicazioni riguardo un’ossigenoterapia prescritta al cittadino all’interno del suo progetto individuale.",
   "keyword": [
     {

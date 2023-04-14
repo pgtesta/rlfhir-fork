@@ -94,6 +94,9 @@
             "valueUnsignedInt": "01"
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -177,6 +180,9 @@
             "valueUnsignedInt": "01"
           }
         ]
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -210,9 +216,8 @@
         "birthDate": "1980-01-01",
         "address": [
           {
-            "use": "home",
-            "city": "015146",
-            "country": "IT"
+            "use": "billing",
+            "city": "015146"
           }
         ],
         "maritalStatus": {
@@ -290,6 +295,9 @@
             }
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -369,6 +377,9 @@
             "valueBoolean": true
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -469,6 +480,9 @@
             "valueDateTime": "2023-03-30T08:32:56.239+01:00"
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -517,6 +531,9 @@
           "reference": "Organization/e5002d24-a958-11ed-afa1-0242ac120002",
           "display": "ASST DELLA BRIANZA"
         }
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -625,6 +642,9 @@
             "valueDate": "2035-01-14"
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -662,6 +682,9 @@
             ]
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -701,6 +724,9 @@
           "display": "Mario Rossi"
         },
         "recordedDate": "2023-01-15"
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -740,6 +766,9 @@
           "display": "Mario Rossi"
         },
         "recordedDate": "2023-01-15"
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -782,6 +811,9 @@
             "display": "Scheda Triage"
           }
         ]
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -810,6 +842,9 @@
           "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
           "display": "Mario Rossi"
         }
+      },
+      "search": {
+        "mode": "include"
       }
     },
     {
@@ -838,6 +873,9 @@
           "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
           "display": "Mario Rossi"
         }
+      },
+      "search": {
+        "mode": "include"
       }
     }
   ]

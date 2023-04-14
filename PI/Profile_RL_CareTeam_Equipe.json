@@ -3,7 +3,7 @@
   "id": "RLCareTeamEquipe",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe",
   "name": "RLCareTeamEquipe",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a definire un equipe di professionisti sanitari",
   "keyword": [
     {

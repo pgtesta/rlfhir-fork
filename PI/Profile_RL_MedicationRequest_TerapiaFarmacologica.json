@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
   "name": "RLMedicationRequestTerapiaFarmacologica",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a contenere le indicazioni riguardo una terapia farmacologica prescritta al cittadino all’interno del suo progetto individuale.",
   "keyword": [
     {

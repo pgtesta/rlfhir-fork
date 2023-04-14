@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo contenente tutte le attività e le informazioni definite in un progetto individuale di un cittadino redatto sul Sistema di Gestione Digitale del Territorio.",
   "keyword": [
     {

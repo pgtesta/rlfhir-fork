@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso",
   "name": "RLEncounterAccesso",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere i dettagli dell’accesso del cittadino alla struttura di prossimità.",
   "keyword": [
     {

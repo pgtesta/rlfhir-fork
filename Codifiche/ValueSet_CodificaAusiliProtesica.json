@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi",
   "version": "1.0.0",
   "name": "DDC Ausilio Protesi",
-  "status": "draft",
+  "status": "active",
   "date": "2023-01-24",
   "description": "ValueSet che identifica gli ausili di protesica",
   "compose": {

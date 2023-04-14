@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemaInfermieristico",
   "name": "RLConditionProblemaInfermieristico",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere il problema infermieristico relativo ad un paziente.",
   "keyword": [
     {

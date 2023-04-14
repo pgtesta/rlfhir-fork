@@ -1,0 +1,240 @@
+{
+	"resourceType": "ValueSet",
+	"id": "ValueSet-SGDT-EsitoInterRAI",
+	"url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-EsitoInterRAI",
+	"version": "1.0.0",
+	"name": "SGDT Esito InterRAI",
+	"status": "active",
+	"date": "2023-01-24",
+	"description": "ValueSet relativo alla codifica degli esiti della valutazione InterRAI-HomeCare",
+	"compose": {
+		"include": [
+			{
+				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-EsitoInterRAI",
+				"version": "1.0",
+				"concept": [
+					{
+						"Code": "PVC.01",
+						"Display": "Abuso dell'anziano"
+					},
+					{
+						"Code": "PVC.02",
+						"Display": "ADL"
+					},
+					{
+						"Code": "PVC.03",
+						"Display": "Farmaci"
+					},
+					{
+						"Code": "PVC.04",
+						"Display": "Comportamento"
+					},
+					{
+						"Code": "PVC.05",
+						"Display": "Disturbi intestinali"
+					},
+					{
+						"Code": "PVC.06",
+						"Display": "Condizioni cardio-respiratorie"
+					},
+					{
+						"Code": "PVC.07",
+						"Display": "Stato cognitivo"
+					},
+					{
+						"Code": "PVC.08",
+						"Display": "Comunicazione"
+					},
+					{
+						"Code": "PVC.09",
+						"Display": "Disidratazione"
+					},
+					{
+						"Code": "PVC.10",
+						"Display": "Stato confusionale acuto"
+					},
+					{
+						"Code": "PVC.11",
+						"Display": "Cadute"
+					},
+					{
+						"Code": "PVC.12",
+						"Display": "Nutrizione"
+					},
+					{
+						"Code": "PVC.13",
+						"Display": "Sicurezza dell'ambiente domestico"
+					},
+					{
+						"Code": "PVC.14",
+						"Display": "Supporto Informale"
+					},
+					{
+						"Code": "PVC.15",
+						"Display": "Rischio di istituzionalizzazione"
+					},
+					{
+						"Code": "PVC.16",
+						"Display": "IADL"
+					},
+					{
+						"Code": "PVC.17",
+						"Display": "Umore"
+					},
+					{
+						"Code": "PVC.18",
+						"Display": "Dolore"
+					},
+					{
+						"Code": "PVC.19",
+						"Display": "Promozione attività fisica"
+					},
+					{
+						"Code": "PVC.20",
+						"Display": "Piaghe da decubito"
+					},
+					{
+						"Code": "PVC.21",
+						"Display": "Prevenzione"
+					},
+					{
+						"Code": "PVC.22",
+						"Display": "Relazioni sociali"
+					},
+					{
+						"Code": "PVC.23",
+						"Display": "Consumo tabacco/alcool"
+					},
+					{
+						"Code": "PVC.24",
+						"Display": "Nutrizione entrenale"
+					},
+					{
+						"Code": "PVC.25",
+						"Display": "Incontinenza urinaria"
+					},
+					{
+						"Code": "PHP.01",
+						"Display": "Cognitive Performance Scale (CPS)"
+					},
+					{
+						"Code": "PHP.02",
+						"Display": "Depression Rating Scale (DRS)"
+					},
+					{
+						"Code": "PHP.03",
+						"Display": "Possibilità di umore depresso"
+					},
+					{
+						"Code": "PHP.04",
+						"Display": "Cambiamenti acuti nello stato mentale"
+					},
+					{
+						"Code": "PHP.05",
+						"Display": "Ha presentato allucinazioni"
+					},
+					{
+						"Code": "PHP.06",
+						"Display": "Capacità di farsi comprendere"
+					},
+					{
+						"Code": "PHP.07",
+						"Display": "Vagabondaggio"
+					},
+					{
+						"Code": "PHP.08",
+						"Display": "Aggressività verbale"
+					},
+					{
+						"Code": "PHP.09",
+						"Display": "Aggressività fisica"
+					},
+					{
+						"Code": "PHP.10",
+						"Display": "Comportamento socialmente inadeguato"
+					},
+					{
+						"Code": "PHP.11",
+						"Display": "Rifiuto dell'assistenza"
+					},
+					{
+						"Code": "PHP.12",
+						"Display": "Coinvolgimento"
+					},
+					{
+						"Code": "PHP.13",
+						"Display": "Igiene personale"
+					},
+					{
+						"Code": "PHP.14",
+						"Display": "Locomozione"
+					},
+					{
+						"Code": "PHP.15",
+						"Display": "Mangiare"
+					},
+					{
+						"Code": "PHP.17",
+						"Display": "ADL Self-performance Hierarchy"
+					},
+					{
+						"Code": "PHP.18",
+						"Display": "Potenziale di miglioramento nella funzione fisica"
+					},
+					{
+						"Code": "PHP.19",
+						"Display": "Cadute"
+					},
+					{
+						"Code": "PHP.20",
+						"Display": "CHESS"
+					},
+					{
+						"Code": "PHP.21",
+						"Display": "Scala del dolore"
+					},
+					{
+						"Code": "PHP.22",
+						"Display": "Ulcere da pressione"
+					},
+					{
+						"Code": "PHP.23",
+						"Display": "Perdita di peso"
+					},
+					{
+						"Code": "PHP.24",
+						"Display": "Deglutizione"
+					},
+					{
+						"Code": "PHP.25",
+						"Display": "Ossigeno"
+					},
+					{
+						"Code": "PHP.26",
+						"Display": "Ventilazione assistita"
+					},
+					{
+						"Code": "PHP.27",
+						"Display": "Dialisi"
+					},
+					{
+						"Code": "PHP.28",
+						"Display": "Tervia ev"
+					},
+					{
+						"Code": "PHP.29",
+						"Display": "Tracheostomia"
+					},
+					{
+						"Code": "PHP.30",
+						"Display": "Classe RUG di appartenenza"
+					},
+					{
+						"Code": "PHP.31",
+						"Display": "Livello di priorità"
+					}
+				]
+			}
+		]
+	}
+}

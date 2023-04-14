@@ -7,7 +7,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
   "name": "RLCarePlanVersionePAI",
   "description": "Versione del progetto individuale",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

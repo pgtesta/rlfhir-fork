@@ -7,7 +7,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestConsegnaPaziente",
   "name": "RLDeviceRequestConsegnaPaziente",
   "description": "Flag riguardo la consegna a domicilio dell'ausilio al paziente",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,

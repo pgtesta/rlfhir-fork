@@ -3,7 +3,7 @@
   "id": "UUID",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI",
   "name": "RLPractitionerRoleOperatoreADI",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo contentente le tipologie di operatori ADI",
   "keyword": [
     {

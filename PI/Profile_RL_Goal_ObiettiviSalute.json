@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
   "name": "RLGoalObiettiviSalute",
-  "status": "draft",
+  "status": "active",
   "description": "Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI).",
   "keyword": [
     {
