@@ -113,7 +113,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
 
 restituirà tutte le strutture...
 
@@ -136,7 +136,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
 
 restituirà tutte le strutture...
 
@@ -161,7 +161,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type.coding.code=C-DOM
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type.coding.code=C-DOM
 
 restituirà tutte le strutture...
 
@@ -184,7 +184,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type.coding.code=C-DOM
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type.coding.code=C-DOM
 
 restituirà tutte le strutture...
 
@@ -207,7 +207,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
+    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
 
 restituirà tutte le strutture...
 
