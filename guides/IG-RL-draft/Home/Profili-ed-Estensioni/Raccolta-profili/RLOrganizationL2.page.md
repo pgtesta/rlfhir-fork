@@ -86,11 +86,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}&partof:Organization.identifier=\{_codicelivelloL1_\} |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}&partof:Organization.identifier=\{_codicelivelloL1_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&partof:Organization.identifier=030720
+    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&partof:Organization.identifier=030720
 
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
@@ -109,11 +109,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoTerritorialeASSTAfferenza=\{_ASSTAfferenza_\} |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoTerritorialeASSTAfferenza=\{_ASSTAfferenza_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
+    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
 
 restituirà tutte le strutture...
 
@@ -132,11 +132,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\} |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
+    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
 
 restituirà tutte le strutture...
 
@@ -157,11 +157,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type.coding.code=C-DOM
+    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type.coding.code=C-DOM
 
 restituirà tutte le strutture...
 
@@ -180,11 +180,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAtsAfferenza=\{_ATSAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAtsAfferenza=\{_ATSAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type.coding.code=C-DOM
+    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type.coding.code=C-DOM
 
 restituirà tutte le strutture...
 
@@ -203,11 +203,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoCodiceDistretto=\{_CodiceDistretto_\} |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoCodiceDistretto=\{_CodiceDistretto_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
+    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
 
 restituirà tutte le strutture...
 
