@@ -109,13 +109,13 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}&partof:Organization.identifier=\{_codicelivelloL1_\} |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoTerritorialeASSTAfferenza=\{_ASSTAfferenza_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05…
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
 
-restituirà tutte le strutture afferenti alla ASST.. 
+restituirà tutte le strutture...
 
 ### 3. Enti erogatori accreditati nell’ambito territoriale di una ASST 
 Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST nel caso eroghino servizi socioassistenziali (es. cure domiciliari).
@@ -127,6 +127,18 @@ Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca
 -	dataFineValidità: data di interesse
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+| SCOPE | Ricerca tutti gli enti erogatori accreditati nell’ambito territoriale di una ASST |
+|---|---|
+| VERB | GET |
+| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\} |
+
+A titolo esemplificativo, la chiamata: 
+
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
+
+restituirà tutte le strutture...
 
 ### 4. Enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia
 
@@ -141,9 +153,20 @@ Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
+| SCOPE | Ricerca tutti gli enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia |
+|---|---|
+| VERB | GET |
+| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
+
+A titolo esemplificativo, la chiamata: 
+
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type.coding.code=C-DOM
+
+restituirà tutte le strutture...
 
 ### 5. Enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia
-Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di uno specifico servizio socioassistenziale che si sono accreditati in almeno un distretto afferente ad una ASST o più ASST che afferiscono alla medesima ATS. Verranno restituite dalla ricerca anche le stesse ASST nel caso siano enti erogatori del servizio socioassistenziale d’interesse (es. cure domiciliari).
+Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di uno specifico servizio socioassistenziale che si sono accreditati in almeno un distretto afferente ad una ASST o più ASST che afferiscono alla medesima ATS. Verranno restituite dalla ricerca anche le stesse ASST nel caso siano enti erogatori del servizio socioassistenziale d’interesse (es. cure domiciliari).
 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 -	distrettoAccreditamento.ATSAfferenza.coding.code: codice dell’ATS di afferenza di interesse
@@ -153,6 +176,17 @@ Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
+| SCOPE | Ricerca tutti gli enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia |
+|---|---|
+| VERB | GET |
+| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAtsAfferenza=\{_ATSAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
+
+A titolo esemplificativo, la chiamata: 
+
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type.coding.code=C-DOM
+
+restituirà tutte le strutture...
 
 ### 6. Enti erogatori accreditati in uno specifico distretto
 Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali che si sono accreditati in uno determinato distretto sanitario.
@@ -164,6 +198,18 @@ Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca
 -	dataFineValidità: data di interesse
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+| SCOPE | Ricerca tutti gli enti erogatori accreditati in uno specifico distretto |
+|---|---|
+| VERB | GET |
+| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| URL | /Organization?_profile=https://example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoCodiceDistretto=\{_CodiceDistretto_\} |
+
+A titolo esemplificativo, la chiamata: 
+
+    Organization?_profile=https%3A//example.org/fhir/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
+
+restituirà tutte le strutture...
 
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
@@ -182,10 +228,10 @@ I parametri di ricerca del profilo RLOrganizationL2, oltre ai campi standard del
 |---|---|---|
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Data di fine validità per strutture SISS. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataInizioValidita}} | Data inizio validità per strutture SISS. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza}} | ASST di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='ASSTAfferenza').value.coding.code |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} | ATS di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='ATSAfferenza').value.coding.code |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} | Distretto di accreditamento nel quale l'Ente eroga i servizi   sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento').extension.where(url='codiceDistretto').value.coding.code |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoTerritorialeASSTAfferenza}} | ASST nella quale l'Ente erogatore ha la sede operativa. | address.extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale').extension.where(url='ASSTAfferenza').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAsstAfferenza}} | ASST di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento')<br>.extension.where(url='ASSTAfferenza').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} | ATS di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento')<br>.extension.where(url='ATSAfferenza').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} | Distretto di accreditamento nel quale l'Ente eroga i servizi   sociosanitari. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento')<br>.extension.where(url='codiceDistretto').value.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoTerritorialeASSTAfferenza}} | ASST nella quale l'Ente erogatore ha la sede operativa. | address.extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale')<br>.extension.where(url='ASSTAfferenza').value.coding.code |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
