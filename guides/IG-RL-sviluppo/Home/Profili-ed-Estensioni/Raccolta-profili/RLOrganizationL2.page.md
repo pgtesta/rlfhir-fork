@@ -85,12 +85,12 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | SCOPE | Ricerca tutti gli enti erogatori gestiti amministrativamente da un ente di codice L1 |
 |---|---|
 | VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| BASE | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}&partof:Organization.identifier=\{_codicelivelloL1_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&partof:Organization.identifier=030720
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&partof:Organization.identifier=030720
 
 restituirà tutte le strutture afferenti alla ASST Bergamo Est (030720) con una data di fine validità superiore al 05/04/2018.
 
@@ -108,12 +108,12 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | SCOPE | Ricerca tutti gli enti erogatori presenti nell’ambito territoriale di una ASST |
 |---|---|
 | VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| BASE | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoTerritorialeASSTAfferenza=\{_ASSTAfferenza_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoTerritorialeASSTAfferenza=030718
 
 restituirà tutte le strutture...
 
@@ -131,12 +131,12 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | SCOPE | Ricerca tutti gli enti erogatori accreditati nell’ambito territoriale di una ASST |
 |---|---|
 | VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| BASE | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714
 
 restituirà tutte le strutture...
 
@@ -156,12 +156,12 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | SCOPE | Ricerca tutti gli enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia |
 |---|---|
 | VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
+| BASE | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAsstAfferenza=\{_ASSTAfferenza_\}<br>&type=\{_tipologia_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type.coding.code=C-DOM
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAsstAfferenza=714&type=C-DOM
 
 restituirà tutte le strutture...
 
@@ -170,6 +170,7 @@ Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di 
 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 -	distrettoAccreditamento.ATSAfferenza.coding.code: codice dell’ATS di afferenza di interesse
+-	type.coding.code: codice della tipologia del servizio socioassistenziale ente erogatore
 
 Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi:
 -	dataFineValidità: data di interesse
@@ -179,12 +180,12 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | SCOPE | Ricerca tutti gli enti erogatori accreditati nell’ambito territoriale di una ATS di una specifica tipologia |
 |---|---|
 | VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
-| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAtsAfferenza=\{_ATSAfferenza_\}<br>&type.coding.code=\{_tipologia_\} |
+| BASE | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoAtsAfferenza=\{_ATSAfferenza_\}<br>&type=\{_tipologia_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type.coding.code=C-DOM
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoAtsAfferenza=323&type=C-DOM
 
 restituirà tutte le strutture...
 
@@ -202,12 +203,12 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | SCOPE | Ricerca tutti gli enti erogatori accreditati in uno specifico distretto |
 |---|---|
 | VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4 |
+| BASE | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=\{_datadiRiferimento_\}<br>&distrettoAccreditamentoCodiceDistretto=\{_CodiceDistretto_\} |
 
 A titolo esemplificativo, la chiamata: 
 
-    Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2&dataFineValidita=gt2018-04-05&distrettoAccreditamentoCodiceDistretto=22038
 
 restituirà tutte le strutture...
 

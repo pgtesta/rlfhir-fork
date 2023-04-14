@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "esempio-Observation-EsitoValutazione",
+	"id": "esempio-Observation-EsitoValutazione-InterRAI",
 	"meta": {
 		"lastUpdated": "2023-01-11T08:32:56+01:00",
 		"profile": [
