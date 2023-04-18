@@ -232,9 +232,9 @@
       {
         "id": "Organization.extension:distrettoAccreditamento.extension:codiceDistretto.value[x].coding.code",
         "path": "Organization.extension.extension.value[x].coding.code",
-        "short": "Codice del Distretto nel quale l'ente si è accreditato",
-        "definition": "Stringa alfanumerica di al più 3 caratteri",
-        "comment": "La fonte del dato è il campo CD_DISTRETTO_LR22 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "short": "Codice del Distretto sanitario nel quale l'ente si è accreditato",
+        "definition": "Stringa alfanumerica di al più 5 caratteri",
+        "comment": "La fonte del dato è il campo CD_DISTRETTO della tabella Master Data delle strutture operanti in più distretti i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -245,9 +245,9 @@
       {
         "id": "Organization.extension:distrettoAccreditamento.extension:codiceDistretto.value[x].coding.display",
         "path": "Organization.extension.extension.value[x].coding.display",
-        "short": "Nome del Distretto nel quale l'ente si è accreditato",
-        "definition": "Stringa alfanumerica al più di 250 caratteri",
-        "comment": "La fonte del dato è il campo DS_DISTRETTO_LR22 della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "short": "Nome del Distretto sanitario nel quale l'ente si è accreditato",
+        "definition": "Stringa alfanumerica di al più di 250 caratteri",
+        "comment": "La fonte del dato è il campo DS_DISTRETTO della tabella Master Data delle strutture operanti in più distretti i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
@@ -262,7 +262,7 @@
         "path": "Organization.extension.extension.value[x].coding.code",
         "short": "Codice della ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
         "definition": "Stringa alfanumerica di al più 6 caratteri",
-        "comment": "La fonte del dato è il campo CD_ASST_DI_AFFERENZA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "comment": "La fonte del dato è il campo CD_ASST della tabella Master Data delle strutture operanti in più distretti i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -274,7 +274,8 @@
         "id": "Organization.extension:distrettoAccreditamento.extension:ASSTAfferenza.value[x].coding.display",
         "path": "Organization.extension.extension.value[x].coding.display",
         "short": "Nome della ASST sotto la quale l'ente eroga servizi sociosanitari sul territorio di competenza",
-        "definition": "Stringa alfanumerica al più di 250 caratteri",
+        "definition": "Stringa alfanumerica di al più di 250 caratteri",
+        "comment": "La fonte del dato è il campo DS_ASST della tabella Master Data delle strutture operanti in più distretti i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
@@ -289,7 +290,7 @@
         "path": "Organization.extension.extension.value[x].coding.code",
         "short": "Codice della ATS alla quale il presidio afferisce",
         "definition": "Stringa alfanumerica di al più 6 caratteri",
-        "comment": "La fonte del dato è il campo CD_ATS_DI_AFFERENZA della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "comment": "La fonte del dato è il campo CD_ATS della tabella Master Data delle strutture operanti in più distretti i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1,
         "binding": {
           "strength": "required",
@@ -301,8 +302,8 @@
         "id": "Organization.extension:distrettoAccreditamento.extension:ATSAfferenza.value[x].coding.display",
         "path": "Organization.extension.extension.value[x].coding.display",
         "short": "Nome della ATS alla quale il presidio afferisce",
-        "definition": "Stringa alfanumerica al più di 250 caratteri",
-        "comment": "La fonte del dato è il campo DS_ATS della tabella Master Data delle Strutture Socio Sanitarie i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "definition": "Stringa alfanumerica di al più di 250 caratteri",
+        "comment": "La fonte del dato è il campo DS_ATS della tabella Master Data delle strutture operanti in più distretti i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
       },
       {
