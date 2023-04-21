@@ -96,6 +96,40 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
+        "id": "CareTeam.participant.role",
+        "path": "CareTeam.participant.role",
+        "short": "Riferimento alla qualifica del professionista sanitario. Questo campo viene valorizzato solo nel caso il cui l'equipe non sia composta da persone fisiche (i cui dettagli sono referenziati nel campo 'member') bensì solo configurarata a livello di sepecializzazione dei professionisti sanitari che la compongono.",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della qualifica del professionista sanitario contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "CareTeam.participant.role.coding",
+        "path": "CareTeam.participant.role.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "CareTeam.participant.role.coding.code",
+        "path": "CareTeam.participant.role.coding.code",
+        "short": "Codice della qualifica del professionista sanitario",
+        "definition": "Stringa alfanumerica di 9 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla qualifica del professionista sanitario",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario"
+        }
+      },
+      {
+        "id": "CareTeam.participant.role.coding.display",
+        "path": "CareTeam.participant.role.coding.display",
+        "short": "Descrizione della qualifica del professionista sanitario",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
         "id": "CareTeam.participant.member",
         "path": "CareTeam.participant.member",
         "short": "Riferimento al professionista sanitario",
