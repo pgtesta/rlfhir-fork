@@ -6,7 +6,7 @@
   "name": "DDC - Distretto Sanitario",
   "status": "active",
   "date": "2023-01-24",
-  "description": "ValueSet relativo alla codifica del distretto sanitario",
+  "description": "ValueSet relativo alla codifica dei distretti sanitari. Si noti che il link sottostante non riporta volutamente la lista completa dei distretti e dei relativi codici identificativi in quanto possono essere soggetti ad aggiornamenti e modifiche da parte del SISS. \n\r Per consultare la versione aggiornata dei distretti sanitari, l'ASST di Afferenza e la relativa ATS si rimanda alla tabella “LR22: Relazione Distretto-ASST-ATS” descritta nel documento DC-DDC-SIAA#02 il cui contenuto informativo è accessibile tramite i servizi riportati nel documento DC-DDC-SIAA#01.",
   "compose": {
     "include": [
       {
