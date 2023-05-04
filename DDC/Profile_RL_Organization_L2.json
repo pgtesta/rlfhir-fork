@@ -198,6 +198,7 @@
         "path": "Organization.extension",
         "sliceName": "distrettoAccreditamento",
         "short": "Distretti nei quali l'ente si è accreditato",
+        "comment": "La correlazione tra i Distretti di Accreditamento, l'ASST di Afferenza e la relativa ATS è definita nella tabella presente nel paragrafo 3 del capitolo 1 dell'allegato 14 della DGR n. XI/7758 del 28 dicembre 2022.",
         "min": 0,
         "type": [
           {
