@@ -69,6 +69,21 @@
         }
       },
       {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "short": "Codice L2 identificativo della struttura (codice CUDES)",
+        "definition": "Reference al profilo RLOrganizationL2",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Location.partOf",
         "path": "Location.partOf",
         "short": "Edificio di riferimento del piano",

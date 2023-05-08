@@ -68,9 +68,9 @@
         }
       },
       {
-        "id": "Location.partOf",
-        "path": "Location.partOf",
-        "short": "Codice L2",
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "short": "Codice L2 identificativo della struttura (codice CUDES)",
         "definition": "Reference al profilo RLOrganizationL2",
         "min": 1,
         "type": [
