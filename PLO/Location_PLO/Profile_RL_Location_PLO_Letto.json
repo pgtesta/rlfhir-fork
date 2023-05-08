@@ -1,0 +1,268 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto",
+  "name": "RLLocationPLOLetto",
+  "status": "draft",
+  "description": "Questo profilo riporta le informazioni relative al posto letto occupato per ogni reparto",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.id",
+        "path": "Location.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Location.meta",
+        "path": "Location.meta",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.versionId",
+        "path": "Location.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.lastUpdated",
+        "path": "Location.meta.lastUpdated",
+        "short": "Data e ora di aggiornamento relativa al posto letto occupato",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "comment": "Fonte: \"dataOraAggiornamento\"",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.profile",
+        "path": "Location.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Location.extension",
+        "path": "Location.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 5
+      },
+      {
+        "id": "Location.extension:areaDegenza",
+        "path": "Location.extension",
+        "sliceName": "areaDegenza",
+        "short": "Area Degenza",
+        "definition": "Identificativo dell’area di degenza dove il paziente risulta allettato",
+        "comment": "Fonte: \"areaDegenza\"\r\nObbligatorio se non è presente l'informazione sul reparto fisico",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:dataOraAccettazione",
+        "path": "Location.extension",
+        "sliceName": "dataOraAccettazione",
+        "short": "Data e ora di accettazione del paziente (ingresso in struttura)",
+        "comment": "Fonte: \"dataOraAccettazione\"",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:dataOraDimissionePrevista",
+        "path": "Location.extension",
+        "sliceName": "dataOraDimissionePrevista",
+        "short": "Data e ora prevista per la dimissione del paziente",
+        "definition": "In caso in cui non è disponibile l’ora, indicare mezzanotte",
+        "comment": "Fonte: \"dataOraDimissionePrevista\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:dataOraOccupazioneLetto",
+        "path": "Location.extension",
+        "sliceName": "dataOraOccupazioneLetto",
+        "short": "Data e ora occupazione posto letto",
+        "definition": "Valorizzata con data e ora di assegnazione del letto",
+        "comment": "Fonte: \"dataOraOccupazioneLetto\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:dimissioneProtetta",
+        "path": "Location.extension",
+        "sliceName": "dimissioneProtetta",
+        "short": "Dimissione protetta",
+        "definition": "Flag dimissione protetta, può assumere i seguenti valori: “true” o “false”",
+        "comment": "Fonte: \"dimissioneProtetta\"",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:regimeRicovero",
+        "path": "Location.extension",
+        "sliceName": "regimeRicovero",
+        "short": "Regime di ricovero",
+        "definition": "Può assumere i seguenti valori: “1” per degenza ordinaria; “2” per day-hospital; “S “per cure sub-acute; “P” per prestazioni erogate nell’ambito di potenziamento dell’attività di soccorso e assistenza di cui alla DGR 794/2018 e successive modifiche/integrazioni",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo al regime di ricovero",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero"
+        }
+      },
+      {
+        "id": "Location.extension:repartoClinico",
+        "path": "Location.extension",
+        "sliceName": "repartoClinico",
+        "short": "Identificativo del reparto clinico che ha in carico il paziente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.extension:repartoFisico",
+        "path": "Location.extension",
+        "sliceName": "repartoFisico",
+        "short": "Identificativo del reparto fisico dove il paziente risulta allettato",
+        "comment": "obbligatorio se non è presente l'informazione sull'area di degenza",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "short": "Identificativo del posto letto occupato",
+        "definition": "Stringa composta dalle seguenti informazioni: \"codiceL2-Edificio-Piano-Stanza-Letto\"",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/location-physical-type",
+              "code": "bd",
+              "display": "bed"
+            }
+          ]
+        },
+        "binding": {
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "short": "Codice L2 identificativo della struttura (codice CUDES)",
+        "definition": "Reference al profilo RLOrganizationL2",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "short": "Stanza di riferimento del posto letto",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

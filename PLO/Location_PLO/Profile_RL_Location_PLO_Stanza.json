@@ -1,0 +1,87 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza",
+  "name": "RLLocationPLOStanza",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.id",
+        "path": "Location.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Location.meta",
+        "path": "Location.meta",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.versionId",
+        "path": "Location.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.lastUpdated",
+        "path": "Location.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.profile",
+        "path": "Location.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza"
+      },
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "short": "Identificativo stanza",
+        "definition": "Stringa composta dalle seguenti informazioni: \"codiceL2-Edificio-Piano-Stanza\"",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/location-physical-type",
+              "code": "ro",
+              "display": "Room"
+            }
+          ]
+        },
+        "binding": {
+          "strength": "required"
+        }
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "short": "Piano di riferimento della stanza",
+        "definition": "Reference al profilo RLLocationPLOPiano",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
