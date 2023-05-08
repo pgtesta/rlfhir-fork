@@ -4,7 +4,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPLO",
   "name": "RLObservationPLO",
   "status": "draft",
-  "description": "Questo profilo riporta le informazioni relative ai posti letto occupati per ogni reparto (OrganizationL3)",
+  "description": "Questo profilo riporta le informazioni relative al posto letto occupato per ogni reparto",
   "keyword": [
     {
       "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
@@ -20,6 +20,14 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "short": "Identificativo del posto letto occupato",
+        "definition": "Stringa composta dalle seguenti informazioni: \"codiceL2-Edificio-Piano-Stanza-Letto\"",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "fixedCode": "final"
@@ -28,13 +36,31 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Tipo di osservazione",
-        "definition": "Identificativo relativo ai posti letto occupati"
+        "definition": "Identificativo relativo ai posti letto occupati",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "PLO-H",
+              "display": "Posti letto occupati Ospedale"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "PLO-H"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "fixedString": "Posti letto occupati Ospedale"
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "short": "Data e ora di aggiornamento",
-        "definition": "Data e ora di aggiornamento dei posti letto occupati (indicare la data e ora più recente tra quelle disponibili per il particolare set di dettaglioLetti)",
+        "definition": "Data e ora di aggiornamento relativa al posto letto occupato",
         "comment": "Fonte: \"dataOraAggiornamento\"",
         "type": [
           {
@@ -45,8 +71,10 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Codice L2",
+        "short": "Codice L2 identificativo della struttura (codice CUDES)",
         "definition": "Reference al profilo RLOrganizationL2",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "Reference",
@@ -57,22 +85,11 @@
         ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "short": "Totale posti letto occupati",
-        "definition": "Fonte: \"totaleLettiOccupati\"",
-        "comment": "Fonte: \"totaleLettiOccupati\"",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
-      },
-      {
         "id": "Observation.component",
         "path": "Observation.component",
-        "short": "Singolo posto letto occupato",
-        "definition": "Ogni component è identificato da codiceL3-Stanza-Letto e contiene un serie di informazioni associate al ricovero associato."
+        "short": "Informazioni relarive al posto letto occupato",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Observation.component.extension",
@@ -86,14 +103,15 @@
           ],
           "rules": "open"
         },
-        "min": 0
+        "min": 8
       },
       {
         "id": "Observation.component.extension:repartoFisico",
         "path": "Observation.component.extension",
         "sliceName": "repartoFisico",
-        "short": "Reparto Fisico",
-        "min": 0,
+        "short": "Identificativo del reparto fisico dove il paziente risulta allettato",
+        "comment": "Obbligatorio se non è presente l'informazione sull'area di degenza",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -114,8 +132,8 @@
         "id": "Observation.component.extension:repartoClinico",
         "path": "Observation.component.extension",
         "sliceName": "repartoClinico",
-        "short": "Reparto clinico",
-        "min": 0,
+        "short": "Identificativo del reparto clinico che ha in carico il paziente",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -128,13 +146,17 @@
         "isModifier": false
       },
       {
+        "id": "Observation.component.extension:repartoClinico.value[x]",
+        "path": "Observation.component.extension.value[x]",
+        "short": "Codice reparto clinico"
+      },
+      {
         "id": "Observation.component.extension:areaDegenza",
         "path": "Observation.component.extension",
         "sliceName": "areaDegenza",
-        "short": "Area degenza",
-        "definition": "Identificativo dell’area di degenza dove il paziente risulta allettato",
-        "comment": "Fonte: \"areaDegenza\"",
-        "min": 0,
+        "short": "Identificativo dell’area di degenza dove il paziente risulta allettato",
+        "comment": "Obbligatorio se non è presente l'informazione sul reparto fisico\r\nFonte: \"areaDegenza\"",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -147,42 +169,13 @@
         "isModifier": false
       },
       {
-        "id": "Observation.component.extension:regimeRicovero",
-        "path": "Observation.component.extension",
-        "sliceName": "regimeRicovero",
-        "short": "Regime ricovero",
-        "definition": "Può assumere i seguenti valori: \r\n“1” per degenza ordinaria; \r\n“2” per day-hospital; \r\n“S “per cure sub-acute; \r\n“P” per prestazioni erogate nell’ambito di potenziamento dell’attività di soccorso e assistenza di cui alla DGR 794/2018 e successive modifiche/integrazioni",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRegimeRicovero"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Observation.component.extension:regimeRicovero.value[x]",
-        "path": "Observation.component.extension.value[x]",
-        "short": "Codifica regime ricovero",
-        "definition": "Può assumere i seguenti valori: \r\n“1” per degenza ordinaria; \r\n“2” per day-hospital; \r\n“S “per cure sub-acute; \r\n“P” per prestazioni erogate nell’ambito di potenziamento dell’attività di soccorso e assistenza di cui alla DGR 794/2018 e successive modifiche/integrazioni",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
         "id": "Observation.component.extension:dataOraAccettazione",
         "path": "Observation.component.extension",
         "sliceName": "dataOraAccettazione",
         "short": "Data e ora di accettazione",
         "definition": "Data e ora di accettazione del paziente (ingresso in struttura)",
         "comment": "Fonte: \"dataOraAccettazione\"",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -237,7 +230,7 @@
         "path": "Observation.component.extension",
         "sliceName": "dimissioneProtetta",
         "short": "Dimissione Protetta",
-        "definition": "Flag dimissione protetta (“true” o “false”)",
+        "definition": "Flag dimissione protetta, può assumere i seguenti valori: “true” o “false”",
         "comment": "Fonte: \"dimissioneProtetta\"",
         "min": 0,
         "max": "1",
@@ -252,26 +245,124 @@
         "isModifier": false
       },
       {
+        "id": "Observation.component.extension:Edificio",
+        "path": "Observation.component.extension",
+        "sliceName": "Edificio",
+        "short": "Identificativo dell’edificio dove il paziente risulta allettato",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentEdificio"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:Piano",
+        "path": "Observation.component.extension",
+        "sliceName": "Piano",
+        "short": "Piano della struttura in cui si trova il letto",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition//RLObservationComponentPiano"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:Stanza",
+        "path": "Observation.component.extension",
+        "sliceName": "Stanza",
+        "short": "Identificativo della stanza di ricovero",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentStanza"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:Letto",
+        "path": "Observation.component.extension",
+        "sliceName": "Letto",
+        "short": "Identificativo del letto occupato",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentLetto"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Observation.component.extension:regimeRicovero",
+        "path": "Observation.component.extension",
+        "sliceName": "regimeRicovero",
+        "short": "Regime ricovero",
+        "definition": "Può assumere i seguenti valori: “1” per degenza ordinaria; “2” per day-hospital; “S “per cure sub-acute; “P” per prestazioni erogate nell’ambito di potenziamento dell’attività di soccorso e assistenza di cui alla DGR 794/2018 e successive modifiche/integrazioni",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComponentRegimeRicovero"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo al regime di ricovero",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero"
+        }
+      },
+      {
         "id": "Observation.component.code",
         "path": "Observation.component.code",
         "short": "Codifica tipologia di osservazione",
-        "definition": "Identificativo relativo al letto degenza"
+        "definition": "Identificativo relativo al letto degenza",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "code": "LD",
+              "display": "Letto Degenza"
+            }
+          ]
+        }
       },
       {
-        "id": "Observation.component.value[x]",
-        "path": "Observation.component.value[x]",
-        "short": "Informazioni sull'edificio, piano, stanza e identificativo del posto letto occupato",
-        "definition": "Edificio-piano-stanza-letto",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
+        "id": "Observation.component.code.coding",
+        "path": "Observation.component.code.coding",
+        "max": "1"
       },
       {
-        "id": "Observation.component.referenceRange",
-        "path": "Observation.component.referenceRange",
-        "contentReference": "http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"
+        "id": "Observation.component.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "fixedCode": "LD"
+      },
+      {
+        "id": "Observation.component.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "fixedString": "Letto Degenza"
       }
     ]
   }
