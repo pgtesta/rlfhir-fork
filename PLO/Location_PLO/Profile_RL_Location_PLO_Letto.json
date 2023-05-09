@@ -219,6 +219,11 @@
         "max": "1"
       },
       {
+        "id": "Location.name",
+        "path": "Location.name",
+        "short": "Nome identificativo letto"
+      },
+      {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
         "fixedCodeableConcept": {

@@ -52,6 +52,11 @@
         "max": "1"
       },
       {
+        "id": "Location.name",
+        "path": "Location.name",
+        "short": "Nome identificativo edificio"
+      },
+      {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
         "fixedCodeableConcept": {
