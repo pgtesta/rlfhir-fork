@@ -3,7 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto",
   "name": "RLLocationPLOLetto",
   "status": "draft",
-  "description": "Questo profilo riporta le informazioni relative al posto letto occupato per ogni reparto",
+  "description": "Questo profilo riporta le informazioni relative al posto letto occupato.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -217,6 +217,14 @@
         "definition": "Stringa composta dalle seguenti informazioni: \"codiceL2-Edificio-Piano-Stanza-Letto\"",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Location.operationalStatus",
+        "path": "Location.operationalStatus",
+        "short": "Stato di occupazione del posto letto",
+        "binding": {
+          "strength": "required"
+        }
       },
       {
         "id": "Location.name",

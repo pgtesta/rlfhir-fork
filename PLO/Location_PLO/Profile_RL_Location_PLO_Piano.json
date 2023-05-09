@@ -3,6 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano",
   "name": "RLLocationPLOPiano",
   "status": "draft",
+  "description": "Profilo per descrivere le informazioni relative al piano di una struttura ospedaliera.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
