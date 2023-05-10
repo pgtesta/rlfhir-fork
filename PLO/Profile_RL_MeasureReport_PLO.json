@@ -4,6 +4,12 @@
   "name": "RLMeasureReportPLO",
   "status": "draft",
   "description": "Profilo contenente la misura del totale dei posti letto occupati per reparto e per struttura ospedaliera",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PLO"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

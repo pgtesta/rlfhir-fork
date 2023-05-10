@@ -4,6 +4,12 @@
   "name": "RLLocationPLOLetto",
   "status": "draft",
   "description": "Questo profilo riporta le informazioni relative al posto letto occupato.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PLO"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

@@ -4,6 +4,12 @@
   "name": "RLLocationPLOStanza",
   "status": "draft",
   "description": "Profilo per descrivere le informazioni relative alla stanza di una struttura ospedaliera.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PLO"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
