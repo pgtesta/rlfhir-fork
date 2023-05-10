@@ -3,6 +3,7 @@
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO",
   "name": "RLMeasureReportPLO",
   "status": "draft",
+  "description": "Profilo contenente la misura del totale dei posti letto occupati per reparto e per struttura ospedaliera",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -54,6 +55,24 @@
         "fixedCode": "summary"
       },
       {
+        "id": "MeasureReport.measure",
+        "path": "MeasureReport.measure",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO"
+      },
+      {
+        "id": "MeasureReport.reporter",
+        "path": "MeasureReport.reporter",
+        "short": "Codice identificativo L2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
         "id": "MeasureReport.period",
         "path": "MeasureReport.period",
         "short": "Data in cui è stata calcolata la misura dei posti letto occupati"
@@ -67,6 +86,16 @@
         "id": "MeasureReport.group",
         "path": "MeasureReport.group",
         "short": "Informazioni relative al totale dei posti letto occupati per reparto clinico / struttura ospedaliera"
+      },
+      {
+        "id": "MeasureReport.group.code",
+        "path": "MeasureReport.group.code",
+        "short": "Codice identificativo del reparto clinico o struttura ospedaliera di riferimento della misura calcolata"
+      },
+      {
+        "id": "MeasureReport.group.measureScore",
+        "path": "MeasureReport.group.measureScore",
+        "short": "Totale dei posti letto occupati per reparto clinico o struttura ospedaliera"
       }
     ]
   }
