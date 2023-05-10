@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO",
+  "name": "RLMeasurePLO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Measure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Measure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Measure.id",
+        "path": "Measure.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Measure.meta",
+        "path": "Measure.meta",
+        "min": 1
+      },
+      {
+        "id": "Measure.meta.versionId",
+        "path": "Measure.meta.versionId",
+        "short": "Versione della risorsa"
+      },
+      {
+        "id": "Measure.meta.lastUpdated",
+        "path": "Measure.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Measure.meta.profile",
+        "path": "Measure.meta.profile",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO"
+      },
+      {
+        "id": "Measure.title",
+        "path": "Measure.title",
+        "short": "Totale posti letto occupati"
+      },
+      {
+        "id": "Measure.status",
+        "path": "Measure.status",
+        "fixedCode": "active"
+      }
+    ]
+  }
+}
