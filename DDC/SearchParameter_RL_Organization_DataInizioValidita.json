@@ -8,7 +8,7 @@
   "name": "RLOrganizationDataInizioValidita",
   "status": "active",
   "experimental": false,
-  "description": "Data inizio validità per strutture SISS.",
+  "description": "Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di inserimento.",
   "code": "dataInizioValidita",
   "base": [
     "Organization"

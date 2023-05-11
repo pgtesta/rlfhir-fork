@@ -8,7 +8,7 @@
   "name": "RLOrganizationDataFineValidita",
   "status": "active",
   "experimental": false,
-  "description": "Data di fine validità per strutture SISS.",
+  "description": "Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di fine validità.",
   "code": "dataFineValidita",
   "base": [
     "Organization"
