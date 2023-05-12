@@ -1,0 +1,71 @@
+{
+	"resourceType": "MeasureReport",
+	"id": "esempio-measureReport-PLO",
+	"meta": {
+		"lastUpdated": "2023-01-11T08:32:35Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO"
+		],
+		"versionId": "1"
+	},
+	"identifier": "TOTPLO-03007800"
+	"status": "complete",
+	"type": "summary",
+	"measure": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO",
+	"reporter": {
+		"reference": "Organization/1"
+	},
+	"period": {
+		"end": "2023-01-11"
+	},
+	"group": [
+		{
+			"code": {
+				"coding": [
+					{
+						"code": "CARDIOLOGIA"
+					}
+				]
+			},
+			"measureScore": {
+				"value": 5
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"code": "MEDICINA GENERALE"
+					}
+				]
+			},
+			"measureScore": {
+				"value": 10
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"code": "UROLOGIA"
+					}
+				]
+			},
+			"measureScore": {
+				"value": 7
+			}
+		},
+		{
+			"code": {
+				"coding": [
+					{
+						"code": "PRESIDIO OSPEDALIERO DI VIRMERCATE"
+					}
+				]
+			},
+			"measureScore": {
+				"value": 57
+			}
+		}
+	]
+}
