@@ -8,7 +8,7 @@
 		],
 		"versionId": "1"
 	},
-	"identifier": "TOTPLO-03007800"
+	"identifier": "TOTPLO-03007800",
 	"status": "complete",
 	"type": "summary",
 	"measure": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO",
@@ -23,7 +23,7 @@
 			"code": {
 				"coding": [
 					{
-						"code": "CARDIOLOGIA"
+						"code": "0843"
 					}
 				]
 			},
@@ -35,7 +35,7 @@
 			"code": {
 				"coding": [
 					{
-						"code": "MEDICINA GENERALE"
+						"code": "3201"
 					}
 				]
 			},
@@ -47,7 +47,7 @@
 			"code": {
 				"coding": [
 					{
-						"code": "UROLOGIA"
+						"code": "0801"
 					}
 				]
 			},
@@ -59,7 +59,7 @@
 			"code": {
 				"coding": [
 					{
-						"code": "PRESIDIO OSPEDALIERO DI VIRMERCATE"
+						"code": "03007800"
 					}
 				]
 			},

@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLGoalObiettiviSaluteè stato strutturato a partire dalla risorsa generica FHIR [Goal](http://hl7.org/fhir/R4/goal.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
+Il profilo RLGoalObiettiviSalute è stato strutturato a partire dalla risorsa generica FHIR [Goal](http://hl7.org/fhir/R4/goal.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute}}.
 
