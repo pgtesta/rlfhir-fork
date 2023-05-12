@@ -1,0 +1,22 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationDataOraOccupazioneLetto",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraOccupazioneLetto",
+  "name": "RLLocationDataOraOccupazioneLetto",
+  "status": "draft",
+  "description": "Parametro di ricerca della data di occupazione del posto letto",
+  "code": "dataOraOccupazioneLetto",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto').value",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}
