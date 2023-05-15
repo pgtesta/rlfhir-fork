@@ -1,6 +1,6 @@
-# RLOrganizationL1
+# RLLocationPLOLetto
 
-- [RLOrganizationL1](#rlorganizationl1)
+- [RLLocationPLOLetto](#rllocationploletto)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Seacrh parameter](#seacrh-parameter)
@@ -71,17 +71,32 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Seacrh parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
+Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard:
+- _profile
+- type
+- operational-status
+- organization
+- partof
+- name
+- identifier
+- _lastuUpdated
 
+I parametri di ricerca del profilo RLLocationPLOLetto, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
+
+| Nome e   link Simplifier | Descrizione | Espressione |
+|---|---|---|
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationPhysicalType}} | Parametro di ricerca per la tipologia di Location. | physicalType.coding.code |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoClinico}} | Parametro di ricerca per il reparto clinico che ha in carico il paziente. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoFisico}} | Parametro di ricerca per il reparto fisico dove il paziente risulta allettato. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationAreaDegenza}} | Parametro di ricerca per l'area di degenza dove il paziente risulta allettato. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraAccettazione}} | Parametro di ricerca della data e ora di accettazione del paziente (ingresso in struttura). | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraDimissionePrevista}} | Parametro di ricerca della data e ora prevista per la dimissione del paziente | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDimissioneProtetta}} | Parametro di ricerca per ricercare se il posto letto è indicato per una dimissione protetta | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraOccupazioneLetto}} | Parametro di ricerca della data di occupazione del posto letto | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto').value |
+| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRegimeRicovero}} | Parametro di ricerca relativo al regime di ricovero | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero').value.coding.code |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLOrganizationL1.
-
-Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1.
-
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
-|---|---|---|
-| type | Codifica del tipo di azienda L1 | Il riferimento alla lista esaustiva della tipologia di enti di   livello 1 è consultabile al seguente {{pagelink:Home/Terminologia/Libreria-ValueSet.page.md, text:link}} |
+Attualmente non sono definiti value set specifici per il profilo RLLocationPLOLetto.
