@@ -80,11 +80,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
-| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione<br>&based-on:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:ServiceRequest.identifier=\{_numeroPratica_\}<br>&_include=Procedure:based-on<br>&_include=Procedure:subject |
+| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione<br>&based-on:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:ServiceRequest.identifier=\{_numeroPratica_\}<br>&_include=Procedure:based-on<br>&_include=Procedure:subject&_include=Procedure:performer&_include=Procedure:location |
 
 A titolo esemplificativo, la chiamata: 
 
-    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.performer:Organization.identifier=03014300&based-on:ServiceRequest.identifier=2022000001&_include=Procedure:based-on&_include=Procedure:subjec
+    Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.performer:Organization.identifier=321016118&based-on:ServiceRequest.identifier=2022000001&_include=Procedure:based-on&_include=Procedure:subject&_include=Procedure:performer&_include=Procedure:location
 
 Restituirà tutte le prestazioni erogate per pratica numero "2022000001" e afferenti alla struttura "03014300".
 
