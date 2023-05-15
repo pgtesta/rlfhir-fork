@@ -1,6 +1,6 @@
-# RLAllergyIntoleranceAllergie111
+# RLAllergyIntoleranceAllergie
 
-- [RLAllergyIntoleranceAllergie111](#rlallergyintoleranceallergie111)
+- [RLAllergyIntoleranceAllergie](#rlallergyintoleranceallergie)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
