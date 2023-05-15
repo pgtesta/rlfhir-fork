@@ -80,7 +80,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | BASE_APISOURCE | https://\<nome_host_Ente\>/\<contesto_FHIR\>/\<codiceCudesL1\>/\<versione\>/erogazione-adi |
-| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione<br>&based-on:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:ServiceRequest.identifier=\{_numeroPratica_\}<br>&_include=Procedure:based-on<br>&_include=Procedure:subject&_include=Procedure:performer&_include=Procedure:location |
+| URL | Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione<br>&based-on:ServiceRequest.performer:Organization.identifier=\{_codiceLivello2_\}<br>&based-on:ServiceRequest.identifier=\{_numeroPratica_\}<br>&_include=Procedure:based-on<br>&_include=Procedure:subject<br>&_include=Procedure:performer<br>&_include=Procedure:location |
 
 A titolo esemplificativo, la chiamata: 
 
