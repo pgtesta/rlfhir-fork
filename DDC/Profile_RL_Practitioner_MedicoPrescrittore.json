@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-03-08T15:39:56.3214995+00:00"
+    "lastUpdated": "2023-05-16T08:11:42.173456+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
   "name": "RLPractitionerMedicoPrescrittore",
@@ -154,6 +154,44 @@
         "short": "Nome del medico prescrittore",
         "definition": "Stringa alfanumerica di max 40 caratteri.",
         "comment": "La fonte del dato è il campo DS_NOME dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "Indirizzo dell'ambulatorio del medico prescrittore",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "definition": "valore fisso su \"work\"",
+        "min": 1,
+        "fixedCode": "work"
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "short": "Indirizzo dell'ambulatorio",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "short": "Comune in cui l'ambulatorio del medico ha sede",
+        "definition": "Stringa alfabedica di massimo 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "short": "CAP del comune in cui l'ambulatorio del medico ha sede",
+        "definition": "Stringa numerica di 5 cifre",
+        "comment": "Il dato è detenuto da SGDT",
         "min": 1
       },
       {

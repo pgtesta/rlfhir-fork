@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL1",
   "meta": {
-    "lastUpdated": "2023-04-05T10:14:26.3282197+00:00"
+    "lastUpdated": "2023-05-16T08:18:52.8062367+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
   "name": "RLOrganizationL1",
@@ -279,8 +279,7 @@
         "id": "Organization.address",
         "path": "Organization.address",
         "short": "Indirizzo dell'azienda",
-        "definition": "Indirizzo dell'azienda.",
-        "min": 2
+        "definition": "Indirizzo dell'azienda."
       },
       {
         "id": "Organization.address.extension",
@@ -304,7 +303,6 @@
         "definition": "Stringa alfanumerica di al più 6 caratteri",
         "comment": "La fonte del dato è il campo CD_COMUNE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Extension",
@@ -326,7 +324,6 @@
         "path": "Organization.address.use",
         "short": "Destinazione d'uso dell'indirizzo",
         "definition": "Valori fisso su \"work\"",
-        "min": 1,
         "fixedCode": "work"
       },
       {
@@ -334,7 +331,6 @@
         "path": "Organization.address.type",
         "short": "Tipologia di indirizzo",
         "definition": "Valore costante secondo lo standard FHIR",
-        "min": 1,
         "fixedCode": "physical"
       },
       {
