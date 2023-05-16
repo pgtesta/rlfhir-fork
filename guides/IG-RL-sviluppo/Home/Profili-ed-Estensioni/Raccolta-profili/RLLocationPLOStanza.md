@@ -3,7 +3,7 @@
 - [RLLocationPLOStanza](#rllocationplostanza)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
+  - [Seacrh parameter](#seacrh-parameter)
   - [ValueSet](#valueset)
 
 
@@ -56,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili. 
+{{link:esempio-Location-PLO-Stanza}} 
 <br>
 </div>
 
