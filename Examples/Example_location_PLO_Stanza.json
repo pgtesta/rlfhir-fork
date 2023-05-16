@@ -1,0 +1,31 @@
+{
+	"resourceType": "Location",
+	"id": "d3541270-9814-11ed-a8fc-0242ac120002",
+	"meta": {
+		"lastUpdated": "2023-01-11T08:32:35Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza"
+		],
+		"versionId": "1"
+	},
+	"identifier": [
+		{
+			"value": "03007800-E1-P1-S1"
+		}
+	],
+	"physicalType": {
+		"coding": [
+			{
+				"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+				"code": "ro",
+				"display": "Room"
+			}
+		]
+	},
+	"managingOrganization": {
+		"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+	},
+	"partOf": {
+		"reference": "Location/242e2430-eda4-11ed-a05b-0242ac120003"
+	}
+}
