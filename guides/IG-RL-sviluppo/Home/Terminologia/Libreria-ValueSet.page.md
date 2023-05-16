@@ -401,18 +401,6 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale}}
-      </td>
-      <td>
-        ValueSet relativo alla codifica delle
-        responsabilità genitoriale
-      </td>
-      <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale
-      </td>
-    </tr>
-    <tr>
-      <td>
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica}}
       </td>
       <td>ValueSet relativo alla codifica della situazione pensionistica</td>
