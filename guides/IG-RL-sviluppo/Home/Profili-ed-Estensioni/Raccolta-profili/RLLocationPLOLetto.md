@@ -3,7 +3,7 @@
 - [RLLocationPLOLetto](#rllocationploletto)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
@@ -69,7 +69,7 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard:
 - _profile
@@ -79,7 +79,7 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 - partof
 - name
 - identifier
-- _lastuUpdated
+- _lastUpdated
 
 I parametri di ricerca del profilo RLLocationPLOLetto, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 

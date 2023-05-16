@@ -3,7 +3,7 @@
 - [RLLocationPLOEdificio](#rllocationploedificio)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
@@ -69,7 +69,7 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Seacrh parameter
+## Search parameter
 
 Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
 
