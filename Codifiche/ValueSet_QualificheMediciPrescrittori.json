@@ -52,6 +52,10 @@
           {
             "code": "Z",
             "display": "Altra specializzazione"
+          },
+          {
+            "code": "X",
+            "display": "Non nota"
           }
         ]
       }
