@@ -3,7 +3,7 @@
 - [RLLocationPLOLetto](#rllocationploletto)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Seacrh parameter](#seacrh-parameter)
+  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
