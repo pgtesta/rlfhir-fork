@@ -225,6 +225,11 @@
         "max": "1"
       },
       {
+        "id": "Location.status",
+        "path": "Location.status",
+        "short": "Stato del posto letto"
+      },
+      {
         "id": "Location.operationalStatus",
         "path": "Location.operationalStatus",
         "short": "Stato di occupazione del posto letto",
