@@ -2,7 +2,7 @@
 	"resourceType": "Location",
 	"id": "esempio-Location-PLO-Stanza",
 	"meta": {
-		"lastUpdated": "2023-01-11T08:32:35Z",
+		"lastUpdated": "2023-05-17T13:05:09Z",
 		"profile": [
 			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza"
 		],
@@ -10,7 +10,7 @@
 	},
 	"identifier": [
 		{
-			"value": "03007800-E1-P1-S1"
+			"value": "03007800-3-1-44"
 		}
 	],
 	"physicalType": {
@@ -23,9 +23,10 @@
 		]
 	},
 	"managingOrganization": {
-		"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+		"reference": "Organization/c7d099b0-d5e0-11ec-be99-02001700b287",
+		"display": "PRESIDIO OSPEDALIERO DI VIMERCATE"
 	},
 	"partOf": {
-		"reference": "Location/242e2430-eda4-11ed-a05b-0242ac120003"
+		"reference": "Location/738dcede-f4b3-11ed-aa38-02001700b287"
 	}
 }
