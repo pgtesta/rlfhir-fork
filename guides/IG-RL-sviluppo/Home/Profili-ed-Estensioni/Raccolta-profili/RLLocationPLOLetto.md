@@ -64,7 +64,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+###	1. Ricerca posti letto occupati per ASST
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	status: da compilare con il valore “active”
+-	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
+
+Inoltre, è possibile valorizzare il seguente parametro:
+-	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+|     SCOPE    | Progetti individuali attivi |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&status=active<br>&organization.partof:Organization.identifier=030703<br>&_include=Location:organization|
+
+A titolo esemplificativo, la chiamata: 
+
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&status=active&organization.partof:Organization.identifier=030703&_include=Location:organization
+
+Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con status active, afferenti ad una determinata ASST e le Organization L2 referenziate mediante il parametro organization contenuto nella risorsa Location.
+Tutte le Organization verranno messe in coda alla fine di tutte le Location.
+
+Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-PLO-Location}}.
+
 
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
