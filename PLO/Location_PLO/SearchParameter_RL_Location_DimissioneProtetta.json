@@ -1,5 +1,6 @@
 {
   "resourceType": "SearchParameter",
+  "id": "RLLocationDimissioneProtetta",
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDimissioneProtetta",
   "name": "RLLocationDimissioneProtetta",
   "status": "draft",

@@ -1,5 +1,6 @@
 {
   "resourceType": "SearchParameter",
+  "id": "RLLocationDataOraDimissionePrevista",
   "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraDimissionePrevista",
   "name": "RLLocationDataOraDimissionePrevista",
   "status": "draft",
