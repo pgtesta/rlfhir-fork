@@ -666,6 +666,12 @@
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "Patient.generalPractitioner.reference",
+        "path": "Patient.generalPractitioner.reference",
+        "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza"
       }
     ]
   }
