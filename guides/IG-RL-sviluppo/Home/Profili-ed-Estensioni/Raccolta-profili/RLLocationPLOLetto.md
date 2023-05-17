@@ -90,7 +90,54 @@ Tutte le Organization verranno messe in coda alla fine di tutte le Location.
 
 Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-PLO-Location}}.
 
+###	2. Ricerca posti letto occupati per ente erogatore
 
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	status: da compilare con il valore “active”
+-	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
+
+Inoltre, è possibile valorizzare il seguente parametro:
+-	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+|     SCOPE    | Progetti individuali attivi |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&status=active<br>&organization.identifier=030703009<br>&_include=Location:organization|
+
+A titolo esemplificativo, la chiamata: 
+
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&status=active&organization.identifier=030703009&_include=Location:organization
+
+    Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con status active, afferenti ad un determinato ente e le Organization L2 referenziate mediante il parametro organization contenuto nella risorsa Location. 
+    Tutte le Organization verranno messe in coda alla fine di tutte le Location.
+
+###	3. Ricerca posti letto occupati ad un determinato reparto clinico
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	status: da compilare con il valore “active”
+-	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
+- repartoClinico: codici L3 del reparto di riferimento
+
+Inoltre, è possibile valorizzare il seguente parametro:
+-	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+|     SCOPE    | Progetti individuali attivi |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&status=active&organization.identifier=030703009&repartoClinico=0801,0842&_include=Location:organization|
+
+A titolo esemplificativo, la chiamata: 
+
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&status=active<br>&organization.identifier=030703009<br>&repartoClinico=0801,0842<br>&_include=Location:organization
+
+    Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con status active, afferenti ad uno o o più reparti clinici e le Organization L2 referenziate mediante il parametro organization contenuto nella risorsa Location. 
+    Tutte le Organization verranno messe in coda alla fine di tutte le Location.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -98,7 +145,6 @@ Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-PLO-
 
 Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard:
 - _profile
-- type
 - operational-status
 - organization
 - partof
@@ -108,18 +154,17 @@ Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dall
 
 I parametri di ricerca del profilo RLLocationPLOLetto, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
 
-| Nome e   link Simplifier | Descrizione | Espressione |
+| Nome | Descrizione | Link Simplifier |
 |---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationPhysicalType}} | Parametro di ricerca per la tipologia di Location. | physicalType.coding.code |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoClinico}} | Parametro di ricerca per il reparto clinico che ha in carico il paziente. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoFisico}} | Parametro di ricerca per il reparto fisico dove il paziente risulta allettato. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationAreaDegenza}} | Parametro di ricerca per l'area di degenza dove il paziente risulta allettato. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraAccettazione}} | Parametro di ricerca della data e ora di accettazione del paziente (ingresso in struttura). | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraDimissionePrevista}} | Parametro di ricerca della data e ora prevista per la dimissione del paziente | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDimissioneProtetta}} | Parametro di ricerca per ricercare se il posto letto è indicato per una dimissione protetta | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraOccupazioneLetto}} | Parametro di ricerca della data di occupazione del posto letto | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto').value |
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRegimeRicovero}} | Parametro di ricerca relativo al regime di ricovero | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero').value.coding.code |
-
+| physicalType | Parametro di ricerca per la tipologia di Location. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationPhysicalType}} |
+| repartoClinico | Parametro di ricerca per il reparto clinico che ha in carico il paziente. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoClinico}} |
+| repartoFisico | Parametro di ricerca per il reparto fisico dove il paziente risulta allettato. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoFisico}} |
+| areaDegenza | Parametro di ricerca per l'area di degenza dove il paziente risulta allettato. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationAreaDegenza}} |
+| dataOraAccettazione | Parametro di ricerca della data e ora di accettazione del paziente (ingresso in struttura). | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraAccettazione}} |
+| dataOraDimissionePrevista | Parametro di ricerca della data e ora prevista per la dimissione del paziente | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraDimissionePrevista}} |
+| dimissioneProtetta | Parametro di ricerca per ricercare se il posto letto è indicato per una dimissione protetta | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDimissioneProtetta}} |
+| dataOraOccupazioneLetto | Parametro di ricerca della data di occupazione del posto letto | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraOccupazioneLetto}} |
+| regimeRicovero | Parametro di ricerca relativo al regime di ricovero | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRegimeRicovero}} |
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
