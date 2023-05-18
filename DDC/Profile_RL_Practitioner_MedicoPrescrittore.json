@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-05-16T08:11:42.173456+00:00"
+    "lastUpdated": "2023-05-18T14:33:52.5209777+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
   "name": "RLPractitionerMedicoPrescrittore",
@@ -155,6 +155,21 @@
         "definition": "Stringa alfanumerica di max 40 caratteri.",
         "comment": "La fonte del dato è il campo DS_NOME dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "short": "Contatto telefonico del medico prescrittore",
+        "definition": "Stringa alfanumerica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "short": "Contatto telefonico del medico prescrittore",
+        "definition": "Stringa alfanumerica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
       },
       {
         "id": "Practitioner.address",
