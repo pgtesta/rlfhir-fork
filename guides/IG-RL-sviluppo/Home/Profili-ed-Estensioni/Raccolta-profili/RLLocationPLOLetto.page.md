@@ -135,7 +135,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&operational-status=O&organization.identifier=030703009&repartoClinico=0801,0842&_include=Location:organization&_include:iterate=Location:partof|
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&operational-status=O<br>&organization.identifier=030703009<br>&repartoClinico=0801,0842<br>&_include=Location:organization<br>&_include:iterate=Location:partof|
 
 A titolo esemplificativo, la chiamata: 
 
