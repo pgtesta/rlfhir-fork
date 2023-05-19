@@ -145,6 +145,13 @@
             "code": "dateTime"
           }
         ]
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
+        "short": "Note / commenti aggiuntivi",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "max": "1"
       }
     ]
   }
