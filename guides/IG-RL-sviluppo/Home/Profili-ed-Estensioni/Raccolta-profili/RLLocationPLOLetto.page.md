@@ -3,6 +3,9 @@
 - [RLLocationPLOLetto](#rllocationploletto)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
+    - [1. Ricerca posti letto occupati per ASST](#1-ricerca-posti-letto-occupati-per-asst)
+    - [2. Ricerca posti letto occupati per ente erogatore](#2-ricerca-posti-letto-occupati-per-ente-erogatore)
+    - [3. Ricerca posti letto occupati ad un determinato reparto clinico](#3-ricerca-posti-letto-occupati-ad-un-determinato-reparto-clinico)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -119,10 +122,10 @@ A titolo esemplificativo, la chiamata:
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	status: da compilare con il valore “active”
 -	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
-- repartoClinico: codici L3 del reparto di riferimento
+- repartoClinico: codici L3 del reparto clinico di riferimento
 
 Inoltre, è possibile valorizzare il seguente parametro:
--	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
+-	lastUpdated: data e ora dell'aggiornamento dei dati
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
@@ -169,4 +172,8 @@ I parametri di ricerca del profilo RLLocationPLOLetto, oltre ai campi standard d
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLLocationPLOLetto.
+Nella seguente tabella sono elencati i value set relativi al profilo RLLocationPLOLetto:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| regimeRicovero | Regime di ricovero del paziente | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero}} |
