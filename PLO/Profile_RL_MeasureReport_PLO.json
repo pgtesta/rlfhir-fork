@@ -51,6 +51,13 @@
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO"
       },
       {
+        "id": "MeasureReport.identifier",
+        "path": "MeasureReport.identifier",
+        "short": "Identificativo del report relativo alla misura del totale dei posti letto occupati",
+        "definition": "Stringa composta dalle seguenti informazioni: \"TOTPLO-codiceL2\"",
+        "max": "1"
+      },
+      {
         "id": "MeasureReport.status",
         "path": "MeasureReport.status",
         "fixedCode": "complete"

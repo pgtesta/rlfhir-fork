@@ -1,16 +1,17 @@
-# RLGoalObiettiviSalute
+# RLLocationPLOPiano
 
-- [RLGoalObiettiviSalute](#rlgoalobiettivisalute)
+- [RLLocationPLOPiano](#rllocationplopiano)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
+
 ## Descrizione
 
-Il profilo RLGoalObiettiviSalute è stato strutturato a partire dalla risorsa generica FHIR [Goal](http://hl7.org/fhir/R4/goal.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
+Profilo declinato a partire dalla risorsa standard FHIR [Location](http://hl7.org/fhir/R4/location.html) volto a contenere le informazioni relative piano di una struttura ospedaliera.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano}}.
 
 <br>
 <div class="tab">
@@ -25,37 +26,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-Goal-ObiettiviSalute}}
+{{link:esempio-Location-PLO-Piano}} 
 <br>
 </div>
 
@@ -65,18 +66,16 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 Attualmente non sono stati definiti criteri di ricerca.
 
+
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Goal.
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLGoalObiettiviSalute:
-
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
-|---|---|---|
-| Description | Codice e descrizione dell’obiettivo di salute | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute}}|
+Attualmente non sono definiti value set specifici per il profilo RLLocationPLOPiano.

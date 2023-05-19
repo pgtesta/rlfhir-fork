@@ -64,7 +64,7 @@
           ],
           "rules": "open"
         },
-        "min": 1
+        "min": 0
       },
       {
         "id": "Procedure.extension:dataPresaInCarico",
@@ -148,7 +148,7 @@
         "id": "Procedure.extension:numeroAccesso",
         "path": "Procedure.extension",
         "sliceName": "numeroAccesso",
-        "short": "Questo campo è da valorizzare obbligatoriamente nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. Il valore di default è '1' ed indica che la prestazione definita nel campo 'code' erogata nella data indicata nel campo 'perfomedDateTime' è stata effettuata durante il primo accesso giornaliero dell'operatore. Nel caso in cui la stessa prestazione venga erogata più volte nell'arco della stessa giornata tramite accessi domiciliari multipli questo campo deve essere valorizzato in modo incrementale coerentemente al numero di accesso. Si specifica che deve sempre essere creata un'istanza per ogni singola prestazione, anche se questa sia erogata più volte durante lo stesso accesso domiciliare. ",
+        "short": "Questo campo è da valorizzare obbligatoriamente nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. Il valore di default è '1' ed indica che la prestazione definita nel campo 'code' erogata nella data indicata nel campo 'perfomedDateTime' è stata effettuata durante il primo accesso giornaliero dell'operatore. Nel caso in cui la stessa prestazione venga erogata più volte nell'arco della stessa giornata tramite accessi domiciliari multipli questo campo deve essere valorizzato in modo incrementale coerentemente al numero di accesso. Si specifica che deve sempre essere creata un'istanza per ogni singola prestazione, anche se questa sia erogata più volte durante lo stesso accesso domiciliare.",
         "definition": "Stringa numerica di una cifra",
         "min": 0,
         "max": "1",
@@ -166,7 +166,7 @@
         "id": "Procedure.extension:tipoAccesso",
         "path": "Procedure.extension",
         "sliceName": "tipoAccesso",
-        "short": "Tipo di accesso dell'operatore a domicilio dell'assistito. Il campo può essere valorizzato nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. ",
+        "short": "Tipo di accesso dell'operatore a domicilio dell'assistito. Il campo può essere valorizzato nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare.",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del tipo di accesso contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 0,
         "max": "1",
@@ -358,6 +358,7 @@
         "id": "Procedure.performer",
         "path": "Procedure.performer",
         "short": "Operatore sanitario che ha erogato la prestazione",
+        "min": 1,
         "max": "1"
       },
       {

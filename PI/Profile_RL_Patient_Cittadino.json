@@ -64,7 +64,7 @@
           ],
           "rules": "open"
         },
-        "min": 5
+        "min": 4
       },
       {
         "id": "Patient.extension:cittadinanza",
@@ -269,73 +269,6 @@
             "code": "code"
           }
         ]
-      },
-      {
-        "id": "Patient.extension:ATSResidenza",
-        "path": "Patient.extension",
-        "sliceName": "ATSResidenza",
-        "short": "ATS di residenza del cittadino",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Patient.extension:ATSResidenza.value[x]",
-        "path": "Patient.extension.value[x]",
-        "short": "Codice L1 dell'ATS in cui il cittadino risiede",
-        "definition": "Stringa numerica di 6 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
-        "type": [
-          {
-            "code": "code"
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:responsabilitaGenitoriale",
-        "path": "Patient.extension",
-        "sliceName": "responsabilitaGenitoriale",
-        "short": "Responsabilità genitoriale nei confronti dell’assistito se minorenne",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del cittadino contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientResponsabilitaGenitoriale"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.code",
-        "path": "Patient.extension.value[x].coding.code",
-        "short": "Codice della responsabilità genitoriale nei confronti dell’assistito, se minorenne.",
-        "definition": "Stringa numerica di 1 carattere",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ResponsabilitaGenitoriale"
-        }
-      },
-      {
-        "id": "Patient.extension:responsabilitaGenitoriale.value[x].coding.display",
-        "path": "Patient.extension.value[x].coding.display",
-        "short": "Descrizione della responsabilità genitoriale nei confronti dell’assistito, se minorenne.",
-        "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "min": 1
       },
       {
         "id": "Patient.extension:tipologiaCittadino",
@@ -631,12 +564,26 @@
         "fixedCode": "home"
       },
       {
+        "id": "Patient.address:domicilioCittadino.line",
+        "path": "Patient.address.line",
+        "short": "Indirizzo del domicilio del paziente",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
         "id": "Patient.address:domicilioCittadino.city",
         "path": "Patient.address.city",
-        "short": "Codice ISTAT della città di domicilio del cittadino",
+        "short": "Codice ISTAT del comune di domicilio del cittadino",
         "definition": "Stringa numerica di 6 cifre",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "CAP del comune di domicilio del cittandino",
+        "definition": "Stringa numerica di 5 cifre",
+        "comment": "Il dato è detenuto da SGDT"
       },
       {
         "id": "Patient.maritalStatus",
@@ -675,9 +622,10 @@
       {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
-        "short": "Riferimento al profilo del MMG/PLS che assiste il cittadino",
-        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore",
-        "max": "1",
+        "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "3",
         "type": [
           {
             "code": "Reference",
@@ -686,6 +634,44 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Patient.generalPractitioner.extension",
+        "path": "Patient.generalPractitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Patient.generalPractitioner.extension:medicoSostituto",
+        "path": "Patient.generalPractitioner.extension",
+        "sliceName": "medicoSostituto",
+        "short": "Flag volto ad identificare se il medico che assiste il cittadino è un sostituto temporaneo del medico scelto dal cittadino",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientGeneralPractitionerMedicoSostituto"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.generalPractitioner.reference",
+        "path": "Patient.generalPractitioner.reference",
+        "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza"
       }
     ]
   }

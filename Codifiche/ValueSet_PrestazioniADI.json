@@ -31,7 +31,7 @@
           },
           {
             "code": "PRESTADI05",
-            "display": "Trasferimento competenze/educazione del caregiver/colloqui/nursing/addestramento"
+            "display": "Trasferimento competenze/educazione del caregiver/ colloqui/ nursing/addestramento"
           },
           {
             "code": "PRESTADI06",
@@ -102,44 +102,8 @@
             "display": "Trattamento di rieducazione dei disturbi neuropsicologici"
           },
           {
-            "code": "PRESTADI23",
-            "display": "Controllo del dolore"
-          },
-          {
-            "code": "PRESTADI24",
-            "display": "Controllo dispnea"
-          },
-          {
-            "code": "PRESTADI25",
-            "display": "Controllo sintomi gastro-enterici(nausea,vomito,ecc.)"
-          },
-          {
-            "code": "PRESTADI26",
-            "display": "Controllo sintomi psicocomportamentali (ansia, angoscia, agitazione, delirium, ecc.)"
-          },
-          {
             "code": "PRESTADI27",
-            "display": "Medicazioni complesse"
-          },
-          {
-            "code": "PRESTADI28",
-            "display": "Sedazione termimale/palliativista"
-          },
-          {
-            "code": "PRESTADI29",
-            "display": "Gestione di quadri clinici complessi (fistole, masse ulcerate, stomie, drenaggi, vaste lesioni cutanee, etc.)"
-          },
-          {
-            "code": "PRESTADI30",
-            "display": "Ascolto/supporto al paziente/famiglia"
-          },
-          {
-            "code": "PRESTADI31",
-            "display": "Accudimento del paziente (con autonomia ridotta o assente)"
-          },
-          {
-            "code": "PRESTADI32",
-            "display": "Prestazione di telemedicina"
+            "display": "Medicazioni complesse (lesioni cutanee da pressione, vascolari, neoplastiche, post chirurgiche, post attiniche ecc.)"
           }
         ]
       }
