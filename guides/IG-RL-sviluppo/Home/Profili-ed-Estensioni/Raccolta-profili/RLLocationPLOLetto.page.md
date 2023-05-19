@@ -3,9 +3,9 @@
 - [RLLocationPLOLetto](#rllocationploletto)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [1. Ricerca posti letto occupati per ASST](#1-ricerca-posti-letto-occupati-per-asst)
-    - [2. Ricerca posti letto occupati per ente erogatore](#2-ricerca-posti-letto-occupati-per-ente-erogatore)
-    - [3. Ricerca posti letto occupati ad un determinato reparto clinico](#3-ricerca-posti-letto-occupati-ad-un-determinato-reparto-clinico)
+    - [1. Ricerca posti letto occupati per identificativo L1](#1-ricerca-posti-letto-occupati-per-identificativo-l1)
+    - [2. Ricerca posti letto occupati per identificativo L2](#2-ricerca-posti-letto-occupati-per-identificativo-l2)
+    - [3. Ricerca posti letto occupati per identificativo L3 (reparto clinico)](#3-ricerca-posti-letto-occupati-per-identificativo-l3-reparto-clinico)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -67,11 +67,11 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-###	1. Ricerca posti letto occupati per ASST
+###	1. Ricerca posti letto occupati per identificativo L1
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
--	status: da compilare con il valore “active”
--	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
+-	operational-status: da compilare con il valore “O” per indicare che il posto letto è occupato
+-	organization.partof:Organization.identifier: codice L1 dell'ente di riferimento
 
 Inoltre, è possibile valorizzare il seguente parametro:
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
@@ -82,25 +82,26 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&status=active<br>&organization.partof:Organization.identifier=030703<br>&_include=Location:organization|
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&operational-status=O<br>&organization.partof:Organization.identifier=030703<br>&_include=Location:organization<br>&_include:iterate=Location:partof|
 
 A titolo esemplificativo, la chiamata: 
 
-    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&status=active&organization.partof:Organization.identifier=030703&_include=Location:organization
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&operational-status=O&organization.partof:Organization.identifier=030703&_include=Location:organization&_include:iterate=Location:partof
 
-Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con status active, afferenti ad una determinata ASST e le Organization L2 referenziate mediante il parametro organization contenuto nella risorsa Location.
-Tutte le Organization verranno messe in coda alla fine di tutte le Location.
+Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con lo stato del letto "occupato", afferenti ad un determinato codice L1.
+Il Bundle conterrà anche le Location rappresentanti Stanza, Piano ed Edificio referenziate dal profilo risultante dalla ricerca. Verranno inoltre restituite le Organization a cui afferiscono i letti occupati.
 
 Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-PLO-Location}}.
 
-###	2. Ricerca posti letto occupati per ente erogatore
+###	2. Ricerca posti letto occupati per identificativo L2
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
--	status: da compilare con il valore “active”
--	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
+-	operational-status: da compilare con il valore “O” per indicare che il posto letto è occupato
+-	organization.identifier: codice L2 dell'ente di riferimento
 
-Inoltre, è possibile valorizzare il seguente parametro:
+Inoltre, è possibile valorizzare i seguenti parametri:
 -	lastUpdated: data e ora dell’ultimo aggiornamento dei dati
+- organization.partof:Organization.identifier: codice L1 dell'ente di riferimento
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
@@ -108,24 +109,25 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&status=active<br>&organization.identifier=030703009<br>&_include=Location:organization|
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&operational-status=O<br>&organization.identifier=030703009<br>&_include=Location:organization<br>&_include:iterate=Location:partof|
 
 A titolo esemplificativo, la chiamata: 
 
-    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&status=active&organization.identifier=030703009&_include=Location:organization
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&operational-status=O&organization.identifier=030703009&_include=Location:organization&_include:iterate=Location:partof
 
-    Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con status active, afferenti ad un determinato ente e le Organization L2 referenziate mediante il parametro organization contenuto nella risorsa Location. 
-    Tutte le Organization verranno messe in coda alla fine di tutte le Location.
+Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con lo stato del letto "occupato", afferenti ad un determinato codice L2.
+Il Bundle conterrà anche le Location rappresentanti Stanza, Piano ed Edificio referenziate dal profilo risultante dalla ricerca. Verranno inoltre restituite le Organization a cui afferiscono i letti occupati.
 
-###	3. Ricerca posti letto occupati ad un determinato reparto clinico
+###	3. Ricerca posti letto occupati per identificativo L3 (reparto clinico)
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
--	status: da compilare con il valore “active”
--	organization.partof:Organization.identifier: codice L2 dell'ASST di riferimento
+-	operational-status: da compilare con il valore “O” per indicare che il posto letto è occupato
+-	organization.identifier: codice L2 dell'ente di riferimento
 - repartoClinico: codici L3 del reparto clinico di riferimento
 
 Inoltre, è possibile valorizzare il seguente parametro:
 -	lastUpdated: data e ora dell'aggiornamento dei dati
+- organization.partof:Organization.identifier: codice L1 dell'ente di riferimento
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
@@ -133,14 +135,14 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&status=active&organization.identifier=030703009&repartoClinico=0801,0842&_include=Location:organization|
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&operational-status=O&organization.identifier=030703009&repartoClinico=0801,0842&_include=Location:organization&_include:iterate=Location:partof|
 
 A titolo esemplificativo, la chiamata: 
 
-    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&status=active<br>&organization.identifier=030703009<br>&repartoClinico=0801,0842<br>&_include=Location:organization
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&operational-status=O<br>&organization.identifier=030703009<br>&repartoClinico=0801,0842<br>&_include=Location:organization<br>&_include:iterate=Location:partof
 
-    Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con status active, afferenti ad uno o o più reparti clinici e le Organization L2 referenziate mediante il parametro organization contenuto nella risorsa Location. 
-    Tutte le Organization verranno messe in coda alla fine di tutte le Location.
+Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con lo stato del letto "occupato", afferenti ad uno o più reparti clinici, afferenti ad un determinato codice L2.
+Il Bundle conterrà anche le Location rappresentanti Stanza, Piano ed Edificio referenziate dal profilo risultante dalla ricerca. Verranno inoltre restituite le Organization a cui afferiscono i letti occupati.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

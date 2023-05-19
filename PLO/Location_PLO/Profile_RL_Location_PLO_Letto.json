@@ -233,6 +233,16 @@
         }
       },
       {
+        "id": "Location.operationalStatus.system",
+        "path": "Location.operationalStatus.system",
+        "short": "Sisitema di codifica"
+      },
+      {
+        "id": "Location.operationalStatus.code",
+        "path": "Location.operationalStatus.code",
+        "short": "Codice stato di occupazione del posto letto"
+      },
+      {
         "id": "Location.name",
         "path": "Location.name",
         "short": "Nome identificativo letto"
