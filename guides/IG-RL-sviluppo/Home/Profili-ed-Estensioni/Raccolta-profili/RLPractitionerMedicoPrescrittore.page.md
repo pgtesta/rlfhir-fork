@@ -85,4 +85,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| code | Codifica delle qualifiche dei medici prescrittori | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
+| qualification.code | Codifica delle qualifiche dei medici prescrittori | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
