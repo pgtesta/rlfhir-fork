@@ -1,6 +1,9 @@
 # {{page-title}}
 
-Lo scopo del caso d’uso è ottenere dati aggiornati sull’occupazione dei posti letto delle strutture socio-sanitarie di diversa tipologia, ad esempio: RSA, RSD, ecc., presenti in Regione Lombardia.
+Lo scopo del caso d’uso è ottenere dati aggiornati relativi all’occupazione dei posti letto  dei pazienti assistiti dalle strutture socio-sanitarie di diversa tipologia, ad esempio: RSA, RSD, ecc., presenti in Regione Lombardia, in un'ottica di standardizzazione per la gestione, lo scambio e la consultazione dei dati.
+
+Di seguito vengono descritti i requisiti funzionali dell'interfaccia applicativa del Server FHIR della Nuova Piattaforma Regionale di Integrazione (NPRI).
+
 
 Il seguente elenco definisce il principale contenuto informativo che sarà disponibile per questo caso d’uso.
 
@@ -45,3 +48,5 @@ Quando il server risponde ad una HTTP Request, elabora la chiamata a seconda del
 * **Body**: corpo della risposta in formato JSON che contiene l’informazione richiesta dal client a seguito della richiesta;
 * **Codice di stato HTTP**: restituito dal server in modo da informare il client sul risultato della richiesta (ad esempio 200: indica che la risorsa è stata trovata e il messaggio è stato elaborato con successo);
 * **Headers**: forniscono informazioni extra sulla risposta.
+
+La risposta conterrà informazioni relative alla struttura di riferimento, all'identificativo del posto letto, all'area di degenza, alla stanza, al piano. Inoltre, verranno forniti ulteriori dettagli riguardo al reparto fisico e clinico, al regime di ricovero e all'eventuale dimissione protetta.
