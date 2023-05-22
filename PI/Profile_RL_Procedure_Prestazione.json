@@ -224,7 +224,7 @@
         "id": "Procedure.basedOn:RLServiceRequestServiziSocioAssistenziali",
         "path": "Procedure.basedOn",
         "sliceName": "RLServiceRequestServiziSocioAssistenziali",
-        "short": "Riferimento alla richiesta di attivazione delle cure domiciliari",
+        "short": "Riferimento alla richiesta di attivazione delle cure domiciliari.",
         "definition": "Reference al profilo RLServiceRequestServiziSocioAssistenziali contente i dettagli della richiesta di attivazione delle cure domiciliari",
         "comment": "Campo da compilare nel caso in cui la prestazione sia erogata in setting assistenziale domiciliare",
         "min": 1,
