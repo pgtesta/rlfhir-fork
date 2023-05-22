@@ -135,11 +135,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 |---|---|
 | VERB | GET |
 | BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&operational-status=O&organization.identifier=030703009&repartoClinico=0801,0842&_include=Location:organization&_include:iterate=Location:partof|
+| URL | Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&operational-status=O<br>&organization.identifier=030703009<br>&repartoClinico=0801,0842<br>&_include=Location:organization<br>&_include:iterate=Location:partof|
 
 A titolo esemplificativo, la chiamata: 
 
-    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto<br>&operational-status=O<br>&organization.identifier=030703009<br>&repartoClinico=0801,0842<br>&_include=Location:organization<br>&_include:iterate=Location:partof
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/Location?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto&operational-status=O&organization.identifier=030703009&repartoClinico=0801,0842&_include=Location:organization&_include:iterate=Location:partof
 
 Il risultato della precedente GET è un Bundle che contiene tutte le Location identificate dal profilo RLLocationPLOLetto, con lo stato del letto "occupato", afferenti ad uno o più reparti clinici, afferenti ad un determinato codice L2.
 Il Bundle conterrà anche le Location rappresentanti Stanza, Piano ed Edificio referenziate dal profilo risultante dalla ricerca. Verranno inoltre restituite le Organization a cui afferiscono i letti occupati.
