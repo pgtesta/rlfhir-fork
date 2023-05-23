@@ -76,17 +76,15 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario}}
       </td>
       <td>
-        ValueSet relativo alla codifica dei distretti sanitari.
-        Si noti che il link sottostante non riporta volutamente
-        la lista completa dei distretti e dei relativi codici
-        identificativi in quanto possono essere soggetti ad
-        aggiornamenti e modifiche da parte del SISS. Per consultare
-        la versione aggiornata dei distretti sanitari, l'ASST
-        di Afferenza e la relativa ATS si rimanda alla tabella
-        “LR22: Relazione Distretto-ASST-ATS” descritta nel
-        documento DC-DDC-SIAA#02 il cui contenuto informativo è accessibile
-        tramite i servizi riportati nel documento
-        DC-DDC-SIAA#01.
+        ValueSet relativo alla codifica dei distretti sanitari. Si noti che il
+        link sottostante non riporta volutamente la lista completa dei distretti
+        e dei relativi codici identificativi in quanto possono essere soggetti
+        ad aggiornamenti e modifiche da parte del SISS. Per consultare la
+        versione aggiornata dei distretti sanitari, l'ASST di Afferenza e la
+        relativa ATS si rimanda alla tabella “LR22: Relazione
+        Distretto-ASST-ATS” descritta nel documento DC-DDC-SIAA#02 il cui
+        contenuto informativo è accessibile tramite i servizi riportati nel
+        documento DC-DDC-SIAA#01.
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario
@@ -97,8 +95,8 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco}}
       </td>
       <td>
-        ValueSet che identifica l'anagrafica dei farmaci secondo
-        la codifica ministeriale
+        ValueSet che identifica l'anagrafica dei farmaci secondo la codifica
+        ministeriale
       </td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco</td>
     </tr>
@@ -107,8 +105,8 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC}}
       </td>
       <td>
-        ValueSet che identifica l'anagrafica dei farmaci secondo
-        la codifica ministeriale AIC
+        ValueSet che identifica l'anagrafica dei farmaci secondo la codifica
+        ministeriale AIC
       </td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC</td>
     </tr>
@@ -117,8 +115,8 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC}}
       </td>
       <td>
-        ValueSet che identifica l'anagrafica dei farmaci secondo
-        la codifica ministeriale ATC
+        ValueSet che identifica l'anagrafica dei farmaci secondo la codifica
+        ministeriale ATC
       </td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC</td>
     </tr>
@@ -127,8 +125,8 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE}}
       </td>
       <td>
-        ValueSet che identifica l'anagrafica dei farmaci secondo
-        la codifica ministeriale GE
+        ValueSet che identifica l'anagrafica dei farmaci secondo la codifica
+        ministeriale GE
       </td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE</td>
     </tr>
@@ -150,29 +148,12 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione}}
-      </td>
-      <td>ValueSet relativo ai motivi della sospensione</td>
-      <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione
-      </td>
-    </tr>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero}}
-      </td>
-      <td>ValueSet relativo al regime di ricovero</td>
-      <td>https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero</td>
-    </tr>
-    <tr>
-      <td>
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore}}
       </td>
       <td>
-        ValueSet relativo ai codici di errori ottenuti in
-        risposta all'interrogazione di API FHIR. Per chi espone
-        API, si raccomanda l'utilizzo degli attributi code e
-        display per maggiore leggibilita.
+        ValueSet relativo ai codici di errori ottenuti in risposta
+        all'interrogazione di API FHIR. Per chi espone API, si raccomanda
+        l'utilizzo degli attributi code e display per maggiore leggibilita.
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore
@@ -183,10 +164,9 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore}}
       </td>
       <td>
-        ValueSet relativo ai dettagli degli errori ottenuti
-        in risposta all'interrogazione di API FHIR. Per chi
-        espone API, si raccomanda l'utilizzo degli attributi
-        code e display per maggiore leggibilita.
+        ValueSet relativo ai dettagli degli errori ottenuti in risposta
+        all'interrogazione di API FHIR. Per chi espone API, si raccomanda
+        l'utilizzo degli attributi code e display per maggiore leggibilita.
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore
@@ -194,11 +174,25 @@
     </tr>
     <tr>
       <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}
+      </td>
+      <td>ValueSet relativo alla tipologia di prestazione</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero}}
+      </td>
+      <td>ValueSet relativo al regime di ricovero</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero</td>
+    </tr>
+    <tr>
+      <td>
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-EsitoInterRAI}}
       </td>
       <td>
-        ValueSet relativo alla codifica degli esiti della
-        valutazione InterRAI-HomeCare
+        ValueSet relativo alla codifica degli esiti della valutazione
+        InterRAI-HomeCare
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-EsitoInterRAI
@@ -218,8 +212,8 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu}}
       </td>
       <td>
-        ValueSet relativo alla modalità di erogazione
-        dell'intervento educazionale
+        ValueSet relativo alla modalità di erogazione dell'intervento
+        educazionale
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu
@@ -255,8 +249,7 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche}}
       </td>
       <td>
-        ValueSet relativo alla codifica delle
-        prestazioni infermieristiche
+        ValueSet relativo alla codifica delle prestazioni infermieristiche
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche
@@ -368,14 +361,11 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione}}
       </td>
+      <td>ValueSet relativo ai motivi della sospensione</td>
       <td>
-        ValueSet relativo alla tipologia di luogo in cui
-        vengono erogate le prestazioni di cure domiciliari
-      </td>
-      <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo
+        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione
       </td>
     </tr>
     <tr>
@@ -392,8 +382,8 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC}}
       </td>
       <td>
-        ValueSet relativo alla codifica del soggetto che ha
-        proposto la presa in carico
+        ValueSet relativo alla codifica del soggetto che ha proposto la presa in
+        carico
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC
@@ -424,11 +414,14 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo}}
       </td>
-      <td>ValueSet relativo alla tipologia di operatore ADI</td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore
+        ValueSet relativo alla tipologia di luogo in cui vengono erogate le
+        prestazioni di cure domiciliari
+      </td>
+      <td>
+        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo
       </td>
     </tr>
     <tr>
@@ -442,17 +435,19 @@
     </tr>
     <tr>
       <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore}}
+      </td>
+      <td>ValueSet relativo alla tipologia di operatore ADI</td>
+      <td>
+        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore
+      </td>
+    </tr>
+    <tr>
+      <td>
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio}}
       </td>
       <td>ValueSet relativo alla codifica del titolo di studio</td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}
-      </td>
-      <td>ValueSet relativo alla tipologia di prestazione</td>
-      <td>https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni</td>
     </tr>
   </tbody>
 </table>
