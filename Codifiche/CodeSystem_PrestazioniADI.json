@@ -11,95 +11,87 @@
   "concept": [
     {
       "code": "PRESTADI01",
-      "display": "Accessi domiciliari"
-    },
-    {
-      "code": "PRESTADI02",
       "display": "Visita Domiciliare"
     },
     {
-      "code": "PRESTADI03",
+      "code": "PRESTADI02",
       "display": "Prelievo ematico"
     },
     {
-      "code": "PRESTADI04",
+      "code": "PRESTADI03",
       "display": "Esami strumentali"
     },
     {
-      "code": "PRESTADI05",
+      "code": "PRESTADI04",
       "display": "Trasferimento competenze/educazione del caregiver/ colloqui/ nursing/addestramento"
     },
     {
-      "code": "PRESTADI06",
+      "code": "PRESTADI05",
       "display": "Supporto psicologico equipes-paziente-famiglia"
     },
     {
-      "code": "PRESTADI07",
+      "code": "PRESTADI06",
       "display": "Terapie iniettive attraverso le diverse vie di somministrazione"
     },
     {
-      "code": "PRESTADI08",
+      "code": "PRESTADI07",
       "display": "Terapia infusionale SC e EV"
     },
     {
-      "code": "PRESTADI09",
+      "code": "PRESTADI08",
       "display": "Emotrasfusione"
     },
     {
-      "code": "PRESTADI10",
+      "code": "PRESTADI09",
       "display": "Paracentesi, toracentesi e altre manovre invasive, gestione di cateteri spinali o sistemi di neuromodulazione del dolore"
     },
     {
-      "code": "PRESTADI11",
+      "code": "PRESTADI10",
       "display": "Gestione ventilazione meccanica - tracheostomia – sostituzione canula – bronco aspirazione - ossigeniterapia"
     },
     {
-      "code": "PRESTADI12",
+      "code": "PRESTADI11",
       "display": "Gestione nutrizione enterale (SNG PEG)"
     },
     {
-      "code": "PRESTADI13",
+      "code": "PRESTADI12",
       "display": "Gestione nutrizione parenterale – gestione CVC"
     },
     {
-      "code": "PRESTADI14",
+      "code": "PRESTADI13",
       "display": "Gestione cateterismo urinario comprese le derivazioni urinarie"
     },
     {
-      "code": "PRESTADI15",
+      "code": "PRESTADI14",
       "display": "Gestione alvo comprese le enterostomie"
     },
     {
-      "code": "PRESTADI16",
+      "code": "PRESTADI15",
       "display": "Igiene personale e mobilizzazione"
     },
     {
-      "code": "PRESTADI17",
+      "code": "PRESTADI16",
       "display": "Medicazioni semplici (lesioni cutanee da pressione, vascolari, neoplastiche, post chirurgiche, post attiniche, ect..)"
     },
     {
-      "code": "PRESTADI18",
+      "code": "PRESTADI17",
       "display": "Medicazioni complesse (lesioni cutanee da pressione, vascolari, neoplastiche, post chirurgiche, post attiniche ect..)"
     },
     {
-      "code": "PRESTADI19",
+      "code": "PRESTADI18",
       "display": "Fasciature semplici, bendaggi, bendaggi adesivo elastici"
     },
     {
-      "code": "PRESTADI20",
+      "code": "PRESTADI19",
       "display": "Trattamento di rieducazione motoria - respiratoria"
     },
     {
-      "code": "PRESTADI21",
+      "code": "PRESTADI20",
       "display": "Trattamento di rieducazione del linguaggio"
     },
     {
-      "code": "PRESTADI22",
+      "code": "PRESTADI21",
       "display": "Trattamento di rieducazione dei disturbi neuropsicologici"
-    },
-    {
-      "code": "PRESTADI27",
-      "display": "Medicazioni complesse (lesioni cutanee da pressione, vascolari, neoplastiche, post chirurgiche, post attiniche ecc.)"
     }
   ]
 }
