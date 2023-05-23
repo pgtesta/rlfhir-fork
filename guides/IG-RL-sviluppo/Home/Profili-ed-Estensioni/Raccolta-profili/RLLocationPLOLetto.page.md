@@ -59,7 +59,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-Location-PLO-Letto}}
+{{link:Location/esempio-Location-PLO-Letto}}
 <br>
 </div>
 

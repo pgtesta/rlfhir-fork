@@ -2,70 +2,74 @@
 	"resourceType": "MeasureReport",
 	"id": "esempio-measureReport-PLO",
 	"meta": {
-		"lastUpdated": "2023-01-11T08:32:35Z",
-		"profile": [
-			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO"
-		],
-		"versionId": "1"
+	  "lastUpdated": "2023-01-11T08:32:35Z",
+	  "profile": [
+		"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO"
+	  ],
+	  "versionId": "1"
 	},
-	"identifier": "TOTPLO-03007800",
+	"identifier": [
+	  {
+		"value": "TOTPLO-03007800"
+	  }
+	],
 	"status": "complete",
 	"type": "summary",
 	"measure": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO",
 	"reporter": {
-		"reference": "Organization/1"
+	  "reference": "Organization/1"
 	},
 	"period": {
-		"end": "2023-01-11"
+	  "end": "2023-01-11"
 	},
 	"group": [
-		{
-			"code": {
-				"coding": [
-					{
-						"code": "0843"
-					}
-				]
-			},
-			"measureScore": {
-				"value": 5
+	  {
+		"code": {
+		  "coding": [
+			{
+			  "code": "0843"
 			}
+		  ]
 		},
-		{
-			"code": {
-				"coding": [
-					{
-						"code": "3201"
-					}
-				]
-			},
-			"measureScore": {
-				"value": 10
-			}
-		},
-		{
-			"code": {
-				"coding": [
-					{
-						"code": "0801"
-					}
-				]
-			},
-			"measureScore": {
-				"value": 7
-			}
-		},
-		{
-			"code": {
-				"coding": [
-					{
-						"code": "03007800"
-					}
-				]
-			},
-			"measureScore": {
-				"value": 57
-			}
+		"measureScore": {
+		  "value": 5
 		}
+	  },
+	  {
+		"code": {
+		  "coding": [
+			{
+			  "code": "3201"
+			}
+		  ]
+		},
+		"measureScore": {
+		  "value": 10
+		}
+	  },
+	  {
+		"code": {
+		  "coding": [
+			{
+			  "code": "0801"
+			}
+		  ]
+		},
+		"measureScore": {
+		  "value": 7
+		}
+	  },
+	  {
+		"code": {
+		  "coding": [
+			{
+			  "code": "03007800"
+			}
+		  ]
+		},
+		"measureScore": {
+		  "value": 57
+		}
+	  }
 	]
-}
+  }
