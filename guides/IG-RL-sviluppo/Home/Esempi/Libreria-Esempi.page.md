@@ -271,18 +271,6 @@
         <tr>
           <td>PLO</td>
           <td>Bundle</td>
-          <td>Esempio di bundle di risposta per il numero di posti letto occupati</td>
-          <td>{{link:Bundle/esempio-bundle-PLO-esitopositivo}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Observation</td>
-          <td>Esempio del profilo RLObservationPLO</td>
-          <td>{{link:Observation/esempio-PLO}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Bundle</td>
           <td>Esempio dei posti letto occupati (risorsa Location)</td>
           <td>{{link:Bundle/esempio-PLO-Location}}</td>
         </tr>
