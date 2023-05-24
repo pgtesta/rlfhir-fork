@@ -121,13 +121,19 @@
         <tr>
           <td>Errori</td>
           <td>Bundle</td>
-          <td>Esempio di messaggio di notifica errore di coerenza in caso di ricerca tramite parametri</td>
+          <td>
+            Esempio di messaggio di notifica errore di coerenza in caso
+            di ricerca tramite parametri
+          </td>
           <td>{{link:Bundle/esempio-bundle-notifica-errori-bundle}}</td>
         </tr>
         <tr>
           <td>Errori</td>
           <td>Bundle</td>
-          <td>Esempio di messaggio di notifica errore di coerenza in caso di ricerca tramite ID</td>
+          <td>
+            Esempio di messaggio di notifica errore di coerenza in caso
+            di ricerca tramite ID
+          </td>
           <td>{{link:Bundle/esempio-bundle-notifica-errori-resource}}</td>
         </tr>
         <tr>
@@ -194,37 +200,50 @@
           <td>PI</td>
           <td>MedicationRequest</td>
           <td>Esempio del profilo RLMedicationRequestTerapiaFarmacologica</td>
-          <td>{{link:MedicationRequest/esempio-MedicationRequest-TerapiaFarmacologica}}</td>
+          <td>
+            {{link:MedicationRequest/esempio-MedicationRequest-TerapiaFarmacologica}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>MedicationRequest</td>
           <td>Esempio del profilo RLMedicationRequestRequestOssigenoterapia</td>
-          <td>{{link:MedicationRequest/esempio-MedicationRequest-Ossigenoterapia}}</td>
+          <td>
+            {{link:MedicationRequest/esempio-MedicationRequest-Ossigenoterapia}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Observation</td>
-          <td>Esempio del profilo RLObservationEsitoValutazione (scheda triage)</td>
+          <td>
+            Esempio del profilo RLObservationEsitoValutazione
+            (scheda triage)
+          </td>
           <td>{{link:Observation/esempio-Observation-EsitoValutazione-triage}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Observation</td>
           <td>Esempio del profilo RLObservationEsitoValutazione (interRAI)</td>
-          <td>{{link:Observation/esempio-Observation-EsitoValutazione-interRAI}}</td>
+          <td>
+            {{link:Observation/esempio-Observation-EsitoValutazione-interRAI}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Practitioner</td>
           <td>Esempio del profilo RLPractitionerProfessionistaSanitario</td>
-          <td>{{link:Practitioner/esempio-Practitioner-ProfessionistaSanitario}}</td>
+          <td>
+            {{link:Practitioner/esempio-Practitioner-ProfessionistaSanitario}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>PractitionerRole</td>
           <td>Esempio del profilo RLPractitionerRoleProfessionistaSanitario</td>
-          <td>{{link:PractitionerRole/esempio-PractitionerRole-ProfessionistaSanitario}}</td>
+          <td>
+            {{link:PractitionerRole/esempio-PractitionerRole-ProfessionistaSanitario}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
@@ -236,19 +255,28 @@
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestInterventoEducazionale</td>
-          <td>{{link:ServiceRequest/esempio-ServiceRequest-InterventoEducazionale}}</td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-InterventoEducazionale}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
-          <td>Esempio del profilo RLServiceRequestPrestazioniInfermieristiche</td>
-          <td>{{link:ServiceRequest/esempio-ServiceRequest-PrestazioniInfermieristiche}}</td>
+          <td>
+            Esempio del
+            profilo RLServiceRequestPrestazioniInfermieristiche
+          </td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-PrestazioniInfermieristiche}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestPrestazioniSpecialistiche</td>
-          <td>{{link:ServiceRequest/esempio-ServiceRequest-PrestazioniSpecialistiche}}</td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-PrestazioniSpecialistiche}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
@@ -260,7 +288,9 @@
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestServiziSocioAssistenziali</td>
-          <td>{{link:ServiceRequest/esempio-ServiceRequest-ServiziSocioAssistenziali}}</td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-ServiziSocioAssistenziali}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
@@ -271,20 +301,44 @@
         <tr>
           <td>PLO</td>
           <td>Bundle</td>
-          <td>Esempio di bundle di risposta per il numero di posti letto occupati</td>
-          <td>{{link:Bundle/esempio-bundle-PLO-esitopositivo}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Observation</td>
-          <td>Esempio del profilo RLObservationPLO</td>
-          <td>{{link:Observation/esempio-PLO}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Bundle</td>
           <td>Esempio dei posti letto occupati (risorsa Location)</td>
           <td>{{link:Bundle/esempio-PLO-Location}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOEdificio</td>
+          <td>{{link:Location/esempio-Location-PLO-Edificio}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOLetto</td>
+          <td>{{link:Location/esempio-Location-PLO-Letto}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOPiano</td>
+          <td>{{link:Location/esempio-Location-PLO-Piano}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOStanza</td>
+          <td>{{link:Location/esempio-Location-PLO-Stanza}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Measure</td>
+          <td>Esempio del profilo RLMeasurePLO</td>
+          <td>{{link:Measure/esempio-measure-PLO}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>MeasureReport</td>
+          <td>Esempio del profilo RLMeasureReportPLO</td>
+          <td>{{link:MeasureReport/esempio-measureReport-PLO}}</td>
         </tr>
       </tbody>
     </table>
