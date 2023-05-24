@@ -15,8 +15,18 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, 
 
 ## Novità
 La versione corrente della guida implementativa gestisce i seguenti concetti:
-- Inclusione delle valutazioni del paziente nel bundle di risorse contenute in fase di consultazione di un progetto individuale (si veda il criterio di ricerca ”progetti individuali attivi” del profilo RLCarePlanProgettoIndividuale).
-- Gestione di due percorsi di cure domiciliari attivati ad un paziente nell’ambito di una stessa pratica e definiti all’interno del progetto individuale (si veda la mappatura della risorsa RLServiceRequestServiziSocioAssistenziali).
+- Inclusione dei distretti di accreditamento e della relativa ASST e ATS di afferenza per gli enti erogatori di
+  servizi sociosanitari (si veda la mappatura della risorsa RLOrganizationL2).
+- Inclusione dell’indirizzo di domicilio nella risorsa RLPatientCittadino ed eliminazione dei campi
+  reponsabilitàGenitoriale ed ATSResidenza (rimappata nel campo generalPractitioner).
+- Inclusione del numero di telefono ed indirizzo dell’ambulatorio nella risorsa RLPractitionerRoleMedicoPrescritore. 
+- Inclusione del campo note nella risorsa RLServiceRequestRivalutazione.
+- Revisione dei seguenti value-set: “Codifica della causale di dimissione di un ricovero domiciliare”, “Codifica del
+  soggetto che ha proposto la presa in carico”, “Codifica dei motivi della sospensione temporanea del ricovero domiciliare”, “Codifica delle prestazioni infermieristiche”, “Codifica della responsabilità genitoriale”, “Codifica delle prestazioni dei servizi di cure domiciliari”, “Codifica delle qualifiche dei medici prescrittori”.
+- Eliminato il value-set “Codifica della responsabilità genitoriale”,
+- Inclusione dei profili relativi al caso d'uso "Posti Letto Occupati" (RLLocationPLOEdificio, RLLocationPLOLetto,
+  RLLocationPLOPiano, RLLocationPLOStanza, RLMeasurePLO e RLMeasureReportPLO) 
+
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
 
