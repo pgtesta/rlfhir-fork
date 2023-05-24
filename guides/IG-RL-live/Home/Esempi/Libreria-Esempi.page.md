@@ -298,48 +298,6 @@
           <td>Esempio del profilo RLServiceRequestSospensioneADI</td>
           <td>{{link:ServiceRequest/esempio-ServiceRequest-SospensioneADI}}</td>
         </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Bundle</td>
-          <td>Esempio dei posti letto occupati (risorsa Location)</td>
-          <td>{{link:Bundle/esempio-PLO-Location}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Location</td>
-          <td>Esempio del profilo RLLocationPLOEdificio</td>
-          <td>{{link:Location/esempio-Location-PLO-Edificio}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Location</td>
-          <td>Esempio del profilo RLLocationPLOLetto</td>
-          <td>{{link:Location/esempio-Location-PLO-Letto}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Location</td>
-          <td>Esempio del profilo RLLocationPLOPiano</td>
-          <td>{{link:Location/esempio-Location-PLO-Piano}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Location</td>
-          <td>Esempio del profilo RLLocationPLOStanza</td>
-          <td>{{link:Location/esempio-Location-PLO-Stanza}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>Measure</td>
-          <td>Esempio del profilo RLMeasurePLO</td>
-          <td>{{link:Measure/esempio-measure-PLO}}</td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>MeasureReport</td>
-          <td>Esempio del profilo RLMeasureReportPLO</td>
-          <td>{{link:MeasureReport/esempio-measureReport-PLO}}</td>
-        </tr>
       </tbody>
     </table>
   </body>
