@@ -81,4 +81,8 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLPractitionerMedicoPrescrittore.
+Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerMedicoPrescrittore:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| qualification.code | Codifica delle qualifiche dei medici prescrittori | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
