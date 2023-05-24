@@ -24,8 +24,7 @@ La versione corrente della guida implementativa gestisce i seguenti concetti:
 - Revisione dei seguenti value-set: “Codifica della causale di dimissione di un ricovero domiciliare”, “Codifica del
   soggetto che ha proposto la presa in carico”, “Codifica dei motivi della sospensione temporanea del ricovero domiciliare”, “Codifica delle prestazioni infermieristiche”, “Codifica della responsabilità genitoriale”, “Codifica delle prestazioni dei servizi di cure domiciliari”, “Codifica delle qualifiche dei medici prescrittori”.
 - Eliminato il value-set “Codifica della responsabilità genitoriale”.
-- Inclusione dei profili relativi al caso d'uso "Posti Letto Occupati" (RLLocationPLOEdificio, RLLocationPLOLetto,
-  RLLocationPLOPiano, RLLocationPLOStanza, RLMeasurePLO e RLMeasureReportPLO) 
+- Inclusione dei profili relativi al caso d'uso "Posti Letto Occupati". 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
 
