@@ -26,255 +26,321 @@
     <br/>
     <table style="width: fit-content">
       <thead>
-          <tr>
+        <tr>
           <th>Tag</th>
           <th>ResourceType</th>
           <th>Descrizione</th>
           <th>Link Simplifier</th>
-          </tr>
+        </tr>
       </thead>
       <tbody id="myTable">
-          <tr>
+        <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca prestazioni erogate</td>
-          <td>{{link:esempio-ricerca-prestazioni-erogate}}</td>
+          <td>{{link:Bundle/esempio-ricerca-prestazioni-erogate}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca progetti individuali attivi</td>
-          <td>{{link:esempio-ricerca-pi-attivi}}</td>
+          <td>{{link:Bundle/esempio-ricerca-pi-attivi}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca rivalutazioni e sospensioni</td>
-          <td>{{link:esempio-ricerca-rivalutazioni-sospensioni}}</td>
+          <td>{{link:Bundle/esempio-ricerca-rivalutazioni-sospensioni}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca rivalutazioni</td>
-          <td>{{link:esempio-ricerca-rivalutazioni}}</td>
+          <td>{{link:Bundle/esempio-ricerca-rivalutazioni}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca sospensioni</td>
-          <td>{{link:esempio-ricerca-sospensione}}</td>
+          <td>{{link:Bundle/esempio-ricerca-sospensione}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca storico progetti individuali</td>
-          <td>{{link:esempio-ricerca-storico-pi}}</td>
+          <td>{{link:Bundle/esempio-ricerca-storico-pi}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Bundle</td>
           <td>Ricerca valutazioni</td>
-          <td>{{link:esempio-ricerca-valutazioni}}</td>
+          <td>{{link:Bundle/esempio-ricerca-valutazioni}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>Patient</td>
           <td>Esempio del profilo RLPatientCittadino</td>
-          <td>{{link:esempio-Patient-Cittadino}}</td>
+          <td>{{link:Patient/esempio-Patient-Cittadino}}</td>
         </tr>
         <tr>
           <td>C-DOM</td>
           <td>PractitionerRole</td>
           <td>Esempio del profilo RLPractitionerRoleOperatoreADI</td>
-          <td>{{link:esempio-PractitionerRole-OperatoreADI}}</td>
+          <td>{{link:PractitionerRole/esempio-PractitionerRole-OperatoreADI}}</td>
         </tr>
         <tr>
           <td>DDC</td>
           <td>Organization</td>
           <td>Esempio del profilo RLOrganizationL1</td>
-          <td>{{link:esempio-RLOrganizationL1}}</td>
+          <td>{{link:Organization/esempio-RLOrganizationL1}}</td>
         </tr>
         <tr>
           <td>DDC</td>
           <td>Organization</td>
           <td>Esempio del profilo RLOrganizationL2</td>
-          <td>{{link:esempio-RLOrganizationL2}}</td>
+          <td>{{link:Organization/esempio-RLOrganizationL2}}</td>
         </tr>
         <tr>
           <td>DDC</td>
           <td>Organization</td>
           <td>Esempio del profilo RLOrganizationL3</td>
-          <td>{{link:esempio-RLOrganizationL3}}</td>
+          <td>{{link:Organization/esempio-RLOrganizationL3}}</td>
         </tr>
         <tr>
           <td>DDC</td>
           <td>Practitioner</td>
           <td>Esempio del profilo Practitioner</td>
-          <td>{{link:esempio-Practitioner}}</td>
+          <td>{{link:Practitioner/esempio-Practitioner}}</td>
         </tr>
         <tr>
           <td>DDC</td>
           <td>PractitionerRole</td>
           <td>Esempio del profilo PractitionerRole</td>
-          <td>{{link:esempio-PractitionerRole}}</td>
+          <td>{{link:PractitionerRole/esempio-PractitionerRole}}</td>
         </tr>
         <tr>
           <td>Errori</td>
           <td>Bundle</td>
-          <td>Esempio di messaggio di notifica errore di coerenza in caso di ricerca tramite parametri</td>
-          <td>{{link:esempio-bundle-notifica-errori-bundle}}</td>
+          <td>
+            Esempio di messaggio di notifica errore di coerenza in caso
+            di ricerca tramite parametri
+          </td>
+          <td>{{link:Bundle/esempio-bundle-notifica-errori-bundle}}</td>
         </tr>
         <tr>
           <td>Errori</td>
           <td>Bundle</td>
-          <td>Esempio di messaggio di notifica errore di coerenza in caso di ricerca tramite ID</td>
-          <td>{{link:esempio-bundle-notifica-errori-resource}}</td>
+          <td>
+            Esempio di messaggio di notifica errore di coerenza in caso
+            di ricerca tramite ID
+          </td>
+          <td>{{link:Bundle/esempio-bundle-notifica-errori-resource}}</td>
         </tr>
         <tr>
           <td>Errori, C-DOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: parametro non supportato</td>
-          <td>{{link:Examples-Example-searchfail}}</td>
+          <td>{{link:OperationOutcome/esempio-searchfail}}</td>
         </tr>
         <tr>
           <td>Errori, C-DOM</td>
           <td>OperationOutcome</td>
           <td>OperationOutcome: eccezione generica</td>
-          <td>{{link:Examples-Example-exception}}</td>
+          <td>{{link:OperationOutcome/esempio-exception}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>CarePlan</td>
           <td>Esempio del profilo RLCarePlanProgettoIndividuale</td>
-          <td>{{link:esempio-CarePlan-Progetto-Individuale}}</td>
+          <td>{{link:CarePlan/esempio-CarePlan-Progetto-Individuale}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>CareTeam</td>
           <td>Esempio del profilo RLCareTeamTeamEquipe</td>
-          <td>{{link:esempio-CareTeam-Equipe}}</td>
+          <td>{{link:CareTeam/esempio-CareTeam-Equipe}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Condition</td>
           <td>Esempio del profilo RLConditionPatologiaPrimaria</td>
-          <td>{{link:esempio-Condition-PatologiaPrimaria}}</td>
+          <td>{{link:Condition/esempio-Condition-PatologiaPrimaria}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Condition</td>
           <td>Esempio del profilo RLConditionPatologiaSecondaria</td>
-          <td>{{link:esempio-Condition-PatologiaSecondaria}}</td>
+          <td>{{link:Condition/esempio-Condition-PatologiaSecondaria}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>DeviceRequest</td>
           <td>Esempio del profilo RLDeviceRequestProtesiAusili</td>
-          <td>{{link:esempio-DeviceRequest-ProtesiAusili}}</td>
+          <td>{{link:DeviceRequest/esempio-DeviceRequest-ProtesiAusili}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Encounter</td>
           <td>Esempio del profilo RLEncounterEncounterAccesso</td>
-          <td>{{link:esempio-Encounter-Accesso}}</td>
+          <td>{{link:Encounter/esempio-Encounter-Accesso}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Goal</td>
           <td>Esempio del profilo RLGoalObiettiviSalute</td>
-          <td>{{link:esempio-Goal-ObiettiviSalute}}</td>
+          <td>{{link:Goal/esempio-Goal-ObiettiviSalute}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Location</td>
           <td>Esempio del profilo RLLocationLuogoPrestazioneCureDom</td>
-          <td>{{link:esempio-Location-LuogoPrestazioneCureDom}}</td>
+          <td>{{link:Location/esempio-Location-LuogoPrestazioneCureDom}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>MedicationRequest</td>
           <td>Esempio del profilo RLMedicationRequestTerapiaFarmacologica</td>
-          <td>{{link:esempio-MedicationRequest-TerapiaFarmacologica}}</td>
+          <td>
+            {{link:MedicationRequest/esempio-MedicationRequest-TerapiaFarmacologica}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>MedicationRequest</td>
           <td>Esempio del profilo RLMedicationRequestRequestOssigenoterapia</td>
-          <td>{{link:esempio-MedicationRequest-Ossigenoterapia}}</td>
+          <td>
+            {{link:MedicationRequest/esempio-MedicationRequest-Ossigenoterapia}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Observation</td>
-          <td>Esempio del profilo RLObservationEsitoValutazione (scheda triage)</td>
-          <td>{{link:esempio-Observation-EsitoValutazione-triage}}</td>
+          <td>
+            Esempio del profilo RLObservationEsitoValutazione
+            (scheda triage)
+          </td>
+          <td>{{link:Observation/esempio-Observation-EsitoValutazione-triage}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Observation</td>
           <td>Esempio del profilo RLObservationEsitoValutazione (interRAI)</td>
-          <td>{{link:esempio-Observation-EsitoValutazione-interRAI}}</td>
+          <td>
+            {{link:Observation/esempio-Observation-EsitoValutazione-interRAI}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Practitioner</td>
           <td>Esempio del profilo RLPractitionerProfessionistaSanitario</td>
-          <td>{{link:esempio-Practitioner-ProfessionistaSanitario}}</td>
+          <td>
+            {{link:Practitioner/esempio-Practitioner-ProfessionistaSanitario}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>PractitionerRole</td>
           <td>Esempio del profilo RLPractitionerRoleProfessionistaSanitario</td>
-          <td>{{link:esempio-PractitionerRole-ProfessionistaSanitario}}</td>
+          <td>
+            {{link:PractitionerRole/esempio-PractitionerRole-ProfessionistaSanitario}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>Procedure</td>
           <td>Esempio del profilo RLProcedurePrestazione</td>
-          <td>{{link:esempio-Procedure-Prestazione}}</td>
+          <td>{{link:Procedure/esempio-Procedure-Prestazione}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestInterventoEducazionale</td>
-          <td>{{link:Examples-Example-ServiceRequest-InterventoEducazionale}}</td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-InterventoEducazionale}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
-          <td>Esempio del profilo RLServiceRequestPrestazioniInfermieristiche</td>
-          <td>{{link:Examples-Example-ServiceRequest-PrestazioniInfermieristiche}}</td>
+          <td>
+            Esempio del
+            profilo RLServiceRequestPrestazioniInfermieristiche
+          </td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-PrestazioniInfermieristiche}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestPrestazioniSpecialistiche</td>
-          <td>{{link:Examples-Example-ServiceRequest-PrestazioniSpecialistiche}}</td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-PrestazioniSpecialistiche}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestRivalutazione</td>
-          <td>{{link:Examples-Example-ServiceRequest-Rivalutazione}}</td>
+          <td>{{link:ServiceRequest/esempio-ServiceRequest-Rivalutazione}}</td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestServiziSocioAssistenziali</td>
-          <td>{{link:Examples-Example-ServiceRequest-ServiziSocioAssistenziali}}</td>
+          <td>
+            {{link:ServiceRequest/esempio-ServiceRequest-ServiziSocioAssistenziali}}
+          </td>
         </tr>
         <tr>
           <td>PI</td>
           <td>ServiceRequest</td>
           <td>Esempio del profilo RLServiceRequestSospensioneADI</td>
-          <td>{{link:Examples-Example-ServiceRequest-SospensioneADI}}</td>
+          <td>{{link:ServiceRequest/esempio-ServiceRequest-SospensioneADI}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Bundle</td>
+          <td>Esempio dei posti letto occupati (risorsa Location)</td>
+          <td>{{link:Bundle/esempio-PLO-Location}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOEdificio</td>
+          <td>{{link:Location/esempio-Location-PLO-Edificio}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOLetto</td>
+          <td>{{link:Location/esempio-Location-PLO-Letto}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOPiano</td>
+          <td>{{link:Location/esempio-Location-PLO-Piano}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Location</td>
+          <td>Esempio del profilo RLLocationPLOStanza</td>
+          <td>{{link:Location/esempio-Location-PLO-Stanza}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>Measure</td>
+          <td>Esempio del profilo RLMeasurePLO</td>
+          <td>{{link:Measure/esempio-measure-PLO}}</td>
+        </tr>
+        <tr>
+          <td>PLO</td>
+          <td>MeasureReport</td>
+          <td>Esempio del profilo RLMeasureReportPLO</td>
+          <td>{{link:MeasureReport/esempio-measureReport-PLO}}</td>
         </tr>
       </tbody>
     </table>
   </body>
 </html>
-
-
-
-
-
-
