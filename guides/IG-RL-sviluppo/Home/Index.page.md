@@ -22,7 +22,7 @@ La versione corrente della guida implementativa gestisce i seguenti concetti:
 - Inclusione del numero di telefono ed indirizzo dell’ambulatorio nella risorsa RLPractitionerRoleMedicoPrescritore. 
 - Inclusione del campo note nella risorsa RLServiceRequestRivalutazione.
 - Revisione dei seguenti value-set: “Codifica della causale di dimissione di un ricovero domiciliare”, “Codifica del
-  soggetto che ha proposto la presa in carico”, “Codifica dei motivi della sospensione temporanea del ricovero domiciliare”, “Codifica delle prestazioni infermieristiche”, “Codifica della responsabilità genitoriale”, “Codifica delle prestazioni dei servizi di cure domiciliari”, “Codifica delle qualifiche dei medici prescrittori”.
+  soggetto che ha proposto la presa in carico”, “Codifica dei motivi della sospensione temporanea del ricovero domiciliare”, “Codifica delle prestazioni infermieristiche”, “Codifica delle prestazioni dei servizi di cure domiciliari”, “Codifica delle qualifiche dei medici prescrittori”.
 - Eliminato il value-set “Codifica della responsabilità genitoriale”.
 - Inclusione dei profili relativi al caso d'uso "Posti Letto Occupati".
 
