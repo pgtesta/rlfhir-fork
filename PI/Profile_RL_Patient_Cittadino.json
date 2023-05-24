@@ -630,7 +630,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
             ]
           }
         ]
