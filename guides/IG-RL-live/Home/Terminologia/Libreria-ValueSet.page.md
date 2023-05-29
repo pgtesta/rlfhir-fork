@@ -246,13 +246,13 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}
       </td>
       <td>
         ValueSet relativo alla codifica delle prestazioni infermieristiche
       </td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche
+        https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni
       </td>
     </tr>
     <tr>
