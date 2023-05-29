@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestTerapiaFarmacologica",
   "meta": {
-    "lastUpdated": "2023-03-08T14:22:54.9437705+00:00"
+    "lastUpdated": "2023-05-29T09:30:21.1064106+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
   "name": "RLMedicationRequestTerapiaFarmacologica",
@@ -302,13 +302,6 @@
         "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
         "short": "Unità temporale di assunzione",
         "definition": "Valori definiti dallo standard FHIR:\r\n- s: secondo \r\n- min: minuto \r\n- h: ora\r\n- d: giorno\r\n- wk: settimana\r\n- mo: mese\r\n- a: anno",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.route",
-        "path": "MedicationRequest.dosageInstruction.route",
-        "short": "Via di sommistrazione del farmaco",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
       },

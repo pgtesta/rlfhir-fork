@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLGoalObiettiviSalute",
   "meta": {
-    "lastUpdated": "2023-05-26T13:44:50.6599292+00:00"
+    "lastUpdated": "2023-05-29T09:27:52.439872+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
   "name": "RLGoalObiettiviSalute",
@@ -129,8 +129,7 @@
         "id": "Goal.note",
         "path": "Goal.note",
         "short": "Nota contenente l'obiettivo di salute nel caso non fosse selezionato tra le voci codificate",
-        "comment": "Il dato è detenuto dal SGDT",
-        "max": "1"
+        "comment": "Il dato è detenuto dal SGDT"
       }
     ]
   }
