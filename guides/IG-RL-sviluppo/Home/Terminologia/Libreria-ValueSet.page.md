@@ -249,7 +249,7 @@
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}
       </td>
       <td>
-        ValueSet relativo alla codifica delle prestazioni infermieristiche
+        ValueSet relativo alla codifica delle prestazioni erogate in qualsiasi setting assistenziale
       </td>
       <td>
         https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni
