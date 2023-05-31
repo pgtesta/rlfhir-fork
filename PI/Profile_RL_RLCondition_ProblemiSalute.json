@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionProblemiSalute",
   "meta": {
-    "lastUpdated": "2023-05-31T09:48:26.2829081+00:00"
+    "lastUpdated": "2023-05-31T12:41:35.6879982+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute",
   "name": "RLConditionProblemiSalute",
@@ -155,19 +155,19 @@
         "short": "Codice della condizione clinica prevalente",
         "definition": "Stringa numerica di un carattere",
         "comment": "Il dato è detenuto da SGDT",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla condizione clinica",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica"
+        }
       },
       {
         "id": "Condition.code:condizioneClinica.coding.display",
         "path": "Condition.code.coding.display",
         "short": "Descrizione condizione clinica prevalente",
         "definition": "Stringa alfanumerica di al più 250 caratteri",
-        "comment": "Il dato è detenuto da SGDT",
-        "binding": {
-          "strength": "required",
-          "description": "ValueSet relativo alla condizione clinica",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica"
-        }
+        "comment": "Il dato è detenuto da SGDT"
       },
       {
         "id": "Condition.code:problemaInfermieristico",
