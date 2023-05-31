@@ -265,14 +265,14 @@
         "id": "ServiceRequest.reasonReference",
         "path": "ServiceRequest.reasonReference",
         "short": "Problema riscontrato durante la valutazione infermieristica",
-        "definition": "Reference al profilo RLConditionProblemaInfermieristico",
+        "definition": "Reference al profilo RLConditionProblemiSalute",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemaInfermieristico"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
             ]
           }
         ]

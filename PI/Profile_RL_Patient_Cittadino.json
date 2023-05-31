@@ -64,7 +64,7 @@
           ],
           "rules": "open"
         },
-        "min": 4
+        "min": 3
       },
       {
         "id": "Patient.extension:cittadinanza",
@@ -269,44 +269,6 @@
             "code": "code"
           }
         ]
-      },
-      {
-        "id": "Patient.extension:tipologiaCittadino",
-        "path": "Patient.extension",
-        "sliceName": "tipologiaCittadino",
-        "short": "Condizione clinica prevalente dell’assistito",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del cittadino contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino"
-            ]
-          }
-        ],
-        "isModifier": false
-      },
-      {
-        "id": "Patient.extension:tipologiaCittadino.value[x].coding.code",
-        "path": "Patient.extension.value[x].coding.code",
-        "short": "Codice che rappresenta la condizione clinica prevalente dell’assistito",
-        "definition": "Stringa numerica di 1 carattere",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "description": "ValueSet relativo alla codifica della tipologia del paziente",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente"
-        }
-      },
-      {
-        "id": "Patient.extension:tipologiaCittadino.value[x].coding.display",
-        "path": "Patient.extension.value[x].coding.display",
-        "definition": "Stringa alfanumerica al più di 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
       },
       {
         "id": "Patient.identifier",
