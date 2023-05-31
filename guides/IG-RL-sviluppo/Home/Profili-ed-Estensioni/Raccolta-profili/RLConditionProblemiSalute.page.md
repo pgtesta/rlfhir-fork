@@ -1,6 +1,6 @@
-# RLConditionPatologiaPrimariaSecondariaUlteriore
+# RLConditionProblemiSalute
 
-- [RLConditionPatologiaPrimariaSecondariaUlteriore](#rlconditionpatologiaprimariasecondariaulteriore)
+- [RLConditionProblemiSalute](#rlconditionproblemisalute)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -8,9 +8,9 @@
 
 ## Descrizione
 
-Il profilo RLConditionPatologiaPrimariaSecondariaUlteriore è stato strutturato a partire dalla risorsa generica FHIR  [Condition](http://hl7.org/fhir/R4/condition.html) e contiene le informazioni sulla patologia primaria, l’eventuale patologia secondaria o ulteriore relativa ad un paziente.
+Il profilo RLConditionProblemiSalute è stato strutturato a partire dalla risorsa generica FHIR  [Condition](http://hl7.org/fhir/R4/condition.html) contiene le informazioni riguardo un problema di salute del paziente. In particolare, il profilo raccoglie i dettagli riguardo le patologie (primaria, secondaria o ulteriore) relativa al paziente, la sua condizione clinica prevalente oppure il problema infermieristico individuato in fase di valutazione.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute}}.
 
 <br>
 <div class="tab">
@@ -25,32 +25,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -79,3 +79,5 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
 | Category | Tipologia di patologia | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute}} |
+| Code | Codice e descrizione della condizione clinica prevalente | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica}} |
+| Code | Codice e descrizione del problema infermieristico | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico}} |
