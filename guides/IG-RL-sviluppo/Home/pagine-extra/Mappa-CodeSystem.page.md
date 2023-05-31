@@ -62,8 +62,8 @@
     <td>{{link:https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-ResponsabilitaGenitoriale}}</td>
   </tr>
   <tr>
-    <td>tipologiaPaziente</td>
-    <td>{{link:https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TipologiaPaziente}}</td>
+    <td>CondizioneClinica</td>
+    <td>{{link:https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-CondizioneClinica}}</td>
   </tr>
   <tr>
     <td>maritalStatus</td>

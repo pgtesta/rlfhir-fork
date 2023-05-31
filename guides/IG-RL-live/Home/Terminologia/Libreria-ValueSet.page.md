@@ -426,11 +426,11 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica}}
       </td>
       <td>ValueSet relativo alla codifica della tipologia del paziente</td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente
+        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica
       </td>
     </tr>
     <tr>

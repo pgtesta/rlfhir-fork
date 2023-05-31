@@ -81,4 +81,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPatientCi
 | titoloDiStudio | Titolo di studio del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio}} |
 | posizioneDellaProfessione | Posizione lavorativa del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione}} |
 | situazionePensionistica | Situazione pensionistica del cittadino | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica}} |
-| tipologiaPaziente | Condizione clinica prevalente dell’assistito | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente}} |
+| CondizioneClinica | Condizione clinica prevalente dell’assistito | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica}} |
