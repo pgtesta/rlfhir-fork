@@ -230,34 +230,17 @@
         <tr>
           <td>PI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionPatologiaPrimariaSecondariaUlteriore.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionProblemiSalute.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
           </td>
           <td>
-            Profilo volto a descrivere la patologia primaria, le
-            eventuali patologie secondarie ed ulteriori di un
-            paziente.
+            Profilo volto a descrivere i problemi di salute 
+            dei quali un paziente è affetto.
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionProblemaInfermieristico.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
-          </td>
-          <td>
-            Profilo volto a descrivere il problema
-            infermieristico relativo ad un paziente.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemaInfermieristico}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute}}
           </td>
         </tr>
         <tr>

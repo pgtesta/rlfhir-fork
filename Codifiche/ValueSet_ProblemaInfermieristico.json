@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "id": "ValueSet-SGDT-PrestazioniInfermieristiche",
+  "id": "ValueSet-SGDT-ProblemaInfermieristico",
   "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico",
   "version": "1.0.0",
   "name": "SGDT Problema Infermieristico",

@@ -12,7 +12,7 @@
     {
       "coding": [
         {
-          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia",
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaProblemaSalute",
           "code": "1",
           "display": "Patologia primaria"
         }

@@ -246,13 +246,13 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}
       </td>
       <td>
-        ValueSet relativo alla codifica delle prestazioni infermieristiche
+        ValueSet relativo alla codifica delle prestazioni erogate in qualsiasi setting assistenziale
       </td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche
+        https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni
       </td>
     </tr>
     <tr>
@@ -318,11 +318,11 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute}}
       </td>
       <td>ValueSet che identifica la tipologia di patologia</td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia
+        https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute
       </td>
     </tr>
     <tr>
@@ -426,11 +426,11 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica}}
       </td>
       <td>ValueSet relativo alla codifica della tipologia del paziente</td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente
+        https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica
       </td>
     </tr>
     <tr>

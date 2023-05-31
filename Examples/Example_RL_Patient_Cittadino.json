@@ -100,7 +100,7 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaPaziente",
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica",
             "code": "1",
             "display": "Paziente ordinario: utenza tipica"
           }
