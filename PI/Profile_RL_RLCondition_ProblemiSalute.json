@@ -79,8 +79,8 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "description": "ValueSet che identifica la tipologia di patologia",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia"
+          "description": "ValueSet che identifica la tipologia del problema di salute",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute"
         }
       },
       {

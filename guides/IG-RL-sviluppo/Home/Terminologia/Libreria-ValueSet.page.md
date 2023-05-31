@@ -318,11 +318,11 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute}}
       </td>
       <td>ValueSet che identifica la tipologia di patologia</td>
       <td>
-        https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia
+        https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute
       </td>
     </tr>
     <tr>
