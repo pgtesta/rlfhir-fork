@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLConditionProblemiSalute è stato strutturato a partire dalla risorsa generica FHIR  [Condition](http://hl7.org/fhir/R4/condition.html) contiene le informazioni riguardo un problema di salute del paziente. In particolare, il profilo raccoglie i dettagli riguardo le patologie (primaria, secondaria o ulteriore) relativa al paziente, la sua condizione clinica prevalente oppure il problema infermieristico individuato in fase di valutazione.
+Il profilo RLConditionProblemiSalute è stato strutturato a partire dalla risorsa generica FHIR  [Condition](http://hl7.org/fhir/R4/condition.html) contiene le informazioni riguardo un problema di salute del paziente. In particolare, il profilo raccoglie i dettagli riguardo le patologie (primaria, secondaria o ulteriore) relative al paziente, la sua condizione clinica prevalente oppure il problema infermieristico individuato in fase di valutazione.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute}}.
 
