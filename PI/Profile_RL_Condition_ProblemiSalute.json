@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionProblemiSalute",
   "meta": {
-    "lastUpdated": "2023-05-31T12:41:35.6879982+00:00"
+    "lastUpdated": "2023-05-31T12:55:26.6725544+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute",
   "name": "RLConditionProblemiSalute",
@@ -58,7 +58,7 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "short": "Tipologia della problema di salute riportato nel campo \"code\" (patologia primaria, secondaria, ulteriore o condizione clinica prevalente)",
+        "short": "Tipologia della problema di salute riportato nel campo \"code\"",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia dei problemi di salute contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
         "max": "1"
