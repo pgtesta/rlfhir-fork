@@ -86,7 +86,7 @@ A titolo esemplificativo, la chiamata:
 
     Procedure?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione&based-on:ServiceRequest.performer:Organization.identifier=321016118&based-on:ServiceRequest.identifier=2022000001&_include=Procedure:based-on&_include=Procedure:subject&_include=Procedure:performer&_include=Procedure:location
 
-Restituirà tutte le prestazioni erogate per pratica numero "2022000001" e afferenti alla struttura "03014300".
+Restituirà tutte le prestazioni erogate per pratica numero "2022000001" e afferenti alla struttura "321016118".
 
 Un esempio di Bundle di risposta può essere consultato qui: {{link:esempio-ricerca-prestazioni-erogate}}.
 

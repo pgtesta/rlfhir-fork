@@ -16,11 +16,8 @@ Per il caso d'uso è stata definita una raccolta di profili FHIR che sono consul
 
 Gli applicativi degli enti ospedalieri esporranno i dati in modalità API FHIR RESTful e la sintassi della chiamata e della risposta sarà di tipo JSON. 
 
-Devono essere esposte due API relative a:
+Deve essere esposta l'API relativa al dettaglio delle informazioni sulla locazione e sulle caratteristiche di ricovero del posto letto occupato. 
+La risorsa FHIR da esporre è Location e segue le specifiche definite dal profilo *RLLocationPLOLetto*, consultabile nella pagina *Profili ed Estensioni - Libreria Profili*.
 
-1. dettaglio delle informazioni sulla locazione e sulle caratteristiche di ricovero del posto letto occupato. 
-   La risorsa FHIR da esporre è Location e segue le specifiche definite dal profilo *RLLocationPLOLetto*, consultabile nella pagina *Profili ed Estensioni - Libreria Profili*.
-2. report che raccoglie il totale dei posti letto occupati distinti per struttura e reparto clinico.
-   La risorsa FHIR da esporre è MeasureReport e segue le specifiche definite dal profilo *RLMeasureReportPLO*, consultabile nella pagina *Profili ed Estensioni - Libreria Profili*.
 
 Per ulteriori dettagli tecnici riguardo l'endpoint e le API da esporre si rimanda alla pagina *Contesto - API RESTful*. 
