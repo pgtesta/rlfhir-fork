@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionProblemiSalute",
   "meta": {
-    "lastUpdated": "2023-05-31T12:55:26.6725544+00:00"
+    "lastUpdated": "2023-06-07T13:16:01.8691584+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute",
   "name": "RLConditionProblemiSalute",
@@ -53,7 +53,7 @@
         "short": "Profilo al quale la risorsa si riferisce",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
       },
       {
         "id": "Condition.category",
