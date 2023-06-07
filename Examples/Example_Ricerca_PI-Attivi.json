@@ -1,767 +1,3388 @@
 {
-  "resourceType": "Bundle",
-  "id": "esempio-ricerca-pi-attivi",
-  "type": "searchset",
-  "timestamp": "2023-01-16T08:32:56.239+01:00",
-  "total": 1,
-  "entry": [
-    {
-      "fullUrl": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "CarePlan",
-        "id": "365db2ec-973c-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
-            "value": "PI-2023000000001"
-          }
-        ],
-        "status": "active",
-        "intent": "order",
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "encounter": {
-          "reference": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
-          "display": "Accesso"
-        },
-        "period": {
-          "start": "2023-01-15T08:32:56.239+01:00"
-        },
-        "created": "2023-01-11T08:32:56.239+01:00",
-        "author": {
-          "reference": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
-          "display": "ASST DELLA BRIANZA"
-        },
-        "contributor": [
-          {
-            "reference": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
-            "display": "Infermiere"
-          }
-        ],
-        "addresses": [
-          {
-            "reference": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
-            "display": "Patologia Primaria"
-          },
-          {
-            "reference": "Condition/e028bc4c-b134-11ed-afa1-0242ac120002",
-            "display": "Patologia Secondara"
-          }
-        ],
-        "supportingInfo": [
-          {
-            "reference": "Observation/bnm18194-974f-11ed-a8fc-0242ac120002",
-            "display": "Esito Valutazione"
-          }
-        ],
-        "goal": [
-          {
-            "reference": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
-            "display": "Obiettivi Salute"
-          }
-        ],
-        "activity": [
-          {
-            "reference": {
-              "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
-              "display": "Terapia farmacologica"
-            }
-          },
-          {
-            "reference": {
-              "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
-              "display": "Servizi Socio Assistenziali"
-            }
-          }
-        ],
-        "note": [
-          {
-            "text": "Monitorare il soddisfacimento dell'obiettivo di salute almeno una volta al mese"
-          }
-        ],
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-            "valueUnsignedInt": 1
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "b7807e00-9745-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "system": "http://hl7.it/sid/codiceFiscale",
-            "value": "RSSMRA80A01F205X"
-          }
-        ],
-        "active": true,
-        "name": [
-          {
-            "family": "Rossi",
-            "given": [
-              "Mario"
-            ]
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1980-01-01",
-        "address": [
-          {
-            "use": "billing",
-            "city": "015146"
-          }
-        ],
-        "maritalStatus": {
-          "coding": [
-            {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
-              "code": "2",
-              "display": "Coniugato/a"
-            }
-          ]
-        },
-        "generalPractitioner": [
-          {
-            "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
-            "display": "MMG"
-          }
-        ],
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
-            "valueCode": "ITA"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio",
-                  "code": "6",
-                  "display": "Laurea"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione",
-                  "code": "01",
-                  "display": "imprenditore"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica",
-                  "code": "5",
-                  "display": "Invalidità"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
-            "valueCode": "015146"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
-            "valueCode": "030324"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTipologiaCittadino",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica",
-                  "code": "1",
-                  "display": "Paziente ordinario: utenza tipica"
-                }
-              ]
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "MedicationRequest",
-        "id": "088c489c-9750-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
-          ],
-          "versionId": "1"
-        },
-        "status": "active",
-        "intent": "order",
-        "medicationCodeableConcept": {
-          "coding": [
-            {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
-              "code": "027224031",
-              "display": "CLEVIAN*GEL 50 G 1%"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "basedOn": [
-          {
-            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-            "display": "PI-2023000000001"
-          }
-        ],
-        "note": [
-          {
-            "text": "Rivalutare mensilmente se prorogare la terapia"
-          }
-        ],
-        "dosageInstruction": [
-          {
-            "timing": {
-              "repeat": {
-                "boundsPeriod": {
-                  "start": "2023-01-21T08:32:56.239+01:00",
-                  "end": "2023-03-21T08:32:56.239+01:00"
-                },
-                "frequency": 1,
-                "period": 1,
-                "periodUnit": "d"
-              }
-            },
-            "route": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "26643006",
-                  "display": "Oral Route"
-                }
-              ]
-            },
-            "doseAndRate": [
-              {
-                "doseQuantity": {
-                  "value": 2,
-                  "unit": "TAB",
-                  "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm"
-                }
-              }
-            ]
-          }
-        ],
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaPaziente",
-            "valueBoolean": true
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "ServiceRequest",
-        "id": "14aec1c2-9750-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale",
-            "value": "2023000021"
-          }
-        ],
-        "basedOn": [
-          {
-            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
-            "display": "PI-2023000000001"
-          }
-        ],
-        "status": "active",
-        "intent": "order",
-        "code": {
-          "coding": [
-            {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
-              "code": "C-DOM",
-              "display": "CURE DOMICILIARI"
-            }
-          ]
-        },
-        "quantityQuantity": {
-          "value": 18
-        },
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "occurrencePeriod": {
-          "start": "2023-02-01T08:32:56.239+01:00",
-          "end": "2023-04-01T08:32:56.239+01:00"
-        },
-        "performer": [
-          {
-            "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
-            "display": "FONDAZIONE MADDALENA GRASSI"
-          }
-        ],
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
-                "code": "PERCDOM02",
-                "display": "Cure Domiciliari Base - Prestazionale Generico"
-              }
-            ]
-          }
-        ],
-        "note": [
-          {
-            "text": "Presa in carico confermata dall'ente"
-          }
-        ],
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
-                  "code": "2",
-                  "display": "MMG / PLS"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione",
-                  "code": "01",
-                  "display": "Completamento del programma assistenziale"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestDataDimissione",
-            "valueDateTime": "2023-03-30T08:32:56.239+01:00"
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "Encounter",
-        "id": "c559333c-974f-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoAccesso",
-            "value": "HC40-ENLIST-SVIL.bff1913c-e45f-d212-baf5-e4182fa06238"
-          }
-        ],
-        "status": "in-progress",
-        "class": {
-          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
-          "code": "ACCSS",
-          "display": "Socio-sanitario"
-        },
-        "subject": {
-          "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "period": {
-          "start": "2023-01-15T08:32:56.239+01:00"
-        },
-        "reasonCode": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
-                "code": "02",
-                "display": "Attivazione Cure Domiciliari (ADI)"
-              }
-            ]
-          }
-        ],
-        "serviceProvider": {
-          "reference": "Organization/e5002d24-a958-11ed-afa1-0242ac120002",
-          "display": "ASST DELLA BRIANZA"
-        }
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "c8f77b34-974f-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte",
-            "value": "030717"
-          },
-          {
-            "system": "http://hl7.it/sid/codiceFiscale",
-            "value": "09314320962"
-          }
-        ],
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1",
-                "code": "ASST",
-                "display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
-              }
-            ]
-          }
-        ],
-        "name": "ASST DELLA BRIANZA",
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "039 66541"
-          },
-          {
-            "system": "email",
-            "value": "protocollo@pec.asst-brianza.it"
-          },
-          {
-            "system": "fax",
-            "value": "039 66541"
-          },
-          {
-            "system": "url",
-            "value": "https://www.asst-brianza.it/web/"
-          }
-        ],
-        "address": [
-          {
-            "use": "work",
-            "type": "physical",
-            "line": [
-              "Via Santi Cosma e Damiano, 10"
-            ],
-            "district": "MB",
-            "state": "LOMBARDIA",
-            "postalCode": "20871",
-            "extension": [
-              {
-                "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
-                "valueString": "108050"
-              },
-              {
-                "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
-                      "code": "TBD"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        ],
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
-            "valueDate": "2016-01-01"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
-            "valueDate": "2099-02-11"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
-            "valueDate": "2016-02-11"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
-            "valueDate": "2021-01-27"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
-            "valueDate": "2015-01-27"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
-            "valueDate": "2035-01-14"
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "PractitionerRole",
-        "id": "d711fc58-974f-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
-          ],
-          "versionId": "1"
-        },
-        "period": {
-          "start": "2012-01-01T08:32:56.239+01:00",
-          "end": "2023-03-31T08:32:56.239+01:00"
-        },
-        "practitioner": {
-          "reference": "Practitioner/3a14db34-a959-11ed-afa1-0242ac120002",
-          "display": "Luca Verdi"
-        },
-        "organization": {
-          "reference": "Organization/52b1a05a-a959-11ed-afa1-0242ac120002",
-          "display": "ASST DELLA BRIANZA"
-        },
-        "code": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario",
-                "code": "PROFSAN03",
-                "display": "Infermiere"
-              }
-            ]
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "Condition",
-        "id": "e243606c-974f-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
-          ],
-          "versionId": "1"
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute",
-                "code": "1",
-                "display": "Patologia primaria"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM",
-              "code": "V17.7",
-              "display": "Artrite"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "recordedDate": "2023-01-15"
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Condition/e028bc4c-b134-11ed-afa1-0242ac120002",
-      "resource": {
-        "resourceType": "Condition",
-        "id": "e028bc4c-b134-11ed-afa1-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
-          ],
-          "versionId": "1"
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute",
-                "code": "2",
-                "display": "Patologia secondaria"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM",
-              "code": "V18.0",
-              "display": "Diabete mellito"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "recordedDate": "2023-01-15"
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Observation/bnm18194-974f-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "bnm18194-974f-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-          ],
-          "versionId": "1"
-        },
-        "status": "registered",
-        "code": {
-          "coding": [
-            {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
-              "code": "VAL1",
-              "display": "Scheda Triage"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        },
-        "effectiveDateTime": "2023-01-15T08:32:56.239+01:00",
-        "performer": [
-          {
-            "reference": "PractitionerRole/d252b662-989e-11ed-a8fc-0242ac120002",
-            "display": "Infermiere"
-          }
-        ],
-        "valueInteger": 5,
-        "derivedFrom": [
-          {
-            "reference": "QuestionnaireResponse/d3541270-9814-11ed-a8fc-0242ac120002",
-            "display": "Scheda Triage"
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
-      "resource": {
-        "resourceType": "Goal",
-        "id": "eaa18194-974f-11ed-a8fc-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:56.239+01:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
-          ],
-          "versionId": "1"
-        },
-        "lifecycleStatus": "planned",
-        "description": {
-          "coding": [
-            {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute",
-              "code": "04",
-              "display": "Controllo dell'evoluzione della malattia"
-            }
-          ]
-        },
-        "subject": {
-          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
-          "display": "Mario Rossi"
-        }
-      },
-      "search": {
-        "mode": "include"
-      }
-    }
-  ]
+	"resourceType": "Bundle",
+	"id": "esempio-ricerca-pi-attivi",
+	"type": "searchset",
+	"total": 1,
+	"link": [
+		{
+			"relation": "self",
+			"url": "http://localhost:8480/api/enlist/fhir/CarePlan?_include=*&_lastUpdated=gt2000-01-01T16%3A00%3A00%2000%3A00&_lastUpdated=lt2030-01-01T16%3A00%3A00%2000%3A00&_profile=https%3A%2F%2Ffhir.siss.regione.lombardia.it%2FStructureDefinition%2FRLCarePlanProgettoIndividuale&activity-reference%3AServiceRequest.code=C-DOM&author%3AOrganization.identifier=030703&status=active"
+		}
+	],
+	"entry": [
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+			"resource": {
+				"resourceType": "CarePlan",
+				"id": "bd7cc95b-4ac2-4d59-afd9-946a07324713",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-25T16:21:00.481+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+						"valueUnsignedInt": 9
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
+						"value": "PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"encounter": {
+					"reference": "Encounter/HC40-ENLIST.f40a1962-f13f-b14f-2ab0-b18bdd3e5b68",
+					"display": "Accesso"
+				},
+				"period": {
+					"start": "2023-03-28T20:00:00+02:00",
+					"end": "2024-04-29T20:00:00+02:00"
+				},
+				"created": "2023-05-25T16:17:47+02:00",
+				"author": {
+					"reference": "Organization/a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
+					"display": "ASST FATEBENEFRATELLI SACCO"
+				},
+				"contributor": [
+					{
+						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+						"display": "Infermiere"
+					}
+				],
+				"addresses": [
+					{
+						"reference": "Condition/53d24d4d-9b8c-4ddd-b7f4-8832898507ab",
+						"display": "Patologia Primaria"
+					},
+					{
+						"reference": "Condition/189f9465-e61f-4cb0-add0-9f6d1e5aa59e",
+						"display": "Patologia Secondaria"
+					},
+					{
+						"reference": "Condition/d497da2a-dc33-4015-bd91-f64be29f55cb",
+						"display": "Patologia Secondaria"
+					},
+					{
+						"reference": "Condition/9ea44e83-a2af-43c8-8562-0b73f3679530",
+						"display": "Patologia Addizionale"
+					}
+				],
+				"supportingInfo": [
+					{
+						"reference": "Observation/1683107592742-64787-2-1",
+						"display": "Esito Valutazione"
+					},
+					{
+						"reference": "Observation/1683107657974-51919-3-1",
+						"display": "Esito Valutazione"
+					},
+					{
+						"reference": "Observation/190436-170550-1681465565556-1",
+						"display": "Esito Valutazione"
+					}
+				],
+				"goal": [
+					{
+						"reference": "Goal/959c17ef-f64d-451f-b49f-9480992e7645",
+						"display": "Obiettivi Salute"
+					},
+					{
+						"reference": "Goal/f71d9ef8-cf60-4487-a3e3-ec01864ed361",
+						"display": "Obiettivi Salute"
+					}
+				],
+				"activity": [
+					{
+						"reference": {
+							"reference": "ServiceRequest/de4a9684-c321-484c-9017-abd74e8de343-1",
+							"display": "Servizio Socio Assistenziale"
+						}
+					},
+					{
+						"reference": {
+							"reference": "ServiceRequest/de4a9684-c321-484c-9017-abd74e8de343-2",
+							"display": "Servizio Socio Assistenziale"
+						}
+					},
+					{
+						"reference": {
+							"reference": "ServiceRequest/0F2BBB76-1ED0-CFA6-E983-7004BD4C1F62",
+							"display": "Prestazione Specialistica"
+						}
+					},
+					{
+						"reference": {
+							"reference": "ServiceRequest/AEE3F728-435F-C793-60C6-FDA2DA310285",
+							"display": "Prestazione Specialistica"
+						}
+					},
+					{
+						"reference": {
+							"reference": "MedicationRequest/62980b7f-dcd4-4a3b-b7a9-2751ec1a84a4",
+							"display": "Ossigenoterapia"
+						}
+					},
+					{
+						"reference": {
+							"reference": "MedicationRequest/e4ef41df-cf72-4b68-bf72-956c66b83578",
+							"display": "Terapia Farmacologica"
+						}
+					},
+					{
+						"reference": {
+							"reference": "ServiceRequest/153a91df-d426-4538-844c-6a12b1213b74",
+							"display": "Intervento Educazionale"
+						}
+					},
+					{
+						"reference": {
+							"reference": "DeviceRequest/03279cfd-1c7d-47ad-a360-ee43f7d3f910",
+							"display": "Protesi Ausili"
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "84373e3d-26c4-40dd-a844-f52f18ba279f",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+					]
+				},
+				"text": {
+					"status": "generated"
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
+						"valueCode": "100"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"code": "6",
+									"display": "LAUREA"
+								}
+							]
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"code": "11",
+									"display": "DISOCCUPATO (ATTUALMENTE)"
+								}
+							]
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"code": "6",
+									"display": "2 O PIU TIPOLOGIE DI PENSIONE"
+								}
+							]
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
+						"valueCode": "063049"
+					}
+				],
+				"identifier": [
+					{
+						"system": "http://hl7.it/sid/codiceFiscale",
+						"value": "RSSMRA80A24F205I"
+					},
+					{
+						"extension": [
+							{
+								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
+								"valueString": "500001"
+							},
+							{
+								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente",
+								"valueString": "SSN-MIN SALUTE"
+							}
+						],
+						"type": {
+							"coding": [
+								{
+									"display": "IT"
+								}
+							]
+						},
+						"system": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam",
+						"value": "00380111111111111111",
+						"period": {
+							"end": "2023-05-31T00:00:00+02:00"
+						}
+					}
+				],
+				"name": [
+					{
+						"family": "Mario",
+						"given": [
+							"Rossi"
+						]
+					}
+				],
+				"gender": "male",
+				"birthDate": "1980-01-24",
+				"address": [
+					{
+						"use": "billing",
+						"city": "015146",
+						"country": "100"
+					},
+					{
+						"use": "home",
+						"line": [
+							"Via Adda 7 - Scala B - Piano 3 - Interno A"
+						],
+						"city": "015146",
+						"postalCode": "20124",
+						"country": "100"
+					}
+				],
+				"maritalStatus": {
+					"coding": [
+						{
+							"code": "1",
+							"display": "CELIBE/NUBILE"
+						}
+					]
+				},
+				"generalPractitioner": [
+					{
+						"reference": "Organization/d57c025231dd5ea32a2af34a0849416d896444e02f0b230cf75878fd5b386252"
+					},
+					{
+						"reference": "PractitionerRole/b7036ef2-8933-4bfc-9e16-5f37b67067a0"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Organization/d57c025231dd5ea32a2af34a0849416d896444e02f0b230cf75878fd5b386252",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "d57c025231dd5ea32a2af34a0849416d896444e02f0b230cf75878fd5b386252",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+						"valueDate": "2000-01-01"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+						"valueDate": "2000-01-01"
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte",
+						"value": "030321"
+					}
+				],
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1",
+								"code": "ATS",
+								"display": "Agenzia di Tutela della Salute"
+							}
+						]
+					}
+				],
+				"name": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/PractitionerRole/b7036ef2-8933-4bfc-9e16-5f37b67067a0",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "b7036ef2-8933-4bfc-9e16-5f37b67067a0",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+					]
+				},
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceRegionaleMedicoPrescrittore",
+						"value": "12345"
+					}
+				],
+				"active": true,
+				"practitioner": {
+					"reference": "Practitioner/b7036ef2-8933-4bfc-9e16-5f37b67067a0-1"
+				},
+				"code": [
+					{
+						"coding": [
+							{
+								"code": "F",
+								"display": "Medico di medicina generale"
+							}
+						]
+					}
+				],
+				"telecom": [
+					{
+						"value": "3452323456"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Practitioner/b7036ef2-8933-4bfc-9e16-5f37b67067a0-1",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "b7036ef2-8933-4bfc-9e16-5f37b67067a0-1",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.it/sid/codiceFiscale",
+						"value": "DFMMDC80A24F205B"
+					}
+				],
+				"name": [
+					{
+						"family": "DI FAMIGLIA",
+						"given": [
+							"MEDICO"
+						]
+					}
+				],
+				"qualification": [
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "F",
+									"display": "Medico di medicina generale"
+								}
+							]
+						}
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Encounter/HC40-ENLIST.f40a1962-f13f-b14f-2ab0-b18bdd3e5b68",
+			"resource": {
+				"resourceType": "Encounter",
+				"id": "HC40-ENLIST.f40a1962-f13f-b14f-2ab0-b18bdd3e5b68",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
+					]
+				},
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoAccesso",
+						"value": "SOC-202300000066"
+					}
+				],
+				"status": "in-progress",
+				"class": {
+					"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
+					"code": "ACCSS",
+					"display": "Socio-Sanitario"
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"period": {
+					"start": "2023-03-29T13:57:13+02:00"
+				},
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
+								"code": "02",
+								"display": "Attivazione Cure Domiciliari (ADI)"
+							}
+						]
+					}
+				],
+				"serviceProvider": {
+					"reference": "Organization/a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
+					"display": "ASST FATEBENEFRATELLI SACCO"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Organization/0a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "0a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
+				"meta": {
+					"lastUpdated": "2023-05-09T15:16:47Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte",
+						"value": "030703"
+					},
+					{
+						"system": "http://hl7.it/sid/codiceFiscale",
+						"value": "09319690963"
+					}
+				],
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+								"code": "AO"
+							}
+						]
+					}
+				],
+				"name": "ASST FATEBENEFRATELLI SACCO",
+				"address": [
+					{
+						"use": "work",
+						"type": "physical",
+						"line": [
+							"VIA G.B. GRASSI N. 74"
+						],
+						"district": "MI",
+						"state": "LOMBARDIA",
+						"postalCode": "20157",
+						"extension": [
+							{
+								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+								"valueString": "015146"
+							}
+						]
+					}
+				],
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
+						"valueDate": "2016-01-01"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
+						"valueDate": "9999-12-31"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+						"valueDate": "2016-02-11"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+						"valueDate": "9999-12-31"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+						"valueDate": "2016-01-01"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+						"valueDate": "9999-12-31"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-03-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+					]
+				},
+				"period": {
+					"start": "2023-03-01T00:00:00+01:00",
+					"end": "2023-12-31T23:59:59+01:00"
+				},
+				"practitioner": {
+					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+					"display": "Demo Infermiere"
+				},
+				"organization": {
+					"reference": "Organization/a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
+					"display": "ASST FATEBENEFRATELLI SACCO"
+				},
+				"code": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario",
+								"code": "PROFSAN03",
+								"display": "Infermiere"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Organization/8c4259b0-f97f-11ed-a481-0050569fd9f1",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "8c4259b0-f97f-11ed-a481-0050569fd9f1",
+				"meta": {
+					"lastUpdated": "2023-06-05T09:35:32Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+					],
+					"versionId": "8"
+				},
+				"active": true,
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoCredenziale",
+						"value": "321091908"
+					},
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialePresidio",
+						"value": "091908"
+					}
+				],
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+								"code": "C-DOM",
+								"display": "CURE DOMICILIARI"
+							}
+						]
+					}
+				],
+				"name": "NUOVA SAIR",
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "0236763540"
+					},
+					{
+						"system": "url",
+						"value": "NUOVASAIR.MI@NUOVASAIR.IT"
+					}
+				],
+				"address": [
+					{
+						"use": "work",
+						"type": "physical",
+						"line": [
+							"VIA EMILIO CORNALIA,10"
+						],
+						"city": "MILANO",
+						"district": "MI",
+						"postalCode": "20124",
+						"extension": [
+							{
+								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+								"valueString": "015146"
+							},
+							{
+								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale",
+								"extension": [
+									{
+										"url": "codiceDistretto",
+										"valueCodeableConcept": {
+											"coding": [
+												{
+													"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+													"code": "22109",
+													"display": "MUNICIPIO 9"
+												}
+											]
+										}
+									},
+									{
+										"url": "ASSTAfferenza",
+										"valueCodeableConcept": {
+											"coding": [
+												{
+													"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+													"code": "030701",
+													"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+												}
+											]
+										}
+									},
+									{
+										"url": "ATSAfferenza",
+										"valueCodeableConcept": {
+											"coding": [
+												{
+													"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+													"code": "030321",
+													"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+												}
+											]
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"partOf": {
+					"reference": "Organization/80a99d30-d5df-11ec-af94-02001700b287"
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+						"valueDate": "2023-05-19"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+						"valueDate": "9999-12-31"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+						"valueDate": "2022-12-02"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+						"valueDate": "9999-12-31"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
+						"valueDate": "2022-12-02"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
+						"valueDate": "9999-12-31"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22006",
+											"display": "GARBAGNATESE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030706",
+											"display": "ASST RHODENSE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22004",
+											"display": "MAGENTINO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030705",
+											"display": "ASST OVEST MILANESE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22003",
+											"display": "LEGNANESE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030705",
+											"display": "ASST OVEST MILANESE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22002",
+											"display": "CASTANESE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030705",
+											"display": "ASST OVEST MILANESE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22109",
+											"display": "MUNICIPIO 9"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030701",
+											"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22101",
+											"display": "MUNICIPIO 1"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030703",
+											"display": "ASST FATEBENEFRATELLI SACCO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22102",
+											"display": "MUNICIPIO 2"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030703",
+											"display": "ASST FATEBENEFRATELLI SACCO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22103",
+											"display": "MUNICIPIO 3"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030703",
+											"display": "ASST FATEBENEFRATELLI SACCO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22104",
+											"display": "MUNICIPIO 4"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030703",
+											"display": "ASST FATEBENEFRATELLI SACCO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22107",
+											"display": "MUNICIPIO 7"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030702",
+											"display": "ASST SANTI PAOLO E CARLO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22108",
+											"display": "MUNICIPIO 8"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030703",
+											"display": "ASST FATEBENEFRATELLI SACCO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22106",
+											"display": "MUNICIPIO 6"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030702",
+											"display": "ASST SANTI PAOLO E CARLO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22105",
+											"display": "MUNICIPIO 5"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030702",
+											"display": "ASST SANTI PAOLO E CARLO"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+						"extension": [
+							{
+								"url": "codiceDistretto",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+											"code": "22007",
+											"display": "RHODENSE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ASSTAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+											"code": "030706",
+											"display": "ASST RHODENSE"
+										}
+									]
+								}
+							},
+							{
+								"url": "ATSAfferenza",
+								"valueCodeableConcept": {
+									"coding": [
+										{
+											"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+											"code": "030321",
+											"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+										}
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+			"resource": {
+				"resourceType": "Practitioner",
+				"id": "4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-03-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
+					]
+				},
+				"identifier": [
+					{
+						"system": "http://hl7.it/sid/codiceFiscale",
+						"value": "NFRDME80A01F205X"
+					}
+				],
+				"name": [
+					{
+						"family": "Infermiere",
+						"given": [
+							"Demo"
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Condition/53d24d4d-9b8c-4ddd-b7f4-8832898507ab",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "53d24d4d-9b8c-4ddd-b7f4-8832898507ab",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-29T11:36:38.532+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia",
+								"code": "1",
+								"display": "Patologia Primaria"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM",
+							"code": "42821",
+							"display": " INSUFFICIENZA CARDIACA SISTOLICA ACUTA"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"recordedDate": "2010-01-01T00:00:00+01:00"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Condition/189f9465-e61f-4cb0-add0-9f6d1e5aa59e",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "189f9465-e61f-4cb0-add0-9f6d1e5aa59e",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2010-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia",
+								"code": "2",
+								"display": "Patologia Secondaria"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM",
+							"code": "4258",
+							"display": "CARDIOMIOPATIA IN ALTRE MALATTIE CLASSIFICATE ALTROVE"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"recordedDate": "2010-01-01T00:00:00+01:00"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Condition/d497da2a-dc33-4015-bd91-f64be29f55cb",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "d497da2a-dc33-4015-bd91-f64be29f55cb",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2010-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia",
+								"code": "2",
+								"display": "Patologia Secondaria"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM",
+							"code": "40291",
+							"display": "CARDIOPATIA IPERTENSIVA NON SPECIFICATA CON INSUFFICIENZA CARDIACA"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"recordedDate": "2010-01-01T00:00:00+01:00"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Condition/9ea44e83-a2af-43c8-8562-0b73f3679530",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "9ea44e83-a2af-43c8-8562-0b73f3679530",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-29T11:36:38.622+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPatologiaPrimariaSecondariaUlteriore"
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPatologia",
+								"code": "3",
+								"display": "Patologia Ulteriore"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM",
+							"code": "40412",
+							"display": "CARDIONEFROPATIA IPERTENSIVA BENIGNA SENZA INSUFFICIENZA CARDIACA E CON PATOLOGIA RENALE CRONICA DI STADIO V O DI STADIO TERMINALE"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"recordedDate": "2010-01-01T00:00:00+01:00"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Goal/959c17ef-f64d-451f-b49f-9480992e7645",
+			"resource": {
+				"resourceType": "Goal",
+				"id": "959c17ef-f64d-451f-b49f-9480992e7645",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
+					]
+				},
+				"lifecycleStatus": "planned",
+				"description": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute",
+							"code": "04",
+							"display": "Controllo dell'evoluzione della malattia"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Goal/f71d9ef8-cf60-4487-a3e3-ec01864ed361",
+			"resource": {
+				"resourceType": "Goal",
+				"id": "f71d9ef8-cf60-4487-a3e3-ec01864ed361",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
+					]
+				},
+				"lifecycleStatus": "planned",
+				"description": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute",
+							"code": "03",
+							"display": "Mantenimento del corretto stile di vita"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "MARIO ROSSI"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/1683107592742-64787-2-1",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "1683107592742-64787-2-1",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-03T11:53:12.743+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+					]
+				},
+				"status": "registered",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+							"code": "VAL1",
+							"display": "Scheda Triage"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"performer": [
+					{
+						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+						"display": "Infermiere"
+					}
+				],
+				"valueInteger": 8,
+				"derivedFrom": [
+					{
+						"reference": "QuestionnaireResponse/1683107592742-64787-2",
+						"display": "Valutazione"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/1683107657974-51919-3-1",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "1683107657974-51919-3-1",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-03T11:54:17.974+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+					]
+				},
+				"status": "registered",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+							"code": "VAL2",
+							"display": "Scheda semplificata SIAD"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"performer": [
+					{
+						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+						"display": "Infermiere"
+					}
+				],
+				"derivedFrom": [
+					{
+						"reference": "QuestionnaireResponse/1683107657974-51919-3",
+						"display": "Valutazione"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/190436-170550-1681465565556-1",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "190436-170550-1681465565556-1",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-03-13T16:13:11.686+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+					]
+				},
+				"status": "registered",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+							"code": "VAL3",
+							"display": "InterRAI HomeCare"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"performer": [
+					{
+						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+						"display": "Infermiere"
+					}
+				],
+				"derivedFrom": [
+					{
+						"reference": "QuestionnaireResponse/190436-170550-1681465565556",
+						"display": "Valutazione"
+					}
+				],
+				"component": [
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.01",
+									"display": "Cognitive Performance Scale (CPS)"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.02",
+									"display": "Depression Rating Scale (DRS)"
+								}
+							]
+						},
+						"valueInteger": 8
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.03",
+									"display": "- possibilità di umore depresso"
+								}
+							]
+						},
+						"valueInteger": 8
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.04",
+									"display": "Cambiamenti acuti nello stato mentale"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.05",
+									"display": "Ha presentato allucinazioni"
+								}
+							]
+						},
+						"valueInteger": 4
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.06",
+									"display": "Capacità di farsi comprendere"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.07",
+									"display": "Vagabondaggio"
+								}
+							]
+						},
+						"valueInteger": 3
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.08",
+									"display": "Aggressività verbale"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.09",
+									"display": "Aggressività fisica"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.10",
+									"display": "Comportamento sociale inadeguato"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.11",
+									"display": "Rifiuto dell'assistenza"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.12",
+									"display": "Coinvolgimento"
+								}
+							]
+						},
+						"valueInteger": 3
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.13",
+									"display": "Igiene personale"
+								}
+							]
+						},
+						"valueInteger": 8
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.14",
+									"display": "Locomozione"
+								}
+							]
+						},
+						"valueInteger": 8
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.15",
+									"display": "Mangiare"
+								}
+							]
+						},
+						"valueInteger": 8
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.16",
+									"display": "ADL Self-performance Hierarchy"
+								}
+							]
+						},
+						"valueInteger": 6
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.17",
+									"display": "Potenziale di miglioramento nella funzione fisica"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.18",
+									"display": "Cadute"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.19",
+									"display": "CHESS"
+								}
+							]
+						},
+						"valueInteger": 5
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.20",
+									"display": "Scala del dolore"
+								}
+							]
+						},
+						"valueInteger": -1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.21",
+									"display": "Ulcere da pressione"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.22",
+									"display": "Perdita di peso"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.23",
+									"display": "Deglutizione"
+								}
+							]
+						},
+						"valueInteger": 5
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.24",
+									"display": "Ossigeno"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.25",
+									"display": "Ventilazione assistita"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.26",
+									"display": "Dialisi"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.27",
+									"display": "Tervia ev"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.28",
+									"display": "Tracheostomia"
+								}
+							]
+						},
+						"valueInteger": 3
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.29",
+									"display": "Classe RUG di appartenenza"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PHP.30",
+									"display": "Livello di priorità"
+								}
+							]
+						},
+						"valueInteger": 5
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.01",
+									"display": "Prevenzione"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.02",
+									"display": "Condizioni cardio-respiratorie"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.03",
+									"display": "Consumo tabacco/alcool"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.04",
+									"display": "Farmaci"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.05",
+									"display": "Rischio di istituzionalizzazione"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.06",
+									"display": "Promozione di attività fisica"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.07",
+									"display": "Disidratazione"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.08",
+									"display": "Relazioni sociali"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.09",
+									"display": "Incontinenza urinaria"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.10",
+									"display": "ADL"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.11",
+									"display": "IADL"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.12",
+									"display": "Abuso dell'anziano"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.13",
+									"display": "Supporto informale"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.14",
+									"display": "Sicurezza dell'ambiente domestico"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.15",
+									"display": "Stato cognitivo"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.16",
+									"display": "Piaghe da decubito"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.17",
+									"display": "Dolore"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.18",
+									"display": "Comportamento"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.19",
+									"display": "Comunicazione"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.20",
+									"display": "Cadute"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.21",
+									"display": "Umore"
+								}
+							]
+						},
+						"valueInteger": 2
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.22",
+									"display": "Disturbi intestinali"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.23",
+									"display": "Nutrizione entrenale"
+								}
+							]
+						},
+						"valueInteger": 0
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.24",
+									"display": "Stato confusionale acuto"
+								}
+							]
+						},
+						"valueInteger": 1
+					},
+					{
+						"code": {
+							"coding": [
+								{
+									"code": "PVC.25",
+									"display": "Nutrizione"
+								}
+							]
+						},
+						"valueInteger": 2
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/1683107592742-64787-2",
+			"resource": {
+				"resourceType": "QuestionnaireResponse",
+				"id": "1683107592742-64787-2",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-03T11:53:12.743+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+						"valueReference": {
+							"reference": "Observation/1683107592742-64787-2-1"
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+									"code": "I",
+									"display": "Prima Valutazione"
+								}
+							]
+						}
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"questionnaire": "Questionnaire/TRIAGE",
+				"status": "completed",
+				"authored": "2023-05-03T11:53:12+02:00",
+				"author": {
+					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+					"display": "Demo Infermiere"
+				},
+				"source": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"item": [
+					{
+						"linkId": "1",
+						"text": "MORBILITA'",
+						"answer": [
+							{
+								"valueString": "GRAVE-la compromissione d'organo/sistema produce disabilità"
+							}
+						]
+					},
+					{
+						"linkId": "3",
+						"text": "ALVO E DIUERESI",
+						"answer": [
+							{
+								"valueString": "INCONTINENZA STABILE-per alvo e diuresi(uso pannoloni)"
+							}
+						]
+					},
+					{
+						"linkId": "8",
+						"text": "ASSISTENZA DIRETTA (caregiver)",
+						"answer": [
+							{
+								"valueString": "INADEGUATA-(non è offerta alcun tipo di assistenza)"
+							}
+						]
+					},
+					{
+						"linkId": "6",
+						"text": "STATO MENTALE E COMPORTAMENTO",
+						"answer": [
+							{
+								"valueString": "NON COLLABORANTE,E CON DIFFICOLTA' A CAPIRE LE INDICAZIONI"
+							}
+						]
+					},
+					{
+						"linkId": "7",
+						"text": "CON CHI VIVE",
+						"answer": [
+							{
+								"valueString": "SOLO,NON NECESSITA DI FIGURE DI RIFERIMENTO"
+							}
+						]
+					},
+					{
+						"linkId": "5",
+						"text": "IGIENE PERSONALE",
+						"answer": [
+							{
+								"valueString": "CON AIUTO MODERATO"
+							}
+						]
+					},
+					{
+						"linkId": "4",
+						"text": "MOBILITA'",
+						"answer": [
+							{
+								"valueString": "CON AUSILI-usa bastone,walker,carrozzina,..."
+							}
+						]
+					},
+					{
+						"linkId": "2",
+						"text": "ALIMENTAZIONE",
+						"answer": [
+							{
+								"valueString": "CON AIUTO-supervisione"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/1683107657974-51919-3",
+			"resource": {
+				"resourceType": "QuestionnaireResponse",
+				"id": "1683107657974-51919-3",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-03T11:54:17.974+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+						"valueReference": {
+							"reference": "Observation/1683107657974-51919-3-1"
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+									"code": "I",
+									"display": "Prima Valutazione"
+								}
+							]
+						}
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"questionnaire": "Questionnaire/SIAD",
+				"status": "completed",
+				"authored": "2023-05-03T11:54:17+02:00",
+				"author": {
+					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+					"display": "Demo Infermiere"
+				},
+				"source": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"item": [
+					{
+						"linkId": "29",
+						"text": "Assistenza nelle IADL",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "25",
+						"text": "Trattamento riabilitativo neurologico in presenza di disabilità",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "9",
+						"text": "Gestione della stomia",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "19",
+						"text": "Procedura terapeutica (accesso venoso sottocute/intramuscolo)",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "18",
+						"text": "Prelievi venosi occasionali",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "3",
+						"text": "Ossigeno terapia",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "26",
+						"text": "Trattamento riabilitativo motorio in presenza di disabilità",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "6",
+						"text": "Alimentazione assistita",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "17",
+						"text": "Prelievi venosi non occasionali",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "8",
+						"text": "Alimentazione parenterale",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "14",
+						"text": "Ulcere da decubito di 3 e 4 grado",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "24",
+						"text": "Lesioni della cute",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "21",
+						"text": "Controllo del dolore",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "28",
+						"text": "Supervisione continua di utenti con disabilità",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "12",
+						"text": "Educazione terapeutica (addestramento/nursing)",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "7",
+						"text": "Alimentazione enterale",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "23",
+						"text": "Rischio sanguinamento acuto",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "4",
+						"text": "Ventilo terapia",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "15",
+						"text": "Ulcere cutanee (vascolari, traumatiche, ustioni, post chirurgiche, etc.) di 1 e 2 grado",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "22",
+						"text": "Fragilità familiare",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "16",
+						"text": "Ulcere cutanee (vascolari, ustioni, traumatiche, post chirurgiche, etc.) di 3 e 4 grado",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "5",
+						"text": "Tracheotomia",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "11",
+						"text": "Alterazione del ritmo sonno/veglia",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "2",
+						"text": "Broncoaspirazione/ Drenaggio posturale",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "27",
+						"text": "Trattamento riabilitativo di mantenimento in presenza di disabilità",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "31",
+						"text": "Supporto al caregiver",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "10",
+						"text": "Eliminazione urinaria/intestinale",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "20",
+						"text": "Gestione catetere centrale",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "30",
+						"text": "Assistenza nelle ADL",
+						"answer": [
+							{
+								"valueBoolean": false
+							}
+						]
+					},
+					{
+						"linkId": "13",
+						"text": "Ulcere da decubito di 1 e 2 grado",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "1",
+						"text": "Presenza di Rischio Infettivo",
+						"answer": [
+							{
+								"valueBoolean": true
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/190436-170550-1681465565556",
+			"resource": {
+				"resourceType": "QuestionnaireResponse",
+				"id": "190436-170550-1681465565556",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-03-13T16:13:11.686+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+						"valueReference": {
+							"reference": "Observation/190436-170550-1681465565556-1"
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+									"code": "I",
+									"display": "Prima Valutazione"
+								}
+							]
+						}
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"questionnaire": "Questionnaire/INTERRAI",
+				"status": "completed",
+				"authored": "2023-03-13T16:13:11+01:00",
+				"author": {
+					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+					"display": "Demo Infermiere"
+				},
+				"source": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/1683107592742-64787-2-2",
+			"resource": {
+				"resourceType": "Questionnaire",
+				"id": "1683107592742-64787-2-2",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-03T11:53:12.743+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+					]
+				},
+				"title": "TRIAGE",
+				"status": "active"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/1683107657974-51919-3-2",
+			"resource": {
+				"resourceType": "Questionnaire",
+				"id": "1683107657974-51919-3-2",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-03T11:54:17.974+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+					]
+				},
+				"title": "SIAD",
+				"status": "active"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/190436-170550-1681465565556-2",
+			"resource": {
+				"resourceType": "Questionnaire",
+				"id": "190436-170550-1681465565556-2",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-03-13T16:13:11.686+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+					]
+				},
+				"title": "INTERRAI",
+				"status": "active"
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/ServiceRequest/de4a9684-c321-484c-9017-abd74e8de343-1",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "de4a9684-c321-484c-9017-abd74e8de343-1",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-25T16:21:01.064+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
+									"code": "2",
+									"display": "MMG/PLS"
+								}
+							]
+						}
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale",
+						"value": "2023000083"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+							"code": "C-DOM",
+							"display": "Cure Domiciliari"
+						}
+					]
+				},
+				"quantityQuantity": {
+					"value": 4
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2023-06-01T20:00:00+02:00",
+					"end": "2023-06-30T20:00:00+02:00"
+				},
+				"performer": [
+					{
+						"reference": "Organization/8c4259b0-f97f-11ed-a481-0050569fd9f1",
+						"display": "NUOVA SAIR"
+					},
+					{
+						"reference": "PractitionerRole/e00856f9-8186-4050-9171-850719e67e54",
+						"display": "Professionista Sanitario ADI"
+					}
+				],
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
+								"code": "PERCDOM01",
+								"display": "Prelievo"
+							}
+						]
+					}
+				],
+				"note": [
+					{
+						"text": "Ulteriori informazioni"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/ServiceRequest/de4a9684-c321-484c-9017-abd74e8de343-2",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "de4a9684-c321-484c-9017-abd74e8de343-2",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-25T16:21:01.064+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
+									"code": "2",
+									"display": "MMG/PLS"
+								}
+							]
+						}
+					}
+				],
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale",
+						"value": "2023000083"
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+							"code": "C-DOM",
+							"display": "Cure Domiciliari"
+						}
+					]
+				},
+				"quantityQuantity": {
+					"value": 16
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2023-06-01T20:00:00+02:00",
+					"end": "2023-07-31T20:00:00+02:00"
+				},
+				"performer": [
+					{
+						"reference": "Organization/8c4259b0-f97f-11ed-a481-0050569fd9f1",
+						"display": "NUOVA SAIR"
+					},
+					{
+						"reference": "PractitionerRole/73a71883-aae1-497b-9a70-16cae8a0cc22",
+						"display": "Professionista Sanitario ADI"
+					}
+				],
+				"reasonCode": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
+								"code": "PERCDOM08",
+								"display": "Lesioni C"
+							}
+						]
+					}
+				],
+				"note": [
+					{
+						"text": "Ulteriori informazioni"
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/ServiceRequest/0F2BBB76-1ED0-CFA6-E983-7004BD4C1F62",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "0F2BBB76-1ED0-CFA6-E983-7004BD4C1F62",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli",
+						"extension": [
+							{
+								"url": "Prescrizione Elettronica",
+								"valueString": "03"
+							}
+						]
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS",
+							"code": "018917.01",
+							"display": "MONITORAGGIO CARDIORESPIRATORIO NOTTURNO COMPLETO (8 canali)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2023-04-27T13:35:00+02:00",
+					"end": "2023-04-27T13:35:00+02:00"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/ServiceRequest/AEE3F728-435F-C793-60C6-FDA2DA310285",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "AEE3F728-435F-C793-60C6-FDA2DA310285",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli",
+						"extension": [
+							{
+								"url": "Prescrizione Elettronica",
+								"valueString": "03"
+							}
+						]
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS",
+							"code": "08897.07",
+							"display": "VISITA CARDIOCHIRURGICA (PRIMA VISITA)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2023-04-27T11:34:00+02:00",
+					"end": "2023-04-28T11:34:00+02:00"
+				}
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/ServiceRequest/153a91df-d426-4538-844c-6a12b1213b74",
+			"resource": {
+				"resourceType": "ServiceRequest",
+				"id": "153a91df-d426-4538-844c-6a12b1213b74",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale"
+					]
+				},
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"code": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali",
+							"code": "EDU01",
+							"display": "Alcool"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2023-04-30T06:00:00+02:00",
+					"end": "2023-04-29T06:00:00+02:00"
+				},
+				"locationCode": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu",
+								"code": "INTEDU1",
+								"display": "In presenza"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/PractitionerRole/e00856f9-8186-4050-9171-850719e67e54",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "e00856f9-8186-4050-9171-850719e67e54",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-31T20:00:00.000+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDettagliAttivazionePercorsoCure",
+						"valueReference": {
+							"reference": "ServiceRequest/de4a9684-c321-484c-9017-abd74e8de343-1"
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleNumeroAccessi",
+						"valueInteger": 4
+					}
+				],
+				"code": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore",
+								"code": "3",
+								"display": "Infermiere"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/PractitionerRole/73a71883-aae1-497b-9a70-16cae8a0cc22",
+			"resource": {
+				"resourceType": "PractitionerRole",
+				"id": "73a71883-aae1-497b-9a70-16cae8a0cc22",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-31T20:00:00.000+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDettagliAttivazionePercorsoCure",
+						"valueReference": {
+							"reference": "ServiceRequest/de4a9684-c321-484c-9017-abd74e8de343-2"
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleNumeroAccessi",
+						"valueInteger": 16
+					}
+				],
+				"code": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore",
+								"code": "3",
+								"display": "Infermiere"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/MedicationRequest/62980b7f-dcd4-4a3b-b7a9-2751ec1a84a4",
+			"resource": {
+				"resourceType": "MedicationRequest",
+				"id": "62980b7f-dcd4-4a3b-b7a9-2751ec1a84a4",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-02T18:00:00.000+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaOssigenoDomicilio",
+						"valueBoolean": true
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaOssigeno",
+							"code": "OT3",
+							"display": "Ossigeno Concentratore"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"dosageInstruction": [
+					{
+						"timing": {
+							"repeat": {
+								"boundsPeriod": {
+									"start": "2023-05-02T18:00:00+02:00",
+									"end": "2023-05-13T18:00:00+02:00"
+								},
+								"duration": 4.0,
+								"durationUnit": "h"
+							}
+						},
+						"doseAndRate": [
+							{
+								"doseQuantity": {
+									"value": 45,
+									"unit": "%FiO2"
+								},
+								"rateQuantity": {
+									"value": 3,
+									"unit": "L/min"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/MedicationRequest/e4ef41df-cf72-4b68-bf72-956c66b83578",
+			"resource": {
+				"resourceType": "MedicationRequest",
+				"id": "e4ef41df-cf72-4b68-bf72-956c66b83578",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-02T14:00:00.000+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaPaziente",
+						"valueBoolean": true
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"medicationCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
+							"code": "CJC",
+							"display": "AMOXICILLINA+ACIDO CLAVULANICO 80+11,4MG/ML 70ML USO ORALE"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"note": [
+					{
+						"text": "NOTE AMOXICILLINA+ACIDO CLAVULANICO 80+11,4MG/ML 70ML USO ORALE"
+					}
+				],
+				"dosageInstruction": [
+					{
+						"timing": {
+							"repeat": {
+								"boundsPeriod": {
+									"start": "2023-05-02T14:00:00+02:00",
+									"end": "2023-05-06T14:00:00+02:00"
+								},
+								"frequency": 1,
+								"period": 1,
+								"periodUnit": "d"
+							}
+						},
+						"doseAndRate": [
+							{
+								"doseQuantity": {
+									"value": 1.0,
+									"unit": "compresse"
+								}
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"fullUrl": "http://localhost:8480/api/enlist/fhir/DeviceRequest/03279cfd-1c7d-47ad-a360-ee43f7d3f910",
+			"resource": {
+				"resourceType": "DeviceRequest",
+				"id": "03279cfd-1c7d-47ad-a360-ee43f7d3f910",
+				"meta": {
+					"versionId": "1",
+					"lastUpdated": "2023-05-07T16:00:00.000+02:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestPrescrizioneElettronica",
+						"valueBoolean": true
+					}
+				],
+				"basedOn": [
+					{
+						"reference": "CarePlan/bd7cc95b-4ac2-4d59-afd9-946a07324713",
+						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+					}
+				],
+				"status": "active",
+				"intent": "order",
+				"codeCodeableConcept": {
+					"coding": [
+						{
+							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi",
+							"code": "060309007",
+							"display": "BUSTO IN STOFFA ARMATA SU MISURA CON ALLACCIATURA CENTRALE CON PARTE ANTERIORE O LATERALE ELASTICA PER UOMO"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+					"display": "Mario Rossi"
+				},
+				"occurrencePeriod": {
+					"start": "2023-05-07T16:00:00+02:00",
+					"end": "2023-05-13T16:00:00+02:00"
+				}
+			}
+		}
+	]
 }
