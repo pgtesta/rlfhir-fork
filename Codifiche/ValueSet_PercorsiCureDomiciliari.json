@@ -15,75 +15,75 @@
         "concept": [
           {
             "code": "PERCDOM01",
-            "display": "Cure Domiciliari Base - Prelievo"
+            "display": "Prelievo"
           },
           {
             "code": "PERCDOM02",
-            "display": "Cure Domiciliari Base - Prestazionale Generico"
+            "display": "Prestazionale Generico"
           },
           {
             "code": "PERCDOM03",
-            "display": "Cure Domiciliari Base Percorso - Percorso Gestione Alvo (GA)"
+            "display": "Gestione Alvo"
           },
           {
             "code": "PERCDOM04",
-            "display": "Cure Domiciliari Base Percorso - Percorso Gestione Catetere Vescicale (GCV)"
+            "display": "Gestione Catetere Vescicale"
           },
           {
             "code": "PERCDOM05",
-            "display": "Cure Domiciliari Base Percorso - Percorso Gestione Stomie (GS)"
+            "display": "Gestione Stomie"
           },
           {
             "code": "PERCDOM06",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni A"
+            "display": "Lesioni A"
           },
           {
             "code": "PERCDOM07",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni B"
+            "display": "Lesioni B"
           },
           {
             "code": "PERCDOM08",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Lesioni C"
+            "display": "Lesioni C"
           },
           {
             "code": "PERCDOM09",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia A"
+            "display": "Fisioterapia A"
           },
           {
             "code": "PERCDOM10",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia B"
+            "display": "Fisioterapia B"
           },
           {
             "code": "PERCDOM11",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia C"
+            "display": "Fisioterapia C"
           },
           {
             "code": "PERCDOM12",
-            "display": "Cure Domiciliari Integrate Percorso - Percorso Fisioterapia D"
+            "display": "Fisioterapia D"
           },
           {
             "code": "PERCDOM13",
-            "display": "ADI - Alta Intensità"
+            "display": "Liv I"
           },
           {
             "code": "PERCDOM14",
-            "display": "ADI - Liv I"
+            "display": "Liv II"
           },
           {
             "code": "PERCDOM15",
-            "display": "ADI - Liv II"
+            "display": "Liv III A"
           },
           {
             "code": "PERCDOM16",
-            "display": "ADI - Liv IIIA"
+            "display": "Liv III B"
           },
           {
             "code": "PERCDOM17",
-            "display": "ADI - Liv IIIB"
+            "display": "Liv III C"
           },
           {
             "code": "PERCDOM18",
-            "display": "ADI – Liv IIIC"
+            "display": "Alta Intensità"
           }
         ]
       }
