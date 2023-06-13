@@ -20,8 +20,8 @@
     "coding": [
       {
         "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche",
-        "code": "[ADI]_001",
-        "display": "Accessi domiciliari"
+        "code": "IGI-11",
+        "display": "Eseguire igiene della stomia e della cute peristomale e valutare stato dello stoma"
       }
     ]
   },
@@ -42,7 +42,7 @@
   },
   "reasonReference": {
     "reference": "Condition/3d38668c-9cc0-11ed-a8fc-0242ac120002",
-    "display": "Problema infermieristico "
+    "display": "Problema infermieristico"
   },
   "note": [
     {

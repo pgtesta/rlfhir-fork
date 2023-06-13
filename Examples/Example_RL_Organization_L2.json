@@ -1,0 +1,706 @@
+{
+	"resourceType": "Organization",
+	"id": "esempio-RLOrganizationL2",
+	"meta": {
+		"lastUpdated": "2023-06-05T09:35:32Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+		],
+		"versionId": "8"
+	},
+	"active": true,
+	"identifier": [
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoCredenziale",
+			"value": "321091908"
+		},
+		{
+			"system": "https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialePresidio",
+			"value": "091908"
+		}
+	],
+	"type": [
+		{
+			"coding": [
+				{
+					"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipoStruttura",
+					"code": "C-DOM",
+					"display": "CURE DOMICILIARI"
+				}
+			]
+		}
+	],
+	"name": "NUOVA SAIR",
+	"telecom": [
+		{
+			"system": "phone",
+			"value": "0236763540"
+		},
+		{
+			"system": "url",
+			"value": "NUOVASAIR.MI@NUOVASAIR.IT"
+		}
+	],
+	"address": [
+		{
+			"use": "work",
+			"type": "physical",
+			"line": [
+				"VIA EMILIO CORNALIA,10"
+			],
+			"city": "MILANO",
+			"district": "MI",
+			"postalCode": "20124",
+			"extension": [
+				{
+					"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+					"valueString": "015146"
+				},
+				{
+					"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale",
+					"extension": [
+						{
+							"url": "codiceDistretto",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+										"code": "22109",
+										"display": "MUNICIPIO 9"
+									}
+								]
+							}
+						},
+						{
+							"url": "ASSTAfferenza",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+										"code": "030701",
+										"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+									}
+								]
+							}
+						},
+						{
+							"url": "ATSAfferenza",
+							"valueCodeableConcept": {
+								"coding": [
+									{
+										"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+										"code": "030321",
+										"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"partOf": {
+		"reference": "Organization/80a99d30-d5df-11ec-af94-02001700b287"
+	},
+	"extension": [
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+			"valueDate": "2023-05-19"
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+			"valueDate": "9999-12-31"
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+			"valueDate": "2022-12-02"
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+			"valueDate": "9999-12-31"
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
+			"valueDate": "2022-12-02"
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
+			"valueDate": "9999-12-31"
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22006",
+								"display": "GARBAGNATESE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030706",
+								"display": "ASST RHODENSE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22004",
+								"display": "MAGENTINO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030705",
+								"display": "ASST OVEST MILANESE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22003",
+								"display": "LEGNANESE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030705",
+								"display": "ASST OVEST MILANESE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22002",
+								"display": "CASTANESE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030705",
+								"display": "ASST OVEST MILANESE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22109",
+								"display": "MUNICIPIO 9"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030701",
+								"display": "ASST GRANDE OSPEDALE METROPOLITANO NIGUARDA"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22101",
+								"display": "MUNICIPIO 1"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030703",
+								"display": "ASST FATEBENEFRATELLI SACCO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22102",
+								"display": "MUNICIPIO 2"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030703",
+								"display": "ASST FATEBENEFRATELLI SACCO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22103",
+								"display": "MUNICIPIO 3"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030703",
+								"display": "ASST FATEBENEFRATELLI SACCO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22104",
+								"display": "MUNICIPIO 4"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030703",
+								"display": "ASST FATEBENEFRATELLI SACCO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22107",
+								"display": "MUNICIPIO 7"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030702",
+								"display": "ASST SANTI PAOLO E CARLO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22108",
+								"display": "MUNICIPIO 8"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030703",
+								"display": "ASST FATEBENEFRATELLI SACCO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22106",
+								"display": "MUNICIPIO 6"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030702",
+								"display": "ASST SANTI PAOLO E CARLO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22105",
+								"display": "MUNICIPIO 5"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030702",
+								"display": "ASST SANTI PAOLO E CARLO"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+			"extension": [
+				{
+					"url": "codiceDistretto",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+								"code": "22007",
+								"display": "RHODENSE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ASSTAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+								"code": "030706",
+								"display": "ASST RHODENSE"
+							}
+						]
+					}
+				},
+				{
+					"url": "ATSAfferenza",
+					"valueCodeableConcept": {
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+								"code": "030321",
+								"display": "ATS DELLA CITTA' METROPOLITANA DI MILANO"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

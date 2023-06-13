@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationL1",
   "meta": {
-    "lastUpdated": "2023-05-16T08:18:52.8062367+00:00"
+    "lastUpdated": "2023-06-13T08:23:56.5456627+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
   "name": "RLOrganizationL1",
@@ -241,39 +241,6 @@
         "definition": "Stringa alfanumerica massimo di 1000 caratteri",
         "comment": "La fonte del dato è il campo DS_LIVELLO_1 dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "min": 1
-      },
-      {
-        "id": "Organization.telecom",
-        "path": "Organization.telecom",
-        "short": "Contatti dell'ente",
-        "definition": "Telefono, mail, fax ed url del sito internet",
-        "comment": "TBD"
-      },
-      {
-        "id": "Organization.telecom.system",
-        "path": "Organization.telecom.system",
-        "short": "Ogni ripetizione conterrà un valore tra phone | email | fax | url"
-      },
-      {
-        "id": "Organization.telecom.value",
-        "path": "Organization.telecom.value",
-        "short": "phone | email | fax | url",
-        "definition": "Il value del tag \"telecom\" è composto da 4 ripetizioni per restituire le informazioni (se presenti) del telefono, mail, fax e sito web. Ogni ripetizione conterràun valore."
-      },
-      {
-        "id": "Organization.telecom.use",
-        "path": "Organization.telecom.use",
-        "definition": "Non utilizzato"
-      },
-      {
-        "id": "Organization.telecom.rank",
-        "path": "Organization.telecom.rank",
-        "definition": "Non utilizzato"
-      },
-      {
-        "id": "Organization.telecom.period",
-        "path": "Organization.telecom.period",
-        "definition": "Non utilizzato"
       },
       {
         "id": "Organization.address",

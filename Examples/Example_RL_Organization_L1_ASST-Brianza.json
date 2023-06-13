@@ -29,24 +29,6 @@
     }
   ],
   "name": "ASST DELLA BRIANZA",
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "039 66541"
-    },
-    {
-      "system": "email",
-      "value": "protocollo@pec.asst-brianza.it"
-    },
-    {
-      "system": "fax",
-      "value": "039 66541"
-    },
-    {
-      "system": "url",
-      "value": "https://www.asst-brianza.it/web/"
-    }
-  ],
   "address": [
     {
       "use": "work",
@@ -61,17 +43,6 @@
         {
           "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
           "valueString": "108050"
-        },
-        {
-          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressDistrettoCode",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceDistretto",
-                "code": "TBD"
-              }
-            ]
-          }
         }
       ]
     }
