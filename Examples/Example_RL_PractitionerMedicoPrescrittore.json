@@ -21,6 +21,39 @@
       ]
     }
   ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-555-1002",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "Via Montenapoleone, 3"
+      ],
+      "city": "Milano",
+      "postalCode": "20121"
+    }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore",
+            "code": "F",
+            "display": "Medico di medicina generale"
+          }
+        ]
+      },
+      "issuer": {
+        "reference": "Organization/7d728476-09f3-11ee-be56-0242ac120002"
+      }
+    }
+  ],
   "extension": [
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert",
