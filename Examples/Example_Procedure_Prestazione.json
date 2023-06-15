@@ -19,6 +19,15 @@
     }
   ],
   "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+        "code": "C-DOM",
+        "display": "Cure domiciliari"
+      }
+    ]
+  },
   "code": {
     "coding": [
       {
