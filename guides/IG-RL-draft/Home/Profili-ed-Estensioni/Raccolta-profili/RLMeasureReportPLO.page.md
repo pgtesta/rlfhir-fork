@@ -3,6 +3,7 @@
 - [RLMeasureReportPLO](#rlmeasurereportplo)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
+    - [1. Totale posti letto occupati per L2](#1-totale-posti-letto-occupati-per-l2)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -64,7 +65,25 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+###	1. Totale posti letto occupati per L2
+
+Questa ricerca ha lo scopo di ottenere il totale dei posti letto occupati per un determinato L2.
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+-	reporter:Organization.identifier: codice L2 dell'ente di riferimento
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
+
+|     SCOPE    | Totale PLO |
+|---|---|
+| VERB | GET |
+| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
+| URL | MeasureReport?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO<br>&MeasureReport?reporter:Organization.identifier={codiceL2} |
+
+A titolo esemplificativo, la chiamata: 
+
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/MeasureReport?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO&reporter:Organization.identifier=016235
+
 
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
