@@ -210,6 +210,7 @@
       {
         "id": "QuestionnaireResponse.item",
         "path": "QuestionnaireResponse.item",
+        "short": "Elenco dei quesiti e delle risposte della valutazione alla quale il paziente è stato sottoposto",
         "min": 1
       },
       {
