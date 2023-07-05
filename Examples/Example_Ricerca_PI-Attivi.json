@@ -344,12 +344,6 @@
 							}
 						]
 					}
-				],
-				"telecom": [
-					{
-						"system": "phone",
-						"value": "3452323456"
-					}
 				]
 			}
 		},
@@ -377,6 +371,12 @@
 						"given": [
 							"MEDICO"
 						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "3452323456"
 					}
 				],
 				"qualification": [
