@@ -467,12 +467,6 @@
 							}
 						]
 					}
-				],
-				"telecom": [
-					{
-						"system": "phone",
-						"value": "3478788947"
-					}
 				]
 			}
 		},
@@ -500,6 +494,12 @@
 						"given": [
 							"NERI"
 						]
+					}
+				],
+				"telecom": [
+					{
+						"system": "phone",
+						"value": "3478788947"
 					}
 				],
 				"qualification": [
