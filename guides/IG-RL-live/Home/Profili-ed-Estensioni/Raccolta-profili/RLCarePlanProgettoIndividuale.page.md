@@ -107,7 +107,6 @@ Questa ricerca deve essere effettuata dagli Enti Erogatori di servizi socioassis
 L’elenco dei progetti individuali conterrà solo ed esclusivamente i dettagli dell’attivazione di un servizio socioassistenziale affidato all’Ente Erogatore chiamante. In virtù di ciò, lo scopo della ricerca è quello di consentire all’Ente Erogatore il confronto tra le versioni del progetto individuale precedentemente salvate e quelle restituite dalla ricerca.
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
--	activity.reference(RLServiceRequestServiziSocioAssistenziali).code coding.code: codice del servizio sociosanitario d’interesse
 -	activity.reference(RLServiceRequestServiziSocioAssistenziali).identifier: codice identificativo del servizio sociosanitario attivato/da attivare all’assistito
 -	subject.reference(RLPatientCittadino).identifier: codice fiscale dell’assistito
 
