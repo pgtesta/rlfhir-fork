@@ -28,6 +28,42 @@
     {
       "code": "05",
       "display": "Visita Continuità Assistenziale"
+    },
+    {
+      "code": "06",
+      "display": "Inviato da PS"
+    },
+    {
+      "code": "07",
+      "display": "Presa in carico proattiva"
+    },
+    {
+      "code": "08",
+      "display": "Inviato da Enti locali"
+    },
+    {
+      "code": "09",
+      "display": "Inviato da IFEC"
+    },
+    {
+      "code": "10",
+      "display": "Inviato da Assistente Sociale"
+    },
+    {
+      "code": "11",
+      "display": "Inviato da Medico di distretto"
+    },
+    {
+      "code": "12",
+      "display": "Inviato da Ospedale"
+    },
+    {
+      "code": "13",
+      "display": "Inviato da COT"
+    },
+    {
+      "code": "14",
+      "display": "Inviato da Centro Servizi"
     }
   ]
 }

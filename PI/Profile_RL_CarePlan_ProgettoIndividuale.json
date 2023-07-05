@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2023-05-31T08:57:48.0908194+00:00"
+    "lastUpdated": "2023-06-28T13:09:13.696631+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -204,7 +204,6 @@
         "short": "Case manager del progetto individuale. La figura del case manager può essere identificata in un professionista santatirio o in un equipe di professionisti sanitari.",
         "definition": "- Reference al profilo RLPractitionerRoleProfessionistaSanitario nel caso in cui il case manager sia un professionista sanitario. \r\n- Reference al profilo RLCareTeamEquipe nel caso in cui il case manager sia un equipe di professionisti sanitari.",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -220,7 +219,7 @@
         "id": "CarePlan.addresses",
         "path": "CarePlan.addresses",
         "short": "Problemi di salute del paziente",
-        "definition": "Reference ai profilo RLConditionProblemiSalute contentete i dettagli dei porblemi di salute del paziente (condizione clinica, patologie, ecc.)",
+        "definition": "Reference al profilo RLConditionProblemiSalute contenente i dettagli dei problemi di salute del paziente (condizione clinica, patologie, ecc.)",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {

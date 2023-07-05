@@ -79,6 +79,10 @@
     },
     {
       "code": "PERCDOM18",
+      "display": "Liv III C autorizzato"
+    },
+    {
+      "code": "PERCDOM19",
       "display": "Alta Intensità"
     }
   ]

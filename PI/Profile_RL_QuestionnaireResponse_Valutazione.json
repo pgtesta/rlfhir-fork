@@ -182,7 +182,6 @@
         "short": "Riferimento del professionista sanitario che ha eseguito la valutazione",
         "definition": "Reference al profilo RLPractionerProfessionistaSanitario del professionista sanitario che ha eseguito la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
         "type": [
           {
             "code": "Reference",
@@ -211,6 +210,7 @@
       {
         "id": "QuestionnaireResponse.item",
         "path": "QuestionnaireResponse.item",
+        "short": "Elenco dei quesiti e delle risposte della valutazione alla quale il paziente è stato sottoposto",
         "min": 1
       },
       {

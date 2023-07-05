@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerRoleMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-03-08T15:41:20.412251+00:00"
+    "lastUpdated": "2023-07-04T08:31:00.2069438+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
   "name": "RLPractitionerRoleMedicoPrescrittore",
@@ -67,7 +67,7 @@
           ],
           "rules": "open"
         },
-        "min": 2
+        "min": 0
       },
       {
         "id": "PractitionerRole.extension:dataInsert",
@@ -213,7 +213,6 @@
         "short": "Reference all'ente L2 in cui il medico prescrittore esercita",
         "definition": "Reference all'ente L2 in cui il medico prescrittore esercita la specifica professione.",
         "comment": "La fonte del dato è il campo ID_LIVELLO_2 dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
-        "min": 1,
         "type": [
           {
             "code": "Reference",

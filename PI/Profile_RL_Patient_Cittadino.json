@@ -328,7 +328,7 @@
         "id": "Patient.identifier:tesseraTEAM",
         "path": "Patient.identifier",
         "sliceName": "tesseraTEAM",
-        "short": "Numero identificazione tessera sanitaria europea",
+        "short": "Tessera TEAM del paziente",
         "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
         "max": "1"
       },
