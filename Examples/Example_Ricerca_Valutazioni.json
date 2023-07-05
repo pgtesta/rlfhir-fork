@@ -45,7 +45,7 @@
 				"basedOn": [
 					{
 						"reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+						"display": "PI-202300000102"
 					}
 				],
 				"questionnaire": "Questionnaire/TRIAGE",
@@ -227,7 +227,7 @@
 				"basedOn": [
 					{
 						"reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+						"display": "PI-202300000102"
 					}
 				],
 				"questionnaire": "Questionnaire/SIAD",
@@ -247,7 +247,7 @@
 						"text": "Assistenza nelle IADL",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": false
 							}
 						]
 					},
@@ -615,7 +615,7 @@
 				"basedOn": [
 					{
 						"reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-						"display": "PROGETTO INDIVIDUALE: PI-202300000102"
+						"display": "PI-202300000102"
 					}
 				],
 				"questionnaire": "Questionnaire/INTERRAI",
@@ -1301,7 +1301,7 @@
 				"id": "ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
 				"meta": {
 					"versionId": "1",
-					"lastUpdated": "2023-06-01T11:57:32.352+02:00",
+					"lastUpdated": "2023-06-07T18:01:15.747+02:00",
 					"profile": [
 						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
 					]
@@ -1329,8 +1329,8 @@
 					"display": "Accesso"
 				},
 				"period": {
-					"start": "2023-03-28T18:00:00+02:00",
-					"end": "2023-04-29T18:00:00+02:00"
+					"start": "2023-03-28T06:00:00+02:00",
+					"end": "2023-04-29T06:00:00+02:00"
 				},
 				"created": "2023-06-01T11:04:28+02:00",
 				"author": {
@@ -1349,11 +1349,11 @@
 						"display": "Patologia Primaria"
 					},
 					{
-						"reference": "Condition/a9531b92-e13a-4e1c-a170-58633eb16c6c",
+						"reference": "Condition/1760b4e1-b080-4530-b12a-02bf2c003bfb",
 						"display": "Patologia Secondaria"
 					},
 					{
-						"reference": "Condition/86df85c2-af54-469a-b62d-cdff04990cd0",
+						"reference": "Condition/c2ca8f32-286c-4233-91cf-5b382c3655b4",
 						"display": "Patologia Secondaria"
 					},
 					{
@@ -1361,7 +1361,7 @@
 						"display": "Patologia Addizionale"
 					},
 					{
-						"reference": "Condition/a9731f21-e45b-71f4-bl89-adf0g4890cr1",
+						"reference": "Condition/4205b790-7cad-4d1c-b762-2848eeca9452",
 						"display": "Problema Infermieristico"
 					}
 				],
@@ -1542,44 +1542,20 @@
 					},
 					{
 						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
-						"valueCode": "063049"
+						"valueCode": "015146"
 					}
 				],
 				"identifier": [
 					{
 						"system": "http://hl7.it/sid/codiceFiscale",
 						"value": "RSSMRA80A24F205I"
-					},
-					{
-						"extension": [
-							{
-								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente",
-								"valueString": "500001"
-							},
-							{
-								"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente",
-								"valueString": "SSN-MIN SALUTE"
-							}
-						],
-						"type": {
-							"coding": [
-								{
-									"display": "IT"
-								}
-							]
-						},
-						"system": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam",
-						"value": "00380111111111111111",
-						"period": {
-							"end": "2023-05-31T00:00:00+02:00"
-						}
 					}
 				],
 				"name": [
 					{
-						"family": "Mario",
+						"family": "Rossi",
 						"given": [
-							"Rossi"
+							"Mario"
 						]
 					}
 				],
@@ -1611,10 +1587,10 @@
 				},
 				"generalPractitioner": [
 					{
-						"reference": "Organization/d57c025231dd5ea32a2af34a0849416d896444e02f0b230cf75878fd5b386252"
+						"reference": "Organization/52e47e7c6fd07a60fe580fda555d0444958861aa7a1b05dcc0820b89df92a836"
 					},
 					{
-						"reference": "PractitionerRole/b7036ef2-8933-4bfc-9e16-5f37b67067a0"
+						"reference": "PractitionerRole/c3195c68-f12e-4a7b-87c5-9b111201a397"
 					}
 				]
 			}
