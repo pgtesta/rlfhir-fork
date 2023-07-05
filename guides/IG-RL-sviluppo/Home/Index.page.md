@@ -44,9 +44,6 @@ La versione corrente della guida implementativa gestisce i seguenti concetti:
   - Inviato da COT
   - Inviato da Centro Servizi
 
-
-
-
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
 
 ## Come leggere questa guida
