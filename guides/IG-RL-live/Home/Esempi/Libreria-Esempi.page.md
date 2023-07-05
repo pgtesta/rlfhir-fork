@@ -78,6 +78,12 @@
         </tr>
         <tr>
           <td>C-DOM</td>
+          <td>Bundle</td>
+          <td>Ricerca enti erogatori accreditati ambito territoriale ASST tipo C-DOM</td>
+          <td>{{link:Bundle/esempio-RicercaEntiErogatoriAccreditatiAmbitoTerritorialeASST-CDOM}}</td>
+        </tr>
+        <tr>
+          <td>C-DOM</td>
           <td>Patient</td>
           <td>Esempio del profilo RLPatientCittadino</td>
           <td>{{link:Patient/esempio-Patient-Cittadino}}</td>
