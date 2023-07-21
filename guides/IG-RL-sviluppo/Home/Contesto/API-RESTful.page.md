@@ -17,7 +17,7 @@ L'elenco delle API esposte è:
 |GET|<base_API_Manager>/_Organization_|RLOrganizationL1, RLOrganizationL2, RLOrganizationL3 |DDC FHIR Server|
 |GET|<base_API_Manager>/_Practitioner_|RLPractitionerMedicoPrescrittore|DDC FHIR Server|
 |GET|<base_API_Manager>/_PractitionerRole_|RLPractitionerRoleMedicoPrescrittore|DDC FHIR Server|
-|GET|<base_API_Manager>/_Location_|RLLocationPLOEdificio, RLLocationPLOLetto, RLLocationPLOPiano, RLLocationPLOStanza|NPRI FHIR Server|
+|GET|<base_API_Manager>/_Location_|RLLocationPLOLetto|NPRI FHIR Server|
 
 ### API Enti erogatori
 I servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
@@ -38,7 +38,7 @@ L'elenco delle API esposte è:
 |GET|<base_API_Ente>/_Procedure_|RLProcedurePrestazione|Ente Erogatore|
 |GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestSospensioneADI, RLServiceRequestRivalutazione|Ente Erogatore|
 |POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
-|GET|<base_API_Ente>/_Location_|RLLocationPLOEdificio, RLLocationPLOLetto, RLLocationPLOPiano, RLLocationPLOStanza|Ente Erogatore|
+|GET|<base_API_Ente>/_Location_|RLLocationPLOLetto|Ente Erogatore|
 
 ## Header 
 Le chiamate HTTP relative all'integrazione FHIR devono contenere i seguenti header:
