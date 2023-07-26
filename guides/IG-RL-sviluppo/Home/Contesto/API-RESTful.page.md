@@ -18,6 +18,7 @@ L'elenco delle API esposte è:
 |GET|<base_API_Manager>/_Practitioner_|RLPractitionerMedicoPrescrittore|DDC FHIR Server|
 |GET|<base_API_Manager>/_PractitionerRole_|RLPractitionerRoleMedicoPrescrittore|DDC FHIR Server|
 |GET|<base_API_Manager>/_Location_|RLLocationPLOLetto|NPRI FHIR Server|
+|POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
 
 ### API Enti erogatori
 I servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
