@@ -3,18 +3,18 @@ Benvenuti nella sezione delle Domande Frequenti. Qui troverete risposte alle dom
 ## Indice
 
 - [Indice](#indice)
-  - [DOMANDA 1 {#cosè-questo-prodotto}](#domanda-1-cosè-questo-prodotto)
-  - [DOMANDA 2 {#come-posso-iniziare}](#domanda-2-come-posso-iniziare)
-  - [DOMANDA 3 {#requisiti-di-sistema}](#domanda-3-requisiti-di-sistema)
+  - [Domanda 1 {#cosè-questo-prodotto}](#domanda-1-cosè-questo-prodotto)
+  - [Domanda 2 {#come-posso-iniziare}](#domanda-2-come-posso-iniziare)
+  - [Domanda 3 {#requisiti-di-sistema}](#domanda-3-requisiti-di-sistema)
 
-### DOMANDA 1 {#cosè-questo-prodotto}
-
-RISPOSTA ...
-
-### DOMANDA 2 {#come-posso-iniziare}
+### Domanda 1 {#cosè-questo-prodotto}
 
 RISPOSTA ...
 
-### DOMANDA 3 {#requisiti-di-sistema}
+### Domanda 2 {#come-posso-iniziare}
+
+RISPOSTA ...
+
+### Domanda 3 {#requisiti-di-sistema}
 
 RISPOSTA ...
