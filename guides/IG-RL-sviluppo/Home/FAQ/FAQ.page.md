@@ -1,10 +1,9 @@
-# {{page-title}}
+# FAQ
 
 Benvenuti nella sezione delle Domande Frequenti. Qui troverete risposte alle domande più comuni.
 
 ## Indice
-
-- [{{page-title}}](#page-title)
+- [FAQ](#faq)
   - [Indice](#indice)
     - [Domanda 1 {#cosè-questo-prodotto}](#domanda-1-cosè-questo-prodotto)
     - [Domanda 2 {#come-posso-iniziare}](#domanda-2-come-posso-iniziare)
