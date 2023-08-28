@@ -1,19 +1,13 @@
-# FAQ
-
 Benvenuti nella sezione delle Domande Frequenti. Qui troverete risposte alle domande più comuni.
 
 ## Indice
 
-- [FAQ](#faq)
-  - [Indice](#indice)
-  - [Domande e Risposte](#domande-e-risposte)
-    - [Cos'è questo prodotto? {#cosè-questo-prodotto}](#cosè-questo-prodotto-cosè-questo-prodotto)
-    - [Come posso iniziare ad utilizzare il prodotto? {#come-posso-iniziare}](#come-posso-iniziare-ad-utilizzare-il-prodotto-come-posso-iniziare)
-    - [Quali sono i requisiti di sistema? {#requisiti-di-sistema}](#quali-sono-i-requisiti-di-sistema-requisiti-di-sistema)
-    - [Cosa fare se ho dimenticato la password? {#password-dimenticata}](#cosa-fare-se-ho-dimenticato-la-password-password-dimenticata)
-  - [Ulteriori Aiuti](#ulteriori-aiuti)
-
-## Domande e Risposte
+- [Indice](#indice)
+  - [Cos'è questo prodotto? {#cosè-questo-prodotto}](#cosè-questo-prodotto-cosè-questo-prodotto)
+  - [Come posso iniziare ad utilizzare il prodotto? {#come-posso-iniziare}](#come-posso-iniziare-ad-utilizzare-il-prodotto-come-posso-iniziare)
+  - [Quali sono i requisiti di sistema? {#requisiti-di-sistema}](#quali-sono-i-requisiti-di-sistema-requisiti-di-sistema)
+  - [Cosa fare se ho dimenticato la password? {#password-dimenticata}](#cosa-fare-se-ho-dimenticato-la-password-password-dimenticata)
+- [Ulteriori Aiuti](#ulteriori-aiuti)
 
 ### Cos'è questo prodotto? {#cosè-questo-prodotto}
 
