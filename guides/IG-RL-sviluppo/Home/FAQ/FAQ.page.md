@@ -1,6 +1,10 @@
-# FAQ
+# FAQ (Domande Frequenti)
 
-## Domanda 1
+## Indice
+
+1. Domanda 1(#domanda-1)
+
+## Domanda 1 {#domanda-1}
 
 Risposta
 
