@@ -11,7 +11,21 @@
     "include": [
       {
         "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/ProvaIlenia",
-        "version": "0.1.0"
+        "version": "0.1.0",
+        "concept": [
+          {
+            "code": "available",
+            "display": "Disponibile"
+          },
+          {
+            "code": "busy",
+            "display": "Occupata"
+          },
+          {
+            "code": "not-working",
+            "display": "Inagibile"
+          }
+        ]
       }
     ]
   }
