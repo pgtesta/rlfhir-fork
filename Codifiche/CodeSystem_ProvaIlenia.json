@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-ProvaIlenia",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/ProvaIlenia",
+  "version": "0.1.0",
+  "name": "Disponibilità struttura",
+  "status": "draft",
+  "date": "2023-09-06",
+  "description": "CodeSystem relativo alla disponibilità di una struttura.",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "available",
+      "display": "Disponibile"
+    },
+    {
+      "code": "busy",
+      "display": "Occupata"
+    },
+    {
+      "code": "not-working",
+      "display": "Inagibile"
+    }
+  ]
+}
