@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-03-08T15:38:47.8253123+00:00"
+    "lastUpdated": "2023-10-17T08:42:42.3106615+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -55,26 +55,11 @@
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
       },
       {
-        "id": "ServiceRequest.extension",
-        "path": "ServiceRequest.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "ServiceRequest.extension:soggettoProponentePIC",
         "path": "ServiceRequest.extension",
         "sliceName": "soggettoProponentePIC",
         "short": "Soggetto che ha proposto la presa in carico dell'assistito",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del soggetto che ha proposto la presa in carico contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -91,6 +76,11 @@
         "path": "ServiceRequest.extension.value[x].coding",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding.system",
+        "path": "ServiceRequest.extension.value[x].coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC"
       },
       {
         "id": "ServiceRequest.extension:soggettoProponentePIC.value[x].coding.code",
@@ -116,9 +106,8 @@
         "id": "ServiceRequest.extension:causaleDimissione",
         "path": "ServiceRequest.extension",
         "sliceName": "causaleDimissione",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare. In caso di doppio percorso la causale va inserita in entrambi i profili RLServiceRequestServiziSocioAssistenziali",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della causale di dimissione di un ricovero domiciliare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -170,9 +159,8 @@
         "id": "ServiceRequest.extension:dataDimissione",
         "path": "ServiceRequest.extension",
         "sliceName": "dataDimissione",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare. In caso di doppio percorso la data va inserita in entrambi i profili RLServiceRequestServiziSocioAssistenziali",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -188,6 +176,7 @@
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
         "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
+        "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 10 cifre (da 0000000001 a 9999999999)",
         "max": "1"
       },
       {
@@ -208,7 +197,7 @@
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individuale nel quale è prevista l'attivazione del servizio sociosanitario",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "max": "1",
@@ -248,6 +237,12 @@
         "short": "Codice e descrizione della tipologia di servizio socioassistenziale da attivare",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding.system",
+        "path": "ServiceRequest.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2"
       },
       {
         "id": "ServiceRequest.code.coding.code",
@@ -347,7 +342,7 @@
         "path": "ServiceRequest.performer",
         "sliceName": "organization",
         "short": "Unità d'offerta responsabile della presa in carico del paziente",
-        "definition": "Reference ai profilo RLOrganizationL2 dell'unità d'offerta che prenderà in carico il paziente",
+        "definition": "Reference ai profilo RLOrganizationL2 dell'unità d'offerta che prenderà in carico il paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1",
         "type": [
@@ -363,7 +358,7 @@
         "id": "ServiceRequest.performer:practitionerRole",
         "path": "ServiceRequest.performer",
         "sliceName": "practitionerRole",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con le tipologie di operatori sanitari necessari all'erogazioni delle prestazioni previste dal percorso di cure domicilari (campo reasonCode",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato obbligatoriamente con le tipologie di operatori sanitari necessari all'erogazioni delle prestazioni previste dal percorso di cure domiciliari (campo reasonCode)",
         "definition": "Reference ai profilo PractitionerRoleOperatoreADI contenente la tipologia di operatore sanitario di cure domiciliari",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
@@ -388,6 +383,12 @@
         "short": "Codice e descrizione del percorso di cure domiciliari",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.system",
+        "path": "ServiceRequest.reasonCode.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom"
       },
       {
         "id": "ServiceRequest.reasonCode.coding.code",

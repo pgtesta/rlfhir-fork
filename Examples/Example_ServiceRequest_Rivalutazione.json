@@ -10,6 +10,7 @@
   },
   "identifier": [
     {
+      "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoRichiestaRivalutazionePaziente",
       "value": "0300780000001_R000001"
     }
   ],

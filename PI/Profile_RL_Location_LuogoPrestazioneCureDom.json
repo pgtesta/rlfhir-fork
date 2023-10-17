@@ -65,6 +65,12 @@
         "max": "1"
       },
       {
+        "id": "Location.physicalType.coding.system",
+        "path": "Location.physicalType.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo"
+      },
+      {
         "id": "Location.physicalType.coding.code",
         "path": "Location.physicalType.coding.code",
         "short": "Codice della tipologia di luogo di erogazione",

@@ -22,7 +22,7 @@
       {
         "id": "QuestionnaireResponse.id",
         "path": "QuestionnaireResponse.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto",
         "min": 1
       },
       {
@@ -55,15 +55,6 @@
       {
         "id": "QuestionnaireResponse.extension",
         "path": "QuestionnaireResponse.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1
       },
       {
@@ -72,7 +63,6 @@
         "sliceName": "esitoValutazione",
         "short": "Riferimento all'esito della valutazione, se questa ne prevede uno, al quale il paziente è stato sottoposto",
         "definition": "Reference al profilo RLObservationEsitoValutazione contenente l'esito della valutazione",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -110,6 +100,12 @@
         "max": "1"
       },
       {
+        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.system",
+        "path": "QuestionnaireResponse.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione"
+      },
+      {
         "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.code",
         "path": "QuestionnaireResponse.extension.value[x].coding.code",
         "short": "Codice della tipologia di valutazione",
@@ -127,14 +123,13 @@
         "path": "QuestionnaireResponse.extension.value[x].coding.display",
         "short": "Descrizione della tipologia di valutazione",
         "definition": "Stringa alfanumerica di al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "QuestionnaireResponse.basedOn",
         "path": "QuestionnaireResponse.basedOn",
         "short": "Riferimento al progetto individule nel quale è previsto l'esito della valutazione",
-        "definition": "Reference alla risorsa RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente",
+        "definition": "Reference alla risorsa RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "min": 1,
         "max": "1",
         "type": [
@@ -171,8 +166,8 @@
       {
         "id": "QuestionnaireResponse.authored",
         "path": "QuestionnaireResponse.authored",
-        "short": "Data della valutazione",
-        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "short": "Data e ora della valutazione",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
       },

@@ -10,7 +10,7 @@
 	"compose": {
 		"include": [
 			{
-				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-PrestazioniADI",
+				"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaPrestazione",
 				"version": "1.0.0",
 				"concept": [
 					{

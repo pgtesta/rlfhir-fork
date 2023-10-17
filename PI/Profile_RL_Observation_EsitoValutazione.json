@@ -64,6 +64,12 @@
         "short": "Codifica della valutazione al quale il paziente è stato sottoposto"
       },
       {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione"
+      },
+      {
         "id": "Observation.code.coding.code",
         "path": "Observation.code.coding.code",
         "short": "Codice della valutazione specifica al quale il paziente è stato sottoposto",
@@ -143,7 +149,7 @@
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
         "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
-        "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto",
+        "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "max": "1",

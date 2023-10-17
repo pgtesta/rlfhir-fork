@@ -88,6 +88,10 @@
           {
             "code": "PERCDOM19",
             "display": "Alta Intensità"
+          },
+          {
+            "code": "PERCDOM20",
+            "display": "Trattamenti Terapeutici"
           }
         ]
       }
