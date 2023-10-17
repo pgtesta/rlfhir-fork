@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://www.fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationProvaIlenia",
+  "name": "RLLocationProvaIlenia",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.extension:rLLocationDataOraDimissionePrevista",
+        "path": "Location.extension",
+        "sliceName": "rLLocationDataOraDimissionePrevista",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Location.operationalStatus",
+        "path": "Location.operationalStatus",
+        "short": "Attributo utile a mappare lo stato della struttura per il mantenimento delle informazioni di occupabilità.",
+        "min": 1
+      },
+      {
+        "id": "Location.operationalStatus.system",
+        "path": "Location.operationalStatus.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/Valueset/ProvaIlenia"
+      },
+      {
+        "id": "Location.operationalStatus.code",
+        "path": "Location.operationalStatus.code",
+        "mustSupport": false,
+        "binding": {
+          "strength": "preferred",
+          "description": "Valueset di occupabilità della struttura",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/Valueset/ProvaIlenia"
+        }
+      }
+    ]
+  }
+}
