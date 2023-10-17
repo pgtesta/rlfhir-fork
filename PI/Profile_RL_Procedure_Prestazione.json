@@ -22,7 +22,7 @@
       {
         "id": "Procedure.id",
         "path": "Procedure.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -55,16 +55,7 @@
       {
         "id": "Procedure.extension",
         "path": "Procedure.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
+        "min": 4
       },
       {
         "id": "Procedure.extension:dataPresaInCarico",
@@ -72,7 +63,7 @@
         "sliceName": "dataPresaInCarico",
         "short": "Data della presa in carico del paziente da parte dell'Ente Erogatore. Il campo deve essere obbligatoriamente valorizzato nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare.",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -96,7 +87,7 @@
         "sliceName": "modalitaErogazione",
         "short": "Codice e descrizione della modalità di erogazione della prestazione",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle modalità di erogazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -125,6 +116,12 @@
         "max": "1"
       },
       {
+        "id": "Procedure.extension:modalitaErogazione.value[x].coding.system",
+        "path": "Procedure.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione"
+      },
+      {
         "id": "Procedure.extension:modalitaErogazione.value[x].coding.code",
         "path": "Procedure.extension.value[x].coding.code",
         "short": "Codice della modalità di erogazione",
@@ -150,7 +147,7 @@
         "sliceName": "numeroAccesso",
         "short": "Questo campo è da valorizzare obbligatoriamente nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare. Il valore di default è '1' ed indica che la prestazione definita nel campo 'code' erogata nella data indicata nel campo 'perfomedDateTime' è stata effettuata durante il primo accesso giornaliero dell'operatore. Nel caso in cui la stessa prestazione venga erogata più volte nell'arco della stessa giornata tramite accessi domiciliari multipli questo campo deve essere valorizzato in modo incrementale coerentemente al numero di accesso. Si specifica che deve sempre essere creata un'istanza per ogni singola prestazione, anche se questa sia erogata più volte durante lo stesso accesso domiciliare.",
         "definition": "Stringa numerica di una cifra",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -168,7 +165,7 @@
         "sliceName": "tipoAccesso",
         "short": "Tipo di accesso dell'operatore a domicilio dell'assistito. Il campo può essere valorizzato nel caso in cui la prestazione sia stata erogata in regime di ricovero domiciliare.",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del tipo di accesso contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -185,6 +182,12 @@
         "path": "Procedure.extension.value[x].coding",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Procedure.extension:tipoAccesso.value[x].coding.system",
+        "path": "Procedure.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso"
       },
       {
         "id": "Procedure.extension:tipoAccesso.value[x].coding.code",
@@ -243,7 +246,7 @@
         "path": "Procedure.basedOn",
         "sliceName": "RLCarePlanProgettoIndividuale",
         "short": "Riferimento al progetto individuale contentente la richiesta di attivazione delle cure domiciliari",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1,
         "max": "1",
         "type": [
@@ -277,6 +280,12 @@
         "max": "1"
       },
       {
+        "id": "Procedure.category.coding.system",
+        "path": "Procedure.category.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale"
+      },
+      {
         "id": "Procedure.category.coding.code",
         "path": "Procedure.category.coding.code",
         "short": "Codice del setting assistenziale",
@@ -307,6 +316,12 @@
         "short": "Codice e descrizione della prestazione",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Procedure.code.coding.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione"
       },
       {
         "id": "Procedure.code.coding.code",

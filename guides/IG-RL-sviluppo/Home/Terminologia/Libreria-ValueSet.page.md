@@ -449,6 +449,13 @@
       <td>ValueSet relativo alla codifica del titolo di studio</td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio</td>
     </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver}}
+      </td>
+      <td>ValueSet relativo alla codifica della tipologia di Caregiver </td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver </td>
+    </tr>
   </tbody>
 </table>
   </body>

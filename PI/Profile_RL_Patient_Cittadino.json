@@ -22,7 +22,7 @@
       {
         "id": "Patient.id",
         "path": "Patient.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -55,15 +55,6 @@
       {
         "id": "Patient.extension",
         "path": "Patient.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 3
       },
       {
@@ -125,6 +116,12 @@
         ]
       },
       {
+        "id": "Patient.extension:titoloDiStudio.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio"
+      },
+      {
         "id": "Patient.extension:titoloDiStudio.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
         "short": "Codice del titolo di studio del cittadino",
@@ -142,8 +139,7 @@
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descizione che rappresenta il titolo di studio del cittadino",
         "definition": "Stringa alfanumerica al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.extension:posizioneDellaProfessione",
@@ -151,7 +147,6 @@
         "sliceName": "posizioneDellaProfessione",
         "short": "Posizione della professione del cittadino",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle professioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -173,6 +168,12 @@
         ]
       },
       {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione"
+      },
+      {
         "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
         "short": "Codice della professione del cittadino",
@@ -189,8 +190,7 @@
         "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.display",
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descrizione della professione del cittadino",
-        "definition": "Stringa alfanumerica al più di 200 caratteri",
-        "min": 1
+        "definition": "Stringa alfanumerica al più di 200 caratteri"
       },
       {
         "id": "Patient.extension:situazionePensionistica",
@@ -198,7 +198,6 @@
         "sliceName": "situazionePensionistica",
         "short": "Situazione pensionistica del cittadino",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della situazione pensionistica contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -220,6 +219,12 @@
         ]
       },
       {
+        "id": "Patient.extension:situazionePensionistica.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica"
+      },
+      {
         "id": "Patient.extension:situazionePensionistica.value[x].coding.code",
         "path": "Patient.extension.value[x].coding.code",
         "short": "Codice della situazione pensionistica del cittadino",
@@ -237,8 +242,7 @@
         "path": "Patient.extension.value[x].coding.display",
         "short": "Descrizione della situazione pensionistica del cittadino",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Patient.extension:luogoDiNascita",
@@ -335,15 +339,6 @@
       {
         "id": "Patient.identifier:tesseraTEAM.extension",
         "path": "Patient.identifier.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 2
       },
       {
@@ -452,6 +447,56 @@
         "max": "1"
       },
       {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Numero di telefono e indirizzo mail del cittadino"
+      },
+      {
+        "id": "Patient.telecom:phone",
+        "path": "Patient.telecom",
+        "sliceName": "phone",
+        "short": "Numero di telefono del cittadino"
+      },
+      {
+        "id": "Patient.telecom:phone.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Patient.telecom:phone.value",
+        "path": "Patient.telecom.value",
+        "short": "Numero di telefono del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.telecom:mail",
+        "path": "Patient.telecom",
+        "sliceName": "mail",
+        "short": "Indirizzo mail del cittadino"
+      },
+      {
+        "id": "Patient.telecom:mail.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "email"
+      },
+      {
+        "id": "Patient.telecom:mail.value",
+        "path": "Patient.telecom.value",
+        "short": "Indirizzo mail del cittadino",
+        "definition": "Stringa alfanumerica di al più 250 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
         "id": "Patient.gender",
         "path": "Patient.gender",
         "short": "Sesso del paziente",
@@ -498,12 +543,27 @@
         "fixedCode": "billing"
       },
       {
+        "id": "Patient.address:residenzaAnagraficaCittadino.line",
+        "path": "Patient.address.line",
+        "short": "Indirizzo della residenza del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "max": "1"
+      },
+      {
         "id": "Patient.address:residenzaAnagraficaCittadino.city",
         "path": "Patient.address.city",
         "short": "Codice ISTAT della città di residenza del cittadino",
         "definition": "Stringa numerica di 6 cifre",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "CAP del comune di residenza del cittadino",
+        "definition": "Stringa numerica di 5 cifre"
       },
       {
         "id": "Patient.address:residenzaAnagraficaCittadino.country",
@@ -528,7 +588,7 @@
       {
         "id": "Patient.address:domicilioCittadino.line",
         "path": "Patient.address.line",
-        "short": "Indirizzo del domicilio del paziente",
+        "short": "Indirizzo del domicilio del cittadino",
         "definition": "Stringa alfanumerica di al più 100 caratteri",
         "comment": "Il dato è detenuto da SGDT"
       },
@@ -546,6 +606,43 @@
         "short": "CAP del comune di domicilio del cittandino",
         "definition": "Stringa numerica di 5 cifre",
         "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino",
+        "path": "Patient.address",
+        "sliceName": "locazioneTemporaneaCittadino",
+        "short": "Locazione temporanea del cittadino",
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.use",
+        "path": "Patient.address.use",
+        "min": 1,
+        "fixedCode": "home"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.line",
+        "path": "Patient.address.line",
+        "short": "Indirizzo della locazione temporanea del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.city",
+        "path": "Patient.address.city",
+        "short": "Codice ISTAT del comune di locazione temporanea del cittadino",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "CAP del comune di locazione temporanea del cittadino",
+        "definition": "Stringa numerica di 5 cifre",
+        "min": 1
       },
       {
         "id": "Patient.maritalStatus",
@@ -582,10 +679,106 @@
         "min": 1
       },
       {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "short": "Caregiver del cittadino"
+      },
+      {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "short": "Codifica della tipologia di caregiver del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di caregiver contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica della tipologia di caregiver",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver"
+        }
+      },
+      {
+        "id": "Patient.contact.relationship.coding.system",
+        "path": "Patient.contact.relationship.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver"
+      },
+      {
+        "id": "Patient.contact.relationship.coding.code",
+        "path": "Patient.contact.relationship.coding.code",
+        "short": "Codice della tipologia di caregiver del cittadino",
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "comment": "il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.contact.relationship.coding.display",
+        "path": "Patient.contact.relationship.coding.display",
+        "short": "Descrizione della tipologia di caregiver del cittadino",
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.contact.name",
+        "path": "Patient.contact.name",
+        "short": "Nominativo del caregiver",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.name.family",
+        "path": "Patient.contact.name.family",
+        "short": "Nome e cognome del caregiver",
+        "definition": "Stringa alfabetica di massimo 100 caratteri",
+        "comment": "il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.telecom",
+        "path": "Patient.contact.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Numero di telefono e indirizzo mail del caregiver"
+      },
+      {
+        "id": "Patient.contact.telecom:phone",
+        "path": "Patient.contact.telecom",
+        "sliceName": "phone",
+        "short": "Numero di telefono del caregiver"
+      },
+      {
+        "id": "Patient.contact.telecom:phone.system",
+        "path": "Patient.contact.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Patient.contact.telecom:phone.value",
+        "path": "Patient.contact.telecom.value",
+        "short": "Numero di telefono del caregiver",
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
+      },
+      {
+        "id": "Patient.contact.telecom:mail",
+        "path": "Patient.contact.telecom",
+        "sliceName": "mail"
+      },
+      {
+        "id": "Patient.contact.telecom:mail.system",
+        "path": "Patient.contact.telecom.system",
+        "fixedCode": "email"
+      },
+      {
+        "id": "Patient.contact.telecom:mail.value",
+        "path": "Patient.contact.telecom.value",
+        "short": "Indirizzo mail del caregiver",
+        "definition": "Stringa alfanumerica di al più 250 caratteri"
+      },
+      {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
         "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
-        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza. Per il profilo RLOrganizationL1 deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto da SGDT",
         "max": "3",
         "type": [
@@ -599,26 +792,11 @@
         ]
       },
       {
-        "id": "Patient.generalPractitioner.extension",
-        "path": "Patient.generalPractitioner.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "Patient.generalPractitioner.extension:medicoSostituto",
         "path": "Patient.generalPractitioner.extension",
         "sliceName": "medicoSostituto",
         "short": "Flag volto ad identificare se il medico che assiste il cittadino è un sostituto temporaneo del medico scelto dal cittadino",
         "comment": "Il dato è detenuto da SGDT",
-        "min": 0,
         "max": "1",
         "type": [
           {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionProblemiSalute",
   "meta": {
-    "lastUpdated": "2023-06-28T13:11:17.5395159+00:00"
+    "lastUpdated": "2023-10-17T08:33:18.9389816+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute",
   "name": "RLConditionProblemiSalute",
@@ -25,7 +25,7 @@
       {
         "id": "Condition.id",
         "path": "Condition.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -71,6 +71,11 @@
         "max": "1"
       },
       {
+        "id": "Condition.category.coding.system",
+        "path": "Condition.category.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute"
+      },
+      {
         "id": "Condition.category.coding.code",
         "path": "Condition.category.coding.code",
         "short": "Codice della tipologia di patologia",
@@ -88,8 +93,7 @@
         "path": "Condition.category.coding.display",
         "short": "Descrizione della tipolgia di patologia",
         "definition": "Stringa alfabeta al più di 50 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Condition.code",
@@ -117,6 +121,12 @@
         "id": "Condition.code:patologia.coding",
         "path": "Condition.code.coding",
         "max": "1"
+      },
+      {
+        "id": "Condition.code:patologia.coding.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM"
       },
       {
         "id": "Condition.code:patologia.coding.code",
@@ -150,6 +160,12 @@
         "max": "1"
       },
       {
+        "id": "Condition.code:condizioneClinica.coding.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica"
+      },
+      {
         "id": "Condition.code:condizioneClinica.coding.code",
         "path": "Condition.code.coding.code",
         "short": "Codice della condizione clinica prevalente",
@@ -180,6 +196,12 @@
         "id": "Condition.code:problemaInfermieristico.coding",
         "path": "Condition.code.coding",
         "max": "1"
+      },
+      {
+        "id": "Condition.code:problemaInfermieristico.coding.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico"
       },
       {
         "id": "Condition.code:problemaInfermieristico.coding.code",

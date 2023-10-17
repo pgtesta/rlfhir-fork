@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLCarePlanProgettoIndividuale",
   "meta": {
-    "lastUpdated": "2023-06-28T13:09:13.696631+00:00"
+    "lastUpdated": "2023-10-17T08:30:40.6508863+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
   "name": "RLCarePlanProgettoIndividuale",
@@ -25,7 +25,7 @@
       {
         "id": "CarePlan.id",
         "path": "CarePlan.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto",
         "min": 1
       },
       {
@@ -58,15 +58,6 @@
       {
         "id": "CarePlan.extension",
         "path": "CarePlan.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 1
       },
       {
@@ -186,7 +177,7 @@
         "id": "CarePlan.author",
         "path": "CarePlan.author",
         "short": "ASST che ha prodotto il progetto individuale",
-        "definition": "Reference al profilo RLOrganizationL1 inerente all'ASST produttrice del progetto individuale",
+        "definition": "Reference al profilo RLOrganizationL1 inerente all'ASST produttrice del progetto individuale. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "type": [

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestPrestazioniSpecialistiche",
   "meta": {
-    "lastUpdated": "2023-03-08T14:14:19.8397597+00:00"
+    "lastUpdated": "2023-10-17T08:38:13.2439009+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
   "name": "RLServiceRequestPrestazioniSpecialistiche",
@@ -25,7 +25,7 @@
       {
         "id": "ServiceRequest.id",
         "path": "ServiceRequest.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -56,27 +56,12 @@
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche"
       },
       {
-        "id": "ServiceRequest.extension",
-        "path": "ServiceRequest.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "ServiceRequest.extension:ulterioriDettagli",
         "path": "ServiceRequest.extension",
         "sliceName": "ulterioriDettagli",
         "short": "Ulteriori dettaglio riguardo la prestazione specialistica e/o diagnostica da erogare",
         "definition": "- prestazione erogabile in regime di telemedicina\r\n- prestazione prenotabile in struttura di prossimità\r\n- prescrizione elettronica",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -89,25 +74,10 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:ulterioriDettagli.extension",
-        "path": "ServiceRequest.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "ServiceRequest.extension:ulterioriDettagli.extension:erogabileTelemedicina",
         "path": "ServiceRequest.extension.extension",
         "sliceName": "erogabileTelemedicina",
         "short": "Prestazione erogabile in regime di telemedicina",
-        "min": 0,
         "max": "1"
       },
       {
@@ -115,7 +85,6 @@
         "path": "ServiceRequest.extension.extension",
         "sliceName": "prenotabileStrutturaProssimita",
         "short": "Prestazione prenotabile in struttura di prossimità",
-        "min": 0,
         "max": "1"
       },
       {
@@ -123,14 +92,13 @@
         "path": "ServiceRequest.extension.extension",
         "sliceName": "prescrizioneElettronica",
         "short": "Prescrizione elettronica",
-        "min": 0,
         "max": "1"
       },
       {
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individule nel quale è prevista l'erogazione della prestazione",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "max": "1",
@@ -176,6 +144,12 @@
         "path": "ServiceRequest.code.coding",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding.system",
+        "path": "ServiceRequest.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS"
       },
       {
         "id": "ServiceRequest.code.coding.code",

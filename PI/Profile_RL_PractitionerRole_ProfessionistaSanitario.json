@@ -22,7 +22,7 @@
       {
         "id": "PractitionerRole.id",
         "path": "PractitionerRole.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -92,7 +92,7 @@
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
         "short": "Riferimento all'ASST cui il professionista sanitario esercita la professione",
-        "definition": "Reference al profilo RLOrganizationL1",
+        "definition": "Reference al profilo RLOrganizationL1. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "type": [
           {
             "code": "Reference",
@@ -115,6 +115,12 @@
         "short": "Codice e descrizione della qualifica del professionista sanitario",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "PractitionerRole.code.coding.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario"
       },
       {
         "id": "PractitionerRole.code.coding.code",

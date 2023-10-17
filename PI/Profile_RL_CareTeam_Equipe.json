@@ -22,7 +22,7 @@
       {
         "id": "CareTeam.id",
         "path": "CareTeam.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -98,7 +98,7 @@
       {
         "id": "CareTeam.participant.role",
         "path": "CareTeam.participant.role",
-        "short": "Riferimento alla qualifica del professionista sanitario. Questo campo viene valorizzato solo nel caso il cui l'equipe non sia composta da persone fisiche (i cui dettagli sono referenziati nel campo 'member') bensì solo configurarata a livello di sepecializzazione dei professionisti sanitari che la compongono.",
+        "short": "Riferimento alla qualifica del professionista sanitario. Questo campo viene valorizzato solo nel caso in cui l'equipe non sia composta da persone fisiche (i cui dettagli sono referenziati nel campo 'member') bensì solo configurata a livello di specializzazione dei professionisti sanitari che la compongono.",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della qualifica del professionista sanitario contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },

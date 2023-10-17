@@ -21,7 +21,7 @@
       {
         "id": "Location.id",
         "path": "Location.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -63,6 +63,12 @@
         "path": "Location.physicalType.coding",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "Location.physicalType.coding.system",
+        "path": "Location.physicalType.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo"
       },
       {
         "id": "Location.physicalType.coding.code",

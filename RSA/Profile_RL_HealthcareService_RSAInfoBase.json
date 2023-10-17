@@ -20,24 +20,9 @@
   "differential": {
     "element": [
       {
-        "id": "HealthcareService.extension",
-        "path": "HealthcareService.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "HealthcareService.extension:PersonaReferente",
         "path": "HealthcareService.extension",
         "sliceName": "PersonaReferente",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -55,7 +40,6 @@
         "sliceName": "TempiMediPresaInCarico",
         "short": "Tempi Medi Presa In Carico",
         "definition": "Tempi Medi Presa In Carico",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -73,7 +57,6 @@
         "sliceName": "RettaSociale",
         "short": "Retta Sociale",
         "definition": "Retta Sociale minima e massima",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -89,7 +72,6 @@
         "id": "HealthcareService.extension:Parcheggio",
         "path": "HealthcareService.extension",
         "sliceName": "Parcheggio",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -102,10 +84,20 @@
         "isModifier": false
       },
       {
+        "id": "HealthcareService.extension:Parcheggio.extension:ProprietaStruttura",
+        "path": "HealthcareService.extension.extension",
+        "sliceName": "ProprietaStruttura"
+      },
+      {
+        "id": "HealthcareService.extension:Parcheggio.extension:ProprietaStruttura.value[x]",
+        "path": "HealthcareService.extension.extension.value[x]",
+        "definition": "Presenza o assenza di un parcheggio di proprietà della struttura."
+      },
+      {
         "id": "HealthcareService.providedBy",
         "path": "HealthcareService.providedBy",
         "short": "Codice CUDES",
-        "definition": "L2 associata (codice CUDES)",
+        "definition": "L2 associata (codice CUDES).",
         "type": [
           {
             "code": "Reference",

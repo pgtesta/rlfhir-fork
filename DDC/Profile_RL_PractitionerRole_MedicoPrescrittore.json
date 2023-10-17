@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerRoleMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-07-04T08:31:00.2069438+00:00"
+    "lastUpdated": "2023-10-17T08:21:48.4684496+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
   "name": "RLPractitionerRoleMedicoPrescrittore",
@@ -26,7 +26,7 @@
       {
         "id": "PractitionerRole.id",
         "path": "PractitionerRole.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -56,27 +56,12 @@
         "max": "1"
       },
       {
-        "id": "PractitionerRole.extension",
-        "path": "PractitionerRole.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "PractitionerRole.extension:dataInsert",
         "path": "PractitionerRole.extension",
         "sliceName": "dataInsert",
         "short": "Data di inserimento del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "La fonte del dato è il campo DT_INSER dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -95,7 +80,6 @@
         "short": "Data dell'ultima modifica del record",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "La fonte del dato è il campo DT_ULTV dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -211,7 +195,7 @@
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
         "short": "Reference all'ente L2 in cui il medico prescrittore esercita",
-        "definition": "Reference all'ente L2 in cui il medico prescrittore esercita la specifica professione.",
+        "definition": "Reference al profilo RLOrganizationL2. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "La fonte del dato è il campo ID_LIVELLO_2 dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "type": [
           {

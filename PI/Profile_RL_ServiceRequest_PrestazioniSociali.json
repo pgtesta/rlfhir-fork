@@ -21,7 +21,7 @@
       {
         "id": "ServiceRequest.id",
         "path": "ServiceRequest.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -52,27 +52,12 @@
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali"
       },
       {
-        "id": "ServiceRequest.extension",
-        "path": "ServiceRequest.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "ServiceRequest.extension:ulterioriDettagli",
         "path": "ServiceRequest.extension",
         "sliceName": "ulterioriDettagli",
         "short": "Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare",
         "definition": "La codifica delle informazioni è la seguente: \r\n01: prestazione erogabile in regime di telemedicina",
         "comment": "I valori della codifica sono rappresentati nella tabella xx presenti nel documento consultabile nella sezione 'Documentation' del profilo.",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -85,45 +70,28 @@
         "isModifier": false
       },
       {
-        "id": "ServiceRequest.extension:ulterioriDettagli.extension",
-        "path": "ServiceRequest.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "ServiceRequest.extension:ulterioriDettagli.extension:erogabileTelemedicina",
         "path": "ServiceRequest.extension.extension",
         "sliceName": "erogabileTelemedicina",
-        "min": 0,
         "max": "1"
       },
       {
         "id": "ServiceRequest.extension:ulterioriDettagli.extension:prenotabileStrutturaProssimita",
         "path": "ServiceRequest.extension.extension",
         "sliceName": "prenotabileStrutturaProssimita",
-        "min": 0,
         "max": "0"
       },
       {
         "id": "ServiceRequest.extension:ulterioriDettagli.extension:prescrizioneElettronica",
         "path": "ServiceRequest.extension.extension",
         "sliceName": "prescrizioneElettronica",
-        "min": 0,
         "max": "0"
       },
       {
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della prestazione",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "max": "1",

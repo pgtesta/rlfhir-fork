@@ -22,7 +22,7 @@
       {
         "id": "ServiceRequest.id",
         "path": "ServiceRequest.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -76,7 +76,7 @@
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
         "short": "Riferimento al progetto individuale contentente la richiesta di attivazione del ricovero domiciliare",
-        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "min": 1,
         "max": "1",
         "type": [
@@ -173,6 +173,12 @@
         "short": "Codice e descrizione della sospensione temporanea",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.system",
+        "path": "ServiceRequest.reasonCode.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione"
       },
       {
         "id": "ServiceRequest.reasonCode.coding.code",

@@ -22,7 +22,7 @@
       {
         "id": "PractitionerRole.id",
         "path": "PractitionerRole.id",
-        "short": "UUID prodotto dal server FHIR (applicativo) che detiente la risorsa",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
         "min": 1
       },
       {
@@ -53,25 +53,10 @@
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
       },
       {
-        "id": "PractitionerRole.extension",
-        "path": "PractitionerRole.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 0
-      },
-      {
         "id": "PractitionerRole.extension:dettagliAttivazionePercorsoCure",
         "path": "PractitionerRole.extension",
         "sliceName": "dettagliAttivazionePercorsoCure",
         "short": "Riferimento ai dettagli dell'attivazione del percorso di cure domiciliari dove  l'operatore sanitario fornirà assistenza",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -99,11 +84,23 @@
         ]
       },
       {
+        "id": "PractitionerRole.extension:dettagliAttivazionePercorsoCure.value[x].reference.performer",
+        "path": "PractitionerRole.extension.value[x].reference.performer",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
         "id": "PractitionerRole.extension:numeroAccessi",
         "path": "PractitionerRole.extension",
         "sliceName": "numeroAccessi",
         "short": "Numero di accessi pianificati per l'operatore sanitario rispetto al percorso di cure domiciliari in cui è coinvolto",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -137,6 +134,12 @@
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie degli operatori ADI contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "PractitionerRole.code.coding.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore"
       },
       {
         "id": "PractitionerRole.code.coding.code",
