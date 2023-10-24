@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>{{ guide-title }}</title>
+
+        <link rel="icon" href="{{content}}/styles/common/favicon.ico" />
+
+        <script src="{{content}}/styles/common/jquery/jquery.min.js"></script>
+        <script src="{{content}}/styles/common/bootstrap/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="{{content}}/styles/common/main.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{content}}/styles/common/rendering/rendering.min.css" />
+
+        <script src="{{content}}/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="{{content}}/styles/common/rendering/baseTreetable.min.js"></script>
+        
+        <script>
+            function openTab(evt, tabName) {
+                // Find the element that has been clicked with jQuery
+                var element = $(evt.target);
+
+                // Remove the current class of .active in the buttons next to it
+                element.parent().find(".tablinks").removeClass("active");
+
+                // Add a class of .active to the clicked tab
+                element.addClass("active");
+
+                // Cache the parent of the button clicked
+                var parent = element.parent().parent();
+
+                // Clear out the current view (e.g. Table, XML, JSON)
+                parent.find(".tabcontent").hide(0);
+
+                // Show the desired content with the current view
+                parent.find(".tabcontent[id='"+tabName+"']").show(0);
+            }
+        </script>  
+
+        <link rel="stylesheet" href="{{content}}/{{style-folder}}/style.css?v={{version}}" />
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <table class="intestazione no-border" width="100%">
+                    <col style="width:20%">
+	                <col style="width:60%">
+                    <tr class="no-border">    
+                        <td class="no-border">
+                         <div class="col-md-4">
+                             <a href="https://www.siss.regione.lombardia.it/wps/portal/site/siss">
+                             <img src="{{content}}/{{style-folder}}/logo-siss.jpg"  alt="logo Regione Lombardia" width="170" >
+                        </div>
+                        </td>
+                        <td class="no-border">
+                             <p class="guide-title">{{ guide-title }}</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </header>
+        
+        <div id="ig-viewer">
+
+            <div class="ig-view-content">
+
+                <div id="ig-view-twolevelmenu">
+
+                    <div class="header" role="banner" aria-label="Header">
+                        {{ dropdown-navigation }}
+                    </div>
+
+                    <div class="content container" role="main" aria-label="Main content">
+                        {{ page-with-children }}
+                    </div>
+                </div>
+            </div>
+
+        <!-- back to top button -->
+        <a id="back-to-top" class="btn btn-fhir" onclick="goBackToTop()">
+            back to top
+        </a>
+            
+            <div class="ig-view-footer" role="contentinfo" aria-label="Footer">
+                <div class="container">
+                    <table class="intestazione no-border" width="100%" >
+                        <tr class="no-border">
+                           <td class="no-border"><b>Powered by</b> SIMPLIFIER.NET</td>
+                           <td class="no-border"> | </td>
+                           <td class="no-border"><b>IG: </b> {{ guide-title }}</td>
+                           <td class="no-border"> | </td>
+                           <td class="no-border"><span><b>IG version:</b> 1.0.0</span></td>
+                           <td class="no-border"> | </td>
+                           <td class="no-border"><span><b>FHIR version:</b> <a href="http://hl7.org/fhir/R4/index.html">{{ guide-fhir-version }}</a> </span></td>
+                        </tr> 
+                    </table>
+                    <table class="intestazione no-border" width="100%">
+                        <tr class="no-border">
+                            <td class="no-border"> Data ultimo aggiornamento: 24/10/2023</td>
+                            <td class="no-border"> | </td>
+                            <td class="no-border"><a href="https://simplifier.net/rlfhir">Simplifier project</a></td>
+                            <td class="no-border"> | </td>
+                            <td class="no-border"><a href="https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current">Version history</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+         <!-- Back to top button functionality -->
+        <script>
+            var backToTopButton = document.getElementById("back-to-top");
+
+            // When the user scrolls down 100px from the top of the document, show the button
+            window.onscroll = function () { showTopButton() };
+
+            function showTopButton() {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    backToTopButton.style.display = "block";
+                } else {
+                    backToTopButton.style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function goBackToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+                $(window.location)[0].replace("#");
+            }
+        </script>
+
+    </body>
+
+</html>
