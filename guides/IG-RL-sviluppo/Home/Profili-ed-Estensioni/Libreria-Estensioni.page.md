@@ -368,6 +368,16 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli}}
           </td>
         </tr>
+        <tr>
+          <td>RLServiceRequestMedicoPrescrittore</td>
+          <td>ServiceRequest</td>
+          <td>
+            Dettagli sul medico che ha prescritto il servizio al cittadino
+          </td>
+          <td>
+            {{https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestMedicoPrescrittore}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
