@@ -136,19 +136,14 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Esito della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito è la scheda triage",
-        "definition": "Nel caso della scheda triage valore numerico compreso tra 0 e 14",
-        "comment": "Il dato è detenuto dal SGDT",
-        "type": [
-          {
-            "code": "integer"
-          }
-        ]
+        "short": "Esito della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito è la scheda Triage",
+        "definition": "Nel caso della scheda Triage il datatype è valueInteger (integer) e il valore numerico è compreso tra 0 e 14",
+        "comment": "Il dato è detenuto dal SGDT"
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto.",
+        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto",
         "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
@@ -170,8 +165,8 @@
       {
         "id": "Observation.component.code",
         "path": "Observation.component.code",
-        "short": "Codifica degli esisti composti della valutazione multidimensionale InterRAI - HomeCare",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli esisti della  valutazione InterRAI - HomeCare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "short": "Codifica degli esiti composti della valutazione multidimensionale InterRAI - HomeCare",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli esiti della  valutazione InterRAI - HomeCare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Observation.component.code.coding",
@@ -182,7 +177,7 @@
       {
         "id": "Observation.component.code.coding.code",
         "path": "Observation.component.code.coding.code",
-        "short": "Codice dell'esisto composto della valutazione. Nel codice viene indicato se l'esisto fa parte della sezione PHP o PVC.",
+        "short": "Codice dell'esito composto della valutazione. Nel codice viene indicato se l'esito fa parte della sezione PHP o PVC.",
         "definition": "Stringa alfanumerica al più di 10 caratteri",
         "min": 1,
         "binding": {

@@ -716,13 +716,13 @@
       {
         "id": "Patient.contact.name",
         "path": "Patient.contact.name",
-        "short": "Nominativo del caregiver",
+        "short": "Nominativo del caregiver o tipo di relazione con il cittadino",
         "min": 1
       },
       {
         "id": "Patient.contact.name.family",
         "path": "Patient.contact.name.family",
-        "short": "Nome e cognome del caregiver",
+        "short": "Nome e cognome del caregiver o tipo di relazione con il cittadino",
         "definition": "Stringa alfabetica di massimo 100 caratteri",
         "comment": "il dato è detenuto da SGDT",
         "min": 1

@@ -212,7 +212,7 @@
         "id": "QuestionnaireResponse.item.linkId",
         "path": "QuestionnaireResponse.item.linkId",
         "short": "Numero identificativo del quesito",
-        "definition": "Stringa alfanumerica al più di 10 caratteri. Se il quesito non avesse un numero identificativo definto è possibile valorizzare il campo con un numero incrementale a partire da 1."
+        "definition": "Stringa alfanumerica al più di 10 caratteri. Se il quesito non avesse un numero identificativo definto è possibile valorizzare il campo con un numero incrementale a partire da 1"
       },
       {
         "id": "QuestionnaireResponse.item.text",
@@ -236,6 +236,22 @@
         "definition": "In base alla tipologia di risposta relativa al singolo quesito i possibili campi e i relativi datatype sono: \r\nvalueBoolean (boolean) \r\nvalueDecimal (decimal) \r\nvalueInteger (integer) \r\nvalueDate (date) \r\nvalueDateTime (dateTime) \r\nvalueTime (time) \r\nvalueString (string) \r\nvalueUri (uri) \r\nvalueAttachment (Attachment)\r\nvalueCoding (Coding)\r\nvalueQuantity (Quantity) \r\nvalueReference (Reference)",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.item",
+        "path": "QuestionnaireResponse.item.answer.item",
+        "short": "Numero identificativo della risposta",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.item.linkId",
+        "path": "QuestionnaireResponse.item.answer.item.linkId",
+        "short": "Numero identificativo della risposta",
+        "definition": "'Stringa alfanumerica al più di 10 caratteri. Le risposte sono codificate a partere dai possibili valori che eventualmente il quesito prevede. Se la risposta non avesse un numero identificativo definito è possibile valorizzare il campo con un numero incrementale a partire da 0. Esempi: 1) 'Presenza di Rischio Infettivo' sarà valorizzato con 0 per 'Assente' e 1 per 'Presente';        2) 'Mobilità' sarà valorizzato con 0 per 'Allettato', 1 per 'Con ausili', 2 per 'Con minimo aiuto' e 4 per 'Autonomo'",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1"
       }
     ]
   }
