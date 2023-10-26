@@ -80,3 +80,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLGoalObiet
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
 | Description | Codice e descrizione dell’obiettivo di salute | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute}}|
+| Category | Codice e descrizione dell'ambito dell'obiettivo di salute | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute}}|
