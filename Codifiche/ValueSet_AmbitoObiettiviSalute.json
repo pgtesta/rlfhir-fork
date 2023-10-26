@@ -1,16 +1,16 @@
 {
   "resourceType": "ValueSet",
-  "id": "ValueSet-SIAD-AmbitoObiettiviSalute",
-  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-AmbitoObiettiviSalute",
+  "id": "ValueSet-SGDT-AmbitoObiettiviSalute",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute",
   "version": "1.0.0",
-  "name": "SIAD Ambito Obiettivi Salute",
+  "name": "SGDT Ambito Obiettivi Salute",
   "status": "active",
   "date": "2023-10-26",
   "description": "ValueSet relativo agli ambiti degli obiettivi di salute",
   "compose": {
     "include": [
       {
-        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-AmbitoObiettiviSalute",
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute",
         "version": "1.0.0",
         "concept": [
           {
