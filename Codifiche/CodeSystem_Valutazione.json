@@ -20,6 +20,10 @@
     {
       "code": "VAL3",
       "display": "InterRAI HomeCare"
+    },
+    {
+      "code": "VAL4",
+      "display": "Campi extra del flusso SIAD"
     }
   ]
 }
