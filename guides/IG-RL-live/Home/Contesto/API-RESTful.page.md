@@ -10,14 +10,15 @@ Il base_url con cui accedere a tali servizi è il seguente:
 
 L'elenco delle API esposte è:
 
-|Metodo HTTP|URL|Detentore del dato|
+|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
-|GET|<base_API_Manager>/_CarePlan_|SGDT|
-|GET|<base_API_Manager>/_QuestionnaireResponse_|SGDT|
-|GET|<base_API_Manager>/_Organization_|DDC FHIR Server|
-|GET|<base_API_Manager>/_Practitioner_|DDC FHIR Server|
-|GET|<base_API_Manager>/_PractitionerRole_|DDC FHIR Server|
-|GET|<base_API_Manager>/_Location_|NPRI FHIR Server|
+|GET|<base_API_Manager>/_CarePlan_|RLCarePlanProgettoIndividuale|SGDT|
+|GET|<base_API_Manager>/_QuestionnaireResponse_|RLQuestionnaireResponseValutazione|SGDT|
+|GET|<base_API_Manager>/_Organization_|RLOrganizationL1, RLOrganizationL2, RLOrganizationL3 |DDC FHIR Server|
+|GET|<base_API_Manager>/_Practitioner_|RLPractitionerMedicoPrescrittore|DDC FHIR Server|
+|GET|<base_API_Manager>/_PractitionerRole_|RLPractitionerRoleMedicoPrescrittore|DDC FHIR Server|
+|GET|<base_API_Manager>/_Location_|RLLocationPLOLetto|NPRI FHIR Server|
+|POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
 
 ### API Enti erogatori
 I servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
@@ -33,12 +34,12 @@ dove:
 
 L'elenco delle API esposte è:
 
-|Metodo HTTP|URL|Detentore del dato|
+|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
-|GET|<base_API_Ente>/_Procedure_|Ente Erogatore|
-|GET|<base_API_Ente>/_ServiceRequest_|Ente Erogatore|
-|POST|<base_API_Ente>/_Bundle_|Ente Erogatore|
-|GET|<base_API_Ente>/_Location_|Ente Erogatore|
+|GET|<base_API_Ente>/_Procedure_|RLProcedurePrestazione|Ente Erogatore|
+|GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestSospensioneADI, RLServiceRequestRivalutazione|Ente Erogatore|
+|POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
+|GET|<base_API_Ente>/_Location_|RLLocationPLOLetto|Ente Erogatore|
 
 ## Header 
 Le chiamate HTTP relative all'integrazione FHIR devono contenere i seguenti header:
