@@ -23,4 +23,4 @@ Questa versione della Implementation Guide fa riferimento agli elementi FHIR con
   
 
 ### Implementation Guide
-- riviste e aggiornate le pagine di descrizione dei profili
+- Riviste e aggiornate le pagine di descrizione dei profili
