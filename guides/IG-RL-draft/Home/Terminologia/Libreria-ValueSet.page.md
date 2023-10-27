@@ -453,8 +453,15 @@
       <td>
         {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver}}
       </td>
-      <td>ValueSet relativo alla codifica della tipologia di Caregiver </td>
-      <td>https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver </td>
+      <td>ValueSet relativo alla codifica della tipologia di Caregiver</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute}}
+      </td>
+      <td>ValueSet relativo alla codifica degli ambiti degli obiettivi di salute</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute</td>
     </tr>
   </tbody>
 </table>
