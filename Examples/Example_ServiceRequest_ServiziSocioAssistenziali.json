@@ -14,6 +14,12 @@
       "value": "2023000021"
     }
   ],
+  "requisition":{
+    "period": {
+      "start":"2023-02-01"
+    },
+    "value": "A1B1C1A1B1C1D1E"
+  },
   "basedOn": [
     {
       "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
@@ -76,6 +82,10 @@
           }
         ]
       }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestMedicoPrescrittore",
+      "valueString": "11111"
     },
     {
       "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione",
