@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionProblemiSalute",
   "meta": {
-    "lastUpdated": "2023-10-17T08:33:18.9389816+00:00"
+    "lastUpdated": "2023-10-26T08:32:10.4080331+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute",
   "name": "RLConditionProblemiSalute",
@@ -58,7 +58,7 @@
       {
         "id": "Condition.category",
         "path": "Condition.category",
-        "short": "Tipologia della problema di salute riportato nel campo \"code\"",
+        "short": "Tipologia del problema di salute riportato nel campo \"code\"",
         "comment": "La codifica delle patologie è riportata secondo lo standard ICD9-CM",
         "min": 1,
         "max": "1"

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLServiceRequestServiziSocioAssistenziali",
   "meta": {
-    "lastUpdated": "2023-10-17T08:42:42.3106615+00:00"
+    "lastUpdated": "2023-10-26T13:51:36.3866825+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
   "name": "RLServiceRequestServiziSocioAssistenziali",
@@ -106,7 +106,7 @@
         "id": "ServiceRequest.extension:causaleDimissione",
         "path": "ServiceRequest.extension",
         "sliceName": "causaleDimissione",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare. In caso di doppio percorso la causale va inserita in entrambi i profili RLServiceRequestServiziSocioAssistenziali",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della causale di dimissione di un ricovero domiciliare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1",
         "type": [
@@ -159,7 +159,7 @@
         "id": "ServiceRequest.extension:dataDimissione",
         "path": "ServiceRequest.extension",
         "sliceName": "dataDimissione",
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare. In caso di doppio percorso la data va inserita in entrambi i profili RLServiceRequestServiziSocioAssistenziali",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la data di dimissione del paziente dal ricovero domiciliare",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "max": "1",
         "type": [
@@ -171,6 +171,30 @@
           }
         ],
         "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:medicoPrescrittore",
+        "path": "ServiceRequest.extension",
+        "sliceName": "medicoPrescrittore",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene il codice regionale del medico che ha prescritto l'attivazione del servizio al cittadino",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestMedicoPrescrittore"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:medicoPrescrittore.value[x]",
+        "path": "ServiceRequest.extension.value[x]",
+        "short": "Codice regionale del medico che ha prescritto l'attivazione del servizio sociosanitario al cittadino",
+        "definition": "Stringa numerica di 5 caratteri se il prescrittore è un MMG o PLS, stringa alfanumerica di 6 caratteri se il prescrittore è un medico specialista",
+        "comment": "La fonte del dato è il campo CD_REGIONALE o CD_MEDICO_SPEC dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
       },
       {
         "id": "ServiceRequest.identifier",
@@ -209,6 +233,32 @@
             ]
           }
         ]
+      },
+      {
+        "id": "ServiceRequest.requisition",
+        "path": "ServiceRequest.requisition",
+        "short": "Codice identificativo della ricetta medica o ricetta elettronica NRE. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio"
+      },
+      {
+        "id": "ServiceRequest.requisition.value",
+        "path": "ServiceRequest.requisition.value",
+        "short": "Codice ricetta",
+        "definition": "Stringa alfanumerica di 15 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requisition.period",
+        "path": "ServiceRequest.requisition.period",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requisition.period.start",
+        "path": "ServiceRequest.requisition.period.start",
+        "short": "Data di decorrenza della ricetta medica",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.status",

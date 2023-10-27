@@ -247,7 +247,10 @@
 						"text": "Assistenza nelle IADL",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -256,7 +259,10 @@
 						"text": "Trattamento riabilitativo neurologico in presenza di disabilità",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -265,7 +271,10 @@
 						"text": "Gestione della stomia",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -274,7 +283,10 @@
 						"text": "Procedura terapeutica (accesso venoso sottocute/intramuscolo)",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -283,7 +295,10 @@
 						"text": "Prelievi venosi occasionali",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -292,7 +307,10 @@
 						"text": "Ossigeno terapia",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -301,7 +319,10 @@
 						"text": "Trattamento riabilitativo motorio in presenza di disabilità",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -310,7 +331,10 @@
 						"text": "Alimentazione assistita",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -319,7 +343,10 @@
 						"text": "Prelievi venosi non occasionali",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -328,7 +355,10 @@
 						"text": "Alimentazione parenterale",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -337,7 +367,10 @@
 						"text": "Ulcere da decubito di 3 e 4 grado",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -346,7 +379,10 @@
 						"text": "Lesioni della cute",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -355,7 +391,10 @@
 						"text": "Controllo del dolore",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -364,7 +403,10 @@
 						"text": "Supervisione continua di utenti con disabilità",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -373,7 +415,10 @@
 						"text": "Educazione terapeutica (addestramento/nursing)",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -382,7 +427,10 @@
 						"text": "Alimentazione enterale",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -391,7 +439,10 @@
 						"text": "Rischio sanguinamento acuto",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -400,7 +451,10 @@
 						"text": "Ventilo terapia",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -409,7 +463,10 @@
 						"text": "Ulcere cutanee (vascolari, traumatiche, ustioni, post chirurgiche, etc.) di 1 e 2 grado",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -418,7 +475,10 @@
 						"text": "Fragilità familiare",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -427,7 +487,10 @@
 						"text": "Ulcere cutanee (vascolari, ustioni, traumatiche, post chirurgiche, etc.) di 3 e 4 grado",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -436,7 +499,10 @@
 						"text": "Tracheotomia",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -445,7 +511,10 @@
 						"text": "Alterazione del ritmo sonno/veglia",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -454,7 +523,10 @@
 						"text": "Broncoaspirazione/ Drenaggio posturale",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -463,7 +535,10 @@
 						"text": "Trattamento riabilitativo di mantenimento in presenza di disabilità",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -472,7 +547,10 @@
 						"text": "Supporto al caregiver",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -481,7 +559,10 @@
 						"text": "Eliminazione urinaria/intestinale",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -490,7 +571,10 @@
 						"text": "Gestione catetere centrale",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -499,7 +583,10 @@
 						"text": "Assistenza nelle ADL",
 						"answer": [
 							{
-								"valueBoolean": false
+								"valueBoolean": false,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -508,7 +595,10 @@
 						"text": "Ulcere da decubito di 1 e 2 grado",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					},
@@ -517,7 +607,10 @@
 						"text": "Presenza di Rischio Infettivo",
 						"answer": [
 							{
-								"valueBoolean": true
+								"valueBoolean": true,
+								"item":[{
+									"linkId": "1"
+								}]
 							}
 						]
 					}

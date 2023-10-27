@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT-AmbitoObiettiviSalute",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute",
+  "version": "1.0.0",
+  "name": "SGDT Ambito Obiettivi Salute",
+  "status": "active",
+  "date": "2023-10-26",
+  "description": "ValueSet relativo agli ambiti degli obiettivi di salute",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "GOAL01",
+            "display": "Ambito clinico"
+          },
+          {
+            "code": "GOAL02",
+            "display": "Ambito assistenziale"
+          },
+          {
+            "code": "GOAL03",
+            "display": "Ambito sociale"
+          }
+        ]
+      }
+    ]
+  }
+}

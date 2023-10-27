@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLPractitionerRoleMedicoPrescrittore",
   "meta": {
-    "lastUpdated": "2023-10-17T08:21:48.4684496+00:00"
+    "lastUpdated": "2023-10-26T08:22:55.5464596+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
   "name": "RLPractitionerRoleMedicoPrescrittore",
@@ -110,7 +110,7 @@
         "id": "PractitionerRole.identifier:CD_REGIONALE",
         "path": "PractitionerRole.identifier",
         "sliceName": "CD_REGIONALE",
-        "short": "Codice regionale valorizzato solo per prescrittori di tipo MMG e PDF",
+        "short": "Codice regionale valorizzato solo per prescrittori di tipo MMG e PLS",
         "definition": "Stringa numerica di 5 caratteri.",
         "comment": "La fonte del dato è il campo CD_REGIONALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
         "max": "1"

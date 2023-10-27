@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLGoalObiettiviSalute",
   "meta": {
-    "lastUpdated": "2023-10-17T08:34:33.5358529+00:00"
+    "lastUpdated": "2023-10-26T08:37:27.8217571+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
   "name": "RLGoalObiettiviSalute",
@@ -64,6 +64,45 @@
         "fixedCode": "planned"
       },
       {
+        "id": "Goal.category",
+        "path": "Goal.category",
+        "short": "Ambito dell'obiettivo di salute",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dell'ambito degli obiettivi di salute contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "Goal.category.coding",
+        "path": "Goal.category.coding",
+        "short": "Codice e descrizione dell'ambito dell'obiettivo di salute",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Goal.category.coding.system",
+        "path": "Goal.category.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute"
+      },
+      {
+        "id": "Goal.category.coding.code",
+        "path": "Goal.category.coding.code",
+        "short": "Codice dell'ambito dell'obiettivo",
+        "definition": "Stringa alfanumerica di 6 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute"
+        }
+      },
+      {
+        "id": "Goal.category.coding.display",
+        "path": "Goal.category.coding.display",
+        "short": "Descrizione dell'ambito dell'obiettivo",
+        "definition": "Stringa alfanumerica di 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
         "id": "Goal.description",
         "path": "Goal.description",
         "short": "Codifica o descrizione dell' obiettivo di salute definito per il paziente"
@@ -120,13 +159,19 @@
         "id": "Goal.addresses",
         "path": "Goal.addresses",
         "short": "Riferimento al servizio assistenziale dal quale è stato derivato l'obiettivo di salute",
-        "definition": "Reference alla risorsa RLServiceRequestServiziSocioAssistenziali",
+        "definition": "Reference ai profili RLServiceRequestPrestazioniSpecialistiche,RLMedicationRequestTerapiaFarmacologica,RLServiceRequestServiziSocioSanitari,  RLMedicationRequestOssigenoterapia, RLServiceRequestInterventoEducazionali, RLDeviceRequestProtesiAusili, RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionali",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche"
             ]
           }
         ]
