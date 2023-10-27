@@ -7,34 +7,28 @@ Il contenuto del sito rappresenta la Guida di Implementazione del progetto FHIR 
 ## Novità
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di <b>produzione</b>, gestisce i seguenti concetti:
 
-- Sono state apportate le seguenti modifiche per il profilo RLCarePlanProgettoIndividuale o per i profili in esso referenziati: 
-  - Sostituzione dei profili “RLConditionPatologiaPrimariaSecondariaUlteriore” e “RLConditionProblemaInfermieristico  con il profilo “RLConditionProblemiSalute”.
-  - Il code-system “SGDT Prestazioni Infermieristiche” è stato spostato all’interno del value-set “Prestazioni".
-  - Diventati facoltativi i seguenti campi: “contributor” in RLCarePlanProgettoIndividuale che corrisponde al case
-    manager del progetto individuale, “author” in RLQuestionnaireResponseValutazione e “performer” in RLObservationEsitoValutazione che corrispondono al professionista sanitario che ha effettuato la valutazione, “organization” in RLPractitionerRoleMedicoPrescrittore, “addresses” e “note” in RLGoalObiettiviSalute.
-  - Eliminato il campo “route” in RLMedicationRequestTerapiaFarmacologica.
+- È stata aggiunta una nuova valutazione denominata "Campi extra del flusso SIAD" relativa alle informazioni presenti nel flusso SIAD che non appartengono alla scheda SIAD semplificata. I campi della nuova valutazione sono:
+  - Indicatore supporto sociale;
+  - Presenza di assistente non familiare;
+  - Cognitività;
+  - ECG;
+  - Telemetria;
+  - Assistenza Stato di terminalità oncologica;
+  - Assistenza Stato di terminalità non oncologica;
+  - Trasfusioni;
+  - Uso dei servizi igienici;
+  - Abbigliamento.
+- Nel profilo RLPatientCittadino sono stati aggiunti i campi relativi ai contatti del paziente, al caregiver e alla locazione temporanea.
+- Nel profilo RLGoalObiettiviSalute è stato aggiunto il campo “category” per indicare l’ambito degli obiettivi di salute con la relativa nuova codifica
+- Nel profilo RLServiceRequestServiziSocioAssistenziali è stato aggiunto il campo extension medicoPrescrittore che verrà valorizzato con il codice regionale del medico,  mentre nel campo “requisition” è stato aggiunto il codice della ricetta medica e la sua data di decorrenza.
+- Nel profilo RLProcedurePrestazione sono stati resi obbligatori i campi extension dataPresaInCarico, numeroAccesso, modalitaErogazione, tipoAccesso.
+- Nel profilo RLQuestionnaireResponseValutazione è stato aggiunto un codice identificativo alle risposte di tutte le domande delle valutazioni eccetto per la valutazione InterRAI HomeCare.
+- Nel value-set “SGDT Percorsi CDom” è stato aggiunto il percorso “Trattamenti Terapeutici” e sono stati modificati alcuni codici dei percorsi.
+- Nel value-set “SGDT Motivo Segnalazione” è stato cambiato il testo di alcune voci. 
+- Nel value-set “SGDT Valutazione” è stata aggiunta la valutazione “Campi extra del flusso SIAD”.
+- È stato revisionato l’esempio “Ricerca rivalutazioni e sospensioni” aggiungendo il campo “system” nel campo “identifier” dei profili “RLServiceRequestSospensioneADI” e “RLServiceRequestRivalutazione”.
+- Sono stati revisionati gli esempi per allinearli alle nuove modifiche.
 
-- Sono stati revisionati i seguenti gli esempi ad una specifica tipologia di ricerca:
-  - Ricerca prestazioni erogate;
-  - Ricerca progetti individuali attivi;
-  - Ricerca rivalutazioni e sospensioni;
-  - Ricerca rivalutazioni;
-  - Ricerca sospensioni;
-  - Ricerca storico progetti individuali;
-  - Ricerca valutazioni;
-  - Ricerca enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia.
-
-- Nel value-set “SGDT Percorsi CDom” è stato aggiunto il valore “Liv III C autorizzato”.
-  Nel value-set “SGDT Motivo Segnalazione” sono stati aggiunti i seguenti valori:
-  - Inviato da PS
-  - Presa in carico proattiva
-  - Inviato da Enti locali
-  - Inviato da IFEC
-  - Inviato da Assistente Sociale
-  - Inviato da Medico di distretto
-  - Inviato da Ospedale
-  - Inviato da COT
-  - Inviato da Centro Servizi
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
 
