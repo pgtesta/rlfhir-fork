@@ -159,7 +159,7 @@
         "id": "Goal.addresses",
         "path": "Goal.addresses",
         "short": "Riferimento al servizio assistenziale dal quale è stato derivato l'obiettivo di salute",
-        "definition": "Reference ai profili RLServiceRequestPrestazioniSpecialistiche,RLMedicationRequestTerapiaFarmacologica,RLServiceRequestServiziSocioSanitari,  RLMedicationRequestOssigenoterapia, RLServiceRequestInterventoEducazionali, RLDeviceRequestProtesiAusili, RLServiceRequestPrestazioniInfermieristiche",
+        "definition": "Reference ai profili RLServiceRequestPrestazioniSpecialistiche,RLMedicationRequestTerapiaFarmacologica,RLServiceRequestServiziSocioAssistenziali,  RLMedicationRequestOssigenoterapia, RLServiceRequestInterventoEducazionale, RLDeviceRequestProtesiAusili, RLServiceRequestPrestazioniInfermieristiche",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -167,10 +167,10 @@
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioSanitari",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionali",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche"
             ]
           }
