@@ -31,7 +31,7 @@
           },
           {
             "code": "05",
-            "display": "Visita Continuità Assistenziale"
+            "display": "Inviato da Polo Ospedaliero"
           },
           {
             "code": "06",
@@ -39,7 +39,7 @@
           },
           {
             "code": "07",
-            "display": "Presa in carico proattiva"
+            "display": "Inviato da Polo Territoriale"
           },
           {
             "code": "08",
