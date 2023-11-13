@@ -525,7 +525,7 @@
         "short": "Residenza anagrafica del cittadino",
         "definition": "Identificazione della residenza fiscale dell’assistito",
         "min": 1,
-        "max": "2"
+        "max": "3"
       },
       {
         "id": "Patient.address:residenzaAnagraficaCittadino",

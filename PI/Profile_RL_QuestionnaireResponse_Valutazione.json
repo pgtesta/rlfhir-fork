@@ -58,9 +58,9 @@
         "min": 1
       },
       {
-        "id": "QuestionnaireResponse.extension:esitoValutazione",
+        "id": "QuestionnaireResponse.extension:EsitoValutazione",
         "path": "QuestionnaireResponse.extension",
-        "sliceName": "esitoValutazione",
+        "sliceName": "EsitoValutazione",
         "short": "Riferimento all'esito della valutazione, se questa ne prevede uno, al quale il paziente è stato sottoposto",
         "definition": "Reference al profilo RLObservationEsitoValutazione contenente l'esito della valutazione",
         "max": "1",
@@ -75,9 +75,9 @@
         "isModifier": false
       },
       {
-        "id": "QuestionnaireResponse.extension:tipologiaValutazione",
+        "id": "QuestionnaireResponse.extension:TipologiaValutazione",
         "path": "QuestionnaireResponse.extension",
-        "sliceName": "tipologiaValutazione",
+        "sliceName": "TipologiaValutazione",
         "short": "Tipologia di valutazione",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologia di valutazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
@@ -93,20 +93,20 @@
         "isModifier": false
       },
       {
-        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding",
+        "id": "QuestionnaireResponse.extension:TipologiaValutazione.value[x].coding",
         "path": "QuestionnaireResponse.extension.value[x].coding",
         "short": "Codice e descrizione della tipologia di valutazione",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.system",
+        "id": "QuestionnaireResponse.extension:TipologiaValutazione.value[x].coding.system",
         "path": "QuestionnaireResponse.extension.value[x].coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione"
       },
       {
-        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.code",
+        "id": "QuestionnaireResponse.extension:TipologiaValutazione.value[x].coding.code",
         "path": "QuestionnaireResponse.extension.value[x].coding.code",
         "short": "Codice della tipologia di valutazione",
         "definition": "Stringa alfanumerica di un carattere",
@@ -119,11 +119,47 @@
         }
       },
       {
-        "id": "QuestionnaireResponse.extension:tipologiaValutazione.value[x].coding.display",
+        "id": "QuestionnaireResponse.extension:TipologiaValutazione.value[x].coding.display",
         "path": "QuestionnaireResponse.extension.value[x].coding.display",
         "short": "Descrizione della tipologia di valutazione",
         "definition": "Stringa alfanumerica di al più di 50 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "QuestionnaireResponse.extension:PartecipantiValutazione",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "PartecipantiValutazione",
+        "short": "Elenco dei partecipanti alla valutazione",
+        "definition": "Stringa alfanumerica di al più 1000 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponsePartecipantiValutazione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "QuestionnaireResponse.extension:LuogoValutazione",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "LuogoValutazione",
+        "short": "Luogo in cui è stata effettuata la valutazione",
+        "definition": "Stringa alfanumerica di al più 1000 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseLuogoValutazione"
+            ]
+          }
+        ],
+        "isModifier": false
       },
       {
         "id": "QuestionnaireResponse.basedOn",
@@ -248,10 +284,8 @@
         "id": "QuestionnaireResponse.item.answer.item.linkId",
         "path": "QuestionnaireResponse.item.answer.item.linkId",
         "short": "Numero identificativo della risposta",
-        "definition": "'Stringa alfanumerica al più di 10 caratteri. Le risposte sono codificate a partere dai possibili valori che eventualmente il quesito prevede. Se la risposta non avesse un numero identificativo definito è possibile valorizzare il campo con un numero incrementale a partire da 0. Esempi: 1) 'Presenza di Rischio Infettivo' sarà valorizzato con 0 per 'Assente' e 1 per 'Presente';        2) 'Mobilità' sarà valorizzato con 0 per 'Allettato', 1 per 'Con ausili', 2 per 'Con minimo aiuto' e 4 per 'Autonomo'",
-        "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
-        "max": "1"
+        "definition": "'Stringa alfanumerica al più di 10 caratteri. Le risposte sono codificate a partere dai possibili valori che eventualmente il quesito prevede. Se la risposta non avesse un numero identificativo definito è possibile valorizzare il campo con un numero incrementale a partire da 1.",
+        "comment": "Il dato è detenuto dal SGDT"
       }
     ]
   }
