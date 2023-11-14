@@ -96,6 +96,10 @@
           {
             "code": "PROFSAN21",
             "display": "Oculista"
+          },
+          {
+            "code": "PROFSAN22",
+            "display": "Medico Specialista"
           }
         ]
       }
