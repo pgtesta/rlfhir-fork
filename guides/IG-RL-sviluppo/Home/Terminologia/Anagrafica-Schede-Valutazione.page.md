@@ -1,10 +1,9 @@
-# Raccolta ValueSet in uso
+# Anagrafica Scheda Valutazione
 
-- [Raccolta ValueSet in uso](#raccolta-valueset-in-uso)
+- [Anagrafica Scheda Valutazione](#anagrafica-scheda-valutazione)
   - [Scheda Triage](#scheda-triage)
   - [Scheda semplificata SIAD](#scheda-semplificata-siad)
   - [Campi extra del flusso SIAD](#campi-extra-del-flusso-siad)
-
 
 
 <div>
