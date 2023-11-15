@@ -624,7 +624,7 @@
   </tr>
   <tr>
     <td rowspan="2">39</td>
-    <td rowspan="2">Assistenza Stato di terminalità oncologica</td>
+    <td rowspan="2">Assistenza Stato di terminalità oncologica                       </td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
