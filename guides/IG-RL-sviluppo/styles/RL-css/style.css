@@ -267,7 +267,7 @@ tr.standard-html {
 
 /*standard table class for tables in markdown*/
 .standard table {
-    table-layout: fixed;
+    table-layout: auto;
     width: 100%;
 }
 
