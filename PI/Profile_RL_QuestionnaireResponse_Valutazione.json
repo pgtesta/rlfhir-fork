@@ -241,7 +241,7 @@
       {
         "id": "QuestionnaireResponse.item",
         "path": "QuestionnaireResponse.item",
-        "short": "Elenco dei quesiti e delle risposte della valutazione alla quale il paziente è stato sottoposto",
+        "short": "Elenco dei quesiti e delle risposte della valutazione alla quale il paziente è stato sottoposto. L'anagrafica delle domande con il relativo identificativo è consultabile alla pagina \"Anagrafica delle schede di valutazione\" nella sezione Terminologia",
         "min": 1
       },
       {
@@ -261,7 +261,7 @@
       {
         "id": "QuestionnaireResponse.item.answer",
         "path": "QuestionnaireResponse.item.answer",
-        "short": "Riposta al quesito",
+        "short": "Risposta al quesito. L'anagrafica delle risposte con il relativo identificativo è consultabile alla pagina \"Anagrafica delle schede di valutazione\" nella sezione Terminologia",
         "min": 1,
         "max": "1"
       },
