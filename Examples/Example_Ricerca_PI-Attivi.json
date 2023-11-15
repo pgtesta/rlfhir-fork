@@ -3082,6 +3082,10 @@
 								}
 							]
 						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestMedicoPrescrittore",
+						"valueString": "A0ml88"
 					}
 				],
 				"identifier": [
