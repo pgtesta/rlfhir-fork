@@ -65,6 +65,9 @@
 						"text": "MORBILITA'",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"C"
+									}],
 								"valueString": "GRAVE-la compromissione d'organo/sistema produce disabilità"
 							}
 						]
@@ -74,6 +77,9 @@
 						"text": "ALVO E DIUERESI",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"C"
+									}],
 								"valueString": "INCONTINENZA STABILE-per alvo e diuresi(uso pannoloni)"
 							}
 						]
@@ -83,6 +89,9 @@
 						"text": "ASSISTENZA DIRETTA (caregiver)",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"D"
+									}],
 								"valueString": "INADEGUATA-(non è offerta alcun tipo di assistenza)"
 							}
 						]
@@ -92,6 +101,9 @@
 						"text": "STATO MENTALE E COMPORTAMENTO",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"C"
+									}],
 								"valueString": "NON COLLABORANTE,E CON DIFFICOLTA' A CAPIRE LE INDICAZIONI"
 							}
 						]
@@ -101,6 +113,9 @@
 						"text": "CON CHI VIVE",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"B"
+									}],
 								"valueString": "SOLO,NON NECESSITA DI FIGURE DI RIFERIMENTO"
 							}
 						]
@@ -110,6 +125,9 @@
 						"text": "IGIENE PERSONALE",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"C"
+								}],
 								"valueString": "CON AIUTO MODERATO"
 							}
 						]
@@ -119,6 +137,9 @@
 						"text": "MOBILITA'",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"C"
+								}],
 								"valueString": "CON AUSILI-usa bastone,walker,carrozzina,..."
 							}
 						]
@@ -128,6 +149,9 @@
 						"text": "ALIMENTAZIONE",
 						"answer": [
 							{
+								"item":[{
+									"linkId":"B"
+								}],
 								"valueString": "CON AIUTO-supervisione"
 							}
 						]
