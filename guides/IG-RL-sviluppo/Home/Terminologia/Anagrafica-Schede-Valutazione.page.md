@@ -4,30 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <style>
-    table {
-    border-collapse: collapse;
-    width: 100%;
-  }
+<style>
+  /* Stile per la tabella */
+table {
+  border-collapse: collapse; /* Combina i bordi delle celle */
+  border: none;
+}
 
-  th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-    background-color: white; /* Imposta il colore bianco per lo sfondo */
-  }
+/* Colonne dispari delle tabelle di colore diverso*/
+tr:nth-child(){
+    background-color: #f2f2f2;
+}
+td>p{
+    min-width: 360px;
+}
+/* bordi tabelle*/
+td, th {
+    border: 0.5px solid #ccc;   
+}
 
-  th {
-    background-color: #f2f2f2 !important; /* Colore di sfondo per l'intestazione, se necessario */ 
-  }
-  
-      tr {
-      border-bottom: 1px solid #dddddd; /* Applica il bordo solo alle righe */
-    }
 
-  th, td {
-      flex: 1 !important; /* Fai espandere le celle in base al contenuto */
-    }
 </style>
 </head>
 
