@@ -10,8 +10,8 @@
 
 ## Descrizione
 Il profilo RLQuestionnaireResponseValutazione è stato strutturato a partire dalla risorsa generica FHIR [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) per riportare il dettaglio delle risposte ai quesiti delle valutazioni dei bisogni alla quale un assistito è stato sottoposto.
-
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione}}.
+Inoltre, è possibile consultare le domande e le risposte delle valutazioni ""Scheda Triage"", ""Scheda semplificata SIAD"" e ""Campi extra del flusso SIAD"" con il rispettivo identificativo alla pagina Anagrafica delle schede di valutazione: {{pagelink: Home/Terminologia/Anagrafica-Schede-Valutazione.page.md}}.
 
 <br>
 <div class="tab">
@@ -106,4 +106,4 @@ Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di segu
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireResponseValutazione.
+Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireResponseValutazione. È possibile consultare le domande e le risposte delle valutazioni "Scheda Triage", "Scheda semplificata SIAD" e "Campi extra del flusso SIAD" con il rispettivo identificativo alla pagina Anagrafica delle schede di valutazione 		{{pagelink: Home/Terminologia/Anagrafica-Schede-Valutazione.page.md}}.
