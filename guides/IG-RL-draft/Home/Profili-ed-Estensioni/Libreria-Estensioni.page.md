@@ -378,6 +378,26 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestMedicoPrescrittore}}
           </td>
         </tr>
+        <tr>
+          <td>RLQuestionnaireResponsePartecipantiValutazione</td>
+          <td>QuestionnaireResponse</td>
+          <td>
+            Dettagli sui partecipanti alla valutazione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponsePartecipantiValutazione}}
+          </td>
+        </tr>
+        <tr>
+          <td>RLQuestionnaireResponseLuogoValutazione</td>
+          <td>QuestionnaireResponse</td>
+          <td>
+            Dettagli sul luogo della valutazione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseLuogoValutazione}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
