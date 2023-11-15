@@ -26,8 +26,11 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
 - Nel value-set “SGDT Percorsi CDom” è stato aggiunto il percorso “Trattamenti Terapeutici” e sono stati modificati alcuni codici dei percorsi.
 - Nel value-set “SGDT Motivo Segnalazione” è stato cambiato il testo di alcune voci. 
 - Nel value-set “SGDT Valutazione” è stata aggiunta la valutazione “Campi extra del flusso SIAD”.
-- È stato revisionato l’esempio “Ricerca rivalutazioni e sospensioni” aggiungendo il campo “system” nel campo “identifier” dei profili “RLServiceRequestSospensioneADI” e “RLServiceRequestRivalutazione”.
-- Sono stati revisionati gli esempi per allinearli alle nuove modifiche.
+- È stato revisionato l’esempio “Ricerca rivalutazioni e sospensioni” aggiungendo il campo “system” nel campo “identifier” dei profili “RLServiceRequestSospensioneADI” e “RLServiceRequestRivalutazione”;
+- Sono stati revisionati gli esempi per allinearli alle nuove modifiche;
+- Nel profilo RLQuestionnaireResponseValutazione sono stati aggiunti due campi extension a testo libero LuogoValutazione e PartecipantiValutazione;
+- Nel value-set "SGDT Qualifica Professionista Sanitario" è stato aggiunto il valore PROFSAN22 = Medico Specialista;
+- Nella sezione Terminologia è stata aggiunta la pagina "Anagrafica delle schede di valutazione" contenente le tabelle delle domande e delle risposte con il corrispettivo identificativo delle valutazioni "Scheda Triage", "Scheda semplificata SIAD" e "Campi extra del flusso SIAD".
 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
