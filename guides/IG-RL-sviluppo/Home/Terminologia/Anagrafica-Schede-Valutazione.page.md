@@ -634,7 +634,7 @@
   </tr>
   <tr>
     <td rowspan="2">40</td>
-    <td rowspan="2">Assistenza Stato di terminalità non oncologica</td>
+    <td rowspan="2">Assistenza Stato di terminalità non oncologica                       </td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
