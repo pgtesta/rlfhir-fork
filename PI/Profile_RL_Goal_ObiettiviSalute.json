@@ -136,7 +136,7 @@
       {
         "id": "Goal.description.coding.display",
         "path": "Goal.description.coding.display",
-        "short": "Descrizione dell'obiettivo di salute. Si noti che questo campo può riportare la descrizione del codice associato all'obiettivo di salute codificato oppure una decrizione testuale libera.",
+        "short": "Descrizione codificata dell'obiettivo di salute",
         "definition": "Stringa alfanumerica al più di 200 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       },
@@ -179,7 +179,7 @@
       {
         "id": "Goal.note",
         "path": "Goal.note",
-        "short": "Nota contenente l'obiettivo di salute nel caso non fosse selezionato tra le voci codificate",
+        "short": "Descrizione testuale dell'obiettivo di salute",
         "comment": "Il dato è detenuto dal SGDT"
       }
     ]
