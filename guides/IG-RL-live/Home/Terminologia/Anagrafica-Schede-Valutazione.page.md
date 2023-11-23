@@ -570,6 +570,36 @@ td, th {
     <td>Non Presente</td>
   </tr>
   <tr>
+    <td rowspan="7">35</td>
+    <td rowspan="7">Tipologia di luogo di residenza o domicili</td>
+    <td>1</td>
+    <td>Propria Residenza</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Domicilio presso familiari</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Domicilio presso Casa Albergo</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Domicilio presso Comunità per minori</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Domicilio presso Comunità per disabili</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Domicilio presso Case Alloggio</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Altro</td>
+  </tr>
+  <tr>
     <td rowspan="3">36</td>
     <td rowspan="3">Cognitività</td>
     <td>Assente/Lieve</td>
@@ -583,6 +613,7 @@ td, th {
     <td>Grave</td>
     <td>Grave</td>
   </tr>
+  
   <tr>
     <td rowspan="2">37</td>
     <td rowspan="2">ECG</td>
@@ -660,6 +691,12 @@ td, th {
   <tr>
     <td>3</td>
     <td>Totalmente dipendente</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Numero dei componenti del nucleo abitativo </td>
+    <td>00</td>
+    <td>Mancanza del dato</td>
   </tr>
 </tbody>
 </table>
