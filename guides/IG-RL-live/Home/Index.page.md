@@ -10,6 +10,7 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
 - È stata aggiunta una nuova valutazione denominata "Campi extra del flusso SIAD" relativa alle informazioni presenti nel flusso SIAD che non appartengono alla scheda SIAD semplificata. I campi della nuova valutazione sono:
   - Indicatore supporto sociale;
   - Presenza di assistente non familiare;
+  - Tipologia di luogo di residenza o domicilio;
   - Cognitività;
   - ECG;
   - Telemetria;
@@ -17,7 +18,8 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
   - Assistenza Stato di terminalità non oncologica;
   - Trasfusioni;
   - Uso dei servizi igienici;
-  - Abbigliamento.
+  - Abbigliamento;
+  - Numero dei componenti del nucleo abitativo (valore fisso 00 = Mancanza del dato).
 - Nel profilo RLPatientCittadino sono stati aggiunti i campi relativi ai contatti del paziente, al caregiver e alla locazione temporanea.
 - Nel profilo RLGoalObiettiviSalute è stato aggiunto il campo “category” per indicare l’ambito degli obiettivi di salute con la relativa nuova codifica
 - Nel profilo RLServiceRequestServiziSocioAssistenziali è stato aggiunto il campo extension medicoPrescrittore che verrà valorizzato con il codice regionale del medico,  mentre nel campo “requisition” è stato aggiunto il codice della ricetta medica e la sua data di decorrenza.
