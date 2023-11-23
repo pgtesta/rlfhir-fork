@@ -618,7 +618,8 @@
         "id": "Patient.address:locazioneTemporaneaCittadino.use",
         "path": "Patient.address.use",
         "min": 1,
-        "fixedCode": "home"
+        "definition": "valore fisso su \"temp\"",
+        "fixedCode": "temp"
       },
       {
         "id": "Patient.address:locazioneTemporaneaCittadino.line",
