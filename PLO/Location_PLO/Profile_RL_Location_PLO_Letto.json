@@ -75,7 +75,7 @@
           {
             "key": "e",
             "severity": "error",
-            "human": "extension.areaDegenzaor extension.repartoClinico or both SHALL be present",
+            "human": "extension.areaDegenza or extension.repartoClinico or both SHALL be present",
             "expression": "areaDegenza.exists() or repartoClinico.exists()"
           }
         ],
@@ -188,6 +188,14 @@
             "profile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "e",
+            "severity": "error",
+            "human": "extension.areaDegenza or extension.repartoClinico or both SHALL be present",
+            "expression": "areaDegenza.exists() or repartoClinico.exists()"
           }
         ],
         "isModifier": false
