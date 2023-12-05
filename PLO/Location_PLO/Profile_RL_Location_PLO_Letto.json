@@ -71,6 +71,14 @@
             ]
           }
         ],
+        "constraint": [
+          {
+            "key": "e",
+            "severity": "error",
+            "human": "extension.areaDegenzaor extension.repartoClinico or both SHALL be present",
+            "expression": "areaDegenza.exists() or repartoClinico.exists()"
+          }
+        ],
         "isModifier": false
       },
       {
