@@ -1,4 +1,4 @@
-# {{page-title}} 
+# RL FHIR IG
 
 ## IG Draft
 |Versione e pagina dettaglio|Data rilascio| URL |
