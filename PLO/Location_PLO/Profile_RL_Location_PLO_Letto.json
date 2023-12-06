@@ -53,16 +53,7 @@
       {
         "id": "Location.extension",
         "path": "Location.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 5
+        "min": 3
       },
       {
         "id": "Location.extension:areaDegenza",
@@ -71,7 +62,6 @@
         "short": "Area Degenza",
         "definition": "Identificativo dell’area di degenza dove il paziente risulta allettato",
         "comment": "Fonte: \"areaDegenza\"\r\nObbligatorio se non è presente l'informazione sul reparto fisico",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -79,6 +69,14 @@
             "profile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "e",
+            "severity": "error",
+            "human": "extension.areaDegenza or extension.repartoClinico or both SHALL be present",
+            "expression": "areaDegenza.exists() or repartoClinico.exists()"
           }
         ],
         "isModifier": false
@@ -108,7 +106,6 @@
         "short": "Data e ora prevista per la dimissione del paziente",
         "definition": "In caso in cui non è disponibile l’ora, indicare mezzanotte.\r\n\r\nIn caso in cui il valore non è noto, non deve essere presente l'intero elemento JSON.",
         "comment": "Fonte: \"dataOraDimissionePrevista\"",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -127,7 +124,6 @@
         "short": "Data e ora occupazione posto letto",
         "definition": "Valorizzata con data e ora di assegnazione del letto.\r\n\r\nIn caso in cui il valore non è noto, non deve essere presente l'intero elemento JSON.",
         "comment": "Fonte: \"dataOraOccupazioneLetto\"",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -146,7 +142,6 @@
         "short": "Dimissione protetta",
         "definition": "Flag dimissione protetta, può assumere i seguenti valori: “true” o “false”.\r\n\r\nIn caso in cui il valore non è noto, non deve essere presente l'intero elemento JSON.",
         "comment": "Fonte: \"dimissioneProtetta\"",
-        "min": 0,
         "max": "1",
         "type": [
           {
@@ -186,7 +181,6 @@
         "path": "Location.extension",
         "sliceName": "repartoClinico",
         "short": "Identificativo del reparto clinico che ha in carico il paziente",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -194,6 +188,14 @@
             "profile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico"
             ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "e",
+            "severity": "error",
+            "human": "extension.areaDegenza or extension.repartoClinico or both SHALL be present",
+            "expression": "areaDegenza.exists() or repartoClinico.exists()"
           }
         ],
         "isModifier": false
