@@ -115,7 +115,7 @@
         "path": "Condition.code",
         "sliceName": "patologia",
         "short": "Codice della patologia",
-        "comment": "La codifica delle patologie è riportata secondo lo standard ICD9-CM"
+        "comment": "La codifica delle patologie è riportata secondo lo standard ICD9-CM. Inoltre, è presente un elenco di patologie aggiuntive con codifica differente rispetto allo standard ICD9-CM, è possibile visualizzare la Tabella delle patologie non ICD9-CM tramite il link presente nella sezione ValueSet in fondo a questa pagina o nella sezione Terminologia - Libreria ValueSet"
       },
       {
         "id": "Condition.code:patologia.coding",

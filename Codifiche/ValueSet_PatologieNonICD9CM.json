@@ -1,0 +1,674 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT-PatologieNonICD9CM",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PatologieNonICD9CM",
+  "version": "1.0.0",
+  "name": "SGDT Patologie Non ICD9-CM",
+  "status": "active",
+  "date": "2024-01-25",
+  "description": "ValueSet relativo alla codifica delle patologie non ICD9-CM",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PatologieNonICD9CM",
+        "version": "1.0.0",
+        "concept": [
+          {
+           "code ": 1,
+           "display": "TRAPIANTATI ATTIVI"
+          },
+          {
+           "code ": 2,
+           "display": "IRC - DIALISI"
+          },
+          {
+           "code ": 3,
+           "display": "SINTOMI, SEGNI E STATI MORBOSI MAL DEFINITI"
+          },
+          {
+           "code ": 4,
+           "display": "ACROMEGALIA E GIGANTISMO"
+          },
+          {
+           "code ": 5,
+           "display": "MALATTIE DEL SANGUE E DEGLI ORGANI EMATOPOIETICI"
+          },
+          {
+           "code ": 6,
+           "display": "HIV POSITIVO ED AIDS CONCLAMATO"
+          },
+          {
+           "code ": 7,
+           "display": "TRAPIANTATI NON ATTIVI"
+          },
+          {
+           "code ": 8,
+           "display": "DIABETE MELLITO TIPO 1 COMPLICATO"
+          },
+          {
+           "code ": 9,
+           "display": "INSUFFICIENZA RESPIRATORIA\/OSSIGENOTERAPIA"
+          },
+          {
+           "code ": 10,
+           "display": "NEOPLASIA ATTIVA"
+          },
+          {
+           "code ": 11,
+           "display": "NEUROMIELITE OTTICA"
+          },
+          {
+           "code ": 12,
+           "display": "ANEMIE EMOLITICHE IMMUNI"
+          },
+          {
+           "code ": 13,
+           "display": "SCLEROSI MULTIPLA"
+          },
+          {
+           "code ": 14,
+           "display": "VASCULOPATIA ARTERIOSA"
+          },
+          {
+           "code ": 15,
+           "display": "ALCUNE CONDIZIONI MORBOSE DI ORIGINE PERINATALE"
+          },
+          {
+           "code ": 16,
+           "display": "DIABETE MELLITO TIPO 2 COMPLICATO"
+          },
+          {
+           "code ": 17,
+           "display": "INSUFFICIENZA RENALE CRONICA"
+          },
+          {
+           "code ": 18,
+           "display": "MALATTIE DELLE GHIANDOLE ENDOCRINE, DELLA NUTRIZIONE, DEL METABOLISMOE DISTURBI IMMUNITARI"
+          },
+          {
+           "code ": 19,
+           "display": "CIRROSI EPATICA"
+          },
+          {
+           "code ": 20,
+           "display": "SCOMPENSO CARDIACO"
+          },
+          {
+           "code ": 21,
+           "display": "SINDROME DI CUSHING"
+          },
+          {
+           "code ": 22,
+           "display": "SCLEROSI SISTEMICA"
+          },
+          {
+           "code ": 23,
+           "display": "VASCULOPATIA CEREBRALE"
+          },
+          {
+           "code ": 24,
+           "display": "SPONDILITE ANCHILOSANTE"
+          },
+          {
+           "code ": 25,
+           "display": "CARDIOPATIA VALVOLARE"
+          },
+          {
+           "code ": 26,
+           "display": "PANCREATITE CRONICA"
+          },
+          {
+           "code ": 27,
+           "display": "VASCULOPATIA VENOSA"
+          },
+          {
+           "code ": 28,
+           "display": "DEMENZE"
+          },
+          {
+           "code ": 29,
+           "display": "CARDIOPATIA ISCHEMICA"
+          },
+          {
+           "code ": 30,
+           "display": "MIOCARDIOPATIA ARITMICA"
+          },
+          {
+           "code ": 31,
+           "display": "DIABETE INSIPIDO"
+          },
+          {
+           "code ": 32,
+           "display": "MIOCARDIOPATIA  NON ARITMICA"
+          },
+          {
+           "code ": 33,
+           "display": "PARKINSON E PARKINSONISMI"
+          },
+          {
+           "code ": 34,
+           "display": "EPILESSIA"
+          },
+          {
+           "code ": 35,
+           "display": "NANISMO IPOFISARIO"
+          },
+          {
+           "code ": 36,
+           "display": "MALATTIE DEL SISTEMA CIRCOLATORIO"
+          },
+          {
+           "code ": 37,
+           "display": "MIASTENIA GRAVE"
+          },
+          {
+           "code ": 38,
+           "display": "MORBO DI ADDISON"
+          },
+          {
+           "code ": 39,
+           "display": "BPCO"
+          },
+          {
+           "code ": 40,
+           "display": "ARTRITE REUMATOIDE"
+          },
+          {
+           "code ": 41,
+           "display": "PSORIASI E ARTROPATIA PSORIASICA"
+          },
+          {
+           "code ": 42,
+           "display": "MALATTIE DEL SISTEMA NERVOSO E DEGLI ORGANI DI SENSO"
+          },
+          {
+           "code ": 43,
+           "display": "EPATITE CRONICA"
+          },
+          {
+           "code ": 44,
+           "display": "DIABETE MELLITO TIPO 1"
+          },
+          {
+           "code ": 45,
+           "display": "LUPUS ERITEMATOSO SISTEMICO"
+          },
+          {
+           "code ": 46,
+           "display": "COLITE ULCEROSA E CROHN (IBD)"
+          },
+          {
+           "code ": 47,
+           "display": "ALZHEIMER"
+          },
+          {
+           "code ": 48,
+           "display": "IPERCOLESTEROLEMIE FAMILIARI E NON"
+          },
+          {
+           "code ": 49,
+           "display": "MALATTIE DEL SISTEMA OSTEOMUSCOLARE E DEL TESSUTO CONNETTIVO"
+          },
+          {
+           "code ": 50,
+           "display": "DIABETE MELLITO TIPO 2"
+          },
+          {
+           "code ": 51,
+           "display": "MALATTIE INFETTIVE E PARASSITARIE"
+          },
+          {
+           "code ": 52,
+           "display": "MALATTIA DI SJOGREN"
+          },
+          {
+           "code ": 53,
+           "display": "IPER ED IPOPARATIROIDISMO"
+          },
+          {
+           "code ": 54,
+           "display": "MALATTIE DELL'APPARATO GENITO-URINARIO"
+          },
+          {
+           "code ": 55,
+           "display": "MALFORMAZIONI CONGENITE"
+          },
+          {
+           "code ": 56,
+           "display": "IPERTENSIONE ARTERIOSA"
+          },
+          {
+           "code ": 57,
+           "display": "NEOPLASIA FOLLOW-UP"
+          },
+          {
+           "code ": 58,
+           "display": "MALATTIE DELLA PELLE E DEL TESSUTO SOTTOCUTANEO"
+          },
+          {
+           "code ": 59,
+           "display": "NEOPLASIA REMISSIONE"
+          },
+          {
+           "code ": 60,
+           "display": "IPOTIROIDISMO"
+          },
+          {
+           "code ": 61,
+           "display": "TUMORI"
+          },
+          {
+           "code ": 62,
+           "display": "MORBO DI BASEDOW E IPERTIROIDISMI"
+          },
+          {
+           "code ": 63,
+           "display": "ASMA"
+          },
+          {
+           "code ": 64,
+           "display": "TIROIDITE DI HASHIMOTO"
+          },
+          {
+           "code ": 65,
+           "display": "MALATTIE DELL'APPARATO DIGERENTE"
+          }
+         ]
+      },
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PrestazioniInfermieristiche",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "ALIM-01",
+            "display": "Imboccare il paziente rispettando i suoi tempi"
+          },
+          {
+            "code": "ALIM-02",
+            "display": "Mantenere il digiuno"
+          },
+          {
+            "code": "ALIM-03",
+            "display": "Monitorare il peso corporeo"
+          },
+          {
+            "code": "ALIM-04",
+            "display": "Consultare il dietista/nutrizionista"
+          },
+          {
+            "code": "ALIM-05",
+            "display": "Consultare logopedista per disturbi della deglutizione"
+          },
+          {
+            "code": "ALIM-06",
+            "display": "Verificare le quantità di cibo assunte"
+          },
+          {
+            "code": "ALIM-07",
+            "display": "Verificare le quantità di liquidi assunte"
+          },
+          {
+            "code": "ALIM-08",
+            "display": "Verificare e registrare gli alimenti assunti"
+          },
+          {
+            "code": "ALIM-09",
+            "display": "Somministrare nutrizione via peg o sng"
+          },
+          {
+            "code": "ALIM-10",
+            "display": "Somministrare the e fette biscottate"
+          },
+          {
+            "code": "ALIM-11",
+            "display": "Rilevare e registrare ristagno gastrico"
+          },
+          {
+            "code": "ALIM-13",
+            "display": "Utilizzare gli addensanti se presente disfagia per i liquidi"
+          },
+          {
+            "code": "ALIM-14",
+            "display": "Dopo il pasto mantenere busto eretto per 20-30 minuti"
+          },
+          {
+            "code": "ALIM-15",
+            "display": "Educare il paziente all'assunzione della dieta prescritta"
+          },
+          {
+            "code": "ALIM-16",
+            "display": "Educare il paziente alla gestionde del device per la nutrizione artificiale per ridurre il rischio di complicanze (infezioni, occlusioni, ecc..)"
+          },
+          {
+            "code": "ALIM-17",
+            "display": "Fornire alimenti graditi"
+          },
+          {
+            "code": "COM-01",
+            "display": "Monitorare lo stato di coscienza"
+          },
+          {
+            "code": "COM-02#RIP-01",
+            "display": "Assicurare un ambiente tranquillo riducendo le fonti di disturbo e\\o le distrazioni esterne"
+          },
+          {
+            "code": "COM-03",
+            "display": "Mantenere il contatto visivo e parlare lentamente"
+          },
+          {
+            "code": "COM-04",
+            "display": "Formulare frasi semplici a risposta dicotomica"
+          },
+          {
+            "code": "COM-05",
+            "display": "Aiutare il paziente a esprimersi utilizzando il gesto (mimare, indicare, mostrare ciò che si vuole dire) per favorire la comunicazione"
+          },
+          {
+            "code": "COM-06",
+            "display": "Fornire metodi di comunicazione alternativi (campo note)"
+          },
+          {
+            "code": "COM-07#MOB-10#RIP-02#ALIM-12",
+            "display": "Coinvolgere (ed educare) il caregiver"
+          },
+          {
+            "code": "COM-08",
+            "display": "Consultare logopedista"
+          },
+          {
+            "code": "CUTE-01",
+            "display": "Eseguire l'ispezione cutanea nelle prominenze ossee, nelle pliche cutanee e nelle zone di appoggio dei devices almeno una volta per turno"
+          },
+          {
+            "code": "CUTE-02",
+            "display": "Rimuovere le calze elasto-compressive quotidianamente"
+          },
+          {
+            "code": "CUTE-03",
+            "display": "Applicare creme emollienti e/o prodotti barriera nelle zone cutanee sottoposte a pressione"
+          },
+          {
+            "code": "CUTE-04",
+            "display": "Garantire il sollevamento dei talloni (cuscino o sgonfiaggio delle celle delle superfici di supporto)"
+          },
+          {
+            "code": "CUTE-05",
+            "display": "Contattare lo specialista in Wound Care"
+          },
+          {
+            "code": "CUTE-06",
+            "display": "Medicazioni"
+          },
+          {
+            "code": "CVC_01",
+            "display": "Medicazione: uso massimo precauzioni barriere, igiene mani"
+          },
+          {
+            "code": "CVC_02",
+            "display": "Igiene mani, guanti sterili, antisepsi del sito"
+          },
+          {
+            "code": "CVC_03",
+            "display": "Sostituzione medicazione"
+          },
+          {
+            "code": "CVC_04",
+            "display": "Ispezione del sito"
+          },
+          {
+            "code": "CVC_05",
+            "display": "Monitoraggio Linee Centrali"
+          },
+          {
+            "code": "CVC_05",
+            "display": "Gestione - Disinfezione con clorexidina 2% della porta di accesso"
+          },
+          {
+            "code": "CVC_06",
+            "display": "Prelievo ematico per emocoltura"
+          },
+          {
+            "code": "CVC_07",
+            "display": "Rimozione/Trasferimento - Trasferimento in altra struttura"
+          },
+          {
+            "code": "CVC_08",
+            "display": "Rimozione CVC"
+          },
+          {
+            "code": "DEVICE-01",
+            "display": "Valutazione del device"
+          },
+          {
+            "code": "DEVICE-02",
+            "display": "Inserimento del device"
+          },
+          {
+            "code": "DEVICE-03",
+            "display": "Medicazione del device"
+          },
+          {
+            "code": "DEVICE-04",
+            "display": "Rimozione del device"
+          },
+          {
+            "code": "DEVICE-06",
+            "display": "Posizionamento catetere venoso centrale temporaneo"
+          },
+          {
+            "code": "DISP_01",
+            "display": "Stato della medicazione"
+          },
+          {
+            "code": "DISP_02",
+            "display": "Flush"
+          },
+          {
+            "code": "DISP_03",
+            "display": "Ritorno del sangue"
+          },
+          {
+            "code": "DOL-01",
+            "display": "Rivalutare il dolore con scala appropiata"
+          },
+          {
+            "code": "DOL-02",
+            "display": "Attuare la gestione del dolore secondo linee guida di riferimento"
+          },
+          {
+            "code": "ELA-01#ELU-02",
+            "display": "Accompagnare in bagno per eliminazione (u/f)"
+          },
+          {
+            "code": "ELA-03",
+            "display": "Monitorare frequenza e caratteristiche delle feci"
+          },
+          {
+            "code": "ELA-05#ELU-06",
+            "display": "Coinvolgere il care-giver nella gestione dello stoma"
+          },
+          {
+            "code": "ELA-07",
+            "display": "Coinvolgere il dietista"
+          },
+          {
+            "code": "ELA-09",
+            "display": "Garantire raccolta delle feci per diagnostica"
+          },
+          {
+            "code": "ELU-01#ELA-02",
+            "display": "Posizionare\\sostituire pannolone"
+          },
+          {
+            "code": "ELU-03",
+            "display": "Posizionare\\sostituire urocontrol"
+          },
+          {
+            "code": "ELU-04",
+            "display": "Monitorare quantità e caratteristiche delle urine"
+          },
+          {
+            "code": "ELU-05#ELA-06",
+            "display": "Favorire l'assunzione di liquidi"
+          },
+          {
+            "code": "ELU-07#ELA-04",
+            "display": "Educare il paziente alla gestione dello stoma (dalla pulizia all'apparecchiatura) e al riconoscimento delle complicanze"
+          },
+          {
+            "code": "ELU-09",
+            "display": "Svuotare e riposizionare la sacca con tecnica asettica"
+          },
+          {
+            "code": "ELU-10",
+            "display": "Gestire CV come da procedura aziendale"
+          },
+          {
+            "code": "ELU-11",
+            "display": "Rivalutare la necessità di mantenere C.V. (24 ore)"
+          },
+          {
+            "code": "ELU-12",
+            "display": "Garantire raccolta delle urine per la diagnostica"
+          },
+          {
+            "code": "GENERIC_INTERVENTION",
+            "display": "Attività\\Intervento\\Prestazione da dettagliare tramite nota"
+          },
+          {
+            "code": "IGI-01",
+            "display": "Aiutare nel cambio della biancheria personale"
+          },
+          {
+            "code": "IGI-02",
+            "display": "Eseguire bagno a letto e cambio della biancheria personale"
+          },
+          {
+            "code": "IGI-03",
+            "display": "Eseguire igiene del cavo orale"
+          },
+          {
+            "code": "IGI-04",
+            "display": "Eseguire cure igieniche parziali e cambio della biancheria personale"
+          },
+          {
+            "code": "IGI-05",
+            "display": "Aiutare ed educare all'esecuzione delle cure igieniche e cambio della biancheria personale"
+          },
+          {
+            "code": "IGI-06",
+            "display": "Sorvegliare durante l'esecuzione delle cure igieniche e cambio della biancheria personale"
+          },
+          {
+            "code": "IGI-07",
+            "display": "Educare il paziente all'igiene dei diversi distretti corporei per ridurre il rischio infettivo (dall'alto verso il basso)"
+          },
+          {
+            "code": "IGI-09",
+            "display": "Aiutare nella vestizione"
+          },
+          {
+            "code": "IGI-10",
+            "display": "Eseguire cure igieniche"
+          },
+          {
+            "code": "IGI-11",
+            "display": "Eseguire igiene della stomia e della cute peristomale e valutare stato dello stoma"
+          },
+          {
+            "code": "MOB-01",
+            "display": "Garantire cambio posturale nel letto e ispezione della la cute (ogni 2 ore)"
+          },
+          {
+            "code": "MOB-02",
+            "display": "Verificare funzionamento superficie antidecubito"
+          },
+          {
+            "code": "MOB-03",
+            "display": "Posizionare materasso antidecubito"
+          },
+          {
+            "code": "MOB-04",
+            "display": "Verificare assenza impedimenti al deflusso dei devices e dei presidi"
+          },
+          {
+            "code": "MOB-05",
+            "display": "Mobilizzare in posizione seduta con gambe fuori dal letto/comodone"
+          },
+          {
+            "code": "MOB-06",
+            "display": "Alzare in carrozzina con sollevatore"
+          },
+          {
+            "code": "MOB-08",
+            "display": "Sollevare paziente con sollevatore"
+          },
+          {
+            "code": "MOB-09",
+            "display": "Consultare il fisioterapista"
+          },
+          {
+            "code": "MON_PV-01",
+            "display": "Rilevazione Parametri Clinici (Monitoraggio Parametri Vitali)"
+          },
+          {
+            "code": "NURS_GEN_128",
+            "display": "Dieta"
+          },
+          {
+            "code": "P6000016241073001",
+            "display": "CVVH"
+          },
+          {
+            "code": "RES-01",
+            "display": "Monitorare il paziente affinché vengano mantenuti in sede i devices respiratori"
+          },
+          {
+            "code": "RES-03",
+            "display": "Monitoraggio per la ricerca di segni di respirazione rumorosa (crepitii o gorgoglii)"
+          },
+          {
+            "code": "RES-04",
+            "display": "Aspirare le prime vie aree e monitorare le caratteristiche delle secrezioni"
+          },
+          {
+            "code": "RES-06",
+            "display": "Monitorare il modello di respirazione (bradipnea, tachipnea, iperventilazione, respiro di  Kussmaul, respiro di Cheyene-Stokes)"
+          },
+          {
+            "code": "RES-07",
+            "display": "Mantenere la postura semiseduta"
+          },
+          {
+            "code": "RES-08",
+            "display": "Stimolare il paziente a tossire alternando respiri profondi"
+          },
+          {
+            "code": "RES-10",
+            "display": "Valutazione della tracheostomia"
+          },
+          {
+            "code": "RES-15",
+            "display": "Controllare e mantenere di adeguati valori pressori della cuffia"
+          },
+          {
+            "code": "RES-16",
+            "display": "Assistere il paziente intubato"
+          },
+          {
+            "code": "RIP-03",
+            "display": "Monitorare la qualità del sonno /riposo"
+          },
+          {
+            "code": "RIP-04",
+            "display": "Verificare che i devices abbiano raccordi abbastanza lunghi pre permettere al paziente di cambiare posizione"
+          },
+          {
+            "code": "RIP-05",
+            "display": "Somministrare la terapia e verificare l'esito"
+          }
+        ]
+      }
+    ]
+  }
+}

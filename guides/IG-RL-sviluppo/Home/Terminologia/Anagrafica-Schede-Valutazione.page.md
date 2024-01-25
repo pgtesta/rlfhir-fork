@@ -698,6 +698,16 @@ td, th {
     <td>00</td>
     <td>Mancanza del dato</td>
   </tr>
+  <tr>
+    <td rowspan="2">45 <br> Questa domanda viene valorizzata solo se la condizione clinica prevalente è "Paziente in Stato Vegetativo (DGR 6220)" o "Paziente affetto da malattie del motoneurone (circ. 20)"</td>
+    <td rowspan="2">Contributo al caregiver familiare</td>
+    <td>1</td>
+    <td>Si</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>No</td>
+  </tr>
 </tbody>
 </table>
 </body>
