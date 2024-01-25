@@ -98,7 +98,7 @@
     {
       "code": "COHERENCE_ERROR",
       "display": "Errore sulla coerenza dei dati",
-      "definition": "I -dati restituiti non sono coerenti rispetto a criteri di business predefiniti. Corrisponde HTTP Status Code 447"
+      "definition": "I dati restituiti non sono coerenti rispetto a criteri di business predefiniti. Corrisponde HTTP Status Code 447"
     },
     {
       "code": "GATEWAY_TIMEOUT",
