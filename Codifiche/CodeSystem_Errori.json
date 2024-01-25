@@ -99,6 +99,11 @@
       "code": "COHERENCE_ERROR",
       "display": "Errore sulla coerenza dei dati",
       "definition": "I dati restituiti non sono coerenti rispetto a criteri di business predefiniti. Corrisponde HTTP Status Code 447"
+    },
+    {
+      "code": "GATEWAY_TIMEOUT",
+      "display": "Gateway timeout",
+      "definition": "Il servizio ha impiegato troppo tempo nella generazione della risposta. Si prega di effettuare la stessa consultazione più tardi. Corrisponde HTTP Status Code 504"
     }
   ]
 }
