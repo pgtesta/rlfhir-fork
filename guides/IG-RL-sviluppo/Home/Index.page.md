@@ -16,32 +16,10 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, 
 ## Novità
 
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, gestisce i seguenti concetti:
-- È stata aggiunta una nuova valutazione denominata "Campi extra del flusso SIAD" relativa alle informazioni presenti nel flusso SIAD che non appartengono alla scheda SIAD semplificata. I campi della nuova valutazione sono:
-  - Indicatore supporto sociale;
-  - Presenza di assistente non familiare;
-  - Tipologia di luogo di residenza o domicilio;
-  - Cognitività;
-  - ECG;
-  - Telemetria;
-  - Assistenza Stato di terminalità oncologica;
-  - Assistenza Stato di terminalità non oncologica;
-  - Trasfusioni;
-  - Uso dei servizi igienici;
-  - Abbigliamento;
-  - Numero dei componenti del nucleo abitativo (valore fisso 00 = Mancanza del dato).
-- Nel profilo RLPatientCittadino sono stati aggiunti i campi relativi ai contatti del paziente, al caregiver e alla locazione temporanea.
-- Nel profilo RLGoalObiettiviSalute è stato aggiunto il campo “category” per indicare l’ambito degli obiettivi di salute con la relativa nuova codifica
-- Nel profilo RLServiceRequestServiziSocioAssistenziali è stato aggiunto il campo extension medicoPrescrittore che verrà valorizzato con il codice regionale del medico,  mentre nel campo “requisition” è stato aggiunto il codice della ricetta medica e la sua data di decorrenza.
-- Nel profilo RLProcedurePrestazione sono stati resi obbligatori i campi extension dataPresaInCarico, numeroAccesso, modalitaErogazione, tipoAccesso.
-- Nel profilo RLQuestionnaireResponseValutazione è stato aggiunto un codice identificativo alle risposte di tutte le domande delle valutazioni eccetto per la valutazione InterRAI HomeCare.
-- Nel value-set “SGDT Percorsi CDom” è stato aggiunto il percorso “Trattamenti Terapeutici” e sono stati modificati alcuni codici dei percorsi.
-- Nel value-set “SGDT Motivo Segnalazione” è stato cambiato il testo di alcune voci. 
-- Nel value-set “SGDT Valutazione” è stata aggiunta la valutazione “Campi extra del flusso SIAD”.
-- È stato revisionato l’esempio “Ricerca rivalutazioni e sospensioni” aggiungendo il campo “system” nel campo “identifier” dei profili “RLServiceRequestSospensioneADI” e “RLServiceRequestRivalutazione”;
-- Sono stati revisionati gli esempi per allinearli alle nuove modifiche;
-- Nel profilo RLQuestionnaireResponseValutazione sono stati aggiunti due campi extension a testo libero LuogoValutazione e PartecipantiValutazione;
-- Nel value-set "SGDT Qualifica Professionista Sanitario" è stato aggiunto il valore PROFSAN22 = Medico Specialista;
-- Nella sezione Terminologia è stata aggiunta la pagina "Anagrafica delle schede di valutazione" contenente le tabelle delle domande e delle risposte con il corrispettivo identificativo delle valutazioni "Scheda Triage", "Scheda semplificata SIAD" e "Campi extra del flusso SIAD".
+
+- Per il profilo “RLConditionProblemiSalute” è stato aggiunto il value-set “SGDT Patologie Non ICD9-CM” visualizzabile nella sezione “Libreria ValueSet”. Questa tabella raccoglie le patologie che presentano una codifica non standard differente dalla ICD9-CM.
+- Nella sezione “Anagrafica delle schede di valutazione” è stata aggiunta la domanda “Contributo al caregiver familiare” per la valutazione “Campi extra del flusso SIAD”. Questa domanda viene valorizzata solo se la condizione clinica prevalente è “Paziente in Stato Vegetativo (DGR 6220)” o “Paziente affetto da malattie del motoneurone (circ. 20)”.
+- Nella sezione “Stati ed Errori” è stato aggiunto l’errore “504 Service Time-Out”. Questo errore viene generato in caso in cui il tempo di composizione del bundle superi il limite temporale di soglia. Il sistema termina comunque la composizione e memorizza il bundle per un periodo limitato di tempo. Dunque, effettuando la stessa chiamata di consultazione la risposta risulta immediata. 
 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).

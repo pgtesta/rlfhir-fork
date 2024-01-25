@@ -71,8 +71,8 @@
       {
         "id": "PractitionerRole.extension:dettagliAttivazionePercorsoCure.value[x].reference",
         "path": "PractitionerRole.extension.value[x].reference",
-        "short": "Riferimento ai dettagli dell'attivazione del percorso di cure domiciliari dove l'operatore sanitario fornirà assistenza",
-        "definition": "Reference al profilo RLServiceRequestServiziSocioAssistenziali contente i dttagli dettagli dell'attivazione del percorso di cure domiciliari",
+        "short": "Riferimento ai dettagli del percorso di cure domiciliari dove è stata inserita la figura professionale.",
+        "definition": "Reference al profilo RLServiceRequestServiziSocioAssistenziali contenente i dettagli del percorso di cure domiciliari",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
