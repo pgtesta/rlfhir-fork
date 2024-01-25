@@ -1,13 +1,13 @@
 {
-  "resourceType": "Measure",
-  "id": "esempio-measure-PLO",
-  "meta": {
-    "lastUpdated": "2023-01-11T08:32:35Z",
-    "profile": [
-      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO"
-    ],
-    "versionId": "1"
-  },
-  "title": "Misura relativa al numero dei posti letto occupati",
-  "status": "active"
+	"resourceType": "Measure",
+	"id": "esempio-measure-PLO",
+	"meta": {
+		"lastUpdated": "2023-01-11T08:32:35Z",
+		"profile": [
+			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO"
+		],
+		"versionId": "1"
+	},
+	"title": "Misura relativa al numero dei posti letto occupati",
+	"status": "active"
 }

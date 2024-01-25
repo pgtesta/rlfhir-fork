@@ -571,7 +571,7 @@ td, th {
   </tr>
   <tr>
     <td rowspan="7">35</td>
-    <td rowspan="7">Tipologia di luogo di residenza o domicilio</td>
+    <td rowspan="7">Tipologia di luogo di residenza o domicili</td>
     <td>1</td>
     <td>Propria Residenza</td>
   </tr>

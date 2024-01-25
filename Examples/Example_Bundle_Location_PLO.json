@@ -1,454 +1,454 @@
 {
-  "resourceType": "Bundle",
-  "id": "esempio-PLO-Location",
-  "type": "searchset",
-  "timestamp": "2023-01-01T10:36:03Z",
-  "total": 2,
-  "entry": [
-    {
-      "fullUrl": "Location/10866320-eda4-11ed-a05b-0242ac120003",
-      "resource": {
-        "resourceType": "Location",
-        "id": "10866320-eda4-11ed-a05b-0242ac120003",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:35Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "030703123-3-1-44-2"
-          }
-        ],
-        "physicalType": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-              "code": "bd",
-              "display": "Bed"
-            }
-          ]
-        },
-        "managingOrganization": {
-          "reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
-        },
-        "partOf": {
-          "reference": "Location/1caa9dec-eda4-11ed-a05b-0242ac120003"
-        },
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza",
-            "valueString": "05"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione",
-            "valueDateTime": "2023-01-01T09:16:03Z"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista",
-            "valueDateTime": "2023-01-11T11:00:00Z"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
-            "valueDateTime": "2023-01-01T10:36:03Z"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
-            "valueBoolean": true
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero",
-                  "code": "1",
-                  "display": "Degenza ordinaria"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico",
-            "valueString": "0801"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
-            "valueString": "0901"
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "Location/da6db6f6-f967-11ed-be56-0242ac120002",
-      "resource": {
-        "resourceType": "Location",
-        "id": "da6db6f6-f967-11ed-be56-0242ac120002",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:35Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "030703123-3-1-44-3"
-          }
-        ],
-        "physicalType": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-              "code": "bd",
-              "display": "Bed"
-            }
-          ]
-        },
-        "managingOrganization": {
-          "reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
-        },
-        "partOf": {
-          "reference": "Location/1caa9dec-eda4-11ed-a05b-0242ac120003"
-        },
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza",
-            "valueString": "05"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione",
-            "valueDateTime": "2023-01-04T09:16:03Z"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista",
-            "valueDateTime": "2023-01-13T11:00:00Z"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
-            "valueDateTime": "2023-01-04T10:36:03Z"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
-            "valueBoolean": true
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero",
-                  "code": "1",
-                  "display": "Degenza ordinaria"
-                }
-              ]
-            }
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico",
-            "valueString": "0843"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
-            "valueString": "0901"
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "Location/1caa9dec-eda4-11ed-a05b-0242ac120003",
-      "resource": {
-        "resourceType": "Location",
-        "id": "1caa9dec-eda4-11ed-a05b-0242ac120003",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:35Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "030703123-3-1-44"
-          }
-        ],
-        "physicalType": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-              "code": "ro",
-              "display": "Room"
-            }
-          ]
-        },
-        "managingOrganization": {
-          "reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
-        },
-        "partOf": {
-          "reference": "Location/242e2430-eda4-11ed-a05b-0242ac120003"
-        }
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Location/242e2430-eda4-11ed-a05b-0242ac120003",
-      "resource": {
-        "resourceType": "Location",
-        "id": "242e2430-eda4-11ed-a05b-0242ac120003",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:35Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "030703123-3-1"
-          }
-        ],
-        "physicalType": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-              "code": "lvl",
-              "display": "Level"
-            }
-          ]
-        },
-        "managingOrganization": {
-          "reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
-        },
-        "partOf": {
-          "reference": "Location/2ab1d1e4-eda4-11ed-a05b-0242ac120003"
-        }
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Location/2ab1d1e4-eda4-11ed-a05b-0242ac120003",
-      "resource": {
-        "resourceType": "Location",
-        "id": "2ab1d1e4-eda4-11ed-a05b-0242ac120003",
-        "meta": {
-          "lastUpdated": "2023-01-11T08:32:35Z",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOEdificio"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "value": "030703123-3"
-          }
-        ],
-        "physicalType": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-              "code": "bu",
-              "display": "Building"
-            }
-          ]
-        },
-        "managingOrganization": {
-          "reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
-        }
-      },
-      "search": {
-        "mode": "include"
-      }
-    },
-    {
-      "fullUrl": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "ea1b070e-eda3-11ed-a05b-0242ac120003",
-        "meta": {
-          "lastUpdated": "2022-03-30T10:36:03.000+00:00",
-          "profile": [
-            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
-          ],
-          "versionId": "1"
-        },
-        "identifier": [
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialePresidio",
-            "value": "03007800"
-          },
-          {
-            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoMinisterialePresidio",
-            "value": "03007800"
-          }
-        ],
-        "active": true,
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
-                "code": "POA",
-                "display": "PRESIDIO OSPEDALIERO ASST"
-              }
-            ]
-          }
-        ],
-        "name": "NUOVO OSPEDALE DI VIMERCATE",
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "03966541"
-          },
-          {
-            "system": "fax",
-            "value": "0396654629"
-          }
-        ],
-        "address": [
-          {
-            "use": "work",
-            "type": "physical",
-            "line": [
-              "VIA SANTI COSMA E DAMIANO,10"
-            ],
-            "city": "VIMERCATE",
-            "district": "MB",
-            "postalCode": "20871",
-            "extension": [
-              {
-                "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
-                "valueString": "108050"
-              },
-              {
-                "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale",
-                "extension": [
-                  {
-                    "url": "codiceDistretto",
-                    "valueCodeableConcept": {
-                      "coding": [
-                        {
-                          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
-                          "code": "22046",
-                          "display": "VIMERCATE"
-                        }
-                      ]
+	"resourceType": "Bundle",
+	"id": "esempio-PLO-Location",
+	"type": "searchset",
+	"timestamp": "2023-01-01T10:36:03Z",
+	"total": 2,
+	"entry": [
+		{
+			"fullUrl": "Location/10866320-eda4-11ed-a05b-0242ac120003",
+			"resource": {
+				"resourceType": "Location",
+				"id": "10866320-eda4-11ed-a05b-0242ac120003",
+				"meta": {
+					"lastUpdated": "2023-01-11T08:32:35Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "030703123-3-1-44-2"
+					}
+				],
+				"physicalType": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+							"code": "bd",
+							"display": "Bed"
+						}
+					]
+				},
+				"managingOrganization": {
+					"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+				},
+				"partOf": {
+					"reference": "Location/1caa9dec-eda4-11ed-a05b-0242ac120003"
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza",
+						"valueString": "05"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione",
+						"valueDateTime": "2023-01-01T09:16:03Z"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista",
+						"valueDateTime": "2023-01-11T11:00:00Z"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
+						"valueDateTime": "2023-01-01T10:36:03Z"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
+						"valueBoolean": true
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero",
+									"code": "1",
+									"display": "Degenza ordinaria"
+								}
+							]
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico",
+						"valueString": "0801"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
+						"valueString": "0901"
+					}
+				]
+			},
+			"search": {
+				"mode": "match"
+			}
+		},
+				{
+			"fullUrl": "Location/da6db6f6-f967-11ed-be56-0242ac120002",
+			"resource": {
+				"resourceType": "Location",
+				"id": "da6db6f6-f967-11ed-be56-0242ac120002",
+				"meta": {
+					"lastUpdated": "2023-01-11T08:32:35Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "030703123-3-1-44-3"
+					}
+				],
+				"physicalType": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+							"code": "bd",
+							"display": "Bed"
+						}
+					]
+				},
+				"managingOrganization": {
+					"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+				},
+				"partOf": {
+					"reference": "Location/1caa9dec-eda4-11ed-a05b-0242ac120003"
+				},
+				"extension": [
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza",
+						"valueString": "05"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione",
+						"valueDateTime": "2023-01-04T09:16:03Z"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista",
+						"valueDateTime": "2023-01-13T11:00:00Z"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
+						"valueDateTime": "2023-01-04T10:36:03Z"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
+						"valueBoolean": true
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero",
+									"code": "1",
+									"display": "Degenza ordinaria"
+								}
+							]
+						}
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico",
+						"valueString": "0843"
+					},
+					{
+						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
+						"valueString": "0901"
+					}
+				]
+			},
+			"search": {
+				"mode": "match"
+			}
+		},
+		{
+			"fullUrl": "Location/1caa9dec-eda4-11ed-a05b-0242ac120003",
+			"resource": {
+				"resourceType": "Location",
+				"id": "1caa9dec-eda4-11ed-a05b-0242ac120003",
+				"meta": {
+					"lastUpdated": "2023-01-11T08:32:35Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "030703123-3-1-44"
+					}
+				],
+				"physicalType": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+							"code": "ro",
+							"display": "Room"
+						}
+					]
+				},
+				"managingOrganization": {
+					"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+				},
+				"partOf": {
+					"reference": "Location/242e2430-eda4-11ed-a05b-0242ac120003"
+				}
+			},
+			"search": {
+				"mode": "include"
+			}
+		},
+		{
+			"fullUrl": "Location/242e2430-eda4-11ed-a05b-0242ac120003",
+			"resource": {
+				"resourceType": "Location",
+				"id": "242e2430-eda4-11ed-a05b-0242ac120003",
+				"meta": {
+					"lastUpdated": "2023-01-11T08:32:35Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "030703123-3-1"
+					}
+				],
+				"physicalType": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+							"code": "lvl",
+							"display": "Level"
+						}
+					]
+				},
+				"managingOrganization": {
+					"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+				},
+				"partOf": {
+					"reference": "Location/2ab1d1e4-eda4-11ed-a05b-0242ac120003"
+				}
+			},
+			"search": {
+				"mode": "include"
+			}
+		},
+		{
+			"fullUrl": "Location/2ab1d1e4-eda4-11ed-a05b-0242ac120003",
+			"resource": {
+				"resourceType": "Location",
+				"id": "2ab1d1e4-eda4-11ed-a05b-0242ac120003",
+				"meta": {
+					"lastUpdated": "2023-01-11T08:32:35Z",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOEdificio"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"value": "030703123-3"
+					}
+				],
+				"physicalType": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+							"code": "bu",
+							"display": "Building"
+						}
+					]
+				},
+				"managingOrganization": {
+					"reference": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003"
+				}
+			},
+			"search": {
+				"mode": "include"
+			}
+		},
+		{
+			"fullUrl": "Organization/ea1b070e-eda3-11ed-a05b-0242ac120003",
+			"resource": {
+				"resourceType": "Organization",
+				"id": "ea1b070e-eda3-11ed-a05b-0242ac120003",
+				"meta": {
+					"lastUpdated": "2022-03-30T10:36:03.000+00:00",
+					"profile": [
+						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+					],
+					"versionId": "1"
+				},
+				"identifier": [
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialePresidio",
+						"value": "03007800"
+					},
+					{
+						"system": "https://fhir.siss.regione.lombardia.it/sid/identificativoMinisterialePresidio",
+						"value": "03007800"
+					}
+				],
+				"active": true,
+				"type": [
+					{
+						"coding": [
+							{
+								"system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+								"code": "POA",
+								"display": "PRESIDIO OSPEDALIERO ASST"
+							}
+						]
+					}
+				],
+				"name": "NUOVO OSPEDALE DI VIMERCATE",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "03966541"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "0396654629"
                     }
-                  },
-                  {
-                    "url": "ASSTAfferenza",
-                    "valueCodeableConcept": {
-                      "coding": [
-                        {
-                          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
-                          "code": "030717",
-                          "display": "ASST DELLA BRIANZA"
-                        }
-                      ]
+                ],
+				                "address": [
+                    {
+                        "use": "work",
+                        "type": "physical",
+                        "line": [
+                            "VIA SANTI COSMA E DAMIANO,10"
+                        ],
+                        "city": "VIMERCATE",
+                        "district": "MB",
+                        "postalCode": "20871",
+                        "extension": [
+                            {
+                                "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+                                "valueString": "108050"
+                            },
+                            {
+                                "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoTerritoriale",
+                                "extension": [
+                                    {
+                                        "url": "codiceDistretto",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+                                                    "code": "22046",
+                                                    "display": "VIMERCATE"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "url": "ASSTAfferenza",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+                                                    "code": "030717",
+                                                    "display": "ASST DELLA BRIANZA"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "url": "ATSAfferenza",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+                                                    "code": "030324",
+                                                    "display": "ATS DELLA BRIANZA"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
                     }
-                  },
-                  {
-                    "url": "ATSAfferenza",
-                    "valueCodeableConcept": {
-                      "coding": [
-                        {
-                          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
-                          "code": "030324",
-                          "display": "ATS DELLA BRIANZA"
-                        }
-                      ]
+                ],
+				"partOf": {
+					"reference": "Organization/ea7b0c30-c7f1-11ed-afa1-0242ac120002"
+				},
+				                "extension": [
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+                        "valueDate": "2023-05-19"
+                    },
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
+                        "valueDate": "9999-12-31"
+                    },
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+                        "valueDate": "2016-01-01"
+                    },
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+                        "valueDate": "9999-12-31"
+                    },
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
+                        "valueDate": "2016-01-01"
+                    },
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
+                        "valueDate": "9999-12-31"
+                    },
+                    {
+                        "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+                        "extension": [
+                            {
+                                "url": "codiceDistretto",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
+                                            "code": "22046",
+                                            "display": "VIMERCATE"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "ASSTAfferenza",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
+                                            "code": "030717",
+                                            "display": "ASST DELLA BRIANZA"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "ATSAfferenza",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
+                                            "code": "030324",
+                                            "display": "ATS DELLA BRIANZA"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
                     }
-                  }
                 ]
-              }
-            ]
-          }
-        ],
-        "partOf": {
-          "reference": "Organization/ea7b0c30-c7f1-11ed-afa1-0242ac120002"
-        },
-        "extension": [
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
-            "valueDate": "2023-05-19"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate",
-            "valueDate": "9999-12-31"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
-            "valueDate": "2016-01-01"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
-            "valueDate": "9999-12-31"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
-            "valueDate": "2016-01-01"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione",
-            "valueDate": "9999-12-31"
-          },
-          {
-            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
-            "extension": [
-              {
-                "url": "codiceDistretto",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DistrettoSanitario",
-                      "code": "22046",
-                      "display": "VIMERCATE"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "ASSTAfferenza",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ASSTAfferenza",
-                      "code": "030717",
-                      "display": "ASST DELLA BRIANZA"
-                    }
-                  ]
-                }
-              },
-              {
-                "url": "ATSAfferenza",
-                "valueCodeableConcept": {
-                  "coding": [
-                    {
-                      "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-ATSAfferenza",
-                      "code": "030324",
-                      "display": "ATS DELLA BRIANZA"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        ]
-      },
-      "search": {
-        "mode": "include"
-      }
-    }
-  ]
+			},
+			"search": {
+				"mode": "include"
+			}
+		}
+	]
 }
