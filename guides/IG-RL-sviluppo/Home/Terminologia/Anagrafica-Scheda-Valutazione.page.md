@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<style>
-  /* Stile per la tabella */
-table {
-  border-collapse: collapse; /* Combina i bordi delle celle */
-  border: none;
-}
+# Anagrafica Scheda Valutazione
 
-/* Colonne dispari delle tabelle di colore diverso*/
-tr:nth-child(){
-    background-color: #f2f2f2;
-}
-td>p{
-    min-width: 360px;
-}
-/* bordi tabelle*/
-td, th {
-    border: 0.5px solid #ccc;   
-}
-
-
-</style>
-</head>
-
-
-
-<body>
-
-# Anagrafiche Schede Valutazione
-
-- [Anagrafiche Schede Valutazione](#anagrafiche-schede-valutazione)
+- [Anagrafica Scheda Valutazione](#anagrafica-scheda-valutazione)
   - [Scheda Triage](#scheda-triage)
   - [Scheda semplificata SIAD](#scheda-semplificata-siad)
   - [Campi extra del flusso SIAD](#campi-extra-del-flusso-siad)
@@ -267,262 +234,314 @@ td, th {
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">6</td>
-    <td rowspan="2">Alimentazione assistita</td>
+    <td>6</td>
+    <td>Alimentazione assistita</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">7</td>
-    <td rowspan="2">Alimentazione enterale</td>
+    <td>7</td>
+    <td>Alimentazione enterale</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">8</td>
-    <td rowspan="2">Alimentazione parenterale</td>
+    <td>8</td>
+    <td>Alimentazione parenterale</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">9</td>
-    <td rowspan="2">Gestione della stomia</td>
+    <td>9</td>
+    <td>Gestione della stomia</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">10</td>
-    <td rowspan="2">Eliminazione urinaria/intestinale</td>
+    <td>10</td>
+    <td>Eliminazione urinaria/intestinale</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">11</td>
-    <td rowspan="2">Alterazione del ritmo sonno/veglia</td>
+    <td>11</td>
+    <td>Alterazione del ritmo sonno/veglia</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">12</td>
-    <td rowspan="2">Educazione terapeutica (addestramento/nursing)</td>
+    <td>12</td>
+    <td>Educazione terapeutica (addestramento/nursing)</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">13</td>
-    <td rowspan="2">Ulcere da decubito di 1 e 2 grado</td>
+    <td>13</td>
+    <td>Ulcere da decubito di 1 e 2 grado</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">14</td>
-    <td rowspan="2">Ulcere da decubito di 3 e 4 grado</td>
+    <td>14</td>
+    <td>Ulcere da decubito di 3 e 4 grado</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">15</td>
-    <td rowspan="2">Ulcere cutanee (vascolari, traumatiche, ustioni,&nbsp;&nbsp;&nbsp;post chirurgiche, etc.) di 1 e 2 grado</td>
+    <td>15</td>
+    <td>Ulcere cutanee (vascolari, traumatiche, ustioni, post chirurgiche, etc.) di 1 e 2 grado</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">16</td>
-    <td rowspan="2">Ulcere cutanee (vascolari, ustioni, traumatiche,&nbsp;&nbsp;&nbsp;post chirurgiche, etc.) di 3 e 4 grado</td>
+    <td>16</td>
+    <td>Ulcere cutanee (vascolari, ustioni, traumatiche, post chirurgiche, etc.) di 3 e 4 grado</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">17</td>
-    <td rowspan="2">Prelievi venosi non occasionali</td>
+    <td>17</td>
+    <td>Prelievi venosi non occasionali</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">18</td>
-    <td rowspan="2">Prelievi venosi occasionali</td>
+    <td>18</td>
+    <td>Prelievi venosi occasionali</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">19</td>
-    <td rowspan="2">Procedura terapeutica (accesso venoso sottocute/intramuscolo)</td>
+    <td>19</td>
+    <td>Procedura terapeutica (accesso venoso sottocute/intramuscolo)</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">20</td>
-    <td rowspan="2">Gestione catetere centrale</td>
+    <td>20</td>
+    <td>Gestione catetere centrale</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">21</td>
-    <td rowspan="2">Controllo del dolore</td>
+    <td>21</td>
+    <td>Controllo del dolore</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">22</td>
-    <td rowspan="2">Fragilità familiare</td>
+    <td>22</td>
+    <td>Fragilità familiare</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">23</td>
-    <td rowspan="2">Rischio sanguinamento acuto</td>
+    <td>23</td>
+    <td>Rischio sanguinamento acuto</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">24</td>
-    <td rowspan="2">Lesioni della cute</td>
+    <td>24</td>
+    <td>Lesioni della cute</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">25</td>
-    <td rowspan="2">Trattamento riabilitativo neurologico in presenza di disabilità</td>
+    <td>25</td>
+    <td>Trattamento riabilitativo neurologico in presenza di disabilità</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">26</td>
-    <td rowspan="2">Trattamento riabilitativo motorio in presenza di disabilità</td>
+    <td>26</td>
+    <td>Trattamento riabilitativo motorio in presenza di disabilità</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">27</td>
-    <td rowspan="2">Trattamento riabilitativo di mantenimento in presenza di disabilità</td>
+    <td>27</td>
+    <td>Trattamento riabilitativo di mantenimento in presenza di disabilità</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">28</td>
-    <td rowspan="2">Supervisione continua di utenti con disabilità</td>
+    <td>28</td>
+    <td>Supervisione continua di utenti con disabilità</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">29</td>
-    <td rowspan="2">Assistenza nelle IADL</td>
+    <td>29</td>
+    <td>Assistenza nelle IADL</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">30</td>
-    <td rowspan="2">Assistenza nelle ADL</td>
+    <td>30</td>
+    <td>Assistenza nelle ADL</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
   <tr>
-    <td rowspan="2">31</td>
-    <td rowspan="2">Supporto al caregiver</td>
+    <td>31</td>
+    <td>Supporto al caregiver</td>
     <td>1</td>
     <td>PRESENTE</td>
   </tr>
   <tr>
+    <td> </td>
+    <td> </td>
     <td>0</td>
     <td>ASSENTE</td>
   </tr>
@@ -570,36 +589,6 @@ td, th {
     <td>Non Presente</td>
   </tr>
   <tr>
-    <td rowspan="7">35</td>
-    <td rowspan="7">Tipologia di luogo di residenza o domicilio</td>
-    <td>1</td>
-    <td>Propria Residenza</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Domicilio presso familiari</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Domicilio presso Casa Albergo</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Domicilio presso Comunità per minori</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Domicilio presso Comunità per disabili</td>
-  </tr>
-  <tr>
-    <td>6</td>
-    <td>Domicilio presso Case Alloggio</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>Altro</td>
-  </tr>
-  <tr>
     <td rowspan="3">36</td>
     <td rowspan="3">Cognitività</td>
     <td>Assente/Lieve</td>
@@ -613,7 +602,6 @@ td, th {
     <td>Grave</td>
     <td>Grave</td>
   </tr>
-  
   <tr>
     <td rowspan="2">37</td>
     <td rowspan="2">ECG</td>
@@ -692,14 +680,5 @@ td, th {
     <td>3</td>
     <td>Totalmente dipendente</td>
   </tr>
-  <tr>
-    <td>44</td>
-    <td>Numero dei componenti del nucleo abitativo </td>
-    <td>00</td>
-    <td>Mancanza del dato</td>
-  </tr>
 </tbody>
 </table>
-</body>
-
-</html>
