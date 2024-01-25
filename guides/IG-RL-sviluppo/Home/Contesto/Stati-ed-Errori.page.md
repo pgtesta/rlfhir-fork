@@ -24,9 +24,9 @@ Per consultare l'associazione completa tra i codici http e i codici di errore ut
 |429 Too many requests| La richiesta è stata rifiutata perché si é raggiunto il massimo numero di connessioni possibili. Si prega di riprovare più tardi.|
 |500 Internal Server Error | Messaggio di errore generico.|
 |503 Service Unavailable| Il server non è al momento disponibile. Generalmente è una condizione temporanea. |
-|504 Service Time-Out| Il servizio ha impiegato troppo tempo nella generazione della risposta. Si prega di effettuare la stessa consultazione più tardi.|
+|504 Gateway Timeout| Il servizio ha impiegato troppo tempo nella generazione della risposta. Si prega di effettuare la stessa consultazione più tardi.|
 
-Si specifica che nel caso dell’errore 504 Service Time-Out il servizio termina l’elaborazione della risposta in batch e memorizza temporaneamente il messaggio di response. Di conseguenza, nel secondo tentativo deve essere effettuata la stessa identica chiamata HTTP per ottenere una risposta immediata. 
+Si specifica che nel caso dell’errore 504 Gateway Timeout il servizio termina l’elaborazione della risposta in batch e memorizza temporaneamente il messaggio di response. Di conseguenza, nel secondo tentativo deve essere effettuata la stessa identica chiamata HTTP per ottenere una risposta immediata.
 
 ## Creazioni
 In caso una chiamata di creazione (ad esempio POST) vada a buon fine, verrà restituito al chiamante uno stato HTTP della categoria 2xx.
