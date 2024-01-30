@@ -19,7 +19,7 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
 
 - Per il profilo “RLConditionProblemiSalute” è stato aggiunto il value-set “SGDT Patologie Non ICD9-CM” visualizzabile nella sezione “Libreria ValueSet”. Questa tabella raccoglie le patologie che presentano una codifica non standard differente dalla ICD9-CM.
 - Nella sezione “Anagrafica delle schede di valutazione” è stata aggiunta la domanda “Contributo al caregiver familiare” per la valutazione “Campi extra del flusso SIAD”. Questa domanda viene valorizzata solo se la condizione clinica prevalente è “Paziente in Stato Vegetativo (DGR 6220)” o “Paziente affetto da malattie del motoneurone (circ. 20)”.
-- Nella sezione “Stati ed Errori” è stato aggiunto l’errore “504 Service Time-Out”. Questo errore viene generato in caso in cui il tempo di composizione del bundle superi il limite temporale di soglia. Il sistema termina comunque la composizione e memorizza il bundle per un periodo limitato di tempo. Dunque, effettuando la stessa chiamata di consultazione la risposta risulta immediata. 
+- Nella sezione “Stati ed Errori” è stato aggiunto l’errore “504 Gateway Time-Out”. Questo errore viene generato in caso in cui il tempo di composizione del bundle superi il limite temporale di soglia. Il sistema termina comunque la composizione e memorizza il bundle per un periodo limitato di tempo. Dunque, effettuando la stessa chiamata di consultazione la risposta risulta immediata. 
 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
