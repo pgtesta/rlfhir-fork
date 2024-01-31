@@ -259,7 +259,7 @@ tr.standard-html {
     border-style: solid;
     /*border-width: 1.5px 0.5px 1.5px;*/
     border-width: 0.5px 0.5px 0.5px;
-    border-color: #eeecec;
+    border-color: #eeecec; 
     font-size: 14;
     padding: 0.5em;
     /*w3-hoverable*/
