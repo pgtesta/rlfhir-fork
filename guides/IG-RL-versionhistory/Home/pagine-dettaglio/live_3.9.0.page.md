@@ -1,10 +1,10 @@
 # IG RLFHIR Live 3.9.0
 
-Versione rilasciata il 25/01/2024. 
+Versione rilasciata il 31/01/2024. 
 
 La guida è consultabile a questo [link](https://simplifier.net/guide/ig-rlfhir?version=3.9.0).
 
-Questa versione della Implementation Guide fa riferimento agli elementi FHIR contenuti nel pacchetto [rl.fhir.r4 0.0.11](https://simplifier.net/packages/rl.fhir.r4/0.0.11).
+Questa versione della Implementation Guide fa riferimento agli elementi FHIR contenuti nel pacchetto [rl.fhir.r4 0.0.12](https://simplifier.net/packages/rl.fhir.r4/0.0.12).
 
 ## Novità
 ### Risorse FHIR
