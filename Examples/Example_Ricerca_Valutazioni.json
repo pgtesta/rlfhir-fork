@@ -1,1716 +1,1794 @@
 {
-	"resourceType": "Bundle",
-	"id": "esempio-ricerca-valutazioni",
-	"type": "searchset",
-	"total": 1,
-	"link": [
-		{
-			"relation": "self",
-			"url": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse?_include=QuestionnaireResponse%3Aquestionnaire&_include=QuestionnaireResponse%3Aextension.esitoValutazione&_profile=https%3A%2F%2Ffhir.siss.regione.lombardia.it%2FStructureDefinition%2FRLQuestionnaireResponseValutazione&based-on%3ACarePlan.activity-reference%3AServiceRequest.identifier=2023000083&based-on%3ACarePlan.activity-reference%3AServiceRequest.performer%3AOrganization.identifier=03007800&source%3APatient.identifier=DPPPCR80A01F839A&status=completed"
-		}
-	],
-	"entry": [
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/1683107592742-64787-2",
-			"resource": {
-				"resourceType": "QuestionnaireResponse",
-				"id": "1683107592742-64787-2",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-05-03T11:53:12.743+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
-					]
-				},
-				"extension": [
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
-						"valueReference": {
-							"reference": "Observation/1683107592742-64787-2-1"
-						}
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
-									"code": "I",
-									"display": "Prima Valutazione"
-								}
-							]
-						}
-					}
-				],
-				"basedOn": [
-					{
-						"reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-						"display": "PI-202300000102"
-					}
-				],
-				"questionnaire": "Questionnaire/TRIAGE",
-				"status": "completed",
-				"authored": "2023-05-03T11:53:12+02:00",
-				"author": {
-					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
-					"display": "Demo Infermiere"
-				},
-				"source": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				},
-				"item": [
-					{
-						"linkId": "1",
-						"text": "MORBILITA'",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"C"
-									}],
-								"valueString": "GRAVE-la compromissione d'organo/sistema produce disabilità"
-							}
-						]
-					},
-					{
-						"linkId": "3",
-						"text": "ALVO E DIUERESI",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"C"
-									}],
-								"valueString": "INCONTINENZA STABILE-per alvo e diuresi(uso pannoloni)"
-							}
-						]
-					},
-					{
-						"linkId": "8",
-						"text": "ASSISTENZA DIRETTA (caregiver)",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"D"
-									}],
-								"valueString": "INADEGUATA-(non è offerta alcun tipo di assistenza)"
-							}
-						]
-					},
-					{
-						"linkId": "6",
-						"text": "STATO MENTALE E COMPORTAMENTO",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"C"
-									}],
-								"valueString": "NON COLLABORANTE,E CON DIFFICOLTA' A CAPIRE LE INDICAZIONI"
-							}
-						]
-					},
-					{
-						"linkId": "7",
-						"text": "CON CHI VIVE",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"B"
-									}],
-								"valueString": "SOLO,NON NECESSITA DI FIGURE DI RIFERIMENTO"
-							}
-						]
-					},
-					{
-						"linkId": "5",
-						"text": "IGIENE PERSONALE",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"C"
-								}],
-								"valueString": "CON AIUTO MODERATO"
-							}
-						]
-					},
-					{
-						"linkId": "4",
-						"text": "MOBILITA'",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"C"
-								}],
-								"valueString": "CON AUSILI-usa bastone,walker,carrozzina,..."
-							}
-						]
-					},
-					{
-						"linkId": "2",
-						"text": "ALIMENTAZIONE",
-						"answer": [
-							{
-								"item":[{
-									"linkId":"B"
-								}],
-								"valueString": "CON AIUTO-supervisione"
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/1683107592742-64787-2-2",
-			"resource": {
-				"resourceType": "Questionnaire",
-				"id": "1683107592742-64787-2-2",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-05-03T11:53:12.743+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
-					]
-				},
-				"title": "TRIAGE",
-				"status": "active"
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/1683107592742-64787-2-1",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "1683107592742-64787-2-1",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-05-03T11:53:12.743+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-					]
-				},
-				"status": "registered",
-				"code": {
-					"coding": [
-						{
-							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
-							"code": "VAL1",
-							"display": "Scheda Triage"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				},
-				"performer": [
-					{
-						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
-						"display": "Infermiere"
-					}
-				],
-				"valueInteger": 8,
-				"derivedFrom": [
-					{
-						"reference": "QuestionnaireResponse/1683107592742-64787-2",
-						"display": "Valutazione"
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/1683107657974-51919-3",
-			"resource": {
-				"resourceType": "QuestionnaireResponse",
-				"id": "1683107657974-51919-3",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-05-03T11:54:17.974+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
-					]
-				},
-				"extension": [
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
-						"valueReference": {
-							"reference": "Observation/1683107657974-51919-3-1"
-						}
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
-									"code": "I",
-									"display": "Prima Valutazione"
-								}
-							]
-						}
-					}
-				],
-				"basedOn": [
-					{
-						"reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-						"display": "PI-202300000102"
-					}
-				],
-				"questionnaire": "Questionnaire/SIAD",
-				"status": "completed",
-				"authored": "2023-05-03T11:54:17+02:00",
-				"author": {
-					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
-					"display": "Demo Infermiere"
-				},
-				"source": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				},
-				"item": [
-					{
-						"linkId": "29",
-						"text": "Assistenza nelle IADL",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "25",
-						"text": "Trattamento riabilitativo neurologico in presenza di disabilità",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "9",
-						"text": "Gestione della stomia",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "19",
-						"text": "Procedura terapeutica (accesso venoso sottocute/intramuscolo)",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "18",
-						"text": "Prelievi venosi occasionali",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "3",
-						"text": "Ossigeno terapia",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "26",
-						"text": "Trattamento riabilitativo motorio in presenza di disabilità",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "6",
-						"text": "Alimentazione assistita",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "17",
-						"text": "Prelievi venosi non occasionali",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "8",
-						"text": "Alimentazione parenterale",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "14",
-						"text": "Ulcere da decubito di 3 e 4 grado",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "24",
-						"text": "Lesioni della cute",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "21",
-						"text": "Controllo del dolore",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "28",
-						"text": "Supervisione continua di utenti con disabilità",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "12",
-						"text": "Educazione terapeutica (addestramento/nursing)",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "7",
-						"text": "Alimentazione enterale",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "23",
-						"text": "Rischio sanguinamento acuto",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "4",
-						"text": "Ventilo terapia",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "15",
-						"text": "Ulcere cutanee (vascolari, traumatiche, ustioni, post chirurgiche, etc.) di 1 e 2 grado",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "22",
-						"text": "Fragilità familiare",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "16",
-						"text": "Ulcere cutanee (vascolari, ustioni, traumatiche, post chirurgiche, etc.) di 3 e 4 grado",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "5",
-						"text": "Tracheotomia",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "11",
-						"text": "Alterazione del ritmo sonno/veglia",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "2",
-						"text": "Broncoaspirazione/ Drenaggio posturale",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "27",
-						"text": "Trattamento riabilitativo di mantenimento in presenza di disabilità",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "31",
-						"text": "Supporto al caregiver",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "10",
-						"text": "Eliminazione urinaria/intestinale",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "20",
-						"text": "Gestione catetere centrale",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "30",
-						"text": "Assistenza nelle ADL",
-						"answer": [
-							{
-								"valueBoolean": false,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "13",
-						"text": "Ulcere da decubito di 1 e 2 grado",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					},
-					{
-						"linkId": "1",
-						"text": "Presenza di Rischio Infettivo",
-						"answer": [
-							{
-								"valueBoolean": true,
-								"item":[{
-									"linkId": "1"
-								}]
-							}
-						]
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/1683107657974-51919-3-2",
-			"resource": {
-				"resourceType": "Questionnaire",
-				"id": "1683107657974-51919-3-2",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-05-03T11:54:17.974+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
-					]
-				},
-				"title": "SIAD",
-				"status": "active"
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/1683107657974-51919-3-1",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "1683107657974-51919-3-1",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-05-03T11:54:17.974+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-					]
-				},
-				"status": "registered",
-				"code": {
-					"coding": [
-						{
-							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
-							"code": "VAL2",
-							"display": "Scheda semplificata SIAD"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				},
-				"performer": [
-					{
-						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
-						"display": "Infermiere"
-					}
-				],
-				"derivedFrom": [
-					{
-						"reference": "QuestionnaireResponse/1683107657974-51919-3",
-						"display": "Valutazione"
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/190436-170550-1681465565556",
-			"resource": {
-				"resourceType": "QuestionnaireResponse",
-				"id": "190436-170550-1681465565556",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-03-13T16:13:11.686+01:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
-					]
-				},
-				"extension": [
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
-						"valueReference": {
-							"reference": "Observation/190436-170550-1681465565556-1"
-						}
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
-									"code": "I",
-									"display": "Prima Valutazione"
-								}
-							]
-						}
-					}
-				],
-				"basedOn": [
-					{
-						"reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-						"display": "PI-202300000102"
-					}
-				],
-				"questionnaire": "Questionnaire/INTERRAI",
-				"status": "completed",
-				"authored": "2023-03-13T16:13:11+01:00",
-				"author": {
-					"reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
-					"display": "Demo Infermiere"
-				},
-				"source": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				}
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/190436-170550-1681465565556-2",
-			"resource": {
-				"resourceType": "Questionnaire",
-				"id": "190436-170550-1681465565556-2",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-03-13T16:13:11.686+01:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
-					]
-				},
-				"title": "INTERRAI",
-				"status": "active"
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/190436-170550-1681465565556-1",
-			"resource": {
-				"resourceType": "Observation",
-				"id": "190436-170550-1681465565556-1",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-03-13T16:13:11.686+01:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-					]
-				},
-				"status": "registered",
-				"code": {
-					"coding": [
-						{
-							"system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
-							"code": "VAL3",
-							"display": "InterRAI HomeCare"
-						}
-					]
-				},
-				"subject": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				},
-				"performer": [
-					{
-						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
-						"display": "Infermiere"
-					}
-				],
-				"derivedFrom": [
-					{
-						"reference": "QuestionnaireResponse/190436-170550-1681465565556",
-						"display": "Valutazione"
-					}
-				],
-				"component": [
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.01",
-									"display": "Cognitive Performance Scale (CPS)"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.02",
-									"display": "Depression Rating Scale (DRS)"
-								}
-							]
-						},
-						"valueInteger": 8
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.03",
-									"display": "- possibilità di umore depresso"
-								}
-							]
-						},
-						"valueInteger": 8
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.04",
-									"display": "Cambiamenti acuti nello stato mentale"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.05",
-									"display": "Ha presentato allucinazioni"
-								}
-							]
-						},
-						"valueInteger": 4
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.06",
-									"display": "Capacità di farsi comprendere"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.07",
-									"display": "Vagabondaggio"
-								}
-							]
-						},
-						"valueInteger": 3
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.08",
-									"display": "Aggressività verbale"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.09",
-									"display": "Aggressività fisica"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.10",
-									"display": "Comportamento sociale inadeguato"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.11",
-									"display": "Rifiuto dell'assistenza"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.12",
-									"display": "Coinvolgimento"
-								}
-							]
-						},
-						"valueInteger": 3
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.13",
-									"display": "Igiene personale"
-								}
-							]
-						},
-						"valueInteger": 8
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.14",
-									"display": "Locomozione"
-								}
-							]
-						},
-						"valueInteger": 8
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.15",
-									"display": "Mangiare"
-								}
-							]
-						},
-						"valueInteger": 8
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.16",
-									"display": "ADL Self-performance Hierarchy"
-								}
-							]
-						},
-						"valueInteger": 6
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.17",
-									"display": "Potenziale di miglioramento nella funzione fisica"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.18",
-									"display": "Cadute"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.19",
-									"display": "CHESS"
-								}
-							]
-						},
-						"valueInteger": 5
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.20",
-									"display": "Scala del dolore"
-								}
-							]
-						},
-						"valueInteger": -1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.21",
-									"display": "Ulcere da pressione"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.22",
-									"display": "Perdita di peso"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.23",
-									"display": "Deglutizione"
-								}
-							]
-						},
-						"valueInteger": 5
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.24",
-									"display": "Ossigeno"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.25",
-									"display": "Ventilazione assistita"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.26",
-									"display": "Dialisi"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.27",
-									"display": "Tervia ev"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.28",
-									"display": "Tracheostomia"
-								}
-							]
-						},
-						"valueInteger": 3
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.29",
-									"display": "Classe RUG di appartenenza"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PHP.30",
-									"display": "Livello di priorità"
-								}
-							]
-						},
-						"valueInteger": 5
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.01",
-									"display": "Prevenzione"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.02",
-									"display": "Condizioni cardio-respiratorie"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.03",
-									"display": "Consumo tabacco/alcool"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.04",
-									"display": "Farmaci"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.05",
-									"display": "Rischio di istituzionalizzazione"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.06",
-									"display": "Promozione di attività fisica"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.07",
-									"display": "Disidratazione"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.08",
-									"display": "Relazioni sociali"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.09",
-									"display": "Incontinenza urinaria"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.10",
-									"display": "ADL"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.11",
-									"display": "IADL"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.12",
-									"display": "Abuso dell'anziano"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.13",
-									"display": "Supporto informale"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.14",
-									"display": "Sicurezza dell'ambiente domestico"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.15",
-									"display": "Stato cognitivo"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.16",
-									"display": "Piaghe da decubito"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.17",
-									"display": "Dolore"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.18",
-									"display": "Comportamento"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.19",
-									"display": "Comunicazione"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.20",
-									"display": "Cadute"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.21",
-									"display": "Umore"
-								}
-							]
-						},
-						"valueInteger": 2
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.22",
-									"display": "Disturbi intestinali"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.23",
-									"display": "Nutrizione entrenale"
-								}
-							]
-						},
-						"valueInteger": 0
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.24",
-									"display": "Stato confusionale acuto"
-								}
-							]
-						},
-						"valueInteger": 1
-					},
-					{
-						"code": {
-							"coding": [
-								{
-									"code": "PVC.25",
-									"display": "Nutrizione"
-								}
-							]
-						},
-						"valueInteger": 2
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-			"resource": {
-				"resourceType": "CarePlan",
-				"id": "ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-06-07T18:01:15.747+02:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
-					]
-				},
-				"extension": [
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
-						"valueUnsignedInt": 10
-					}
-				],
-				"identifier": [
-					{
-						"system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
-						"value": "PI-202300000102"
-					}
-				],
-				"status": "active",
-				"intent": "order",
-				"subject": {
-					"reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-					"display": "Mario Rossi"
-				},
-				"encounter": {
-					"reference": "Encounter/HC40-ENLIST.f40a1962-f13f-b14f-2ab0-b18bdd3e5b68",
-					"display": "Accesso"
-				},
-				"period": {
-					"start": "2023-03-28T06:00:00+02:00",
-					"end": "2023-04-29T06:00:00+02:00"
-				},
-				"created": "2023-06-01T11:04:28+02:00",
-				"author": {
-					"reference": "Organization/a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
-					"display": "ASST FATEBENEFRATELLI SACCO"
-				},
-				"contributor": [
-					{
-						"reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
-						"display": "Infermiere"
-					}
-				],
-				"addresses": [
-					{
-						"reference": "Condition/53d24d4d-9b8c-4ddd-b7f4-8832898507ab",
-						"display": "Patologia Primaria"
-					},
-					{
-						"reference": "Condition/1760b4e1-b080-4530-b12a-02bf2c003bfb",
-						"display": "Patologia Secondaria"
-					},
-					{
-						"reference": "Condition/c2ca8f32-286c-4233-91cf-5b382c3655b4",
-						"display": "Patologia Secondaria"
-					},
-					{
-						"reference": "Condition/9ea44e83-a2af-43c8-8562-0b73f3679530",
-						"display": "Patologia Addizionale"
-					},
-					{
-						"reference": "Condition/4205b790-7cad-4d1c-b762-2848eeca9452",
-						"display": "Problema Infermieristico"
-					}
-				],
-				"supportingInfo": [
-					{
-						"reference": "Observation/1683107592742-64787-2-1",
-						"display": "Esito Valutazione"
-					},
-					{
-						"reference": "Observation/1683107657974-51919-3-1",
-						"display": "Esito Valutazione"
-					},
-					{
-						"reference": "Observation/190436-170550-1681465565556-1",
-						"display": "Esito Valutazione"
-					}
-				],
-				"goal": [
-					{
-						"reference": "Goal/c73537aa-ea82-4922-a8b0-89d7d7c32399",
-						"display": "Obiettivi Salute"
-					},
-					{
-						"reference": "Goal/e5367610-abf5-4acc-9cab-e788479a68eb",
-						"display": "Obiettivi Salute"
-					}
-				],
-				"activity": [
-					{
-						"reference": {
-							"reference": "ServiceRequest/2f04ebf6-ccc5-459c-804e-6e06dda7e8ab-1",
-							"display": "Servizio Socio Assistenziale"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/2f04ebf6-ccc5-459c-804e-6e06dda7e8ab-2",
-							"display": "Servizio Socio Assistenziale"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/d99a530e-f43a-4c1f-ade8-89dd43ec5dd5-1",
-							"display": "Servizio Socio Assistenziale"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/d99a530e-f43a-4c1f-ade8-89dd43ec5dd5-2",
-							"display": "Servizio Socio Assistenziale"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/AEE3F728-435F-C793-60C6-FDA2DA310285",
-							"display": "Prestazione Specialistica"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/0F2BBB76-1ED0-CFA6-E983-7004BD4C1F62",
-							"display": "Prestazione Specialistica"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/c5c2ab67-7de8-45f8-8483-d0e602ba595e",
-							"display": "Prestazione Infermieristica"
-						}
-					},
-					{
-						"reference": {
-							"reference": "MedicationRequest/b9e59ad5-9147-4e37-a3e7-1d6cc43f62e4",
-							"display": "Ossigenoterapia"
-						}
-					},
-					{
-						"reference": {
-							"reference": "MedicationRequest/bec63903-5e38-4eae-9d08-c8eff4b73a13",
-							"display": "Terapia Farmacologica"
-						}
-					},
-					{
-						"reference": {
-							"reference": "ServiceRequest/8924c6d7-ab57-4e33-b281-2739a284d824",
-							"display": "Intervento Educazionale"
-						}
-					},
-					{
-						"reference": {
-							"reference": "DeviceRequest/6edf64b4-1594-4b99-ae1a-2d1bf90fea9b",
-							"display": "Protesi Ausili"
-						}
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
-			"resource": {
-				"resourceType": "Practitioner",
-				"id": "4a8f0841-fd6d-46bb-9e10-2b3904996f53",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2023-03-01T00:00:00.000+01:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
-					]
-				},
-				"identifier": [
-					{
-						"system": "http://hl7.it/sid/codiceFiscale",
-						"value": "NFRDME80A01F205X"
-					}
-				],
-				"name": [
-					{
-						"family": "Infermiere",
-						"given": [
-							"Demo"
-						]
-					}
-				]
-			}
-		},
-		{
-			"fullUrl": "http://localhost:8480/api/enlist/fhir/Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
-			"resource": {
-				"resourceType": "Patient",
-				"id": "84373e3d-26c4-40dd-a844-f52f18ba279f",
-				"meta": {
-					"versionId": "1",
-					"lastUpdated": "2000-01-01T00:00:00.000+01:00",
-					"profile": [
-						"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
-					]
-				},
-				"text": {
-					"status": "generated"
-				},
-				"extension": [
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
-						"valueCode": "100"
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"code": "6",
-									"display": "LAUREA"
-								}
-							]
-						}
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"code": "11",
-									"display": "DISOCCUPATO (ATTUALMENTE)"
-								}
-							]
-						}
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
-						"valueCodeableConcept": {
-							"coding": [
-								{
-									"code": "6",
-									"display": "2 O PIU TIPOLOGIE DI PENSIONE"
-								}
-							]
-						}
-					},
-					{
-						"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
-						"valueCode": "015146"
-					}
-				],
-				"identifier": [
-					{
-						"system": "http://hl7.it/sid/codiceFiscale",
-						"value": "RSSMRA80A24F205I"
-					}
-				],
-				"name": [
-					{
-						"family": "Rossi",
-						"given": [
-							"Mario"
-						]
-					}
-				],
-				"gender": "male",
-				"birthDate": "1980-01-24",
-				"address": [
-					{
-						"use": "billing",
-						"city": "015146",
-						"country": "100"
-					},
-					{
-						"use": "home",
-						"line": [
-							"Via Adda 7 - Scala B - Piano 3 - Interno A"
-						],
-						"city": "015146",
-						"postalCode": "20124",
-						"country": "100"
-					}
-				],
-				"maritalStatus": {
-					"coding": [
-						{
-							"code": "1",
-							"display": "CELIBE/NUBILE"
-						}
-					]
-				},
-				"generalPractitioner": [
-					{
-						"reference": "Organization/52e47e7c6fd07a60fe580fda555d0444958861aa7a1b05dcc0820b89df92a836"
-					},
-					{
-						"reference": "PractitionerRole/c3195c68-f12e-4a7b-87c5-9b111201a397"
-					}
-				]
-			}
-		}
-	]
+  "resourceType": "Bundle",
+  "id": "esempio-ricerca-valutazioni",
+  "type": "searchset",
+  "total": 1,
+  "link": [
+    {
+      "relation": "self",
+      "url": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse?_include=QuestionnaireResponse%3Aquestionnaire&_include=QuestionnaireResponse%3Aextension.esitoValutazione&_profile=https%3A%2F%2Ffhir.siss.regione.lombardia.it%2FStructureDefinition%2FRLQuestionnaireResponseValutazione&based-on%3ACarePlan.activity-reference%3AServiceRequest.identifier=2023000083&based-on%3ACarePlan.activity-reference%3AServiceRequest.performer%3AOrganization.identifier=03007800&source%3APatient.identifier=DPPPCR80A01F839A&status=completed"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/1683107592742-64787-2",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "1683107592742-64787-2",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-05-03T11:53:12.743+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+            "valueReference": {
+              "reference": "Observation/1683107592742-64787-2-1"
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+                  "code": "I",
+                  "display": "Prima Valutazione"
+                }
+              ]
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
+            "display": "PI-202300000102"
+          }
+        ],
+        "questionnaire": "Questionnaire/TRIAGE",
+        "status": "completed",
+        "authored": "2023-05-03T11:53:12+02:00",
+        "author": {
+          "reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+          "display": "Demo Infermiere"
+        },
+        "source": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        },
+        "item": [
+          {
+            "linkId": "1",
+            "text": "MORBILITA'",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "C"
+                  }
+                ],
+                "valueString": "GRAVE-la compromissione d'organo/sistema produce disabilità"
+              }
+            ]
+          },
+          {
+            "linkId": "3",
+            "text": "ALVO E DIUERESI",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "C"
+                  }
+                ],
+                "valueString": "INCONTINENZA STABILE-per alvo e diuresi(uso pannoloni)"
+              }
+            ]
+          },
+          {
+            "linkId": "8",
+            "text": "ASSISTENZA DIRETTA (caregiver)",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "D"
+                  }
+                ],
+                "valueString": "INADEGUATA-(non è offerta alcun tipo di assistenza)"
+              }
+            ]
+          },
+          {
+            "linkId": "6",
+            "text": "STATO MENTALE E COMPORTAMENTO",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "C"
+                  }
+                ],
+                "valueString": "NON COLLABORANTE,E CON DIFFICOLTA' A CAPIRE LE INDICAZIONI"
+              }
+            ]
+          },
+          {
+            "linkId": "7",
+            "text": "CON CHI VIVE",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "B"
+                  }
+                ],
+                "valueString": "SOLO,NON NECESSITA DI FIGURE DI RIFERIMENTO"
+              }
+            ]
+          },
+          {
+            "linkId": "5",
+            "text": "IGIENE PERSONALE",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "C"
+                  }
+                ],
+                "valueString": "CON AIUTO MODERATO"
+              }
+            ]
+          },
+          {
+            "linkId": "4",
+            "text": "MOBILITA'",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "C"
+                  }
+                ],
+                "valueString": "CON AUSILI-usa bastone,walker,carrozzina,..."
+              }
+            ]
+          },
+          {
+            "linkId": "2",
+            "text": "ALIMENTAZIONE",
+            "answer": [
+              {
+                "item": [
+                  {
+                    "linkId": "B"
+                  }
+                ],
+                "valueString": "CON AIUTO-supervisione"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/1683107592742-64787-2-2",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "1683107592742-64787-2-2",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-05-03T11:53:12.743+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+          ]
+        },
+        "title": "TRIAGE",
+        "status": "active"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/1683107592742-64787-2-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1683107592742-64787-2-1",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-05-03T11:53:12.743+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+              "code": "VAL1",
+              "display": "Scheda Triage"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+            "display": "Infermiere"
+          }
+        ],
+        "valueInteger": 8,
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/1683107592742-64787-2",
+            "display": "Valutazione"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/1683107657974-51919-3",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "1683107657974-51919-3",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-05-03T11:54:17.974+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+            "valueReference": {
+              "reference": "Observation/1683107657974-51919-3-1"
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+                  "code": "I",
+                  "display": "Prima Valutazione"
+                }
+              ]
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
+            "display": "PI-202300000102"
+          }
+        ],
+        "questionnaire": "Questionnaire/SIAD",
+        "status": "completed",
+        "authored": "2023-05-03T11:54:17+02:00",
+        "author": {
+          "reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+          "display": "Demo Infermiere"
+        },
+        "source": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        },
+        "item": [
+          {
+            "linkId": "29",
+            "text": "Assistenza nelle IADL",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "25",
+            "text": "Trattamento riabilitativo neurologico in presenza di disabilità",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "9",
+            "text": "Gestione della stomia",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "19",
+            "text": "Procedura terapeutica (accesso venoso sottocute/intramuscolo)",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "18",
+            "text": "Prelievi venosi occasionali",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "3",
+            "text": "Ossigeno terapia",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "26",
+            "text": "Trattamento riabilitativo motorio in presenza di disabilità",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "6",
+            "text": "Alimentazione assistita",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "17",
+            "text": "Prelievi venosi non occasionali",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "8",
+            "text": "Alimentazione parenterale",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "14",
+            "text": "Ulcere da decubito di 3 e 4 grado",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "24",
+            "text": "Lesioni della cute",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "21",
+            "text": "Controllo del dolore",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "28",
+            "text": "Supervisione continua di utenti con disabilità",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "12",
+            "text": "Educazione terapeutica (addestramento/nursing)",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "7",
+            "text": "Alimentazione enterale",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "23",
+            "text": "Rischio sanguinamento acuto",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "4",
+            "text": "Ventilo terapia",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "15",
+            "text": "Ulcere cutanee (vascolari, traumatiche, ustioni, post chirurgiche, etc.) di 1 e 2 grado",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "22",
+            "text": "Fragilità familiare",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "16",
+            "text": "Ulcere cutanee (vascolari, ustioni, traumatiche, post chirurgiche, etc.) di 3 e 4 grado",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "5",
+            "text": "Tracheotomia",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "11",
+            "text": "Alterazione del ritmo sonno/veglia",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "2",
+            "text": "Broncoaspirazione/ Drenaggio posturale",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "27",
+            "text": "Trattamento riabilitativo di mantenimento in presenza di disabilità",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "31",
+            "text": "Supporto al caregiver",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "10",
+            "text": "Eliminazione urinaria/intestinale",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "20",
+            "text": "Gestione catetere centrale",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "30",
+            "text": "Assistenza nelle ADL",
+            "answer": [
+              {
+                "valueBoolean": false,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "13",
+            "text": "Ulcere da decubito di 1 e 2 grado",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "linkId": "1",
+            "text": "Presenza di Rischio Infettivo",
+            "answer": [
+              {
+                "valueBoolean": true,
+                "item": [
+                  {
+                    "linkId": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/1683107657974-51919-3-2",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "1683107657974-51919-3-2",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-05-03T11:54:17.974+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+          ]
+        },
+        "title": "SIAD",
+        "status": "active"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/1683107657974-51919-3-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1683107657974-51919-3-1",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-05-03T11:54:17.974+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+              "code": "VAL2",
+              "display": "Scheda semplificata SIAD"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+            "display": "Infermiere"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/1683107657974-51919-3",
+            "display": "Valutazione"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/QuestionnaireResponse/190436-170550-1681465565556",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "190436-170550-1681465565556",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-03-13T16:13:11.686+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseEsitoValutazione",
+            "valueReference": {
+              "reference": "Observation/190436-170550-1681465565556-1"
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseTipologiaValutazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+                  "code": "I",
+                  "display": "Prima Valutazione"
+                }
+              ]
+            }
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
+            "display": "PI-202300000102"
+          }
+        ],
+        "questionnaire": "Questionnaire/INTERRAI",
+        "status": "completed",
+        "authored": "2023-03-13T16:13:11+01:00",
+        "author": {
+          "reference": "Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+          "display": "Demo Infermiere"
+        },
+        "source": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Questionnaire/190436-170550-1681465565556-2",
+      "resource": {
+        "resourceType": "Questionnaire",
+        "id": "190436-170550-1681465565556-2",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-03-13T16:13:11.686+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+          ]
+        },
+        "title": "INTERRAI",
+        "status": "active"
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Observation/190436-170550-1681465565556-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "190436-170550-1681465565556-1",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-03-13T16:13:11.686+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+              "code": "VAL3",
+              "display": "InterRAI HomeCare"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        },
+        "performer": [
+          {
+            "reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+            "display": "Infermiere"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/190436-170550-1681465565556",
+            "display": "Valutazione"
+          }
+        ],
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.01",
+                  "display": "Cognitive Performance Scale (CPS)"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.02",
+                  "display": "Depression Rating Scale (DRS)"
+                }
+              ]
+            },
+            "valueInteger": 8
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.03",
+                  "display": "- possibilità di umore depresso"
+                }
+              ]
+            },
+            "valueInteger": 8
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.04",
+                  "display": "Cambiamenti acuti nello stato mentale"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.05",
+                  "display": "Ha presentato allucinazioni"
+                }
+              ]
+            },
+            "valueInteger": 4
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.06",
+                  "display": "Capacità di farsi comprendere"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.07",
+                  "display": "Vagabondaggio"
+                }
+              ]
+            },
+            "valueInteger": 3
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.08",
+                  "display": "Aggressività verbale"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.09",
+                  "display": "Aggressività fisica"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.10",
+                  "display": "Comportamento sociale inadeguato"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.11",
+                  "display": "Rifiuto dell'assistenza"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.12",
+                  "display": "Coinvolgimento"
+                }
+              ]
+            },
+            "valueInteger": 3
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.13",
+                  "display": "Igiene personale"
+                }
+              ]
+            },
+            "valueInteger": 8
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.14",
+                  "display": "Locomozione"
+                }
+              ]
+            },
+            "valueInteger": 8
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.15",
+                  "display": "Mangiare"
+                }
+              ]
+            },
+            "valueInteger": 8
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.16",
+                  "display": "ADL Self-performance Hierarchy"
+                }
+              ]
+            },
+            "valueInteger": 6
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.17",
+                  "display": "Potenziale di miglioramento nella funzione fisica"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.18",
+                  "display": "Cadute"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.19",
+                  "display": "CHESS"
+                }
+              ]
+            },
+            "valueInteger": 5
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.20",
+                  "display": "Scala del dolore"
+                }
+              ]
+            },
+            "valueInteger": -1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.21",
+                  "display": "Ulcere da pressione"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.22",
+                  "display": "Perdita di peso"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.23",
+                  "display": "Deglutizione"
+                }
+              ]
+            },
+            "valueInteger": 5
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.24",
+                  "display": "Ossigeno"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.25",
+                  "display": "Ventilazione assistita"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.26",
+                  "display": "Dialisi"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.27",
+                  "display": "Tervia ev"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.28",
+                  "display": "Tracheostomia"
+                }
+              ]
+            },
+            "valueInteger": 3
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.29",
+                  "display": "Classe RUG di appartenenza"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PHP.30",
+                  "display": "Livello di priorità"
+                }
+              ]
+            },
+            "valueInteger": 5
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.01",
+                  "display": "Prevenzione"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.02",
+                  "display": "Condizioni cardio-respiratorie"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.03",
+                  "display": "Consumo tabacco/alcool"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.04",
+                  "display": "Farmaci"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.05",
+                  "display": "Rischio di istituzionalizzazione"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.06",
+                  "display": "Promozione di attività fisica"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.07",
+                  "display": "Disidratazione"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.08",
+                  "display": "Relazioni sociali"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.09",
+                  "display": "Incontinenza urinaria"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.10",
+                  "display": "ADL"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.11",
+                  "display": "IADL"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.12",
+                  "display": "Abuso dell'anziano"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.13",
+                  "display": "Supporto informale"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.14",
+                  "display": "Sicurezza dell'ambiente domestico"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.15",
+                  "display": "Stato cognitivo"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.16",
+                  "display": "Piaghe da decubito"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.17",
+                  "display": "Dolore"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.18",
+                  "display": "Comportamento"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.19",
+                  "display": "Comunicazione"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.20",
+                  "display": "Cadute"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.21",
+                  "display": "Umore"
+                }
+              ]
+            },
+            "valueInteger": 2
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.22",
+                  "display": "Disturbi intestinali"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.23",
+                  "display": "Nutrizione entrenale"
+                }
+              ]
+            },
+            "valueInteger": 0
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.24",
+                  "display": "Stato confusionale acuto"
+                }
+              ]
+            },
+            "valueInteger": 1
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "PVC.25",
+                  "display": "Nutrizione"
+                }
+              ]
+            },
+            "valueInteger": 2
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/CarePlan/ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "ea1c5d21-cf5b-49c8-bd6c-8f2f416cc42e",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-06-07T18:01:15.747+02:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+          ]
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+            "valueUnsignedInt": 10
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
+            "value": "PI-202300000102"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+          "display": "Mario Rossi"
+        },
+        "encounter": {
+          "reference": "Encounter/HC40-ENLIST.f40a1962-f13f-b14f-2ab0-b18bdd3e5b68",
+          "display": "Accesso"
+        },
+        "period": {
+          "start": "2023-03-28T06:00:00+02:00",
+          "end": "2023-04-29T06:00:00+02:00"
+        },
+        "created": "2023-06-01T11:04:28+02:00",
+        "author": {
+          "reference": "Organization/a2b672cc-2b27-4cc3-8c9c-6acdf4c6aeea",
+          "display": "ASST FATEBENEFRATELLI SACCO"
+        },
+        "contributor": [
+          {
+            "reference": "PractitionerRole/4a8f0841-fd6d-46bb-9e10-2b3904996f53-1",
+            "display": "Infermiere"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/53d24d4d-9b8c-4ddd-b7f4-8832898507ab",
+            "display": "Patologia Primaria"
+          },
+          {
+            "reference": "Condition/1760b4e1-b080-4530-b12a-02bf2c003bfb",
+            "display": "Patologia Secondaria"
+          },
+          {
+            "reference": "Condition/c2ca8f32-286c-4233-91cf-5b382c3655b4",
+            "display": "Patologia Secondaria"
+          },
+          {
+            "reference": "Condition/9ea44e83-a2af-43c8-8562-0b73f3679530",
+            "display": "Patologia Addizionale"
+          },
+          {
+            "reference": "Condition/4205b790-7cad-4d1c-b762-2848eeca9452",
+            "display": "Problema Infermieristico"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/1683107592742-64787-2-1",
+            "display": "Esito Valutazione"
+          },
+          {
+            "reference": "Observation/1683107657974-51919-3-1",
+            "display": "Esito Valutazione"
+          },
+          {
+            "reference": "Observation/190436-170550-1681465565556-1",
+            "display": "Esito Valutazione"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/c73537aa-ea82-4922-a8b0-89d7d7c32399",
+            "display": "Obiettivi Salute"
+          },
+          {
+            "reference": "Goal/e5367610-abf5-4acc-9cab-e788479a68eb",
+            "display": "Obiettivi Salute"
+          }
+        ],
+        "activity": [
+          {
+            "reference": {
+              "reference": "ServiceRequest/2f04ebf6-ccc5-459c-804e-6e06dda7e8ab-1",
+              "display": "Servizio Socio Assistenziale"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/2f04ebf6-ccc5-459c-804e-6e06dda7e8ab-2",
+              "display": "Servizio Socio Assistenziale"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/d99a530e-f43a-4c1f-ade8-89dd43ec5dd5-1",
+              "display": "Servizio Socio Assistenziale"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/d99a530e-f43a-4c1f-ade8-89dd43ec5dd5-2",
+              "display": "Servizio Socio Assistenziale"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/AEE3F728-435F-C793-60C6-FDA2DA310285",
+              "display": "Prestazione Specialistica"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/0F2BBB76-1ED0-CFA6-E983-7004BD4C1F62",
+              "display": "Prestazione Specialistica"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/c5c2ab67-7de8-45f8-8483-d0e602ba595e",
+              "display": "Prestazione Infermieristica"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/b9e59ad5-9147-4e37-a3e7-1d6cc43f62e4",
+              "display": "Ossigenoterapia"
+            }
+          },
+          {
+            "reference": {
+              "reference": "MedicationRequest/bec63903-5e38-4eae-9d08-c8eff4b73a13",
+              "display": "Terapia Farmacologica"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/8924c6d7-ab57-4e33-b281-2739a284d824",
+              "display": "Intervento Educazionale"
+            }
+          },
+          {
+            "reference": {
+              "reference": "DeviceRequest/6edf64b4-1594-4b99-ae1a-2d1bf90fea9b",
+              "display": "Protesi Ausili"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Practitioner/4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "4a8f0841-fd6d-46bb-9e10-2b3904996f53",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2023-03-01T00:00:00.000+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "NFRDME80A01F205X"
+          }
+        ],
+        "name": [
+          {
+            "family": "Infermiere",
+            "given": [
+              "Demo"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://localhost:8480/api/enlist/fhir/Patient/84373e3d-26c4-40dd-a844-f52f18ba279f",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "84373e3d-26c4-40dd-a844-f52f18ba279f",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2000-01-01T00:00:00.000+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+          ]
+        },
+        "text": {
+          "status": "generated"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
+            "valueCode": "100"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6",
+                  "display": "LAUREA"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "11",
+                  "display": "DISOCCUPATO (ATTUALMENTE)"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "6",
+                  "display": "2 O PIU TIPOLOGIE DI PENSIONE"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
+            "valueCode": "015146"
+          }
+        ],
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "RSSMRA80A24F205I"
+          }
+        ],
+        "name": [
+          {
+            "family": "Rossi",
+            "given": [
+              "Mario"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1980-01-24",
+        "address": [
+          {
+            "use": "billing",
+            "city": "015146",
+            "country": "100"
+          },
+          {
+            "use": "home",
+            "line": [
+              "Via Adda 7 - Scala B - Piano 3 - Interno A"
+            ],
+            "city": "015146",
+            "postalCode": "20124",
+            "country": "100"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "code": "1",
+              "display": "CELIBE/NUBILE"
+            }
+          ]
+        },
+        "generalPractitioner": [
+          {
+            "reference": "Organization/52e47e7c6fd07a60fe580fda555d0444958861aa7a1b05dcc0820b89df92a836"
+          },
+          {
+            "reference": "PractitionerRole/c3195c68-f12e-4a7b-87c5-9b111201a397"
+          }
+        ]
+      }
+    }
+  ]
 }

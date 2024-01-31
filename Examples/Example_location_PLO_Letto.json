@@ -1,80 +1,80 @@
 {
-	"resourceType": "Location",
-	"id": "esempio-Location-PLO-Letto",
-	"meta": {
-		"lastUpdated": "2023-05-17T13:05:09Z",
-		"profile": [
-			"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
-		],
-		"versionId": "1"
-	},
-	"identifier": [
-		{
-			"value": "03007800-3-1-44-2"
-		}
-	],
-	"operationalStatus": {
-		"system": "http://terminology.hl7.org/ValueSet/v2-0116",
-		"code": "O",
-		"display": "Occupied"
-	  },
-	"name": "2",
-	"physicalType": {
-		"coding": [
-			{
-				"system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
-				"code": "bd",
-				"display": "Bed"
-			}
-		]
-	},
-	"managingOrganization": {
-		"reference": "Organization/c7d099b0-d5e0-11ec-be99-02001700b287",
-		"display": "PRESIDIO OSPEDALIERO DI VIMERCATE"
-	},
-	"partOf": {
-		"reference": "Location/123"
-	},
-	"extension": [
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
-			"valueString": "0843"
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico",
-			"valueString": "3201"
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza",
-			"valueString": "NEUROCHIRURGIA A"
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero",
-			"valueCodeableConcept": {
-				"coding": [
-					{
-						"system": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero",
-						"code": "S",
-						"display": "Cure Sub-acute"
-					}
-				]
-			}
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione",
-			"valueDateTime": "2022-10-07T17:16:03+01:00"
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
-			"valueDateTime": "2022-10-07T17:16:03+01:00"
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista",
-			"valueDateTime": "2022-10-08T09:00:00+01:00"
-		},
-		{
-			"url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
-			"valueBoolean": false
-		}
-	]
+  "resourceType": "Location",
+  "id": "esempio-Location-PLO-Letto",
+  "meta": {
+    "lastUpdated": "2023-05-17T13:05:09Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "value": "03007800-3-1-44-2"
+    }
+  ],
+  "operationalStatus": {
+    "system": "http://terminology.hl7.org/ValueSet/v2-0116",
+    "code": "O",
+    "display": "Occupied"
+  },
+  "name": "2",
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "bd",
+        "display": "Bed"
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/c7d099b0-d5e0-11ec-be99-02001700b287",
+    "display": "PRESIDIO OSPEDALIERO DI VIMERCATE"
+  },
+  "partOf": {
+    "reference": "Location/123"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
+      "valueString": "0843"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico",
+      "valueString": "3201"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza",
+      "valueString": "NEUROCHIRURGIA A"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/RegimeRicovero",
+            "code": "S",
+            "display": "Cure Sub-acute"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione",
+      "valueDateTime": "2022-10-07T17:16:03+01:00"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
+      "valueDateTime": "2022-10-07T17:16:03+01:00"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista",
+      "valueDateTime": "2022-10-08T09:00:00+01:00"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
+      "valueBoolean": false
+    }
+  ]
 }
