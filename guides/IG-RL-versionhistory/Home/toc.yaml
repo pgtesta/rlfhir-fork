@@ -1,6 +1,4 @@
-- name: SGDT 
+- name: Index
   filename: Index.page.md
 - name: Version History PLO
   filename: PLO.page.md
-- name: Version History OMr
-  filename: OMr.page.md
