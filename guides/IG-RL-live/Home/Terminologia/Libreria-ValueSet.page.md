@@ -463,6 +463,13 @@
       <td>ValueSet relativo alla codifica degli ambiti degli obiettivi di salute</td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute</td>
     </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PatologieNonICD9CM}}
+      </td>
+      <td>ValueSet relativo alla codifica delle patologie non ICD9-CM</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PatologieNonICD9CM</td>
+    </tr>
   </tbody>
 </table>
   </body>

@@ -1,5 +1,5 @@
 title: Progetto FHIR per Regione Lombardia
 description: Questa IG fa riferimento a integrazioni che sono state rilasciate in produzione.
-version: 3.8.1
+version: 3.9.0
 style-root: project
 style-name: RL-css
