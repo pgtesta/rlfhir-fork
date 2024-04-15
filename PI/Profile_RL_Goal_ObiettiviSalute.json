@@ -105,12 +105,12 @@
       {
         "id": "Goal.description",
         "path": "Goal.description",
-        "short": "Codifica o descrizione dell' obiettivo di salute definito per il paziente"
+        "short": "Obiettivo di salute codificato definito per il paziente. Se il campo category viene valorizzato con \"Ambito clinico\", il campo description contiene l'obiettivo di salute codificato presente nella Tabella degli obiettivi di salute. In alternativa, se viene valorizzato con \"Ambito assistenziale\" o \"Ambito sociale\"  il campo description contiene il valore \"Altro\"."
       },
       {
         "id": "Goal.description.coding",
         "path": "Goal.description.coding",
-        "short": "Codifica o descrizione dell' obiettivo di salute definito per il paziente",
+        "short": "Codifica e descrizione dell'obiettivo di salute definito per il paziente",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli obiettivi di salute contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
         "max": "1"
@@ -179,7 +179,8 @@
       {
         "id": "Goal.note",
         "path": "Goal.note",
-        "short": "Descrizione testuale dell'obiettivo di salute",
+        "short": "Descrizione testuale dell'obiettivo di salute. Se il campo description viene valorizzato con \"Altro\", questo campo contiene l'obiettivo di salute non codificato.",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
         "comment": "Il dato è detenuto dal SGDT"
       }
     ]
