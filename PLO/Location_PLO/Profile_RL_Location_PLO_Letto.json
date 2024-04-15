@@ -181,6 +181,7 @@
         "path": "Location.extension",
         "sliceName": "repartoClinico",
         "short": "Identificativo del reparto clinico che ha in carico il paziente",
+        "min": "1",
         "max": "1",
         "type": [
           {
@@ -206,7 +207,6 @@
         "sliceName": "repartoFisico",
         "short": "Identificativo del reparto fisico dove il paziente risulta allettato",
         "comment": "obbligatorio se non è presente l'informazione sull'area di degenza",
-        "min": 1,
         "max": "1",
         "type": [
           {
