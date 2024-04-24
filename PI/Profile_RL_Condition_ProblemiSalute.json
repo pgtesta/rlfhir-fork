@@ -168,20 +168,20 @@
         "max": "2"
       },
       {
-        "id": "Condition.code:patologia.coding:ICD9CM",
+        "id": "Condition.code:patologia.coding:patologiaICD9-CM",
         "path": "Condition.code.coding",
-        "sliceName": "ICD9CM",
+        "sliceName": "patologiaICD9-CM",
         "short": "Codifica della patologia secondo lo standard ICD9-CM. Di prassi viene utilizzata questa codifica.",
         "max": "1"
       },
       {
-        "id": "Condition.code:patologia.coding:ICD9CM.system",
+        "id": "Condition.code:patologia.coding:patologiaICD9-CM.system",
         "path": "Condition.code.coding.system",
         "min": 1,
         "fixedUri": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM"
       },
       {
-        "id": "Condition.code:patologia.coding:ICD9CM.code",
+        "id": "Condition.code:patologia.coding:patologiaICD9-CM.code",
         "path": "Condition.code.coding.code",
         "short": "Codice della patologia ICD9-CM",
         "definition": "Stringa alfanumerica di al più 10 caratteri",
@@ -189,27 +189,27 @@
         "min": 1
       },
       {
-        "id": "Condition.code:patologia.coding:ICD9CM.display",
+        "id": "Condition.code:patologia.coding:patologiaICD9-CM.display",
         "path": "Condition.code.coding.display",
         "short": "Descrizione della patologia ICD9-CM",
         "definition": "Stringa alfanumerica di al più 250 caratteri",
         "comment": "Il dato è detenuto da SGDT"
       },
       {
-        "id": "Condition.code:patologia.coding:NonICD9CM",
+        "id": "Condition.code:patologia.coding:patologiaNonICD9-CM",
         "path": "Condition.code.coding",
-        "sliceName": "NonICD9CM",
+        "sliceName": "patologiaNonICD9-CM",
         "short": "Codifica regionale della patologia. Nel caso della presa in carico di un paziente cronico l'uso di questa codifica è obbligatorio.",
         "comment": "Per il dettaglio esaustivo della codifica differente rispetto allo standard ICD9-CM, è possibile visualizzare la Tabella delle patologie non ICD9-CM tramite il link presente nella sezione ValueSet in fondo a questa pagina o nella sezione Terminologia - Libreria ValueSet",
         "max": "1"
       },
       {
-        "id": "Condition.code:patologia.coding:NonICD9CM.system",
+        "id": "Condition.code:patologia.coding:patologiaNonICD9-CM.system",
         "path": "Condition.code.coding.system",
         "min": 1
       },
       {
-        "id": "Condition.code:patologia.coding:NonICD9CM.code",
+        "id": "Condition.code:patologia.coding:patologiaNonICD9-CM.code",
         "path": "Condition.code.coding.code",
         "short": "Codice della patologia con codifica regionale",
         "definition": "Stringa alfanumerica di al più 10 caratteri",
@@ -217,7 +217,7 @@
         "min": 1
       },
       {
-        "id": "Condition.code:patologia.coding:NonICD9CM.display",
+        "id": "Condition.code:patologia.coding:patologiaNonICD9-CM.display",
         "path": "Condition.code.coding.display",
         "short": "Descrizione della patologia con codifica regionale",
         "definition": "Stringa alfanumerica di al più 250 caratteri",
