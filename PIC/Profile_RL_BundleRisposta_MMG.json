@@ -99,7 +99,7 @@
           {
             "code": "Resource",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOutcomeMMG"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
             ]
           }
         ]
