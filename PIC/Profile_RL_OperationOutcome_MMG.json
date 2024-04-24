@@ -73,11 +73,17 @@
           ],
           "rules": "open"
         }
+      },      
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio",
+        "path": "OperationOutcome.issue.details:contenutoMessaggio",
+        "sliceName": "contenutoMessaggio",
+        "short": "Dettaglio dell'esito del messaggio",
+        "max": "1"
       },
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio.coding",
         "path": "OperationOutcome.issue.details.coding",
-        "sliceName": "contenutoMessaggio",
         "short": "Stringa alfanumerica di al più 400 caratteri",
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia del contenuto di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
@@ -102,9 +108,15 @@
         "definition": "Stringa alfanumerica di al più 200 caratteri"
       },
       {
+        "id": "OperationOutcome.issue.details:errore",
+        "path": "OperationOutcome.issue.details",
+        "sliceName": "errore",
+        "short": "Dettaglio dell'esito del messaggio",
+        "max": "1"
+      },
+      {
         "id": "OperationOutcome.issue.details.coding:errore",
         "path": "OperationOutcome.issue.details.coding",
-        "sliceName": "errore",
         "short": "Nel caso in cui l'elaborazione del messaggio termina con un errore questo campo contiene il codice e la descrizione dell'errore.",
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella degli errori di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
