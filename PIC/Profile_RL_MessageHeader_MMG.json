@@ -38,6 +38,7 @@
         "id": "MessageHeader.event[x]",
         "path": "MessageHeader.event[x]",
         "short": "Codice e descrizione dell'evento rappresentato dal messaggio",
+        "comment":"Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di evento del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "type": [
           {
             "code": "Coding"
@@ -48,7 +49,7 @@
         "id": "MessageHeader.event[x].system",
         "path": "MessageHeader.event[x].system",
         "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/message-events"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt"
       },
       {
         "id": "MessageHeader.event[x].code",
@@ -78,7 +79,8 @@
       {
         "id": "MessageHeader.destination.endpoint",
         "path": "MessageHeader.destination.endpoint",
-        "short": "Indirizzo URL del destinatario del messaggio"
+        "short": "Indirizzo URL del destinatario del messaggio",
+        "definition":"urn:rlfhir:destination.name"
       },
       {
         "id": "MessageHeader.source",
@@ -94,7 +96,7 @@
         "id": "MessageHeader.source.endpoint",
         "path": "MessageHeader.source.endpoint",
         "short": "Indirizzo URL del mittente del messaggio",
-        "definition": "http://fhir.siss.regione.lombardia.it/MMG"
+        "definition": "urn:rlfhir:source.name"
       },
       {
         "id": "MessageHeader.response",
