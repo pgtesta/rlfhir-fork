@@ -3,7 +3,7 @@
   "id": "RLOperationOutcomeMMG",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG",
   "name": "RLOperationOutcomeMMG",
-  "status": "draft",
+  "status": "active",
   "date": "2024-04-24T09:46:43.7514659+00:00",
   "description": "Profilo volto a contenere il dettaglio delle informazione relative all'elaborazione del messaggio.",
   "fhirVersion": "4.0.1",
@@ -62,8 +62,8 @@
         "min": 1
       },
       {
-        "id": "OperationOutcome.issue.details.coding",
-        "path": "OperationOutcome.issue.details.coding",
+        "id": "OperationOutcome.issue.details",
+        "path": "OperationOutcome.issue.details",
         "slicing": {
           "discriminator": [
             {
@@ -72,68 +72,79 @@
             }
           ],
           "rules": "open"
-        },
-        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo definisce il contenuto del campo text.",
-        "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia del contenuto di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        }
+      },      
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio",
+        "path": "OperationOutcome.issue.details",
+        "sliceName": "contenutoMessaggio",
+        "short": "Dettaglio dell'esito del messaggio",
+        "max": "1"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio",
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding",
         "path": "OperationOutcome.issue.details.coding",
-        "sliceName": "contenutoMessaggio",
         "short": "Stringa alfanumerica di al più 400 caratteri",
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia del contenuto di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio.system",
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio.code",
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.code",
         "path": "OperationOutcome.issue.details.coding.code",
         "short": "Codice del contenuto del campo text",
         "definition": "Stringa alfanumerica di al più 2 caratteri",
         "min": 1
       },
       {
-        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio.display",
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.display",
         "path": "OperationOutcome.issue.details.coding.display",
         "short": "Descrizione del contenuto del campo text",
         "definition": "Stringa alfanumerica di al più 200 caratteri"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:errore",
-        "path": "OperationOutcome.issue.details.coding",
-        "sliceName": "errore",
-        "short": "Nel caso in cui l'elaborazione del messaggio termina con un errore questo campo contiene il codice e la descrizione dell'errore.",
-        "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella degli errori di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.text",
+        "path": "OperationOutcome.issue.details.text",
+        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo contiene l'URL per il passaggio di contesto ad SGDT o il numero di protocollo GPC.",
+        "definition": "Stringa alfanumerica di al più 400 caratteri"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:errore.system",
+        "id": "OperationOutcome.issue.details:errore",
+        "path": "OperationOutcome.issue.details",
+        "sliceName": "errore",
+        "short": "Dettaglio dell'esito del messaggio",
+        "max": "1"
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore.coding",
+        "path": "OperationOutcome.issue.details.coding",
+        "short": "Nel caso in cui l'elaborazione del messaggio termina con un errore questo campo contiene il codice e la descrizione dell'errore.",
+        "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella degli errori di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max":"1"
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore.coding.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/operation-error"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:errore.code",
+        "id": "OperationOutcome.issue.details:errore.coding.code",
         "path": "OperationOutcome.issue.details.coding.code",
         "short": "Codice dell'errore",
         "definition": "Stringa alfanumerica di al più 2 caratteri",
         "min": 1
       },
       {
-        "id": "OperationOutcome.issue.details.coding:errore.display",
+        "id": "OperationOutcome.issue.details:errore.coding.display",
         "path": "OperationOutcome.issue.details.coding.display",
         "short": "Descrizione dell'errore",
         "definition": "Stringa alfanumerica di al più 200 caratteri"
-      },
-      {
-        "id": "OperationOutcome.issue.details.text",
-        "path": "OperationOutcome.issue.details.text",
-        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo contiene l'URL per il passaggio di contesto ad SGDT o il numero di protocollo GPC.",
-        "definition": "Stringa alfanumerica di al più 400 caratteri"
       }
     ]
   }
