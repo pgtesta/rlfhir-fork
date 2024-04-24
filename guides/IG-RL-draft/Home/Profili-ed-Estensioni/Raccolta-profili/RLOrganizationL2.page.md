@@ -100,8 +100,9 @@ Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 -	distrettoTerritoriale.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
 
-Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi:
+Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi (ad esempio per termine del periodo di accreditamento):
 -	dataFineValidità: data di interesse
+- dataCessazione: data di interesse
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
  
@@ -233,6 +234,7 @@ I parametri di ricerca del profilo RLOrganizationL2, oltre ai campi standard del
 | distrettoAccreditamentoAtsAfferenza | ATS di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} |
 | distrettoAccreditamentoCodiceDistretto | Distretto di accreditamento nel quale l'Ente eroga i servizi   sociosanitari. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} |
 | distrettoTerritorialeASSTAfferenza | ASST nella quale l'Ente erogatore ha la sede operativa. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoTerritorialeASSTAfferenza}} |
+| dataCessazione | Data di cessazione per strutture SISS di livello 2 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataCessazione}} |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
