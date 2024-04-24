@@ -353,8 +353,7 @@
           </td>
           <td>
             Profilo volto a contenere le indicazioni riguardo una
-            terapia farmacologica prescritta al cittadino
-            all’interno del suo progetto individuale.
+            terapia farmacologica prescritta al cittadino.
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica}}
@@ -521,74 +520,6 @@
         <tr>
           <td>PI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestInterventoEducazionale.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a descrivere l’intervento educazionale di cui
-            il paziente necessita come definito dal suo progetto
-            individuale.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioniInfermieristiche.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a contenere le informazioni relative ad
-            una prestazione infermieristiche afferente ad un
-            progetto individuale di un cittadino.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioniSociali.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a contenere le informazioni relative ad
-            una prestazione sociale afferente ad un progetto
-            individuale di un cittadino.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioniSpecialistiche.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a contenere i dettagli una
-            prestazione specialistica e/o diagnostica definita
-            nell’ambito di un progetto individuale di un cittadino.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioAssistenziali.page.md}}
           </td>
           <td>
@@ -697,6 +628,110 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO}}
+          </td>
+        </tr>
+        <tr>
+          <td>PIC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderMMG.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/messageheader.html">MessageHeader</a>
+          </td>
+          <td>
+            Profilo volto a contenere le informazioni relative al messaggio scambiato tra la Cartella Clinica Elettronica dell'MMG e SGDT.						
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG}}
+          </td>
+        </tr>
+        <tr>
+          <td>PIC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientBase.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>
+          </td>
+          <td>
+            Profilo contenente i dettagli anagrafici di base di un cittadino.							
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase}}
+          </td>
+        </tr>
+        <tr>
+          <td>PIC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioni.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+          </td>
+          <td>
+            Profilo volto a contenere le informazioni relative alla richiesta di una prestazione. La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.							
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase}}
+          </td>
+        </tr>
+        <tr>
+          <td>PIC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcomeMMG.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>
+          </td>
+          <td>
+            Profilo volto a contenere il dettaglio delle informazione relative all'elaborazione del messaggio.							
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG}}
+          </td>
+        </tr>
+        <tr>
+          <td>PIC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleMMG.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a descrivere il contenuto del Bundle inviato dalla Cartella Clinica Elettronica dell'MMG a SGDT.									
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleMMG}}
+          </td>
+        </tr>
+        <tr>
+          <td>PIC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleRispostaMMG.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a descrivere il contenuto del Bundle di risposta inviato da SGDT alla Cartella Clinica Elettronica dell'MMG.																
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG}}
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioni.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+          </td>
+          <td>Profilo volto a contenere le informazioni relative alla richiesta di una prestazione. La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioni}}
           </td>
         </tr>
       </tbody>

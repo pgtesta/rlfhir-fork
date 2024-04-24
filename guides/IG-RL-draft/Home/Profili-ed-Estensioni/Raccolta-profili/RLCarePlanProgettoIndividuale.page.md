@@ -90,7 +90,7 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 
 A titolo esemplificativo, la chiamata: 
 
-    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.code=C-DOM&author:Organization.identifier=030701&_lastUpdated=gt2022-11-18T16:00:00+00:00&_lastUpdated=lt2022-11-30T16:00:00+00:00&status=active&_include=*
+    http://localhost:52773/nprifhirgtw/api/v1/fhir/r4/operatori-siss-fhir-service-v1/CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale&activity-reference:ServiceRequest.code=C-DOM&author:Organization.identifier=030701&_lastUpdated=gt2022-11-18&_lastUpdated=lt2022-11-30&status=active&_include=*
 
 Restituirà tutti i Progetti Individuali attivi contenenti esclusivamente i dettagli del ricovero domiciliare in carico all’ente con codice livello 1 "030701" e creati e/o modificati tra le 16:00 del giorno 18-11-2022 e le 16:00 del giorno 30-11-2022. Il risultato della ricerca conterrà anche tutte le informazioni associate referenziate nel profilo.
 

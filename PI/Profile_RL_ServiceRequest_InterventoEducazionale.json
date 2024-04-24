@@ -3,7 +3,7 @@
   "id": "RLServiceRequestInterventoEducazionale",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale",
   "name": "RLServiceRequestInterventoEducazionale",
-  "status": "active",
+  "status": "retired",
   "description": "Profilo volto a descrivere l’intervento educazionale di cui il paziente necessita come definito dal suo progetto individuale.",
   "keyword": [
     {

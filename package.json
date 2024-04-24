@@ -3,10 +3,11 @@
   "version": "0.0.5-beta",
   "description": "Progetto FHIR per Regione Lombardia",
   "author": "Reply Healthy",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.it.lab-report": "0.2.0"
+  },
   "fhirVersions": [
     "4.0.1"
-  ],
-  "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1"
-  }
+  ]
 }

@@ -2,11 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestTerapiaFarmacologica",
   "meta": {
-    "lastUpdated": "2023-10-26T09:01:39.7556093+00:00"
+    "lastUpdated": "2024-04-23T13:09:15.9309353+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
   "name": "RLMedicationRequestTerapiaFarmacologica",
   "status": "active",
+  "date": "2024-04-23T13:09:25.8682521+00:00",
   "description": "Profilo volto a contenere le indicazioni riguardo una terapia farmacologica prescritta al cittadino all’interno del suo progetto individuale.",
   "keyword": [
     {
@@ -44,14 +45,12 @@
         "id": "MedicationRequest.meta.lastUpdated",
         "path": "MedicationRequest.meta.lastUpdated",
         "short": "Data e ora di ultimo aggiornamento della risorsa",
-        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
-        "min": 1
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz"
       },
       {
         "id": "MedicationRequest.meta.profile",
         "path": "MedicationRequest.meta.profile",
         "short": "Profilo al quale la risorsa si riferisce",
-        "min": 1,
         "max": "1",
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
       },
@@ -120,13 +119,12 @@
         "id": "MedicationRequest.subject",
         "path": "MedicationRequest.subject",
         "short": "Paziente al quale deve essere erogata la terapia",
-        "definition": "Reference alla risorsa RLPatientCittadino",
-        "comment": "Il dato è detenuto dal SGDT",
+        "definition": "Reference al profilo RLPatientCittadino contenente i dettagli anagrafici del paziente o al profilo RLPatientBase contenente i dettagli anagrafici di base del paziente",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino","https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
             ]
           }
         ]
@@ -137,7 +135,6 @@
         "short": "Riferimento al progetto individuale nel quale è prevista l'erogazione della terapia",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -163,6 +160,12 @@
         "definition": "Dosaggio del farmaco, via di sommistrazione, frequenza di assunzione",
         "min": 1,
         "max": "1"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.text",
+        "path": "MedicationRequest.dosageInstruction.text",
+        "short": "Posologia del farmaco in formato testuale",
+        "definition": "Stringa alfanumerica di al più 250 caratteri"
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing",
