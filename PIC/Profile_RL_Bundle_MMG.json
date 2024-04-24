@@ -32,7 +32,7 @@
         "short": "Profilo al quale la risorsa si riferisce",
         "min": 1,
         "max": "1",
-        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLBundleMMG"
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleMMG"
       },
       {
         "id": "Bundle.type",
@@ -79,7 +79,7 @@
           {
             "code": "Resource",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLMessageHeaderMMG"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
             ]
           }
         ]
@@ -100,7 +100,7 @@
           {
             "code": "Resource",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLPatientBase"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
             ]
           }
         ]
@@ -120,7 +120,7 @@
           {
             "code": "Resource",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLConditionProblemiSalute"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
             ]
           }
         ]
