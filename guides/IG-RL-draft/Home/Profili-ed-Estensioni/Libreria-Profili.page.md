@@ -661,7 +661,7 @@
           </td>
         </tr>
         <tr>
-          <td>PIC</td>
+          <td></td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioni.page.md}}
           </td>
@@ -672,7 +672,7 @@
             Profilo volto a contenere le informazioni relative alla richiesta di una prestazione. La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.							
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioni}}
           </td>
         </tr>
         <tr>
@@ -718,20 +718,6 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG}}
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioni.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>Profilo volto a contenere le informazioni relative alla richiesta di una prestazione. La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioni}}
           </td>
         </tr>
       </tbody>
