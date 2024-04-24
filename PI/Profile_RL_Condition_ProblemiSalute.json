@@ -312,7 +312,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino","https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
             ]
           }
         ]
