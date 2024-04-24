@@ -99,9 +99,9 @@
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
-        "short": "Tipologia di prestazione riportata nel campo \"code\". La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.        ",
+        "short": "Tipologia di prestazione riportata nel campo \"code\". La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.",
         "min": 1,
-        "max": 1
+        "max": "1"
       },
       {
         "id": "ServiceRequest.category.coding",
@@ -143,35 +143,135 @@
       {
         "id": "ServiceRequest.code.coding",
         "path": "ServiceRequest.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1,
         "max": "1"
       },
       {
-        "id": "ServiceRequest.code.coding.system",
+        "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica",
+        "path": "ServiceRequest.code.coding",
+        "sliceName": "SpecialisticaDiagnostica",
+        "short": "Codice e descrizione della prestazione specialistica e/o diagnostica",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica.system",
+        "path": "ServiceRequest.code.coding.system",
+        "definition": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-"
+      },
+      {
+        "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione specialistica e/o diagnostica",
+        "definition": "Codice della prestazione specialistica e/o diagnostica",
+        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS della tabella delle prestazioni specialistiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica.display",
+        "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione della prestazione specialistica e/o diagnostica",
+        "definition": "Stringa alfanumerica di al più 200 caratteri",
+        "comment": "La fonte del dato è il campo DS_PRESTAZIONE_SISS della tabella delle prestazioni specialistiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "ServiceRequest.code.coding:Infermieristica",
+        "path": "ServiceRequest.code.coding",
+        "sliceName": "Infermieristica",
+        "short": "Codice e descrizione della prestazione infermieristica",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding:Infermieristica.system",
         "path": "ServiceRequest.code.coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche"
       },
       {
-        "id": "ServiceRequest.code.coding.code",
+        "id": "ServiceRequest.code.coding:Infermieristica.code",
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice della prestazione infermieristica",
-        "definition": "Stringa alfanumerica di al più 28 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
         "min": 1,
         "binding": {
           "strength": "required",
-          "description": "ValueSet relativo alla codifica delle prestazioni infermieristiche",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PrestazioniInfermieristiche"
         }
       },
       {
-        "id": "ServiceRequest.code.coding.display",
+        "id": "ServiceRequest.code.coding:Infermieristica.display",
         "path": "ServiceRequest.code.coding.display",
         "short": "Descrizione della prestazione infermieristica",
         "definition": "Stringa alfanumerica di al più 200 caratteri",
-        "comment": "Il dato è detenuto dal SGDT",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "ServiceRequest.code.coding:InterventoEducazionale",
+        "path": "ServiceRequest.code.coding",
+        "sliceName": "InterventoEducazionale",
+        "short": "Codice e descrizione dell'intervento educazionale",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli interventi educazionali contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding:InterventoEducazionale.system",
+        "path": "ServiceRequest.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali"
+      },
+      {
+        "id": "ServiceRequest.code.coding:InterventoEducazionale.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice dell'intervento educazionale",
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali"
+        }
+      },
+      {
+        "id": "ServiceRequest.code.coding:InterventoEducazionale.display",
+        "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione dell'intervento educazionale",
+        "definition": "Stringa alfanumerica di al più 200 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "ServiceRequest.code.coding:PrestazioneSociale",
+        "path": "ServiceRequest.code.coding",
+        "sliceName": "PrestazioneSociale",
+        "short": "Codice e descrizione della prestazione sociale",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding:PrestazioneSociale.system",
+        "path": "ServiceRequest.code.coding.system",
         "min": 1
+      },
+      {
+        "id": "ServiceRequest.code.coding:PrestazioneSociale.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione sociale",
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.code.coding:PrestazioneSociale.display",
+        "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione della prestazione sociale",
+        "definition": "Stringa alfanumerica di al più 200 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
       },
       {
         "id": "ServiceRequest.subject",
@@ -188,6 +288,45 @@
             ]
           }
         ]
+      },
+      {
+        "id": "ServiceRequest.locationCode",
+        "path": "ServiceRequest.locationCode",
+        "short": "Codice e descrizione della modalità di erogazione dell'intervento educazionale",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della modalità di erogazione dell'intervento educazionale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding",
+        "path": "ServiceRequest.locationCode.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.system",
+        "path": "ServiceRequest.locationCode.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu"
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.code",
+        "path": "ServiceRequest.locationCode.coding.code",
+        "short": "Codice della modalità di erogazione dell'intervento educazionale",
+        "definition": "Stringa alfanumerica di 7 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla modalità di erogazione dell'intervento educazionale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu"
+        }
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.display",
+        "path": "ServiceRequest.locationCode.coding.display",
+        "short": "Descrizione della modalità di erogazione dell'intervento educazionale",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
       },
       {
         "id": "ServiceRequest.occurrence[x]",

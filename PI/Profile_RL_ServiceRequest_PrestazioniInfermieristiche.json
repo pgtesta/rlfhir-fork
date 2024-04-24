@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche",
   "name": "RLServiceRequestPrestazioniInfermieristiche",
-  "status": "active",
+  "status": "retired",
   "description": "Profilo volto a contenere le informazioni relative ad una prestazione infermieristiche afferente ad un progetto individuale di un cittadino.",
   "keyword": [
     {

@@ -6,7 +6,7 @@
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
   "name": "RLServiceRequestPrestazioniSpecialistiche",
-  "status": "active",
+  "status": "retired",
   "description": "Profilo volto a contenere i dettagli una prestazione specialistica e/o diagnostica definita nell’ambito di un progetto individuale di un cittadino.",
   "keyword": [
     {

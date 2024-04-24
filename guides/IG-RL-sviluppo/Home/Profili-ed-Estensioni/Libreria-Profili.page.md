@@ -520,74 +520,6 @@
         <tr>
           <td>PI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestInterventoEducazionale.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a descrivere l’intervento educazionale di cui
-            il paziente necessita come definito dal suo progetto
-            individuale.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioniInfermieristiche.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a contenere le informazioni relative ad
-            una prestazione infermieristiche afferente ad un
-            progetto individuale di un cittadino.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioniSociali.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a contenere le informazioni relative ad
-            una prestazione sociale afferente ad un progetto
-            individuale di un cittadino.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSociali}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioniSpecialistiche.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
-          </td>
-          <td>
-            Profilo volto a contenere i dettagli una
-            prestazione specialistica e/o diagnostica definita
-            nell’ambito di un progetto individuale di un cittadino.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche}}
-          </td>
-        </tr>
-        <tr>
-          <td>PI</td>
-          <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioAssistenziali.page.md}}
           </td>
           <td>
@@ -786,6 +718,20 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG}}
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioni.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+          </td>
+          <td>Profilo volto a contenere le informazioni relative alla richiesta di una prestazione. La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioni}}
           </td>
         </tr>
       </tbody>
