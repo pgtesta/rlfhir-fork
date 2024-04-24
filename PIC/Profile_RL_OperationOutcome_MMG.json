@@ -76,7 +76,7 @@
       },      
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio",
-        "path": "OperationOutcome.issue.details:contenutoMessaggio",
+        "path": "OperationOutcome.issue.details",
         "sliceName": "contenutoMessaggio",
         "short": "Dettaglio dell'esito del messaggio",
         "max": "1"
