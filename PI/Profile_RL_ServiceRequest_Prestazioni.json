@@ -89,6 +89,14 @@
         "definition": "Valore fisso su \"active\"",
         "fixedCode": "active"
       },
+      
+      {
+        "id": "ServiceRequest.requisition",
+        "path": "ServiceRequest.requisition",
+        "short": "Nel caso in cui la tipologia di prestazione (campo category) sia specialistica questo campo contiene l'identificativo condiviso da due o più prestazioni nel momento in cui siano parte dello stesso pacchetto",
+        "definition": "Codice alfanumerico di al più 10 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
       {
         "id": "ServiceRequest.intent",
         "path": "ServiceRequest.intent",
@@ -112,7 +120,8 @@
       {
         "id": "ServiceRequest.category.coding.system",
         "path": "ServiceRequest.category.coding.system",
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+        "min": 1
       },
       {
         "id": "ServiceRequest.category.coding.code",
@@ -123,7 +132,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "description": "ValueSet relativo alla codifica degli interventi educazionali",
+          
           "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione"
         }
       },
@@ -136,8 +145,7 @@
       {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
-        "short": "Codice e descrizione della prestazione infermieristica",
-        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle prestazioni infermieristiche contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "short": "Codice e descrizione della prestazione",
         "min": 1
       },
       {
@@ -165,14 +173,16 @@
       {
         "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica.system",
         "path": "ServiceRequest.code.coding.system",
-        "definition": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-"
+        "definition": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-",
+        "min": 1
       },
       {
         "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica.code",
         "path": "ServiceRequest.code.coding.code",
         "short": "Codice della prestazione specialistica e/o diagnostica",
-        "definition": "Codice della prestazione specialistica e/o diagnostica",
-        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS della tabella delle prestazioni specialistiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS della tabella delle prestazioni specialistiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
       },
       {
         "id": "ServiceRequest.code.coding:SpecialisticaDiagnostica.display",
@@ -186,6 +196,7 @@
         "path": "ServiceRequest.code.coding",
         "sliceName": "Infermieristica",
         "short": "Codice e descrizione della prestazione infermieristica",
+        "comment":"Per il dettaglio esaustivo della codifica consultare la Tabella delle prestazioni infermieristiche contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
       {
@@ -289,10 +300,75 @@
           }
         ]
       },
+      
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "short": "Dettagli temporali per l'erogazione della prestazione infermieristica",
+        "min": 1,
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat",
+        "path": "ServiceRequest.occurrence[x].repeat",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.bounds[x]",
+        "path": "ServiceRequest.occurrence[x].repeat.bounds[x]",
+        "short": "Periodo nel quale la prestazione infermieristica deve essere erogata",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.bounds[x].start",
+        "path": "ServiceRequest.occurrence[x].repeat.bounds[x].start",
+        "short": "Data di inizio periodo di erogazione",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.bounds[x].end",
+        "path": "ServiceRequest.occurrence[x].repeat.bounds[x].end",
+        "short": "Data di fine periodo di erogazione",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.frequency",
+        "path": "ServiceRequest.occurrence[x].repeat.frequency",
+        "short": "Frequenza di erogazione della prestazione",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.period",
+        "path": "ServiceRequest.occurrence[x].repeat.period",
+        "short": "Coefficiente per il quale la frequeza di erogazione ('frequency') si estende rispetto l'unità temporale di erogazione ('periodUnit').",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.periodUnit",
+        "path": "ServiceRequest.occurrence[x].repeat.periodUnit",
+        "short": "Unità temporale di erogazione",
+        "definition": "Valori definiti dallo standard FHIR:\r\n- s: secondo \r\n- min: minuto \r\n- h: ora\r\n- d: giorno\r\n- wk: settimana\r\n- mo: mese\r\n- a: anno",
+        "min": 1
+      },
       {
         "id": "ServiceRequest.locationCode",
         "path": "ServiceRequest.locationCode",
-        "short": "Codice e descrizione della modalità di erogazione dell'intervento educazionale",
+        "short": "Nel caso in cui la tipologia di prestazione (campo category) sia intervento educazionale questo campo contiene il codice e la descrizione della modalità di erogazione dell'intervento educazionale",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della modalità di erogazione dell'intervento educazionale contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
@@ -395,7 +471,7 @@
       {
         "id": "ServiceRequest.reasonReference",
         "path": "ServiceRequest.reasonReference",
-        "short": "Problema riscontrato durante la valutazione infermieristica",
+        "short": "Nel caso in cui la tipologia di prestazione (campo category) sia infermieristica questo campo contiene il problema riscontrato durante la valutazione infermieristica",
         "definition": "Reference al profilo RLConditionProblemiSalute",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1",
