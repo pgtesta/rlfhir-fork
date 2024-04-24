@@ -49,7 +49,11 @@
         "id": "OperationOutcome.issue.code",
         "path": "OperationOutcome.issue.code",
         "short": "Codice associato all'esito del messaggio",
-        "definition": "I valori ammessi appartengono al ValueSet IssueType e sono consultabili al seguente link http://hl7.org/fhir/issue-type"
+        "definition": "I valori ammessi appartengono al ValueSet IssueType e sono consultabili al seguente link http://hl7.org/fhir/issue-type",
+        "binding": {
+          "strength": "required",
+          "description": "Descrizione dell'esito del messaggio."
+        }
       },
       {
         "id": "OperationOutcome.issue.details",
@@ -73,54 +77,54 @@
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia del contenuto di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
-        "id": "OperationOutcome.issue.details.coding:estitoPositivo",
+        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio",
         "path": "OperationOutcome.issue.details.coding",
-        "sliceName": "estitoPositivo",
+        "sliceName": "contenutoMessaggio",
         "short": "Stringa alfanumerica di al più 400 caratteri",
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia del contenuto di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:estitoPositivo.system",
+        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:estitoPositivo.code",
+        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio.code",
         "path": "OperationOutcome.issue.details.coding.code",
         "short": "Codice del contenuto del campo text",
         "definition": "Stringa alfanumerica di al più 2 caratteri",
         "min": 1
       },
       {
-        "id": "OperationOutcome.issue.details.coding:estitoPositivo.display",
+        "id": "OperationOutcome.issue.details.coding:contenutoMessaggio.display",
         "path": "OperationOutcome.issue.details.coding.display",
         "short": "Descrizione del contenuto del campo text",
         "definition": "Stringa alfanumerica di al più 200 caratteri"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:esitoErrore",
+        "id": "OperationOutcome.issue.details.coding:errore",
         "path": "OperationOutcome.issue.details.coding",
-        "sliceName": "esitoErrore",
+        "sliceName": "errore",
         "short": "Nel caso in cui l'elaborazione del messaggio termina con un errore questo campo contiene il codice e la descrizione dell'errore.",
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella degli errori di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
-        "id": "OperationOutcome.issue.details.coding:esitoErrore.system",
+        "id": "OperationOutcome.issue.details.coding:errore.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/operation-error"
       },
       {
-        "id": "OperationOutcome.issue.details.coding:esitoErrore.code",
+        "id": "OperationOutcome.issue.details.coding:errore.code",
         "path": "OperationOutcome.issue.details.coding.code",
         "short": "Codice dell'errore",
         "definition": "Stringa alfanumerica di al più 2 caratteri",
         "min": 1
       },
       {
-        "id": "OperationOutcome.issue.details.coding:esitoErrore.display",
+        "id": "OperationOutcome.issue.details.coding:errore.display",
         "path": "OperationOutcome.issue.details.coding.display",
         "short": "Descrizione dell'errore",
         "definition": "Stringa alfanumerica di al più 200 caratteri"
