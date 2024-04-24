@@ -3,7 +3,7 @@
   "id": "RLBundleRispostaMMG",
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG",
   "name": "RLBundleRispostaMMG",
-  "status": "draft",
+  "status": "active",
   "date": "2024-04-24T09:46:43.7514659+00:00",
   "description": "Profilo volto a descrivere il contenuto del Bundle di risposta inviato da SGDT alla Cartella Clinica Elettronica dell'MMG.",
   "fhirVersion": "4.0.1",
