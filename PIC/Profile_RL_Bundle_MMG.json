@@ -1,0 +1,130 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLBundleMMG",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLBundleMMG",
+  "name": "RLBundleMMG",
+  "status": "draft",
+  "date": "2024-04-24T09:46:43.7514659+00:00",
+  "description": "Profilo volto a descrivere il contenuto del Bundle inviato dalla Cartella Clinica Elettronica dell'MMG a SGDT.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.id",
+        "path": "Bundle.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Bundle.meta",
+        "path": "Bundle.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Bundle.meta.profile",
+        "path": "Bundle.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLBundleMMG"
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "Tipo di Bundle",
+        "definition": "Valore fisso su \"message\"",
+        "fixedCode": "message"
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "short": "Data di creazione del Bundle",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "resource.meta.profile"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Profili contenuti nel Bundle",
+        "min": 3
+      },
+      {
+        "id": "Bundle.entry:RLMessageHeaderMMG",
+        "path": "Bundle.entry",
+        "sliceName": "RLMessageHeaderMMG",
+        "short": "Profilo volto a contenere le informazioni relative al messaggio scambiato tra la Cartella Clinica Elettronica dell'MMG e SGDT.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:RLMessageHeaderMMG.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLMessageHeaderMMG"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:RLPatientBase",
+        "path": "Bundle.entry",
+        "sliceName": "RLPatientBase",
+        "short": "Profilo contenente i dettagli anagrafici di base di un cittadino.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:RLPatientBase.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLPatientBase"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:RLConditionProblemiSalute",
+        "path": "Bundle.entry",
+        "sliceName": "RLConditionProblemiSalute",
+        "short": "Profilo volto a descrivere i problemi di salute dei quali un paziente è affetto.",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry:RLConditionProblemiSalute.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLConditionProblemiSalute"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

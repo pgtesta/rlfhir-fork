@@ -2,11 +2,12 @@
   "resourceType": "StructureDefinition",
   "id": "RLConditionProblemiSalute",
   "meta": {
-    "lastUpdated": "2023-10-26T08:32:10.4080331+00:00"
+    "lastUpdated": "2024-04-23T13:05:46.1378817+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute",
   "name": "RLConditionProblemiSalute",
   "status": "active",
+  "date": "2024-04-23T13:09:25.8682521+00:00",
   "description": "Profilo volto a descrivere i problemi di salute dei quali un paziente è affetto.",
   "keyword": [
     {
@@ -37,15 +38,13 @@
       {
         "id": "Condition.meta.versionId",
         "path": "Condition.meta.versionId",
-        "short": "Versione della risorsa",
-        "min": 1
+        "short": "Versione della risorsa"
       },
       {
         "id": "Condition.meta.lastUpdated",
         "path": "Condition.meta.lastUpdated",
         "short": "Data e ora di ultimo aggiornamento della risorsa",
-        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
-        "min": 1
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz"
       },
       {
         "id": "Condition.meta.profile",
@@ -96,6 +95,40 @@
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
+        "id": "Condition.severity",
+        "path": "Condition.severity",
+        "short": "Nel caso in cui il problema di salute si riferisce ad una patologia cronica, il campo indica il livello di gravità della cronicità associata alla patologia primaria",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del livello di gravità della cronicità contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "Condition.severity.coding",
+        "path": "Condition.severity.coding",
+        "short": "Codice e descrizione del livello di gravità della cronicità",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Condition.severity.coding.system",
+        "path": "Condition.severity.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/GPC-LivelloGravita"
+      },
+      {
+        "id": "Condition.severity.coding.code",
+        "path": "Condition.severity.coding.code",
+        "short": "Codice del livello di gravità della cronicità",
+        "definition": "Stringa alfanumerica di un carattere",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Condition.severity.coding.display",
+        "path": "Condition.severity.coding.display",
+        "short": "Descrizione del livello di gravità della cronicità",
+        "definition": "Stringa alfabeta al più di 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
         "id": "Condition.code",
         "path": "Condition.code",
         "slicing": {
@@ -107,43 +140,86 @@
           ],
           "rules": "open"
         },
-        "short": "Codifica della patologia o della condizione clinica prevalente del paziente",
+        "short": "Codifica del problema di salute",
         "min": 1
       },
       {
         "id": "Condition.code:patologia",
         "path": "Condition.code",
         "sliceName": "patologia",
-        "short": "Codice della patologia",
-        "comment": "La codifica delle patologie è riportata secondo lo standard ICD9-CM. Inoltre, è presente un elenco di patologie aggiuntive con codifica differente rispetto allo standard ICD9-CM, è possibile visualizzare la Tabella delle patologie non ICD9-CM tramite il link presente nella sezione ValueSet in fondo a questa pagina o nella sezione Terminologia - Libreria ValueSet"
+        "short": "La codifica della patologia può essere riportata secondo lo standard ICD9-CM oppure secondo la codifica regionale. Nel campo system viene indicata la codifica utilizzata.",
+        "comment": "La codifica delle patologie è riportata secondo lo standard ICD9-CM. Inoltre, è presente un elenco di patologie aggiuntive con codifica differente rispetto allo standard ICD9-CM, è possibile visualizzare la Tabella delle patologie non ICD9-CM tramite il link presente nella sezione ValueSet in fondo a questa pagina o nella sezione Terminologia - Libreria ValueSet",
+        "min": 1
       },
       {
         "id": "Condition.code:patologia.coding",
         "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Codifica della patologia secondo lo standard ICD9-CM. Di prassi viene utilizzata questa codifica.",
+        "min": 1,
+        "max": "2"
+      },
+      {
+        "id": "Condition.code:patologia.coding:ICD9CM",
+        "path": "Condition.code.coding",
+        "sliceName": "ICD9CM",
+        "short": "Codifica della patologia secondo lo standard ICD9-CM. Di prassi viene utilizzata questa codifica.",
         "max": "1"
       },
       {
-        "id": "Condition.code:patologia.coding.system",
+        "id": "Condition.code:patologia.coding:ICD9CM.system",
         "path": "Condition.code.coding.system",
         "min": 1,
         "fixedUri": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM"
       },
       {
-        "id": "Condition.code:patologia.coding.code",
+        "id": "Condition.code:patologia.coding:ICD9CM.code",
         "path": "Condition.code.coding.code",
-        "short": "Codice della patologia",
+        "short": "Codice della patologia ICD9-CM",
         "definition": "Stringa alfanumerica di al più 10 caratteri",
         "comment": "Il dato è detenuto da SGDT",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-DiagnosisICD9CM"
-        }
+        "min": 1
       },
       {
-        "id": "Condition.code:patologia.coding.display",
+        "id": "Condition.code:patologia.coding:ICD9CM.display",
         "path": "Condition.code.coding.display",
-        "short": "Descrizione della patologia",
+        "short": "Descrizione della patologia ICD9-CM",
+        "definition": "Stringa alfanumerica di al più 250 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Condition.code:patologia.coding:NonICD9CM",
+        "path": "Condition.code.coding",
+        "sliceName": "NonICD9CM",
+        "short": "Codifica regionale della patologia. Nel caso della presa in carico di un paziente cronico l'uso di questa codifica è obbligatorio.",
+        "comment": "Per il dettaglio esaustivo della codifica differente rispetto allo standard ICD9-CM, è possibile visualizzare la Tabella delle patologie non ICD9-CM tramite il link presente nella sezione ValueSet in fondo a questa pagina o nella sezione Terminologia - Libreria ValueSet",
+        "max": "1"
+      },
+      {
+        "id": "Condition.code:patologia.coding:NonICD9CM.system",
+        "path": "Condition.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Condition.code:patologia.coding:NonICD9CM.code",
+        "path": "Condition.code.coding.code",
+        "short": "Codice della patologia con codifica regionale",
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Condition.code:patologia.coding:NonICD9CM.display",
+        "path": "Condition.code.coding.display",
+        "short": "Descrizione della patologia con codifica regionale",
         "definition": "Stringa alfanumerica di al più 250 caratteri",
         "comment": "Il dato è detenuto da SGDT"
       },
@@ -157,6 +233,8 @@
       {
         "id": "Condition.code:condizioneClinica.coding",
         "path": "Condition.code.coding",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della condizione clinica contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
         "max": "1"
       },
       {
@@ -195,6 +273,7 @@
       {
         "id": "Condition.code:problemaInfermieristico.coding",
         "path": "Condition.code.coding",
+        "min": 1,
         "max": "1"
       },
       {
@@ -227,7 +306,7 @@
         "id": "Condition.subject",
         "path": "Condition.subject",
         "short": "Paziente per il quale è stato riscontrato il problema di salute",
-        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "definition": "Reference al profilo RLPatientCittadino contenente i dettagli anagrafici del paziente o al profilo RLPatientBase contenente i dettagli anagrafici di base del paziente",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
