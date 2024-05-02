@@ -38,8 +38,7 @@
       {
         "id": "MedicationRequest.meta.versionId",
         "path": "MedicationRequest.meta.versionId",
-        "short": "Versione della risorsa",
-        "min": 1
+        "short": "Versione della risorsa"
       },
       {
         "id": "MedicationRequest.meta.lastUpdated",
