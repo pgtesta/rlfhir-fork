@@ -2,7 +2,7 @@
   filename: Panoramica-di-progetto.page.md
 - name: Tematiche di applicazione
   filename: Tematiche-di-applicazione
-- name: API RESTful
-  filename: API-RESTful.page.md
+- name: Paradigmi di comunicazione e API FHIR
+  filename: Paradigmi di comunicazione e API FHIR.page
 - name: Stati ed Errori
   filename: Stati-ed-Errori.page.md
