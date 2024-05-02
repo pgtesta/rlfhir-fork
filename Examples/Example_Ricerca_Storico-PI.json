@@ -2479,7 +2479,7 @@
         "medicationCodeableConcept": {
           "coding": [
             {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
               "code": "AAC",
               "display": "ABACAVIR 300MG 60 UNITA' USO ORALE"
             }

@@ -3579,7 +3579,7 @@
         "medicationCodeableConcept": {
           "coding": [
             {
-              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
               "code": "CJC",
               "display": "AMOXICILLINA+ACIDO CLAVULANICO 80+11,4MG/ML 70ML USO ORALE"
             }
