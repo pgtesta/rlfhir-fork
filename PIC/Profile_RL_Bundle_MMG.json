@@ -124,6 +124,25 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Bundle.entry:RLMedicationRequestTerapiaFarmacologica",
+        "path": "Bundle.entry",
+        "sliceName": "RLMedicationRequestTerapiaFarmacologica",
+        "short": "Profilo volto a contenere le indicazioni riguardo una terapia farmacologica prescritta al cittadino."
+      },
+      {
+        "id": "Bundle.entry:RLMedicationRequestTerapiaFarmacologica.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
+            ]
+          }
+        ]
       }
     ]
   }

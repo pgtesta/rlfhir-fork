@@ -13,7 +13,7 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
         "code": "027224031",
         "display": "CLEVIAN*GEL 50 G 1%"
       }
