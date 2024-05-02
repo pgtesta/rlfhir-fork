@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-ErroriMessaggio",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/ErroriMessaggio",
+  "version": "1.0.0",
+  "name": "Errori Messaggio",
+  "status": "active",
+  "date": "2024-04-30T08:15:44.8689778+00:00",
+  "description": "CodeSystem relativo agli errori del messaggio",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "2",
+      "display": "operazione non ammessa"
+    }
+  ]
+}

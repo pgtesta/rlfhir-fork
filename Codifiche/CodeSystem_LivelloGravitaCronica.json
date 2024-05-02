@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-LivelloGravitaCronicita",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/LivelloGravitaCronicita",
+  "version": "1.0.0",
+  "name": "Livello gravità della cronicità",
+  "status": "active",
+  "date": "2024-04-30T08:15:44.8689778+00:00",
+  "description": "CodeSystem relativo al livello di gravità della cronicità",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Gravità alta"
+    },
+    {
+      "code": "2",
+      "display": "Gravità media"
+    },
+    {
+      "code": "3",
+      "display": "Gravità bassa"
+    }
+  ]
+}
