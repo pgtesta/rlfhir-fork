@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLMedicationRequestTerapiaFarmacologica",
   "meta": {
-    "lastUpdated": "2024-04-23T13:09:15.9309353+00:00"
+    "lastUpdated": "2024-05-02T08:28:16.3368898+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
   "name": "RLMedicationRequestTerapiaFarmacologica",
@@ -98,21 +98,79 @@
       {
         "id": "MedicationRequest.medication[x].coding",
         "path": "MedicationRequest.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
         "min": 1,
         "max": "1"
       },
       {
-        "id": "MedicationRequest.medication[x].coding.system",
-        "path": "MedicationRequest.medication[x].coding.system",
-        "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco"
+        "id": "MedicationRequest.medication[x].coding:AIC",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "AIC",
+        "max": "1"
       },
       {
-        "id": "MedicationRequest.medication[x].coding.code",
+        "id": "MedicationRequest.medication[x].coding:AIC.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:AIC.code",
         "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:ATC",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "ATC",
+        "max": "1"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:ATC.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:ATC.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:GE",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "GE",
+        "max": "1"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:GE.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+      },
+      {
+        "id": "MedicationRequest.medication[x].coding:GE.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
         }
       },
       {
@@ -124,7 +182,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino","https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
             ]
           }
         ]
