@@ -356,7 +356,7 @@
     <tr>
       <td>PIC</td>
       <td>Bundle</td>
-      <td>Esempio del profilo RLMeasureReportPLO</td>
+      <td>Esempio del profilo RLBundleMMG</td>
       <td>{{link:Bundle/RLBundleMMGpicMMG}}</td>
     </tr>
   </tbody>
