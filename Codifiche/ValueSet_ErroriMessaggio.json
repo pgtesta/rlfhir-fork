@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-ErroriMessaggio",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio",
+  "version": "1.0.0",
+  "name": "Errori Messaggio",
+  "status": "active",
+  "date": "2024-04-30T08:15:44.8689778+00:00",
+  "description": "ValueSet relativo agli errori del messaggio",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "2",
+            "display": "operazione non ammessa"
+          }
+        ]
+      }
+    ]
+  }
+}
