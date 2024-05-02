@@ -109,7 +109,7 @@
       },
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio.text",
-        "path": "OperationOutcome.issue.details.text",
+        "path": "OperationOutcome.issue.details:contenutoMessaggio.text",
         "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo contiene l'URL per il passaggio di contesto ad SGDT o il numero di protocollo GPC.",
         "definition": "Stringa alfanumerica di al più 400 caratteri"
       },
