@@ -82,7 +82,6 @@
                 "resourceType": "MedicationRequest",
                 "id": "f44f5d89-406a-488f-abbe-37f2a8e672ad",
                 "meta": {
-                    "versionId":"1",
                     "profile":  [
                         "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
                     ]
