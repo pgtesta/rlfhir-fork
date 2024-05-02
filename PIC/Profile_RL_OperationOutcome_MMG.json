@@ -84,7 +84,7 @@
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio.coding",
         "path": "OperationOutcome.issue.details.coding",
-        "short": "Stringa alfanumerica di al più 400 caratteri",
+        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo definisce il contenuto del campo text",
         "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia del contenuto di RLOperationOutcomeMMG contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
