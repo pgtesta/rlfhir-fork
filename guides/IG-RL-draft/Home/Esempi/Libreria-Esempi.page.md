@@ -356,8 +356,26 @@
     <tr>
       <td>PIC</td>
       <td>Bundle</td>
-      <td>Esempio del profilo RLBundleMMG</td>
+      <td>Esempio Bundle di attivazione dei servizi di presa in carico dei pazienti cronici da parte del MMG</td>
       <td>{{link:Bundle/RLBundleMMGpicMMG}}</td>
+    </tr>
+    <tr>
+      <td>PIC</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle di richiesta di interventi di Assistenza Domiciliare Programmata da parte del MMG</td>
+      <td>{{link:Bundle/RLBundleMMGADP}}</td>
+    </tr>
+    <tr>
+      <td>PIC</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle Risposta del messaggio con esito positivo</td>
+      <td>{{link:Bundle/RLBundleRispostaMMGPositiva}}</td>
+    </tr>
+    <tr>
+      <td>PIC</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle Risposta del messaggio con errore</td>
+      <td>{{link:Bundle/RLBundleRispostaMMGNegativa}}</td>
     </tr>
   </tbody>
 </table>
