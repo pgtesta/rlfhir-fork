@@ -1,11 +1,11 @@
 # {{page-title}}
-- [1. Header](#1. - header)
-- [2. Paradigma FHIR RESTful](#Paradigma-FHIR-RESTful)
-  - [2.1 EndPoint FHIR](#Endpoint-FHIR)
+- [1. Header](#1.-header)
+- [2. Paradigma FHIR RESTful](#2.-Paradigma-FHIR-RESTful)
+  - [2.1 EndPoint FHIR](#2.1-Endpoint-FHIR)
 
 
-- [3. Paradigma FHIR messaging](#Paradigma-FHIR-messaging)
-  - [3.1 EndPoint FHIR](#Endpoint-FHIR)
+- [3. Paradigma FHIR messaging](#3.-Paradigma-FHIR-messaging)
+  - [3.1 EndPoint FHIR](#3.1-Endpoint-FHIR)
   
 
 ## 1. Header 
@@ -20,7 +20,7 @@ Per la descrizione dell'API Manager e i servizi esposti si rimanda ai paragrafi 
 
 ## 2. Paradigma FHIR RESTful
 -- descrizione paradigma intellera
-### Endpoint FHIR
+### 2.1 Endpoint FHIR
 #### API Manager
 L'API Manager espone i servizi FHIR definiti nell'ecosistema di Regione Lombardia. 
 Il base_url con cui accedere a tali servizi è il seguente:
@@ -88,7 +88,7 @@ NB: “x” rappresenta una coppia di numeri che identificano in modo più detta
 
 Il dettaglio dell’operazione è riportato nella risorsa OperationOutcome.
 
-### Endpoint FHIR
+### 3.1 Endpoint FHIR
 #### API Manager
 L'API Manager espone i servizi FHIR di messaggistica definiti nell'ecosistema di Regione Lombardia. 
 Il base_url con cui accedere a tali servizi è il seguente:
@@ -97,6 +97,6 @@ Il base_url con cui accedere a tali servizi è il seguente:
 
 L'elenco delle API esposte è:
 
-|Metodo HTTP|URL|Nome profilo|Esposizione del servizio|
+|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
-|POST|<base_API_Manager>/_$message-process_|RLBundleMMG|SGDT|
+|POST|<base_API_Manager>/_$Bundle_|RLBundleMMG|SGDT|
