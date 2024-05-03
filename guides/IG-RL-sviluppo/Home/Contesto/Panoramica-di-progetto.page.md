@@ -11,27 +11,26 @@ Il protocollo di interoperabilità HL7-FHIR® utilizzato per ogni integrazione �
 
 ## Glossario
 Raccolta di acronimi e termini usati nel progetto:
- |     Voce      |     Descrizione                                                                                                                                                                    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     ADP       |     Assistenza Domiciliare Programmata                                                                                                                                             |
-|     API       |     Application Programming Interface                                                                                                                                              |
-|     ASST      |     Azienda Socio-Sanitaria Territoriale                                                                                                                                           |
-|     C-DOM     |     Cure Domiciliari                                                                                                                                                               |
-|     CE-MMG    |     Cartella Elettronica del Medico di Medicina Generale                                                                                                                           |
-|     DDC       |     Distribuzione Dati Codificati                                                                                                                                                  |
-|     EEPA      |     Ente Erogatore Privato Accreditato                                                                                                                                             |
-|     EVM       |     Equipe di Valutazione   Multidimensionale                                                                                                                                      |
-|     FHIR      |     Fast Healthcare Interoperability Resource                                                                                                                                      |
-|     IG        |     Implementation   Guide                                                                                                                                                         |
-|     L1        |     Codice   identificativo di livello 1 degli enti aderenti al progetto SISS. La risorsa   FHIR che descrive questa tipologia di struttura è RLOrganizationL1                     |
-|     L2        |     Codice   identificativo di livello 2 degli Enti Erogatori di servizi   socioassistenziali. La risorsa FHIR che descrive questa tipologia di   struttura è RLOrganizationL2.    |
-|     MMG       |     Medico di   Medicina Generale                                                                                                                                                  |
-|     NAR       |     Nuova   Anagrafe Regionale                                                                                                                                                     |
-|     NPRI      |     Nuova   Piattaforma Regionale di Integrazione                                                                                                                                  |
-|     PAI       |     Piano   Assistenziale Individuale                                                                                                                                              |
-|     PI        |     Progetto Individuale                                                                                                                                                           |
-|     PIPP      |     Prestazioni di Particolare Impegno   Professionale                                                                                                                             |
-|     SGDT      |     Sistema di   Gestione Digitale del Territorio                                                                                                                                  |
-|     SISS      |     Sistema   Informativo Socio-Sanitario                                                                                                                                          |
-|     REST      |     Representational   State Transfer                                                                                                                                              |
-|     UdO       |     Unità d’Offerta. Strutture   presenti nella rete territoriale che rendono disponibili servizi   sociosanitari e assistenziali.                                                 |
+|Voce |Descrizione|
+|ADP  |Assistenza Domiciliare Programmata |
+|API  |Application Programming Interface  |
+|ASST |Azienda Socio-Sanitaria Territoriale    |
+|C-DOM|Cure Domiciliari    |
+|CE-MMG    |Cartella Elettronica del Medico di Medicina Generale   |
+|DDC  |Distribuzione Dati Codificati |
+|EEPA |Ente Erogatore Privato Accreditato |
+|EVM  |Equipe di Valutazione   Multidimensionale    |
+|FHIR |Fast Healthcare Interoperability Resource    |
+|IG   |Implementation   Guide   |
+|L1   |Codice   identificativo di livello 1 degli enti aderenti al progetto SISS. La risorsa   FHIR che descrive questa tipologia di struttura è RLOrganizationL1 |
+|L2   |Codice   identificativo di livello 2 degli Enti Erogatori di servizi   socioassistenziali. La risorsa FHIR che descrive questa tipologia di   struttura è RLOrganizationL2.    |
+|MMG  |Medico di   Medicina Generale |
+|NAR  |Nuova   Anagrafe Regionale    |
+|NPRI |Nuova   Piattaforma Regionale di Integrazione|
+|PAI  |Piano   Assistenziale Individuale  |
+|PI   |Progetto Individuale|
+|PIPP |Prestazioni di Particolare Impegno   Professionale|
+|SGDT |Sistema di   Gestione Digitale del Territorio|
+|SISS |Sistema   Informativo Socio-Sanitario   |
+|REST |Representational   State Transfer  |
+|UdO  |Unità d’Offerta. Strutture   presenti nella rete territoriale che rendono disponibili servizi   sociosanitari e assistenziali.    |
