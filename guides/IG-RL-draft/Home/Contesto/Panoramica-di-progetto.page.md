@@ -11,7 +11,9 @@ Il protocollo di interoperabilità HL7-FHIR® utilizzato per ogni integrazione �
 
 ## Glossario
 Raccolta di acronimi e termini usati nel progetto:
-|Voce |Descrizione|
+
+| Voce | Descrizione |
+|---|---|
 |ADP  |Assistenza Domiciliare Programmata |
 |API  |Application Programming Interface  |
 |ASST |Azienda Socio-Sanitaria Territoriale    |
