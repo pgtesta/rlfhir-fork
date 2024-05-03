@@ -77,5 +77,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
 | issue | Codice dell’esito del messaggio | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/issue-type}} |
-| contenutoMessaggio | Codice e descrizione dell’elaborazione positiva del messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG}} |
-| errore | Codice e descrizione dell’elaborazione terminata in errore del messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/operation-error}} |
+| contenutoMessaggio | Codice e descrizione dell’elaborazione positiva del messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio}} |
+| errore | Codice e descrizione dell’elaborazione terminata in errore del messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio}} |

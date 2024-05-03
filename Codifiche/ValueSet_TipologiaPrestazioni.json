@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SGDT-TipologiaPrestazione",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+  "version": "1.0.0",
+  "name": "SGDT - Tipologia Prestazione",
+  "status": "active",
+  "date": "2023-10-26",
+  "description": "ValueSet relativo alle tipologie di prestazioni",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaPrestazione",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "SPE",
+            "display": "Prestazione specialistica"
+          },
+          {
+            "code": "INF",
+            "display": "Prestazione infermieristica"
+          },
+          {
+            "code": "SOC",
+            "display": "Prestazione sociale"
+          },
+          {
+            "code": "EDU",
+            "display": "Intervento educazionale"
+          }
+        ]
+      }
+    ]
+  }
+}

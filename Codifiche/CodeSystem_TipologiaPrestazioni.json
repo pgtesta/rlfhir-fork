@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-TipologiaPrestazione",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaPrestazione",
+  "version": "1.0.0",
+  "name": "SGDT - Tipologia Prestazione",
+  "status": "active",
+  "date": "2024-04-30T08:15:44.8689778+00:00",
+  "description": "CodeSystem relativo alle tipologie di prestazioni",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "SPE",
+      "display": "Prestazione specialistica"
+    },
+    {
+      "code": "INF",
+      "display": "Prestazione infermieristica"
+    },
+    {
+      "code": "SOC",
+      "display": "Prestazione sociale"
+    },
+    {
+      "code": "EDU",
+      "display": "Intervento educazionale"
+    }
+  ]
+}

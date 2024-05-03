@@ -108,6 +108,7 @@
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
         "short": "Tipologia di prestazione riportata nel campo \"code\". La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.",
+        "comment":"Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di prestazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1,
         "max": "1"
       },
@@ -127,7 +128,7 @@
         "id": "ServiceRequest.category.coding.code",
         "path": "ServiceRequest.category.coding.code",
         "short": "Codice della tipologia di prestazione",
-        "definition": "Stringa alfanumerica di un carattere",
+        "definition": "Stringa alfanumerica di 3 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1,
         "binding": {
