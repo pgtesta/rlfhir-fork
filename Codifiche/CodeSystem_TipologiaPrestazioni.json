@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "CodeSystem-SGDT-TipologiaPrestazione",
-  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaPrestazione",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaPrestazione-category",
   "version": "1.0.0",
   "name": "SGDT - Tipologia Prestazione",
   "status": "active",
