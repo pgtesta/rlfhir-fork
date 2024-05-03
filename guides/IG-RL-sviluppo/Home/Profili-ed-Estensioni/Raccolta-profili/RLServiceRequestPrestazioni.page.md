@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Il profilo RLServiceRequestPrestazioniè stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e le informazioni relative alla richiesta di una prestazione. La prestazione può essere specialistica, infermieristica, sociale o un intervento educazionale.
+Il profilo RLServiceRequestPrestazioniè stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e comprende le informazioni riguardanti la richiesta di una prestazione, che può essere, nello specifico,una prestazione specialistica e/o diagnostica, infermieristica o sociale, pianificata all’interno di un progetto individuale di un cittadino. Questo profilo può, inoltre, includere il tipo di intervento educazionale, le rispettive modalità di erogazione e la frequenza di erogazione definiti nel progetto individuale del paziente.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioni}}.
 
@@ -79,8 +79,9 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Code | Codice e descrizione della prestazione specialistica | Catalogo regionale del SISS |
-| Code| Codice e descrizione della prestazione infermieristica | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}|
-| Code| Codice e descrizione della prestazione sociale | *Codifica in fase di definizione|
-| Code | Codice e descrizione dell’intervento educazionale da attivare | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali}} |
+| category | Codice e descrizione della tipologia di prestazione |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione}} |
+| SpecialisticaDiagnostica | Codice e descrizione della prestazione specialistica | Catalogo regionale del SISS |
+| Infermieristica| Codice e descrizione della prestazione infermieristica | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/Prestazioni}}|
+| PrestazioneSociale| Codice e descrizione della prestazione sociale | *Codifica in fase di definizione|
+| InterventoEducazionale | Codice e descrizione dell’intervento educazionale da attivare | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-InterventiEducazionali}} |
 | locationCode | Codice e descrizione del canale di comunicazione con il quale verrà erogato l’intervento educazionale | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ModalitaErogazioneIntEdu}} |

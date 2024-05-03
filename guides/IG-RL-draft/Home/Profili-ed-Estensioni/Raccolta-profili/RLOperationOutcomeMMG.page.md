@@ -6,6 +6,8 @@
 
 ## Descrizione
 
+Il profilo RLOrganizationL1 è stato strutturato a partire dalla risorsa standard FHIR [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) per contenere il dettaglio delle informazioni relative all’elaborazione dell’operazione tentata, nello specifico del messaggio scambiato tra la Cartella Clinica Elettronica dell’MMG e la piattaforma SGDT.
+
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG}}.
 
 <br>
@@ -55,3 +57,25 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Tipologie di ricerca
+
+Attualmente non sono stati definiti criteri di ricerca.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Search parameter
+
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Practitioner.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## ValueSet
+
+Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerMedicoPrescrittore:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| issue | Codice dell’esito del messaggio | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/issue-type}} |
+| contenutoMessaggio | Codice e descrizione dell’elaborazione positiva del messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG}} |
+| errore | Codice e descrizione dell’elaborazione terminata in errore del messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/operation-error}} |

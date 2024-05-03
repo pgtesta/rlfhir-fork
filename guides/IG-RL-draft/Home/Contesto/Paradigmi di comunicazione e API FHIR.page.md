@@ -1,11 +1,11 @@
 # {{page-title}}
-- [1. Header](#1. - header)
-- [2. Paradigma FHIR RESTful](#Paradigma-FHIR-RESTful)
-  - [2.1 EndPoint FHIR](#Endpoint-FHIR)
+- [1. Header](#1.-header)
+- [2. Paradigma FHIR RESTful](#2.-Paradigma-FHIR-RESTful)
+  - [2.1 EndPoint FHIR](#2.1-Endpoint-FHIR)
 
 
-- [3. Paradigma FHIR messaging](#Paradigma-FHIR-messaging)
-  - [3.1 EndPoint FHIR](#Endpoint-FHIR)
+- [3. Paradigma FHIR messaging](#3.-Paradigma-FHIR-messaging)
+  - [3.1 EndPoint FHIR](#3.1-Endpoint-FHIR)
   
 
 ## 1. Header 
@@ -19,8 +19,16 @@ Le chiamate HTTP relative all'integrazione FHIR devono contenere i seguenti head
 Per la descrizione dell'API Manager e i servizi esposti si rimanda ai paragrafi riportati di seguto specifici per paradigma di comunicazione.
 
 ## 2. Paradigma FHIR RESTful
--- descrizione paradigma intellera
-### Endpoint FHIR
+Il modello di interoperabilità REST in standard FHIR prevede l’interscambio di informazioni tra un generico “richiedente” (Client) e un generico “espositore” (Server): 
+
+- Il server FHIR espone le Risorse/Profili su specifici punti di accesso (endpoint) raggiungibili con il protocollo https. 
+- Il client FHIR può eseguire le chiamate di interesse agli endpoint dove sono presenti le interfacce programmatiche API (Application Programming Interface) che implementano, in modo semplice e snello conforme all’approccio RESTful, i metodi di fruizione dei dati esposti. 
+
+Tale modalità di consultazione dei dati è definita “logica PULL”, e prevede esclusivamente chiamate di tipo GET per consultare i dati esposti. Il risultato di ogni chiamata è la produzione di una risorsa bundle. Questa risorsa ha lo scopo di raccogliere una serie di Risorse/Profili FHR sulla base dei parametri di ricerca utilizzati nella chiamata GET. 
+
+Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione assegnata dal server, avviene tramite una richiesta HTTPs POST.
+
+### 2.1 Endpoint FHIR
 #### API Manager
 L'API Manager espone i servizi FHIR definiti nell'ecosistema di Regione Lombardia. 
 Il base_url con cui accedere a tali servizi è il seguente:
@@ -88,7 +96,7 @@ NB: “x” rappresenta una coppia di numeri che identificano in modo più detta
 
 Il dettaglio dell’operazione è riportato nella risorsa OperationOutcome.
 
-### Endpoint FHIR
+### 3.1 Endpoint FHIR
 #### API Manager
 L'API Manager espone i servizi FHIR di messaggistica definiti nell'ecosistema di Regione Lombardia. 
 Il base_url con cui accedere a tali servizi è il seguente:
@@ -97,6 +105,6 @@ Il base_url con cui accedere a tali servizi è il seguente:
 
 L'elenco delle API esposte è:
 
-|Metodo HTTP|URL|Nome profilo|Esposizione del servizio|
+|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
-|POST|<base_API_Manager>/_$message-process_|RLBundleMMG|SGDT|
+|POST|<base_API_Manager>/_$Bundle_|RLBundleMMG|SGDT|

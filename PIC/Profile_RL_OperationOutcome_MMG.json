@@ -99,7 +99,11 @@
         "path": "OperationOutcome.issue.details.coding.code",
         "short": "Codice del contenuto del campo text",
         "definition": "Stringa alfanumerica di al più 2 caratteri",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
+        }
       },
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.display",
@@ -138,7 +142,12 @@
         "path": "OperationOutcome.issue.details.coding.code",
         "short": "Codice dell'errore",
         "definition": "Stringa alfanumerica di al più 2 caratteri",
-        "min": 1
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/operation-error"
+        }
+        
       },
       {
         "id": "OperationOutcome.issue.details:errore.coding.display",

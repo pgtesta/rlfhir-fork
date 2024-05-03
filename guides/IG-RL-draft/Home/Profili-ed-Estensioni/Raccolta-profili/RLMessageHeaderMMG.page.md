@@ -6,6 +6,8 @@
 
 ## Descrizione
 
+Il profilo RLMessageHeaderMMG è stato strutturato a partire dalla risorsa generica FHIR [MessageHeader](https://hl7.org/fhir/R4/messageheader.html) in modo da contenere le informazioni pertinenti al messaggio scambiato tra la Cartella Clinica Elettronica dell’MMG e la piattaforma SGDT.
+
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG}}.
 
 <br>
@@ -54,3 +56,26 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 Al momento non ci sono esempi disponibili. 
 <br>
 </div>
+
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Tipologie di ricerca
+
+Attualmente non sono stati definiti criteri di ricerca.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Search parameter
+
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Observation.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## ValueSet
+
+Nella seguente tabella sono elencati i value set relativi al profilo RLObservationEsitoValutazione:
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| eventCoding | Codice e descrizione dell’evento rappresentato dal messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio}} |

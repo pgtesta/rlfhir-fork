@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLPatientBase è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) e riporta i dettagli anagrafici di un cittadino.
+Il profilo RLPatientBase è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) per contenere le informazioni anagrafiche di base di un cittadino.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase}}.
 
@@ -58,6 +58,21 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 Al momento non ci sono esempi disponibili.
 <br>
 </div>
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Tipologie di ricerca
+
+Attualmente non sono stati definiti criteri di ricerca.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Search parameter
+
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Observation.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
 
 ## ValueSet
 Nella seguente tabella sono elencati i value set relativi al profilo RLPatientBase:
