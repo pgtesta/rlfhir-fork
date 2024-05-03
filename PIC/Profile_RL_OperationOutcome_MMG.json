@@ -135,7 +135,7 @@
         "id": "OperationOutcome.issue.details:errore.coding.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/operation-error"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio"
       },
       {
         "id": "OperationOutcome.issue.details:errore.coding.code",
@@ -145,7 +145,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/operation-error"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio"
         }
         
       },
