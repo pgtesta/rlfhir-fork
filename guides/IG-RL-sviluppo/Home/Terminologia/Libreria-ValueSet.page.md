@@ -498,6 +498,13 @@
       <td>ValueSet relativo alla codifica della tipologia di evento del Messaggio</td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio</td>
     </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione}}
+      </td>
+      <td>ValueSet relativo alla codifica della tipologia di prestazione</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione</td>
+    </tr>
   </tbody>
 </table>
   </body>
