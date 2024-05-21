@@ -10,8 +10,196 @@
   "content": "complete",
   "concept": [
     {
-      "code": "2",
-      "display": "operazione non ammessa"
+      "code": "10",
+      "display": "[Entry-\" + i + \"] La risorsa \"Condition\" si trova prima della risorsa \"Patient\""
+    },
+    {
+      "code": "11",
+      "display": "Codice livello cronicità [\" + code + \"] non trovato sul database di SGDT"
+    },
+    {
+      "code": "12",
+      "display": "Codice ASST di assistenza non trovato per il paziente con codice fiscale \" + assistito.getCf()"
+    },
+    {
+      "code": "13",
+      "display": "Credenziale ACTIVCRED non valida. Errore dettagliato: \" + e.getMessage()"
+    },
+    {
+      "code": "2.0",
+      "display": "Header ACTIVCRED non trovato (valore NULL)"
+    },
+    {
+      "code": "2.1",
+      "display": "Header ACTIVCRED non trovato (valore VUOTO)"
+    },
+    {
+      "code": "3.0",
+      "display": "[Entry-\" + i + \"] Codice fiscale non trovato negli identifier"
+    },
+    {
+      "code": "3.1",
+      "display": "Sesso del paziente non presente nel bundle."
+    },
+    {
+      "code": "3.10",
+      "display": "[Entry-\" + i + \"] Risorsa presente ma con tipologia non valorizzata"
+    },
+    {
+      "code": "3.11",
+      "display": "[Entry-\" + i + \"] Codice regionale della patologia primaria non trovato."
+    },
+    {
+      "code": "3.2",
+      "display": "Dati anagrafici del paziente (nome e cognome) non presenti nel bundle."
+    },
+    {
+      "code": "3.3",
+      "display": "Codice Istat non presente nel bundle"
+    },
+    {
+      "code": "3.4",
+      "display": "Codice livello cronicità non presente nel bundle"
+    },
+    {
+      "code": "3.5",
+      "display": "Nessuna risorsa di tipo \"Patient\" trovata nel bundle"
+    },
+    {
+      "code": "3.6",
+      "display": "Nessuna patologia primaria trovata nel bundle"
+    },
+    {
+      "code": "3.7",
+      "display": "Bundle mancante o vuoto"
+    },
+    {
+      "code": "3.8",
+      "display": "[Entry-\" + i + \"] Oggetto del bundle vuoto"
+    },
+    {
+      "code": "3.9",
+      "display": "[Entry-\" + i + \"] Risorsa non valida o mancante"
+    },
+    {
+      "code": "4.0",
+      "display": "Errore durante il recupero dei dati del paziente con codice fiscale [\" + codiceFiscalePaz + \"]"
+    },
+    {
+      "code": "4.1",
+      "display": "Errore durante il recupero del paziente sulla NAR. Riprovare più tardi."
+    },
+    {
+      "code": "4.2",
+      "display": "Il paziente (NAR) non è legato a nessuna ASST."
+    },
+    {
+      "code": "4.3",
+      "display": "Il paziente (NAR) non è legato a nessun medico."
+    },
+    {
+      "code": "4.4",
+      "display": "Il paziente (NAR) è legato ad un medico con codice fiscale diverso da quello presente in ACTIVCRED (NAR = \"\" + assistito.getCodiceFiscaleMedico() + \"\" (primario), \"\" + assistito.getCodiceFiscaleMedicoIncaricato() + \"\" (temporaneo), ACTIVCRED = \" + mc.getUserId() + \")"
+    },
+    {
+      "code": "8.0",
+      "display": "[Entry-\" + i + \"] Risorsa di tipo MessageHeader incompleta"
+    },
+    {
+      "code": "8.1",
+      "display": "[Entry-\" + i + \"] Risorsa di tipo Patient incompleta"
+    },
+    {
+      "code": "8.2",
+      "display": "[Entry-\" + i + \"] Campo \"identifier\" non trovato per il paziente"
+    },
+    {
+      "code": "8.3",
+      "display": "[Entry-\" + i + \"] Risorsa di tipo \"MedicationRequest\" incompleta"
+    },
+    {
+      "code": "8.4",
+      "display": "[Entry-\" + i + \"] Risorsa di tipo \"Condition\" incompleta"
+    },
+    {
+      "code": "9.0",
+      "display": "[Entry-\" + i + \"] Numero elementi in \"profile\" non atteso per la risorsa MessageHeader (previsti: 1 | trovati: \" + msgInput.getMeta().getProfile().size() + \")"
+    },
+    {
+      "code": "9.1",
+      "display": "[Entry-\" + i + \"] Numero elementi in \"profile\" non atteso per la risorsa Patient (previsti: 1 | trovati: \" + patient.getMeta().getProfile().size() + \")"
+    },
+    {
+      "code": "9.10",
+      "display": "Valore in \"profile\" non atteso per la risorsa MessageHeader (previsto: \" + urlSystemMessageHeader + \" | trovato: \" + msgInput.getMeta().getProfile().get(0) + \")"
+    },
+    {
+      "code": "9.11",
+      "display": "Valore in \"profile\" non atteso per la risorsa Patient (previsto: \" + urlSystemPatient + \" | trovato: \" + patient.getMeta().getProfile().get(0) + \")"
+    },
+    {
+      "code": "9.12",
+      "display": "[Entry-\" + i + \"] Valore in \"profile\" non atteso per la risorsa MedicationRequest (previsto: \" + urlSystemTerapiaFarmacologica + \" | trovato: \" + medReq.getMeta().getProfile().get(0) + \")"
+    },
+    {
+      "code": "9.13",
+      "display": "[Entry-\" + i + \"] Valore in \"profile\" non atteso per la risorsa Condition (previsto: \" + urlSystemCondition + \" | trovato: \" + patologia.getMeta().getProfile().get(0) + \")"
+    },
+    {
+      "code": "9.14",
+      "display": "Nome del paziente nel bundle diverso dal nome paziente recuperato dalla NAR (nome nel bundle = \" + nomePaziente + \", nome nella NAR = \" + assistito.getNome()"
+    },
+    {
+      "code": "9.15",
+      "display": "Cognome del paziente nel bundle diverso dal cognome paziente recuperato dalla NAR (cognome nel bundle = \" + cognomePaziente + \", cognome nella NAR = \" + assistito.getCognome()"
+    },
+    {
+      "code": "9.16",
+      "display": "Data di nascita nel bundle diversa dalla data di nascita presente sulla NAR (data di nascita nel bundle = \" + dataNascitaPaziente"
+    },
+    {
+      "code": "9.17",
+      "display": "[Entry-\" + i + \"] La patologia si riferisce ad un paziente diverso da quello del bundle (previsto: \" + idPaz + \" | trovato: \" + idRefSubject + \")"
+    },
+    {
+      "code": "9.2",
+      "display": "[Entry-\" + i + \"] Numero di entries di tipo \"Patient\" non atteso (previsti: 1 | trovati: \" + patientIndex + \")"
+    },
+    {
+      "code": "9.3",
+      "display": "[Entry-\" + i + \"] Numero di identifier per il paziente non atteso (previsti: massimo 3 | trovati: \" + elencoDatiAnagrafici.size() + \")"
+    },
+    {
+      "code": "9.4",
+      "display": "[Entry-\" + i + \"] Numero elementi in \"profile\" non atteso per la risorsa MedicationRequest (previsti: 1 | trovati: \" + medReq.getMeta().getProfile().size() + \")"
+    },
+    {
+      "code": "9.5",
+      "display": "[Entry-\" + i + \"] Numero elementi in \"profile\" non atteso per la risorsa Condition (previsti: 1 | trovati: \" + patologia.getMeta().getProfile().size() + \")"
+    },
+    {
+      "code": "9.6",
+      "display": "Codice livello cronicità [\" + code + \"] non in formato intero"
+    },
+    {
+      "code": "9.7",
+      "display": "[Entry-\" + i + \"] Numero di Patologie Primarie non atteso (previsti: 1 | trovati: \" + conditionPrimaria + \")"
+    },
+    {
+      "code": "9.8",
+      "display": "[Entry-\" + i + \"] Numero di Patologie Secondarie non atteso (previsti: 1 | trovati: \" + conditionPrimaria + \")"
+    },
+    {
+      "code": "9.9",
+      "display": "[Entry-\" + i + \"] livello cronicità errato presente nel bundle (previsto: \" + urlSystemLivelloPaziente + \")"
+    },
+    {
+      "code": "99.1",
+      "display": "Errore restituito da \"Verifica assistito\": \" + assistitoOut.getErrorMessage()"
+    },
+    {
+      "code": "99.2",
+      "display": "Errore restituito da \"Verifica assistito\": \" + e.getMessage()"
     }
   ]
 }

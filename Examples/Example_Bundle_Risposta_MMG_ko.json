@@ -1,72 +1,72 @@
 {
-    "resourceType": "Bundle",
-    "id": "RLBundleRispostaMMGNegativa",
-    "meta": {
-        "profile":  [
-            "https://fhir.siss.regione.lombardia.it/fhir/StructureDefinition/RLBundleRispostaMMG"
-        ]
-    },
-    "type": "message",
-    "timestamp": "2023-04-26T13:27:57.887+01:00",
-    "entry":  [
-        {
-            "resource": {
-                "resourceType": "MessageHeader",
-                "id": "RLMessageHeader",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
-                    ]
-                },
-                "eventCoding": {
-                    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
-                    "code": "picMMG",
-                    "display": "visualizzazione pagina redazione PI"
-                },
-                "destination":  [
-                    {
-                        "name": "MMG",
-                        "endpoint": "urn:rlfhir:mmg"
-                    }
-                ],
-                "source": {
-                    "name": "SGDT",
-                    "endpoint": "urn:rlfhir:sgdt"
-                },
-                "response": {
-                    "identifier": "RLMessageHeader",
-                    "code": " fatal-error",
-                    "details": {
-                        "reference": "OperationOutcome/83507607885569708703"
-                    }
-                }
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "OperationOutcome",
-                "id": "83507607885569708703",
-                "meta": {
-                    "profile":  [
-                        "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
-                    ]
-                },
-                "issue":  [
-                    {
-                        "severity": "error",
-                        "code": "invalid",
-                        "details": {
-                            "coding":  [
-                                {
-                                    "system": "https://fhir.siss.regione.lombardia.it/operation-error",
-                                    "code": "2",
-                                    "display": "operazione non ammessa"
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        }
+  "resourceType": "Bundle",
+  "id": "RLBundleRispostaMMGNegativa",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/fhir/StructureDefinition/RLBundleRispostaMMG"
     ]
+  },
+  "type": "message",
+  "timestamp": "2023-04-26T13:27:57.887+01:00",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "RLMessageHeader",
+        "meta": {
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
+          "code": "picMMG",
+          "display": "visualizzazione pagina redazione PI"
+        },
+        "destination": [
+          {
+            "name": "MMG",
+            "endpoint": "urn:rlfhir:mmg"
+          }
+        ],
+        "source": {
+          "name": "SGDT",
+          "endpoint": "urn:rlfhir:sgdt"
+        },
+        "response": {
+          "identifier": "RLMessageHeader",
+          "code": " fatal-error",
+          "details": {
+            "reference": "OperationOutcome/83507607885569708703"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "83507607885569708703",
+        "meta": {
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
+          ]
+        },
+        "issue": [
+          {
+            "severity": "error",
+            "code": "invalid",
+            "details": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/operation-error",
+                  "code": "2",
+                  "display": "operazione non ammessa"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

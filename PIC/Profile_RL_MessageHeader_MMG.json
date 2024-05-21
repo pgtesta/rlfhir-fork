@@ -38,7 +38,7 @@
         "id": "MessageHeader.event[x]",
         "path": "MessageHeader.event[x]",
         "short": "Codice e descrizione dell'evento rappresentato dal messaggio",
-        "comment":"Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di evento del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di evento del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "type": [
           {
             "code": "Coding"
@@ -80,7 +80,7 @@
         "id": "MessageHeader.destination.endpoint",
         "path": "MessageHeader.destination.endpoint",
         "short": "Indirizzo URL del destinatario del messaggio",
-        "definition":"urn:rlfhir:destination.name"
+        "definition": "urn:rlfhir:destination.name"
       },
       {
         "id": "MessageHeader.source",

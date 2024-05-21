@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLOrganizationDataCessazione",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:20:07.5197734+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataCessazione",
+  "name": "RLOrganizationDataCessazione",
+  "status": "active",
+  "experimental": false,
+  "description": "Parametro di ricerca di strutture SISS di livello 2 specificando la data di cessazione.",
+  "code": "dataCessazione",
+  "base": [
+    "Organization"
+  ],
+  "type": "date",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione').value",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}
