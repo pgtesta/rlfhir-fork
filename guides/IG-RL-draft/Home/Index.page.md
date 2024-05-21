@@ -27,7 +27,7 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
  - Nel profilo RLCarePlanProgettoIndividuale è stato aggiornato l’esempio della chiamata per la ricerca dei Progetti Individuali attivi.
  - Nel profilo RLOrganizationL2 è stata aggiornata la descrizione e aggiunto il parametro “dataCessazione” per alcune tipologie di ricerca.
  - Nel profilo RLGoalObiettiviSalute sono state aggiornate le descrizioni dei campi “description” e “note”.
- - Nella sezione Terminologia sono stati aggiunti i seguenti value-set:
+- Nella sezione Terminologia sono stati aggiunti i seguenti value-set:
   - SGDT MessageEvents;
   - GPC LivelloGravita;
   - GPC ContenutoOperationOutcomeMMG;
