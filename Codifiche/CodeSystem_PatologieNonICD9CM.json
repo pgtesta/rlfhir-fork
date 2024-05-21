@@ -8,10 +8,10 @@
   "date": "2024-01-25",
   "description": "CodeSystem relativo alla codifica delle patologie non ICD9-CM",
   "content": "complete",
-  "concept":[
+  "concept": [
     {
       "code": "1",
-       "display": "TRAPIANTATI ATTIVI"
+      "display": "TRAPIANTATI ATTIVI"
     },
     {
       "code": "2",
@@ -43,7 +43,7 @@
     },
     {
       "code": "9",
-      "display": "INSUFFICIENZA RESPIRATORIA\/OSSIGENOTERAPIA"
+      "display": "INSUFFICIENZA RESPIRATORIA/OSSIGENOTERAPIA"
     },
     {
       "code": "10",
@@ -269,5 +269,5 @@
       "code": "65",
       "display": "MALATTIE DELL'APPARATO DIGERENTE"
     }
-   ]
+  ]
 }

@@ -12,268 +12,268 @@
       {
         "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PatologieNonICD9CM",
         "version": "1.0.0",
-        "concept":[
+        "concept": [
           {
-           "code": "01",
-           "display": "TRAPIANTATI ATTIVI"
+            "code": "01",
+            "display": "TRAPIANTATI ATTIVI"
           },
           {
-           "code": "02",
-           "display": "IRC - DIALISI"
+            "code": "02",
+            "display": "IRC - DIALISI"
           },
           {
-           "code": "03",
-           "display": "SINTOMI, SEGNI E STATI MORBOSI MAL DEFINITI"
+            "code": "03",
+            "display": "SINTOMI, SEGNI E STATI MORBOSI MAL DEFINITI"
           },
           {
-           "code": "04",
-           "display": "ACROMEGALIA E GIGANTISMO"
+            "code": "04",
+            "display": "ACROMEGALIA E GIGANTISMO"
           },
           {
-           "code": "05",
-           "display": "MALATTIE DEL SANGUE E DEGLI ORGANI EMATOPOIETICI"
+            "code": "05",
+            "display": "MALATTIE DEL SANGUE E DEGLI ORGANI EMATOPOIETICI"
           },
           {
-           "code": "06",
-           "display": "HIV POSITIVO ED AIDS CONCLAMATO"
+            "code": "06",
+            "display": "HIV POSITIVO ED AIDS CONCLAMATO"
           },
           {
-           "code": "07",
-           "display": "TRAPIANTATI NON ATTIVI"
+            "code": "07",
+            "display": "TRAPIANTATI NON ATTIVI"
           },
           {
-           "code": "08",
-           "display": "DIABETE MELLITO TIPO 1 COMPLICATO"
+            "code": "08",
+            "display": "DIABETE MELLITO TIPO 1 COMPLICATO"
           },
           {
-           "code": "09",
-           "display": "INSUFFICIENZA RESPIRATORIA\/OSSIGENOTERAPIA"
+            "code": "09",
+            "display": "INSUFFICIENZA RESPIRATORIA/OSSIGENOTERAPIA"
           },
           {
-           "code": "010",
-           "display": "NEOPLASIA ATTIVA"
+            "code": "010",
+            "display": "NEOPLASIA ATTIVA"
           },
           {
-           "code": "011",
-           "display": "NEUROMIELITE OTTICA"
+            "code": "011",
+            "display": "NEUROMIELITE OTTICA"
           },
           {
-           "code": "012",
-           "display": "ANEMIE EMOLITICHE IMMUNI"
+            "code": "012",
+            "display": "ANEMIE EMOLITICHE IMMUNI"
           },
           {
-           "code": "013",
-           "display": "SCLEROSI MULTIPLA"
+            "code": "013",
+            "display": "SCLEROSI MULTIPLA"
           },
           {
-           "code": "014",
-           "display": "VASCULOPATIA ARTERIOSA"
+            "code": "014",
+            "display": "VASCULOPATIA ARTERIOSA"
           },
           {
-           "code": "015",
-           "display": "ALCUNE CONDIZIONI MORBOSE DI ORIGINE PERINATALE"
+            "code": "015",
+            "display": "ALCUNE CONDIZIONI MORBOSE DI ORIGINE PERINATALE"
           },
           {
-           "code": "016",
-           "display": "DIABETE MELLITO TIPO 2 COMPLICATO"
+            "code": "016",
+            "display": "DIABETE MELLITO TIPO 2 COMPLICATO"
           },
           {
-           "code": "017",
-           "display": "INSUFFICIENZA RENALE CRONICA"
+            "code": "017",
+            "display": "INSUFFICIENZA RENALE CRONICA"
           },
           {
-           "code": "018",
-           "display": "MALATTIE DELLE GHIANDOLE ENDOCRINE, DELLA NUTRIZIONE, DEL METABOLISMOE DISTURBI IMMUNITARI"
+            "code": "018",
+            "display": "MALATTIE DELLE GHIANDOLE ENDOCRINE, DELLA NUTRIZIONE, DEL METABOLISMOE DISTURBI IMMUNITARI"
           },
           {
-           "code": "019",
-           "display": "CIRROSI EPATICA"
+            "code": "019",
+            "display": "CIRROSI EPATICA"
           },
           {
-           "code": "020",
-           "display": "SCOMPENSO CARDIACO"
+            "code": "020",
+            "display": "SCOMPENSO CARDIACO"
           },
           {
-           "code": "021",
-           "display": "SINDROME DI CUSHING"
+            "code": "021",
+            "display": "SINDROME DI CUSHING"
           },
           {
-           "code": "022",
-           "display": "SCLEROSI SISTEMICA"
+            "code": "022",
+            "display": "SCLEROSI SISTEMICA"
           },
           {
-           "code": "023",
-           "display": "VASCULOPATIA CEREBRALE"
+            "code": "023",
+            "display": "VASCULOPATIA CEREBRALE"
           },
           {
-           "code": "024",
-           "display": "SPONDILITE ANCHILOSANTE"
+            "code": "024",
+            "display": "SPONDILITE ANCHILOSANTE"
           },
           {
-           "code": "025",
-           "display": "CARDIOPATIA VALVOLARE"
+            "code": "025",
+            "display": "CARDIOPATIA VALVOLARE"
           },
           {
-           "code": "026",
-           "display": "PANCREATITE CRONICA"
+            "code": "026",
+            "display": "PANCREATITE CRONICA"
           },
           {
-           "code": "027",
-           "display": "VASCULOPATIA VENOSA"
+            "code": "027",
+            "display": "VASCULOPATIA VENOSA"
           },
           {
-           "code": "028",
-           "display": "DEMENZE"
+            "code": "028",
+            "display": "DEMENZE"
           },
           {
-           "code": "029",
-           "display": "CARDIOPATIA ISCHEMICA"
+            "code": "029",
+            "display": "CARDIOPATIA ISCHEMICA"
           },
           {
-           "code": "030",
-           "display": "MIOCARDIOPATIA ARITMICA"
+            "code": "030",
+            "display": "MIOCARDIOPATIA ARITMICA"
           },
           {
-           "code": "031",
-           "display": "DIABETE INSIPIDO"
+            "code": "031",
+            "display": "DIABETE INSIPIDO"
           },
           {
-           "code": "032",
-           "display": "MIOCARDIOPATIA  NON ARITMICA"
+            "code": "032",
+            "display": "MIOCARDIOPATIA  NON ARITMICA"
           },
           {
-           "code": "033",
-           "display": "PARKINSON E PARKINSONISMI"
+            "code": "033",
+            "display": "PARKINSON E PARKINSONISMI"
           },
           {
-           "code": "034",
-           "display": "EPILESSIA"
+            "code": "034",
+            "display": "EPILESSIA"
           },
           {
-           "code": "035",
-           "display": "NANISMO IPOFISARIO"
+            "code": "035",
+            "display": "NANISMO IPOFISARIO"
           },
           {
-           "code": "036",
-           "display": "MALATTIE DEL SISTEMA CIRCOLATORIO"
+            "code": "036",
+            "display": "MALATTIE DEL SISTEMA CIRCOLATORIO"
           },
           {
-           "code": "037",
-           "display": "MIASTENIA GRAVE"
+            "code": "037",
+            "display": "MIASTENIA GRAVE"
           },
           {
-           "code": "038",
-           "display": "MORBO DI ADDISON"
+            "code": "038",
+            "display": "MORBO DI ADDISON"
           },
           {
-           "code": "039",
-           "display": "BPCO"
+            "code": "039",
+            "display": "BPCO"
           },
           {
-           "code": "040",
-           "display": "ARTRITE REUMATOIDE"
+            "code": "040",
+            "display": "ARTRITE REUMATOIDE"
           },
           {
-           "code": "041",
-           "display": "PSORIASI E ARTROPATIA PSORIASICA"
+            "code": "041",
+            "display": "PSORIASI E ARTROPATIA PSORIASICA"
           },
           {
-           "code": "042",
-           "display": "MALATTIE DEL SISTEMA NERVOSO E DEGLI ORGANI DI SENSO"
+            "code": "042",
+            "display": "MALATTIE DEL SISTEMA NERVOSO E DEGLI ORGANI DI SENSO"
           },
           {
-           "code": "043",
-           "display": "EPATITE CRONICA"
+            "code": "043",
+            "display": "EPATITE CRONICA"
           },
           {
-           "code": "044",
-           "display": "DIABETE MELLITO TIPO 1"
+            "code": "044",
+            "display": "DIABETE MELLITO TIPO 1"
           },
           {
-           "code": "045",
-           "display": "LUPUS ERITEMATOSO SISTEMICO"
+            "code": "045",
+            "display": "LUPUS ERITEMATOSO SISTEMICO"
           },
           {
-           "code": "046",
-           "display": "COLITE ULCEROSA E CROHN (IBD)"
+            "code": "046",
+            "display": "COLITE ULCEROSA E CROHN (IBD)"
           },
           {
-           "code": "047",
-           "display": "ALZHEIMER"
+            "code": "047",
+            "display": "ALZHEIMER"
           },
           {
-           "code": "048",
-           "display": "IPERCOLESTEROLEMIE FAMILIARI E NON"
+            "code": "048",
+            "display": "IPERCOLESTEROLEMIE FAMILIARI E NON"
           },
           {
-           "code": "049",
-           "display": "MALATTIE DEL SISTEMA OSTEOMUSCOLARE E DEL TESSUTO CONNETTIVO"
+            "code": "049",
+            "display": "MALATTIE DEL SISTEMA OSTEOMUSCOLARE E DEL TESSUTO CONNETTIVO"
           },
           {
-           "code": "050",
-           "display": "DIABETE MELLITO TIPO 2"
+            "code": "050",
+            "display": "DIABETE MELLITO TIPO 2"
           },
           {
-           "code": "051",
-           "display": "MALATTIE INFETTIVE E PARASSITARIE"
+            "code": "051",
+            "display": "MALATTIE INFETTIVE E PARASSITARIE"
           },
           {
-           "code": "052",
-           "display": "MALATTIA DI SJOGREN"
+            "code": "052",
+            "display": "MALATTIA DI SJOGREN"
           },
           {
-           "code": "053",
-           "display": "IPER ED IPOPARATIROIDISMO"
+            "code": "053",
+            "display": "IPER ED IPOPARATIROIDISMO"
           },
           {
-           "code": "054",
-           "display": "MALATTIE DELL'APPARATO GENITO-URINARIO"
+            "code": "054",
+            "display": "MALATTIE DELL'APPARATO GENITO-URINARIO"
           },
           {
-           "code": "055",
-           "display": "MALFORMAZIONI CONGENITE"
+            "code": "055",
+            "display": "MALFORMAZIONI CONGENITE"
           },
           {
-           "code": "056",
-           "display": "IPERTENSIONE ARTERIOSA"
+            "code": "056",
+            "display": "IPERTENSIONE ARTERIOSA"
           },
           {
-           "code": "057",
-           "display": "NEOPLASIA FOLLOW-UP"
+            "code": "057",
+            "display": "NEOPLASIA FOLLOW-UP"
           },
           {
-           "code": "058",
-           "display": "MALATTIE DELLA PELLE E DEL TESSUTO SOTTOCUTANEO"
+            "code": "058",
+            "display": "MALATTIE DELLA PELLE E DEL TESSUTO SOTTOCUTANEO"
           },
           {
-           "code": "059",
-           "display": "NEOPLASIA REMISSIONE"
+            "code": "059",
+            "display": "NEOPLASIA REMISSIONE"
           },
           {
-           "code": "060",
-           "display": "IPOTIROIDISMO"
+            "code": "060",
+            "display": "IPOTIROIDISMO"
           },
           {
-           "code": "061",
-           "display": "TUMORI"
+            "code": "061",
+            "display": "TUMORI"
           },
           {
-           "code": "062",
-           "display": "MORBO DI BASEDOW E IPERTIROIDISMI"
+            "code": "062",
+            "display": "MORBO DI BASEDOW E IPERTIROIDISMI"
           },
           {
-           "code": "063",
-           "display": "ASMA"
+            "code": "063",
+            "display": "ASMA"
           },
           {
-           "code": "064",
-           "display": "TIROIDITE DI HASHIMOTO"
+            "code": "064",
+            "display": "TIROIDITE DI HASHIMOTO"
           },
           {
-           "code": "065",
-           "display": "MALATTIE DELL'APPARATO DIGERENTE"
+            "code": "065",
+            "display": "MALATTIE DELL'APPARATO DIGERENTE"
           }
-         ]
+        ]
       }
     ]
   }

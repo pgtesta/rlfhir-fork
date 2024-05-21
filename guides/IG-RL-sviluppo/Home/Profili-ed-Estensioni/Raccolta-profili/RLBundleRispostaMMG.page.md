@@ -6,6 +6,8 @@
 
 ## Descrizione
 
+Il profilo RLBundleRispostaMMG è stato strutturato a partire dalla risorsa generica FHIR [Bundle](http://hl7.org/fhir/R4/bundle.html), il profilo è volto a descrivere il contenuto del Bundle di risposta inviato da SGDT alla Cartella Clinica Elettronica dell'MMG.
+
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG}}.
 
 <br>
@@ -53,3 +55,21 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
   <h3>Esempi</h3>
 <br>
 </div>
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Tipologie di ricerca
+
+Attualmente non sono stati definiti criteri di ricerca.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## Search parameter
+
+Attualmente non sono definiti Search Parameters.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
+
+## ValueSet
+
+Attualmente non sono definiti value set specifici per il profilo RLBundleRispostaMMG.

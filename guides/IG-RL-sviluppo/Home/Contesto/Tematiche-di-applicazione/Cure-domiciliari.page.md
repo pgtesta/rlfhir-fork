@@ -1,0 +1,19 @@
+# {{page-title}}
+
+I servizi FHIR consentono agli Enti Erogatori Privati Accreditati per i servizi di Cure Domiciliari di gestire in maniera completamente digitalizzata il processo di presa in carico dell’assistito. Attraverso l’utilizzo delle funzionalità presenti in SGDT e i servizi di cooperazione applicativa con i Sistemi Informativi degli EEPA, è possibile gestire l’attivazione e il monitoraggio del servizio in carico all’ASST e l’erogazione delle prestazioni in carico agli EEPA.
+
+L’attivazione del servizio di Cure Domiciliari avviene tramite apposita prescrizione da parte dell’MMG che redige anche una valutazione preliminare tramite la Scheda Unica del Triage. L’assistito viene quindi valutato dall’EVM della propria ASST di afferenza tramite la compilazione della Scheda SIAD ed eventualmente della Scheda InterRAI Home Care. Inoltre, l’EVM provvede alla redazione del PI, del PAI teorico contenente i dettagli del percorso assistenziale da erogare e all’assegnazione dell’EEPA preliminarmente scelto dal paziente o dal care-giver.
+
+Un servizio FHIR di SGDT, dal momento in cui l’operatore assegna nel Sistema l’EEPA scelto dall’assistito per attivarne l’erogazione del servizio, espone all’applicativo dell’EEPA tutte le informazioni necessarie all’equipe di erogazione per la stesura del PAI effettivo e per la programmazione degli accessi a domicilio. 
+
+L’integrazione è stata progettata in logica PULL, dunque, l’applicativo dell’EEPA può acquisire in qualsiasi momento i dati inseriti in SGDT dall’EVM. Tutte le informazioni che sono state definite all’interno di un PI, redatto in SGDT, sono contenute all’interno del profilo {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanProgettoIndividuale.page.md}}, definito a partire dalla risorsa [CarePlan](http://hl7.org/fhir/R4/careplan.html). Il criterio di ricerca “Progetti individuali attivi” definito per questo scenario di integrazione è descritto nella pagina dedicata del profilo RLCarePlanProgettoIndividuale ed ha lo scopo di fornire l’elenco dei PI prodotti da un’ASST per gli assistiti che necessitano dell’attivazione di un servizio sociosanitario (in questo caso le Cure Domiciliari) presso l’EEPA. 
+
+{{render:guides/IG-RL-sviluppo/pics/PIAttivi_flussologico.png}}
+
+Il case manager dell’ASST può monitorare l’andamento della presa in carico utilizzando un servizio FHIR che permette di consultare gli accessi e le prestazioni erogate dall’equipe di erogazione dell’EEPA. Il case manager può selezionare un PI di un paziente utilizzando la funzionalità di monitoraggio predisposta a visualizzare i servizi richiesti e le rispettive date di inizio e fine. SGDT compone la chiamata che il servizio FHIR inoltra all’applicativo dell’ente erogatore. Il criterio di ricerca per questo scenario di integrazione è descritto nella pagina dedicata del profilo {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedurePrestazione.page.md}}, se l’esito della ricerca non è vuoto, SGDT memorizza i dati degli eventi di accesso e li visualizza nella sezione monitoraggio.
+
+{{render:guides/IG-RL-sviluppo/pics/PrestazioniErogatePaziente.png}}
+
+Il case manager può inoltre, monitorare lo stato di esecuzione dei PI assegnati ad un EEPA, utilizzando un servizio FHIR predisposto. Il criterio di ricerca per questo scenario di integrazione è descritto nelle pagine dedicate dei profili {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione.page.md}} e {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSospensioneADI.page.md}}, definiti a partire dalla risorsa [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html). Se l’esito della ricerca non è vuoto, SGDT memorizza i dati degli eventi di accesso e li visualizza nella funzione di monitoraggio.
+
+{{render:guides/IG-RL-sviluppo/pics/RicercaPeriodiSospensione.png}}
