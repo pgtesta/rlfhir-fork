@@ -157,15 +157,6 @@
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
           ]
         },
-        "clinicalStatus": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/ValueSet/condition-clinical",
-              "code": "active",
-              "display": "Active"
-            }
-          ]
-        },
         "category": [
           {
             "coding": [
@@ -227,15 +218,6 @@
             ]
           }
         ],
-        "clinicalStatus": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/ValueSet/condition-clinical",
-              "code": "active",
-              "display": "Active"
-            }
-          ]
-        },
         "code": {
           "coding": [
             {
