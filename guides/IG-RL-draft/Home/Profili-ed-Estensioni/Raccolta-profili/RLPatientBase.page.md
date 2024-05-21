@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPatientBa
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali |
+| luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet (ISTATUnitaAmministrativeTerritoriali)[http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali] |
