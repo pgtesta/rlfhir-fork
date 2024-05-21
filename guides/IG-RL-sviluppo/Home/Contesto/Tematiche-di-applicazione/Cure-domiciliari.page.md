@@ -11,10 +11,12 @@ L’integrazione è stata progettata in logica PULL, dunque, l’applicativo del
 {{render:guides/IG-RL-sviluppo/pics/PIAttivi_flussologico.png, fig.cap="Flusso dati logico della ricerca dei Progetti Individuali attivi"}}
 <p style="text-align: center;">Flusso dati logico della ricerca dei Progetti Individuali attivi</p>
 
+
 Il case manager dell’ASST può monitorare l’andamento della presa in carico utilizzando un servizio FHIR che permette di consultare gli accessi e le prestazioni erogate dall’equipe di erogazione dell’EEPA. Il case manager può selezionare un PI di un paziente utilizzando la funzionalità di monitoraggio predisposta a visualizzare i servizi richiesti e le rispettive date di inizio e fine. SGDT compone la chiamata che il servizio FHIR inoltra all’applicativo dell’ente erogatore. Il criterio di ricerca per questo scenario di integrazione è descritto nella pagina dedicata del profilo {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedurePrestazione.page.md}}, se l’esito della ricerca non è vuoto, SGDT memorizza i dati degli eventi di accesso e li visualizza nella sezione monitoraggio.
 
 {{render:guides/IG-RL-sviluppo/pics/PrestazioniErogatePaziente.png}}
 <p style="text-align: center;">Flusso dati logico della ricerca delle prestazioni erogate al paziente</p>
+
 
 Il case manager può inoltre, monitorare lo stato di esecuzione dei PI assegnati ad un EEPA, utilizzando un servizio FHIR predisposto. Il criterio di ricerca per questo scenario di integrazione è descritto nelle pagine dedicate dei profili {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestRivalutazione.page.md}} e {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestSospensioneADI.page.md}}, definiti a partire dalla risorsa [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html). Se l’esito della ricerca non è vuoto, SGDT memorizza i dati degli eventi di accesso e li visualizza nella funzione di monitoraggio.
 
