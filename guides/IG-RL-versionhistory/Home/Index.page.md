@@ -3,7 +3,7 @@
 ## IG Draft
 |Versione e pagina dettaglio|Data rilascio| URL |
 |---|---|---|
-|{{pagelink:Home/pagine-dettaglio/draft_3.13.0.page.md, text:3.13.0}}| 31/01/2024 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.13.0](https://simplifier.net/guide/ig-rlfhir-draft?version=3.13.0) |
+|{{pagelink:Home/pagine-dettaglio/draft_3.13.2.page.md, text:3.13.2}}| 21/05/2024 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.13.2](https://simplifier.net/guide/ig-rlfhir-draft?version=3.13.2) |
 
 ## IG Produzione
 |Versione e pagina dettaglio|Data rilascio| URL |
