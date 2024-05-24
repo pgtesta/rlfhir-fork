@@ -43,7 +43,11 @@
           {
             "code": "Coding"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt"
+        }
       },
       {
         "id": "MessageHeader.event[x].system",
