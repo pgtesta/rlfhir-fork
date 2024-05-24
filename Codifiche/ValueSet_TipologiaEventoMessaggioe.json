@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "ValueSet-TipologiaEventoMessaggio",
-  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
   "version": "1.0.0",
   "name": "Tipologia Evento Messaggio",
   "status": "active",
@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio",
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
         "version": "1.0.0",
         "concept": [
           {
