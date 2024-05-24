@@ -79,8 +79,8 @@
       {
         "id": "MessageHeader.destination.endpoint",
         "path": "MessageHeader.destination.endpoint",
-        "short": "Indirizzo URL del destinatario del messaggio",
-        "definition": "urn:rlfhir:destination.name"
+        "short": "Indirizzo URN del destinatario del messaggio",
+        "definition": "urn:rlfhir:{MessageHeader.destination.name}"
       },
       {
         "id": "MessageHeader.source",
@@ -95,8 +95,8 @@
       {
         "id": "MessageHeader.source.endpoint",
         "path": "MessageHeader.source.endpoint",
-        "short": "Indirizzo URL del mittente del messaggio",
-        "definition": "urn:rlfhir:source.name"
+        "short": "Indirizzo URN del mittente del messaggio",
+        "definition": "urn:rlfhir:{MessageHeader.source.name}"
       },
       {
         "id": "MessageHeader.response",

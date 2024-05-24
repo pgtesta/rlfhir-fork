@@ -493,10 +493,10 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt}}
       </td>
       <td>ValueSet relativo alla codifica della tipologia di evento del Messaggio</td>
-      <td>https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt</td>
     </tr>
     <tr>
       <td>

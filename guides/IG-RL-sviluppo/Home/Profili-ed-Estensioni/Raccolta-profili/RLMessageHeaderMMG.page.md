@@ -78,4 +78,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMessageHe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| eventCoding | Codice e descrizione dell’evento rappresentato dal messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaEventoMessaggio}} |
+| eventCoding | Codice e descrizione dell’evento rappresentato dal messaggio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt}} |
