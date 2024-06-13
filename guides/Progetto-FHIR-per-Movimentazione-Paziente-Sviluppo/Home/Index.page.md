@@ -3,7 +3,7 @@
 <div class="alert alert-warning">
 Questa pagina è da considerare IN LAVORAZIONE. 
 
-Il contenuto del sito rappresenterà a regime la Guida di Implementazione del progetto FHIR per Regione Lombardia. 
+Il contenuto del sito rappresenterà a regime la Guida di Implementazione del progetto FHIR Movimentazione Paziente per Regione Lombardia. 
 
 Attualmente viene descritta una panoramica del progetto \[si veda {{pagelink:Home/Contesto/Panoramica-di-progetto.page.md}}\], 
 ed è possibile consultare le risorse FHIR rilasciate e attualmente in uso.
