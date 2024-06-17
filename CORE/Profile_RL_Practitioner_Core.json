@@ -1,0 +1,58 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore",
+  "name": "RLPractitionerCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "short": "Sistema di codifica"
+      },
+      {
+        "id": "Practitioner.identifier:CF",
+        "path": "Practitioner.identifier",
+        "sliceName": "CF"
+      },
+      {
+        "id": "Practitioner.identifier:CF.system",
+        "path": "Practitioner.identifier.system",
+        "short": "Sistema di codifica",
+        "min": 1,
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Practitioner.identifier:CF.value",
+        "path": "Practitioner.identifier.value",
+        "short": "Codice fiscale del professionista sanitario",
+        "definition": "Stringa alfanumerica di 16 caratteri",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier:CDRegionale",
+        "path": "Practitioner.identifier",
+        "sliceName": "CDRegionale"
+      }
+    ]
+  }
+}

@@ -15,6 +15,7 @@
         "id": "Patient.extension:cittadinanza",
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
+        "short": "Cittadinanza",
         "max": "1",
         "type": [
           {
@@ -26,49 +27,47 @@
         ],
         "isModifier": false,
         "binding": {
-          "strength": "required",
-          "description": "Cittadinanza",
-          "valueSet": "https://hl7.org/fhir/extensions/StructureDefinition-patient-citizenship.html"
+          "strength": "example",
+          "description": "ISTAT - Cittadinanza"
         }
       },
       {
         "id": "Patient.extension:titoloDiStudio",
         "path": "Patient.extension",
         "sliceName": "titoloDiStudio",
+        "short": "Titolo di Studio",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio"
+              "http://hl7.it/fhir/StructureDefinition/patient-qualification-it"
             ]
           }
         ],
         "isModifier": false,
         "binding": {
-          "strength": "required",
-          "description": "Titolo di studio",
-          "valueSet": "https://www.hl7.it/fhir/StructureDefinition/patient-qualification-it"
+          "strength": "example",
+          "description": "ISTAT - Titolo Studio"
         }
       },
       {
-        "id": "Patient.extension:posizioneDellaProfessione",
+        "id": "Patient.extension:professione",
         "path": "Patient.extension",
-        "sliceName": "posizioneDellaProfessione",
+        "sliceName": "professione",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione"
+              "http://hl7.it/fhir/StructureDefinition/patient-occupation-it"
             ]
           }
         ],
         "isModifier": false,
         "binding": {
-          "strength": "required",
-          "description": "Professione",
-          "valueSet": "https://www.hl7.it/fhir/StructureDefinition/patient-occupation-it"
+          "strength": "example",
+          "description": "ISTAT - Professioni"
         }
       },
       {
@@ -83,12 +82,7 @@
             ]
           }
         ],
-        "isModifier": false,
-        "binding": {
-          "strength": "required",
-          "description": "Indica il luogo di nascita. Tipicamente attraverso il codice comune o stato di nascita",
-          "valueSet": "https://hl7.org/fhir/extensions/StructureDefinition-patient-birthPlace.html"
-        }
+        "isModifier": false
       },
       {
         "id": "Patient.identifier",
@@ -104,7 +98,7 @@
         "path": "Patient.identifier",
         "sliceName": "codiceFiscale",
         "fixedIdentifier": {
-          "system": "https://www.hl7.it/sid/codiceFiscale"
+          "value": "http://hl7.it/sid/codiceFiscale"
         },
         "constraint": [
           {
@@ -116,17 +110,27 @@
         ]
       },
       {
+        "id": "Patient.identifier:codiceFiscale.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
         "id": "Patient.identifier:codiceSTP",
         "path": "Patient.identifier",
         "sliceName": "codiceSTP",
         "short": "Codice STP"
       },
       {
-        "id": "Patient.identifier:codiceSTP.extension",
-        "path": "Patient.identifier.extension",
+        "id": "Patient.identifier:codiceSTP.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP.value",
+        "path": "Patient.identifier.value",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.hl7.it/fhir/base/ValueSet-uri-idStp.html"
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idStp"
         }
       },
       {
@@ -136,7 +140,7 @@
         "short": "Tessera TEAM",
         "comment": "Corrispondente campo HL7 secondo specifiche regionali: PID-3",
         "fixedIdentifier": {
-          "value": "https://fhir.siss.regione.lombardia.it/CodeSystem/TesseraTEAM"
+          "value": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
         }
       },
       {
@@ -146,11 +150,11 @@
         "short": "Codice ENI"
       },
       {
-        "id": "Patient.identifier:codiceENI.extension",
-        "path": "Patient.identifier.extension",
+        "id": "Patient.identifier:codiceENI.system",
+        "path": "Patient.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.hl7.it/fhir/base/ValueSet-uri-idEni.html"
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idEni"
         }
       },
       {
@@ -167,11 +171,16 @@
         "sliceName": "idRegionale"
       },
       {
-        "id": "Patient.identifier:idRegionale.extension",
-        "path": "Patient.identifier.extension",
+        "id": "Patient.identifier:idRegionale.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idRegionali"
+      },
+      {
+        "id": "Patient.identifier:idRegionale.value",
+        "path": "Patient.identifier.value",
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.hl7.it/fhir/base/ValueSet-uri-idRegionali.html"
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idRegionali"
         }
       },
       {
@@ -179,6 +188,7 @@
         "path": "Patient.name",
         "short": "Cognome e nome del paziente",
         "definition": "L'attributo deve essere utilizzato per indicare il nome e il cognome del paziente nella comunicazione delle etichette tramite dati strutturati.",
+        "max": "1",
         "constraint": [
           {
             "key": "rl-pat-name",
@@ -203,7 +213,37 @@
       {
         "id": "Patient.address",
         "path": "Patient.address",
-        "short": "Indirizzo fisico o postale"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Indirizzo fisico o postale",
+        "fixedAddress": {
+          "line": [
+            "numeroCivico",
+            "via"
+          ]
+        }
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino",
+        "path": "Patient.address",
+        "sliceName": "residenzaAnagraficaCittadino"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino",
+        "path": "Patient.address",
+        "sliceName": "domicilioCittadino"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCIttadino",
+        "path": "Patient.address",
+        "sliceName": "locazioneTemporaneaCIttadino"
       },
       {
         "id": "Patient.maritalStatus",
