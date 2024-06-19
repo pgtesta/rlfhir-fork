@@ -11,6 +11,7 @@
   "content": "complete",
   "concept": [
     {
+      "liv":"1",
       "code": "ACCESS_UNAUTHORIZED",
       "display": "Accesso non autorizzato",
       "definition": "Per eseguire la richiesta e' necessaria l'autorizzazione. Corrisponde HTTP Status Code 401"
@@ -76,9 +77,28 @@
       "definition": "Uno o piu' header obbligatori sono mancanti. Corrisponde HTTP Status Code 400"
     },
     {
+      "liv":"1",
       "code": "VALIDATION_ERROR",
       "display": "Errore di validazione su parametro o valore",
       "definition": "Uno o piu' parametri o valori non sono corretti. Corrisponde HTTP Status Code 400"
+    },
+    {
+      "liv":"2",
+      "code": "RSRC_VERSION_INCOH",
+      "display": "Incoerenza sul versione della risorsa",
+      "definition": "L'attributo version di una o piu risorse FHIR deve essere maggiore o uguale a quanto consultato in precedenza."
+    },
+    {
+      "liv":"2",
+      "code": "RSRC_LUPD_INCOH",
+      "display": "Incoerenza su lastUpdate della risorsa",
+      "definition": "L'attributo lastUpdate di una o piu risorse FHIR deve essere minore o uguale all'attributo timestamp del relativo bundle."
+    },
+    {
+      "liv":"2",
+      "code": "BNDL_TS_INCOH",
+      "display": "Incoerenza su timestamp del bundle",
+      "definition": "L'attributo timestamp del bundle non deve essere antecedente all’intervallo di aggiornamento predefinito."
     },
     {
       "code": "MISSING_VALUE",
