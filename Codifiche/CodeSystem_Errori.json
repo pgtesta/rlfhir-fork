@@ -78,25 +78,29 @@
     {
       "code": "VALIDATION_ERROR",
       "display": "Errore di validazione su parametro o valore",
-      "definition": "Uno o piu' parametri o valori non sono corretti. Corrisponde HTTP Status Code 400"
-    },
-    {
-      "liv":"2",
-      "code": "RSRC_VERSION_INCOH",
-      "display": "Incoerenza sul versione della risorsa",
-      "definition": "L'attributo version di una o piu risorse FHIR deve essere maggiore o uguale a quanto consultato in precedenza."
-    },
-    {
-      "liv":"2",
-      "code": "RSRC_LUPD_INCOH",
-      "display": "Incoerenza su lastUpdate della risorsa",
-      "definition": "L'attributo lastUpdate di una o piu risorse FHIR deve essere minore o uguale all'attributo timestamp del relativo bundle."
-    },
-    {
-      "liv":"2",
-      "code": "BNDL_TS_INCOH",
-      "display": "Incoerenza su timestamp del bundle",
-      "definition": "L'attributo timestamp del bundle non deve essere antecedente all’intervallo di aggiornamento predefinito."
+      "definition": "Uno o piu' parametri o valori non sono corretti. Corrisponde HTTP Status Code 400",
+      "concept": [
+        {
+          "code": "RSRC_VERSION_INCOH",
+          "display": "Incoerenza sul versione della risorsa",
+          "definition": "L'attributo version di una o piu risorse FHIR deve essere maggiore o uguale a quanto consultato in precedenza."
+        },
+        {
+          "code": "RSRC_LUPD_INCOH",
+          "display": "Incoerenza su lastUpdate della risorsa",
+          "definition": "L'attributo lastUpdate di una o piu risorse FHIR deve essere minore o uguale all'attributo timestamp del relativo bundle."
+        },
+        {
+          "code": "BNDL_TS_INCOH",
+          "display": "Incoerenza su timestamp del bundle",
+          "definition": "L'attributo timestamp del bundle non deve essere antecedente all’intervallo di aggiornamento predefinito."
+        },
+        {
+          "code": "BNDL_DATA_INCOH",
+          "display": "Incoerenza su dati del bundle",
+          "definition": "L'attributo relativo alla data di accesso deve essere antecedente alla data di dimissione."
+        }
+      ]
     },
     {
       "code": "MISSING_VALUE",
@@ -123,5 +127,6 @@
       "display": "Gateway timeout",
       "definition": "Il servizio ha impiegato troppo tempo nella generazione della risposta. Si prega di effettuare la stessa consultazione più tardi. Corrisponde HTTP Status Code 504"
     }
+  
   ]
 }
