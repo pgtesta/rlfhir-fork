@@ -100,8 +100,8 @@
               },
               {
                 "code": "BNDL_DATA_INCOH",
-                "display": "Incoerenza sulle date di accesso e dimissione",
-                "definition": "L'attributo period.start dell'encounter non deve essere antecedente all'attributo period.end."
+                "display": "Incoerenza su dati del bundle",
+                "definition": "L'attributo relativo alla data di accesso deve essere antecedente alla data di dimissione."
               }
             ]
           },
