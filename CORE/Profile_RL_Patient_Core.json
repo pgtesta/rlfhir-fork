@@ -97,9 +97,6 @@
         "id": "Patient.identifier:codiceFiscale",
         "path": "Patient.identifier",
         "sliceName": "codiceFiscale",
-        "fixedIdentifier": {
-          "value": "http://hl7.it/sid/codiceFiscale"
-        },
         "constraint": [
           {
             "key": "rl-pat-codiceFiscale",
@@ -123,7 +120,7 @@
       {
         "id": "Patient.identifier:codiceSTP.system",
         "path": "Patient.identifier.system",
-        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idStp"
       },
       {
         "id": "Patient.identifier:codiceSTP.value",
@@ -138,10 +135,12 @@
         "path": "Patient.identifier",
         "sliceName": "tesseraTEAM",
         "short": "Tessera TEAM",
-        "comment": "Corrispondente campo HL7 secondo specifiche regionali: PID-3",
-        "fixedIdentifier": {
-          "value": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
-        }
+        "comment": "Corrispondente campo HL7 secondo specifiche regionali: PID-3"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
       },
       {
         "id": "Patient.identifier:codiceENI",
@@ -160,10 +159,12 @@
       {
         "id": "Patient.identifier:anpr",
         "path": "Patient.identifier",
-        "sliceName": "anpr",
-        "fixedIdentifier": {
-          "system": "http://hl7.it/sid/anpr"
-        }
+        "sliceName": "anpr"
+      },
+      {
+        "id": "Patient.identifier:anpr.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/anpr"
       },
       {
         "id": "Patient.identifier:idRegionale",
@@ -222,13 +223,7 @@
           ],
           "rules": "open"
         },
-        "short": "Indirizzo fisico o postale",
-        "fixedAddress": {
-          "line": [
-            "numeroCivico",
-            "via"
-          ]
-        }
+        "short": "Indirizzo fisico o postale"
       },
       {
         "id": "Patient.address:residenzaAnagraficaCittadino",
