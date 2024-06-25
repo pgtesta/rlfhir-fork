@@ -11,7 +11,7 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
 - È stato descritto il nuovo scenario di cooperazione applicativa tra le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici e il SGDT. Nella sezione Contesto sono state aggiornate le pagine:
    - Panoramica di progetto;
    - Tematiche di applicazione;
-   - Paradigmi di integrazione e API RestFUL.
+   - Paradigmi di integrazione e API RESTful.
 - Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLMessageHeaderMMG, RLPatientBase, RLOperationOutcomeMMG, RLBundleMMG, RLBundleRispostaMMG e RLServiceRequestPrestazioni.
 - Nel profilo RLOperationOutcome sono stati aggiornati i campi “issue.code” e “details.coding.code” e i value-set ad essi associati.
 - Nel profilo RLConditionProblemiSalute è stato aggiunto il campo “severity”, è stato aggiornato il campo “code” ed è stata aggiornata la cardinalità del campo “meta”.

@@ -4,7 +4,16 @@
   "issue": [
     {
       "severity": "error",
-      "code": "ACCESS_DENIED"
+      "code": "invalid",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore",
+            "code": "ACCESS_DENIED",
+            "display": "Accesso negato per processare la richiesta"
+          }
+        ]
+      }
     }
   ]
 }

@@ -50,7 +50,7 @@
         "binding": {
           "strength": "required",
           "description": "ValueSet relativo agli errori ottenuti in risposta all'interrogazione di API FHIR",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiceErrore"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore"
         }
       },
       {
