@@ -34,9 +34,7 @@
       {
         "id": "OperationOutcome.issue.code",
         "path": "OperationOutcome.issue.code",
-        "short": "Tipologia di errore",
-        "definition": "Valore fisso a \"invalid\"",
-        "fixedCode":"invalid"
+        "short": "Tipologia di errore"
       },
       {
         "id": "OperationOutcome.issue.details",
