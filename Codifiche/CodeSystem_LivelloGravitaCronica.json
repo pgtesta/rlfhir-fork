@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "CodeSystem-LivelloGravitaCronicita",
+  "id": "CodeSystem-GPC-LivelloGravita",
   "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/GPC-LivelloGravita",
   "version": "1.0.0",
   "name": "Livello gravità della cronicità",
