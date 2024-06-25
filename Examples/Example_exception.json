@@ -9,8 +9,8 @@
         "coding": [
           {
             "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore",
-            "code": "ACCESS_DENIED",
-            "display": "Accesso negato per processare la richiesta"
+            "code": "NOT_PROCESSABLE",
+            "display": "Risorsa non processabile"
           }
         ]
       }
