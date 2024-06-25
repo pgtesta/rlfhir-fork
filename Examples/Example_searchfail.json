@@ -4,11 +4,11 @@
   "issue": [
     {
       "severity": "error",
-      "code": "VALIDATION_ERROR",
+      "code": "invalid",
       "details": {
         "coding": [
           {
-            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore",
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore",
             "code": "RSRC_VERSION_INCOH",
             "display": "Incoerenza sul versione della risorsa"
           }

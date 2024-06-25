@@ -34,12 +34,9 @@
       {
         "id": "OperationOutcome.issue.code",
         "path": "OperationOutcome.issue.code",
-        "short": "Codice d'errore",
-        "binding": {
-          "strength": "required",
-          "description": "ValueSet relativo ai codici di errori ottenuti in risposta all'interrogazione di API FHIR",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore"
-        }
+        "short": "Tipologia di errore",
+        "definition": "Valore fisso a \"invalid\"",
+        "fixedCode":"invalid"
       },
       {
         "id": "OperationOutcome.issue.details",
@@ -49,17 +46,17 @@
       {
         "id": "OperationOutcome.issue.details.coding.code",
         "path": "OperationOutcome.issue.details.coding.code",
-        "short": "Codice di dettaglio dell'errore",
+        "short": "Codice dell'errore",
         "binding": {
           "strength": "required",
-          "description": "ValueSet relativo ai dettagli degli errori ottenuti in risposta all'interrogazione di API FHIR",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore"
+          "description": "ValueSet relativo agli errori ottenuti in risposta all'interrogazione di API FHIR",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore"
         }
       },
       {
         "id": "OperationOutcome.issue.details.coding.display",
         "path": "OperationOutcome.issue.details.coding.display",
-        "short": "Descrizione del dettaglio dell'errore"
+        "short": "Descrizione dell'errore"
       },
       {
         "id": "OperationOutcome.issue.diagnostics",

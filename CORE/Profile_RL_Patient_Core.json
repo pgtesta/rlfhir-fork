@@ -1,0 +1,255 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore",
+  "name": "RLPatientCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension:cittadinanza",
+        "path": "Patient.extension",
+        "sliceName": "cittadinanza",
+        "short": "Cittadinanza",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "example",
+          "description": "ISTAT - Cittadinanza"
+        }
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio",
+        "path": "Patient.extension",
+        "sliceName": "titoloDiStudio",
+        "short": "Titolo di Studio",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.it/fhir/StructureDefinition/patient-qualification-it"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "example",
+          "description": "ISTAT - Titolo Studio"
+        }
+      },
+      {
+        "id": "Patient.extension:professione",
+        "path": "Patient.extension",
+        "sliceName": "professione",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.it/fhir/StructureDefinition/patient-occupation-it"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "example",
+          "description": "ISTAT - Professioni"
+        }
+      },
+      {
+        "id": "Patient.extension:luogoDiNascita",
+        "path": "Patient.extension",
+        "sliceName": "luogoDiNascita",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "description": "slices",
+          "rules": "open"
+        },
+        "short": "Identificativi del paziente"
+      },
+      {
+        "id": "Patient.identifier:codiceFiscale",
+        "path": "Patient.identifier",
+        "sliceName": "codiceFiscale",
+        "constraint": [
+          {
+            "key": "rl-pat-codiceFiscale",
+            "severity": "warning",
+            "human": "Il Codice Fiscale deve essere di 16 caratteri alfanumerici (3 per il cognome; 3 per il nome; 2 caratteri numerici per l'anno di nascita; 1 per il mese di nascita; 2 caratteri numerici per il giorno di nascita ed il sesso; 4 associati al Comune oppure allo Stato estero di nascita.1",
+            "expression": "matches('^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:codiceFiscale.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP",
+        "path": "Patient.identifier",
+        "sliceName": "codiceSTP",
+        "short": "Codice STP"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idStp"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP.value",
+        "path": "Patient.identifier.value",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idStp"
+        }
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM",
+        "path": "Patient.identifier",
+        "sliceName": "tesseraTEAM",
+        "short": "Tessera TEAM",
+        "comment": "Corrispondente campo HL7 secondo specifiche regionali: PID-3"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
+      },
+      {
+        "id": "Patient.identifier:codiceENI",
+        "path": "Patient.identifier",
+        "sliceName": "codiceENI",
+        "short": "Codice ENI"
+      },
+      {
+        "id": "Patient.identifier:codiceENI.system",
+        "path": "Patient.identifier.system",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idEni"
+        }
+      },
+      {
+        "id": "Patient.identifier:anpr",
+        "path": "Patient.identifier",
+        "sliceName": "anpr"
+      },
+      {
+        "id": "Patient.identifier:anpr.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/anpr"
+      },
+      {
+        "id": "Patient.identifier:idRegionale",
+        "path": "Patient.identifier",
+        "sliceName": "idRegionale"
+      },
+      {
+        "id": "Patient.identifier:idRegionale.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idRegionali"
+      },
+      {
+        "id": "Patient.identifier:idRegionale.value",
+        "path": "Patient.identifier.value",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idRegionali"
+        }
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Cognome e nome del paziente",
+        "definition": "L'attributo deve essere utilizzato per indicare il nome e il cognome del paziente nella comunicazione delle etichette tramite dati strutturati.",
+        "max": "1",
+        "constraint": [
+          {
+            "key": "rl-pat-name",
+            "severity": "warning",
+            "human": "Patient.name.given or Patient.name.family or both SHALL be present",
+            "expression": "given.exists() or family.exists()"
+          }
+        ]
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "short": "Cognome del paziente",
+        "definition": "Stringa alfabetica di massimo 40 caratteri"
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "short": "Nome del paziente",
+        "definition": "Stringa alfabetica di massimo 40 caratteri"
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Indirizzo fisico o postale"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino",
+        "path": "Patient.address",
+        "sliceName": "residenzaAnagraficaCittadino"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino",
+        "path": "Patient.address",
+        "sliceName": "domicilioCittadino"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCIttadino",
+        "path": "Patient.address",
+        "sliceName": "locazioneTemporaneaCIttadino"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "short": "Stato civile del paziente",
+        "definition": "E' preferibile utilizzare il Valueset indicato in Terminology binding.",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.hl7.it/fhir/base/ValueSet-statoCivile.html"
+        }
+      }
+    ]
+  }
+}

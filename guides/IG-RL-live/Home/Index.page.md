@@ -7,9 +7,29 @@ Il contenuto del sito rappresenta la Guida di Implementazione del progetto FHIR 
 ## Novità
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di <b>produzione</b>, gestisce i seguenti concetti:
 
-- Per il profilo “RLConditionProblemiSalute” è stato aggiunto il value-set “SGDT Patologie Non ICD9-CM” visualizzabile nella sezione “Libreria ValueSet”. Questa tabella raccoglie le patologie che presentano una codifica non standard differente dalla ICD9-CM.
-- Nella sezione “Anagrafica delle schede di valutazione” è stata aggiunta la domanda “Contributo al caregiver familiare” per la valutazione “Campi extra del flusso SIAD”. Questa domanda viene valorizzata solo se la condizione clinica prevalente è “Paziente in Stato Vegetativo (DGR 6220)” o “Paziente affetto da malattie del motoneurone (circ. 20)”.
-- Nella sezione “Stati ed Errori” è stato aggiunto l’errore “504 Gateway Timeout”. Questo errore viene generato in caso in cui il tempo di composizione del bundle superi il limite temporale di soglia. Il sistema termina comunque la composizione e memorizza il bundle per un periodo limitato di tempo. Dunque, effettuando la stessa chiamata di consultazione la risposta risulta immediata. 
+
+- È stato descritto il nuovo scenario di cooperazione applicativa tra le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici e il SGDT. Nella sezione Contesto sono state aggiornate le pagine:
+   - Panoramica di progetto;
+   - Tematiche di applicazione;
+   - Paradigmi di integrazione e API RESTful.
+- Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLMessageHeaderMMG, RLPatientBase, RLOperationOutcomeMMG, RLBundleMMG, RLBundleRispostaMMG e RLServiceRequestPrestazioni.
+- Nel profilo RLOperationOutcome sono stati aggiornati i campi “issue.code” e “details.coding.code” e i value-set ad essi associati.
+- Nel profilo RLConditionProblemiSalute è stato aggiunto il campo “severity”, è stato aggiornato il campo “code” ed è stata aggiornata la cardinalità del campo “meta”.
+- Nel profilo RLMedicationRequestTerapiaFarmacologica è stato aggiunto il campo “text”, è stato aggiornato il campo “medication” ed è stata aggiornata la cardinalità del campo “meta” e “basedOn”.
+- Nel profilo RLCarePlanProgettoIndividuale è stato aggiornato l’esempio della chiamata per la ricerca dei Progetti Individuali attivi.
+- Nel profilo RLOrganizationL2 è stata aggiornata la descrizione e aggiunto il parametro “dataCessazione” per alcune tipologie di ricerca.
+- Nel profilo RLGoalObiettiviSalute sono state aggiornate le descrizioni dei campi “description” e “note”.
+- Nella sezione Terminologia sono stati aggiunti i seguenti value-set:
+   - SGDT MessageEvents;
+   - GPC LivelloGravita;
+   - GPC ContenutoOperationOutcomeMMG;
+   - SGDT operation error;
+   - SGDT Tipologia Prestazione.
+- Nella sezione Esempi sono stati aggiunti i seguenti esempi:
+   - Esempio Bundle di attivazione dei servizi di presa in carico dei pazienti cronici da parte del MMG;
+   - Esempio Bundle di richiesta di interventi di Assistenza Domiciliare Programmata da parte del MMG;
+   - Esempio Bundle Risposta del messaggio con esito positivo;
+   - Esempio Bundle Risposta del messaggio con errore.
 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
