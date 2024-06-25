@@ -18,9 +18,9 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, 
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, gestisce i seguenti concetti:
 
 - È stato descritto il nuovo scenario di cooperazione applicativa tra le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici e il SGDT. Nella sezione Contesto sono state aggiornate le pagine.
- - Panoramica di progetto;
- - Tematiche di applicazione;
- - Paradigmi di integrazione e API RestFUL.
+   - Panoramica di progetto;
+   - Tematiche di applicazione;
+   - Paradigmi di integrazione e API RestFUL.
 - Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLMessageHeaderMMG, RLPatientBase, RLOperationOutcomeMMG, RLBundleMMG, RLBundleRispostaMMG e RLServiceRequestPrestazioni.
 - Nel profilo RLOperationOutcome sono stati aggiornati i campi “issue.code” e “details.coding.code” e i value-set ad essi associati.
 - Nel profilo RLConditionProblemiSalute è stato aggiunto il campo “severity”, è stato aggiornato il campo “code” ed è stata aggiornata la cardinalità del campo “meta”.
@@ -29,16 +29,16 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
 - Nel profilo RLOrganizationL2 è stata aggiornata la descrizione e aggiunto il parametro “dataCessazione” per alcune tipologie di ricerca.
 - Nel profilo RLGoalObiettiviSalute sono state aggiornate le descrizioni dei campi “description” e “note”.
 - Nella sezione Terminologia sono stati aggiunti i seguenti value-set:
- - SGDT MessageEvents;
- - GPC LivelloGravita;
- - GPC ContenutoOperationOutcomeMMG;
- - SGDT operation error;
- - SGDT Tipologia Prestazione.
+   - SGDT MessageEvents;
+   - GPC LivelloGravita;
+   - GPC ContenutoOperationOutcomeMMG;
+   - SGDT operation error;
+   - SGDT Tipologia Prestazione.
 - Nella sezione Esempi sono stati aggiunti i seguenti esempi:
- - Esempio Bundle di attivazione dei servizi di presa in carico dei pazienti cronici da parte del MMG;
- - Esempio Bundle di richiesta di interventi di Assistenza Domiciliare Programmata da parte del MMG;
- - Esempio Bundle Risposta del messaggio con esito positivo;
- - Esempio Bundle Risposta del messaggio con errore.
+   - Esempio Bundle di attivazione dei servizi di presa in carico dei pazienti cronici da parte del MMG;
+   - Esempio Bundle di richiesta di interventi di Assistenza Domiciliare Programmata da parte del MMG;
+   - Esempio Bundle Risposta del messaggio con esito positivo;
+   - Esempio Bundle Risposta del messaggio con errore.
 
 
 
