@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "ValueSet-LivelloGravitaCronicita",
-  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/LivelloGravitaCronicita",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-LivelloGravita",
   "version": "1.0.0",
   "name": "Livello gravità della cronicità",
   "status": "active",
@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/LivelloGravitaCronicita",
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/GPC-LivelloGravita",
         "version": "1.0.0",
         "concept": [
           {

@@ -486,10 +486,10 @@
     </tr>
     <tr>
       <td>
-        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/LivelloGravitaCronicita}}
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/GPC-LivelloGravita}}
       </td>
       <td>ValueSet relativo alla codifica del livello di gravità della cronicità</td>
-      <td>https://fhir.siss.regione.lombardia.it/ValueSet/LivelloGravitaCronicita</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/GPC-LivelloGravita</td>
     </tr>
     <tr>
       <td>
