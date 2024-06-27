@@ -1,0 +1,117 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore",
+  "name": "RLEncounterCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.extension:datiDimissione",
+        "path": "Encounter.extension",
+        "sliceName": "datiDimissione",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDatiDimissioneCore"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.period.start",
+        "path": "Encounter.period.start",
+        "definition": "Data/ora ingresso",
+        "min": 1
+      },
+      {
+        "id": "Encounter.period.end",
+        "path": "Encounter.period.end",
+        "definition": "Data/ora dimissione"
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "definition": "Motivo del ricovero",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.reasonCode.coding",
+        "path": "Encounter.reasonCode.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://terminology.hl7.org/5.0.0/CodeSystem-icd9.html"
+        }
+      },
+      {
+        "id": "Encounter.reasonReference",
+        "path": "Encounter.reasonReference",
+        "definition": "Esito"
+      },
+      {
+        "id": "Encounter.hospitalization.origin",
+        "path": "Encounter.hospitalization.origin",
+        "min": 1
+      },
+      {
+        "id": "Encounter.hospitalization.destination",
+        "path": "Encounter.hospitalization.destination",
+        "definition": "Destinazione, in caso di trasferimento presso altra struttura."
+      },
+      {
+        "id": "Encounter.location",
+        "path": "Encounter.location",
+        "slicing": {
+          "description": "Slices per diversi livelli di location.",
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Encounter.location:RepartoFisicoL3",
+        "path": "Encounter.location",
+        "sliceName": "RepartoFisicoL3",
+        "definition": "Reparto fisico di ricovero (L3)",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.location:RepartoClinicoL3",
+        "path": "Encounter.location",
+        "sliceName": "RepartoClinicoL3",
+        "definition": "Reparto clinico di ricovero (L3)",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.location:DestinazioneTrasferimento",
+        "path": "Encounter.location",
+        "sliceName": "DestinazioneTrasferimento",
+        "definition": "Destinazione del trasferimento interno",
+        "max": "1"
+      },
+      {
+        "id": "Encounter.location:PLO",
+        "path": "Encounter.location",
+        "sliceName": "PLO",
+        "definition": "Posto letto occupato",
+        "min": 1,
+        "max": "1"
+      }
+    ]
+  }
+}
