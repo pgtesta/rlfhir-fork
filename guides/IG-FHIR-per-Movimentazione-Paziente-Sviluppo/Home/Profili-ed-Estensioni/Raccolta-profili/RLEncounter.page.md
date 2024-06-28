@@ -11,7 +11,7 @@
 ## Descrizione
 Il profilo RLEncounter è stato strutturato a partire dalla risorsa standard FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html). DA AGGIUNGERE
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP}}.
 
 <br>
 <div class="tab">
@@ -26,32 +26,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -74,7 +74,7 @@ I parametri da valorizzare per effettuare la ricerca sono:
 |---|---|
 | VERB | GET |
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounter<br>&dataFineValidita=\{_datadiRiferimento_\}    |
+| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP<br>&dataFineValidita=\{_datadiRiferimento_\}    |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
