@@ -1,6 +1,6 @@
 # RLPatientCore
 
-- [RLPatientCore](#RLPatientCore)
+- [RLPatientCore](#rlpatientcore)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -56,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili.
+  {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}
 <br>
 </div>
 
