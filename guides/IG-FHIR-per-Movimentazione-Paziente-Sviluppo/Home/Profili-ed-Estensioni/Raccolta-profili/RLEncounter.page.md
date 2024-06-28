@@ -1,6 +1,6 @@
 # RLEncounter
 
-- [RLEncounter](#rlencounter)
+- [RLEncounterMP](#rlencountermp)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [Enti attualmente attivi](#enti-attualmente-attivi)
@@ -9,7 +9,7 @@
 
 
 ## Descrizione
-Il profilo RLEncounter è stato strutturato a partire dalla risorsa standard FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html). DA AGGIUNGERE
+Il profilo RLEncounterMP è stato strutturato a partire dalla risorsa standard FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html). DA AGGIUNGERE
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP}}.
 
