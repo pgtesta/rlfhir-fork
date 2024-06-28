@@ -78,7 +78,8 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| Category | Tipologia di patologia | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute}} |
-| Code | Codice e descrizione della patologia con codifica regionale e non ICD9-CM | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PatologieNonICD9CM}} |
-| Code | Codice e descrizione della condizione clinica prevalente | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica}} |
-| Code | Codice e descrizione del problema infermieristico | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico}} |
+| category | Tipologia di patologia | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute}} |
+| severity | Livello di gravità associato alla patologia cronica  | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/GPC-LivelloGravita}} |
+| patologia | Codice e descrizione della patologia con codifica regionale e non ICD9-CM | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PatologieNonICD9CM}} |
+| condizioneClinica | Codice e descrizione della condizione clinica prevalente | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica}} |
+| problemaInfermieristico | Codice e descrizione del problema infermieristico | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico}} |

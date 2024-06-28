@@ -1,10 +1,8 @@
-- name: Distribuzione dati codificati (DDC)
-  filename: Distribuzione-dati-codificati--DDC.page.md
-- name: Occupazione posti letto
-  filename: Occupazione-posti-letto.page.md
-- name: Recupero informazioni di dominio del gestore
-  filename: Recupero-informazioni-di-dominio-del-gestore.page.md
-- name: Dimissioni protette
-  filename: Dimissioni-protette.page.md
-- name: Care plan
-  filename: Care-plan.page.md
+- name: Cure domiciliari
+  filename: Cure-domiciliari.page.md
+- name: Attivazione della presa in carico cronicità per MMG
+  filename: Attivazione-della-presa-in-carico-cronicità-per-MMG.page.md
+- name: Catalogo di offerta
+  filename: Catalogo-di-offerta.page.md
+- name: Nuova Anagrafe Regionale
+  filename: Nuova-Anagrafe-Regionale.page.md

@@ -72,7 +72,7 @@ Di seguito la descrizione dei criteri di ricerca inerenti al profilo RLOrganizat
 
 ###	1. Enti erogatori gestiti amministrativamente da un ente di codice L1
 
-Questa ricerca può essere effettuata per ricavare gli entri erogatori di servizi socioassistenziali che afferiscono amministrativamente ad un ente di codice L1. Dunque, questa ricerca permette, ad esempio, di ricavare tutte le ASST che afferiscono ad una ATS, oppure tutti gli Enti Erogatori di servizi socioassistenziali privati accreditati.
+Questa ricerca può essere effettuata per ricavare gli enti erogatori di servizi socioassistenziali che afferiscono amministrativamente ad un ente di codice L1. Dunque, questa ricerca permette, ad esempio, di ricavare tutte le ASST che afferiscono ad una ATS, oppure tutti gli Enti Erogatori di servizi socioassistenziali privati accreditati.
 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 -	partOf.reference(RLOrganizationL1).identifier:  codice L1 dell’ente di interesse
@@ -100,8 +100,9 @@ Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 -	distrettoTerritoriale.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
 
-Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi:
+Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi (ad esempio per termine del periodo di accreditamento):
 -	dataFineValidità: data di interesse
+- dataCessazione: data di interesse
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
  
@@ -118,13 +119,14 @@ A titolo esemplificativo, la chiamata:
 restituirà tutte le strutture la cui sede operativa ricade nel distretto afferente della ASST Papa Giovanni XXIII (030718) con una data di fine validità superiore al 05/04/2018.
 
 ### 3. Enti erogatori accreditati nell’ambito territoriale di una ASST 
-Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST nel caso eroghino servizi socioassistenziali (es. cure domiciliari).
+Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di servizi socioassistenziali che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST nel caso eroghino servizi socioassistenziali (es. cure domiciliari).
 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 - distrettoAccreditamento.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
 
-Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi:
+Inoltre, è possibile valorizzare il seguente parametro per raffinare la ricerca escludendo eventuali strutture che abbiano cessato l’erogazione dei servizi (ad esempio per termine del periodo di accreditamento):
 -	dataFineValidità: data di interesse
+- dataCessazione: data di interesse
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementazione della ricerca:
 
@@ -142,7 +144,7 @@ restituirà tutte le strutture che si sono accreditate in almeno un distretto af
 
 ### 4. Enti erogatori accreditati nell’ambito territoriale di una ASST di una specifica tipologia
 
-Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di uno specifico servizio socioassistenziale che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST nel caso siano enti erogatori del servizio socioassistenziale d’interesse (es. cure domiciliari).
+Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di uno specifico servizio socioassistenziale che si sono accreditati in almeno un distretto afferente ad una determinata ASST. Verranno restituite dalla ricerca anche le stesse ASST nel caso siano enti erogatori del servizio socioassistenziale d’interesse (es. cure domiciliari).
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 -	distrettoAccreditamento.ASSTAfferenza.coding.code: codice dell’ASST di afferenza di interesse 
@@ -190,7 +192,7 @@ A titolo esemplificativo, la chiamata:
 restituirà tutte le strutture di tipo C-DOM che si sono accreditate nelle ASST che afferiscono all'ATS della Montagna con una data di fine validità superiore al 05/04/2018.
 
 ### 6. Enti erogatori accreditati in uno specifico distretto
-Questa ricerca può essere effettuata per ricercare tutti gli entri erogatori di servizi socioassistenziali che si sono accreditati in uno determinato distretto sanitario.
+Questa ricerca può essere effettuata per ricercare tutti gli enti erogatori di servizi socioassistenziali che si sono accreditati in uno determinato distretto sanitario.
 
 Il parametro da valorizzare obbligatoriamente per effettuare la ricerca è:
 -	distrettoAccreditamento.codiceDistretto.coding.code: codice del distretto sanitario di interesse
@@ -233,6 +235,7 @@ I parametri di ricerca del profilo RLOrganizationL2, oltre ai campi standard del
 | distrettoAccreditamentoAtsAfferenza | ATS di afferenza del distretto territoriale sotto la quale   l'Ente Erogatore si è accreditato per erogare i servizi sociosanitari. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoAtsAfferenza}} |
 | distrettoAccreditamentoCodiceDistretto | Distretto di accreditamento nel quale l'Ente eroga i servizi   sociosanitari. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoAccreditamentoCodiceDistretto}} |
 | distrettoTerritorialeASSTAfferenza | ASST nella quale l'Ente erogatore ha la sede operativa. | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDistrettoTerritorialeASSTAfferenza}} |
+| dataCessazione | Data di cessazione per strutture SISS di livello 2 | {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataCessazione}} |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

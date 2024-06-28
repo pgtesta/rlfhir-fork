@@ -470,6 +470,41 @@
       <td>ValueSet relativo alla codifica delle patologie non ICD9-CM</td>
       <td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PatologieNonICD9CM</td>
     </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio}}
+      </td>
+      <td>ValueSet relativo alla codifica degli errori del messaggio</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio}}
+      </td>
+      <td>ValueSet relativo alla codifica della tipologia di contenuto del messaggio</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/GPC-LivelloGravita}}
+      </td>
+      <td>ValueSet relativo alla codifica del livello di gravità della cronicità</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/GPC-LivelloGravita</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt}}
+      </td>
+      <td>ValueSet relativo alla codifica della tipologia di evento del Messaggio</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione}}
+      </td>
+      <td>ValueSet relativo alla codifica della tipologia di prestazione</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione</td>
+    </tr>
   </tbody>
 </table>
   </body>
