@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDatiDimissioneCore",
-  "name": "RLDatiDimissioneCore",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterDatiDimissione",
+  "name": "RLEncounterDatiDimissione",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",

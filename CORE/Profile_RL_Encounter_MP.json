@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore",
-  "name": "RLEncounterCore",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP",
+  "name": "RLEncounterMP",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "kind": "resource",
@@ -19,7 +19,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDatiDimissioneCore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterDatiDimissione"
             ]
           }
         ],
