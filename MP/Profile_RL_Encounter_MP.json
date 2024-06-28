@@ -77,6 +77,19 @@
         "short": "Identificativo dell'episodio"
       },
       {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Encounter.period",
         "path": "Encounter.period",
         "min": 1
