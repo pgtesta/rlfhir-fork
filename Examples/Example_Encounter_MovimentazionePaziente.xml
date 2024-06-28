@@ -1,0 +1,260 @@
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="gen1" />
+  <meta>
+    <profile value="https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP" />
+  </meta>
+  <implicitRules value="http://hl7.org/fhir/reference" />
+  <language value="en-GB" />
+  <extension url="https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterDatiDimissione" />
+  <extension url="http://hl7.org/fhir/6.0/StructureDefinition/extension-Encounter.plannedEndDate">
+    <valueDateTime value="1966-11-29" />
+  </extension>
+  <identifier>
+    <use value="usual" />
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Fast Badger" />
+        <display value="Energetic Cat" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Hilarious Elephant" />
+    </type>
+    <system value="http://www.acme.com/identifiers/patient" />
+    <value value="123456" />
+    <assigner>
+      <reference value="Energetic Badger" />
+      <type value="http://hl7.org/fhir/reference" />
+      <display value="Crazy Badger" />
+    </assigner>
+  </identifier>
+  <status value="in-progress" />
+  <statusHistory>
+    <status value="finished" />
+  </statusHistory>
+  <class>
+    <system value="http://hl7.org/fhir/reference" />
+    <version value="Hilarious Elephant" />
+    <display value="Energetic Dog" />
+    <userSelected value="false" />
+  </class>
+  <classHistory>
+    <class>
+      <system value="http://hl7.org/fhir/reference" />
+      <version value="Energetic Dog" />
+      <display value="Hilarious Dog" />
+      <userSelected value="false" />
+    </class>
+  </classHistory>
+  <type>
+    <coding>
+      <system value="http://hl7.org/fhir/reference" />
+      <version value="Slow Giraffe" />
+      <display value="Crazy Cat" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Inventive Elephant" />
+  </type>
+  <serviceType>
+    <coding>
+      <system value="http://hl7.org/fhir/reference" />
+      <version value="Fast Zebra" />
+      <display value="Energetic Cat" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Inventive Zebra" />
+  </serviceType>
+  <priority>
+    <coding>
+      <system value="http://hl7.org/fhir/reference" />
+      <version value="Fantastic Zebra" />
+      <display value="Fast Mouse" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Energetic Zebra" />
+  </priority>
+  <subject>
+    <reference value="Fast Elephant" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Energetic Dog" />
+  </subject>
+  <episodeOfCare>
+    <reference value="Crazy Mouse" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Fast Elephant" />
+  </episodeOfCare>
+  <basedOn>
+    <reference value="Slow Giraffe" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Slow Dog" />
+  </basedOn>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Hilarious Giraffe" />
+        <display value="Hilarious Badger" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Fantastic Dog" />
+    </type>
+    <individual>
+      <reference value="Crazy Badger" />
+      <type value="http://hl7.org/fhir/reference" />
+      <display value="Slow Badger" />
+    </individual>
+  </participant>
+  <appointment>
+    <reference value="Slow Mouse" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Hilarious Zebra" />
+  </appointment>
+  <period>
+    <start value="2004-02-20" />
+    <end value="1964-12-22" />
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://hl7.org/fhir/reference" />
+      <version value="Crazy Badger" />
+      <display value="Hilarious Mouse" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Hilarious Cat" />
+  </reasonCode>
+  <reasonCode>
+    <coding>
+      <system value="http://hl7.org/fhir/reference" />
+      <version value="Fast Badger" />
+      <display value="Fantastic Elephant" />
+      <userSelected value="false" />
+    </coding>
+    <coding>
+      <system value="https://terminology.hl7.org/CodeSystem-icd9" />
+      <version value="Slow Elephant" />
+      <display value="Fantastic Elephant" />
+      <userSelected value="false" />
+    </coding>
+    <text value="Inventive Cat" />
+  </reasonCode>
+  <reasonReference>
+    <reference value="Fantastic Cat" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Hilarious Badger" />
+  </reasonReference>
+  <diagnosis>
+    <condition>
+      <reference value="Hilarious Giraffe" />
+      <type value="http://hl7.org/fhir/reference" />
+      <display value="Slow Mouse" />
+    </condition>
+    <use>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Fantastic Badger" />
+        <display value="Fast Elephant" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Slow Mouse" />
+    </use>
+    <rank value="147048153" />
+  </diagnosis>
+  <account>
+    <reference value="Crazy Giraffe" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Inventive Mouse" />
+  </account>
+  <hospitalization>
+    <origin>
+      <reference value="Fantastic Giraffe" />
+      <type value="http://hl7.org/fhir/reference" />
+      <display value="Hilarious Cat" />
+    </origin>
+    <admitSource>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Hilarious Elephant" />
+        <display value="Inventive Dog" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Fast Zebra" />
+    </admitSource>
+    <reAdmission>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Crazy Dog" />
+        <display value="Fantastic Badger" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Slow Badger" />
+    </reAdmission>
+    <dietPreference>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Fantastic Giraffe" />
+        <display value="Fast Zebra" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Fantastic Zebra" />
+    </dietPreference>
+    <specialCourtesy>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Energetic Cat" />
+        <display value="Fantastic Zebra" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Inventive Giraffe" />
+    </specialCourtesy>
+    <specialArrangement>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Fantastic Giraffe" />
+        <display value="Energetic Dog" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Fast Badger" />
+    </specialArrangement>
+    <destination>
+      <reference value="Crazy Giraffe" />
+      <type value="http://hl7.org/fhir/reference" />
+      <display value="Energetic Dog" />
+    </destination>
+    <dischargeDisposition>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Energetic Giraffe" />
+        <display value="Slow Dog" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Crazy Mouse" />
+    </dischargeDisposition>
+  </hospitalization>
+  <location>
+    <location>
+      <reference value="Hilarious Zebra" />
+      <type value="http://hl7.org/fhir/reference" />
+      <display value="Slow Badger" />
+    </location>
+    <status value="active" />
+    <physicalType>
+      <coding>
+        <system value="http://hl7.org/fhir/reference" />
+        <version value="Energetic Cat" />
+        <display value="Inventive Elephant" />
+        <userSelected value="false" />
+      </coding>
+      <text value="Slow Mouse" />
+    </physicalType>
+  </location>
+  <serviceProvider>
+    <reference value="Inventive Cat" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Inventive Elephant" />
+  </serviceProvider>
+  <partOf>
+    <reference value="Fast Cat" />
+    <type value="http://hl7.org/fhir/reference" />
+    <display value="Slow Badger" />
+  </partOf>
+</Encounter>
