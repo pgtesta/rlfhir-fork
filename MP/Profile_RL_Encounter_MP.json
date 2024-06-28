@@ -26,9 +26,28 @@
         "isModifier": false
       },
       {
+        "id": "Encounter.extension:datiDimissione.extension:pzDimissibile",
+        "path": "Encounter.extension.extension",
+        "sliceName": "pzDimissibile",
+        "short": "Indicazione di paziente dimissibile"
+      },
+      {
+        "id": "Encounter.extension:datiDimissione.extension:motivoPzNonDimesso",
+        "path": "Encounter.extension.extension",
+        "sliceName": "motivoPzNonDimesso",
+        "short": "Se paziente dimissibile, motivo per cui rimane in reparto"
+      },
+      {
+        "id": "Encounter.extension:datiDimissione.extension:dimissioneProtetta",
+        "path": "Encounter.extension.extension",
+        "sliceName": "dimissioneProtetta",
+        "short": "Indicazione di dimissione protetta"
+      },
+      {
         "id": "Encounter.extension:dataDimissionePrevista",
         "path": "Encounter.extension",
         "sliceName": "dataDimissionePrevista",
+        "short": "Data/ora prevista di dimissione",
         "max": "1",
         "type": [
           {
@@ -43,6 +62,7 @@
       {
         "id": "Encounter.identifier",
         "path": "Encounter.identifier",
+        "short": "Codice identificazione univoco dell’episodio",
         "min": 1,
         "max": "1"
       },
@@ -88,9 +108,23 @@
         }
       },
       {
+        "id": "Encounter.reasonCode.coding.system",
+        "path": "Encounter.reasonCode.coding.system",
+        "fixedUri": "https://terminology.hl7.org/CodeSystem-icd9"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.code",
+        "path": "Encounter.reasonCode.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://terminology.hl7.org/CodeSystem-icd9"
+        }
+      },
+      {
         "id": "Encounter.reasonReference",
         "path": "Encounter.reasonReference",
-        "definition": "Il profilo target di condition può contenere un esito strutturato oppure no",
+        "short": "Esito",
+        "definition": "Il profilo target Condition può contenere un esito strutturato (Condition.code) oppure un esito non strutturato (Condition.note).",
         "type": [
           {
             "code": "Reference",
@@ -108,16 +142,37 @@
       {
         "id": "Encounter.hospitalization.origin",
         "path": "Encounter.hospitalization.origin",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore"
+            ]
+          }
+        ]
       },
       {
         "id": "Encounter.hospitalization.destination",
         "path": "Encounter.hospitalization.destination",
-        "definition": "Destinazione, in caso di trasferimento presso altra struttura."
+        "short": "Destinazione del trasferimento",
+        "definition": "Destinazione, in caso di trasferimento presso altra struttura.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
       },
       {
         "id": "Encounter.location",
         "path": "Encounter.location",
+        "short": "Posto letto di ricovero",
+        "definition": "Il reparto fisico e il reparto clinico a cui afferisce il posto letto, sono contenuti all'interno del profilo RLLocationPLOLetto.\r\nQualora il paziente dovesse effettuare un trasferimento, la data di fine del period potrebbe non coincidere con la data di fine dell'encounter stesso.",
         "min": 1
       },
       {
@@ -127,11 +182,23 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Location",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto"
             ]
           }
         ]
+      },
+      {
+        "id": "Encounter.location.physicalType",
+        "path": "Encounter.location.physicalType",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/location-physical-type",
+              "code": "bd",
+              "display": "bed"
+            }
+          ]
+        }
       },
       {
         "id": "Encounter.location.period",
