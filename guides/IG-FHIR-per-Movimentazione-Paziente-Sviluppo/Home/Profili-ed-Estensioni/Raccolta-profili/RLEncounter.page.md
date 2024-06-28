@@ -56,16 +56,18 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:esempio-RLOrganizationL1}}
+  {{link:https://simplifier.net/rlfhir-sviluppo/esempio-encounter-trasferimento}}
+  {{link:https://simplifier.net/rlfhir-sviluppo/esempio-encounter-arrivo}}
 <br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Tipologie di ricerca
+TODO
 
 ### Enti attualmente attivi
-Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
+TODO Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
 
 I parametri da valorizzare per effettuare la ricerca sono:
 -	DataFineValidita: data di interesse
@@ -76,10 +78,11 @@ I parametri da valorizzare per effettuare la ricerca sono:
 | BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
 | URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP<br>&dataFineValidita=\{_datadiRiferimento_\}    |
 
+
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
+TODO Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
 - _profile
 - identifier
 
@@ -93,8 +96,10 @@ I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard del
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizationL1
+Nella seguente tabella sono elencati i value-set relativi al profilo RLEncounterMP
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | Codifica della tipologia di Ente (L1) | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1}}   |
+| type    | Codifica dell'identificativo univoco numero di episodio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/numeroEpisodio}}   |
+| type    | Sistema di codifica ICD9 per la codifica del motivo di ricovero | La codifica è definita dal CodeSystem {{link:https://terminology.hl7.org/CodeSystem-icd9}}   |
+| type    | Physical-tipe fissato per la location Posto Letto Occupato | La codifica è definita dal CodeSystem {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
