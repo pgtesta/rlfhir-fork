@@ -38,22 +38,6 @@
       </thead>
       <tbody id="myTable">
         <tr>
-          <td>DDC</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
-          </td>
-          <td>
-            Profilo che descrive una struttura o un ente
-            identificato univocamente da un codice di ente L1
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}
-          </td>
-        </tr>
-        <tr>
           <td>MP</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterMP.page.md}}
@@ -77,7 +61,7 @@
             <a href="http://hl7.org/fhir/R4/location.html">Location</a>
           </td>
           <td>
-            Profilo che descrive un ???
+            Profilo che descrive una struttura fisica per il contesto di Regione Lombardia
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}
@@ -97,6 +81,38 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto}}
+          </td>
+        </tr>
+        <tr>
+          <td>DDC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive una struttura o un ente
+            identificato univocamente da un codice di ente L1
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}
+          </td>
+        </tr>        
+        <tr>
+          <td>DDC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive un presidio
+            identificato univocamente da un codice di ente L2
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}
           </td>
         </tr>
         <tr>
