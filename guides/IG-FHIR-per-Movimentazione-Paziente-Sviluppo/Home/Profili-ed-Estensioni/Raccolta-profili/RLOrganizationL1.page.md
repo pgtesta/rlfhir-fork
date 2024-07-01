@@ -64,30 +64,10 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-### Enti attualmente attivi
-Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
-
-I parametri da valorizzare per effettuare la ricerca sono:
--	DataFineValidita: data di interesse
-
-| SCOPE | Organization L1 con data fine validità superiore alla data odierna o nulla    |
-|---|---|
-| VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1<br>&dataFineValidita=\{_datadiRiferimento_\}    |
-
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
-- _profile
-- identifier
 
-I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
-
-| Nome e link Simplifier | Descrizione | Espressione |
-|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
