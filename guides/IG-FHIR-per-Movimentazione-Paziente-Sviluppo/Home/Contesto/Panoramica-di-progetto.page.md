@@ -1,5 +1,10 @@
 # {{page-title}}
+[Contesto](Contesto)
+[Utenti fruitori](Utenti-fruitori)
+[Fonte del dato](fonte-del-dato)
+[Glossario](glossario)
 
+## Contesto
 
 Questa IG definisce il modello dati e le API utilizzate per il caso d’uso “Movimentazione Paziente”, che si instaura nel contesto del Clinical Data Repository (CDR).
 
@@ -23,13 +28,13 @@ Gli utenti identificati come fruitori del caso d’uso sono i seguenti:
 
 In particolare, un operatore incaricato del monitoraggio dei dati e della messa a disposizione dei KPI (indicati nel paragrafo Principali funzionalità del servizio) aiuterà il personale sanitario di reparto che ne farà richiesta a utilizzare tali dati per motivi logistici e operativi (es. previsione picchi di domanda) e di cura.
 
-## Fonte dato
+## Fonte del dato
 
 Per tracciare gli spostamenti dei posti letto intra-aziendali ed alimentare il CDR, verranno utilizzati il sistema **ADT** e la **CCE**.
 
-Il sistema ADT permette di monitorare in tempo reale le ammissioni, i trasferimenti e le dimissioni dei pazienti, assicurando una gestione efficiente e aggiornata dei letti disponibili. 
+- Il sistema ADT permette di monitorare in tempo reale le ammissioni, i trasferimenti e le dimissioni dei pazienti, assicurando una gestione efficiente e aggiornata dei letti disponibili. 
 
-La CCE, invece, fornirà informazioni cliniche dettagliate sui pazienti (es. diagnosi). 
+- La CCE, invece, fornirà informazioni cliniche dettagliate sui pazienti (es. diagnosi). 
 
 
 ## Glossario
