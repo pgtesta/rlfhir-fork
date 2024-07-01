@@ -77,6 +77,5 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLEncounter
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| identifier    | Codifica dell'identificativo univoco numero di episodio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/numeroEpisodio}}   |
-| reasonCode    | Sistema di codifica ICD9 per la codifica del motivo di ricovero | La codifica è definita dal CodeSystem {{link:https://terminology.hl7.org/CodeSystem-icd9}}   |
+| reasonCode    | Sistema di codifica ICD9 per la codifica del motivo di ricovero | La codifica è definita dal CodeSystem [ICD-9](https://terminology.hl7.org/5.5.0/CodeSystem-icd9.html)   |
 | physicalType    | Physical-type fissato per la location Posto Letto | La codifica è definita dal CodeSystem {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
