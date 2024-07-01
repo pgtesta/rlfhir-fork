@@ -84,3 +84,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizat
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
+| type    | Tipo di organizzazione (esempio) | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione}}   |
