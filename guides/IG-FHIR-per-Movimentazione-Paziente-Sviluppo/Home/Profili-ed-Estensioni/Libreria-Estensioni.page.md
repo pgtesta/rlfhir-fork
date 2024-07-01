@@ -60,7 +60,7 @@
           </td>
         </tr>
         <tr>
-          <td>plannedEndDate</td>
+          <td>PlannedEndDate</td>
           <td>Encounter</td>
           <td>Data prevista di dimissione</td>
           <td>

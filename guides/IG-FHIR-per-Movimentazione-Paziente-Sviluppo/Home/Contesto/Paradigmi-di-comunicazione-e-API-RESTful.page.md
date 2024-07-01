@@ -10,6 +10,7 @@ Tale modalità di consultazione dei dati è definita “logica PULL”, e preved
 
 Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione assegnata dal server, avviene tramite una richiesta HTTPs POST.
 
+## Creazione
 ### API Manager
 L'API Manager espone i servizi FHIR definiti nell'ecosistema di Regione Lombardia. Il base_url con cui accedere a tali servizi è il seguente:
  
@@ -23,3 +24,12 @@ L'elenco delle API esposte è:
 |POST|<base_API_Manager>/_Bundle_|RLBundleNuovoAccessoPaz|ADT/CCE|
 |POST|<base_API_Manager>/_Bundle_|RLBundleTrasferimentoPaz|ADT/CCE|
 
+## Consultazione
+//--- qui ci saranno le richieste che permettono di fare le query per:
+tempi medi di occupazione per posto-letto: numero medio di giorni durante i quali un letto è occupato da un paziente in un determinato periodo; 
+
+intervalli di turn over: tempo medio che intercorre tra la dimissione di un paziente e l'ammissione di un nuovo paziente nello stesso letto; 
+
+tempi di attesa del posto letto: periodo che intercorre tra la richiesta di un posto letto e l'effettiva assegnazione dello stesso; 
+
+numero di spostamenti per paziente: numero di volte che un paziente viene trasferito da un letto o reparto all'altro durante la sua degenza. 

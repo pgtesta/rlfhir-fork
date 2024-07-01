@@ -66,31 +66,8 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 ## Tipologie di ricerca
 TODO
 
-### Enti attualmente attivi
-TODO Questa ricerca permette di reperire la lista degli enti indentificati univocamente da un codice L1 attualmente attivi in Regione Lombardia.
-
-I parametri da valorizzare per effettuare la ricerca sono:
--	DataFineValidita: data di interesse
-
-| SCOPE | Organization L1 con data fine validità superiore alla data odierna o nulla    |
-|---|---|
-| VERB | GET |
-| BASE | http://localhost:52773/csp/healthshare/nprifhirserver/fhir/r4    |
-| URL | /Organization?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP<br>&dataFineValidita=\{_datadiRiferimento_\}    |
-
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
 ## Search parameter
-TODO Per questo profilo sono utilizzati i seguenti parametri di ricerca previsti dallo standard: 
-- _profile
-- identifier
-
-I parametri di ricerca del profilo RLOrganizationL1, oltre ai campi standard della risorsa Organization, sono definiti nella seguente tabella:
-
-| Nome e link Simplifier | Descrizione | Espressione |
-|---|---|---|
-| {{link:https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita}} | Parametro di ricerca di strutture SISS di livello 1 specificando la data di fine validità. | extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value |
+TODO
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -100,6 +77,6 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLEncounter
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | Codifica dell'identificativo univoco numero di episodio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/numeroEpisodio}}   |
-| type    | Sistema di codifica ICD9 per la codifica del motivo di ricovero | La codifica è definita dal CodeSystem {{link:https://terminology.hl7.org/CodeSystem-icd9}}   |
-| type    | Physical-tipe fissato per la location Posto Letto Occupato | La codifica è definita dal CodeSystem {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
+| identifier    | Codifica dell'identificativo univoco numero di episodio | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/numeroEpisodio}}   |
+| reasonCode    | Sistema di codifica ICD9 per la codifica del motivo di ricovero | La codifica è definita dal CodeSystem {{link:https://terminology.hl7.org/CodeSystem-icd9}}   |
+| physicalType    | Physical-type fissato per la location Posto Letto | La codifica è definita dal CodeSystem {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
