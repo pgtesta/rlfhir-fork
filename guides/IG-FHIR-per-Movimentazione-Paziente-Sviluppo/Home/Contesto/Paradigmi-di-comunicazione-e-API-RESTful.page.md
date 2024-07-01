@@ -23,6 +23,7 @@ L'elenco delle API esposte è:
 |---|---|---|
 |POST|<base_API_Manager>/_Bundle_|RLBundleNuovoAccessoPaz|ADT/CCE|
 |POST|<base_API_Manager>/_Bundle_|RLBundleTrasferimentoPaz|ADT/CCE|
+|POST|<base_API_Manager>/_Bundle_|RLBundleDimissionePaz|ADT/CCE|
 
 ## Consultazione
 //--- qui ci saranno le richieste che permettono di fare le query per:

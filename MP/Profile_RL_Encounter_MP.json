@@ -135,10 +135,23 @@
         }
       },
       {
-        "id": "Encounter.reasonReference",
-        "path": "Encounter.reasonReference",
-        "short": "Esito",
-        "definition": "Il profilo target Condition può contenere un esito strutturato (Condition.code) oppure un esito non strutturato (Condition.note).",
+        "id": "Encounter.diagnosis",
+        "path": "Encounter.diagnosis",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Encounter.diagnosis.condition",
+        "path": "Encounter.diagnosis.condition",
+        "short": "Diagnosi",
+        "definition": "Il profilo target Condition può contenere una diagnosi strutturata (Condition.code) oppure una diagnosi non strutturata (Condition.note).",
         "type": [
           {
             "code": "Reference",
@@ -147,6 +160,38 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Encounter.diagnosis.condition.use",
+        "path": "Encounter.diagnosis.condition.use",
+        "short": "Diagnosi",
+        "definition": "Il profilo target Condition può contenere una diagnosi strutturata (Condition.code) oppure una diagnosi non strutturata (Condition.note).",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.diagnosis:DiagnosiDimissione",
+        "path": "Encounter.diagnosis",
+        "sliceName": "DiagnosiDimissione"
+      },
+      {
+        "id": "Encounter.diagnosis:DiagnosiDimissione.use",
+        "path": "Encounter.diagnosis.use",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/diagnosis-role",
+              "code": "DD",
+              "display": "Discharge diagnosis"
+            }
+          ]
+        }
       },
       {
         "id": "Encounter.hospitalization",

@@ -109,10 +109,26 @@
           </td>
           <td>
             Profilo che descrive un presidio
-            identificato univocamente da un codice di ente L2
+            identificato univocamente da un codice L2
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}
+          </td>
+        </tr>  
+        <tr>
+          <td>DDC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive un presidio
+            identificato univocamente da un codice ambulatorio L3
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3}}
           </td>
         </tr>
         <tr>

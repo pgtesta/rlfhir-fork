@@ -55,9 +55,10 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 </div>
 
 <div id="Esempi" class="tabcontent">
-  <h3>Esempi</h3>
-  {{link:https://simplifier.net/rlfhir-sviluppo/esempio-encounter-trasferimento}}
-  {{link:https://simplifier.net/rlfhir-sviluppo/esempio-encounter-arrivo}}
+  <h3>Esempi</h3>  
+  {{link:esempio-encounter-trasferimento}}
+  
+  {{link:esempio-encounter-arrivo}}
 <br>
 </div>
 
