@@ -3,7 +3,6 @@
 - [RLOrganizationCore](#rlorganizationcore)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Enti attualmente attivi](#enti-attualmente-attivi)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
