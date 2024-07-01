@@ -56,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:esempio-RLOrganizationCore}}
+  
 <br>
 </div>
 
@@ -84,4 +84,3 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLOrganizat
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type    | ??? | La codifica è definita dal ValueSet {{link:http://terminology.hl7.it/ValueSet/tipoOrganizzazione}}   |

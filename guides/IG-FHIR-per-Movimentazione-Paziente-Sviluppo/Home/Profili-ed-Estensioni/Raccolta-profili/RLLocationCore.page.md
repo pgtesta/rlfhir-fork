@@ -56,7 +56,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:Location/esempio-Location-PLO-Letto}}
+{{link:Location/esempio-Location-CORE-base}}
 <br>
 </div>
 
@@ -78,3 +78,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLLocationC
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
+| physicalType    | Tipo di struttura fisica| La codifica è definita dal Valueset {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}

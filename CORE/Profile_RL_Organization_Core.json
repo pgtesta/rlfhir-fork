@@ -65,7 +65,7 @@
         "binding": {
           "strength": "example",
           "description": "ValueSet relativo al tipo di organizzazione",
-          "valueSet": "http://terminology.hl7.it/ValueSet/tipoOrganizzazione"
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione"
         }
       },
       {

@@ -3,7 +3,6 @@
 - [RLEncounterMP](#rlencountermp)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [Enti attualmente attivi](#enti-attualmente-attivi)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -56,9 +55,10 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>  
-  
-- {{link:esempio-encounter-trasferimento}}  
-- {{link:esempio-encounter-arrivo}}
+
+{{link:esempio-encounter-trasferimento}}  
+
+{{link:esempio-encounter-arrivo}}
 <br>
 </div>
 
@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLEncounter
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
 | reasonCode    | Sistema di codifica ICD9 per la codifica del motivo di ricovero | La codifica è definita dal CodeSystem [ICD-9](https://terminology.hl7.org/5.5.0/CodeSystem-icd9.html)   |
-| physicalType    | Physical-type fissato per la location Posto Letto | La codifica è definita dal CodeSystem {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
+| physicalType    | Physical-type fissato per la location Posto Letto | La codifica è definita dal Valueset {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
