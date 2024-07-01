@@ -28,6 +28,14 @@
     <table style="width: fit-content">
       <thead>
         <tr>
+          <th>Nome estensione</th>
+          <th>Base</th>
+          <th>Descrizione</th>
+          <th>Link simplifier</th>
+        </tr>
+      </thead>
+      <tbody id="myTable">
+        <tr>
           <td>RLLocationRepartoClinico</td>
           <td>Location</td>
           <td>Reparto clinico</td>
