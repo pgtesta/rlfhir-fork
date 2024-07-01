@@ -118,7 +118,7 @@
         "path": "Encounter.reasonCode.coding",
         "binding": {
           "strength": "required",
-          "valueSet": "https://terminology.hl7.org/CodeSystem-icd9"
+          "valueSet": "https://terminology.hl7.org/5.5.0/CodeSystem-icd9.html"
         }
       },
       {
