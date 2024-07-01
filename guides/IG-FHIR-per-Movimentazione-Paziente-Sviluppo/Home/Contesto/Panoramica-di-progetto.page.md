@@ -1,8 +1,8 @@
 # {{page-title}}
-[Contesto](Contesto)
-[Utenti fruitori](Utenti-fruitori)
-[Fonte del dato](fonte-del-dato)
-[Glossario](glossario)
+- [Contesto](Contesto)
+- [Utenti fruitori](Utenti-fruitori)
+- [Fonte del dato](fonte-del-dato)
+- [Glossario](glossario)
 
 ## Contesto
 
