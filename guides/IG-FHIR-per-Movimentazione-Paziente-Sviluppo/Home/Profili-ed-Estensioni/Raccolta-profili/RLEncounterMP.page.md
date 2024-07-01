@@ -9,7 +9,7 @@
 
 
 ## Descrizione
-Il profilo RLEncounterMP è stato strutturato a partire dalla risorsa standard FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html). DA AGGIUNGERE
+Il profilo RLEncounterMP è stato strutturato a partire dalla risorsa standard FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html) ed è volto a rappresentare l'episodio di ricovero del paziente in una specifica struttura/reparto/posto letto, dal momento dell'accettazione alla dimissione.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterMP}}.
 
@@ -57,6 +57,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>  
   {{link:esempio-encounter-trasferimento}}
+  
   
   {{link:esempio-encounter-arrivo}}
 <br>
