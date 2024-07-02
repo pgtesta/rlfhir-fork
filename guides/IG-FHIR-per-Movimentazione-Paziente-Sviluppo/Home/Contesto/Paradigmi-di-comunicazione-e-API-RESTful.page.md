@@ -27,6 +27,12 @@ L'elenco delle API esposte è:
 
 ## Consultazione
 //--- qui ci saranno le richieste che permettono di fare le query per:
+
+
+|Metodo HTTP|URL|Nome profilo|Detentore del dato|
+|---|---|---|
+|GET|<base_API_Manager>/_Encounter_|-|CDR|
+
 tempi medi di occupazione per posto-letto: numero medio di giorni durante i quali un letto è occupato da un paziente in un determinato periodo; 
 
 intervalli di turn over: tempo medio che intercorre tra la dimissione di un paziente e l'ammissione di un nuovo paziente nello stesso letto; 

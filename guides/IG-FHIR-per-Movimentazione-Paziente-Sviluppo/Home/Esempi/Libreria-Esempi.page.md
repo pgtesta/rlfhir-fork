@@ -53,6 +53,12 @@
       <td>{{link:Organization/esempio-RLOrganizationL3}}</td>
     </tr>
     <tr>
+      <td>CORE</td>
+      <td>Location</td>
+      <td>Esempio del profilo RLLocationCore</td>
+      <td>{{link:Location/esempio-Location-CORE-base}}</td>
+    </tr>
+    <tr>
       <td>PLO</td>
       <td>Location</td>
       <td>Esempio del profilo RLLocationPLOLetto</td>

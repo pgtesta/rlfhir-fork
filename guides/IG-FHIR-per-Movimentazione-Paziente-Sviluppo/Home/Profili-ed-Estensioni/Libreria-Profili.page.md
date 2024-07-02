@@ -69,8 +69,9 @@
         </tr>
         <tr>
           <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md}}
+          <td><a href="https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current">
+        RLLocationPLOLetto
+      </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/location.html">Location</a>
@@ -86,7 +87,9 @@
         <tr>
           <td>DDC</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}
+          <a href="https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md?version=current">
+                  RLOrganizationL1
+                </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
@@ -98,11 +101,13 @@
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}
           </td>
-        </tr>        
+        </tr>       
         <tr>
           <td>DDC</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}
+          <a href="https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md?version=current">
+                  RLOrganizationL2
+                </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
@@ -118,7 +123,9 @@
         <tr>
           <td>DDC</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}
+          <a href="https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md?version=current">
+                  RLOrganizationL3
+                </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
