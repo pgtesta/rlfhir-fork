@@ -54,7 +54,6 @@
         </tr>
         <tr>
           <td>CORE</td>
-          <td>
           <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rllocationcore.page.md?version=current">
           RLLocationCore
       </a>
