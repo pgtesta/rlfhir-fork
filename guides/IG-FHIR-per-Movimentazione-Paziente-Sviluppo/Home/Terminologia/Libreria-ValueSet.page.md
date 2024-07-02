@@ -113,7 +113,7 @@
     </tr>
     <tr>
       <td>
-      <a href="https://fhir.siss.regione.lombardia.it/sid/tesseraTeam" target="_blank">tesseraTEAM</a>
+      <a href="https://fhir.siss.regione.lombardia.it/sid/tesseraTeam" target="_blank">ID-tesseraTEAM</a>
       </td>
       <td> ValueSet relativo alla codifica del codice TEAM </td>
 <td>https://fhir.siss.regione.lombardia.it/sid/tesseraTeam</td>
