@@ -55,7 +55,9 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationCore.page.md}}
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rllocationcore.page.md?version=current">
+          RLLocationCore
+      </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/location.html">Location</a>
@@ -141,7 +143,9 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationCore.page.md}}
+         <a href= "https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlorganizationcore.page.md?version=current">
+                  RLOrganizationCore
+                </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
@@ -156,7 +160,9 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md}}
+            <a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlpatientcore.page.md?version=current">
+                  RLPatientCore
+                </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>
