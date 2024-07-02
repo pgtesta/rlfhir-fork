@@ -134,7 +134,7 @@
     </tr>
     <tr>
       <td>
-      <a href="http://terminology.hl7.it/ValueSet/uri-idRegionali" target="_blank">idRegionali</a>
+      <a href="http://terminology.hl7.it/ValueSet/uri-idRegionali" target="_blank">ID-Regionale</a>
       </td>
       <td> ValueSet relativo alla codifica dell'id regionale </td>
 <td>http://terminology.hl7.it/ValueSet/uri-idRegionali</td>
