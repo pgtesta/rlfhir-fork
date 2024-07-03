@@ -1,6 +1,6 @@
 # IG RLFHIR Live 3.10.0
 
-Versione rilasciata il 25/06/2024. 
+Versione rilasciata il 03/07/2024. 
 
 La guida è consultabile a questo [link](https://simplifier.net/guide/ig-rlfhir?version=3.10.0).
 
