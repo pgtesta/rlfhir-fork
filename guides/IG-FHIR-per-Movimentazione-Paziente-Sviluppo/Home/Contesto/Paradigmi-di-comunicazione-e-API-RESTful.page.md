@@ -35,10 +35,12 @@ L'elenco delle API esposte è:
 |GET|<base_API_Manager>Encounter?identifier=[idEpisodio]&patient.identifier=[idpz]|-|CDR|
 
 
-tempi medi di occupazione per posto-letto: numero medio di giorni durante i quali un letto è occupato da un paziente in un determinato periodo; 
+**1. Tempi medi di occupazione per posto-letto**: numero medio di giorni durante i quali un letto è occupato da un paziente in un determinato periodo.
+La query filtra le risorse encounter sulla base dell'idPaziente a cui è associato, tramite l'attributo "subject", con riferimento a risorsa di tipo Patient. I risultati vengono ulteriormente selezionati sulla base del periodo di ricovero di interesse. In output si ottengono le location ( posto letto ) occupati.
 
-intervalli di turn over: tempo medio che intercorre tra la dimissione di un paziente e l'ammissione di un nuovo paziente nello stesso letto; 
+**2. Intervalli di turn over**: tempo medio che intercorre tra la dimissione di un paziente e l'ammissione di un nuovo paziente nello stesso letto;
+Si applica un filtro sull'id del posto letto ricercato e si ottiene in output la risorsa Encounter che fa riferimento.
 
-tempi di attesa del posto letto: periodo che intercorre tra la richiesta di un posto letto e l'effettiva assegnazione dello stesso; 
+**TODO** : tempi di attesa del posto letto: periodo che intercorre tra la richiesta di un posto letto e l'effettiva assegnazione dello stesso; 
 
-numero di spostamenti per paziente: numero di volte che un paziente viene trasferito da un letto o reparto all'altro durante la sua degenza. 
+**3. numero di spostamenti per paziente**: numero di volte che un paziente viene trasferito da un letto o reparto all'altro durante la sua degenza. Si effettua un filtro sia sull'identificativo del paziente, sia numero di identificativo del ricovero a cui fa riferimento la statistica.
