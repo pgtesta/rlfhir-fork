@@ -26,12 +26,14 @@ L'elenco delle API esposte è:
 |POST|<base_API_Manager>/_Bundle_|RLBundleDimissionePaz|ADT/CCE|
 
 ## Consultazione
-//--- qui ci saranno le richieste che permettono di fare le query per:
 
 
 |Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
-|GET|<base_API_Manager>/_Encounter_|-|CDR|
+|GET|<base_API_Manager>/Encounter?patient.identifier=[idPaziente]&location-period=gt[data inizio]&location-period=lt[data fine]&_include=location:Location|-|CDR|
+|GET|<base_API_Manager>/Encounter?location=location.identifier=[IDLETTO]|-|CDR|
+|GET|<base_API_Manager>Encounter?identifier=[idEpisodio]&patient.identifier=[idpz]|-|CDR|
+
 
 tempi medi di occupazione per posto-letto: numero medio di giorni durante i quali un letto è occupato da un paziente in un determinato periodo; 
 
