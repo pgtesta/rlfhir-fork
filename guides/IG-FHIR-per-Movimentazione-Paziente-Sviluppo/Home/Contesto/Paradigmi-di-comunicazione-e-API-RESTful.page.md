@@ -43,4 +43,4 @@ Si applica un filtro sull'id del posto letto ricercato e si ottiene in output la
 
 **TODO** : tempi di attesa del posto letto: periodo che intercorre tra la richiesta di un posto letto e l'effettiva assegnazione dello stesso; 
 
-**3. numero di spostamenti per paziente**: numero di volte che un paziente viene trasferito da un letto o reparto all'altro durante la sua degenza. Si effettua un filtro sia sull'identificativo del paziente, sia numero di identificativo del ricovero a cui fa riferimento la statistica.
+**3. Numero di spostamenti per paziente**: numero di volte che un paziente viene trasferito da un letto o reparto all'altro durante la sua degenza. Si effettua un filtro sia sull'identificativo del paziente, sia sul numero di identificativo del ricovero a cui fa riferimento la statistica.
