@@ -36,7 +36,7 @@ L'elenco delle API esposte è:
 
 
 **1. Tempi medi di occupazione per posto-letto**: numero medio di giorni durante i quali un letto è occupato da un paziente in un determinato periodo.
-La query filtra le risorse encounter sulla base dell'idPaziente a cui è associato, tramite l'attributo "subject", con riferimento a risorsa di tipo Patient. I risultati vengono ulteriormente selezionati sulla base del periodo di ricovero di interesse. In output si ottengono le location ( posto letto ) occupati.
+La query filtra le risorse encounter sulla base di un identificativo unvico del paziente (CF) a cui è associato, tramite l'attributo "subject", con riferimento a risorsa di tipo Patient. I risultati vengono ulteriormente selezionati sulla base del periodo di ricovero di interesse. In output si ottengono le location ( posto letto ) occupati.
 
 **2. Intervalli di turn over**: tempo medio che intercorre tra la dimissione di un paziente e l'ammissione di un nuovo paziente nello stesso letto;
 Si applica un filtro sull'id del posto letto ricercato e si ottiene in output la risorsa Encounter che fa riferimento.
