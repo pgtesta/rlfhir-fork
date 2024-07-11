@@ -6,7 +6,7 @@
   "total": 2,
   "entry": [
     {
-      "fullUrl":"Encounter/esempio-Encounter-Arrivo",
+      "fullUrl":"Encounter/esempio-Encounter-Trasferimento",
       "resource":{
         "resourceType": "Encounter",
         "id": "esempio-Encounter-Trasferimento",
