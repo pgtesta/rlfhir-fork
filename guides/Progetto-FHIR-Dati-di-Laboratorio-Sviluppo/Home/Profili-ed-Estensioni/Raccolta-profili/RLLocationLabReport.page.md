@@ -1,16 +1,17 @@
-# RLDeviceRequestProtesiAusili
+# RLLocationLabReport
 
-- [RLDeviceRequestProtesiAusili](#rldevicerequestprotesiausili)
+- [RLLocationLabReport](#RLLocationLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
+
 ## Descrizione
 
-Il profilo RLDeviceRequestProtesiAusili è stato strutturato a partire dalla risorsa generica FHIR [DeviceRequest](http://hl7.org/fhir/R4/devicerequest.html) per contenere le informazioni necessarie per la fornitura al paziente della protesi o dell’ausilio previsto in fase di stesura del progetto individuale.
+Profilo declinato a partire dalla risorsa standard FHIR [Location](http://hl7.org/fhir/R4/location.html) volto a contenere le informazioni relative all'edificio di una struttura ospedaliera.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab}}.
 
 <br>
 <div class="tab">
@@ -25,37 +26,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-DeviceRequest-ProtesiAusili}}
+{{link:Location/esempio-Location-PLO-Edificio}}
 <br>
 </div>
 
@@ -65,19 +66,25 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 Attualmente non sono stati definiti criteri di ricerca.
 
+
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa DeviceRequest.
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLDeviceRequestProtesiAusili:
+Attualmente non sono definiti value set specifici per il profilo RLLocationPLOEdificio.
 
-| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
-|---|---|---|
-| codeCodeableConcept | Codice e descrizione dell'ausilio di protesica| *Codicia in fase di definizione|
 
+http://hl7.org/fhir/ValueSet/languages
+http://hl7.org/fhir/ValueSet/location-status|4.0.1
+http://terminology.hl7.org/ValueSet/v2-0116
+http://hl7.org/fhir/ValueSet/location-mode|4.0.1
+http://hl7.org/fhir/ValueSet/location-mode|4.0.1
+http://hl7.org/fhir/ValueSet/location-physical-type
+http://hl7.org/fhir/ValueSet/days-of-week|4.0.1

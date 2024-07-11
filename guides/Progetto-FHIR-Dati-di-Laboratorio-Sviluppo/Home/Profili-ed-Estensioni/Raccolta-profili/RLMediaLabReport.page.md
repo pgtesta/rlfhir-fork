@@ -1,16 +1,17 @@
-# RLPatientBase
+# RLMediaLabReport
 
-- [RLPatientBase](#RLPatientBase)
+- [RLMediaLabReport](#RLMediaLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
+
 ## Descrizione
 
-Il profilo RLPatientBase è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) per contenere le informazioni anagrafiche di base di un cittadino.
+Profilo declinato a partire dalla risorsa standard FHIR [Media]() 
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab}}.
 
 <br>
 <div class="tab">
@@ -25,37 +26,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili.
+
 <br>
 </div>
 
@@ -63,20 +64,21 @@ Al momento non ci sono esempi disponibili.
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-
 ## ValueSet
-Nella seguente tabella sono elencati i value set relativi al profilo RLPatientBase:
 
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
-|---|---|---|
-| luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali |
+http://hl7.org/fhir/ValueSet/languages
+http://hl7.org/fhir/ValueSet/event-status|4.0.1
+http://hl7.org/fhir/ValueSet/media-type
+http://hl7.org/fhir/ValueSet/media-modality
+http://hl7.org/fhir/ValueSet/media-view
+http://hl7.org/fhir/ValueSet/resource-types
+http://hl7.org/fhir/ValueSet/procedure-reason
+http://hl7.org/fhir/ValueSet/body-site

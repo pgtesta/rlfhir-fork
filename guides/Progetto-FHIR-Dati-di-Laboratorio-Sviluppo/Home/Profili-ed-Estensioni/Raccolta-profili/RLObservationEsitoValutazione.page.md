@@ -1,6 +1,6 @@
-# RLObservationEsitoValutazione
+# RLObservationLabReport
 
-- [RLObservationEsitoValutazione](#rlobservationesitovalutazione)
+- [RLObservationLabReport](#rlobservationlabreport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -8,9 +8,9 @@
 
 ## Descrizione
 
-Il profilo RLObservationEsitoValutazione è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere l’esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto.
+Il profilo RLObservationLabReport è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere l’esito della valutazione (semplice o multidimensionale) al quale il paziente è stato sottoposto.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab}}.
 
 <br>
 <div class="tab">
@@ -25,32 +25,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -77,8 +77,7 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLObservationEsitoValutazione:
-
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
-|---|---|---|
-| code | Codice e nome della tipologia di valutazione specifica | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaValutazione}} |
+http://hl7.org/fhir/ValueSet/observation-status
+http://hl7.it/fhir/lab-report/ValueSet/risultato-osservazione
+http://hl7.it/fhir/lab-report/ValueSet/valueset-valuecodeableconcept-obs-it
+http://hl7.org/fhir/ValueSet/observation-methods
