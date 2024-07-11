@@ -80,15 +80,15 @@
       <td>
       <a href="https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2" target="_blank">DDC-L2</a>
       </td>
-      <td> ValueSet relativo alla codifica della tipologia di Ente (L1) </td>
+      <td> ValueSet relativo alla codifica della tipologia di Ente (L2) </td>
 <td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2</td>
     </tr>
     <tr>
       <td>
-      <a href="https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2" target="_blank">DDC-L2</a>
+      <a href="https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2" target="_blank">DDC-L3</a>
       </td>
-      <td> ValueSet relativo alla codifica della tipologia di Ente (L1) </td>
-<td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2</td>
+      <td> ValueSet relativo alla codifica della tipologia di Ente (L3) </td>
+<td>https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL3</td>
     </tr>
     <tr>
       <td>
