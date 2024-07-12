@@ -13,7 +13,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 ## Consultazione
 
 
-@|Metodo HTTP|URL|Nome profilo|Detentore del dato|
+Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|---|
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
