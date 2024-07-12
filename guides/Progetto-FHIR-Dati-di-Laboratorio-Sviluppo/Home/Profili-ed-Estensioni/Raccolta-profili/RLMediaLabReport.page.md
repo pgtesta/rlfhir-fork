@@ -1,6 +1,6 @@
-# RLQuestionnaireValutazione
+# RLMediaLabReport
 
-- [RLQuestionnaireValutazione](#rlquestionnairevalutazione)
+- [RLMediaLabReport](#RLMediaLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -8,9 +8,10 @@
 
 
 ## Descrizione
-Il profilo RLQuestionnaireValutazione è stato strutturato a partire dalla risorsa generica FHIR [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) per descrivere la specifica valutazione alla quale il paziente è stato sottoposto.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione}}.
+Profilo declinato a partire dalla risorsa standard FHIR [Media]() 
+
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab}}.
 
 <br>
 <div class="tab">
@@ -25,37 +26,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili. 
+
 <br>
 </div>
 
@@ -63,16 +64,21 @@ Al momento non ci sono esempi disponibili.
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLQuestionnaireValutazione.
+http://hl7.org/fhir/ValueSet/languages
+http://hl7.org/fhir/ValueSet/event-status|4.0.1
+http://hl7.org/fhir/ValueSet/media-type
+http://hl7.org/fhir/ValueSet/media-modality
+http://hl7.org/fhir/ValueSet/media-view
+http://hl7.org/fhir/ValueSet/resource-types
+http://hl7.org/fhir/ValueSet/procedure-reason
+http://hl7.org/fhir/ValueSet/body-site

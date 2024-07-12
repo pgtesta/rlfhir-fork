@@ -1,16 +1,14 @@
-# RLCoverageEsenzioni
+# RLBundleRispostaLabReport
 
-- [RLCoverageEsenzioni](#rlcoverageesenzioni)
+- [RLBundleRispostaLabReport](#RLBundleRispostaLabReport)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
-  - [ValueSet](#valueset)
+
 
 ## Descrizione
 
-Il profilo RLCoverageEsenzioni è stato strutturato a partire dalla risorsa generica FHIR [Coverage](http://hl7.org/fhir/R4/coverage.html) e contiene i dettagli inerenti alle esenzioni di cui il paziente beneficia. 
+Il profilo RLBundleRispostaLabReport è stato strutturato a partire dalla risorsa generica FHIR [Bundle](), il profilo è volto a descrivere il contenuto del Bundle di risposta **TODO**
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab}}.
 
 <br>
 <div class="tab">
@@ -25,37 +23,36 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  Al momento non ci sono esempi disponibili. 
 <br>
 </div>
 
@@ -69,14 +66,12 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Coverage.
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLCoverageEsenzioni:
 
-| Nome | Descrizione | Riferimento   al dettaglio della codifica    |
-|---|---|---|
-| type | Codice e descrizione dell'esenzione|  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni}}  |
+https://hl7.org/fhir/R4/valueset-identifier-use.html
+https://hl7.org/fhir/R4/valueset-bundle-type.html

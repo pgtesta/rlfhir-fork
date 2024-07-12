@@ -1,17 +1,16 @@
-# RLLocationPLOStanza
+# RLPatientBase
 
-- [RLLocationPLOStanza](#rllocationplostanza)
+- [RLPatientLabReport](#RLPatientLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
-
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Location](http://hl7.org/fhir/R4/location.html) volto a contenere le informazioni relative alla stanza di una struttura ospedaliera.
+Il profilo RLPatientLabReport è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) per contenere le informazioni anagrafiche di base di un cittadino.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab}}.
 
 <br>
 <div class="tab">
@@ -26,37 +25,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:Location/esempio-Location-PLO-Stanza}} 
+Al momento non ci sono esempi disponibili.
 <br>
 </div>
 
@@ -66,16 +65,23 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 Attualmente non sono stati definiti criteri di ricerca.
 
-
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
-
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLLocationPLOStanza.
+## ValueSet
+Nella seguente tabella sono elencati i value set relativi al profilo RLPatientLabReport
+
+http://hl7.it/fhir/lab-report/ValueSet/istat-luogoNascita
+http://hl7.it/fhir/lab-report/ValueSet/istat-cittadinanza
+http://hl7.it/fhir/lab-report/ValueSet/istat-professione
+http://hl7.it/fhir/lab-report/ValueSet/istat-titoloStudio
+http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore
+http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali
+http://hl7.it/fhir/lab-report/ValueSet/uri-idEni
+http://hl7.it/fhir/lab-report/ValueSet/URI-idStp

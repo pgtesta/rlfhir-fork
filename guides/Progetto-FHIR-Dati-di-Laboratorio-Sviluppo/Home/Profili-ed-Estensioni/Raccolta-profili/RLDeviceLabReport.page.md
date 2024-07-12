@@ -1,6 +1,6 @@
-# RLPractitionerRoleMedicoPrescrittore
+# RLDeviceLabReport
 
-- [RLPractitionerRoleMedicoPrescrittore](#rlpractitionerrolemedicoprescrittore)
+- [RLDeviceLabReport](#RLDeviceLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -8,9 +8,9 @@
 
 ## Descrizione
 
-Il profilo RLPractitionerRoleMedicoPrescrittore è stato strutturato a partire dalla risorsa generica FHIR [PractitionerRole](http://hl7.org/fhir/R4/practitionerrole.html) per descrivere le diverse tipologie di medici a cui è data facoltà di prescrivere prestazioni e farmaci dispensati dal SSR. 
+Il profilo RLDeviceLabReport è stato strutturato a partire dalla risorsa generica FHIR [Device](http://hl7.org/fhir/R4/goal.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab}}.
 
 <br>
 <div class="tab">
@@ -25,37 +25,37 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-PractitionerRole}}
+
 <br>
 </div>
 
@@ -69,15 +69,17 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa PractitionerRole.
+Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Goal.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLPractitionerRoleMedicoPrescrittore:
+Nella seguente tabella sono elencati i value set relativi al profilo RLGoalObiettiviSalute:
 
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
-|---|---|---|
-| code | Codifica delle qualifiche dei medici prescrittori | La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore}} |
-
+http://hl7.org/fhir/ValueSet/languages
+http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1
+http://hl7.org/fhir/ValueSet/device-status|4.0.1
+http://hl7.org/fhir/ValueSet/device-status-reason
+http://hl7.org/fhir/ValueSet/device-nametype
+http://hl7.org/fhir/ValueSet/device-type
