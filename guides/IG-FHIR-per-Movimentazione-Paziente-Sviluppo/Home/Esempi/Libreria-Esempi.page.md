@@ -35,6 +35,18 @@
   </thead>
   <tbody id="myTable">
     <tr>
+      <td>MP</td>
+      <td>Bundle</td>
+      <td>Esempio del Bundle searchset che viene restituito alla richiesta di tempi turnover</td>
+      <td>{{link:Bundle/esempio-MP-Turnover}}</td>
+    </tr>
+    <tr>
+      <td>MP</td>
+      <td>Bundle</td>
+      <td>Esempio del Bundle searchset che viene restituito alla richiesta di tempi medi di occupazione per posto-letto </td>
+      <td>{{link:Bundle/esempio-MP-TempiMedi}}</td>
+    </tr>
+    <tr>
       <td>DDC</td>
       <td>Organization</td>
       <td>Esempio del profilo RLOrganizationL1</td>
