@@ -28,7 +28,51 @@
         "id": "PractitionerRole.identifier:codiceFiscale",
         "path": "PractitionerRole.identifier",
         "sliceName": "codiceFiscale",
+        "short": "Codice fiscale dell'operatore sanitario",
+        "definition": "Se disponibile si riporta il codice fiscale dell'operatore sanitario.",
         "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:codiceFiscale.system",
+        "path": "PractitionerRole.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "short": "Stato del record dell'operatore",
+        "definition": "Indica se questa risorsa è in uso."
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "short": "Periodo di validità del ruolo",
+        "definition": "Periodo di validità del ruolo indicato per il professionista sanitario"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "short": "Operatore sanitario",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
       }
     ]
   }

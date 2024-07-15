@@ -38,115 +38,33 @@
       </thead>
       <tbody id="myTable">
         <tr>
-          <td>DDC</td>
+          <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleCore.page.md}}
           </td>
           <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+            <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
           </td>
           <td>
-            Profilo che descrive una struttura o un ente
-            identificato univocamente da un codice di ente L1
+            Profilo che descrive il ruolo associato ad un operatore sanitario e la struttura a cui afferisce
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}
-          </td>
-        </tr>
-        <tr>
-          <td>DDC</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
-          </td>
-          <td>
-            Profilo che descrive una struttura o un ente
-            identificato univocamente da un codice di ente L2
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore}}
           </td>
         </tr>
         <tr>
-          <td>DDC</td>
+          <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerCore.page.md}}
           </td>
           <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+            <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
           </td>
           <td>
-            Profilo che descrive un reparto appartenente ad una
-            struttura di ricovero identificata da un codice L2
+            Profilo che descrive un operatore sanitario
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOEdificio.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Profilo per descrivere le informazioni relative
-            all'edificio di una struttura ospedaliera.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOEdificio}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Questo profilo riporta le informazioni relative al posto
-            letto occupato.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOPiano.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Profilo per descrivere le informazioni relative al piano
-            di una struttura ospedaliera.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOStanza.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Profilo per descrivere le informazioni relative alla stanza
-            di una struttura ospedaliera.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore}}
           </td>
         </tr>
       </tbody>
