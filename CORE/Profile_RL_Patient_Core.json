@@ -85,6 +85,20 @@
         "isModifier": false
       },
       {
+        "id": "Patient.extension:ATSResidenza",
+        "path": "Patient.extension",
+        "sliceName": "ATSResidenza",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "slicing": {
@@ -249,6 +263,21 @@
           "strength": "extensible",
           "valueSet": "https://www.hl7.it/fhir/base/ValueSet-statoCivile.html"
         }
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "definition": "- PractitionerRole, se si vuole indicare sia il medico che la struttura a cui afferisce\r\n- Practitioner, se si vuole indicare solo il medico\r\n- Organization, se si vuole indicare solo l'azienda (es. Casa di Riposo)",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
       }
     ]
   }

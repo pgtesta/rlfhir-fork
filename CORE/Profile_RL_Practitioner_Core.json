@@ -30,19 +30,19 @@
         "short": "Sistema di codifica"
       },
       {
-        "id": "Practitioner.identifier:CF",
+        "id": "Practitioner.identifier:codiceFiscale",
         "path": "Practitioner.identifier",
-        "sliceName": "CF"
+        "sliceName": "codiceFiscale"
       },
       {
-        "id": "Practitioner.identifier:CF.system",
+        "id": "Practitioner.identifier:codiceFiscale.system",
         "path": "Practitioner.identifier.system",
         "short": "Sistema di codifica",
         "min": 1,
         "fixedUri": "http://hl7.it/sid/codiceFiscale"
       },
       {
-        "id": "Practitioner.identifier:CF.value",
+        "id": "Practitioner.identifier:codiceFiscale.value",
         "path": "Practitioner.identifier.value",
         "short": "Codice fiscale del professionista sanitario",
         "definition": "Stringa alfanumerica di 16 caratteri",
