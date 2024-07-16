@@ -18,7 +18,7 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
 |3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]|-|CDR|
-|4|GET|<base_API_Manager>Observation?code=[codice esame]&date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]|-|CDR|
+|4|GET|<base_API_Manager>Observation?code=[codice esame]&date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen|-|CDR|
 
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
