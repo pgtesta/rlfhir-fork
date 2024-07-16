@@ -34,11 +34,35 @@
     </tr>
   </thead>
   <tbody id="myTable">
+     <tr>
+      <td>CORE</td>
+      <td>Patient</td>
+      <td>Paziente</td>
+      <td>{{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}</td>
+    </tr>
     <tr>
       <td>CORE</td>
       <td>PractitionerRole</td>
       <td>Infermiere</td>
       <td>{{link:PractitionerRole/esempio-PractitionerRole-core}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>Practitioner</td>
+      <td>Medico</td>
+      <td>{{link:Practitioner/3a14db34-a959-11ed-afa1-0242ac120002}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>Location</td>
+      <td>Struttura fisica</td>
+      <td>{{link:Location/esempio-Location-CORE-base}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>Organization</td>
+      <td>Azienda sanitaria</td>
+      <td>{{link:Organization/esempio-Organization-core}}</td>
     </tr>
   </tbody>
 </table>

@@ -1,0 +1,44 @@
+{
+  "resourceType": "Organization",
+  "id": "esempio-Organization-core",
+  "meta": {
+    "lastUpdated": "2022-03-30T10:36:03.000+00:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "030717-111"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1",
+          "code": "ASST",
+          "display": "Istituto di Ricovero e Cura a Carattere Scientifico di diritto pubblico / Azienda Socio Sanitaria Territoriale"
+        }
+      ]
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "line": [
+        "Via Santi Cosma e Damiano, 10"
+      ],
+      "district": "MB",
+      "state": "LOMBARDIA",
+      "postalCode": "20871",
+      "extension": [
+        {
+          "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode",
+          "valueString": "108050"
+        }
+      ]
+    }
+  ]
+}
