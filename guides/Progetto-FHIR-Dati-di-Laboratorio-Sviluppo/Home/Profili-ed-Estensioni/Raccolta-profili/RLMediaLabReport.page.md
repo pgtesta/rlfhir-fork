@@ -81,9 +81,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMediaLabR
 | language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
 | event status | Codice che identifica il ciclo di vita dell'evento | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/event-status|4.0.1)  |
 | media type | Categoria del media - alto livello | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-type)  |
-| media modality| Codici usati per informazioni dettagliate sull'immagine (tipo, obiettivo) | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-modality)  |
-| media view| Codici definiti in SNOMED CT che possono essere usati per registrare le visualizzazioni del media | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-view)  |
 | resource type| Tipo di risorsa | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/resource-types)  |
-| procedure reason|  Codici usati per indicare il motivo di una procedura | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/procedure-reason)  |
-| body site| Codici dalla codifica SNOMED afferenti a siti anatomici | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/body-site)  |
 

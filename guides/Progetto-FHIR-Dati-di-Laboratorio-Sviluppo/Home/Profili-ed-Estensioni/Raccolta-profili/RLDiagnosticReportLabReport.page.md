@@ -78,7 +78,6 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLDiagnosti
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
 | report status| Valueset di codici per identificare lo stato del report diagnostico | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/diagnostic-report-status)  |
-| diagnostic service sections| Valueset di codici per identificare  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/diagnostic-service-sections)  |
 | lab study type| Tipo di studio di laboratorio| La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab)  |
 | lab specialty type| Tipo di specialità di laboratorio| La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab)  |
 | lab report type| Tipo di report di laboratorio| La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab)  |

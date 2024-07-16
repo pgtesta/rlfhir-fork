@@ -36,63 +36,63 @@
   <tbody id="myTable">
     <tr>
       <td> 
-        <a href="https://hl7.org/fhir/R4/valueset-identifier-use.html" target="_blank">HL7 ICD-9 Code System</a>
+        <a href="https://hl7.org/fhir/R4/valueset-identifier-use.html" target="_blank">Identifier use</a>
       </td>
-      <td>ValueSet relativo alla codifica ICD9 </td>
+      <td>ValueSet relativo allo scopo dell'identificativo </td>
 <td>https://hl7.org/fhir/R4/valueset-identifier-use.html</td>
     </tr>
     <tr>
       <td>
-        {{link:https://hl7.org/fhir/R4/valueset-bundle-type.html}}
+      <a href="https://hl7.org/fhir/R4/valueset-bundle-type.html" target="_blank">Bundle type</a>
       </td>
-      <td> ValueSet relativo alla codifica del physical-type per il letto </td>
+      <td> ValueSet relativo alla codifica dello scopo del bundle </td>
 <td>https://hl7.org/fhir/R4/valueset-bundle-type.html</td>
     </tr>
     <tr>
       <td>
-        {{link:https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html}}
+      <a href="https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html" target="_blank">Confidentiality</a>
       </td>
-      <td> ValueSet relativo alla codifica del regime di ricovero </td>
+      <td> ValueSet relativo alla confidenzialità del documento </td>
 <td>https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html</td>
     </tr>
     <tr>
       <td>
-      <a href="https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html" target="_blank">Tipo Organizzazione</a>
+      <a href="https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html" target="_blank">LOINC specialità laboratorio</a>
       </td>
-      <td> ValueSet relativo alla codifica del tipo di organizzazione </td>
+      <td> ValueSet relativo ai codici LOINC per la specialità di laboratorio </td>
 <td>https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html</td>
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.org/fhir/ValueSet/languages" target="_blank">Tipo Organizzazione</a>
+      <a href="http://hl7.org/fhir/ValueSet/languages" target="_blank">Language</a>
       </td>
       <td> ValueSet relativo alla codifica del tipo di organizzazione </td>
 <td>http://hl7.org/fhir/ValueSet/languages</td>
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.org/fhir/ValueSet/composition-status|4.0.1" target="_blank">DDC-L1</a>
+      <a href="http://hl7.org/fhir/ValueSet/composition-status|4.0.1" target="_blank">Composition status</a>
       </td>
-      <td> ValueSet relativo alla codifica della tipologia di Ente (L1) </td>
+      <td> ValueSet relativo allo stato clinico della composition </td>
 <td>http://hl7.org/fhir/ValueSet/composition-status|4.0.1</td>
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab" target="_blank">DDC-L2</a>
+      <a href="http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab" target="_blank">Report type</a>
       </td>
-      <td> ValueSet relativo alla codifica della tipologia di Ente (L2) </td>
+      <td> ValueSet relativo alla codifica del tipo di report di laboratorio </td>
 <td>http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab</td>
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.org/fhir/ValueSet/document-classcodes" target="_blank">DDC-L3</a>
+      <a href="http://hl7.org/fhir/R4/valueset-document-classcodes.html" target="_blank">Classcodes</a>
       </td>
-      <td> ValueSet relativo alla codifica della tipologia di Ente (L3) </td>
+      <td> ValueSet relativo al tipo di documento </td>
 <td>http://hl7.org/fhir/ValueSet/document-classcodes</td>
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab" target="_blank">ISTAT</a>
+      <a href="http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab" target="_blank">Study type</a>
       </td>
       <td> ValueSet relativo alla codifica ISTAT </td>
 <td>http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab</td>
@@ -120,13 +120,6 @@
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.org/fhir/ValueSet/doc-section-codes" target="_blank">ID-ENI</a>
-      </td>
-      <td> ValueSet relativo alla codifica del codice ENI </td>
-<td>http://hl7.org/fhir/ValueSet/doc-section-codes</td>
-    </tr>
-    <tr>
-      <td>
       <a href="http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio" target="_blank">ANPR</a>
       </td>
       <td> ValueSet relativo alla codifica del codice ANPR </td>
@@ -145,13 +138,6 @@
       </td>
       <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
 <td>http://hl7.org/fhir/ValueSet/diagnostic-report-status</td>
-    </tr>
-    <tr>
-      <td>
-      <a href="http://hl7.org/fhir/ValueSet/diagnostic-service-sections" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://hl7.org/fhir/ValueSet/diagnostic-service-sections</td>
     </tr>
      <tr>
       <td>
@@ -316,27 +302,6 @@
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.org/fhir/ValueSet/encounter-type" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://hl7.org/fhir/ValueSet/encounter-type</td>
-    </tr>
-    <tr>
-      <td>
-      <a href="http://hl7.org/fhir/ValueSet/service-type" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://hl7.org/fhir/ValueSet/service-type</td>
-    </tr>
-    <tr>
-      <td>
-      <a href="http://terminology.hl7.org/ValueSet/v3-ActPriority" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://terminology.hl7.org/ValueSet/v3-ActPriority</td>
-    </tr>
-    <tr>
-      <td>
       <a href="http://hl7.org/fhir/ValueSet/encounter-participant-type" target="_blank">Marital Status</a>
       </td>
       <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
@@ -365,20 +330,6 @@
     </tr>
     <tr>
       <td>
-      <a href="http://terminology.hl7.org/ValueSet/v2-0092" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://terminology.hl7.org/ValueSet/v2-0092</td>
-    </tr>
-    <tr>
-      <td>
-      <a href="http://hl7.org/fhir/ValueSet/encounter-diet" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://hl7.org/fhir/ValueSet/encounter-diet</td>
-    </tr>
-    <tr>
-      <td>
       <a href="http://hl7.org/fhir/ValueSet/encounter-special-courtesy" target="_blank">Marital Status</a>
       </td>
       <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
@@ -390,13 +341,6 @@
       </td>
       <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
 <td>http://hl7.org/fhir/ValueSet/encounter-special-arrangements</td>
-    </tr>
-    <tr>
-      <td>
-      <a href="http://hl7.org/fhir/ValueSet/encounter-discharge-disposition" target="_blank">Marital Status</a>
-      </td>
-      <td> ValueSet relativo alla codifica dello stato civile del paziente </td>
-<td>http://hl7.org/fhir/ValueSet/encounter-discharge-disposition</td>
     </tr>
     <tr>
       <td>

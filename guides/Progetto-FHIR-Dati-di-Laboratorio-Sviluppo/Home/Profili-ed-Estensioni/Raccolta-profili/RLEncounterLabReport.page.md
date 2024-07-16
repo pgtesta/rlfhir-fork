@@ -81,19 +81,12 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLEncounter
 | encounter status | Stato della risorsa encounter  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-status|4.0.1)  |
 | encounter class | Classe dell'encounter  | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/encounter-class)  |
 | act encounter code | Qualifica dell'ActEncounterClass | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode)  |
-| encounter type | Tipo di encounter | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-type)  |
-| service type | Tipo di servizio | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/service-type)  |
-| act priority | Codici per specificare l'urgenza associata all'Act | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v3-ActPriority)  |
 | encounter participant type | Tipo di codice per indicare il modo in cui un utente è coinvolto nell'encounter | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-participant-type)  |
 | encounter reason | Codice per indicare il motivo dell'encounter  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-reason)  |
 | diagnosis role| Codice per indicare il ruolo di una diagnosi nell'encounter| La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/diagnosis-role)  |
 | encounter admit source| Codice per indicare la provenienza del paziente | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-admit-source)  |
-| admission indicator| Codice per indicare che il paziente è ri-ammesso in una struttura dalla quale era stato dimesso, e circostanze per cui ciò è avvenuto | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v2-0092)  |
-| encounter diet| Codici usati per indicare le preferenze o restrizioni sulla dieta del paziente  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-diet)  |
 | encounter special courtesy| Codici usati per cure speciali rivolte ai pazienti  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-special-courtesy)  |
 | encounter special arrangements|  Codici usati per indicare il tipo di attrezzatura speciale fornita in loco per la visita | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-special-arrangements)  |
-| encounter discharge disposition| Codici utilizzati per la dimissione del paziente | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-discharge-disposition)  |
 | encounter location status| Stato della location | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-location-status|4.0.1)  |
-| location physical type| Tipo di location | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/location-physical-type)  |
 
 
