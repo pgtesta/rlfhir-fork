@@ -18,7 +18,7 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
 |3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]|-|CDR|
-|4|GET|<base_API_Manager>Observation?code=[codice esame]&date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]|-|CDR|
+|4|GET|<base_API_Manager>Observation?code=[codice esame]&date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen|-|CDR|
 
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
@@ -29,9 +29,9 @@ Recupero dei referti di medicina di laboratorio in FHIR di uno specifico pazient
 Parametri obbligatori:
 - composition.subject=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
 - composition.code=11506-2: selezione dei FHIR document tra quelli di laboratorio
+- composition.date=gt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
-- composition.date=gt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 - composition.date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 
 ### Richiesta 3
@@ -40,9 +40,9 @@ Recupero risultati degli esami di laboratorio di uno specifico paziente.
 Parametri obbligatori:
 - _include=Observation:patient&patient.identifier=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
 - category=laboratory: selezione delle osservazioni provenienti da referti di medicina di laboratorio
+- date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
-- date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 
 La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
@@ -58,9 +58,9 @@ Parametri obbligatori:
 - _include=Observation:patient&patient.identifier=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
 - category=laboratory: selezione delle osservazioni provenienti da referti di medicina di laboratorio
 - code=[codice esame]: da valorizzare con il codice LOINC dell'esame di cui si vuole avere l'andamento
+- date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
-- date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 
 La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
