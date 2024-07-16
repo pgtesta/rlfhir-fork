@@ -40,16 +40,16 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleCore.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md}}
           </td>
           <td>
-            <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+            <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>
           </td>
           <td>
-            Profilo che descrive il ruolo associato ad un operatore sanitario e la struttura a cui afferisce
+            Profilo che descrive un paziente
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}
           </td>
         </tr>
         <tr>
@@ -65,6 +65,50 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+          </td>
+          <td>
+            Profilo che descrive il ruolo associato ad un operatore sanitario e la struttura a cui afferisce
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore}}
+          </td>
+        </tr>        
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+          </td>
+          <td>
+            Profilo che descrive una struttura fisica 
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}
+          </td>    
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/ROrganizationCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive un'azienda
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
           </td>
         </tr>
       </tbody>
