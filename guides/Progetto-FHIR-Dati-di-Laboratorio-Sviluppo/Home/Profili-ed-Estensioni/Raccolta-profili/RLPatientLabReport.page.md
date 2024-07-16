@@ -1,4 +1,4 @@
-# RLPatientBase
+# RLPatientLabReport
 
 - [RLPatientLabReport](#RLPatientLabReport)
   - [Descrizione](#descrizione)
@@ -77,11 +77,14 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 ## ValueSet
 Nella seguente tabella sono elencati i value set relativi al profilo RLPatientLabReport
 
-http://hl7.it/fhir/lab-report/ValueSet/istat-luogoNascita
-http://hl7.it/fhir/lab-report/ValueSet/istat-cittadinanza
-http://hl7.it/fhir/lab-report/ValueSet/istat-professione
-http://hl7.it/fhir/lab-report/ValueSet/istat-titoloStudio
-http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore
-http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali
-http://hl7.it/fhir/lab-report/ValueSet/uri-idEni
-http://hl7.it/fhir/lab-report/ValueSet/URI-idStp
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
+| istat - luogo di nascita | Codice Istat comune - stato di nascita | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/istat-luogoNascita)  |
+| istat - cittadinanza | Codice Istat per la cittadinanza | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/istat-cittadinanza)  |
+| istat - professione | Codice Istat per la professione | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/istat-professione)  |
+| istat - titolo di studio | Codice Istat per indicare il titolo di studio | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/istat-titoloStudio)  |
+|tipo identificatore | Codice che descrive i diversi tipi di identificatori | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore)  |
+|anagrafi regionali | Anagrafi regionali | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali)  |
+|uri - idEni | Identificativi per codici ENI regionali | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/uri-idEni)  |
+|uri - idStp | Identificativi per codici STP regionali  | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/URI-idStp)  |

@@ -6,7 +6,7 @@
 
 ## Descrizione
 
-Il profilo RLBundleRispostaLabReport è stato strutturato a partire dalla risorsa generica FHIR [Bundle](), il profilo è volto a descrivere il contenuto del Bundle di risposta **TODO**
+Il profilo RLBundleRispostaLabReport è stato strutturato a partire dalla risorsa generica FHIR [Bundle](https://hl7.org/fhir/r4/bundle.html), il profilo è volto a descrivere il contenuto informativo del report pere il referto di laboratorio.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab}}.
 
@@ -71,7 +71,10 @@ Attualmente non sono definiti Search Parameters.
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
+Nella seguente tabella sono elencati i value set relativi al profilo RLBundleRispostaLabReport:
 
-
-https://hl7.org/fhir/R4/valueset-identifier-use.html
-https://hl7.org/fhir/R4/valueset-bundle-type.html
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| identifier.use | Obiettivo dell'identificativo | La codifica è definita dal Valueset (https://hl7.org/fhir/R4/valueset-identifier-use.html)  |
+| bundle type | Tipo di bundle | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1)  |
+| http verb | ??? | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/http-verb|4.0.1)  |

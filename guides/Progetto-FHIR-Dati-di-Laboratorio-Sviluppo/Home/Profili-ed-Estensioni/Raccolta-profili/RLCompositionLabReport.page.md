@@ -1,6 +1,6 @@
-# RLCarePlanProgettoIndividuale
+# RLCompositionLabReport
 
-- [RLCarePlanProgettoIndividuale](#rlcareplanprogettoindividuale)
+- [RLCompositionLabReport](#RLCompositionLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
     - [1. Progetti individuali attivi](#1-progetti-individuali-attivi)
@@ -11,7 +11,7 @@
 
 ## Descrizione
 
-
+Il profilo RLCompositionLabReport è stato strutturato a partire dalla risorsa generica FHIR [Composition](https://hl7.org/fhir/r4/composition.html), il profilo è volto a descrivere il referto di laboratorio.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/composition-it-lab}}.
 
@@ -77,22 +77,21 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
+Nella seguente tabella sono elencati i value set relativi al profilo RLCompositionLabReport:
 
-
-https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html
-https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html
-http://hl7.org/fhir/ValueSet/languages
-http://hl7.org/fhir/ValueSet/composition-status|4.0.1
-http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab
-http://hl7.org/fhir/ValueSet/document-classcodes
-http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab
-http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab
-http://terminology.hl7.org/ValueSet/v3-Confidentiality
-http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1
-http://hl7.org/fhir/ValueSet/doc-section-codes
-http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio
-http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio
-http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab
-http://hl7.org/fhir/ValueSet/doc-section-codes
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| confidentiality | Codice di confidenzialità della composition | La codifica è definita dal Valueset [Confidentiality] (https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html)  |
+| sezione referto laboratorio| Valueset contenente i codici LOINC per la specialità di laboratorio | La codifica è definita dal Valueset (https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html)  |
+| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
+| composition status | Stato della composition  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/composition-status|4.0.1)  |
+| lab report type | Tipo di report di laboratorio | La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab)  |
+| document classcodes| Tipo di documento - ad alto livello | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/document-classcodes)  |
+|lab study type| tipo di studio di laboratorio (????) | La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab)  |
+|lab specialty type| specialità di laboratorio (??) | La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab)  |
+|confidentiality| confidenzialità della composition  | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v3-Confidentiality)  |
+|composition attestation mode| modo in cui una persona ha autenticato la composition| La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1)  |
+|doc section codes| document section codes (???)| La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/doc-section-codes)  |
+|sezione referto laboratorio| codici LOINC per la specialità di laboratorio| La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio)  |
 
 <br> 
