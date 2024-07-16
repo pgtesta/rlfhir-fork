@@ -83,7 +83,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDiagnosticReportLabReport.page.md}}
           </td>
@@ -98,7 +98,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterLabReport.page.md}}
           </td>
@@ -113,7 +113,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationLabReport.page.md}}
           </td>
@@ -128,7 +128,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMediaLabreport.page.md}}
           </td>
@@ -143,7 +143,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDocumentLabReport.page.md}}
           </td>
@@ -158,7 +158,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLabReport.page.md}}
           </td>
@@ -173,7 +173,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDocumentLabReport.page.md}}
           </td>
@@ -188,7 +188,7 @@
           </td>
         </tr>
         <tr>
-          <td>PLO</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientLabReport.page.md}}
           </td>
