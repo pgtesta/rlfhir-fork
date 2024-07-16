@@ -38,7 +38,7 @@
       </thead>
       <tbody id="myTable">
         <tr>
-          <td>DDC</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleRispostaLabReport.page.md}}
           </td>
@@ -49,11 +49,11 @@
             Profilo che descrive il contenuto informativo del report di un referto di laboratorio
           </td>
           <td>
-            {{link:ink:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab}}
           </td>
         </tr>
         <tr>
-          <td>DDC</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionLabReport.page.md}}
           </td>
@@ -64,11 +64,11 @@
             Profilo che descrive il referto di laboratorio
           </td>
           <td>
-            {{link:link:http://hl7.it/fhir/lab-report/StructureDefinition/composition-it-lab}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/composition-it-lab}}
           </td>
         </tr>
         <tr>
-          <td>DDC</td>
+          <td>LAB</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceLabReport.page.md}}
           </td>
