@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Media]() 
+Profilo declinato a partire dalla risorsa standard FHIR [Media](https://hl7.org/fhir/R4/media.html) per descrivere i contenuti multimediali per il referto di laboratorio.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab}}.
 
@@ -74,11 +74,16 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## ValueSet
 
-http://hl7.org/fhir/ValueSet/languages
-http://hl7.org/fhir/ValueSet/event-status|4.0.1
-http://hl7.org/fhir/ValueSet/media-type
-http://hl7.org/fhir/ValueSet/media-modality
-http://hl7.org/fhir/ValueSet/media-view
-http://hl7.org/fhir/ValueSet/resource-types
-http://hl7.org/fhir/ValueSet/procedure-reason
-http://hl7.org/fhir/ValueSet/body-site
+Nella seguente tabella sono elencati i value set relativi al profilo RLMediaLabReport:
+
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
+| event status | Codice che identifica il ciclo di vita dell'evento | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/event-status|4.0.1)  |
+| media type | Categoria del media - alto livello | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-type)  |
+| media modality| Codici usati per informazioni dettagliate sull'immagine (tipo, obiettivo) | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-modality)  |
+| media view| Codici definiti in SNOMED CT che possono essere usati per registrare le visualizzazioni del media | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-view)  |
+| resource type| Tipo di risorsa | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/resource-types)  |
+| procedure reason|  Codici usati per indicare il motivo di una procedura | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/procedure-reason)  |
+| body site| Codici dalla codifica SNOMED afferenti a siti anatomici | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/body-site)  |
+

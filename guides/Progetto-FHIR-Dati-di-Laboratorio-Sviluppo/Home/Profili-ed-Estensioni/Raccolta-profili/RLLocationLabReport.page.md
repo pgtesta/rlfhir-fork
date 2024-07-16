@@ -78,13 +78,18 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLLocationPLOEdificio.
 
+Nella seguente tabella sono elencati i value set relativi al profilo RLLocationLabReport:
 
-http://hl7.org/fhir/ValueSet/languages
-http://hl7.org/fhir/ValueSet/location-status|4.0.1
-http://terminology.hl7.org/ValueSet/v2-0116
-http://hl7.org/fhir/ValueSet/location-mode|4.0.1
-http://hl7.org/fhir/ValueSet/location-mode|4.0.1
-http://hl7.org/fhir/ValueSet/location-physical-type
-http://hl7.org/fhir/ValueSet/days-of-week|4.0.1
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
+| location status | Stato della location | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/location-status|4.0.1)  |
+| bed status | Codice per specificare lo stato del letto per l'ingresso del paziente, usato anche per determinare se il paziente può essere assegnato o meno al letto| La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v2-0116)  |
+| location mode| Indica se la risorsa rappresenta una location specifica o una classe di location | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/location-mode|4.0.1)  |
+| location physical type| Tipo di location | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/location-physical-type)  |
+|days of week| Giorni della settimana | La codifica è definita dal Valueset (
+http://hl7.org/fhir/ValueSet/days-of-week|4.0.1)  |
+|service deliveery location role type| Il ruolo che identifica le caratteristiche in cui viene eseguito il servizio| La codifica è definita dal Valueset (
+http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType)  |
+

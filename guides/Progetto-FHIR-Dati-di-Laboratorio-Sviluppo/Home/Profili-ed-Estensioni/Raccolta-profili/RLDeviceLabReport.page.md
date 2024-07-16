@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLDeviceLabReport è stato strutturato a partire dalla risorsa generica FHIR [Device](http://hl7.org/fhir/R4/goal.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
+Il profilo RLDeviceLabReport è stato strutturato a partire dalla risorsa generica FHIR [Device](http://hl7.org/fhir/R4/device.html) per descrivere gli obiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab}}.
 
@@ -75,11 +75,17 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLGoalObiettiviSalute:
+Nella seguente tabella sono elencati i value set relativi al profilo RLDeviceLabReport:
 
-http://hl7.org/fhir/ValueSet/languages
-http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1
-http://hl7.org/fhir/ValueSet/device-status|4.0.1
-http://hl7.org/fhir/ValueSet/device-status-reason
-http://hl7.org/fhir/ValueSet/device-nametype
-http://hl7.org/fhir/ValueSet/device-type
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+|---|---|---|
+| udi entry type| Valueset di codici per identificare come sia stato inserito il codice UDI | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1)  |
+| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
+| device status | stato di disponibilità del device   | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/device-status|4.0.1)  |
+| device status reason | Motivo dello stato di disponibilità del dispositivo| La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/device-status-reason)  |
+| device nametype| Tipo di nome con cui ci si riferisce al dispositivo | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/device-nametype)  |
+|device type| Tipo di dispositivo | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/device-type)  |
+
+
+
+
