@@ -80,11 +80,11 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPatientBa
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali |
-| codiceFiscale |  Codice Fiscale del paziente | La codifica è definita dal ValueSet http://hl7.it/sid/codiceFiscale |
-| codiceSTP |  Codice STP del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idStp |
-| tesseraTEAM |  Codice della tessera TEAM del paziente | La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/sid/tesseraTeam |  
-| codiceENI |  Codice ENI del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idEni |
-| codiceANPR |  Identificativo unico nazionale (ANPR) del paziente | La codifica è definita dal ValueSet http://hl7.it/sid/anpr |
-| idRegionale |  Identificativo unico regionale del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idRegionali |
+| extension:luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali |
+| identifier |  Codice Fiscale del paziente | La codifica è definita dal ValueSet http://hl7.it/sid/codiceFiscale |
+| identifier |  Codice STP del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idStp |
+| identifier |  Codice della tessera TEAM del paziente | La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/sid/tesseraTeam |  
+| identifier |  Codice ENI del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idEni |
+| identifier |  Identificativo unico nazionale (ANPR) del paziente | La codifica è definita dal ValueSet http://hl7.it/sid/anpr |
+| identifier |  Identificativo unico regionale del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idRegionali |
 | maritalStatus |  Stato civile del paziente | La codifica è definita dal ValueSet https://www.hl7.it/fhir/base/ValueSet-statoCivile.html |
