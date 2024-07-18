@@ -77,16 +77,6 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLEncounter
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
-| encounter status | Stato della risorsa encounter  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-status|4.0.1)  |
-| encounter class | Classe dell'encounter  | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/encounter-class)  |
-| act encounter code | Qualifica dell'ActEncounterClass | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode)  |
-| encounter participant type | Tipo di codice per indicare il modo in cui un utente è coinvolto nell'encounter | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-participant-type)  |
-| encounter reason | Codice per indicare il motivo dell'encounter  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-reason)  |
-| diagnosis role| Codice per indicare il ruolo di una diagnosi nell'encounter| La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/diagnosis-role)  |
-| encounter admit source| Codice per indicare la provenienza del paziente | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-admit-source)  |
-| encounter special courtesy| Codici usati per cure speciali rivolte ai pazienti  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-special-courtesy)  |
-| encounter special arrangements|  Codici usati per indicare il tipo di attrezzatura speciale fornita in loco per la visita | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-special-arrangements)  |
-| encounter location status| Stato della location | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/encounter-location-status|4.0.1)  |
-
-
+| status | Stato della risorsa encounter  | La codifica è definita dal Valueset [Encounter Status](http://hl7.org/fhir/ValueSet/encounter-status|4.0.1)  |
+| class | Classe dell'encounter  | La codifica è definita dal Valueset [Encounter Class](http://terminology.hl7.org/ValueSet/encounter-class)  |
+| participant.type | Tipo di codice per indicare il modo in cui un utente è coinvolto nell'encounter | La codifica è definita dal Valueset [Encounter Participant Type](http://hl7.org/fhir/ValueSet/encounter-participant-type)  |

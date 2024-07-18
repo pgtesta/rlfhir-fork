@@ -81,8 +81,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMediaLabR
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
-| event status | Codice che identifica il ciclo di vita dell'evento | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/event-status|4.0.1)  |
-| media type | Categoria del media - alto livello | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/media-type)  |
-| resource type| Tipo di risorsa | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/resource-types)  |
+| type | Categoria del media - alto livello | La codifica è definita dal Valueset [Media Type](http://hl7.org/fhir/ValueSet/media-type)  |
 
