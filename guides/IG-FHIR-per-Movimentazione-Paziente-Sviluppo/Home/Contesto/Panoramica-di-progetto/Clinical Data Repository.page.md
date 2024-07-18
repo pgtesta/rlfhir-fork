@@ -3,9 +3,7 @@
 
 Questa IG definisce il modello dati e le API utilizzate per il caso d’uso “Movimentazione Paziente”, che si instaura nel contesto del Clinical Data Repository (CDR).
 
-<div class="alert alert-info">
 Regione Lombardia, al fine di favorire la progettazione di un’architettura integrata con un ecosistema FSE 2.0 orientato ai dati, intende valorizzare il patrimonio informativo sanitario disponibile attraverso la progressiva introduzione, nei contesti aziendali, di Clinical Data Repository (CDR) quali punti di acquisizione e consolidamento dei dati prodotti dai sistemi dipartimentali. 
-</div>
 
 La "Movimentazione paziente" permette il monitoraggio degli spostamenti dei pazienti mediante un sistema in grado di raccogliere dati in tempo near real time. L'alimentazione del CDR, per questa finalità, produrrà gli indicatori di interesse (ad esempio tempi medi di occupazione per posto-letto, tempi di attesa del posto letto, ecc.) su dashboard interattive. Il caso d’uso fa riferimento al perimetro aziendale di visibilità dei dati. 
 
