@@ -52,6 +52,18 @@
         "id": "Practitioner.identifier:CDRegionale",
         "path": "Practitioner.identifier",
         "sliceName": "CDRegionale"
+      },
+      {
+        "id": "Practitioner.identifier:CDRegionale.system",
+        "path": "Practitioner.identifier.system",
+        "short": "Sistema di codifica",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
+      },
+      {
+        "id": "Practitioner.identifier:CDRegionale.value",
+        "path": "Practitioner.identifier.value",
+        "short": "Codice regionale del professionista sanitario"
+        
       }
     ]
   }

@@ -38,6 +38,14 @@
         "fixedUri": "http://hl7.it/sid/codiceFiscale"
       },
       {
+        "id": "PractitionerRole.identifier:codiceFiscale.value",
+        "path": "PractitionerRole.identifier.value",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.it/sid/codiceFiscale"
+        }
+      },
+      {
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "short": "Stato del record dell'operatore",
@@ -48,6 +56,16 @@
         "path": "PractitionerRole.period",
         "short": "Periodo di validità del ruolo",
         "definition": "Periodo di validità del ruolo indicato per il professionista sanitario"
+      },
+      {
+        "id": "PractitionerRole.period.start",
+        "path": "PractitionerRole.period.start",
+        "short": "Data di inizio"
+      },
+      {
+        "id": "PractitionerRole.period.end",
+        "path": "PractitionerRole.period.end",
+        "short": "Data di fine"
       },
       {
         "id": "PractitionerRole.practitioner",
@@ -65,6 +83,7 @@
       {
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
+        "short": "Azienda associata all'operatore per questo specifico ruolo",
         "type": [
           {
             "code": "Reference",
@@ -73,6 +92,11 @@
             ]
           }
         ]
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "short": "Ruoli dell'operatore sanitario"
       }
     ]
   }

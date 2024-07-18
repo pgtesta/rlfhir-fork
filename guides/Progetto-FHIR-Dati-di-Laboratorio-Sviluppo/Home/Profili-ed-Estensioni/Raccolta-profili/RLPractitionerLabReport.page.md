@@ -75,3 +75,4 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## ValueSet
 
+Attualmente non sono definiti Valueset oltre quelli previsti dallo standard per la risorsa Practitioner.
