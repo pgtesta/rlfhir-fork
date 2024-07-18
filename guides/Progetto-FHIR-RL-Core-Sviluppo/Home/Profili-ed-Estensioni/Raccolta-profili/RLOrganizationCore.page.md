@@ -2,8 +2,6 @@
 
 - [RLOrganizationCore](#rlorganizationcore)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
@@ -58,22 +56,6 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
   
 <br>
 </div>
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-TODO
-
-### Enti attualmente attivi
-
-TODO
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
-
-TODO
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

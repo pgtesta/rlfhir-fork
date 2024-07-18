@@ -25,5 +25,15 @@
   "organization": {
     "reference": "Organization/52b1a05a-a959-11ed-afa1-0242ac120002",
     "display": "ASST DELLA BRIANZA"
-  }
+  },
+  "code":[
+    {
+      "coding":[
+        {
+          "code":"MMG",
+          "display":"Medico di Medicina Generale/ Pediatra di Libera Scelta"
+        }
+      ]
+    }
+  ]
 }

@@ -24,7 +24,10 @@
       {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
-        "short": "Tipo di struttura"
+        "short": "Tipo di struttura",
+        "binding": {
+          "strength": "preferred"
+        }
       },
       {
         "id": "Location.managingOrganization",

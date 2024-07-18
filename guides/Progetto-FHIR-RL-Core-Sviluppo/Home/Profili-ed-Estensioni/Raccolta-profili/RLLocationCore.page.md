@@ -2,8 +2,6 @@
 
 - [RLLocationCore](#rllocationcore)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
@@ -61,16 +59,6 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-TODO
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
-
-TODO
 
 ## ValueSet
 

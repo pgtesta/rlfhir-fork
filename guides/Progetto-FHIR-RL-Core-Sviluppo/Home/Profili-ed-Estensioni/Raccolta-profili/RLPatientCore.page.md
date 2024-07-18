@@ -2,8 +2,6 @@
 
 - [RLPatientCore](#rlpatientcore)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 ## Descrizione
@@ -60,17 +58,6 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 <br>
 </div>
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-Attualmente non sono stati definiti criteri di ricerca.
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
-
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
