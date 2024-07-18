@@ -27,32 +27,28 @@
         "id": "Organization.identifier",
         "path": "Organization.identifier",
         "short": "Lista dei codici identificativi dell'organizzazione",
-        "definition": "DEFINITION TO BE COMPLETED",
+        
         "min": 1
       },
       {
         "id": "Organization.identifier.system",
         "path": "Organization.identifier.system",
-        "short": "Sistema di identificazione",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "short": "Sistema di identificazione"
       },
       {
         "id": "Organization.identifier.value",
         "path": "Organization.identifier.value",
-        "short": "Codice identificativo dell'organizzazione",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "short": "Codice identificativo dell'organizzazione"
       },
       {
         "id": "Organization.active",
         "path": "Organization.active",
-        "short": "Indicativo dello stato della risorsa descritta",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "short": "Indicazione dello stato della risorsa"
       },
       {
         "id": "Organization.type",
         "path": "Organization.type",
-        "short": "Tipologia di ente",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "short": "Tipologia di organizzazione"
       },
       {
         "id": "Organization.type.coding.code",
@@ -67,8 +63,7 @@
       {
         "id": "Organization.type.coding.display",
         "path": "Organization.type.coding.display",
-        "short": "Descrizione della tipologia di organizzazione",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "short": "Descrizione della tipologia di organizzazione"
       },
       {
         "id": "Organization.name",
@@ -121,8 +116,7 @@
       },
       {
         "id": "Organization.telecom:fax.value",
-        "path": "Organization.telecom.value",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "path": "Organization.telecom.value"
       },
       {
         "id": "Organization.telecom:mail",
@@ -149,8 +143,7 @@
       {
         "id": "Organization.address.line",
         "path": "Organization.address.line",
-        "short": "Indirizzo e numero civico dell'organizzazione",
-        "definition": "DEFINITION TO BE COMPLETED"
+        "short": "Indirizzo e numero civico dell'organizzazione"
       },
       {
         "id": "Organization.address.city",
