@@ -3,8 +3,6 @@
 - [RLCompositionLabReport](#RLCompositionLabReport)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
-    - [1. Progetti individuali attivi](#1-progetti-individuali-attivi)
-    - [2. Progetti individuali di un paziente](#2-progetti-individuali-di-un-paziente)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -82,16 +80,8 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLCompositi
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| confidentiality | Codice di confidenzialità della composition | La codifica è definita dal Valueset [Confidentiality] (https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html)  |
-| sezione referto laboratorio| Valueset contenente i codici LOINC per la specialità di laboratorio | La codifica è definita dal Valueset (https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html)  |
-| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
-| composition status | Stato della composition  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/composition-status|4.0.1)  |
-| lab report type | Tipo di report di laboratorio | La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab)  |
-| document classcodes| Tipo di documento - ad alto livello | La codifica è definita dal Valueset (http://hl7.org/fhir/R4/valueset-document-classcodes.html)  |
-|lab study type| tipo di studio di laboratorio (????) | La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab)  |
-|lab specialty type| specialità di laboratorio (??) | La codifica è definita dal Valueset (http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab)  |
-|confidentiality| confidenzialità della composition  | La codifica è definita dal Valueset (http://terminology.hl7.org/ValueSet/v3-Confidentiality)  |
-|composition attestation mode| modo in cui una persona ha autenticato la composition| La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1)  |
-|sezione referto laboratorio| codici LOINC per la specialità di laboratorio| La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio)  |
+| confidentiality | Codice di confidenzialità della composition | La codifica è definita dal Valueset [Confidentiality](https://terminology.hl7.org/5.3.0/ValueSet-v3-Confidentiality.html)  |
+| section.code | Valueset contenente i codici LOINC per la specialità di laboratorio | La codifica è definita dal Valueset [Sezione Referto Laboratorio](https://www.hl7.it/fhir/lab-report/0.2.0/ValueSet-sezione-referto-laboratorio.html)  |
+| status | Stato della composition  | La codifica è definita dal Valueset [Composition Status](http://hl7.org/fhir/ValueSet/composition-status|4.0.1) |
+| attester.mode | Ruolo dell'autenticatore nel documento | La codifica è definita dal Valueset [Attestation Mode](http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1)  |
 
-<br> 

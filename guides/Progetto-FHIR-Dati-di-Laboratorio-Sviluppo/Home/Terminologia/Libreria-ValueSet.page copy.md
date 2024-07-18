@@ -35,6 +35,13 @@
   </thead>
   <tbody id="myTable">
     <tr>
+      <td> 
+        <a href="https://hl7.org/fhir/R4/valueset-identifier-use.html" target="_blank">Identifier use</a>
+      </td>
+      <td>ValueSet relativo allo scopo dell'identificativo </td>
+<td>https://hl7.org/fhir/R4/valueset-identifier-use.html</td>
+    </tr>
+    <tr>
       <td>
       <a href="https://hl7.org/fhir/R4/valueset-bundle-type.html" target="_blank">Bundle type</a>
       </td>
@@ -57,10 +64,38 @@
     </tr>
     <tr>
       <td>
+      <a href="http://hl7.org/fhir/ValueSet/languages" target="_blank">Language</a>
+      </td>
+      <td> ValueSet relativo alla codifica del tipo di organizzazione </td>
+<td>http://hl7.org/fhir/ValueSet/languages</td>
+    </tr>
+    <tr>
+      <td>
       <a href="http://hl7.org/fhir/ValueSet/composition-status|4.0.1" target="_blank">Composition status</a>
       </td>
       <td> ValueSet relativo allo stato clinico della composition </td>
 <td>http://hl7.org/fhir/ValueSet/composition-status|4.0.1</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.org/fhir/R4/valueset-document-classcodes.html" target="_blank">Classcodes</a>
+      </td>
+      <td> ValueSet relativo al tipo di documento </td>
+<td>http://hl7.org/fhir/ValueSet/document-classcodes</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab" target="_blank">Study type</a>
+      </td>
+      <td> ValueSet relativo alla codifica ISTAT </td>
+<td>http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab" target="_blank">Lab specialty</a>
+      </td>
+      <td> ValueSet relativo alla codifica della specialità di laboratorio </td>
+<td>http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab</td>
     </tr>
     <tr>
       <td>
@@ -75,6 +110,13 @@
       </td>
       <td> ValueSet relativo alla codifica del modo in cui una persona ha autenticato la composition </td>
 <td>http://hl7.org/fhir/ValueSet/composition-attestation-mode|4.0.1</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio" target="_blank">Sezione referto di laboratorio</a>
+      </td>
+      <td> ValueSet relativo ai codici LOINC per la specialità di laboratorio </td>
+<td>http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio</td>
     </tr>
     <tr>
       <td>
@@ -131,6 +173,62 @@
       </td>
       <td> ValueSet relativo alla codifica del tipo di identificatore</td>
 <td>http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali" target="_blank">Anagrafi regionali</a>
+      </td>
+      <td> ValueSet relativo alla codifica di anagrafi regionali</td>
+<td>http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.it/fhir/lab-report/ValueSet/uri-idEni" target="_blank">Codici ENI</a>
+      </td>
+      <td> ValueSet relativo alla codifica ENI regionale </td>
+<td>http://hl7.it/fhir/lab-report/ValueSet/uri-idEni</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.it/fhir/lab-report/ValueSet/URI-idStp" target="_blank">STP</a>
+      </td>
+      <td> ValueSet relativo alla codifica dei codici STP regionali </td>
+<td>http://hl7.it/fhir/lab-report/ValueSet/URI-idStp</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1" target="_blank">Tipo di ingresso del dato UDI</a>
+      </td>
+      <td> ValueSet relativo alla codifica della modalità di inserimento del dato UDI </td>
+<td>http://hl7.org/fhir/ValueSet/udi-entry-type|4.0.1</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.org/fhir/ValueSet/device-status|4.0.1" target="_blank">Device Status</a>
+      </td>
+      <td> ValueSet relativo alla codifica dello stato del device </td>
+<td>http://hl7.org/fhir/ValueSet/device-status|4.0.1</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="https://hl7.org/fhir/R4/valueset-device-status-reason.html" target="_blank">Device status reason</a>
+      </td>
+      <td> ValueSet relativo alla codifica del motivo dello stato del device </td>
+<td>https://hl7.org/fhir/R4/valueset-device-status-reason.html</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.org/fhir/ValueSet/device-nametype" target="_blank">Device Nametype</a>
+      </td>
+      <td> ValueSet relativo alla codifica del tipo di nome del device </td>
+<td>http://hl7.org/fhir/ValueSet/device-nametype</td>
+    </tr>
+    <tr>
+      <td>
+      <a href="http://hl7.org/fhir/ValueSet/device-type" target="_blank">Device type</a>
+      </td>
+      <td> ValueSet relativo alla codifica del tipo di device </td>
+<td>http://hl7.org/fhir/ValueSet/device-type</td>
     </tr>
     <tr>
       <td>

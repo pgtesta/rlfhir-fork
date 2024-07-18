@@ -2,6 +2,9 @@
 
 - [RLBundleRispostaLabReport](#RLBundleRispostaLabReport)
   - [Descrizione](#descrizione)
+  - [Tipologie di ricerca](#tipologie-di-ricerca)
+  - [Search parameter](#search-parameter)
+  - [ValueSet](#valueset)
 
 
 ## Descrizione
@@ -75,6 +78,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLBundleRis
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| identifier.use | Obiettivo dell'identificativo | La codifica è definita dal Valueset (https://hl7.org/fhir/R4/valueset-identifier-use.html)  |
-| bundle type | Tipo di bundle | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1)  |
-| http verb | ??? | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/http-verb|4.0.1)  |
+| type | Tipo di bundle | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/bundle-type|4.0.1)  |
