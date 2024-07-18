@@ -28,7 +28,8 @@
         "isModifier": false,
         "binding": {
           "strength": "example",
-          "description": "ISTAT - Cittadinanza"
+          "description": "ISTAT - Cittadinanza",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/istat-cittadinanza"
         }
       },
       {
@@ -48,7 +49,8 @@
         "isModifier": false,
         "binding": {
           "strength": "example",
-          "description": "ISTAT - Titolo Studio"
+          "description": "ISTAT - Titolo Studio",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/istat-titoloStudio"
         }
       },
       {
@@ -67,7 +69,8 @@
         "isModifier": false,
         "binding": {
           "strength": "example",
-          "description": "ISTAT - Professioni"
+          "description": "ISTAT - Professioni",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/istat-professione"
         }
       },
       {
@@ -245,14 +248,29 @@
         "sliceName": "residenzaAnagraficaCittadino"
       },
       {
+        "id": "Patient.address:residenzaAnagraficaCittadino.use",
+        "path": "Patient.address.use",
+        "fixedCode": "billing"
+      },
+      {
         "id": "Patient.address:domicilioCittadino",
         "path": "Patient.address",
         "sliceName": "domicilioCittadino"
       },
       {
+        "id": "Patient.address:domicilioCittadino.use",
+        "path": "Patient.address.use",
+        "fixedCode": "home"
+      },
+      {
         "id": "Patient.address:locazioneTemporaneaCIttadino",
         "path": "Patient.address",
         "sliceName": "locazioneTemporaneaCIttadino"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCIttadino.use",
+        "path": "Patient.address.use",
+        "fixedCode": "temp"
       },
       {
         "id": "Patient.maritalStatus",
@@ -267,7 +285,7 @@
       {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
-        "definition": "- PractitionerRole, se si vuole indicare sia il medico che la struttura a cui afferisce\r\n- Practitioner, se si vuole indicare solo il medico\r\n- Organization, se si vuole indicare solo l'azienda (es. Casa di Riposo)",
+        "definition": "- PractitionerRole, se si vuole indicare sia il medico che la struttura a cui afferisce (ad es. MMG + ASST)\r\n- Practitioner, se si vuole indicare solo il medico \r\n- Organization, se si vuole indicare solo l'azienda (es. Casa di Riposo)",
         "type": [
           {
             "code": "Reference",
