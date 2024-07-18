@@ -57,52 +57,10 @@
     </tr>
     <tr>
       <td>
-        {{link:http://hl7.it/sid/codiceFiscale}}
-      </td>
-      <td>ValueSet relativo al codice fiscale del paziente</td>
-      <td>http://hl7.it/sid/codiceFiscale</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:http://terminology.hl7.it/ValueSet/uri-idStp}}
-      </td>
-      <td>ValueSet relativo al codice STP del paziente</td>
-      <td>http://terminology.hl7.it/ValueSet/uri-idStp</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:https://fhir.siss.regione.lombardia.it/sid/tesseraTeam}}
-      </td>
-      <td>ValueSet relativo al codice TEAM del paziente</td>
-      <td>https://fhir.siss.regione.lombardia.it/sid/tesseraTeam</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:http://terminology.hl7.it/ValueSet/uri-idEni}}
-      </td>
-      <td>ValueSet relativo al codice ENI del paziente</td>
-      <td>http://terminology.hl7.it/ValueSet/uri-idEni</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:http://hl7.it/sid/anpr}}
-      </td>
-      <td>ValueSet relativo al codice anpr del paziente</td>
-      <td>http://hl7.it/sid/anpr</td>
-    </tr>
-    <tr>
-      <td>
-        {{link:http://terminology.hl7.it/ValueSet/uri-idRegionali}}
-      </td>
-      <td>ValueSet relativo al codice regionale del paziente</td>
-      <td>http://terminology.hl7.it/ValueSet/uri-idRegionali</td>
-    </tr>
-    <tr>
-      <td>
         {{link:https://www.hl7.it/fhir/base/ValueSet-statoCivile.html}}
       </td>
       <td>ValueSet relativo allo stato civile del paziente</td>
-      <td>https://www.hl7.it/fhir/base/ValueSet-statoCivile.html</td>
+      <td>https://www.hl7.it/fhir/base/ValueSet-statoCivile</td>
     </tr>
   </tbody>
 </table>
