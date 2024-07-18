@@ -57,7 +57,7 @@
     </tr>
     <tr>
       <td>
-        {{link:https://www.hl7.it/fhir/base/ValueSet-statoCivile.html}}
+      <a href="https://www.hl7.it/fhir/base/ValueSet-statoCivile.html" target="_blank">Stato civile</a>
       </td>
       <td>ValueSet relativo allo stato civile del paziente</td>
       <td>https://www.hl7.it/fhir/base/ValueSet-statoCivile</td>
