@@ -79,5 +79,5 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLSpecimenL
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| VsTipoCampione | Tipo Campione. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/tipo-campione}} |
-| VsLabSpecimenContainerIt | Valueset contenente i codici SNOMED per la risorsa Specimen - Lab Report per la descrizione del container del campione di laboratorio. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/campione-container-lab-it}} |
+| type | Tipo Campione. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/tipo-campione}} |
+| container.type | Valueset contenente i codici SNOMED per la risorsa Specimen - Lab Report per la descrizione del container del campione di laboratorio. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/campione-container-lab-it}} |
