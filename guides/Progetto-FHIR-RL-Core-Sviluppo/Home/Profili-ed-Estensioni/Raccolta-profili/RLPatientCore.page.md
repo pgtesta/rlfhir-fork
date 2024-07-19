@@ -54,7 +54,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-
+{{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}
 <br>
 </div>
 
@@ -67,7 +67,7 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPatientBa
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| extension:luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali |
+| extension:luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet [UnitàAmministrativeTerritoriali](http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali) |
 | identifier |  Codice Fiscale del paziente | La codifica è definita dal ValueSet http://hl7.it/sid/codiceFiscale |
 | identifier |  Codice STP del paziente | La codifica è definita dal ValueSet http://terminology.hl7.it/ValueSet/uri-idStp |
 | identifier |  Codice della tessera TEAM del paziente | La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/sid/tesseraTeam |  
