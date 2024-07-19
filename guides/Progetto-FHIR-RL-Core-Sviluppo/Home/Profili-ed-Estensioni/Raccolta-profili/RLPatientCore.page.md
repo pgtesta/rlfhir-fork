@@ -5,7 +5,6 @@
   - [ValueSet](#valueset)
 
 ## Descrizione
-AAAAA
 Il profilo RLPatientCore è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) per contenere le informazioni del paziente cittadino, assistito in Regione Lombardia.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}.
@@ -53,7 +52,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}
+Paziente: {{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}
 <br>
 </div>
 
