@@ -79,6 +79,6 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLServiceRe
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| RequestIntent | Codici che indicano il grado di autorità/intenzionalità associato a una richiesta. | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/request-intent}} |
-| RequestPriority | La priorità clinica di un ordine diagnostico. | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/request-priority}} |
-| LabOrderCodes | Codice della richiesta per un esame di Laboratorio. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/lab-orderCodes-it-lab}} |
+| intent | Codici che indicano il grado di autorità/intenzionalità associato a una richiesta. | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/request-intent}} |
+| priority | La priorità clinica di un ordine diagnostico. | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/request-priority}} |
+| code | Codice della richiesta per un esame di Laboratorio. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/lab-orderCodes-it-lab}} |
