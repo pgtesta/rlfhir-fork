@@ -323,21 +323,6 @@
             {{link:http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab}}
           </td>
         </tr>
-        <tr>
-          <td>LAB</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationbatteryLabReport.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
-          </td>
-          <td>
-            Profilo per contenere la descrizione di un insieme di esami per il referto di laboratorio.
-          </td>
-          <td>
-            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab}}
-          </td>
-        </tr>
       </tbody>
     </table>
   </body>
