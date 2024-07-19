@@ -81,5 +81,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLObservati
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-|   | Valueset contenente i codici LOINC per la specialità di laboratorio. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio}} |
-
+| code  | Valueset contenente i codici LOINC per la specialità di laboratorio. | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/sezione-referto-laboratorio}} |
