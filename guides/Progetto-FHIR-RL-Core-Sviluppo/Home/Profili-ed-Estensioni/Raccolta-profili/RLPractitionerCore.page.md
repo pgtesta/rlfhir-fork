@@ -52,7 +52,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-Practitioner}}
+Medico: {{link:Practitioner/3a14db34-a959-11ed-afa1-0242ac120002}}
 <br>
 </div>
 
