@@ -235,7 +235,7 @@
         <tr>
           <td>LAB</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMMGLabReport.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMMGPLSLabReport.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/practitionerrole.html">Practitioner Role MMG</a>
