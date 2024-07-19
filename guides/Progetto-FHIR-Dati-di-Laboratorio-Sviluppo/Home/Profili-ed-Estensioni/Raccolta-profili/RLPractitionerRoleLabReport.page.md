@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| PractitionerRole | Definisce una serie di codici che possono essere utilizzati per indicare il ruolo di un medico. | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/practitioner-role}} |
+| code | Definisce una serie di codici che possono essere utilizzati per indicare il ruolo di un medico. | La codifica è definita dal ValueSet [Ruoli](http://hl7.org/fhir/ValueSet/practitioner-role) |
