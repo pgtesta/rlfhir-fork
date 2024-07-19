@@ -202,6 +202,97 @@
             {{link:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab}}
           </td>
         </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+          </td>
+          <td>
+            Profilo per descrivere informazioni sull'operatore medico sanitario.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/practitioner-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitionerrole.html">Practitioner Role</a>
+          </td>
+          <td>
+            Profilo per descrivere il ruolo dell'operatore medico sanitario.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMMGLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitionerrole.html">Practitioner Role MMG</a>
+          </td>
+          <td>
+            Profilo per descrivere le informazioni di MMG/PLS per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-MMGPLS-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">Service Request</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione delle informazioni della prescrizione per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/servicerequest-it-lab}}
+          </td>
+        </tr>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLSpecimenLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione delle informazioni del campione per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/servicerequest-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLSubstanceLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione la descrizione dell’additivo usato sul campione.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/substance-additive-specimen-it-lab}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
