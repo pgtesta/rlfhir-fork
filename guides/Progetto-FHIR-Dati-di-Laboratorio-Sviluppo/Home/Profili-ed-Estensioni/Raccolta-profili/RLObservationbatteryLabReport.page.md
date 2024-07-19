@@ -10,7 +10,7 @@
 
 Il profilo RLObservationbatteryLabReport è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per contenere la descrizione di un inseme di esami per il referto di laboratorio.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-grouping-it-lab}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. 
 
 <br>
 <div class="tab">

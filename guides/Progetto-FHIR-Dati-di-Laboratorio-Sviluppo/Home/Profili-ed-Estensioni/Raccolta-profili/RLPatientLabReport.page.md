@@ -79,9 +79,8 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPatientLa
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| language | Lingua utilizzata per descrivere la risorsa  | La codifica è definita dal Valueset (http://hl7.org/fhir/ValueSet/languages)  |
-| istat - professione | Codice Istat per la professione | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/istat-professione)  |
-|tipo identificatore | Codice che descrive i diversi tipi di identificatori | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore)  |
-|anagrafi regionali | Anagrafi regionali | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali)  |
-|uri - idEni | Identificativi per codici ENI regionali | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/uri-idEni)  |
-|uri - idStp | Identificativi per codici STP regionali  | La codifica è definita dal Valueset (http://hl7.it/fhir/lab-report/ValueSet/URI-idStp)  |
+| extension:professione | Codice Istat per la professione | La codifica è definita dal Valueset [ISTAT - Professione](http://hl7.it/fhir/lab-report/ValueSet/istat-professione)  |
+| identifier | Codice che descrive i diversi tipi di identificatori | La codifica è definita dal Valueset [Tipo Identificatore](http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore)  |
+| identifier | Anagrafi regionali | La codifica è definita dal Valueset [Anagrafi regionali](http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali)  |  
+| identifier |  Codice ENI del paziente | La codifica è definita dal ValueSet [URI ID ENI](http://hl7.it/fhir/lab-report/ValueSet/uri-idEni) |
+| identifier |  Codice STP del paziente | La codifica è definita dal ValueSet [URI ID STP](http://hl7.it/fhir/lab-report/ValueSet/uri-idStp) |

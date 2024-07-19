@@ -8,9 +8,9 @@
 
 ## Descrizione
 
-Il profilo RLObservationLabReport è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere vincoli aggiuntivi per Observation Lab Report.
+Il profilo RLObservationLabReport è stato strutturato a partire dalla risorsa generica FHIR [Observation](http://hl7.org/fhir/R4/observation.html) per descrivere le informazioni cliniche per il referto di laboratorio.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{ http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab }}.
+Di seguito è presentato il contenuto del profilo in diversi formati.
 
 <br>
 <div class="tab">

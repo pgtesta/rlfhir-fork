@@ -151,7 +151,7 @@
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
           </td>
           <td>
-            Profilo per descrivere le rilevazioni cliniche effettuate su un paziente per il referto di laboratorio.
+            Profilo per descrivere le rilevazioni cliniche effettuate su un paziente per un referto di laboratorio.
           </td>
           <td>
             {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-doc-it-lab}}
@@ -175,16 +175,16 @@
         <tr>
           <td>LAB</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDocumentLabReport.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationbatteryLabReport.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
           </td>
           <td>
-            Profilo per descrivere vincoli aggiuntivi per Observation Lab Report
+            Profilo per descrivere un inseme di esami per il referto di laboratorio
           </td>
           <td>
-            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-doc-it-lab}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-grouping-it-lab}}
           </td>
         </tr>
         <tr>
