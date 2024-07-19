@@ -293,6 +293,51 @@
             {{link:http://hl7.it/fhir/lab-report/StructureDefinition/substance-additive-specimen-it-lab}}
           </td>
         </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationOperatoreLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione delle informazioni relative all’operatore socio/sanitario per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/organizationOperatore-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione delle informazioni relative all’organizzazione per il referto di laboratorio
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationbatteryLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione di un insieme di esami per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
