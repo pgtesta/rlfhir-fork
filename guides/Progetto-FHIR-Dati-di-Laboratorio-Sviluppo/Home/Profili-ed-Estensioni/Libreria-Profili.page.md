@@ -151,10 +151,10 @@
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
           </td>
           <td>
-            Profilo per descrivere le rilevazioni cliniche effettuate su un paziente
+            Profilo per descrivere le rilevazioni cliniche effettuate su un paziente per il referto di laboratorio.
           </td>
           <td>
-            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-doc-it-lab}}
           </td>
         </tr>
         <tr>
