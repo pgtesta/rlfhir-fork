@@ -12,4 +12,4 @@ Al fine di consentire un’adeguata ideazione, prototipazione e avvio di servizi
 Inoltre, a seconda del perimetro di visibilità dei dati, viene definito un perimetro di riferimento aziendale (consultazione di dati prodotti all’interno dello stesso Ente Sanitario) o sovra-aziendale (consultazione di dati prodotti da tutti i diversi Enti Sanitari).
 
 ## IG Core per Regione Lombardia
-I profili definiti in questa guida sono da considerare come la struttura di base delle risorse FHIR per le successive applicazioni dello standard sul territorio.
+I profili definiti in questa guida implementativa (IG) sono da considerare come la struttura di base delle risorse FHIR per le successive applicazioni dello standard sul territorio.
