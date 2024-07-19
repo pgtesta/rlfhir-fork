@@ -275,7 +275,7 @@
             Profilo per contenere la descrizione delle informazioni del campione per il referto di laboratorio.
           </td>
           <td>
-            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/servicerequest-it-lab}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/specimen-it-lab}}
           </td>
         </tr>
         <tr>
