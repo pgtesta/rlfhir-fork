@@ -79,4 +79,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLPractitio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| VsMmgPlsRoles | Tipo medico di famiglia: Medico Medicina Generale o Pediatra di Libera Scelta | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/mmgOrPls}} |
+| code | Tipo medico di famiglia: Medico Medicina Generale o Pediatra di Libera Scelta | La codifica è definita dal ValueSet {{link:http://hl7.it/fhir/lab-report/ValueSet/mmgOrPls}} |
