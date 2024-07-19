@@ -5,7 +5,7 @@
   - [ValueSet](#valueset)
 
 ## Descrizione
-Il profilo RLPractitionerRoleMedicoPrescrittore è stato strutturato a partire dalla risorsa generica FHIR [Practitioner](http://hl7.org/fhir/R4/practitioner.html) per contenere i dettagli anagrafici degli operatori sanitari della Regione Lombardia.
+Il profilo RLPractitionerCore è stato strutturato a partire dalla risorsa generica FHIR [Practitioner](http://hl7.org/fhir/R4/practitioner.html) per contenere i dettagli anagrafici degli operatori sanitari della Regione Lombardia.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore}}.
 
