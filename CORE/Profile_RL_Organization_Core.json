@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "RLOrganizationCore",
   "meta": {
-    "lastUpdated": "2024-07-15T14:16:57.6281227+00:00"
+    "lastUpdated": "2024-07-23T08:19:59.4946383+00:00"
   },
   "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore",
   "name": "RLOrganizationCore",
@@ -26,9 +26,16 @@
       {
         "id": "Organization.identifier",
         "path": "Organization.identifier",
-        "short": "Lista dei codici identificativi dell'organizzazione",
-        
-        "min": 1
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Lista dei codici identificativi dell'organizzazione"
       },
       {
         "id": "Organization.identifier.system",
@@ -39,6 +46,26 @@
         "id": "Organization.identifier.value",
         "path": "Organization.identifier.value",
         "short": "Codice identificativo dell'organizzazione"
+      },
+      {
+        "id": "Organization.identifier:struttura",
+        "path": "Organization.identifier",
+        "sliceName": "struttura"
+      },
+      {
+        "id": "Organization.identifier:struttura.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture"
+      },
+      {
+        "id": "Organization.identifier:partitaIva",
+        "path": "Organization.identifier",
+        "sliceName": "partitaIva"
+      },
+      {
+        "id": "Organization.identifier:partitaIva.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "http://hl7.it/sid/partitaIva"
       },
       {
         "id": "Organization.active",
@@ -69,8 +96,7 @@
         "id": "Organization.name",
         "path": "Organization.name",
         "short": "Denominazione dell'organizzazione",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
-        "min": 1
+        "definition": "Stringa alfanumerica massimo di 1000 caratteri"
       },
       {
         "id": "Organization.telecom",
@@ -115,10 +141,6 @@
         "fixedCode": "fax"
       },
       {
-        "id": "Organization.telecom:fax.value",
-        "path": "Organization.telecom.value"
-      },
-      {
         "id": "Organization.telecom:mail",
         "path": "Organization.telecom",
         "sliceName": "mail",
@@ -153,6 +175,7 @@
       {
         "id": "Organization.partOf",
         "path": "Organization.partOf",
+        "short": "Ente o struttura di livello più alto a cui afferisce l'organizzazione di cui si sta parlando.",
         "type": [
           {
             "code": "Reference",

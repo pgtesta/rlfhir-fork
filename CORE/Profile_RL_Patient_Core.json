@@ -168,10 +168,7 @@
       {
         "id": "Patient.identifier:codiceENI.system",
         "path": "Patient.identifier.system",
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idEni"
-        }
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idEni"
       },
       {
         "id": "Patient.identifier:anpr",
@@ -219,14 +216,12 @@
       {
         "id": "Patient.name.family",
         "path": "Patient.name.family",
-        "short": "Cognome del paziente",
-        "definition": "Stringa alfabetica di massimo 40 caratteri"
+        "short": "Cognome del paziente"
       },
       {
         "id": "Patient.name.given",
         "path": "Patient.name.given",
-        "short": "Nome del paziente",
-        "definition": "Stringa alfabetica di massimo 40 caratteri"
+        "short": "Nome del paziente"
       },
       {
         "id": "Patient.address",

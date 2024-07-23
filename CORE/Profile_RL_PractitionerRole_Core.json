@@ -46,6 +46,17 @@
         }
       },
       {
+        "id": "PractitionerRole.identifier:CodiceRegionale",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "CodiceRegionale",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:CodiceRegionale.system",
+        "path": "PractitionerRole.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
+      },
+      {
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "short": "Stato del record dell'operatore",
