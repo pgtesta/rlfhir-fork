@@ -17,7 +17,7 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|---|
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
-|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]|-|CDR|
+|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen|-|CDR|
 |4|GET|<base_API_Manager>Observation?code=[codice esame]&date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen|-|CDR|
 
 ### Richiesta 1
@@ -44,9 +44,13 @@ Parametri obbligatori:
 
 Parametri opzionali:
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+- _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato.
 
 La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
+- PractitionerRole: risorsa contente le infromazioni su medico e azienda resposabile dell'osservazione
+- Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
+- Organization: risorsa contente le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
 - Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame
 - Specimen: risorsa contente le informazioni del campione di laboratorio da cui è stata prodotta l'osservazione.
 
@@ -65,5 +69,8 @@ Parametri opzionali:
 
 La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
+- PractitionerRole: risorsa contente le infromazioni su medico e azienda resposabile dell'osservazione
+- Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
+- Organization: risorsa contente le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
 - Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame
 - Specimen: risorsa contente le informazioni del campione di laboratorio
