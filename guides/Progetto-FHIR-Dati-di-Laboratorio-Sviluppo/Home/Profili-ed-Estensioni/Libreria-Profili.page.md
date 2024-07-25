@@ -18,7 +18,7 @@
       <p>
         Nella tabella sottostante sono raccolti tutti i profili attivi; ad ogni
         profilo è associato un tema di utilizzo (si veda la pagina
-        {{pagelink:Home/Contesto/Panoramica-di-progetto.page.md}}).
+        {{pagelink:Home/Contesto/Panoramica-di-progetto}}).
         <br />
         Usare la casella di ricerca sottostante per filtrare le informazioni
         desiderate.

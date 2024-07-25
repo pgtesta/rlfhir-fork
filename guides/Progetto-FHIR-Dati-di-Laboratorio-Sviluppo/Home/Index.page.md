@@ -5,7 +5,7 @@ Questa pagina è da considerare IN LAVORAZIONE.
 
 Il contenuto del sito rappresenterà a regime la Guida di Implementazione del progetto FHIR per Regione Lombardia. 
 
-Attualmente viene descritta una panoramica del progetto \[si veda {{pagelink:Home/Contesto/Panoramica-di-progetto.page.md}}\], 
+Attualmente viene descritta una panoramica del progetto \[si veda {{pagelink:Home/Contesto/Panoramica-di-progetto}}\], 
 ed è possibile consultare le risorse FHIR rilasciate e attualmente in uso.
 </div>
 
