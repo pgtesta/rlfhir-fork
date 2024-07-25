@@ -22,6 +22,8 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
+Parametri obbligatori:
+- identifier=[id univoco del documento]: identificativo univoco del documento secondo la sintassi FHIR: \[value\]|\[system\]
 
 ### Richiesta 2
 Recupero dei referti di medicina di laboratorio in FHIR di uno specifico paziente.
@@ -44,7 +46,7 @@ Parametri obbligatori:
 
 Parametri opzionali:
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
-- _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato.
+- _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
 La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
@@ -52,7 +54,7 @@ La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo stud
 - Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
 - Organization: risorsa contente le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
 - Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame
-- Specimen: risorsa contente le informazioni del campione di laboratorio da cui è stata prodotta l'osservazione.
+
 
 
 ### Richiesta 4
@@ -66,6 +68,7 @@ Parametri obbligatori:
 
 Parametri opzionali:
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+- _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
 La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
@@ -73,4 +76,3 @@ La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo stud
 - Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
 - Organization: risorsa contente le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
 - Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame
-- Specimen: risorsa contente le informazioni del campione di laboratorio
