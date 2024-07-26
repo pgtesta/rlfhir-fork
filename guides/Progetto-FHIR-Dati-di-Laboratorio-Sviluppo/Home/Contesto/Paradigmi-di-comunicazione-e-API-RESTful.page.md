@@ -48,12 +48,12 @@ Parametri opzionali:
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 - _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
-La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
+La ricerca riporta può contenere parametri aggiuntivi per dare dati aggiuntivi:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
 - PractitionerRole: risorsa contente le infromazioni su medico e azienda resposabile dell'osservazione
 - Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
 - Organization: risorsa contente le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
-- Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame
+- Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
 
 
 
@@ -70,7 +70,7 @@ Parametri opzionali:
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 - _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
-La ricerca riporta informazioni aggiuntive per dare i dati sufficienti allo studio delle osservazioni fornite nella risposta:
+La ricerca riporta può contenere parametri aggiuntivi per dare dati aggiuntivi:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
 - PractitionerRole: risorsa contente le infromazioni su medico e azienda resposabile dell'osservazione
 - Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
