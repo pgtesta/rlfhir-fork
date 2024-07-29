@@ -17,7 +17,7 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|---|
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
-|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen|-|CDR|
+|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include:iterate=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude=Provenance:target|-|CDR|
 |4|GET|<base_API_Manager>Observation?code=[codice esame]&date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen|-|CDR|
 
 ### Richiesta 1
@@ -40,35 +40,35 @@ Parametri opzionali:
 Recupero risultati degli esami di laboratorio di uno specifico paziente.
 
 Parametri obbligatori:
-- _include=Observation:patient&patient.identifier=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
-- category=laboratory: selezione delle osservazioni provenienti da referti di medicina di laboratorio
-- date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale
+- *_include=Observation:patient*: include nella risposta la risorsa Patient
+- *category=laboratory*: selezione delle osservazioni provenienti da referti di medicina di laboratorio
+- *date=gt[data ricerca]:* da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
-- date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
-- _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
+- *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 
-La ricerca riporta può contenere parametri aggiuntivi per dare dati aggiuntivi:
-- Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
-- PractitionerRole: risorsa contente le infromazioni su medico e azienda resposabile dell'osservazione
-- Practitioner: risorsa contente le infromazioni sul medico resposabile dell'osservazione
-- Organization: risorsa contente le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
-- Encounter: risorsa contente le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
-
+Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
+- *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato
+- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
+- *_revinclude:iterate=Provenance:target* : include nella risposta la risorsa Provenance descritta nella riga precedente e la risorsa Organization relativa al custodian (azienda resposabile della conservazione) del documento e la risorsa PractitionerRole, che contiene le informazioni sul firmatario del dcoumento
+- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole che contiene le infromazioni su medico e azienda resposabile dell'osservazione
+- *_include:iterate=Observation:performer*: è un parametro più articolato del precedente, grazie all'uso del modifier FHIR *iterate*, e include nella risposta la risorsa PractiionerRole, la risorsa Practitioner che contiene le infromazioni sul medico resposabile dell'osservazione e la risorsa Organization che contiene le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
+- *_include:iterate=Observation:patient*: è un parametro più articolato del secondo riportato tra quelli obbligatori. Questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
 
 
 ### Richiesta 4
 Recupero risultati di uno specifico esame di laboratorio di uno specifico paziente.
 
 Parametri obbligatori:
-- _include=Observation:patient&patient.identifier=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
+- *_include=Observation:patient&patient.identifier=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
 - category=laboratory: selezione delle osservazioni provenienti da referti di medicina di laboratorio
 - code=[codice esame]: da valorizzare con il codice LOINC dell'esame di cui si vuole avere l'andamento
 - date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
 - date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
-- _include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
+- *_include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
 La ricerca riporta può contenere parametri aggiuntivi per dare dati aggiuntivi:
 - Provenance: risorsa contente le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
