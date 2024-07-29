@@ -23,18 +23,18 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
 Parametri obbligatori:
-- identifier=[id univoco del documento]: identificativo univoco del documento secondo la sintassi FHIR: \[value\]|\[system\]
+- *identifier=[id univoco del documento]*: identificativo univoco del documento secondo la sintassi FHIR: \[value\]|\[system\]
 
 ### Richiesta 2
 Recupero dei referti di medicina di laboratorio in FHIR di uno specifico paziente.
 
 Parametri obbligatori:
-- composition.subject=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
-- composition.code=11506-2: selezione dei FHIR document tra quelli di laboratorio
-- composition.date=gt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *composition.subject=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
+- *composition.code=11506-2*: selezione dei FHIR document tra quelli di laboratorio
+- *composition.date=gt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
-- composition.date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+- *composition.date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 
 ### Richiesta 3
 Recupero risultati degli esami di laboratorio di uno specifico paziente.
@@ -61,13 +61,13 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 Recupero risultati di uno specifico esame di laboratorio di uno specifico paziente.
 
 Parametri obbligatori:
-- *_include=Observation:patient&patient.identifier=[identificativo paziente]: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
-- category=laboratory: selezione delle osservazioni provenienti da referti di medicina di laboratorio
-- code=[codice esame]: da valorizzare con il codice LOINC dell'esame di cui si vuole avere l'andamento
-- date=gt[data ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *_include=Observation:patient&patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
+- *category=laboratory*: selezione delle osservazioni provenienti da referti di medicina di laboratorio
+- *code=[codice esame]*: da valorizzare con il codice LOINC dell'esame di cui si vuole avere l'andamento
+- *date=gt[data ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 
 Parametri opzionali:
-- date=lt[data di ricerca]: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+- *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 - *_include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
