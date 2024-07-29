@@ -23,7 +23,7 @@ Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
 Parametri obbligatori:
-- *identifier=[id univoco del documento]*: identificativo univoco del documento secondo la sintassi FHIR: \[value\]|\[system\]
+- *identifier=[id univoco del documento]*: identificativo univoco del documento secondo la sintassi FHIR: *\[value\]|\[system\]*
 
 ### Richiesta 2
 Recupero dei referti di medicina di laboratorio in FHIR di uno specifico paziente.
