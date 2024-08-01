@@ -50,7 +50,8 @@
       {
         "id": "Organization.identifier:struttura",
         "path": "Organization.identifier",
-        "sliceName": "struttura"
+        "sliceName": "struttura",
+        "short":"Identificativo Struttura di Ricovero"
       },
       {
         "id": "Organization.identifier:struttura.system",
@@ -60,7 +61,8 @@
       {
         "id": "Organization.identifier:partitaIva",
         "path": "Organization.identifier",
-        "sliceName": "partitaIva"
+        "sliceName": "partitaIva",
+        "short":"Partita IVA Organizzazione"
       },
       {
         "id": "Organization.identifier:partitaIva.system",
@@ -70,12 +72,12 @@
       {
         "id": "Organization.active",
         "path": "Organization.active",
-        "short": "Indicazione dello stato della risorsa"
+        "short": "Indicazione dello stato di attività dell'organizzazione"
       },
       {
         "id": "Organization.type",
         "path": "Organization.type",
-        "short": "Tipologia di organizzazione"
+        "short": "Tipologia di organizzazione (es. Azienda Ospedaliera, presidio, ecc.)"
       },
       {
         "id": "Organization.type.coding.code",
@@ -96,7 +98,7 @@
         "id": "Organization.name",
         "path": "Organization.name",
         "short": "Denominazione dell'organizzazione",
-        "definition": "Stringa alfanumerica massimo di 1000 caratteri"
+        "definition": "Nome dell'organizzazione con cui è possibile riconoscerla a livello human-readable"
       },
       {
         "id": "Organization.telecom",
@@ -110,14 +112,14 @@
           ],
           "rules": "open"
         },
-        "short": "Contatti dell'organizzazione",
+        "short": "Recapiti dell'organizzazione",
         "definition": "Telefono, mail, fax"
       },
       {
         "id": "Organization.telecom:phone",
         "path": "Organization.telecom",
         "sliceName": "phone",
-        "short": "Numero di telefono dell'organizzazione"
+        "short": "Contatto telefonico"
       },
       {
         "id": "Organization.telecom:phone.system",
@@ -133,7 +135,7 @@
         "id": "Organization.telecom:fax",
         "path": "Organization.telecom",
         "sliceName": "fax",
-        "short": "Numero di fax dell'organizzazione"
+        "short": "Recapito fax"
       },
       {
         "id": "Organization.telecom:fax.system",
@@ -144,7 +146,7 @@
         "id": "Organization.telecom:mail",
         "path": "Organization.telecom",
         "sliceName": "mail",
-        "short": "Indirizzo mail dell'organizzazione"
+        "short": "Indirizzo di posta elettronica"
       },
       {
         "id": "Organization.telecom:mail.system",
@@ -160,12 +162,13 @@
         "id": "Organization.address",
         "path": "Organization.address",
         "short": "Indirizzo dell'azienda",
-        "definition": "Indirizzo dell'azienda."
+        "definition": "Indirizzo in cui è ubicata l'organizzazione"
       },
       {
         "id": "Organization.address.line",
         "path": "Organization.address.line",
-        "short": "Indirizzo e numero civico dell'organizzazione"
+        "short": "Indirizzo dell'organizzazione",
+        "definition":"Indirizzo completo (via, civico, ecc.) in cui l'organizzazione è ubicata"
       },
       {
         "id": "Organization.address.city",

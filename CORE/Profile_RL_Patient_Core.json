@@ -36,7 +36,7 @@
         "id": "Patient.extension:titoloDiStudio",
         "path": "Patient.extension",
         "sliceName": "titoloDiStudio",
-        "short": "Titolo di Studio",
+        "short": "Titolo di studio del paziente",
         "max": "1",
         "type": [
           {
@@ -57,6 +57,7 @@
         "id": "Patient.extension:professione",
         "path": "Patient.extension",
         "sliceName": "professione",
+        "short": "Professione esercitata dal paziente",
         "max": "1",
         "type": [
           {
@@ -66,7 +67,6 @@
             ]
           }
         ],
-        "isModifier": false,
         "binding": {
           "strength": "example",
           "description": "ISTAT - Professioni",
@@ -77,6 +77,7 @@
         "id": "Patient.extension:luogoDiNascita",
         "path": "Patient.extension",
         "sliceName": "luogoDiNascita",
+        "short": "Luogo di nascita del paziente",
         "type": [
           {
             "code": "Extension",
@@ -84,13 +85,13 @@
               "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
             ]
           }
-        ],
-        "isModifier": false
+        ]
       },
       {
         "id": "Patient.extension:ATSResidenza",
         "path": "Patient.extension",
         "sliceName": "ATSResidenza",
+        "short": "ATS di Residenza del paziente",
         "type": [
           {
             "code": "Extension",
@@ -98,8 +99,7 @@
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
             ]
           }
-        ],
-        "isModifier": false
+        ]
       },
       {
         "id": "Patient.identifier",
@@ -132,7 +132,8 @@
         "id": "Patient.identifier:codiceSTP",
         "path": "Patient.identifier",
         "sliceName": "codiceSTP",
-        "short": "Codice STP"
+        "short": "Codice STP",
+        "definition": "Codice Straniero Temporaneamente Presente"
       },
       {
         "id": "Patient.identifier:codiceSTP.system",
@@ -152,7 +153,7 @@
         "path": "Patient.identifier",
         "sliceName": "tesseraTEAM",
         "short": "Tessera TEAM",
-        "comment": "Corrispondente campo HL7 secondo specifiche regionali: PID-3"
+        "comment": "Tessera Europea Assicurazione Malattia"
       },
       {
         "id": "Patient.identifier:tesseraTEAM.system",
@@ -163,7 +164,8 @@
         "id": "Patient.identifier:codiceENI",
         "path": "Patient.identifier",
         "sliceName": "codiceENI",
-        "short": "Codice ENI"
+        "short": "Codice ENI",
+        "definition": "Codice Europeo Non Iscritto"
       },
       {
         "id": "Patient.identifier:codiceENI.system",
@@ -173,7 +175,9 @@
       {
         "id": "Patient.identifier:anpr",
         "path": "Patient.identifier",
-        "sliceName": "anpr"
+        "sliceName": "anpr",
+        "short": "Identificativo ANPR",
+        "definition": "Identificativo Anagrafica Nazionale Popolazione Residente"
       },
       {
         "id": "Patient.identifier:anpr.system",
@@ -183,7 +187,8 @@
       {
         "id": "Patient.identifier:idRegionale",
         "path": "Patient.identifier",
-        "sliceName": "idRegionale"
+        "sliceName": "idRegionale",
+        "short": "Identificativo regionale"
       },
       {
         "id": "Patient.identifier:idRegionale.system",
@@ -224,6 +229,55 @@
         "short": "Nome del paziente"
       },
       {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.telecom:telefono",
+        "path": "Patient.telecom",
+        "sliceName": "telefono"
+      },
+      {
+        "id": "Patient.telecom:telefono.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "email"
+      },
+      {
+        "id": "Patient.telecom:email",
+        "path": "Patient.telecom",
+        "sliceName": "email"
+      },
+      {
+        "id": "Patient.telecom:email.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "Sesso del paziente"
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "Data di nascita"
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "short": "Decesso del paziente",
+        "definition": "Indica se l'individuo è deceduto o meno"
+      },
+      {
         "id": "Patient.address",
         "path": "Patient.address",
         "slicing": {
@@ -235,7 +289,7 @@
           ],
           "rules": "open"
         },
-        "short": "Indirizzo fisico o postale"
+        "short": "Indirizzi del paziente"
       },
       {
         "id": "Patient.address:residenzaAnagraficaCittadino",
@@ -271,22 +325,81 @@
         "id": "Patient.maritalStatus",
         "path": "Patient.maritalStatus",
         "short": "Stato civile del paziente",
-        "definition": "E' preferibile utilizzare il Valueset indicato in Terminology binding.",
+        "definition": "Indica lo stato civile del paziente",
         "binding": {
           "strength": "extensible",
           "valueSet": "https://www.hl7.it/fhir/base/ValueSet-statoCivile.html"
         }
       },
       {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "short": "Tipo di legame con il paziente"
+      },
+      {
+        "id": "Patient.contact.name",
+        "path": "Patient.contact.name",
+        "short": "Nome e cognome",
+        "definition": "Nome e cognome del contattto del paziente"
+      },
+      {
+        "id": "Patient.contact.name.family",
+        "path": "Patient.contact.name.family",
+        "fixedString": "Cognome"
+      },
+      {
+        "id": "Patient.contact.name.given",
+        "path": "Patient.contact.name.given",
+        "short": "Nome"
+      },
+      {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
-        "definition": "- PractitionerRole, se si vuole indicare sia il medico che la struttura a cui afferisce (ad es. MMG + ASST)\r\n- Practitioner, se si vuole indicare solo il medico \r\n- Organization, se si vuole indicare solo l'azienda (es. Casa di Riposo)",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "- PractitionerRole, se si vuole indicare sia il medico che la struttura a cui afferisce (ad es. MMG + ASST)\r\n- Practitioner, se si vuole indicare solo il medico \r\n- Organization, se si vuole indicare solo l'azienda (es. Casa di Riposo)"
+      },
+      {
+        "id": "Patient.generalPractitioner:mmgPlgRole",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "mmgPlgRole",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner:mmgPls",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "mmgPls",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner:mmgPlsAzienda",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "mmgPlsAzienda",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
             ]
           }

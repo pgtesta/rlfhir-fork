@@ -51,7 +51,8 @@
       {
         "id": "Practitioner.identifier:CodiceRegionale",
         "path": "Practitioner.identifier",
-        "sliceName": "CodiceRegionale"
+        "sliceName": "CodiceRegionale",
+        "short": "Codice regionale"
       },
       {
         "id": "Practitioner.identifier:CodiceRegionale.system",
@@ -63,6 +64,41 @@
         "id": "Practitioner.identifier:CodiceRegionale.value",
         "path": "Practitioner.identifier.value",
         "short": "Codice regionale del professionista sanitario"
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "short": "Cognome dell'operatore sanitario"
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "short": "Nome dell'operatore sanitario"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "Indirizzo dell'operatore sanitario"
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "short": "Uso dell'indirizzo"
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "short": "Indirizzo completo"
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "short": "Comune"
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "short": "CAP"
       }
     ]
   }

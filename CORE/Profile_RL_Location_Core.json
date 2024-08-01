@@ -26,7 +26,8 @@
         "path": "Location.physicalType",
         "short": "Tipo di struttura",
         "binding": {
-          "strength": "preferred"
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/location-physical-type"
         }
       },
       {
