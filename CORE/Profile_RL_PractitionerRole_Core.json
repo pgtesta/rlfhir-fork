@@ -49,6 +49,7 @@
         "id": "PractitionerRole.identifier:CodiceRegionale",
         "path": "PractitionerRole.identifier",
         "sliceName": "CodiceRegionale",
+        "short": "Codice regionale dell'operatore sanitario",
         "max": "1"
       },
       {
