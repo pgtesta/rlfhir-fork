@@ -332,6 +332,11 @@
         }
       },
       {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "short": "Contatto del paziente"
+      },
+      {
         "id": "Patient.contact.relationship",
         "path": "Patient.contact.relationship",
         "short": "Tipo di legame con il paziente"
@@ -370,6 +375,7 @@
         "id": "Patient.generalPractitioner:mmgPlgRole",
         "path": "Patient.generalPractitioner",
         "sliceName": "mmgPlgRole",
+        "short": "Medico e azienda che si occupano della cura primaria del paziente",
         "type": [
           {
             "code": "Reference",
@@ -383,6 +389,7 @@
         "id": "Patient.generalPractitioner:mmgPls",
         "path": "Patient.generalPractitioner",
         "sliceName": "mmgPls",
+        "short": "Medico che si occupa della cura primaria del paziente",
         "type": [
           {
             "code": "Reference",
@@ -396,6 +403,7 @@
         "id": "Patient.generalPractitioner:mmgPlsAzienda",
         "path": "Patient.generalPractitioner",
         "sliceName": "mmgPlsAzienda",
+        "short": "Azienda che si occupa della cura primaria del paziente",
         "type": [
           {
             "code": "Reference",
