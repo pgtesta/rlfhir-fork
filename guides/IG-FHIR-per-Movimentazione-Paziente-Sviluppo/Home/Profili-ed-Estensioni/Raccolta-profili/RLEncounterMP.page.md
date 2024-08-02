@@ -65,10 +65,14 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Tipologie di ricerca
-TODO
+
+Attualmente non sono stati definiti criteri di ricerca.
+
+<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-TODO
+
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

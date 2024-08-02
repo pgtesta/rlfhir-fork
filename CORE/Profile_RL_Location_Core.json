@@ -19,22 +19,41 @@
       {
         "id": "Location.name",
         "path": "Location.name",
-        "short": "Nome della struttura"
+        "short": "Denominazione della struttura"
       },
       {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
-        "short": "Tipo di struttura"
+        "short": "Tipo di struttura",
+        "binding": {
+          "strength": "preferred"
+        }
       },
       {
         "id": "Location.managingOrganization",
         "path": "Location.managingOrganization",
-        "short": "Organizzazione che si occupa della gestione della struttura"
+        "short": "Organizzazione che si occupa della gestione della struttura",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
       },
       {
         "id": "Location.partOf",
         "path": "Location.partOf",
-        "short": "Struttura di livello più alto a cui afferisce"
+        "short": "Struttura di livello più alto a cui afferisce",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore"
+            ]
+          }
+        ]
       }
     ]
   }

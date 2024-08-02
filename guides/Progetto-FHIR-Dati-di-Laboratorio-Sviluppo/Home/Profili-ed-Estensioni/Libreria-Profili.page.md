@@ -18,7 +18,7 @@
       <p>
         Nella tabella sottostante sono raccolti tutti i profili attivi; ad ogni
         profilo è associato un tema di utilizzo (si veda la pagina
-        {{pagelink:Home/Contesto/Panoramica-di-progetto.page.md}}).
+        {{pagelink:Home/Contesto/Panoramica-di-progetto}}).
         <br />
         Usare la casella di ricerca sottostante per filtrare le informazioni
         desiderate.
@@ -38,115 +38,289 @@
       </thead>
       <tbody id="myTable">
         <tr>
-          <td>DDC</td>
+          <td>LAB</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL1.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleRispostaLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo che descrive il contenuto informativo del report di un referto di laboratorio
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive il referto di laboratorio
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/composition-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+          </td>
+          <td>
+            Profilo che descrive un dispositivo mediante il profilo della risorsa Device per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/device-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDiagnosticReportLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/diagnosticreport.html">Diagnostic Report</a>
+          </td>
+          <td>
+            Profilo per descrivere le informazioni cliniche mediante il profilo DiagnosticReport
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/diagnosticreport-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+          </td>
+          <td>
+            Questo profilo riporta la descrizione dei dati relativi all'incontro per la specifica richiesta tramite il profilo della risorsa Encounter per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/encounter-it-lab }}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+          </td>
+          <td>
+            Profilo per descrivere le informazioni relative all'edificio di una struttura ospedaliera.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMediaLabreport.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/media.html">Media</a>
+          </td>
+          <td>
+            Profilo per descrivere le informazioni relative ai contenuti multimediali di un referto di laboratorio
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDocumentLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo per descrivere le rilevazioni cliniche effettuate su un paziente per un referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-doc-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo per descrivere le rilevazioni cliniche effettuate su un paziente
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationbatteryLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo per descrivere un inseme di esami per il referto di laboratorio
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/observation-grouping-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>
+          </td>
+          <td>
+            Profilo per descrivere informazioni anagrafiche di base del paziente
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+          </td>
+          <td>
+            Profilo per descrivere informazioni sull'operatore medico sanitario.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/practitioner-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitionerrole.html">Practitioner Role</a>
+          </td>
+          <td>
+            Profilo per descrivere il ruolo dell'operatore medico sanitario.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleMMGPLSLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/practitionerrole.html">Practitioner Role MMG</a>
+          </td>
+          <td>
+            Profilo per descrivere le informazioni di MMG/PLS per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-MMGPLS-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">Service Request</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione delle informazioni della prescrizione per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/servicerequest-it-lab}}
+          </td>
+        </tr>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLSpecimenLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione delle informazioni del campione per il referto di laboratorio.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/specimen-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLSubstanceLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/substance.html">Substance</a>
+          </td>
+          <td>
+            Profilo per contenere la descrizione la descrizione dell’additivo usato sul campione.
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/substance-additive-specimen-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationOperatoreLabReport.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
           </td>
           <td>
-            Profilo che descrive una struttura o un ente
-            identificato univocamente da un codice di ente L1
+            Profilo per contenere la descrizione delle informazioni relative all’operatore socio/sanitario per il referto di laboratorio.
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/organizationOperatore-it-lab}}
           </td>
         </tr>
         <tr>
-          <td>DDC</td>
+          <td>LAB</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL2.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationLabReport.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
           </td>
           <td>
-            Profilo che descrive una struttura o un ente
-            identificato univocamente da un codice di ente L2
+            Profilo per contenere la descrizione delle informazioni relative all’organizzazione per il referto di laboratorio
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2}}
-          </td>
-        </tr>
-        <tr>
-          <td>DDC</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationL3.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
-          </td>
-          <td>
-            Profilo che descrive un reparto appartenente ad una
-            struttura di ricovero identificata da un codice L2
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOEdificio.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Profilo per descrivere le informazioni relative
-            all'edificio di una struttura ospedaliera.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOEdificio}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Questo profilo riporta le informazioni relative al posto
-            letto occupato.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOLetto}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOPiano.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Profilo per descrivere le informazioni relative al piano
-            di una struttura ospedaliera.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOPiano}}
-          </td>
-        </tr>
-        <tr>
-          <td>PLO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOStanza.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
-          </td>
-          <td>
-            Profilo per descrivere le informazioni relative alla stanza
-            di una struttura ospedaliera.
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationPLOStanza}}
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab}}
           </td>
         </tr>
       </tbody>

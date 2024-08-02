@@ -1,7 +1,5 @@
 - name: Panoramica di progetto
-  filename: Panoramica-di-progetto.page.md
-- name: Tematiche di applicazione
-  filename: Tematiche-di-applicazione
+  filename: Panoramica-di-progetto
 - name: Paradigmi di comunicazione e API RESTful
   filename: Paradigmi-di-comunicazione-e-API-RESTful.page.md
 - name: Stati ed Errori

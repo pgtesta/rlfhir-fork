@@ -1,0 +1,17 @@
+{
+  "resourceType": "Practitioner",
+  "id": "3a14db34-a959-11ed-afa1-0242ac120002",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+    ],
+    "versionId": "1"
+  },
+  "identifier":[
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "VRDGNN80D16F205I"
+    }
+  ]
+}

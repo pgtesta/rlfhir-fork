@@ -2,14 +2,12 @@
 
 - [RLLocationCore](#rllocationcore)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Location](http://hl7.org/fhir/R4/location.html) volto a contenere le informazioni relative alla struttura fisica in Regione Lombardia.
+Il profilo RLLocationCore è stato strutturato a partire dalla risorsa generica FHIR [Location](http://hl7.org/fhir/R4/location.html) volto a contenere le informazioni relative alla struttura fisica in Regione Lombardia.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}.
 
@@ -56,21 +54,11 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:Location/esempio-Location-CORE-base}}
+Location: {{link:Location/esempio-Location-CORE-base}}
 <br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-TODO
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
-
-TODO
 
 ## ValueSet
 

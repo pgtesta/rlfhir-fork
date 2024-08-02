@@ -2,13 +2,11 @@
 
 - [RLOrganizationCore](#rlorganizationcore)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 
 ## Descrizione
-Il profilo RLOrganizationCore è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html).
+Il profilo RLOrganizationCore è stato strutturato a partire dalla risorsa standard FHIR [Organization](http://hl7.org/fhir/R4/organization.html) volto a contenere le informazioni relative alle strutture aziendali in Regione Lombardia.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}.
 
@@ -55,25 +53,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  
+Organization: {{link:Organization/esempio-Organization-core}}
 <br>
 </div>
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-TODO
-
-### Enti attualmente attivi
-
-TODO
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
-
-TODO
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

@@ -30,28 +30,75 @@
         "short": "Sistema di codifica"
       },
       {
-        "id": "Practitioner.identifier:CF",
+        "id": "Practitioner.identifier:codiceFiscale",
         "path": "Practitioner.identifier",
-        "sliceName": "CF"
+        "sliceName": "codiceFiscale"
       },
       {
-        "id": "Practitioner.identifier:CF.system",
+        "id": "Practitioner.identifier:codiceFiscale.system",
         "path": "Practitioner.identifier.system",
         "short": "Sistema di codifica",
         "min": 1,
         "fixedUri": "http://hl7.it/sid/codiceFiscale"
       },
       {
-        "id": "Practitioner.identifier:CF.value",
+        "id": "Practitioner.identifier:codiceFiscale.value",
         "path": "Practitioner.identifier.value",
         "short": "Codice fiscale del professionista sanitario",
         "definition": "Stringa alfanumerica di 16 caratteri",
         "min": 1
       },
       {
-        "id": "Practitioner.identifier:CDRegionale",
+        "id": "Practitioner.identifier:CodiceRegionale",
         "path": "Practitioner.identifier",
-        "sliceName": "CDRegionale"
+        "sliceName": "CodiceRegionale",
+        "short": "Codice regionale"
+      },
+      {
+        "id": "Practitioner.identifier:CodiceRegionale.system",
+        "path": "Practitioner.identifier.system",
+        "short": "Sistema di codifica",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
+      },
+      {
+        "id": "Practitioner.identifier:CodiceRegionale.value",
+        "path": "Practitioner.identifier.value",
+        "short": "Codice regionale del professionista sanitario"
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "short": "Cognome dell'operatore sanitario"
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "short": "Nome dell'operatore sanitario"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "Indirizzo dell'operatore sanitario"
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "short": "Uso dell'indirizzo"
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "short": "Indirizzo completo"
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "short": "Comune"
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "short": "CAP"
       }
     ]
   }
