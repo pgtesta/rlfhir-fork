@@ -19,15 +19,14 @@
       {
         "id": "Location.name",
         "path": "Location.name",
-        "short": "Nome della struttura"
+        "short": "Denominazione della struttura"
       },
       {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
         "short": "Tipo di struttura",
         "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/ValueSet/location-physical-type"
+          "strength": "preferred"
         }
       },
       {
