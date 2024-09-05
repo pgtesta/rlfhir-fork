@@ -1,17 +1,7 @@
 # {{page-title}}
 
-<div class="alert alert-warning">
-Questa pagina è da considerare IN LAVORAZIONE. 
+Questa Implementation Guide (IG) FHIR descrive i profili fondamentali (detti “Core”) che rappresentano il punto di partenza per tutte le risorse regionali. I profili definiti in questa guida costituiscono una base comune per uniformare e facilitare lo scambio di dati sanitari tra le diverse realtà regionali, garantendo interoperabilità, conformità agli standard e coerenza nell'implementazione dei sistemi informativi sanitari.
 
-Il contenuto del sito rappresenterà a regime la Guida di Implementazione del progetto FHIR per Regione Lombardia. 
-
-Attualmente viene descritta una panoramica del progetto \[si veda {{pagelink:Home/Contesto/Panoramica-di-progetto.page.md}}\], 
-ed è possibile consultare le risorse FHIR rilasciate e attualmente in uso.
-</div>
-
-<div class="alert alert-danger">
-Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, di conseguenza le risorse potrebbero essere soggette a revisione e modifiche.
-</div>
 
 ## Novità
 
