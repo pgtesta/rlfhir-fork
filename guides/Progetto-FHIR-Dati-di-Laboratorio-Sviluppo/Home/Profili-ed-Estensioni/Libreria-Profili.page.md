@@ -40,6 +40,21 @@
         <tr>
           <td>LAB</td>
           <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProvenanceLabReport.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+          </td>
+          <td>
+            Profilo che descrive le informazioni della fonte del dato estratto da un referto di laboratorio
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProvenanceLab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LAB</td>
+          <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleRispostaLabReport.page.md}}
           </td>
           <td>

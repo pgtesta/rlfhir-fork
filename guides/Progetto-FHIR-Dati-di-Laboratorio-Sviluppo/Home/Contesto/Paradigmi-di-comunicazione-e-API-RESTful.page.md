@@ -13,12 +13,12 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 ## Consultazione
 
 
-Num Richiesta|Metodo HTTP|URL|Nome profilo|Detentore del dato|
+Num Richiesta|Metodo HTTP|URL|Esempio|Detentore del dato|
 |---|---|---|---|
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
-|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include:iterate=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target|-|CDR|
-|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include:iterate=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target|-|CDR|
+|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include=Observation.encounter|-|CDR|
+|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include=Observation.encounter|-|CDR|
 
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
@@ -54,7 +54,7 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 - *_revinclude:iterate=Provenance:target* : include nella risposta la risorsa Provenance descritta nella riga precedente e la risorsa Organization relativa al custodian (azienda resposabile della conservazione) del documento e la risorsa PractitionerRole, che contiene le informazioni sul firmatario del dcoumento
 - *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole che contiene le infromazioni su medico e azienda resposabile dell'osservazione
 - *_include:iterate=Observation:performer*: è un parametro più articolato del precedente, grazie all'uso del modifier FHIR *iterate*, e include nella risposta la risorsa PractiionerRole, la risorsa Practitioner che contiene le infromazioni sul medico resposabile dell'osservazione e la risorsa Organization che contiene le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
-- *_include:iterate=Observation:patient*: è un parametro più articolato del secondo riportato tra quelli obbligatori. Questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
+- *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
 
 
 ### Richiesta 4
@@ -76,4 +76,4 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 - *_revinclude:iterate=Provenance:target* : include nella risposta la risorsa Provenance descritta nella riga precedente e la risorsa Organization relativa al custodian (azienda resposabile della conservazione) del documento e la risorsa PractitionerRole, che contiene le informazioni sul firmatario del dcoumento
 - *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole che contiene le infromazioni su medico e azienda resposabile dell'osservazione
 - *_include:iterate=Observation:performer*: è un parametro più articolato del precedente, grazie all'uso del modifier FHIR *iterate*, e include nella risposta la risorsa PractiionerRole, la risorsa Practitioner che contiene le infromazioni sul medico resposabile dell'osservazione e la risorsa Organization che contiene le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
-- *_include:iterate=Observation:patient*: è un parametro più articolato del secondo riportato tra quelli obbligatori. Questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
+- *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
