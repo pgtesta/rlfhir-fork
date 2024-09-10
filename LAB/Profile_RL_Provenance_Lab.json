@@ -1,0 +1,119 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProvenanceLab",
+  "name": "Profile_RL_Provenance_Lab",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance.target",
+        "path": "Provenance.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.it/fhir/lab-report/StructureDefinition/observation-grouping-it-lab",
+              "http://hl7.it/fhir/lab-report/StructureDefinition/observation-doc-it-lab",
+              "http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.recorded",
+        "path": "Provenance.recorded",
+        "short": "Data di creazione del documento"
+      },
+      {
+        "id": "Provenance.agent",
+        "path": "Provenance.agent",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Provenance.agent:firmatario",
+        "path": "Provenance.agent",
+        "sliceName": "firmatario",
+        "short": "Firmatario del documento",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Provenance.agent:firmatario.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "legal",
+              "display": "Legal Authenticator"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.agent:firmatario.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile",
+        "path": "Provenance.agent",
+        "sliceName": "aziendaResponsabile",
+        "short": "Custodian del documento",
+        "min": 1
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "custodian",
+              "display": "Custodian"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.entity",
+        "path": "Provenance.entity",
+        "short": "Documento di provenienza",
+        "definition": "Per indicare il documento di provenienza è possibile indicare l'identificativo univoco del documento da cui è stata estratta l'informazione."
+      },
+      {
+        "id": "Provenance.entity.role",
+        "path": "Provenance.entity.role",
+        "fixedCode": "source"
+      },
+      {
+        "id": "Provenance.entity.what.identifier",
+        "path": "Provenance.entity.what.identifier",
+        "short": "Identificativo univoco del documento",
+        "min": 1
+      }
+    ]
+  }
+}
