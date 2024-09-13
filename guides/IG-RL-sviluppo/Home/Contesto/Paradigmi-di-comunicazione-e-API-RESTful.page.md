@@ -105,9 +105,9 @@ L'elenco delle API esposte è:
  
 |Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
-|POST|<base_API_Manager>/<servizio_ricevente>/$process-message|RLBundleMMG|SGDT|
+|POST|<base_API_Manager>/message/$process-message|RLBundleMMG|SGDT|
  
 dove:
 - <base_API_manager> è l’indirizzo radice del servizio che sarà esposto tramite API Manager;
-- <servizio_ricevente> è il nome del servizio a cui indirizzare i messaggi ("message");
-- $process-message è l’operazione FHIR esposta.
+- *message* rappresenta il <servizio_ricevente>, ovvero il nome del servizio a cui indirizzare i messaggi;
+- *$process-message* è l’operazione FHIR esposta.
