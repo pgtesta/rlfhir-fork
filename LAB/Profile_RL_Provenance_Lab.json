@@ -1,0 +1,124 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProvenanceLab",
+  "name": "Profile_RL_Provenance_Lab",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance.target",
+        "path": "Provenance.target",
+        "short":"Osservazioni estratte dal documento",
+        "definition":"Reference alle osservazioni di cui si riportano altre informazioni di contesto.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.it/fhir/lab-report/StructureDefinition/observation-grouping-it-lab",
+              "http://hl7.it/fhir/lab-report/StructureDefinition/observation-doc-it-lab",
+              "http://hl7.it/fhir/lab-report/StructureDefinition/observation-it-lab"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.recorded",
+        "path": "Provenance.recorded",
+        "short": "Data di creazione del documento CDA2 da cui sono estratte le osservazioni."
+      },
+      {
+        "id": "Provenance.agent",
+        "path": "Provenance.agent",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Provenance.agent:firmatario",
+        "path": "Provenance.agent",
+        "sliceName": "firmatario",
+        "short": "Firmatario del documento",
+        "definition":"Medico responsabile dei dati riportati nelle risorse referenziate dall'attributo target. Rappresenta il firmatario del documento CDA2.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Provenance.agent:firmatario.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "legal",
+              "display": "Legal Authenticator"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.agent:firmatario.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Practitioner",
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile",
+        "path": "Provenance.agent",
+        "sliceName": "aziendaResponsabile",
+        "short": "Custodian del documento",
+        "definition":"Azienda sanitaria che si occupa della conservazione del documento. Rappresenta il custodian del documento CDA2.",
+        "min": 1
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "custodian",
+              "display": "Custodian"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.entity",
+        "path": "Provenance.entity",
+        "short": "Documento di provenienza dell'informazione in target",
+        "definition": "Per indicare il documento di provenienza è possibile indicare l'identificativo univoco del documento da cui è stata estratta l'informazione."
+      },
+      {
+        "id": "Provenance.entity.role",
+        "path": "Provenance.entity.role",
+        "short": "Indicazione che nel campo si sta descrivendo la fonte dell'informazione referneziata in target.",
+        "fixedCode": "source"
+      },
+      {
+        "id": "Provenance.entity.what.identifier",
+        "path": "Provenance.entity.what.identifier",
+        "short": "Identificativo univoco del documento",
+        "min": 1
+      }
+    ]
+  }
+}
