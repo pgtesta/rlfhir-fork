@@ -7,7 +7,7 @@ Il contenuto del sito rappresenta la Guida di Implementazione del progetto FHIR 
 ## Novità
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di <b>produzione</b>, gestisce i seguenti concetti:
 
-
+- Aggiunta descrizione della API esposta per il servizio di FHIR messaging nella pagina Contesto>Paradigmi di comunicazione e API RESTful;
 - È stato descritto il nuovo scenario di cooperazione applicativa tra le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici e il SGDT. Nella sezione Contesto sono state aggiornate le pagine:
    - Panoramica di progetto;
    - Tematiche di applicazione;
