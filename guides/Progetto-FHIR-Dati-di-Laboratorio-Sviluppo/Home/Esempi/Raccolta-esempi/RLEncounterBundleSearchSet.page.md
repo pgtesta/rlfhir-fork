@@ -3,14 +3,17 @@
 L'indagine mira a trovare dati di esami effettuati su un paziente durante un certo evento di cura, come un ricovero o una visita. Si cercano dettagli come il codice dell'evento e del paziente, e le date. L'utente sceglie l'evento e filtra gli esami per tipo, data o reparto. 
 
 I parametri da valorizzare per effettuare la ricerca sono:
--	DataFineValidita: data di interesse
+-	
+**Richiesta:** 
 
 | SCOPE |  Esempio con i dati dell'evento clinco|
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
 | URL | /Observation?category=laboratory&_include:iterate=Observation:patient&patient.identifier=RSSMRA70A01A399Z&_include=Observation:specimen&_include:iterate=Observation:performer&_include=Observation:encounter  |
-|Risposta | {
+
+**Risposta**
+{
 	"resourceType": "Bundle",
 	"id": "esempio-con-encounter",
 	"meta": {
@@ -294,4 +297,4 @@ I parametri da valorizzare per effettuare la ricerca sono:
 			}
 		}
 	]
-}|
+}
