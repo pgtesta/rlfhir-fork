@@ -38,7 +38,7 @@
     <tr>
       <td>LAB</td>
       <td>Bundle</td>
-      <td>Ricerca degli esami effettuati da un paziente e le relative informazioni riguardanti gli episodi clinici</td>
+      <td>Ricerca degli esami effettuati da un paziente e le relative informazioni riguardanti di contesto</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEncounterBundleSearchSet.page.md}}</td>
       <td>{{link:Bundle/esempio-con-encounter}}</td>
     </tr>
@@ -52,14 +52,14 @@
     <tr>
       <td>LAB</td>
       <td>Bundle</td>
-      <td>Ricerca esame specifico di laboratorio per un determinato paziente</td>
+      <td>Ricerca esame specifico di laboratorio per un determinato paziente 1</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame1BundleSearchSet.page.md}}</td>
       <td>{{link:Bundle/esempio-esame-specifico-1}}</td>
     </tr>
     <tr>
       <td>LAB</td>
       <td>Bundle</td>
-      <td>Ricerca esame specifico di laboratorio per un determinato paziente</td>
+      <td>Ricerca esame specifico di laboratorio per un determinato paziente 2</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame2BundleSearchSet.page.md}}</td>
       <td>{{link:Bundle/esempio-esame-specifico-2}}</td>
     </tr>
