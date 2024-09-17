@@ -15,7 +15,7 @@ Per ottenere ulteriori informazioni rispetto la richiesta {{pagelink:Home/Esempi
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
-| URL | /Observation?code=2339-0&date=gt2024-01-01&date=lt2024-08-01&category=laboratory&_include:iterate=Observation:patient &patient.identifier=RSSMRA71E01F205E&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target |
+| URL | /Observation?code=2339-0&date=gt2024-01-01&date=lt2024-08-01&category=laboratory&_include:iterate=Observation:patient &patient.identifier=RSSMRA71E01F205E&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization |
 
 **Risposta**
 

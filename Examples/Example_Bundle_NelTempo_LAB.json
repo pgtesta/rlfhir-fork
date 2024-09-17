@@ -4,7 +4,7 @@
     "link": [
         {
             "relation": "self",
-            "url": "http://localhost:2777/CDR-FHIR-Endpoint/r4/Observation?&_include:iterate=Observation%3Apatient&_revinclude:iterate=Provenance%3Atarget&category=laboratory&date=gt2024-04-01&patient.identifier=AAABBB12D55I999D&_count=88&_page=1"
+            "url": "http://localhost:2777/CDR-FHIR-Endpoint/r4/Observation?&_include=Observation%3Apatient&_revinclude:iterate=Provenance%3Atarget&_include:iterate=Provenance%3Aagent&category=laboratory&date=gt2024-04-01&patient.identifier=AAABBB12D55I999D&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization"
         }
     ],
     "meta": {

@@ -9,7 +9,7 @@
     "link": [
         {
             "relation": "self",
-            "url": "baseUrl/Observation?_include=Observation%3Aspecimen&_include%3Aiterate=Observation%3Apatient&_include%3Aiterate=Observation%3Aperformer&_include%3Aiterate=Provenance%3Aagent&_revinclude%3Aiterate=Provenance%3Atarget&category=laboratory&code=2339-0&date=gt2024-01-01&date=lt2024-08-01&patient.identifier=RSSMRA71E01F205E"
+            "url": "baseUrl/Observation?_include=Observation%3Aspecimen&_include=Observation%3Apatient&_include=Observation%3Aperformer&_include%3Aiterate=Provenance%3Aagent&_revinclude%3Aiterate=Provenance%3Atarget&category=laboratory&code=2339-0&date=gt2024-01-01&date=lt2024-08-01&patient.identifier=RSSMRA71E01F205E"
         }
     ],
     "entry": [
