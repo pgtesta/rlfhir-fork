@@ -157,7 +157,7 @@
                     }
                 ],
                 "id": "F129F0EC-6E7F-11EF-A366-02001700B287",
-                "recorded": "2024-06-13T23:54:04+02:00",
+                "recorded": "2024-05-01T23:54:04+02:00",
                 "target": [
                     {
                         "reference": "Observation/F116BC34-6E7F-11EF-A366-02001700B287"
@@ -302,6 +302,8 @@
             "fullUrl": "Observation/F116BC34-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -385,6 +387,8 @@
             "fullUrl": "Observation/F12DBBA0-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -468,6 +472,8 @@
             "fullUrl": "Observation/F136BDD6-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -551,6 +557,8 @@
             "fullUrl": "Observation/F13FE7DA-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -630,6 +638,8 @@
             "fullUrl": "Observation/F148E52E-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -713,6 +723,8 @@
             "fullUrl": "Observation/F152137E-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -791,6 +803,8 @@
             "fullUrl": "Observation/F15917F0-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -870,6 +884,8 @@
             "fullUrl": "Observation/F1624D8E-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -930,6 +946,8 @@
             "fullUrl": "Observation/F166DDC2-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1013,6 +1031,8 @@
             "fullUrl": "Observation/F17010E0-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1096,6 +1116,8 @@
             "fullUrl": "Observation/F1F1D7D8-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1173,6 +1195,8 @@
             "fullUrl": "Observation/F1F89BD6-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1250,6 +1274,8 @@
             "fullUrl": "Observation/F2031912-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1327,6 +1353,8 @@
             "fullUrl": "Observation/F209EAF8-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1381,6 +1409,8 @@
             "fullUrl": "Observation/F20C49D8-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1435,6 +1465,8 @@
             "fullUrl": "Observation/F20EAB9C-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1489,6 +1521,8 @@
             "fullUrl": "Observation/F2121098-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1543,6 +1577,8 @@
             "fullUrl": "Observation/F216C944-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1597,6 +1633,8 @@
             "fullUrl": "Observation/F21B7FAC-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1651,6 +1689,8 @@
             "fullUrl": "Observation/F2203916-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1728,6 +1768,8 @@
             "fullUrl": "Observation/F22D8A62-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1805,6 +1847,8 @@
             "fullUrl": "Observation/F23EB012-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1882,6 +1926,8 @@
             "fullUrl": "Observation/F24DAD2E-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -1959,6 +2005,8 @@
             "fullUrl": "Observation/F25BE8D0-6E7F-11EF-A366-02001700B287",
             "resource": {
                 "resourceType": "Observation",
+                "status": "final",
+                "effectiveDateTime": "2024-05-01T09:30:10+01:00",
                 "category": [
                     {
                         "coding": [
@@ -2051,8 +2099,8 @@
                     }
                 ],
                 "period": {
-                    "end": "2024-06-13T23:36:45+02:00",
-                    "start": "2024-06-13T22:31:53+02:00"
+                    "end": "2024-05-01T23:36:45+02:00",
+                    "start": "2024-05-01T22:31:53+02:00"
                 },
                 "status": "finished",
                 "subject": {
