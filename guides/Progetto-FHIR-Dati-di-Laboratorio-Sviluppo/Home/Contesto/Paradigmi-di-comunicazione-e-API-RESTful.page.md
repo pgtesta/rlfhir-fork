@@ -52,7 +52,7 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 - *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato.
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informaizone.
 - *_include:iterate=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance. Questi rappresentano il custodian del documento (azienda responsabile dell'osservazione - Organization) e il firmatario del documento (PractitionerRole).
-- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione.
+- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole del laboratorio che si è occupato di eseguire l'esame.
 - *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
 - *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
 
@@ -74,6 +74,6 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 - *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato.
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informaizone.
 - *_include:iterate=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance. Questi rappresentano il custodian del documento (azienda responsabile dell'osservazione - Organization) e il firmatario del documento (PractitionerRole).
-- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione.
+- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole del laboratorio che si è occupato di eseguire l'esame.
 - *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
 - *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
