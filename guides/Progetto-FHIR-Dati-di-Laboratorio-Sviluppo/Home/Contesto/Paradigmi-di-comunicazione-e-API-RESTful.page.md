@@ -12,13 +12,59 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 
 ## Consultazione
 
-
-Num Richiesta|Metodo HTTP|URL|Esempio|Detentore del dato|
-|---|---|---|---|
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myInput").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#myTable tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Raccolta esempi</h1>
+    <div>
+      <p>
+        Nella tabella sottostante sono raccolti tutti gli esempi creati per il progetto.
+        <br />
+        Usare la casella di ricerca sottostante per filtrare le informazioni
+        desiderate.
+      </p>
+      <input id="myInput" type="text" placeholder="Cerca.." />
+    </div>
+    <br/>
+    <table style="width: fit-content">
+  <thead>
+    <tr>
+      <th>Num Richiesta</th>
+      <th>Metodo HTTP</th>
+      <th>URL</th>
+      <th>Esempio</th>
+      <th>Detentore del dato</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td>1</td>
+      <td>GET</td>
+      <td><base_API_Manager>/Bundle?identifier=[id univoco del documento]</td>
+      <td>-</td>
+      <td>CDR</td>
+    </tr>
+    </tbody>
+    </table>
+  </body>
+</html>
+<!-- 
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
 |3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter|-|CDR|
-|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter-|CDR|
+|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter-|CDR| -->
 
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
