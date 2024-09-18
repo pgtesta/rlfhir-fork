@@ -52,8 +52,29 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
     <tr>
       <td>1</td>
       <td>GET</td>
-      <td><base_API_Manager>/Bundle?identifier=[id univoco del documento]</td>
+      <td>[base_API_Manager]/Bundle?identifier=[id univoco del documento]</td>
       <td>-</td>
+      <td>CDR</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>GET</td>
+      <td>[base_API_Manager]/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2</td>
+      <td>-</td>
+      <td>CDR</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>GET</td>
+      <td>[base_API_Manager]/Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLNelTempoBundleSearchSet.page.md}} {{pagelink:Home/Esempi/Raccolta-esempi/RLEncounterBundleSearchSet.page.md}}</td>
+      <td>CDR</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>GET</td>
+      <td>[base_API_Manager]/Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame1BundleSearchSet.page.md}} {{pagelink:Home/Esempi/Raccolta-esempi/RLEsame2BundleSearchSet.page.md}}</td>
       <td>CDR</td>
     </tr>
     </tbody>
