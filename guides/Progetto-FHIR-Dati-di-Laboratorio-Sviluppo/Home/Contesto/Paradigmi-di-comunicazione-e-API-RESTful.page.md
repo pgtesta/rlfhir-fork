@@ -13,7 +13,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 ## Consultazione
 
 <html>
-  <table style="width: fit-content">
+  <table style="width: 50px">
   <thead>
     <tr>
       <th>Num Richiesta</th>
