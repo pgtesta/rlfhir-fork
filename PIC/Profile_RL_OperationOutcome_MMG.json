@@ -49,7 +49,7 @@
         "id": "OperationOutcome.issue.code",
         "path": "OperationOutcome.issue.code",
         "short": "Codice associato all'esito del messaggio",
-        "definition": "I valori ammessi appartengono al ValueSet IssueType e sono consultabili al seguente link http://hl7.org/fhir/issue-type",
+        "definition": "Il valore è \"informational\" se l'esito è positivo, \"invalid\" se l'elaborazione del messaggio è terminata con un errore. I valori ammessi appartengono al ValueSet IssueType e sono consultabili al seguente link http://hl7.org/fhir/issue-type",
         "binding": {
           "strength": "required",
           "description": "Descrizione dell'esito del messaggio."
@@ -87,7 +87,7 @@
         "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio"
       },
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.code",
@@ -97,7 +97,7 @@
         "min": 1,
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio"
         }
       },
       {

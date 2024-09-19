@@ -60,6 +60,10 @@
         "path": "MessageHeader.event[x].code",
         "short": "Codice dell'evento rappresentato dal messaggio",
         "definition": "Stringa alfanumerica di al più 20 caratteri",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt"
+        },
         "min": 1
       },
       {
@@ -78,13 +82,14 @@
       {
         "id": "MessageHeader.destination.name",
         "path": "MessageHeader.destination.name",
-        "short": "Nome del destinatario del messaggio"
+        "short": "Nome del destinatario del messaggio",
+        "definition":"Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  il nome del destinatario è \"SGDT\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG,  il nome del destinatario è \"SSI_MMG_<nome_applicativo>\""
       },
       {
         "id": "MessageHeader.destination.endpoint",
         "path": "MessageHeader.destination.endpoint",
-        "short": "Indirizzo URN del destinatario del messaggio",
-        "definition": "urn:rlfhir:{MessageHeader.destination.name}"
+        "short": "URN dell'endpoint del destinatario del messaggio",
+        "definition": "Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  l'URN dell'endpoint del destinatario è \"urn:rlfhir:SGDT\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG, l'URN dell'endpoint del destinatario è \"urn:rlfhir:SSI_MMG_<nome_applicativo>\""
       },
       {
         "id": "MessageHeader.source",
@@ -94,13 +99,14 @@
       {
         "id": "MessageHeader.source.name",
         "path": "MessageHeader.source.name",
-        "short": "Nome del mittente del messaggio"
+        "short": "Nome del mittente del messaggio",
+        "definition":"Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  il nome del mittente è \"SSI_MMG_<nome_applicativo>\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG,  il nome del mittente è \"SGDT\""
       },
       {
         "id": "MessageHeader.source.endpoint",
         "path": "MessageHeader.source.endpoint",
-        "short": "Indirizzo URN del mittente del messaggio",
-        "definition": "urn:rlfhir:{MessageHeader.source.name}"
+        "short": "URN dell'endpoint del mittente del messaggio",
+        "definition": "Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  l'URN dell'endpoint del mittente è \"urn:rlfhir:SSI_MMG_<nome_applicativo>\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG, l'URN dell'endpoint del mittente è \"urn:rlfhir:SGDT\""
       },
       {
         "id": "MessageHeader.response",
