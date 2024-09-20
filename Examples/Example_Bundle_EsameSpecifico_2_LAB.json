@@ -1,0 +1,814 @@
+{
+    "resourceType": "Bundle",
+    "id": "esempio-esame-specifico-2",
+    "meta": {
+        "lastUpdated": "2024-09-06T15:57:10.104+02:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+            "relation": "self",
+            "url": "baseUrl/Observation?_include=Observation%3Aspecimen&_include=Observation%3Apatient&_include=Observation%3Aperformer&_include%3Aiterate=Provenance%3Aagent&_revinclude%3Aiterate=Provenance%3Atarget&category=laboratory&code=2339-0&date=gt2024-01-01&date=lt2024-08-01&patient.identifier=RSSMRA71E01F205E"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "baseUrl/Observation/3",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "3",
+                "meta": {
+                    "versionId": "9",
+                    "lastUpdated": "2024-09-06T12:46:27.861+02:00",
+                    "source": "#9T99vkUcXZ0nfPVf",
+                    "profile": [
+                        "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLabReport"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "http://www.bmc.nl/zorgportal/identifiers/observations",
+                        "value": "6323"
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2339-0",
+                            "display": "Glucose [Mass/volume] in Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/1"
+                },
+                "encounter": {
+                    "reference": "Encounter/2"
+                },
+                "effectivePeriod": {
+                    "start": "2024-01-01T09:30:10+01:00"
+                },
+                "issued": "2024-01-01T15:30:10+01:00",
+                "performer": [
+                    {
+                        "reference": "PractitionerRole/5"
+                    }
+                ],
+                "valueQuantity": {
+                    "value": 110.0,
+                    "unit": "mg/dl",
+                    "system": "http://unitsofmeasure.org"
+                },
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "H",
+                                "display": "High"
+                            }
+                        ]
+                    }
+                ],
+                "specimen": {
+                    "reference": "Specimen/6"
+                },
+                "referenceRange": [
+                    {
+                        "low": {
+                            "value": 40,
+                            "unit": "mg/dl",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mg/dl"
+                        },
+                        "high": {
+                            "value": 109,
+                            "unit": "mg/dl",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mg/dl"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Specimen/6",
+            "resource": {
+                "resourceType": "Specimen",
+                "id": "6",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-09-06T12:45:46.462+02:00",
+                    "source": "#bmZXZaFO0us20nJD",
+                    "profile": [
+                        "http://hl7.it/fhir/lab-report/StructureDefinition/specimen-it-lab"
+                    ]
+                },
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-SpecimenType",
+                            "code": "BLD",
+                            "display": "Whole blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/1"
+                },
+                "collection": {
+                    "bodySite": {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "7311008",
+                                "display": "Anterior surface of arm"
+                            }
+                        ]
+                    }
+                },
+                "container": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "706052002",
+                                    "display": "Evacuated blood collection tube"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Provenance/9",
+            "resource": {
+                "resourceType": "Provenance",
+                "id": "9",
+                "meta": {
+                    "versionId": "4",
+                    "lastUpdated": "2024-09-06T15:46:20.899+02:00",
+                    "source": "#noJhb1X6QzFTzIb1"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> …. </div>"
+                },
+                "target": [
+                    {
+                        "reference": "Observation/3"
+                    }
+                ],
+                "recorded": "2024-01-01T08:39:24+10:00",
+                "agent": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+                                    "code": "legal"
+                                }
+                            ]
+                        },
+                        "who": {
+                            "reference": "PractitionerRole/13"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Patient/1",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "1",
+                "meta": {
+                    "versionId": "3",
+                    "lastUpdated": "2024-09-06T12:13:14.435+02:00",
+                    "source": "#htzq0nsUEttaUcGK",
+                    "profile": [
+                        "http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">  …. </div>"
+                },
+                "extension": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+                        "valueAddress": {
+                            "line": [
+                                "Via della Vittoria, 1"
+                            ],
+                            "_line": [
+                                {
+                                    "extension": [
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                                            "valueString": "Via della Vittoria"
+                                        },
+                                        {
+                                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                            "valueString": "1"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "city": "Milano",
+                            "postalCode": "20100",
+                            "country": "IT"
+                        }
+                    },
+                    {
+                        "url": "http://hl7.it/fhir/StructureDefinition/patient-occupation-it",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.it/fhir/lab-report/CodeSystem/istat-professioni",
+                                    "code": "1.1.3",
+                                    "display": "Dirigenti della magistratura"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://hl7.it/fhir/StructureDefinition/patient-qualification-it",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.it/fhir/lab-report/CodeSystem/istat-ctsi03",
+                                    "code": "40205013",
+                                    "display": "Giuridico economico aziendale"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritorialiEstere",
+                                    "code": "100",
+                                    "display": "Italia"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.it/fhir/StructureDefinition/recordCertification",
+                                "extension": [
+                                    {
+                                        "url": "when",
+                                        "valueDateTime": "2022-05-01"
+                                    }
+                                ]
+                            }
+                        ],
+                        "system": "http://hl7.it/sid/codiceFiscale",
+                        "value": "RSSMRA71E01F205E"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Rossi",
+                        "given": [
+                            "Maria"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "3331245678"
+                    },
+                    {
+                        "system": "email",
+                        "value": "maria.rossi@mail.com"
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1971-05-01",
+                "address": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.it/fhir/lab-report/StructureDefinition/address-official",
+                                "valueBoolean": true
+                            }
+                        ],
+                        "use": "home",
+                        "line": [
+                            "Via della Libertà, 52"
+                        ],
+                        "_line": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://hl7.it/fhir/StructureDefinition/address-dug",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "http://hl7.it/fhir/lab-report/CodeSystem/dug",
+                                                    "code": "67",
+                                                    "display": "via"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "city": "Milano",
+                        "postalCode": "20100",
+                        "country": "IT"
+                    }
+                ],
+                "contact": [
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                        "code": "C",
+                                        "display": "Emergency Contact"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "family": "Rossi",
+                            "given": [
+                                "Luigi"
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "3312345567"
+                            }
+                        ]
+                    },
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                        "code": "C",
+                                        "display": "Emergency Contact"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "family": "Bianchi",
+                            "given": [
+                                "Maria"
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "3311234598"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Practitioner/4",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "4",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-09-06T10:44:13.609+02:00",
+                    "source": "#dk4Me2RSDKixY2mn"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n ….  </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://www.acme.org/practitioners",
+                        "value": "23"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "family": "Careful",
+                        "given": [
+                            "Adam"
+                        ],
+                        "prefix": [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "534 Erewhon St"
+                        ],
+                        "city": "PleasantVille",
+                        "state": "Vic",
+                        "postalCode": "3999"
+                    }
+                ],
+                "qualification": [
+                    {
+                        "identifier": [
+                            {
+                                "system": "http://example.org/UniversityIdentifier",
+                                "value": "12345"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0360/2.7",
+                                    "code": "BS",
+                                    "display": "Bachelor of Science"
+                                }
+                            ],
+                            "text": "Bachelor of Science"
+                        },
+                        "period": {
+                            "start": "1995"
+                        },
+                        "issuer": {
+                            "display": "Example University"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/PractitionerRole/5",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "5",
+                "meta": {
+                    "versionId": "3",
+                    "lastUpdated": "2024-09-06T15:41:03.353+02:00",
+                    "source": "#WnGu5pSzIks9ZXy5",
+                    "profile": [
+                        "http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "http://esempio_policlinico.it/codiceEmatologo",
+                        "value": "12345"
+                    }
+                ],
+                "active": true,
+                "practitioner": {
+                    "reference": "Practitioner/4"
+                },
+                "organization": {
+                    "reference": "Organization/11"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.9.6.2.7",
+                                "code": "2211",
+                                "display": "Generalist Medical Practitioners"
+                            }
+                        ]
+                    }
+                ],
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "394803006",
+                                "display": "Clinical hematology"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Organization/7",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "7",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-09-06T14:26:06.154+02:00",
+                    "source": "#v34WeGI0vSXONESc"
+                },
+                "identifier": [
+                    {
+                        "system": "http://hl7.it/sid/fls",
+                        "value": "120201"
+                    },
+                    {
+                        "system": "http://hl7.it/sid/vda/asl",
+                        "value": "201"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.it/fhir/lab-report/CodeSystem/it-tipoEntita",
+                                "code": "asl",
+                                "display": "Azienda Sanitaria Locale"
+                            }
+                        ]
+                    }
+                ],
+                "name": "Azienda Sanitara Locale Roma 1",
+                "contact": [
+                    {
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "06 123456"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Organization/11",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "11",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-09-06T15:39:43.169+02:00",
+                    "source": "#jk5JYaznvIBUdRx6",
+                    "profile": [
+                        "http://hl7.it/fhir/lab-report/StructureDefinition/organizationOperatore-it-lab"
+                    ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">  …. </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://hl7.it/sid/fls",
+                        "value": "020101"
+                    }
+                ],
+                "active": true,
+                "type": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://hl7.it/fhir/lab-report/CodeSystem/it-tipoEntita",
+                                "code": "asl",
+                                "display": "Azienda Sanitaria Locale"
+                            }
+                        ]
+                    }
+                ],
+                "name": "AZIENDA U.S.L. VALLE D'AOSTA",
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "(0165) 5431"
+                    },
+                    {
+                        "system": "fax",
+                        "value": "(0165) 544587"
+                    },
+                    {
+                        "system": "email",
+                        "value": "protocollo@pec.ausl.vda.it"
+                    },
+                    {
+                        "system": "url",
+                        "value": "http://www.ausl.vda.it"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": [
+                            "VIA GUIDO REY 1"
+                        ],
+                        "city": "AOSTA",
+                        "_city": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+                                    "valueCoding": {
+                                        "system": "http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali",
+                                        "code": "007003",
+                                        "display": "AOSTA"
+                                    }
+                                }
+                            ]
+                        },
+                        "district": "AO",
+                        "state": "VALLE D'AOSTA",
+                        "_state": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+                                    "valueCoding": {
+                                        "system": "http://hl7.it/fhir/lab-report/CodeSystem/minsan-regione",
+                                        "code": "020",
+                                        "display": "VALLE D'AOSTA"
+                                    }
+                                }
+                            ]
+                        },
+                        "postalCode": "11100",
+                        "country": "IT"
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Practitioner/12",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "12",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-09-06T15:44:30.868+02:00",
+                    "source": "#740Nq2cHg0AwzheG"
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Dr Adam Careful is a Referring Practitioner for Acme Hospital from 1-Jan 2012 to 31-Mar\n        2012</p>\n    </div>"
+                },
+                "identifier": [
+                    {
+                        "system": "http://www.acme.org/practitioners",
+                        "value": "23"
+                    }
+                ],
+                "active": true,
+                "name": [
+                    {
+                        "family": "Prova",
+                        "given": [
+                            "Jhon"
+                        ],
+                        "prefix": [
+                            "Dr"
+                        ]
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "534 Erewhon St"
+                        ],
+                        "city": "PleasantVille",
+                        "state": "Vic",
+                        "postalCode": "3999"
+                    }
+                ],
+                "qualification": [
+                    {
+                        "identifier": [
+                            {
+                                "system": "http://example.org/UniversityIdentifier",
+                                "value": "12345"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0360/2.7",
+                                    "code": "BS",
+                                    "display": "Bachelor of Science"
+                                }
+                            ],
+                            "text": "Bachelor of Science"
+                        },
+                        "period": {
+                            "start": "1995"
+                        },
+                        "issuer": {
+                            "display": "Example University"
+                        }
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/PractitionerRole/13",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "13",
+                "meta": {
+                    "versionId": "1",
+                    "lastUpdated": "2024-09-06T15:45:54.563+02:00",
+                    "source": "#bY3ybsTIiNYYkBPH",
+                    "profile": [
+                        "http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "http://esempio_policlinico.it/codiceEmatologo",
+                        "value": "12345"
+                    }
+                ],
+                "active": true,
+                "practitioner": {
+                    "reference": "Practitioner/12"
+                },
+                "organization": {
+                    "reference": "Organization/7"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.9.6.2.7",
+                                "code": "2211",
+                                "display": "Generalist Medical Practitioners"
+                            }
+                        ]
+                    }
+                ],
+                "specialty": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "394803006",
+                                "display": "Clinical hematology"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "search": {
+                "mode": "include"
+            }
+        }
+    ]
+}

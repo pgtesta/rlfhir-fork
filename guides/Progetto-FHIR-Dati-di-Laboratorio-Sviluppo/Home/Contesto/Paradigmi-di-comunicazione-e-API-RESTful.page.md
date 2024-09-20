@@ -11,14 +11,78 @@ Tale modalità di consultazione dei dati è definita “logica PULL”, e preved
 Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione assegnata dal server, avviene tramite una richiesta HTTPs POST.
 
 ## Consultazione
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .custom-table th, .custom-table td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+      word-wrap: break-word;  /* Permette il wrapping del testo */
+      word-break: break-all;  /* Forza il wrapping anche a metà delle parole se necessario */
+    }
+    .custom-table td {
+      max-width: 0; /* Aggiungi max-width per forzare il wrapping */
+    }
+  </style>
+</head>
+<body>
+  <table class="custom-table">
+    <thead>
+      <tr>
+        <th style="width: 8.5%;">Numero Richiesta</th>
+        <th style="width: 8%;">Metodo HTTP</th>
+        <th style="width: 53.5%;">URL</th>
+        <th style="width: 22%;">Esempio</th>
+        <th style="width: 8%;">Detentore del dato</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>1</td>
+        <td>GET</td>
+        <td>[base_API_Manager]/Bundle?identifier=[id univoco del documento]</td>
+        <td>-</td>
+        <td>CDR</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>GET</td>
+        <td>[base_API_Manager]/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2</td>
+        <td>-</td>
+        <td>CDR</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>GET</td>
+        <td>[base_API_Manager]/Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=Observation:encounter</td>
+        <td>- {{pagelink:Home/Esempi/Raccolta-esempi/RLNelTempoBundleSearchSet.page.md}} - {{pagelink:Home/Esempi/Raccolta-esempi/RLEncounterBundleSearchSet.page.md}}</td>
+        <td>CDR</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>GET</td>
+        <td>[base_API_Manager]/Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=Observation:encounter</td>
+        <td>-{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame1BundleSearchSet.page.md}} - {{pagelink:Home/Esempi/Raccolta-esempi/RLEsame2BundleSearchSet.page.md}}</td>
+        <td>CDR</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
 
-
-Num Richiesta|Metodo HTTP|URL|Esempio|Detentore del dato|
-|---|---|---|---|
+<!-- 
 |1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
-|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include=Observation:encounter|-|CDR|
-|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include=Observation:encounter|-|CDR|
+|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter|-|CDR|
+|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter-|CDR| -->
 
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
@@ -49,11 +113,11 @@ Parametri opzionali:
 - *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
-- *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato
-- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
-- *_revinclude:iterate=Provenance:target* : include nella risposta la risorsa Provenance descritta nella riga precedente e la risorsa Organization relativa al custodian (azienda resposabile della conservazione) del documento e la risorsa PractitionerRole, che contiene le informazioni sul firmatario del dcoumento
-- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole che contiene le infromazioni su medico e azienda resposabile dell'osservazione
-- *_include:iterate=Observation:performer*: è un parametro più articolato del precedente, grazie all'uso del modifier FHIR *iterate*, e include nella risposta la risorsa PractiionerRole, la risorsa Practitioner che contiene le infromazioni sul medico resposabile dell'osservazione e la risorsa Organization che contiene le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
+- *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato.
+- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informaizone.
+- *_include:iterate=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance. Questi rappresentano il custodian del documento (azienda responsabile dell'osservazione - Organization) e il firmatario del documento (PractitionerRole).
+- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole del laboratorio che si è occupato di eseguire l'esame.
+- *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
 - *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
 
 
@@ -71,9 +135,9 @@ Parametri opzionali:
 - *_include=Observation:specimen: da inserire se si vuole ottenere anche l'informazione sul campione di laboratorio che ha prodotto il risultato
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
-- *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato
-- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni su chi ha firmato il documento e l'identificativo univoco del documento da cui proviene l'osservazione
-- *_revinclude:iterate=Provenance:target* : include nella risposta la risorsa Provenance descritta nella riga precedente e la risorsa Organization relativa al custodian (azienda resposabile della conservazione) del documento e la risorsa PractitionerRole, che contiene le informazioni sul firmatario del dcoumento
-- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole che contiene le infromazioni su medico e azienda resposabile dell'osservazione
-- *_include:iterate=Observation:performer*: è un parametro più articolato del precedente, grazie all'uso del modifier FHIR *iterate*, e include nella risposta la risorsa PractiionerRole, la risorsa Practitioner che contiene le infromazioni sul medico resposabile dell'osservazione e la risorsa Organization che contiene le infromazioni sull'azienda resposabile dell'osservazione, se l'informazione è disponibile
+- *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato.
+- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informaizone.
+- *_include:iterate=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance. Questi rappresentano il custodian del documento (azienda responsabile dell'osservazione - Organization) e il firmatario del documento (PractitionerRole).
+- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole del laboratorio che si è occupato di eseguire l'esame.
+- *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
 - *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
