@@ -74,7 +74,7 @@
       <td>LAB</td>
       <td>Bundle</td>
       <td>Ricerca dei docuemnti associati ad un paziente</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
       <td>{{link:Bundle/esempio-richiesta-2}}</td>
     </tr>
   </tbody>
