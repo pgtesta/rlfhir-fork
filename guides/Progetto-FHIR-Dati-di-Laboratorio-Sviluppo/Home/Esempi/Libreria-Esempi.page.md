@@ -39,6 +39,7 @@
       <td>LAB</td>
       <td>Bundle</td>
       <td>Ricerca degli esami effettuati da un paziente e le relative informazioni riguardanti di contesto</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEncounterBundleSearchSet.page.md}}</td>
       <td>{{link:Bundle/esempio-con-encounter}}</td>
     </tr>
     <tr>

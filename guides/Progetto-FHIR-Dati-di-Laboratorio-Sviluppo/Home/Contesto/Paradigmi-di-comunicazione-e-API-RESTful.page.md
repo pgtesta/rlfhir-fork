@@ -49,7 +49,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
         <td>1</td>
         <td>GET</td>
         <td>[base_API_Manager]/Bundle?identifier=[id univoco del documento]</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLNelTempoBundleSearchSet.page.md}} - {{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
+        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
