@@ -4,7 +4,7 @@ Questa ricerca permette di reperire i dettagli dei risultati di uno o più refer
 
 I parametri obbligatori da valorizzare per effettuare la ricerca sono: 
 
-- _include:iterate=Observation:patient&patient.identifier=[identificativo paziente]
+- _include=Observation:patient&patient.identifier=[identificativo paziente]
 - category = laboratory 
 - code = [codice esame]
 - date = gt[data inizio ricerca] 

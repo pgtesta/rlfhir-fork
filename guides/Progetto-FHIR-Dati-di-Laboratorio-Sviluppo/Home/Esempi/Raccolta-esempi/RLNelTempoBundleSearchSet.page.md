@@ -4,9 +4,9 @@ Questa ricerca permette di reperire la lista delle osservazioni fatte su un pazi
 
 - category = laboratory
 - date = gt[data inizio ricerca] 
-- _include:iterate=Observation:patient&patient.identifier=[identificativo paziente]
-- _include:iterate=Observation:patient
-- _revinclude:iterate=Provenance:target
+- _include=Observation:patient&patient.identifier=[identificativo paziente]
+- _include=Observation:patient
+- _revinclude=Provenance:target
 
 **Richiesta:** 
 
@@ -14,7 +14,7 @@ Questa ricerca permette di reperire la lista delle osservazioni fatte su un pazi
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
-| URL | / Observation?date=gt2024-04-01&date=lt2024-09-01&category=laboratory&_include:iterate=Observation:patient&patient.identifier=AAABBB12D55I999D&_revinclude:iterate=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization   |
+| URL | / Observation?date=gt2024-04-01&date=lt2024-09-01&category=laboratory&_include=Observation:patient&patient.identifier=AAABBB12D55I999D&_revinclude=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization   |
 |Descrizione risposta | Restituirà tutte le osservazioni di laboratorio associate al paziente AAABBB12D55I999D in un periodo di tempo compreso tra il 1° Aprile 2024 e il 1° Settembre 2024, per un totale di 5 mesi. Nella risposta sono incluse le informazioni del paziente, le informazioni sul documento da cui sono state ricavate le osservazioni, e i professionisti sanitari e le aziende responsabili. |
 
 **Risposta**
