@@ -1,8 +1,8 @@
 # Paging - Esempio di ricerca esame specifico di laboratorio per un determinato paziente 
 
-- [Richiesta 1]{Richiesta-numero-1}
+- [Richiesta numero 1](#richiesta-numero-1)
 
-- [Richiesta 2]{Richiesta-numero-2}
+- [Richiesta numero 2](#richiesta-numero-2)
 
 Premessa dell'esempio: nel CDR sono presenti 2 documenti di laboratorio associati al paziente. Il client vuole recuperarli uno alla volta.
 Questa ricerca permette di recuperare un documento di laboratorio alla volta sulla base del paziente a cui è associato e la data in cui è stato prodotto.
