@@ -77,6 +77,13 @@
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
       <td>{{link:Bundle/esempio-richiesta-2}}</td>
     </tr>
+    <tr>
+      <td>LAB</td>
+      <td>Bundle</td>
+      <td>Ricerca dei docuemnti associati ad un paziente utilizzando il paging</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLPaging.page.md}}</td>
+      <td>{{link:Bundle/esempio-paging-richiesta-1}} {{link:Bundle/esempio-paging-richiesta-2}}</td>
+    </tr>
   </tbody>
 </table>
   </body>

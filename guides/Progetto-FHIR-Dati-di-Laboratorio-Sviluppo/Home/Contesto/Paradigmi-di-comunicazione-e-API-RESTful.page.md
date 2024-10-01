@@ -141,3 +141,16 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 - *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole del laboratorio che si è occupato di eseguire l'esame.
 - *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
 - *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
+
+# Paging
+Il paging in FHIR è un meccanismo che permette di gestire grandi set di dati suddividendoli in pagine più piccole. Quando un client richiede una risorsa FHIR che contiene molti risultati, il server può restituire solo una porzione di questi dati e fornire un link per accedere alla pagina successiva. In questo modo, si riduce il carico di trasferimento e si migliora l'efficienza del sistema.
+
+Questo meccanismo può essere utilizzato per le richieste che contengoo una molteciplità di risultati; in questo scenario è applicabile alle richieste 2, 3 e 4.
+
+Utilizzo:
+- Aggiungere alla richiesta il parametro *_count*: istruzione al server riguardo a quante risorse dovrebbero essere restituite in una singola pagina, tra quelle che corrispondono alla ricerca. Dal conteggio sono escluse le risorse include nella risposta;
+- Aggiungere alla richiesta il parametro *_page*: istruzione al server riguardo la pagina che si vuole visualizzare.
+
+La combinazine di questi due parametri permette di navigare tra le diverse pagine che compongono la ricerca completa, che potrebbe sovraccaricare il sistema.
+E' possibile consultare un esempio di applicazione di paging nella pagina degli Esempi ({{pagelink:Home/Esempi/Raccolta-esempi/RLPaging.page.md}})
+
