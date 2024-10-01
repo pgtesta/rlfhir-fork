@@ -1,10 +1,10 @@
 # Paging - Esempio di ricerca esame specifico di laboratorio per un determinato paziente 
 
-- [Richiesta 1]{Richiesta-n.1}
+- [Richiesta 1]{Richiesta-numero-1}
 
-- [Richiesta 2]{Richiesta-n.2}
+- [Richiesta 2]{Richiesta-numero-2}
 
-Premessa dell'esempio: nel CDR sono presenti 2 docuementi di laboratorio associati al paziente. Il client vuole recuperarli uno alla volta.
+Premessa dell'esempio: nel CDR sono presenti 2 documenti di laboratorio associati al paziente. Il client vuole recuperarli uno alla volta.
 Questa ricerca permette di recuperare un documento di laboratorio alla volta sulla base del paziente a cui è associato e la data in cui è stato prodotto.
 
 I parametri obbligatori da valorizzare per effettuare la ricerca sono: 
@@ -23,7 +23,7 @@ Inizialmente, il client non conosce necessariamente il totale delle risorse che 
 - url da utilizzare per la GET della prima pagina (attributo *url* dove Bundle.link.relation = "first"), presente solo se diversa dalla pagina attuale;
 - url da utilizzare per la GET dell'ultima pagina (attributo *url* dove Bundle.link.relation = "last"), presente solo se diversa dalla pagina attuale.
 
-## Richiesta n.1
+## Richiesta numero 1
 
 | SCOPE | Ricerca esame specifico di laboratorio per un determinato paziente |
 |---|---|
@@ -37,7 +37,7 @@ Inizialmente, il client non conosce necessariamente il totale delle risorse che 
 {{json:Bundle/esempio-paging-richiesta-1}}
 
 
-## Richiesta 2
+## Richiesta numero 2
 
 | SCOPE | Ricerca esame specifico di laboratorio per un determinato paziente |
 |---|---|
