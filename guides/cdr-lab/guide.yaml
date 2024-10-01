@@ -1,0 +1,5 @@
+title: Guida Implementativa FHIR per i dati di laboratorio
+description: Questa IG fa riferimento a integrazioni che non sono state rilasciate in produzione
+version: 1.0.0
+style-root: project
+style-name: RL-css
