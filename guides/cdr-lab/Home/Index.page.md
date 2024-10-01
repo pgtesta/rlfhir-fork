@@ -1,7 +1,6 @@
 # {{page-title}}
 
-Questa Implementation Guide (IG) FHIR descrive i profili fondamentali (detti “Core”) che rappresentano il punto di partenza per tutte le risorse regionali. I profili definiti in questa guida costituiscono una base comune per uniformare e facilitare lo scambio di dati sanitari tra le diverse realtà regionali, garantendo interoperabilità, conformità agli standard e coerenza nell'implementazione dei sistemi informativi sanitari.
-
+Questa Implementation Guide (IG) FHIR descrive come lo standard sarà utilizzato nello scenario di consultazione dei dati di laboratorio in Regione Lombardia. 
 
 ## Novità
 
