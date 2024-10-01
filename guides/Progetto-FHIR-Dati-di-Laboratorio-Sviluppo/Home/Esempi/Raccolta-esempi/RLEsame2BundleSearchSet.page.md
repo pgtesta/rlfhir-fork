@@ -5,9 +5,9 @@ Per ottenere ulteriori informazioni rispetto la richiesta {{pagelink:Home/Esempi
 
 - _include = Observation:specimen: da inserire se si vuole ottenere anche l’informazione sul campione di laboratorio che ha prodotto il risultato 
 
-- _include:iterate = Observation:performer: include nella risposta la risorsa PractitionerRole che contiene le informazioni sui soggetti responsabili dell’osservazione di laboratorio 
+- _include = Observation:performer: include nella risposta la risorsa PractitionerRole che contiene le informazioni sui soggetti responsabili dell’osservazione di laboratorio 
 
-- _revinclude:iterate = Provenance:target:  include nella risposta la risorsa Provenance che contiene le informazioni su chi ha firmato il documento e l’identificativo univoco del referto da cui proviene l’osservazione 
+- _revinclude = Provenance:target:  include nella risposta la risorsa Provenance che contiene le informazioni su chi ha firmato il documento e l’identificativo univoco del referto da cui proviene l’osservazione 
 
 **Richiesta:** 
 
@@ -15,7 +15,7 @@ Per ottenere ulteriori informazioni rispetto la richiesta {{pagelink:Home/Esempi
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
-| URL | /Observation?code=2339-0&date=gt2024-01-01&date=lt2024-08-01&category=laboratory&_include:iterate=Observation:patient &patient.identifier=RSSMRA71E01F205E&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization |
+| URL | /Observation?code=2339-0&date=gt2024-01-01&date=lt2024-08-01&category=laboratory&_include=Observation:patient &patient.identifier=RSSMRA71E01F205E&_include=Observation:specimen&_include=Observation:performer&_revinclude=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization |
 
 **Risposta**
 

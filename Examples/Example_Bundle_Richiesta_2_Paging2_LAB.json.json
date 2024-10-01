@@ -1,0 +1,3740 @@
+{
+  "resourceType": "Bundle",
+  "id": "esempio-paging-richiesta-2",
+  "meta": {
+      "lastUpdated": "2024-09-09T07:48:45Z"
+  },
+  "timestamp": "2024-09-09T07:48:45Z",
+  "total": 2,
+  "type": "searchset",
+  "link": [
+    {
+        "relation": "self",
+        "url": "Bundle?composition.subject=AAABBB12D55I999D&composition.date=gt2023-01-01&composition.code=11502-2&_page=2&_count=1"
+    },
+    {
+        "relation": "previous",
+        "url": "Bundle?composition.subject=AAABBB12D55I999D&composition.date=gt2023-01-01&composition.code=11502-2&_page=1&_count=1"
+    },
+    {
+        "relation": "first",
+        "url": "Bundle?composition.subject=AAABBB12D55I999D&composition.date=gt2023-01-01&composition.code=11502-2&_page=1&_count=1"
+    }
+],
+  "entry": [
+{
+  "resource":{
+  "resourceType": "Bundle",
+  "id": "documento-2",
+  "identifier": {
+    "assigner": {
+      "display": "Regione Lombardia"
+    },
+    "system": "urn:oid:2.16.840.1.113883.2.9.2.30",
+    "value": "2.16.840.1.113883.2.7.5.1000001"
+  },
+  "meta": {
+    "lastUpdated": "2024-09-25T10:50:34Z"
+  },
+  "type":"document",
+  "entry": [
+    {
+      "fullUrl": "Composition/fdfc5932-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Composition",
+        "attester": [
+          {
+            "mode": "legal",
+            "party": {
+              "reference": "PractitionerRole/fe2d436c-7b2b-11ef-8dc0-02001700b287"
+            },
+            "time": "2024-06-13T23:00:39+02:00"
+          },
+          {
+            "mode": "professional",
+            "party": {
+              "reference": "PractitionerRole/fe2fe11c-7b2b-11ef-8dc0-02001700b287"
+            },
+            "time": "2024-06-13T23:35:43+02:00"
+          }
+        ],
+        "author": [
+          {
+            "reference": "PractitionerRole/fe0fc710-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe14fa00-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe72aa10-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe95cfea-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/feb1dc30-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fed3492e-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fef031d8-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/ff11aeee-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "confidentiality": "N",
+        "custodian": {
+          "reference": "Organization/fe188a6c-7b2b-11ef-8dc0-02001700b287"
+        },
+        "date": "2024-07-01T16:05:29+00:00",
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "L90104A",
+                    "system": "urn:oid:2.16.840.1.113883.2.9.2.30.6.1.11"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "PractitionerRole/fe4b2d28-7b2b-11ef-8dc0-02001700b287"
+              }
+            ]
+          },
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "L90235A",
+                    "system": "urn:oid:2.16.840.1.113883.2.9.2.30.6.1.11"
+                  }
+                ]
+              }
+            ],
+            "detail": [
+              {
+                "reference": "PractitionerRole/fe52f71a-7b2b-11ef-8dc0-02001700b287"
+              }
+            ]
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+            "valueString": "4"
+          },
+          {
+            "extension": [
+              {
+                "url": "dataEnterer",
+                "valueReference": {
+                  "reference": "PractitionerRole/fe180a92-7b2b-11ef-8dc0-02001700b287"
+                }
+              },
+              {
+                "url": "http://hl7.it/fhir/StructureDefinition/dataEnterer-time",
+                "valueDateTime": "2024-06-13T23:00:39+02:00"
+              }
+            ],
+            "url": "http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it"
+          },
+          {
+            "url": "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+            "valueReference": {
+              "reference": "PractitionerRole/fe2476a6-7b2b-11ef-8dc0-02001700b287"
+            }
+          },
+          {
+            "url": "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+            "valueReference": {
+              "reference": "PractitionerRole/fe2aa1ca-7b2b-11ef-8dc0-02001700b287"
+            }
+          }
+        ],
+        "id": "fdfc5932-7b2b-11ef-8dc0-02001700b287",
+        "identifier": {
+          "assigner": {
+            "display": "Regione Lombardia"
+          },
+          "system": "urn:oid:2.16.840.1.113883.2.9.2.30",
+          "value": "2.16.840.1.113883.2.9.2.30_61550261"
+        },
+        "language": "it-IT",
+        "relatesTo": [
+          {
+            "code": "replaces",
+            "targetIdentifier": {
+              "system": "urn:oid:2.16.840.1.113883.2.9.2.30",
+              "value": "null"
+            }
+          },
+          {
+            "code": "replaces",
+            "targetIdentifier": {
+              "system": "urn:oid:2.16.840.1.113883.2.9.2.30",
+              "value": "null"
+            }
+          }
+        ],
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "26436-6",
+                  "display": "Esami di Laboratorio",
+                  "system": "http://loinc.org"
+                }
+              ]
+            },
+            "section": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "code": "18725-5",
+                      "display": "Sg-ESAME EMOCROMOCITOMETRICO",
+                      "system": "urn:oid:2.16.840.1.113883.2.9.2.30"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "Observation/fe7be076-7b2b-11ef-8dc0-02001700b287"
+                  }
+                ],
+                "text": {
+                  "div": "<table border=\"1\"><thead align=\"center\"><tr><th align=\"left\" colspan=\"5\"><content styleCode=\"bold\">Sg-ESAME EMOCROMOCITOMETRICO</content></th></tr><tr><th align=\"center\">Esame</th><th align=\"center\">Esito</th><th align=\"center\">Abnormal Flag</th><th align=\"center\">Unita di mesura</th><th align=\"center\">Range di riferimento</th><th align=\"center\">Metodo</th></tr></thead><tbody align=\"center\"><tr><td align=\"left\">Leucociti WBC(6690-2)</td><td align=\"left\">3.13</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">4.0 - 10.0</td><td align=\"left\"/></tr><tr><td align=\"left\">Eritrociti RBC(789-8)</td><td align=\"left\">4.96</td><td align=\"left\">null</td><td align=\"left\">10^6/uL</td><td align=\"left\">4.2 - 5.4</td><td align=\"left\"/></tr><tr><td align=\"left\">Emoglobina HGB(718-7)</td><td align=\"left\">14.4</td><td align=\"left\">null</td><td align=\"left\">g/dL</td><td align=\"left\">12.0 - 16.0</td><td align=\"left\"/></tr><tr><td align=\"left\">Ematocrito HCT(4544-3)</td><td align=\"left\">44.6</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">37.0 - 47.0</td><td align=\"left\"/></tr><tr><td align=\"left\">M.C.V.(787-2)</td><td align=\"left\">89.9</td><td align=\"left\">null</td><td align=\"left\">fL</td><td align=\"left\">82.0 - 98.0</td><td align=\"left\"/></tr><tr><td align=\"left\">M.C.H. (emoglobina corpuscolare media)(785-6)</td><td align=\"left\">29.0</td><td align=\"left\">null</td><td align=\"left\">pg</td><td align=\"left\">27.0 - 34.0</td><td align=\"left\"/></tr><tr><td align=\"left\">M.C.H.C. (conc. emoglobinica media)(786-4)</td><td align=\"left\">32.3</td><td align=\"left\">null</td><td align=\"left\">g/dL</td><td align=\"left\">31.5 - 36.0</td><td align=\"left\"/></tr><tr><td align=\"left\">RDW-CV(RDWCV)</td><td align=\"left\">12.4</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">11.5 - 14.5</td><td align=\"left\"/></tr><tr><td align=\"left\">Piastrine(777-3)</td><td align=\"left\">262</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">150.0 - 450.0</td><td align=\"left\"/></tr><tr><td align=\"left\">Formula leucocitaria relativa: Neutrofili(770-8)</td><td align=\"left\">45.3</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">40.0 - 74.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Linfociti(736-9)</td><td align=\"left\">40.3</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">19.0 - 48.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Monociti(5905-5)</td><td align=\"left\">9.6</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">3.0 - 10.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Eosinofili(713-8)</td><td align=\"left\">2.6</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">0.0 - 8.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Basofili(706-2)</td><td align=\"left\">2.2</td><td align=\"left\">null</td><td align=\"left\">%</td><td align=\"left\">0.0 - 1.5</td><td align=\"left\"/></tr><tr><td align=\"left\">Formula leucocitaria assoluta: Neutrofili(751-8)</td><td align=\"left\">1.42</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">1.9 - 8.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Linfociti(731-0)</td><td align=\"left\">1.26</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">1.0 - 4.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Monociti(742-7)</td><td align=\"left\">0.30</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">0.16 - 1.0</td><td align=\"left\"/></tr><tr><td align=\"left\"> Eosinofili(711-2)</td><td align=\"left\">0.08</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">0.0 - 0.44</td><td align=\"left\"/></tr><tr><td align=\"left\"> Basofili(704-7)</td><td align=\"left\">0.07</td><td align=\"left\">null</td><td align=\"left\">10^3/uL</td><td align=\"left\">0.0 - 0.2</td><td align=\"left\"/></tr></tbody></table><footnote/><paragraph/>",
+                  "status": "generated"
+                }
+              },
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "code": "18717-9",
+                      "display": "2.16.840.1.113883.2.9.2.30.6.11",
+                      "system": "http://loinc.org"
+                    }
+                  ]
+                },
+                "entry": [
+                  {
+                    "reference": "Observation/ff1e0b12-7b2b-11ef-8dc0-02001700b287"
+                  },
+                  {
+                    "reference": "Observation/ff2afc82-7b2b-11ef-8dc0-02001700b287"
+                  }
+                ],
+                "text": {
+                  "div": "<paragraph> </paragraph><table border=\"1\"><thead align=\"center\"><tr><th align=\"center\">Esame</th><th align=\"center\">Esito</th><th align=\"center\">Abnormal Flag</th><th align=\"center\">Unita di misura</th><th align=\"center\">Range di riferimento</th><th align=\"center\">Metodo</th></tr></thead><tbody align=\"center\"><tr><td align=\"left\">S - Glucosio(0090271.01)</td><td align=\"left\">91(91)</td><td align=\"left\">91</td><td align=\"left\">mg/dL</td><td align=\"left\">70.0 - 110.0</td><td align=\"left\"/></tr></tbody></table><footnote/><paragraph> </paragraph>",
+                  "status": "generated"
+                }
+              }
+            ],
+            "title": "Esami di Laboratorio"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        },
+        "title": "Referto di Laboratorio",
+        "type": {
+          "coding": [
+            {
+              "code": "11502-2",
+              "display": "Referto di laboratorio",
+              "system": "http://loinc.org"
+            },
+            {
+              "code": "CODICE_LOCALE",
+              "display": "Referto di 340 laboratorio",
+              "system": "urn:oid:OID_SISTEMA_CODIFICA"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe0b7f48-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe0b7f48-7b2b-11ef-8dc0-02001700b287",
+        "name": "Regione Lombardia",
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "home",
+            "value": "+393456789000000"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Patient",
+        "address": [
+          {
+            "city": "PAVIA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO BRUCIATO"
+            ],
+            "postalCode": "27190",
+            "use": "home"
+          }
+        ],
+        "birthDate": "1965-10-22",
+        "contact": [
+          {
+            "name": {
+              "family": "Giacomo",
+              "given": [
+                "Riccaccio"
+              ]
+            }
+          },
+          {
+            "organization": {
+              "reference": "Organization/fe0b7f48-7b2b-11ef-8dc0-02001700b287"
+            }
+          }
+        ],
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress": {
+              "city": "UCRAINA",
+              "country": "ITA",
+              "line": [
+                "via italia 13"
+              ],
+              "use": "home"
+            }
+          }
+        ],
+        "gender": "female",
+        "id": "fe03093a-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero Economia e Finanze"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "AAABBB90C00L219K"
+          },
+          {
+            "system": "urn:oid:",
+            "value": "ABCDEF12G34H567I"
+          }
+        ],
+        "name": [
+          {
+            "family": "rossi",
+            "given": [
+              "paolo"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "home",
+            "value": "+393395610892"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "038291959"
+          },
+          {
+            "system": "email",
+            "use": "home",
+            "value": "//patient@nomail.nomail"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe0de2c4-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe0de2c4-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "Zorzetto",
+            "given": [
+              "Michele"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe0fc710-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe0fc710-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe0de2c4-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe116a2a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "GENOVA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V GIANNI TRAZI"
+            ],
+            "postalCode": "42",
+            "use": "home"
+          }
+        ],
+        "id": "fe116a2a-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "SRBTTMCC0H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "Sorbetto",
+            "given": [
+              "Michele"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "038244"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe14fa00-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe14fa00-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe116a2a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe171fce-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe171fce-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "Zorzetto",
+            "given": [
+              "Michele"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe180a92-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe180a92-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe171fce-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe1c4eb8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe1c4eb8-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE_WHOLE",
+            "value": "COD_ENTE_WHOLE"
+          }
+        ],
+        "name": "NOME_ENTE_WHOLE"
+      }
+    },
+    {
+      "fullUrl": "Organization/fe1a7304-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe1a7304-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_ PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/fe1c4eb8-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe188a6c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe188a6c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.1.2",
+            "value": "2.16.840.1.113883.2.9.2.50"
+          }
+        ],
+        "name": "Regione Lombardia",
+        "partOf": {
+          "reference": "Organization/fe1a7304-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe1e4006-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe1e4006-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_DESTINATARIO"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_DESTINATARIO",
+            "given": [
+              "NOME_DESTINATARIO"
+            ],
+            "prefix": [
+              "TITOLO_DESTINATARIO"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "+393395610892"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe209fe0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "address": [
+          {
+            "use": "work"
+          }
+        ],
+        "id": "fe209fe0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:OID_ORG_DESINATARIA",
+            "value": "COD_ORG_DESINATARIA"
+          }
+        ],
+        "name": "NOME_ORGANIZZAZIONE",
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "+390095610800"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe2476a6-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe2476a6-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe209fe0-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe1e4006-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe247836-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe247836-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_DESTINATARIO_2"
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_DESTINATARIO"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe26d8ba-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "address": [
+          {
+            "use": "work"
+          }
+        ],
+        "id": "fe26d8ba-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:OID_ORG_DESINATARIA_2",
+            "value": "COD_ORG_DESINATARIA_2"
+          }
+        ],
+        "name": "NOME_ORGANIZZAZIONE_SECONDO",
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_2"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe2aa1ca-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe2aa1ca-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe26d8ba-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe247836-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe2ae036-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe2ae036-7b2b-11ef-8dc0-02001700b287",
+        "name": [
+          {
+            "family": "\"rossi\"",
+            "given": [
+              "aldo"
+            ],
+            "prefix": [
+              "Dott."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_FIRMATARIO"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "+39"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe2d436c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe2d436c-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe2ae036-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe2d8926-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe2d8926-7b2b-11ef-8dc0-02001700b287",
+        "name": [
+          {
+            "family": "Zorzetto",
+            "given": [
+              "Michele"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe2fe11c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe2fe11c-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe2d8926-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe324ea2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe324ea2-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.2.030.4.5",
+            "value": "2.16.840.1.113883.2.9.2.030.4.5.0046"
+          }
+        ],
+        "name": [
+          {
+            "family": "Zanni",
+            "given": [
+              "Gino"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe34ac38-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe34ac38-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:[OID_STRUTTURA]",
+            "value": "[COD_STRUTTURA]"
+          }
+        ],
+        "name": "Fondazione Gemelli"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe368a3a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "PRE",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "fe368a3a-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe34ac38-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe324ea2-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe386cb0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe386cb0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.2.030.4.5",
+            "value": "2.16.840.1.113883.2.9.2.030.4.5.0050"
+          }
+        ],
+        "name": [
+          {
+            "family": "BIGO",
+            "given": [
+              "lINO"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "home",
+            "value": "urp@SZAtto.pv.it"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe3acb7c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe3acb7c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:[OID_STRUTTURA2]",
+            "value": "[COD_STRUTTURA2]"
+          }
+        ],
+        "name": "Fondazione Gemelli Diversi"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe3cafc8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "PRE",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "fe3cafc8-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe3acb7c-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe386cb0-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "ServiceRequest/fe3e9a18-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "fe3e9a18-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero delle Finanze"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.9",
+            "value": "1660147.1"
+          }
+        ],
+        "intent": "intent",
+        "priority": "routine",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "ServiceRequest/fe3fc8c0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "fe3fc8c0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero delle Finanze"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.9",
+            "value": "1660147.1"
+          }
+        ],
+        "intent": "intent",
+        "priority": "routine",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe435bca-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe435bca-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "Zorzetto",
+            "given": [
+              "Michele"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe497d66-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe497d66-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "NOME_ENTE"
+      }
+    },
+    {
+      "fullUrl": "Organization/fe479cc6-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe479cc6-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_ PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/fe497d66-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe45b7ee-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe45b7ee-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.2.30924.4.11",
+            "value": "LABC"
+          }
+        ],
+        "name": "Laboratorio Centrale Analisi Cliniche",
+        "partOf": {
+          "reference": "Organization/fe479cc6-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe4b2d28-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe4b2d28-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe45b7ee-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe435bca-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe4ebb82-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe4ebb82-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "GIGI70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "Gini",
+            "given": [
+              "Beppe"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe51171a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe51171a-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.2.30924.4.11",
+            "value": "LABC"
+          }
+        ],
+        "name": "Laboratorio Centrale Analisi Cliniche"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe52f71a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe52f71a-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe51171a-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe4ebb82-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe54aad8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe54aad8-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "PROVAX00X00X000Y"
+          }
+        ],
+        "name": [
+          {
+            "family": "Test",
+            "given": [
+              "Silvia"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe56bfd0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe56bfd0-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe54aad8-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe5a47e0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe5a47e0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.1.1",
+            "value": "XXX"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe5861aa-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe5861aa-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.1.2",
+            "value": "XXX"
+          }
+        ],
+        "name": "[nome_presidio]",
+        "partOf": {
+          "reference": "Organization/fe5a47e0-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "3340000000"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Location/fe56faa4-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Location",
+        "id": "fe56faa4-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.1.6",
+            "value": "XXX"
+          }
+        ],
+        "managingOrganization": {
+          "reference": "Organization/fe5861aa-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe64dbec-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "VENEZIA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO FUSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fe64dbec-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_PARTICIPANT_2"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_PARTICIPANT_2",
+            "given": [
+              "NOME_PARTICIPANT_2"
+            ],
+            "prefix": [
+              "TITOLO_PARTICIPANT_2"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_PARTICIPANT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe693f98-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe693f98-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_STRUTTURA",
+            "value": "COD_STRUTTURA_2"
+          }
+        ],
+        "name": "NOME_STRUTTURA_2"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe6b432e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "fe6b432e-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe693f98-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe64dbec-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe6ed5ca-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "MILANO",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "GIOVANNI BENSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fe6ed5ca-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "AUTHOR_INTERNO",
+            "given": [
+              "NOME_AUTHOR_INT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe72aa10-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe72aa10-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe6ed5ca-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe788c0a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe788c0a-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "WHOLE_ORG1"
+      }
+    },
+    {
+      "fullUrl": "Organization/fe76869e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe76869e-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/fe788c0a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe7438f8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe7438f8-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "NOME_AUTHORITY"
+            },
+            "system": "urn:oid:OID_LAB",
+            "value": "COD_LAB"
+          }
+        ],
+        "name": "LABORATORIO1",
+        "partOf": {
+          "reference": "Organization/fe76869e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe7bd662-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SUB",
+                "display": "Sub-contractor"
+              }
+            ]
+          }
+        ],
+        "id": "fe7bd662-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe7438f8-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe7a51de-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe7a51de-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe7a51de-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale"
+          }
+        ],
+        "name": [
+          {
+            "family": "Marchino",
+            "given": [
+              "Marco"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Specimen/fe7f360e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "fe7f360e-7b2b-11ef-8dc0-02001700b287",
+        "type": {
+          "coding": [
+            {
+              "code": "ABC",
+              "display": "ABCspecimen",
+              "system": "urn:oid:2.16.840.1.113883.5.129"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/fe5f1482-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1111-1",
+              "display": "2.16.840.1.113883.6.1",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "fe5f1482-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/fe7bd662-7b2b-11ef-8dc0-02001700b287",
+            "type": "PractitionerRole"
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "unit": "10^3/uL",
+              "value": 4.0
+            }
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/fe7f360e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe880202-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "VENEZIA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO FUSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fe880202-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_PARTICIPANT_2"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_PARTICIPANT_2",
+            "given": [
+              "NOME_PARTICIPANT_2"
+            ],
+            "prefix": [
+              "TITOLO_PARTICIPANT_2"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_PARTICIPANT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fe8c597e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe8c597e-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_STRUTTURA",
+            "value": "COD_STRUTTURA_2"
+          }
+        ],
+        "name": "NOME_STRUTTURA_2"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe8e5e90-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "fe8e5e90-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe8c597e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe880202-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe91fa32-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "MILANO",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "GIOVANNI BENSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fe91fa32-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "AUTHOR_INTERNO",
+            "given": [
+              "NOME_AUTHOR_INT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe95cfea-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fe95cfea-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fe91fa32-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe9b7a6c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe9b7a6c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "WHOLE_ORG1"
+      }
+    },
+    {
+      "fullUrl": "Organization/fe996f1a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe996f1a-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/fe9b7a6c-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fe9766e8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fe9766e8-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "NOME_AUTHORITY"
+            },
+            "system": "urn:oid:OID_LAB",
+            "value": "COD_LAB"
+          }
+        ],
+        "name": "LABORATORIO1",
+        "partOf": {
+          "reference": "Organization/fe996f1a-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fe9ebd44-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SUB",
+                "display": "Sub-contractor"
+              }
+            ]
+          }
+        ],
+        "id": "fe9ebd44-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fe9766e8-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fe9d3dd4-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fe9d3dd4-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fe9d3dd4-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale"
+          }
+        ],
+        "name": [
+          {
+            "family": "Marchino",
+            "given": [
+              "Marco"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/fe81c1b2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "2222-2",
+              "display": "2.16.840.1.113883.6.1",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "fe81c1b2-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/fe9ebd44-7b2b-11ef-8dc0-02001700b287",
+            "type": "PractitionerRole"
+          }
+        ],
+        "referenceRange": [
+          {
+            "low": {
+              "unit": "g/dL",
+              "value": 12.0
+            }
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/fe7f360e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fea3c5d2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "CAGLIARI",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO FUSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fea3c5d2-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_PARTICIPANT_2"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_PARTICIPANT_BAT",
+            "given": [
+              "NOME_PARTICIPANT_BAT"
+            ],
+            "prefix": [
+              "TITOLO_PARTICIPANT_BAT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_PARTICIPANT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fea8235c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fea8235c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_STRUTTURA",
+            "value": "COD_STRUTTURA_2"
+          }
+        ],
+        "name": "NOME_STRUTTURA_BAT"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/feaa2a76-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "feaa2a76-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fea8235c-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fea3c5d2-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/feadffc0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "MILANO",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "GIOVANNI BENSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "feadffc0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "AUTHOR_INTERNO",
+            "given": [
+              "NOME_AUTHOR_INT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/feb1dc30-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "feb1dc30-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/feadffc0-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/feb7c47e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "feb7c47e-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "WHOLE_ORG1"
+      }
+    },
+    {
+      "fullUrl": "Organization/feb5bbe8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "feb5bbe8-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/feb7c47e-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/feb3af9c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "feb3af9c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "NOME_AUTHORITY"
+            },
+            "system": "urn:oid:OID_LAB",
+            "value": "COD_LAB"
+          }
+        ],
+        "name": "LABORATORIO1",
+        "partOf": {
+          "reference": "Organization/feb5bbe8-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/febb1354-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SUB",
+                "display": "Sub-contractor"
+              }
+            ]
+          }
+        ],
+        "id": "febb1354-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/feb3af9c-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/feb98e44-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/feb98e44-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "feb98e44-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale"
+          }
+        ],
+        "name": [
+          {
+            "family": "Marchino",
+            "given": [
+              "Marco"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Specimen/febe3dea-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "febe3dea-7b2b-11ef-8dc0-02001700b287",
+        "type": {
+          "coding": [
+            {
+              "code": "SPEC_CLUSTBAT",
+              "display": "ABCspecimen",
+              "system": "urn:oid:2.16.840.1.113883.5.129"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/fe9fcf9a-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "A123",
+              "display": "Penicillina G",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "fe9fcf9a-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/febb1354-7b2b-11ef-8dc0-02001700b287",
+            "type": "PractitionerRole"
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/febe3dea-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fec5425c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "VENEZIA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO FUSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fec5425c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_PARTICIPANT_2"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_PARTICIPANT_2",
+            "given": [
+              "NOME_PARTICIPANT_2"
+            ],
+            "prefix": [
+              "TITOLO_PARTICIPANT_2"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_PARTICIPANT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fec9985c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fec9985c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_STRUTTURA",
+            "value": "COD_STRUTTURA_2"
+          }
+        ],
+        "name": "NOME_STRUTTURA_2"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fecb9a76-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "fecb9a76-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fec9985c-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fec5425c-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fecf69b2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "MILANO",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "GIOVANNI BENSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fecf69b2-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "AUTHOR_INTERNO",
+            "given": [
+              "NOME_AUTHOR_INT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fed3492e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fed3492e-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/fecf69b2-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fed92060-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fed92060-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "WHOLE_ORG1"
+      }
+    },
+    {
+      "fullUrl": "Organization/fed71b58-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fed71b58-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/fed92060-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fed517c2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fed517c2-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "NOME_AUTHORITY"
+            },
+            "system": "urn:oid:OID_LAB",
+            "value": "COD_LAB"
+          }
+        ],
+        "name": "LABORATORIO1",
+        "partOf": {
+          "reference": "Organization/fed71b58-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fedc6540-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SUB",
+                "display": "Sub-contractor"
+              }
+            ]
+          }
+        ],
+        "id": "fedc6540-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fed517c2-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fedae4f4-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fedae4f4-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fedae4f4-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale"
+          }
+        ],
+        "name": [
+          {
+            "family": "Marchino",
+            "given": [
+              "Marco"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/fec0cef2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "B456",
+              "display": "Penicillina G",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "fec0cef2-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/fedc6540-7b2b-11ef-8dc0-02001700b287",
+            "type": "PractitionerRole"
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/fe7f360e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fee231a0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "VENEZIA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO FUSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "fee231a0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_PARTICIPANT_2"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_PARTICIPANT_2",
+            "given": [
+              "NOME_PARTICIPANT_2"
+            ],
+            "prefix": [
+              "TITOLO_PARTICIPANT_2"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_PARTICIPANT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/fee68d90-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fee68d90-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_STRUTTURA",
+            "value": "COD_STRUTTURA_2"
+          }
+        ],
+        "name": "NOME_STRUTTURA_2"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fee89036-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "fee89036-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fee68d90-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fee231a0-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/feec5fe0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "MILANO",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "GIOVANNI BENSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "feec5fe0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "AUTHOR_INTERNO",
+            "given": [
+              "NOME_AUTHOR_INT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fef031d8-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "fef031d8-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/feec5fe0-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fef602fc-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fef602fc-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "WHOLE_ORG1"
+      }
+    },
+    {
+      "fullUrl": "Organization/fef40290-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fef40290-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/fef602fc-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/fef20134-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fef20134-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "NOME_AUTHORITY"
+            },
+            "system": "urn:oid:OID_LAB",
+            "value": "COD_LAB"
+          }
+        ],
+        "name": "LABORATORIO1",
+        "partOf": {
+          "reference": "Organization/fef40290-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/fef9455c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SUB",
+                "display": "Sub-contractor"
+              }
+            ]
+          }
+        ],
+        "id": "fef9455c-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/fef20134-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/fef7c650-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/fef7c650-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "fef7c650-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale"
+          }
+        ],
+        "name": [
+          {
+            "family": "Marchino",
+            "given": [
+              "Marco"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Specimen/fefc9edc-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "fefc9edc-7b2b-11ef-8dc0-02001700b287",
+        "type": {
+          "coding": [
+            {
+              "code": "SPEC_CLUSTBAT_BAT",
+              "display": "DEFspecimen",
+              "system": "urn:oid:2.16.840.1.113883.5.129"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/feddb882-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "C321",
+              "display": "Penicillina G",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "feddb882-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/fef9455c-7b2b-11ef-8dc0-02001700b287",
+            "type": "PractitionerRole"
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/fefc9edc-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/ff03a1d2-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "VENEZIA",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "V VALERIO FUSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "ff03a1d2-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "CF_PARTICIPANT_2"
+          }
+        ],
+        "name": [
+          {
+            "family": "COGNOME_PARTICIPANT_2",
+            "given": [
+              "NOME_PARTICIPANT_2"
+            ],
+            "prefix": [
+              "TITOLO_PARTICIPANT_2"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "MAIL_PARTICIPANT"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/ff07f534-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ff07f534-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_STRUTTURA",
+            "value": "COD_STRUTTURA_2"
+          }
+        ],
+        "name": "NOME_STRUTTURA_2"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/ff09f780-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "R",
+                "system": "urn:oid:2.16.840.1.113883.2.9.5.1.88"
+              }
+            ]
+          }
+        ],
+        "id": "ff09f780-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/ff07f534-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/ff03a1d2-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/ff0dd3fa-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "address": [
+          {
+            "city": "MILANO",
+            "country": "ITA",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract",
+                "valueString": "018110"
+              }
+            ],
+            "line": [
+              "GIOVANNI BENSI"
+            ],
+            "postalCode": "27100",
+            "use": "home"
+          }
+        ],
+        "id": "ff0dd3fa-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "MEF"
+            },
+            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "value": "ZRZMHL70H15F754F"
+          }
+        ],
+        "name": [
+          {
+            "family": "AUTHOR_INTERNO",
+            "given": [
+              "NOME_AUTHOR_INT"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "email",
+            "use": "work",
+            "value": "urp@smatteo.pv.it"
+          },
+          {
+            "system": "email",
+            "use": "work",
+            "value": "protocollo@pec.smatteo.pv.it"
+          },
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "03825011"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/ff11aeee-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "ff11aeee-7b2b-11ef-8dc0-02001700b287",
+        "practitioner": {
+          "reference": "Practitioner/ff0dd3fa-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/ff179520-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ff179520-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_ENTE",
+            "value": "COD_ENTE"
+          }
+        ],
+        "name": "WHOLE_ORG1"
+      }
+    },
+    {
+      "fullUrl": "Organization/ff158e2e-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ff158e2e-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "Ministero della Salute"
+            },
+            "system": "urn:oid:OID_PRESIDIO",
+            "value": "COD_PRESIDIO"
+          }
+        ],
+        "partOf": {
+          "reference": "Organization/ff179520-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Organization/ff138458-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "ff138458-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "assigner": {
+              "display": "NOME_AUTHORITY"
+            },
+            "system": "urn:oid:OID_LAB",
+            "value": "COD_LAB"
+          }
+        ],
+        "name": "LABORATORIO1",
+        "partOf": {
+          "reference": "Organization/ff158e2e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work",
+            "value": "NUM_TEL_LAB"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/ff1ad794-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "code": [
+          {
+            "coding": [
+              {
+                "code": "SUB",
+                "display": "Sub-contractor"
+              }
+            ]
+          }
+        ],
+        "id": "ff1ad794-7b2b-11ef-8dc0-02001700b287",
+        "organization": {
+          "reference": "Organization/ff138458-7b2b-11ef-8dc0-02001700b287"
+        },
+        "practitioner": {
+          "reference": "Practitioner/ff19566c-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Practitioner/ff19566c-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "ff19566c-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale"
+          }
+        ],
+        "name": [
+          {
+            "family": "Marchino",
+            "given": [
+              "Marco"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/feff2daa-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "D789",
+              "display": "Penicillina G",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "feff2daa-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/ff1ad794-7b2b-11ef-8dc0-02001700b287",
+            "type": "PractitionerRole"
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/fefc9edc-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/febb1f84-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "CLUSTER-BATTERY",
+              "display": "SuscettibilitÃÂ ",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/fe9fcf9a-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/fec0cef2-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "id": "febb1f84-7b2b-11ef-8dc0-02001700b287",
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/fef94e12-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "CLUSTER-BATTERY-BATTERY",
+              "display": "SuscettibilitÃÂ ",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/feddb882-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/feff2daa-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "id": "fef94e12-7b2b-11ef-8dc0-02001700b287",
+        "specimen": {
+          "reference": "Specimen/fefc9edc-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/fe7be076-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "002SO",
+              "display": "Sg-ESAME EMOCROMOCITOMETRICO",
+              "system": "urn:oid:2.16.840.1.113883.2.9.2.30"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/fe5f1482-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/fe81c1b2-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/febb1f84-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/fef94e12-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "id": "fe7be076-7b2b-11ef-8dc0-02001700b287",
+        "specimen": {
+          "reference": "Specimen/fe7f360e-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Specimen/ff2601a0-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Specimen",
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "LN",
+                "display": "left naris",
+                "system": "urn:oid:2.16.840.1.113883.5.1052"
+              }
+            ]
+          }
+        },
+        "id": "ff2601a0-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.99",
+            "value": "1111"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "BLD",
+              "display": "WholeBlood",
+              "system": "urn:oid:2.16.840.1.113883.5.129"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/ff1e0b12-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1135154",
+              "display": "GLUCOSIO (CURVA DA CARICO 3 DETERMINAZIONI)",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-07-01T11:22:25+00:00",
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "ff1e0b12-7b2b-11ef-8dc0-02001700b287",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "urn:oid:2.16.840.1.113883.5.83"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "high": {
+              "unit": "mg/dL",
+              "value": 20.0
+            },
+            "low": {
+              "unit": "mg/dL",
+              "value": 10.0
+            }
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/ff2601a0-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Specimen/ff32e3fc-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Specimen",
+        "collection": {
+          "bodySite": {
+            "coding": [
+              {
+                "code": "LN",
+                "display": "left naris",
+                "system": "urn:oid:2.16.840.1.113883.5.1052"
+              }
+            ]
+          }
+        },
+        "id": "ff32e3fc-7b2b-11ef-8dc0-02001700b287",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.9.99",
+            "value": "2222"
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "BLD",
+              "display": "WholeBlood",
+              "system": "urn:oid:2.16.840.1.113883.5.129"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/ff2afc82-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Observation",
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "laboratory",
+                "display": "Laboratory",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+              }
+            ]
+          },
+          {
+            "coding": [
+              {
+                "code": "26436-6",
+                "display": "Esami di Laboratorio",
+                "system": "http://loinc.org"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "1135154",
+              "display": "GLUCOSIO (CURVA DA CARICO 3 DETERMINAZIONI)",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "effectiveDateTime": "2024-06-01T11:14:00+00:00",
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "id": "ff2afc82-7b2b-11ef-8dc0-02001700b287",
+        "interpretation": [
+          {
+            "coding": [
+              {
+                "code": "N",
+                "system": "urn:oid:2.16.840.1.113883.5.83"
+              }
+            ]
+          }
+        ],
+        "referenceRange": [
+          {
+            "high": {
+              "unit": "mg/dL",
+              "value": 120.0
+            },
+            "low": {
+              "unit": "mg/dL",
+              "value": 70.0
+            }
+          }
+        ],
+        "specimen": {
+          "reference": "Specimen/ff32e3fc-7b2b-11ef-8dc0-02001700b287"
+        },
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "DiagnosticReport/fdfc5810-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/fe3e9a18-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "ServiceRequest/fe3fc8c0-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "11502-2",
+              "display": "Laboratory Report",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "encounter": {
+          "reference": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "Composition/fdfc5932-7b2b-11ef-8dc0-02001700b287"
+            }
+          }
+        ],
+        "id": "fdfc5810-7b2b-11ef-8dc0-02001700b287",
+        "performer": [
+          {
+            "reference": "PractitionerRole/fe0fc710-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe14fa00-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe180a92-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Organization/fe188a6c-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe2476a6-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe2aa1ca-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe2d436c-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe2fe11c-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe368a3a-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe3cafc8-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe4b2d28-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe52f71a-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "PractitionerRole/fe56bfd0-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Organization/fe5861aa-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/fe5f1482-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/fe81c1b2-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/fe9fcf9a-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/fec0cef2-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/feddb882-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/feff2daa-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/ff1e0b12-7b2b-11ef-8dc0-02001700b287"
+          },
+          {
+            "reference": "Observation/ff2afc82-7b2b-11ef-8dc0-02001700b287"
+          }
+        ],
+        "status": "final",
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    },
+    {
+      "fullUrl": "Encounter/fe302384-7b2b-11ef-8dc0-02001700b287",
+      "resource": {
+        "resourceType": "Encounter",
+        "class": {
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "id": "fe302384-7b2b-11ef-8dc0-02001700b287",
+        "location": [
+          {
+            "location": {
+              "reference": "Location/fe56faa4-7b2b-11ef-8dc0-02001700b287"
+            }
+          }
+        ],
+        "participant": [
+          {
+            "individual": {
+              "reference": "PractitionerRole/fe368a3a-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-07-01T16:05:29+00:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/fe3cafc8-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2022-05-01T16:05:60+00:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/fe56bfd0-7b2b-11ef-8dc0-02001700b287"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/fe6b432e-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-06-13T23:00:39+02:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/fe8e5e90-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-06-13T23:00:39+02:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/feaa2a76-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-06-13T23:00:39+02:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/fecb9a76-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-06-13T23:00:39+02:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/fee89036-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-06-13T23:00:39+02:00"
+            }
+          },
+          {
+            "individual": {
+              "reference": "PractitionerRole/ff09f780-7b2b-11ef-8dc0-02001700b287"
+            },
+            "period": {
+              "start": "2024-06-13T23:00:39+02:00"
+            }
+          }
+        ],
+        "period": {
+          "start": "2022-03-30T11:24:26+01:00"
+        },
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/fe03093a-7b2b-11ef-8dc0-02001700b287"
+        }
+      }
+    }
+  ]
+}
+}
+]
+}
