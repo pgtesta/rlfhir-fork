@@ -101,6 +101,18 @@
         }
       },
       {
+        "id": "Provenance.agent:aziendaResponsabile.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Provenance.entity",
         "path": "Provenance.entity",
         "short": "Documento di provenienza dell'informazione in target",
@@ -117,18 +129,6 @@
         "path": "Provenance.entity.what.identifier",
         "short": "Identificativo univoco del documento",
         "min": 1
-      },
-      {
-        "id": "Provenance.agent:aziendaResponsabile.who",
-        "path": "Provenance.agent.who",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab"
-            ]
-          }
-        ]
       }
     ]
   }
