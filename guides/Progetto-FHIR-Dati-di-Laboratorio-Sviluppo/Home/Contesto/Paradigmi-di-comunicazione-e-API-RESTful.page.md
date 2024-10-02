@@ -154,7 +154,7 @@ Il paging in FHIR è un meccanismo che permette di gestire grandi set di dati su
 Questo meccanismo può essere utilizzato per le richieste che contengono una molteciplità di risultati; in questo scenario è applicabile alle richieste 2, 3 e 4.
 
 Utilizzo:
-- Aggiungere alla richiesta il parametro *_count*: istruzione al server riguardo a quante risorse dovrebbero essere restituite in una singola pagina, tra quelle che corrispondono alla ricerca. Dal conteggio sono escluse le risorse include nella risposta;
+- Aggiungere alla richiesta il parametro *_count*: istruzione al server riguardo a quante risorse dovrebbero essere restituite in una singola pagina, tra quelle che corrispondono alla ricerca. Dal conteggio sono escluse le risorse incluse nella risposta;
 - Aggiungere alla richiesta il parametro *_page*: istruzione al server riguardo la pagina che si vuole visualizzare.
 
 La combinazine di questi due parametri permette di navigare tra le diverse pagine che compongono la ricerca completa, che potrebbe sovraccaricare il sistema.
