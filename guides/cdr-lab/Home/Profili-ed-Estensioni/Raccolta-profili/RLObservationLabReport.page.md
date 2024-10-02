@@ -69,7 +69,14 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Observation.
+Sono stati definiti i seguenti parametri di ricerca correlati alla ricerca delle Observation Lab Report:
+
+- *_include=Observation:patient&patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
+- *category=laboratory*: selezione delle osservazioni provenienti da referti di medicina di laboratorio
+- *code=[codice esame]*: da valorizzare con il codice LOINC dell'esame di cui si vuole avere l'andamento
+- *date=gt[data ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 
