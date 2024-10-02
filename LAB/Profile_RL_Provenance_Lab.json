@@ -74,7 +74,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab"
             ]
           }
         ]
@@ -117,6 +117,18 @@
         "path": "Provenance.entity.what.identifier",
         "short": "Identificativo univoco del documento",
         "min": 1
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab"
+            ]
+          }
+        ]
       }
     ]
   }
