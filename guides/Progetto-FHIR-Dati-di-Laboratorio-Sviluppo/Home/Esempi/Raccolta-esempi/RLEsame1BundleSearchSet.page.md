@@ -16,7 +16,7 @@ I parametri obbligatori da valorizzare per effettuare la ricerca sono:
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
-| URL | /Observation?code=2339-0&date=gt2024-01-01&category=laboratory&_include:iterate=Observation:patient&patient.identifier=RSSMRA71E01F205E   |
+| URL | /Observation?code=2339-0&date=gt2024-01-01&category=laboratory&_include=Observation:patient&patient.identifier=RSSMRA71E01F205E   |
 |Descrizione risposta | Restituirà tutte le Observation con profilo RLObservationLabReport che hanno il codice LOINC “2339-0” relativo all’esame del glucosio, effettuate dopo la data del 1/01/2024 del paziente con codice fiscale RSSMRA71E01F205E, insieme alle informazioni del paziente (risorsa Patient). |
 
 **Risposta**

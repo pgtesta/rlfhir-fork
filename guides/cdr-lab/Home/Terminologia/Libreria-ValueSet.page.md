@@ -197,10 +197,10 @@
     </tr>
     <tr>
       <td>
-      <a href="http://hl7.org/fhir/ValueSet/location-physical-type" target="_blank">Location physical type</a>
+      <a href="http://terminology.hl7.org/CodeSystem/location-physical-type" target="_blank">Location physical type</a>
       </td>
       <td> ValueSet relativo alla codifica del tipo di location </td>
-<td>http://hl7.org/fhir/ValueSet/location-physical-type</td>
+<td>http://terminology.hl7.org/CodeSystem/location-physical-type</td>
     </tr>
     <tr>
       <td>
