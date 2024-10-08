@@ -6,8 +6,8 @@
   "total": 2,
   "entry": [
     {
-      "fullUrl":"Encounter/esempio-Encounter-Trasferimento",
-      "resource":{
+      "fullUrl": "Encounter/esempio-Encounter-Trasferimento",
+      "resource": {
         "resourceType": "Encounter",
         "id": "esempio-Encounter-Trasferimento",
         "meta": {
@@ -17,20 +17,20 @@
           ],
           "versionId": "1"
         },
-        "extension":[
+        "extension": [
           {
-            "url":"http://hl7.org/fhir/6.0/StructureDefinition/extension-Encounter.plannedEndDate",
-            "valueDateTime":"2024-06-29T08:32:56+01:00"
-        },
-        {
-          "url":"https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterDatiDimissione",
-          "extension":[
-            {
-              "url":"pzDimissibile",
-              "valueBoolean":false
-            }
-          ]
-        }
+            "url": "http://hl7.org/fhir/6.0/StructureDefinition/extension-Encounter.plannedEndDate",
+            "valueDateTime": "2024-06-29T08:32:56+01:00"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterDatiDimissione",
+            "extension": [
+              {
+                "url": "pzDimissibile",
+                "valueBoolean": false
+              }
+            ]
+          }
         ],
         "identifier": [
           {
@@ -62,48 +62,47 @@
             ]
           }
         ],
-        "hospitalization":[
+        "hospitalization": [
           {
-            "origin":{
-              "reference":"Organization/esempio-RLOrganizationL1"
+            "origin": {
+              "reference": "Organization/esempio-RLOrganizationL1"
             }
           }
         ],
-        "location":[
+        "location": [
           {
-          "period":{
-            "start": "2024-06-28T08:32:56+01:00",
-            "end":"2024-06-28T12:32:56+01:00"
+            "period": {
+              "start": "2024-06-28T08:32:56+01:00",
+              "end": "2024-06-28T12:32:56+01:00"
+            },
+            "location": {
+              "reference": "Location/esempio-Location-PLO-Letto"
+            }
           },
-          "location":{
-            "reference":"Location/esempio-Location-PLO-Letto"
-          }
-        },
-        {
-          "period":{
-            "start": "2024-06-28T12:32:56+01:00",
-            "end": "2024-06-30T12:32:56+01:00"
+          {
+            "period": {
+              "start": "2024-06-28T12:32:56+01:00",
+              "end": "2024-06-30T12:32:56+01:00"
+            },
+            "location": {
+              "reference": "Location/esempio-Location-PLO-Letto2"
+            }
           },
-          "location":{
-            "reference":"Location/esempio-Location-PLO-Letto2"
+          {
+            "period": {
+              "start": "2024-06-30T12:32:56+01:00",
+              "end": "2024-06-31T12:32:56+01:00"
+            },
+            "location": {
+              "reference": "Location/esempio-Location-PLO-Letto3"
+            }
           }
-        },
-        {
-          "period":{
-            "start": "2024-06-30T12:32:56+01:00",
-            "end":"2024-06-31T12:32:56+01:00"
-          },
-          "location":{
-            "reference":"Location/esempio-Location-PLO-Letto3"
-          }
-        }
-      ]
+        ]
       }
     },
     {
-      "fullUrl":"Location/esempio-Location-PLO-Letto",
-      "resource":
-     {
+      "fullUrl": "Location/esempio-Location-PLO-Letto",
+      "resource": {
         "resourceType": "Location",
         "id": "esempio-Location-PLO-Letto",
         "meta": {
@@ -185,9 +184,8 @@
       }
     },
     {
-      "fullUrl":"Location/esempio-Location-PLO-Letto",
-      "resource":
-      {
+      "fullUrl": "Location/esempio-Location-PLO-Letto",
+      "resource": {
         "resourceType": "Location",
         "id": "esempio-Location-PLO-Letto2",
         "meta": {
@@ -269,9 +267,8 @@
       }
     },
     {
-      "fullUrl":"Location/esempio-Location-PLO-Letto",
-      "resource":
-      {
+      "fullUrl": "Location/esempio-Location-PLO-Letto",
+      "resource": {
         "resourceType": "Location",
         "id": "esempio-Location-PLO-Letto3",
         "meta": {
@@ -353,8 +350,8 @@
       }
     },
     {
-      "fullUrl":"Patient/e06086d8-a958-11ed-afa1-0242ac120002",
-      "resource":{
+      "fullUrl": "Patient/e06086d8-a958-11ed-afa1-0242ac120002",
+      "resource": {
         "resourceType": "Patient",
         "id": "e06086d8-a958-11ed-afa1-0242ac120002",
         "meta": {
@@ -398,6 +395,5 @@
         }
       }
     }
-    
   ]
 }

@@ -8,7 +8,7 @@
     ],
     "versionId": "1"
   },
-  "identifier":[
+  "identifier": [
     {
       "system": "http://hl7.it/sid/codiceFiscale",
       "value": "VRDGNN80D16F205I"

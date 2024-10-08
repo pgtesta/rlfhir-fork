@@ -7,12 +7,11 @@
     ]
   },
   "type": "message",
-  "timestamp": "2023-04-26T13:27:57.887+01:00",
   "entry": [
     {
       "resource": {
         "resourceType": "MessageHeader",
-        "id": "RLMessageHeader",
+        "id": "1b499ea3-1188-18cd-5d22-ebf9ef8073a8",
         "meta": {
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
@@ -21,23 +20,23 @@
         "eventCoding": {
           "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
           "code": "picMMG",
-          "display": "visualizzazione pagina redazione PI"
+          "display": "Visualizzazione pagina redazione PI"
         },
         "destination": [
           {
-            "name": "MMG",
-            "endpoint": "urn:rlfhir:mmg"
+            "name": "SSI_MMG_NOMEAPPLICATIVO",
+            "endpoint": "urn:rlfhir:SSI_MMG_nome_applicativo"
           }
         ],
         "source": {
           "name": "SGDT",
-          "endpoint": "urn:rlfhir:sgdt"
+          "endpoint": "urn:rlfhir:SGDT"
         },
         "response": {
-          "identifier": "RLMessageHeaderMMG",
+          "identifier": "RLBundleMMGpicMMG",
           "code": "ok",
           "details": {
-            "reference": "OperationOutcome/83507607885569708702"
+            "reference": "OperationOutcome/b6052a56-f5f2-2a53-3430-079821b029f1"
           }
         }
       }
@@ -45,11 +44,14 @@
     {
       "resource": {
         "resourceType": "OperationOutcome",
-        "id": "83507607885569708702",
+        "id": "b6052a56-f5f2-2a53-3430-079821b029f1",
         "meta": {
           "profile": [
             "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
           ]
+        },
+        "text": {
+          "status": "generated"
         },
         "issue": [
           {
@@ -58,12 +60,12 @@
             "details": {
               "coding": [
                 {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG",
                   "code": "01",
-                  "display": "URL per il passaggio di contesto",
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
+                  "display": "URL per il passaggio di contesto"
                 }
               ],
-              "text": "https://sgdt-svil-eng.it/sgdt/api/access?objId=11"
+              "text": "http://localhost:8090/api/access?objId=93031990-9004-4b52-8d6b-b83b28484dc5"
             }
           },
           {
@@ -72,12 +74,12 @@
             "details": {
               "coding": [
                 {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG",
                   "code": "02",
-                  "display": "Numero di protocollo GPC",
-                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG"
+                  "display": "Numero di protocollo GPC"
                 }
               ],
-              "text": "1"
+              "text": "TGGN24H04F205B"
             }
           }
         ]
