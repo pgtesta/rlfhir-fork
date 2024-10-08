@@ -375,13 +375,13 @@
       <td>PIC</td>
       <td>Patient</td>
       <td>Esempio profilo RLPatientBase</td>
-      <td>{{link:Patient/esempio-patient-base}}</td>
+      <td>{{link:esempio-patient-base}}</td>
     </tr>
             <tr>
       <td>PIC</td>
       <td>MedicationRequest</td>
       <td>Esempio profilo RLMedicationRequestTerapiaFarmacologica</td>
-      <td>{{link:MedicationRequest/esempio-medicationRequest-TerapiaFarmacologica-PIC}}</td>
+      <td>{{link:esempio-medicationRequest-TerapiaFarmacologica-PIC}}</td>
     </tr>
      <tr>
       <td>PIC</td>
@@ -393,31 +393,31 @@
       <td>PIC</td>
       <td>OperationOutcome</td>
       <td>Esempio profilo RLOperationOutcomeMMG risposta positiva</td>
-      <td>{{link:OperationOutcome/esempio-OperationOutcomeMMG-PIC-positiva}}</td>
+      <td>{{link:esempio-OperationOutcomeMMG-PIC-positiva}}</td>
     </tr>
          <tr>
       <td>PIC</td>
       <td>OperationOutcome</td>
       <td>Esempio profilo RLOperationOutcomeMMG risposta negativa</td>
-      <td>{{link:OperationOutcome/esempio-OperationOutcomeMMG-PIC-negativa}}</td>
+      <td>{{link:esempio-OperationOutcomeMMG-PIC-negativa}}</td>
     </tr>
     <tr>
       <td>PIC</td>
       <td>MessageHeader</td>
       <td>Esempio profilo RLMessageHeaderMMG risposta negativa</td>
-      <td>{{link:MessageHeader/esempio-RLMessageHeaderMMG-negativa}}</td>
+      <td>{{link:esempio-RLMessageHeaderMMG-negativa}}</td>
     </tr>
     <tr>
       <td>PIC</td>
       <td>MessageHeader</td>
       <td>Esempio profilo RLMessageHeaderMMG risposta positiva</td>
-      <td>{{link:MessageHeader/esempio-RLMessageHeaderMMG-positiva}}</td>
+      <td>{{link:esempio-RLMessageHeaderMMG-positiva}}</td>
     </tr>
     <tr>
       <td>PIC</td>
       <td>MessageHeader</td>
       <td>Esempio profilo RLMessageHeaderMMG MMGpicMMG</td>
-      <td>{{link:MessageHeader/esempio-RLMessageHeaderMMG-MMGpicMMG}}</td>
+      <td>{{link:esempio-RLMessageHeaderMMG-MMGpicMMG}}</td>
     </tr>
   </tbody>
 </table>

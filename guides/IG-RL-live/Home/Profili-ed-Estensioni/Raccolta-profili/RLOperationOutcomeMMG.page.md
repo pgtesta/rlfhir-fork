@@ -53,9 +53,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  Risposta positiva: {{link:OperationOutcome/esempio-OperationOutcomeMMG-PIC-positiva}}
+  Risposta positiva: {{link:/esempio-OperationOutcomeMMG-PIC-positiva}}
   <br>
-  Risposta negativa: {{link:OperationOutcome/esempio-OperationOutcomeMMG-PIC-negativa}}
+  Risposta negativa: {{link:/esempio-OperationOutcomeMMG-PIC-negativa}}
 <br>
 </div>
 
