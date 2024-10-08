@@ -55,7 +55,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:Patient/esempio-patient-base}}
+{{link:esempio-patient-base}}
 <br>
 </div>
 
