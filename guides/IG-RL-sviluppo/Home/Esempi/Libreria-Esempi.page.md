@@ -393,13 +393,13 @@
       <td>PIC</td>
       <td>OperationOutcome</td>
       <td>Esempio profilo RLOperationOutcomeMMG risposta positiva</td>
-      <td>{{link:/esempio-OperationOutcomeMMG-PIC-positiva}}</td>
+      <td>{{link:esempio-OperationOutcomeMMG-PIC-positiva}}</td>
     </tr>
          <tr>
       <td>PIC</td>
       <td>OperationOutcome</td>
       <td>Esempio profilo RLOperationOutcomeMMG risposta negativa</td>
-      <td>{{link:/esempio-OperationOutcomeMMG-PIC-negativa}}</td>
+      <td>{{link:esempio-OperationOutcomeMMG-PIC-negativa}}</td>
     </tr>
     <tr>
       <td>PIC</td>
