@@ -393,31 +393,31 @@
       <td>PIC</td>
       <td>OperationOutcome</td>
       <td>Esempio profilo RLOperationOutcomeMMG risposta positiva</td>
-      <td>{{link:esempio-OperationOutcomeMMG-PIC-positiva}}</td>
+      <td>{{link:Examples/Example_RL_OperationOutcomeMMG_Positiva.json}}</td>
     </tr>
          <tr>
       <td>PIC</td>
       <td>OperationOutcome</td>
       <td>Esempio profilo RLOperationOutcomeMMG risposta negativa</td>
-      <td>{{link:esempio-OperationOutcomeMMG-PIC-negativa}}</td>
+      <td>{{link:Examples/Example_RL_OperationOutcomeMMG_Negativa.json}}</td>
     </tr>
     <tr>
       <td>PIC</td>
       <td>MessageHeader</td>
       <td>Esempio profilo RLMessageHeaderMMG risposta negativa</td>
-      <td>{{link:esempio-RLMessageHeaderMMG-negativa}}</td>
+      <td>{{link:Examples/Example_RLMessageHeaderMMG_negativa.json}}</td>
     </tr>
     <tr>
       <td>PIC</td>
       <td>MessageHeader</td>
       <td>Esempio profilo RLMessageHeaderMMG risposta positiva</td>
-      <td>{{link:esempio-RLMessageHeaderMMG-positiva}}</td>
+      <td>{{link:Examples/Example_RLMessageHeaderMMG_positiva.json}}</td>
     </tr>
     <tr>
       <td>PIC</td>
       <td>MessageHeader</td>
       <td>Esempio profilo RLMessageHeaderMMG MMGpicMMG</td>
-      <td>{{link:esempio-RLMessageHeaderMMG-MMGpicMMG}}</td>
+      <td>{{link:Examples/Example_RLMessageHeaderMMG_MMGpicMMG.json}}</td>
     </tr>
   </tbody>
 </table>
