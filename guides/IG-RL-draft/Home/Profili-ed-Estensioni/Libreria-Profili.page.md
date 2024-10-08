@@ -661,7 +661,7 @@
           </td>
         </tr>
         <tr>
-          <td></td>
+          <td>PIC</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPrestazioni.page.md}}
           </td>

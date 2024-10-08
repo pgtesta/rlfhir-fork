@@ -17,5 +17,6 @@
 |{{pagelink:Home/pagine-dettaglio/live_3.9.0.page.md, text:3.9.0}}| 31/01/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.9.0](https://simplifier.net/guide/ig-rlfhir?version=3.9.0) |
 |{{pagelink:Home/pagine-dettaglio/live_3.10.0.page.md, text:3.10.0}}| 03/07/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.10.0](https://simplifier.net/guide/ig-rlfhir?version=3.10.0) |
 |{{pagelink:Home/pagine-dettaglio/live_3.10.2.page.md, text:3.10.2}}| 20/09/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.10.1](https://simplifier.net/guide/ig-rlfhir?version=3.10.2) |
+|{{pagelink:Home/pagine-dettaglio/live_3.10.3.page.md, text:3.10.3}}| 08/10/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.10.3](https://simplifier.net/guide/ig-rlfhir?version=3.10.3) |
 
 

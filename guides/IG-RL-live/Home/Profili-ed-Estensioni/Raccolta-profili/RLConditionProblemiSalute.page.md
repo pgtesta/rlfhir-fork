@@ -55,9 +55,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  Patologia primaria: {{link:esempio-Condition-PatologiaPrimaria}}
+  C-DOM: {{link:esempio-Condition-PatologiaPrimaria}}
   <br>
-  Patologia secondaria: {{link:esempio-Condition-PatologiaSecondaria}}
+  PIC: {{link:esempio-condition-problemiSalute-PIC}}
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->

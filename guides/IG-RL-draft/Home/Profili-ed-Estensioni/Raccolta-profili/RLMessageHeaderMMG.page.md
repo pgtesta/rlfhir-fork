@@ -53,7 +53,11 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili. 
+Risposta negativa: {{link:MessageHeader/esempio-RLMessageHeaderMMG-negativa}}
+<br>
+Risposta positiva: {{link:MessageHeader/esempio-RLMessageHeaderMMG-positiva}}
+<br>
+Messaggio di richiesta: {{link:MessageHeader/esempio-RLMessageHeaderMMG-MMGpicMMG}}
 <br>
 </div>
 

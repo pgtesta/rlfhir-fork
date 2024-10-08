@@ -357,13 +357,7 @@
       <td>PIC</td>
       <td>Bundle</td>
       <td>Esempio Bundle di attivazione dei servizi di presa in carico dei pazienti cronici da parte del MMG</td>
-      <td>{{link:Bundle/RLBundleMMGpicMMG}}</td>
-    </tr>
-    <tr>
-      <td>PIC</td>
-      <td>Bundle</td>
-      <td>Esempio Bundle di richiesta di interventi di Assistenza Domiciliare Programmata da parte del MMG</td>
-      <td>{{link:Bundle/RLBundleMMGADP}}</td>
+      <td>{{link:RLBundleMMGpicMMG}}</td>
     </tr>
     <tr>
       <td>PIC</td>
@@ -376,6 +370,54 @@
       <td>Bundle</td>
       <td>Esempio Bundle Risposta del messaggio con errore</td>
       <td>{{link:Bundle/RLBundleRispostaMMGNegativa}}</td>
+    </tr>
+        <tr>
+      <td>PIC</td>
+      <td>Patient</td>
+      <td>Esempio profilo RLPatientBase</td>
+      <td>{{link:Patient/esempio-patient-base}}</td>
+    </tr>
+            <tr>
+      <td>PIC</td>
+      <td>MedicationRequest</td>
+      <td>Esempio profilo RLMedicationRequestTerapiaFarmacologica</td>
+      <td>{{link:MedicationRequest/esempio-medicationRequest-TerapiaFarmacologica-PIC}}</td>
+    </tr>
+     <tr>
+      <td>PIC</td>
+      <td>Condition</td>
+      <td>Esempio profilo RLConditionProblemiSalute</td>
+      <td>{{link:esempio-condition-problemiSalute-PIC}}</td>
+    </tr>
+         <tr>
+      <td>PIC</td>
+      <td>OperationOutcome</td>
+      <td>Esempio profilo RLOperationOutcomeMMG risposta positiva</td>
+      <td>{{link:OperationOutcome/esempio-OperationOutcomeMMG-PIC-positiva}}</td>
+    </tr>
+         <tr>
+      <td>PIC</td>
+      <td>OperationOutcome</td>
+      <td>Esempio profilo RLOperationOutcomeMMG risposta negativa</td>
+      <td>{{link:OperationOutcome/esempio-OperationOutcomeMMG-PIC-negativa}}</td>
+    </tr>
+    <tr>
+      <td>PIC</td>
+      <td>MessageHeader</td>
+      <td>Esempio profilo RLMessageHeaderMMG risposta negativa</td>
+      <td>{{link:MessageHeader/esempio-RLMessageHeaderMMG-negativa}}</td>
+    </tr>
+    <tr>
+      <td>PIC</td>
+      <td>MessageHeader</td>
+      <td>Esempio profilo RLMessageHeaderMMG risposta positiva</td>
+      <td>{{link:MessageHeader/esempio-RLMessageHeaderMMG-positiva}}</td>
+    </tr>
+    <tr>
+      <td>PIC</td>
+      <td>MessageHeader</td>
+      <td>Esempio profilo RLMessageHeaderMMG MMGpicMMG</td>
+      <td>{{link:MessageHeader/esempio-RLMessageHeaderMMG-MMGpicMMG}}</td>
     </tr>
   </tbody>
 </table>

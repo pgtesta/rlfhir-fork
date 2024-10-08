@@ -55,7 +55,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:esempio-MedicationRequest-TerapiaFarmacologica}}
+C-DOM: {{link:esempio-medicationRequest-TerapiaFarmacologica}}
+<br>
+PIC: {{link:esempio-medicationRequest-TerapiaFarmacologica-PIC}}
 <br>
 </div>
 
