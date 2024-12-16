@@ -1,8 +1,5 @@
 title: IG FHIR Lettera di dimissione
-description: 
-version: 
-#style-root: styles
-#style-name: treetable
-#numbered-headings: false
+description: Questa IG fa riferimento all'ambiente di sviluppo.
+version: 0.0.0
 style-root: project
 style-name: RL-css
