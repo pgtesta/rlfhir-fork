@@ -59,20 +59,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
         <td>CDR</td>
       </tr>
-      <tr>
-        <td>3</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include=Observation:performer&_revinclude=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=Observation:encounter</td>
-        <td>- {{pagelink:Home/Esempi/Raccolta-esempi/RLNelTempoBundleSearchSet.page.md}} - {{pagelink:Home/Esempi/Raccolta-esempi/RLEncounterBundleSearchSet.page.md}}</td>
-        <td>CDR</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include=Observation:performer&_revinclude=Provenance:target&_include=Provenance:agent&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=Observation:encounter</td>
-        <td>-{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame1BundleSearchSet.page.md}} - {{pagelink:Home/Esempi/Raccolta-esempi/RLEsame2BundleSearchSet.page.md}}</td>
-        <td>CDR</td>
-      </tr>
+
     </tbody>
   </table>
 </body>

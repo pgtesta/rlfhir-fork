@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO",
+  "name": "RLMedicationLDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Medication.code.coding:aic",
+        "path": "Medication.code.coding",
+        "sliceName": "aic"
+      },
+      {
+        "id": "Medication.code.coding:atc",
+        "path": "Medication.code.coding",
+        "sliceName": "atc"
+      },
+      {
+        "id": "Medication.code.coding:gruppoEquivalenza",
+        "path": "Medication.code.coding",
+        "sliceName": "gruppoEquivalenza"
+      },
+      {
+        "id": "Medication.code.coding:eccezioni",
+        "path": "Medication.code.coding",
+        "sliceName": "eccezioni"
+      }
+    ]
+  }
+}

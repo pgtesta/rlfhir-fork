@@ -25,18 +25,18 @@ Questa guida presenta diverse sezioni che sono elencate nella barra dei menù, p
 - **Terminologia**: raccoglie la libreria di tutti i value set, ovvero le codifiche utilizzate nei profili.
 - **Esempi**: contiene la pagina con la libreria completa degli esempi.
   
-<<<<<<< HEAD
+
 # {{page-title}}
 {{index:root}}
 Contesto:
  
--manteniamo la struttura
-- no caso d'uso
-- Contenuto informativo: section (vedi lista)
+- manteniamo la struttura
+- no caso d'uso OK
+- Contenuto informativo: section (vedi lista) OK
  
 Paradigmi:
 - Solo richiesta 1 e 2
--
+
  
 Stati ed Errori
 uguale
@@ -53,5 +53,4 @@ mettere un discaimer : "Al momento non sono previste Estensioni per questa guida
  
 Esempi
 Vuota
-=======
->>>>>>> b060c8f0768b471fdcda6d5122275f48308cf9d7
+

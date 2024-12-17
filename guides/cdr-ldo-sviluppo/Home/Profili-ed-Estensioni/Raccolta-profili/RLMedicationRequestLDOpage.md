@@ -9,9 +9,9 @@
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Media](https://hl7.org/fhir/R4/media.html) per descrivere i contenuti multimediali per il referto di laboratorio.
+Il profilo RLMedicationRequestLDO è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](https://hl7.org/fhir/r4/medicationrequest.html), il profilo è volto a descrivere il contenuto informativo del report pere il referto di laboratorio.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}.
 
 <br>
 <div class="tab">
@@ -23,45 +23,42 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
   <button class="tablinks" onclick="openTab(event, 'JSON View')">JSON View</button>
   <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
-
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, diff}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, hybrid}}
+{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
+{{table:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
+{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:http://hl7.it/fhir/lab-report/StructureDefinition/media-it-lab, snapshot}}
+{{json:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-
 <br>
 </div>
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
-
 
 ## Tipologie di ricerca
 
@@ -71,15 +68,13 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Media.
+Attualmente non sono definiti Search Parameters.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
-
 Nella seguente tabella sono elencati i value set relativi al profilo RLMedicationRequestLDO:
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type | Categoria del media - alto livello | La codifica è definita dal Valueset [Media Type](http://hl7.org/fhir/ValueSet/media-type)  |
-
+| type | Tipo di bundle | ??????????  |
