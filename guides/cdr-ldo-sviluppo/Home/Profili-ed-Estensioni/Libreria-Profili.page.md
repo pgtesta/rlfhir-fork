@@ -38,9 +38,9 @@
       </thead>
       <tbody id="myTable">
         <tr>
-          <td>LAB</td>
+          <td>LDO</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedication.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationLDO.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
