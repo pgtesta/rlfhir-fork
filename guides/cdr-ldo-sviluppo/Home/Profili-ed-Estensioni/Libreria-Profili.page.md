@@ -52,6 +52,21 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO}}
           </td>
         </tr>
+        <tr>
+          <td>LDO</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestLDO.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/medicationrequest.html">Medication Request</a>
+          </td>
+          <td>
+             Ordine o richiesta sia per la fornitura del farmaco che per le istruzioni per la somministrazione del farmaco a un paziente.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
