@@ -61,10 +61,25 @@
             <a href="https://hl7.org/fhir/R4/medicationrequest.html">Medication Request</a>
           </td>
           <td>
-             Ordine o richiesta sia per la fornitura del farmaco che per le istruzioni per la somministrazione del farmaco a un paziente.
+             Ordine o richiesta per la fornitura del farmaco e per le istruzioni per la somministrazione dello stesso a un paziente.
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}
+          </td>
+        </tr>
+        <tr>
+          <td>LDO</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntoleranceLDO.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/r4/allergyintolerance.html">Allergy Intolerance</a>
+          </td>
+          <td>
+            Risorsa contentente informazioni su allergie, intolleranze e reazioni avverse di un paziente. 
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO}}
           </td>
         </tr>
       </tbody>
