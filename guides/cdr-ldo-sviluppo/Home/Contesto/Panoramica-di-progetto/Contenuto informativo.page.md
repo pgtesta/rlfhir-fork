@@ -1,6 +1,5 @@
 # {{page-title}}
 
-
 Il contenuto informativo d’interesse per la guida, nel contesto della lettera di dimissione comprende le seguenti tematiche:
 
 <!DOCTYPE html>
