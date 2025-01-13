@@ -40,6 +40,36 @@
         <tr>
           <td>LDO</td>
           <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntoleranceLDO.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/r4/allergyintolerance.html">Allergy Intolerance</a>
+          </td>
+          <td>
+            Risorsa contentente informazioni su allergie, intolleranze e reazioni avverse di un paziente. 
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO}}
+          </td>
+        </tr>
+        <tr>
+          <td>LDO</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterLDO.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/r4/encounter.html">Encounter</a>
+          </td>
+          <td>
+            Risorsa contentente informazioni sul ricovero del paziente. 
+          </td>
+          <td>
+            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/encounter-it-lab}}
+          </td>
+        </tr>
+        <tr>
+          <td>LDO</td>
+          <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationLDO.page.md}}
           </td>
           <td>
@@ -68,18 +98,18 @@
           </td>
         </tr>
         <tr>
-          <td>LDO</td>
+          <td>Core</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntoleranceLDO.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md}}
           </td>
           <td>
-            <a href="https://hl7.org/fhir/r4/allergyintolerance.html">Allergy Intolerance</a>
+            <a href="https://hl7.org/fhir/R4/patient.html">Patient</a>
           </td>
           <td>
-            Risorsa contentente informazioni su allergie, intolleranze e reazioni avverse di un paziente. 
+             
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}
           </td>
         </tr>
       </tbody>

@@ -48,56 +48,42 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>1</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Bundle?identifier=[id univoco del documento]&composition.custodian=[codice azienda]</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
+        <td>[base_API_Manager]/Observation?code=8648-8&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient</td>
+        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>2</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11502-2&composition.custodian=[codice azienda]</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
+        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta4.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>3</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=8648-8&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
+        <td>[base_API_Manager]/AllergyIntolerance?category=[categoria]&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta5.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>4</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta4.page.md}}</td>
-        <td>CDR</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?category=[categoria]&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta5.page.md}}</td>
-        <td>CDR</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?last-date=[data]&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
+        <td>[base_API_Manager]/AllergyIntolerance?last-date=[data]&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta6.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
-        <td>7</td>
+        <td>5</td>
         <td>GET</td>
         <td>[base_API_Manager]/Observation?code=[LOINC diagnosi]&subject.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta7.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
-        <td>8</td>
+        <td>6</td>
         <td>GET</td>
-        <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
+        <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta8.page.md}}</td>
         <td>CDR</td>
       </tr>
@@ -111,7 +97,22 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 |2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
 |3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter|-|CDR|
 |4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter-|CDR| -->
-
+<!--<tr>
+Richiesta documento da mettere in un'altra IG
+        <td>1</td>
+        <td>GET</td>
+        <td>[base_API_Manager]/Bundle?identifier=[id univoco del documento]&composition.custodian=[codice azienda]</td>
+        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
+        <td>CDR</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>GET</td>
+        <td>[base_API_Manager]/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11502-2&composition.custodian=[codice azienda]</td>
+        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
+        <td>CDR</td>
+      <!/tr>
+-->
 ### Richiesta 1
 Recupero di un FHIR document tramite il suo identificativo univoco.
 Parametri obbligatori:

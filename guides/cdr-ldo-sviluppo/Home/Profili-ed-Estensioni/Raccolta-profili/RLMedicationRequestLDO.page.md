@@ -9,7 +9,7 @@
 
 ## Descrizione
 
-Il profilo RLMedicationRequestLDO è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](https://hl7.org/fhir/r4/medicationrequest.html), il profilo è volto a descrivere il contenuto informativo del report pere il referto di laboratorio.
+Il profilo RLMedicationRequestLDO è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](https://hl7.org/fhir/r4/medicationrequest.html), il profilo è volto a descrivere il contenuto informativo delle prescrizioni farmaceutiche prodotte durante il ricovero.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}.
 
@@ -25,32 +25,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 </div>
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:http://hl7.it/fhir/lab-report/StructureDefinition/bundle-it-lab, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -62,8 +62,18 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+Sono stati definiti i seguenti criteri di ricerca.
 
+Recupero per codice farmaco:
+| SCOPE | Recupero delle richieste di un farmaco associate ad un paziente, includendo nella richiesta il paziente e la descrizione del farmaco   |
+|---|---|
+| VERB | GET |
+| BASE | tbd    |
+| URL | /MedicationRequest?<br>medication={_codice farmaco_}&subject.identifier=\{_identificativo paziente_\}<br>&_include=_include=MedicationRequest:subject    |
+
+TBD
+
+I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter

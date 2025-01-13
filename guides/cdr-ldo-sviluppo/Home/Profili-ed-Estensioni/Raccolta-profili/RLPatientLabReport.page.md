@@ -1,16 +1,13 @@
-# RLPatientLabReport
+# RLPatientCore
 
-- [RLPatientLabReport](#RLPatientLabReport)
+- [RLPatientCore](#rlpatientcore)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-  - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
 ## Descrizione
+Il profilo RLPatientCore è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) per contenere le informazioni del paziente cittadino, assistito in Regione Lombardia.
 
-Il profilo RLPatientLabReport è stato strutturato a partire dalla risorsa generica FHIR [Patient](http://hl7.org/fhir/R4/patient.html) per contenere le informazioni anagrafiche di base di un cittadino.
-
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}.
 
 <br>
 <div class="tab">
@@ -25,62 +22,48 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:http://hl7.it/fhir/lab-report/StructureDefinition/patient-it-lab, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Al momento non ci sono esempi disponibili.
+Paziente: {{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}
 <br>
 </div>
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-Attualmente non sono stati definiti criteri di ricerca.
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
-
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Patient.
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 
 ## ValueSet
-Nella seguente tabella sono elencati i value set relativi al profilo RLPatientLabReport
+Nella seguente tabella sono elencati i value set relativi al profilo RLPatientBase:
 
-| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| extension:professione | Codice Istat per la professione | La codifica è definita dal Valueset [ISTAT - Professione](http://hl7.it/fhir/lab-report/ValueSet/istat-professione)  |
-| identifier | Codice che descrive i diversi tipi di identificatori | La codifica è definita dal Valueset [Tipo Identificatore](http://hl7.it/fhir/lab-report/ValueSet/VstipoIdentificatore)  |
-| identifier | Anagrafi regionali | La codifica è definita dal Valueset [Anagrafi regionali](http://hl7.it/fhir/lab-report/ValueSet/vs-anagrafi-regionali)  |  
-| identifier |  Codice ENI del paziente | La codifica è definita dal ValueSet [URI ID ENI](http://hl7.it/fhir/lab-report/ValueSet/uri-idEni) |
-| identifier |  Codice STP del paziente | La codifica è definita dal ValueSet [URI ID STP](http://hl7.it/fhir/lab-report/ValueSet/uri-idStp) |
+| extension:luogoNascitaCodeable | Codice ISTAT del comune e/o dello stato di nascita | La codifica è definita dal ValueSet [UnitàAmministrativeTerritoriali](http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali) |
+| maritalStatus |  Stato civile del paziente | La codifica è definita dal ValueSet [Stato Civile](https://www.hl7.it/fhir/base/ValueSet-statoCivile.html) |

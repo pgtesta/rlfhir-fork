@@ -70,9 +70,44 @@ Attualmente non sono stati definiti criteri di ricerca.
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
+Nella seguente tabella sono elencati i parametri di ricerca utilizzabili per il profilo AllergyIntoleranceLDO.
+
+Allergie attive:
+| SCOPE | Recupero, se presenti, delle informazioni sulle allergie o intolleranze attive di un paziente    |
+|---|---|
+| VERB | GET |
+| BASE | tbd    |
+| URL | /AllergyIntolerance?clinical-status=active<br>&subject.identifier=\{_identificativo paziente_\}<br>    |
 
 
+Allergia per categoria:
+| SCOPE | Recupero, se presenti, delle allergie ai farmaci di un paziente    |
+|---|---|
+| VERB | GET |
+| BASE | tbd    |
+| URL | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}<br>    |
+
+| SCOPE | Recupero, se presenti, delle allergie ad alimenti di un paziente    |
+|---|---|
+| VERB | GET |
+| BASE | tbd    |
+| URL | /AllergyIntolerance?category=food<br>&subject.identifier=\{_identificativo paziente_\}<br>    |
+
+| SCOPE | Recupero, se presenti, delle allergie a fattori ambientali di un paziente    |
+|---|---|
+| VERB | GET |
+| BASE | tbd    |
+| URL | /AllergyIntolerance?category=enviroment<br>&subject.identifier=\{_identificativo paziente_\}<br>    |
+
+Ricerca nel tempo:
+
+| SCOPE | Recupero, se presenti, delle allergie in una finestra temporale di un paziente    |
+|---|---|
+| VERB | GET |
+| BASE | tbd    |
+| URL | /AllergyIntolerance?<br>last-date=\{_data di fine ricerca_\}<br><br>&subject.identifier=\{_identificativo paziente_\}<br>    |
+
+I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
@@ -82,5 +117,8 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLAllergyIn
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type| ??? | ????? |
+| ATC | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC |
+| AIC | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC |
+| GE | Codice e descrizione del farmaco per GE |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoGE |
+
 
