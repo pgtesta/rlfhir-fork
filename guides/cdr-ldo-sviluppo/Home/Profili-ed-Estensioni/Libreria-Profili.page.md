@@ -106,10 +106,10 @@
             <a href="https://hl7.org/fhir/R4/patient.html">Patient</a>
           </td>
           <td>
-             
+             Informazioni sul paziente.
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}
           </td>
         </tr>
       </tbody>

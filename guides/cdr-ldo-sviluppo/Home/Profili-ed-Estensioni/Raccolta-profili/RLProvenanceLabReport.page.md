@@ -1,6 +1,6 @@
-# RLProvenanceLabReport
+# RLProvenanceDocumentoCDA2
 
-- [RLProvenanceLabReport](#RLProvenanceLabReport)
+- [RLProvenanceDocumentoCDA2](#RLProvenanceDocumentoCDA2)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLProvenanceLabReport è stato strutturato a partire dalla risorsa generica FHIR [Provenance](http://hl7.org/fhir/R4/provenance.html) per contenere la descrizione delle informazioni della provenienza delle osservazioni richieste dai referti di laboratorio per il caso d'uso regionale.
+Il profilo RLProvenanceDocumentoCDA2 è stato strutturato a partire dalla risorsa generica FHIR [Provenance](http://hl7.org/fhir/R4/provenance.html) per contenere la descrizione delle informazioni della provenienza delle risorse FHIR richieste per il caso d'uso regionale.
 
 <br>
 <div class="tab">
@@ -73,7 +73,7 @@ Attualmente non sono definiti Search Parameters oltre quelli previsti dallo stan
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLProvenanceLabReport:
+Nella seguente tabella sono elencati i value set relativi al profilo RLProvenanceDocumentoCDA2:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
