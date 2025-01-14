@@ -115,7 +115,7 @@
         <tr>
           <td>Core</td>
           <td>
-            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md?version=current}}>
+            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md?version=current>
             RLPatientCore
             </a>
           </td>
