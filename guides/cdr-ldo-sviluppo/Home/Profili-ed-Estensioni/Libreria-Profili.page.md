@@ -100,7 +100,7 @@
         <tr>
           <td>LDO</td>
           <td>
-            {{link:pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLDO.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLDO.page.md}}
           </td>
           <td>
             <a href="https://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -115,7 +115,9 @@
         <tr>
           <td>Core</td>
           <td>
-            {{link:https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md?version=current}}
+            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md?version=current}}>
+            RLPatientCore
+            </a>
           </td>
           <td>
             <a href="https://hl7.org/fhir/R4/patient.html">Patient</a>
