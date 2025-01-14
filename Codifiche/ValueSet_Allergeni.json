@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-LDO-Allergeni",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni",
+  "version": "1.0.0",
+  "name": "LDO Allergie",
+  "status": "active",
+  "date": "2025-01-14",
+  "description": "ValueSet relativo alla lista degli allergeni.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
+        "version": "1.0.0"
+      },
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC",
+        "version": "1.0.0"
+      },
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-AllergieNonFarmaci",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO",
+  "name": "RLAllergyIntoleranceLDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.clinicalStatus",
+        "path": "AllergyIntolerance.clinicalStatus",
+        "definition": "Stato clinico dell'allergia:\r\n- active: la reazione avversa descritta dalla risorsa è considerata ancora attiva\r\n- inactive: la reazione avversa descritta dalla risorsa è considerata non attiva\r\n- resolved: la reazione avversa descritta dalla risorsa è considerata curata"
+      },
+      {
+        "id": "AllergyIntolerance.type",
+        "path": "AllergyIntolerance.type",
+        "definition": "Definisce se la risorsa rappresenta un'allergia o un'intolleranza."
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+        "definition": "Categoria dell'allergia"
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "definition": "Criticità associata all'allergia"
+      },
+      {
+        "id": "AllergyIntolerance.code",
+        "path": "AllergyIntolerance.code",
+        "short": "Sostanza specifica responsabile della reazione",
+        "definition": "Il valore dell'elemento code può essere definito mediante i seguenti sistemi di codifica:\r\n- per le somministrazioni farmaceutiche - può essere selezionato dai sistemi di codifica WHO ATC o AIC. \r\n\r\nPer le allergie non a farmaci, potrebbe essere selezionato dal value set AllergieNonFarmaci\r\n\r\nSe l’agente che ha causato la reazione allergica non è noto, allora deve essere valorizzato con \"allergene non presente\"",
+        "binding": {
+          "strength": "preferred",
+          "description": "Lista dei valueset per descrivere un allergene",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.coding",
+        "path": "AllergyIntolerance.code.coding",
+        "short": "Descrizione codificata dell'allergene",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni"
+      },
+      {
+        "id": "AllergyIntolerance.code.text",
+        "path": "AllergyIntolerance.code.text",
+        "short": "Descrizione non codificata dell'allergene"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.onset[x]",
+        "path": "AllergyIntolerance.onset[x]",
+        "short": "Intervallo in cui è attiva l'allergia/intolleranza.",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.onset[x].start",
+        "path": "AllergyIntolerance.onset[x].start",
+        "short": "Data inizio allergia/intolleranza"
+      },
+      {
+        "id": "AllergyIntolerance.onset[x].end",
+        "path": "AllergyIntolerance.onset[x].end",
+        "short": "Data fine allergia/intolleranza"
+      },
+      {
+        "id": "AllergyIntolerance.recordedDate",
+        "path": "AllergyIntolerance.recordedDate",
+        "short": "Prima valutazione della reazione avversa"
+      },
+      {
+        "id": "AllergyIntolerance.lastOccurrence",
+        "path": "AllergyIntolerance.lastOccurrence",
+        "short": "Ultima occorrenza della reazione"
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "short": "Annotazioni sulla reazione"
+      },
+      {
+        "id": "AllergyIntolerance.reaction",
+        "path": "AllergyIntolerance.reaction",
+        "short": "Reazione manifestata e sostanza scatenante la reazione"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance",
+        "path": "AllergyIntolerance.reaction.substance",
+        "short": "Sostanza specifica responsabile della reazione."
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation",
+        "path": "AllergyIntolerance.reaction.manifestation",
+        "short": "Manifestazioni della reazione.",
+        "definition": "Qualora non sia definita, indicare nel campo manifestation.text \"manifestazione non presente\""
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding",
+        "path": "AllergyIntolerance.reaction.manifestation.coding",
+        "short": "Manifestazione codificata della reazione."
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.text",
+        "path": "AllergyIntolerance.reaction.manifestation.text",
+        "short": "Manifestazione testuale della reazione.",
+        "definition": "Qualora non sia definita, indicare nel campo manifestation.text \"manifestazione non presente\""
+      },
+      {
+        "id": "AllergyIntolerance.reaction.onset",
+        "path": "AllergyIntolerance.reaction.onset",
+        "short": "Data di inizio reazione"
+      }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-# RLAllergyIntoleranceLDO
+# RLLocationLabReport
 
 - [RLAllergyIntoleranceLDO](#RLAllergyIntoleranceLDO)
   - [Descrizione](#descrizione)

@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://example.org/fhir/StructureDefinition/MyObservation",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLDO",
   "name": "RLObservationLDO",
   "status": "draft",
   "fhirVersion": "4.0.1",
