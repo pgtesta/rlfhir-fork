@@ -35,7 +35,7 @@
         "id": "AllergyIntolerance.code",
         "path": "AllergyIntolerance.code",
         "short": "Sostanza specifica responsabile della reazione",
-        "definition": "Il valore dell'elemento code può essere definito mediante i seguenti sistemi di codifica:\r\n- per le somministrazioni farmaceutiche - può essere selezionato dai sistemi di codifica WHO ATC o AIC. \r\n\r\nPer le allergie non a farmaci, potrebbe essere selezionato dal value set AllergieNonFarmaci\r\n\r\nSe l’agente che ha causato la reazione allergica non è noto, allora deve essere valorizzato con \"allergene non presente\"",
+        "definition": "Il valore dell'elemento code può essere definito mediante i seguenti sistemi di codifica:\r\n- per le somministrazioni farmaceutiche - può essere selezionato dai sistemi di codifica WHO ATC o AIC. \r\n\r\n- Per le allergie non a farmaci, potrebbe essere selezionato dal value set AllergieNonFarmaci\r\n\r\n- Se l’agente che ha causato la reazione allergica non è noto, allora deve essere valorizzato il campo code.text con \"allergene non presente\"",
         "binding": {
           "strength": "preferred",
           "description": "Lista dei valueset per descrivere un allergene",
@@ -117,7 +117,11 @@
       {
         "id": "AllergyIntolerance.reaction.substance",
         "path": "AllergyIntolerance.reaction.substance",
-        "short": "Sostanza specifica responsabile della reazione."
+        "short": "Sostanza specifica responsabile della reazione.",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni"
+        }
       },
       {
         "id": "AllergyIntolerance.reaction.manifestation",
