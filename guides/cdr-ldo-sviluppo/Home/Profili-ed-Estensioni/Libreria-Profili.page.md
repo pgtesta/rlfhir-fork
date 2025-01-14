@@ -98,18 +98,33 @@
           </td>
         </tr>
         <tr>
+          <td>LDO</td>
+          <td>
+            {{link:pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLDO.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che è utilizzato per la descrizione delle rilevazioni cliniche.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLDO}}
+          </td>
+        </tr>
+        <tr>
           <td>Core</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md}}
+            {{link:https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md?version=current}}
           </td>
           <td>
             <a href="https://hl7.org/fhir/R4/patient.html">Patient</a>
           </td>
           <td>
-             Informazioni sul paziente.
+             Informazioni sul paziente secondo il profilo Core di RL.
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}
           </td>
         </tr>
       </tbody>

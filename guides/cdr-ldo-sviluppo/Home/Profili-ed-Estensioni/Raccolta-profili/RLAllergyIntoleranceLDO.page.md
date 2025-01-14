@@ -67,6 +67,7 @@ TBD
 Nella seguente tabella sono elencati i parametri di ricerca utilizzabili per il profilo AllergyIntoleranceLDO.
 
 Allergie attive:
+
 | SCOPE | Recupero, se presenti, delle informazioni sulle allergie o intolleranze attive di un paziente    |
 |---|---|
 | VERB | GET |
@@ -75,6 +76,7 @@ Allergie attive:
 
 
 Allergia per categoria:
+
 | SCOPE | Recupero, se presenti, delle allergie ai farmaci di un paziente    |
 |---|---|
 | VERB | GET |
