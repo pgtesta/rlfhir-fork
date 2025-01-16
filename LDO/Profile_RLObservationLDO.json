@@ -43,10 +43,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Device",
-              "http://hl7.org/fhir/StructureDefinition/Location",
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCor"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
             ]
           }
         ]
@@ -58,8 +55,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Encounter",
-              "http://hl7.it/fhir/lab-report/StructureDefinition/encounter-it-lab"
+              "http://hl7.org/fhir/StructureDefinition/Encounter"
             ]
           }
         ]
@@ -76,7 +72,7 @@
         "binding": {
           "strength": "example",
           "description": "Descrizione diagnosi",
-          "valueSet": "https://terminology.hl7.org/5.5.0/CodeSystem-icd9.html"
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/who-icd9cm"
         }
       },
       {

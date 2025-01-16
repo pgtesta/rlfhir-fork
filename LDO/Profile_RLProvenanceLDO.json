@@ -119,6 +119,8 @@
         "id": "Provenance.agent:autore",
         "path": "Provenance.agent",
         "sliceName": "autore",
+        "short": "Autore del documento",
+        "definition": "Autore dei dati riportati nelle risorse referenziate dall'attributo target. Rappresenta l'autore del documento CDA2.",
         "min": 1
       },
       {
