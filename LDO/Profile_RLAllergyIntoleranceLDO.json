@@ -19,17 +19,18 @@
       {
         "id": "AllergyIntolerance.type",
         "path": "AllergyIntolerance.type",
+        "short": "allergy | intolerance - Tipo di reazione",
         "definition": "Definisce se la risorsa rappresenta un'allergia o un'intolleranza."
       },
       {
         "id": "AllergyIntolerance.category",
         "path": "AllergyIntolerance.category",
-        "definition": "Categoria dell'allergia"
+        "definition": "Categoria della reazione avversa"
       },
       {
         "id": "AllergyIntolerance.criticality",
         "path": "AllergyIntolerance.criticality",
-        "definition": "Criticità associata all'allergia"
+        "definition": "Criticità associata alla reazione avversa"
       },
       {
         "id": "AllergyIntolerance.code",
@@ -68,7 +69,6 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
             ]
           }
@@ -107,7 +107,27 @@
       {
         "id": "AllergyIntolerance.note",
         "path": "AllergyIntolerance.note",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
         "short": "Annotazioni sulla reazione"
+      },
+      {
+        "id": "AllergyIntolerance.note:SezioneStrutturata",
+        "path": "AllergyIntolerance.note",
+        "sliceName": "SezioneStrutturata"
+      },
+      {
+        "id": "AllergyIntolerance.note:SezioneNONStrutturata",
+        "path": "AllergyIntolerance.note",
+        "sliceName": "SezioneNONStrutturata",
+        "min": 1
       },
       {
         "id": "AllergyIntolerance.reaction",

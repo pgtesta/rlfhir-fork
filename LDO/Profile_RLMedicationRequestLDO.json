@@ -19,12 +19,31 @@
       {
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
-        "short": "Farmaco da assumere"
+        "short": "Farmaco da assumere",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO"
+            ]
+          }
+        ]
       },
       {
         "id": "MedicationRequest.subject",
         "path": "MedicationRequest.subject",
-        "short": "Riferimento al paziente"
+        "short": "Riferimento al paziente",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
       },
       {
         "id": "MedicationRequest.authoredOn",
@@ -36,17 +55,84 @@
         "id": "MedicationRequest.requester",
         "path": "MedicationRequest.requester",
         "short": "Riferimento al medico prescrittore",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.requester.display",
+        "path": "MedicationRequest.requester.display",
+        "short": "Associazione testuale",
+        "definition": "In caso di assenza del dato di chi ha richiesto la prescrizione farmaceutica, è possibile indicare in questo campo \"richiedente non specificato\""
+      },
+      {
+        "id": "MedicationRequest.note",
+        "path": "MedicationRequest.note",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Descrizione testuale terapia farmacologica"
+      },
+      {
+        "id": "MedicationRequest.note:SezioneStrutturata",
+        "path": "MedicationRequest.note",
+        "sliceName": "SezioneStrutturata"
+      },
+      {
+        "id": "MedicationRequest.note:SezioneNonStrutturata",
+        "path": "MedicationRequest.note",
+        "sliceName": "SezioneNonStrutturata",
         "min": 1
       },
       {
-        "id": "MedicationRequest.note.text",
-        "path": "MedicationRequest.note.text",
-        "short": "Descrizione testuale terapia farmacologica"
+        "id": "MedicationRequest.dosageInstruction",
+        "path": "MedicationRequest.dosageInstruction",
+        "short": "Istruzioni per la somministrazione"
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing",
         "path": "MedicationRequest.dosageInstruction.timing",
         "short": "Informazione associata all’assunzione di un farmaco (e.g due volte al giorno, prima dei pasti, etc)."
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat",
+        "short": "Ogni quanto tempo deve essere somministrato"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "short": "Intervallo di tempo in cui è in atto la terapia",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].start",
+        "short": "Data di inizio terapia"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].end",
+        "short": "Data di fine terapia"
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
@@ -85,6 +171,11 @@
         "short": "Descrizione non codificata della modalità di assunzione/somministrazione"
       },
       {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate",
+        "short": "Quantità e frequenza"
+      },
+      {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "short": "Dose del farmaco che deve essere somministrata"
@@ -99,8 +190,7 @@
         "id": "MedicationRequest.dispenseRequest.quantity",
         "path": "MedicationRequest.dispenseRequest.quantity",
         "short": "Numero di confezioni",
-        "definition": "Numero di confezioni",
-        "min": 1
+        "definition": "Numero di confezioni"
       }
     ]
   }
