@@ -197,6 +197,21 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore}}
           </td>
         </tr>
+        <tr>
+          <td>LDO</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProvenanceLDO.page.md}}
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/provenance.html">Provenance</a>
+          </td>
+          <td>
+            Profilo che è utilizzato per la descrizione della fonte (Documento CDA2) da cui sono stati estratti i dati.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProvenanceLDO}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>

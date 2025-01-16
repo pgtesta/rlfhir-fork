@@ -1,0 +1,208 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProvenanceLDO",
+  "name": "RLProvenanceLDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance.target",
+        "path": "Provenance.target",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLDO",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO",
+              "https://hl7.org/fhir/StructureDefinition/Encounter",
+              "https://hl7.org/fhir/StructureDefinition/ServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.recorded",
+        "path": "Provenance.recorded",
+        "short": "\"Data di creazione del documento CDA2 da cui sono estratte le informazioni."
+      },
+      {
+        "id": "Provenance.agent",
+        "path": "Provenance.agent",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Provenance.agent:firmatario",
+        "path": "Provenance.agent",
+        "sliceName": "firmatario",
+        "short": "Firmatario del documento",
+        "definition": "Medico responsabile dei dati riportati nelle risorse referenziate dall'attributo target. Rappresenta il firmatario del documento CDA2.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Provenance.agent:firmatario.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "legal",
+              "display": "Legal Authenticator"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.agent:firmatario.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile",
+        "path": "Provenance.agent",
+        "sliceName": "aziendaResponsabile",
+        "short": "Custodian del documento",
+        "definition": "Azienda sanitaria che si occupa della conservazione del documento. Rappresenta il custodian del documento CDA2.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "custodian",
+              "display": "Custodian"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.agent:aziendaResponsabile.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent:autore",
+        "path": "Provenance.agent",
+        "sliceName": "autore",
+        "min": 1
+      },
+      {
+        "id": "Provenance.agent:autore.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.agent:operatorePartecipante",
+        "path": "Provenance.agent",
+        "sliceName": "operatorePartecipante",
+        "short": "Partecipante all'atto descritto nel documento",
+        "definition": "Operatore che ha partecipato all’evento di cura in cui sono state prodotte le risorse referenziate dall'attributo target."
+      },
+      {
+        "id": "Provenance.agent:operatorePartecipante.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/participation-role-type",
+              "code": "COPART",
+              "display": "co-participant"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Provenance.agent:operatorePartecipante.type.coding",
+        "path": "Provenance.agent.type.coding",
+        "fixedCoding": {
+          "system": "http://hl7.org/fhir/ValueSet/participation-role-type",
+          "code": "COPART"
+        }
+      },
+      {
+        "id": "Provenance.agent:operatorePartecipante.type.coding.system",
+        "path": "Provenance.agent.type.coding.system",
+        "fixedUri": "http://hl7.org/fhir/ValueSet/participation-role-type"
+      },
+      {
+        "id": "Provenance.agent:operatorePartecipante.type.coding.code",
+        "path": "Provenance.agent.type.coding.code",
+        "fixedCode": "COPART"
+      },
+      {
+        "id": "Provenance.agent:operatorePartecipante.who",
+        "path": "Provenance.agent.who",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.entity",
+        "path": "Provenance.entity",
+        "short": "Documento di provenienza dell'informazione in target",
+        "definition": "Per indicare il documento di provenienza è possibile indicare l'identificativo univoco del documento da cui è stata estratta l'informazione."
+      },
+      {
+        "id": "Provenance.entity.role",
+        "path": "Provenance.entity.role",
+        "short": "Indicazione che nel campo si sta descrivendo la fonte dell'informazione referneziata in target.",
+        "fixedCode": "source"
+      },
+      {
+        "id": "Provenance.entity.what.identifier",
+        "path": "Provenance.entity.what.identifier",
+        "short": "Identificativo univoco del documento",
+        "min": 1
+      }
+    ]
+  }
+}
