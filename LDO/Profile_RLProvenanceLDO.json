@@ -122,6 +122,19 @@
         "min": 1
       },
       {
+        "id": "Provenance.agent:autore.type",
+        "path": "Provenance.agent.type",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/participation-role-type",
+              "code": "author",
+              "display": "Author"
+            }
+          ]
+        }
+      },
+      {
         "id": "Provenance.agent:autore.who",
         "path": "Provenance.agent.who",
         "type": [
