@@ -76,7 +76,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.it/fhir/lab-report/StructureDefinition/practitionerrole-it-lab"
+              
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
             ]
           }
         ]
@@ -110,7 +112,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.it/fhir/lab-report/StructureDefinition/organization-it-lab"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
             ]
           }
         ]
