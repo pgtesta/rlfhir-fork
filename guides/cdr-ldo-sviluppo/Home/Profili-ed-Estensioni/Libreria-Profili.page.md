@@ -53,21 +53,6 @@
           </td>
         </tr>
         <tr>
-          <td>LDO</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterLDO.page.md}}
-          </td>
-          <td>
-            <a href="https://hl7.org/fhir/r4/encounter.html">Encounter</a>
-          </td>
-          <td>
-            Risorsa contentente informazioni sul ricovero del paziente. 
-          </td>
-          <td>
-            {{link:http://hl7.it/fhir/lab-report/StructureDefinition/encounter-it-lab}}
-          </td>
-        </tr>
-        <tr>
           <td>CORE</td>
           <td>
             <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationCore.page.md?version=current>
