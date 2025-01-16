@@ -68,6 +68,23 @@
           </td>
         </tr>
         <tr>
+          <td>CORE</td>
+          <td>
+            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationCore.page.md?version=current>
+            RLLocationCore
+            </a>
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/location.html">Location</a>
+          </td>
+          <td>
+             Profilo che descrive un'azienda.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}
+          </td>
+        </tr>
+        <tr>
           <td>LDO</td>
           <td>
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationLDO.page.md}}
@@ -113,7 +130,24 @@
           </td>
         </tr>
         <tr>
-          <td>Core</td>
+          <td>CORE</td>
+          <td>
+            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationCore.page.md?version=current>
+            RLOrganizationCore
+            </a>
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+             Profilo che descrive un'azienda.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
           <td>
             <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCore.page.md?version=current>
             RLPatientCore
@@ -123,10 +157,44 @@
             <a href="https://hl7.org/fhir/R4/patient.html">Patient</a>
           </td>
           <td>
-             Informazioni sul paziente secondo il profilo Core di RL.
+             Profilo che descrive un paziente.
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td>
+            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerCore.page.md?version=current>
+            RLPractitionerCore
+            </a>
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+          </td>
+          <td>
+             Profilo che descrive un operatore sanitario.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td>
+            <a href=https://simplifier.net/guide/ig-core/Home/Profili-ed-Estensioni/Raccolta-profili/RLPractitionerRoleCore.page.md?version=current>
+            RLPractitionerRoleCore
+            </a>
+          </td>
+          <td>
+            <a href="https://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+          </td>
+          <td>
+             Profilo che descrive il ruolo associato ad un operatore sanitario e la struttura a cui afferisce.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore}}
           </td>
         </tr>
       </tbody>
