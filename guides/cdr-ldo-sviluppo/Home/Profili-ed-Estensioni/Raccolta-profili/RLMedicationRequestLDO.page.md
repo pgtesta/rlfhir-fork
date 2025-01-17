@@ -77,6 +77,17 @@ I parametri di ricerca possono essere utilizzati in modo congiunto per poter fil
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
+N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current 
+
+I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
+
+| Nome | Descrizione | Url di esempio | Link Simplifier |
+
+| medication | Parametro di ricerca per recuperare le richieste di un farmaco associate ad un paziente | /MedicationRequest?<br>medication={_codice farmaco_}&subject.identifier=\{_identificativo paziente_\}<br>&_include=_include=MedicationRequest:subject |  |
+
+| | |  |  |
+
+
 
 Attualmente non sono definiti Search Parameters.
 
