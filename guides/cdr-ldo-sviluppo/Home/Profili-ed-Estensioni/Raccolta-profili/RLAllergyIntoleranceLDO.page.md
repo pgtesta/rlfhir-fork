@@ -24,11 +24,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
   <button class="tablinks" onclick="openTab(event, 'Esempi')">Esempi applicati al profilo</button>
 </div>
 
-<div id="Snapshot View" class="tabcontent">
-  <h3>Snapshot View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
-
+<div id="Hybrid View" class="tabcontent"  style="display:block">
+  <h3>Hybrid View</h3>
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, hybrid}}
 </div>
 
 <div id="Differential View" class="tabcontent">
@@ -36,37 +34,24 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, diff}}
 </div>
 
-<div id="Hybrid View" class="tabcontent"  style="display:block">
-  <h3>Hybrid View</h3>
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, hybrid}}
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, hybrid}}
-</div>
-
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
-
 {{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
-
 {{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
-
 {{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-{{link:Location/esempio-Location-PLO-Edificio}}
+
 <br>
 </div>
 
