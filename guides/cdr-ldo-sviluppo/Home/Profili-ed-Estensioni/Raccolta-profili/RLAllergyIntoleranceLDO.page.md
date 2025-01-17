@@ -26,7 +26,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
