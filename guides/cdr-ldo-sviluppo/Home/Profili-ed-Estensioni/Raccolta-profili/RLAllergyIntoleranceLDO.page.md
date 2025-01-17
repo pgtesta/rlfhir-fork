@@ -126,7 +126,6 @@ Ricerca nel tempo:
 | URL | /AllergyIntolerance?<br>last-date=\{_data di fine ricerca_\}<br><br>&subject.identifier=\{_identificativo paziente_\}<br>    |
 
 I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
