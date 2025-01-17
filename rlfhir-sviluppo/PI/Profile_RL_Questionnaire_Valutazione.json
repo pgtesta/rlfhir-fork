@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLQuestionnaireValutazione",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione",
+  "name": "RLQuestionnaireValutazione",
+  "status": "active",
+  "description": "Profilo volto a descrivere la tipologia della valutazione al quale il paziente è stato sottoposto.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Questionnaire",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Questionnaire",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Questionnaire.id",
+        "path": "Questionnaire.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta",
+        "path": "Questionnaire.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta.versionId",
+        "path": "Questionnaire.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta.lastUpdated",
+        "path": "Questionnaire.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.meta.profile",
+        "path": "Questionnaire.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireValutazione"
+      },
+      {
+        "id": "Questionnaire.title",
+        "path": "Questionnaire.title",
+        "short": "Nome della valutazione",
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Le valutazioni previste attualmente sono: \r\n- Scheda Triage \r\n- Scheda semplificata SIAD\r\n- InterRAI HomeCare",
+        "min": 1
+      },
+      {
+        "id": "Questionnaire.status",
+        "path": "Questionnaire.status",
+        "short": "Stato del nome della valutazione",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      }
+    ]
+  }
+}

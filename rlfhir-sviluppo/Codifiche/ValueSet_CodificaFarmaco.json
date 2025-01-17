@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-DDC-Farmaco",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-Farmaco",
+  "version": "1.0.0",
+  "name": "DDC Farmaco",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet che identifica l'anagrafica dei farmaci secondo la codifica ministeriale",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-Farmaco",
+        "version": "1.0.0"
+      }
+    ]
+  }
+}

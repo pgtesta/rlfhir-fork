@@ -1,0 +1,67 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcome",
+  "name": "RLOperationOutcome",
+  "id": "RLOperationOutcome",
+  "status": "active",
+  "description": "Profilo volto a restituire il dettaglio del controllo di coerenza non superato.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "OperationOutcome",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "OperationOutcome.issue",
+        "path": "OperationOutcome.issue",
+        "short": "Esito elaborazione richiesta"
+      },
+      {
+        "id": "OperationOutcome.issue.severity",
+        "path": "OperationOutcome.issue.severity",
+        "short": "Ricerca non andata a buon fine",
+        "definition": "Valore fisso a \"error\"",
+        "fixedCode": "error"
+      },
+      {
+        "id": "OperationOutcome.issue.code",
+        "path": "OperationOutcome.issue.code",
+        "short": "Tipologia di errore"
+      },
+      {
+        "id": "OperationOutcome.issue.details",
+        "path": "OperationOutcome.issue.details",
+        "short": "Dettaglio errore"
+      },
+      {
+        "id": "OperationOutcome.issue.details.coding.code",
+        "path": "OperationOutcome.issue.details.coding.code",
+        "short": "Codice dell'errore",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo agli errori ottenuti in risposta all'interrogazione di API FHIR",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore"
+        }
+      },
+      {
+        "id": "OperationOutcome.issue.details.coding.display",
+        "path": "OperationOutcome.issue.details.coding.display",
+        "short": "Descrizione dell'errore"
+      },
+      {
+        "id": "OperationOutcome.issue.diagnostics",
+        "path": "OperationOutcome.issue.diagnostics",
+        "short": "Informazioni aggiuntive",
+        "definition": "Contiene informazioni aggiuntive e non strutturate sull'errore"
+      }
+    ]
+  }
+}

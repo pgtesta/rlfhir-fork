@@ -1,0 +1,11 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-DDC-DistrettoSanitario",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DistrettoSanitario",
+  "version": "1.0.0",
+  "name": "DDC - Distretto Sanitario",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica del distretto sanitario",
+  "content": "complete"
+}

@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationDataFineValidita",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:16:45.3174276+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+  "name": "RLOrganizationDataFineValidita",
+  "description": "Data di fine della validità di esercizio dell'ente",
+  "status": "active",
+  "experimental": false,
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "comment": "A stream of bytes, base64 encoded\r\nFonte: DT_FINE_VALIDITA",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

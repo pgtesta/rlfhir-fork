@@ -1,0 +1,147 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/StructureDefinition/RLAllergyIntoleranceLDO",
+  "name": "RLAllergyIntoleranceLDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.id",
+        "path": "AllergyIntolerance.id",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.meta",
+        "path": "AllergyIntolerance.meta"
+      },
+      {
+        "id": "AllergyIntolerance.meta.profile",
+        "path": "AllergyIntolerance.meta.profile",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus",
+        "path": "AllergyIntolerance.clinicalStatus",
+        "short": "Stato clinico dell'allergia",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.type",
+        "path": "AllergyIntolerance.type",
+        "short": "Tipo di reazione"
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+        "short": "Categoria dell'allergia"
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "short": "Criticità dell'allergia"
+      },
+      {
+        "id": "AllergyIntolerance.code",
+        "path": "AllergyIntolerance.code",
+        "short": "Sostanza specifica responsabile della reazione",
+        "definition": "Il valore dell'elemento code può essere definito mediante i seguenti sistemi di codifica:\r\n\r\nperle somministrazioni farmaceutiche - può essere selezionato dai sistemi di codifica WHO ATC (2.16.840.1.113883.6.73) o AIC (2.16.840.1.113883.2.9.6.1.5).\r\n\r\nPer le allergie non a farmaci, potrebbe essere selezionato dal value set AllergenNoDrugs_PSSIT DYNAMIC\r\n\r\nSe l’agente che ha causato la reazione allergica non è noto, allora deve essere valorizzato con @nullFlavor valorizzato con “UNK”.",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.code.coding",
+        "path": "AllergyIntolerance.code.coding",
+        "short": "Descrizione codificata dell'allergene"
+      },
+      {
+        "id": "AllergyIntolerance.code.text",
+        "path": "AllergyIntolerance.code.text",
+        "short": "Descrizione non codificata dell'allergene"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "Riferimento al paziente"
+      },
+      {
+        "id": "AllergyIntolerance.encounter",
+        "path": "AllergyIntolerance.encounter",
+        "short": "Riferimento all'incontro associato all'allergia",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.onset[x]",
+        "path": "AllergyIntolerance.onset[x]",
+        "short": "Intervallo in cui è attiva l'allergia/intolleranza",
+        "definition": "",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.onset[x].start",
+        "path": "AllergyIntolerance.onset[x].start",
+        "short": "Data inizio allergia/intolleranza",
+        "definition": "",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.onset[x].end",
+        "path": "AllergyIntolerance.onset[x].end",
+        "short": "Data fine allergia/intolleranza",
+        "definition": ""
+      },
+      {
+        "id": "AllergyIntolerance.lastOccurrence",
+        "path": "AllergyIntolerance.lastOccurrence",
+        "short": "Ultima occorrenza della reazione",
+        "definition": ""
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "short": "Annotazioni sull'allergia",
+        "definition": "Annotazioni sull'allergia"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance",
+        "path": "AllergyIntolerance.reaction.substance",
+        "short": "Sostanza specifica responsabile della reazione",
+        "definition": ""
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation",
+        "path": "AllergyIntolerance.reaction.manifestation",
+        "short": "Manifestazioni della reazione",
+        "definition": "Manifestazioni della reazione"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding",
+        "path": "AllergyIntolerance.reaction.manifestation.coding",
+        "short": "Manifestazione codificata della reazione",
+        "definition": "Manifestazione codificata della reazione"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.text",
+        "path": "AllergyIntolerance.reaction.manifestation.text",
+        "short": "Manifestazione testuale della reazione"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.onset",
+        "path": "AllergyIntolerance.reaction.onset",
+        "short": "Momento di insorgenza della reazione",
+        "definition": "Momento di insorgenza della reazione",
+        "min": 1
+      }
+    ]
+  }
+}

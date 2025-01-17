@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SIAD-SituazionePensionistica",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-SituazionePensionistica",
+  "version": "1.0.0",
+  "name": "SIAD Situazione Pensionistica",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica della situazione pensionistica",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Nessuna pensione"
+    },
+    {
+      "code": "1",
+      "display": "Anzianità/vecchiaia"
+    },
+    {
+      "code": "2",
+      "display": "Sociale"
+    },
+    {
+      "code": "3",
+      "display": "Tipologia speciale (guerra, Infortunio sul lavoro, ecc.)"
+    },
+    {
+      "code": "4",
+      "display": "Reversibilità"
+    },
+    {
+      "code": "5",
+      "display": "Invalidità"
+    },
+    {
+      "code": "6",
+      "display": "2 o più tipologie di pensione"
+    },
+    {
+      "code": "9",
+      "display": "Altro"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "resourceType": "CarePlan",
+  "id": "esempio-CarePlan-Progetto-Individuale",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
+      "value": "PI-2023000000001"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "subject": {
+    "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "encounter": {
+    "reference": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
+    "display": "Accesso"
+  },
+  "period": {
+    "start": "2023-01-15T08:32:56+01:00"
+  },
+  "created": "2023-01-11T08:32:56+01:00",
+  "author": {
+    "reference": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
+    "display": "ASST DELLA BRIANZA"
+  },
+  "contributor": [
+    {
+      "reference": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
+      "display": "Infermiere"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
+      "display": "Patologia Primaria"
+    },
+    {
+      "reference": "Condition/e028bc4c-b134-11ed-afa1-0242ac120002",
+      "display": "Patologia Secondara"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "reference": "Observation/bnm18194-974f-11ed-a8fc-0242ac120002",
+      "display": "Esito Valutazione"
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
+      "display": "Obiettivi Salute"
+    }
+  ],
+  "activity": [
+    {
+      "reference": {
+        "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+        "display": "Terapia farmacologica"
+      }
+    },
+    {
+      "reference": {
+        "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002",
+        "display": "Servizi Socio Assistenziali"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Monitorare il soddisfacimento dell'obiettivo di salute almeno una volta al mese"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+      "valueUnsignedInt": 1
+    }
+  ]
+}

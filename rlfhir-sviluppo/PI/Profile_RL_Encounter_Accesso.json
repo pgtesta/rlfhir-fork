@@ -1,0 +1,211 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLEncounterAccesso",
+  "meta": {
+    "lastUpdated": "2023-10-17T08:20:07.8006803+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso",
+  "name": "RLEncounterAccesso",
+  "status": "active",
+  "description": "Profilo volto a descrivere i dettagli dell’accesso del cittadino alla struttura di prossimità.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.id",
+        "path": "Encounter.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta",
+        "path": "Encounter.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.versionId",
+        "path": "Encounter.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.lastUpdated",
+        "path": "Encounter.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Encounter.meta.profile",
+        "path": "Encounter.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "short": "Codice identificativo univoco dell'accesso",
+        "max": "1"
+      },
+      {
+        "id": "Encounter.identifier.system",
+        "path": "Encounter.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoAccesso"
+      },
+      {
+        "id": "Encounter.identifier.value",
+        "path": "Encounter.identifier.value",
+        "short": "Codice identificativo univoco dell'accesso",
+        "definition": "Stringa alfanumerica",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "short": "Stato dell'accesso",
+        "definition": "Valori fisso su \"in-progress\"",
+        "comment": "Il dato è detenuto dal SGDT",
+        "fixedCode": "in-progress"
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "short": "Tipologia di accesso",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di accesso ad una struttura di prossimità contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "Encounter.class.system",
+        "path": "Encounter.class.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso"
+      },
+      {
+        "id": "Encounter.class.code",
+        "path": "Encounter.class.code",
+        "short": "Codice della tipologia di accesso",
+        "definition": "Stringa alfanumerica di 5 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di accesso",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso"
+        }
+      },
+      {
+        "id": "Encounter.class.display",
+        "path": "Encounter.class.display",
+        "short": "Descrizione della tipologia di accesso",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "short": "Paziente che ha effettuato l'accesso alla struttura di prossimità",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "short": "Periodo temporale nel quale è stata svolta la procedura d'accesso",
+        "min": 1
+      },
+      {
+        "id": "Encounter.period.start",
+        "path": "Encounter.period.start",
+        "short": "Data ed ora dell'accesso",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "short": "Motivo della segnalazione",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del motivo della segnalazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "Encounter.reasonCode.coding",
+        "path": "Encounter.reasonCode.coding",
+        "short": "Codifica della segnalazione",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.system",
+        "path": "Encounter.reasonCode.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione"
+      },
+      {
+        "id": "Encounter.reasonCode.coding.code",
+        "path": "Encounter.reasonCode.coding.code",
+        "short": "Codice del motivo della segnalazione",
+        "definition": "Codice numerico di 2 cifre",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo al motivo della segnalazione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione"
+        }
+      },
+      {
+        "id": "Encounter.reasonCode.coding.display",
+        "path": "Encounter.reasonCode.coding.display",
+        "short": "Descrizione del motivo della segnalazione",
+        "definition": "Stringa alfanumerica al più di 200 caratteri",
+        "min": 1
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "short": "ASST nella quale è stato registrato l'accesso",
+        "definition": "Reference al profilo RLOrganizationL1. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,4200 @@
+{
+  "Timestamp": "2024-12-17T09:42:58.5880092+00:00",
+  "Files": {
+    "Examples\\Example_Practitioner_Core.json": {
+      "Length": 400,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "16B1E0EA821771B037D303C1D8584CDB"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto\\Clinical Data Repository.page.md": {
+      "Length": 2127,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "CAC9619A52C386FEB2BD7D0DA62FF502"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCompositionLabReport.page.md": {
+      "Length": 3966,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "F44E9E16EACD27C1747F80A930AB9207"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDeviceLabReport.page.md": {
+      "Length": 3257,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "7DCEF86B14EEA12A7E7695DC47BB2BC8"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterLabReport.page.md": {
+      "Length": 3761,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "6C3870EC9EFF5BA3583D20ECFDC5DC4E"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationLabReport.page.md": {
+      "Length": 3396,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "C390E0BFC0B4B0FFE778E48CA7AC19C1"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationLabReport.page.md": {
+      "Length": 4483,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "1DEEF3E9AFB0FB79DD3B71D1C189B380"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationLabReport.page.md": {
+      "Length": 3385,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "DBB171F37B2F68E7C823D5AAD5FBB8D8"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientLabReport.page.md": {
+      "Length": 3992,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "C7CA2E2A967B64DF206E58628F38F7C6"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerLabReport.page.md": {
+      "Length": 3154,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B65C1543D22CC5E7BB5E7E8D4EDD3F28"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLProvenanceLabReport.page.md": {
+      "Length": 3269,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "356579DD3D1C44A651668950A342462D"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLSpecimenLabReport.page.md": {
+      "Length": 3553,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "5D7FE1E1B49DA696F9403414AB39446B"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLSubstanceLabReport.page.md": {
+      "Length": 3561,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "3271CFC757BEE0056E9EDFA4851FD39A"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Utenti fruitori.page.md": {
+      "Length": 238,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "00DFE89223777C4ED6EF090DAA4990E9"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Paradigmi-di-comunicazione-e-API-RESTful.page.md": {
+      "Length": 12625,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "0A88FF3632CAB99720E0D62700B23D74"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLEncounterBundleSearchSet.page.md": {
+      "Length": 1607,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "C6DCDDEB5C841E268E7FC0588F42A924"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLNelTempoBundleSearchSet.page.md": {
+      "Length": 1718,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "FE5049917E390635FDADA3FBD092C8D0"
+    },
+    "Codifiche\\CodeSystem_CodificaASSTAfferenza.json": {
+      "Length": 350,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "072B7646EA601DF869CAE2D96B6682B4"
+    },
+    "Codifiche\\CodeSystem_CodificaATSAfferenza.json": {
+      "Length": 346,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "E0B87B4C2EE68D7038ADDA85484A0BE4"
+    },
+    "Codifiche\\CodeSystem_CodificaAusiliProtesica.json": {
+      "Length": 352,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "52BBB85980CA9E82D253F2CE162B45C3"
+    },
+    "Codifiche\\CodeSystem_DescL1.json": {
+      "Length": 2381,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "5E61597C5295631B2547DA6F93F09B38"
+    },
+    "Codifiche\\CodeSystem_DescL2.json": {
+      "Length": 6366,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "A2E14F33C93197833C3216815207B743"
+    },
+    "Codifiche\\CodeSystem_CodificaDistrettoSanitario.json": {
+      "Length": 374,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "C33F6C31184EE9A90412900558593CF8"
+    },
+    "Codifiche\\CodeSystem_CodificaFarmaco.json": {
+      "Length": 364,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "285AB0646295BA83F620C52BFEF5718D"
+    },
+    "Codifiche\\CodeSystem_CodificaFarmaco_AIC.json": {
+      "Length": 379,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "1B7C39DD4B1C37C193E32CD0D288C252"
+    },
+    "Codifiche\\CodeSystem_CodificaFarmaco_ATC.json": {
+      "Length": 379,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "956E98514847CC13D152F19C5690305A"
+    },
+    "Codifiche\\CodeSystem_CodificaFarmaco_GE.json": {
+      "Length": 375,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "B818D726B6A284F2A90F8D7D1B354371"
+    },
+    "Codifiche\\CodeSystem_PrestazioniSpecialisticheSISS.json": {
+      "Length": 361,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "7634362F9E58C1183F58A35423D9ADFC"
+    },
+    "Codifiche\\CodeSystem_QualificheMediciPrescrittori.json": {
+      "Length": 1258,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "DE1A9BDF70C33013AC3A00A6B26DBB1E"
+    },
+    "Codifiche\\CodeSystem_ErroriMessaggio.json": {
+      "Length": 7624,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "6F347F435AF19F9B2FCA92D788D5AB9E"
+    },
+    "Codifiche\\CodeSystem_LivelloGravitaCronica.json": {
+      "Length": 615,
+      "LastWriteTime": "2024-06-25T11:38:04+00:00",
+      "Hash": "B203E4CCD32E1D4BB266DC26C15C12F9"
+    },
+    "Codifiche\\CodeSystem_MotiviSospensione.json": {
+      "Length": 875,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "CF3030D7AF1BAA34A804D802BB13DF3C"
+    },
+    "Codifiche\\CodeSystem_Errori.json": {
+      "Length": 5872,
+      "LastWriteTime": "2024-06-19T10:27:06+00:00",
+      "Hash": "0B337E7560E835D85F66E09C4D418603"
+    },
+    "Codifiche\\CodeSystem_DettagliErrori.json": {
+      "Length": 1289,
+      "LastWriteTime": "2024-06-19T08:16:36+00:00",
+      "Hash": "B59635457FD2196F94503D4F7F377DF8"
+    },
+    "Codifiche\\CodeSystem_RegimeRicovero.json": {
+      "Length": 755,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "725C33C98F04A8EAB75CEFF1E5A8AAA9"
+    },
+    "Codifiche\\CodeSystem_MotivoSegnalazione.json": {
+      "Length": 1427,
+      "LastWriteTime": "2023-10-26T12:02:12+00:00",
+      "Hash": "AAA8C8F7872BE41B05F806F4266D77ED"
+    },
+    "Codifiche\\CodeSystem_AmbitoObiettiviSalute.json": {
+      "Length": 623,
+      "LastWriteTime": "2023-10-26T12:16:30+00:00",
+      "Hash": "5EAAE6569417E7897D5E778E8301253F"
+    },
+    "Codifiche\\CodeSystem_EsitoInterRai.json": {
+      "Length": 4550,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "4FD36C08B3D0027D9EEC2342500F7FB6"
+    },
+    "Codifiche\\CodeSystem_InterventiEducazionali.json": {
+      "Length": 1004,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "0556BA1A1AE3C783414E67D3E40A8352"
+    },
+    "Codifiche\\CodeSystem_ModalitaErogazioneIntEdu.json": {
+      "Length": 613,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "592578E47AE314635463AC3A3ED188C9"
+    },
+    "Codifiche\\CodeSystem_ObiettiviSalute.json": {
+      "Length": 855,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "878B48503FBBF150B172BCAA2F82DC7F"
+    },
+    "Codifiche\\CodeSystem_PatologieNonICD9CM.json": {
+      "Length": 5471,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "847703A84FF14488E197EF247CA927F2"
+    },
+    "Codifiche\\CodeSystem_PercorsiCureDomiciliari.json": {
+      "Length": 1835,
+      "LastWriteTime": "2023-10-26T12:02:12+00:00",
+      "Hash": "B75DE95BF6DB70E0D3299DFDC4249D10"
+    },
+    "Codifiche\\CodeSystem_PrestazioniInfermieristiche.json": {
+      "Length": 10985,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "1071C7433D6636E90C5867C8BB323CFE"
+    },
+    "Codifiche\\CodeSystem_ProblemaInfermieristico.json": {
+      "Length": 33860,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "79253507EA337B1B0A7533F14231E3C7"
+    },
+    "Codifiche\\CodeSystem_QualificaProfessionistaSanitario.json": {
+      "Length": 2012,
+      "LastWriteTime": "2023-11-13T14:58:52+00:00",
+      "Hash": "0DC0F3818E12250653009D12F9AFA28C"
+    },
+    "Codifiche\\CodeSystem_SettingAssistenziale.json": {
+      "Length": 474,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "FC5A0B6D5BC0397E30CFADBB48625B10"
+    },
+    "Codifiche\\CodeSystem_StiliVita.json": {
+      "Length": 599,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "35836984C384A77A7DD867864F6B5613"
+    },
+    "Codifiche\\CodeSystem_TipologiaAccesso.json": {
+      "Length": 517,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "C54D87BACEEED4D62A5DA647E84691E0"
+    },
+    "Codifiche\\CodeSystem_TipologiaEsenzioni.json": {
+      "Length": 627,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "9B2DC19CDA7340ED4F3A3F308337F335"
+    },
+    "Codifiche\\CodeSystem_TipologiaOssigeno.json": {
+      "Length": 603,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "B7371D69BF9FB5A8784E86D618B5835B"
+    },
+    "Codifiche\\CodeSystem_PrestazioniADI.json": {
+      "Length": 2844,
+      "LastWriteTime": "2024-05-03T12:22:22+00:00",
+      "Hash": "71DE246E69877FE9E5C903951F7FAE8F"
+    },
+    "Codifiche\\CodeSystem_TipologiaPrestazioni.json": {
+      "Length": 736,
+      "LastWriteTime": "2024-05-03T12:22:22+00:00",
+      "Hash": "1A4D2A8D05A7EE0D46AEA9DB6A68B33E"
+    },
+    "Codifiche\\CodeSystem_TipologiaProblemaSalute.json": {
+      "Length": 787,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "2D489086F2F9D3D3E4D40AD751E61664"
+    },
+    "Codifiche\\CodeSystem_TipologiaValutazione.json": {
+      "Length": 684,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "6B8C0AF3B3E61D240B911B0AF4DCE9A6"
+    },
+    "Codifiche\\CodeSystem_Valutazione.json": {
+      "Length": 667,
+      "LastWriteTime": "2023-10-26T12:16:30+00:00",
+      "Hash": "6EA0D442EC8C23B18636EF8DBCFACE0B"
+    },
+    "Codifiche\\CodeSystem_TipologiaLuogoCureDom.json": {
+      "Length": 980,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "E8B500328A322D266BA058413BA2D932"
+    },
+    "Codifiche\\CodeSystem_CausaleDimissione.json": {
+      "Length": 1668,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "9CAA1AC3AF023764A7C76CD639AE5F6A"
+    },
+    "Codifiche\\CodeSystem_CodificaCondizioneClinica.json": {
+      "Length": 811,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "C1C9F61238E64A3C3D6A9426BAFB778B"
+    },
+    "Codifiche\\CodeSystem_ModalitaErogazione.json": {
+      "Length": 848,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "5B41250D2D1364371186109D15173074"
+    },
+    "Codifiche\\CodeSystem_PosizioneProfessione.json": {
+      "Length": 2153,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "76C20291E1F582E4DF290BC12990E751"
+    },
+    "Codifiche\\CodeSystem_ProponentePIC.json": {
+      "Length": 987,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "8378660AB2A41CD4011444782789BC16"
+    },
+    "Codifiche\\CodeSystem_SituazionePensionistica.json": {
+      "Length": 991,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "2430BAA030FB4282D0820285D4D76598"
+    },
+    "Codifiche\\CodeSystem_StatoCivile.json": {
+      "Length": 748,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "A9FD3819EF72093195FD36E6A7307E7E"
+    },
+    "Codifiche\\CodeSystem_CodificaTipoAccesso.json": {
+      "Length": 499,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "4FD0A00AB317D232D3A9BEAD4FFBE66E"
+    },
+    "Codifiche\\CodeSystem_TipologiaCaregiver.json": {
+      "Length": 528,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "52E28109D326A46D1775CD993377B8AA"
+    },
+    "Codifiche\\CodeSystem_TipologiaOperatore.json": {
+      "Length": 1321,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "8059F514F23AADA283CCBE9A4B58783E"
+    },
+    "Codifiche\\CodeSystem_TitoloStudio.json": {
+      "Length": 980,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "94BA2CCDFA645D3CA9AA80DB311CE455"
+    },
+    "Codifiche\\CodeSystem_TipologiaContenutoMessaggio.json": {
+      "Length": 596,
+      "LastWriteTime": "2024-05-02T10:25:36+00:00",
+      "Hash": "39682746E445005675EEEBD3A391E369"
+    },
+    "Codifiche\\CodeSystem_TipologiaEventoMessaggio.json": {
+      "Length": 612,
+      "LastWriteTime": "2024-12-16T15:57:52+00:00",
+      "Hash": "1BEB77276501DD2D37D2EA11364D8384"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto-sospesa.page.md": {
+      "Length": 3483,
+      "LastWriteTime": "2024-07-12T14:03:58+00:00",
+      "Hash": "151B400634D941586C3F2CE34F43561B"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 3756,
+      "LastWriteTime": "2024-12-16T15:59:16+00:00",
+      "Hash": "F228DD5AF50103CB8F2EE7F37900C883"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 12283,
+      "LastWriteTime": "2024-09-10T10:22:18+00:00",
+      "Hash": "0B03998397EA8A27BC91EC8BFF1D0D1D"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page copy.md": {
+      "Length": 15942,
+      "LastWriteTime": "2024-07-18T13:05:44+00:00",
+      "Hash": "7D9D1DB4145A022BD86D5080FEDC6823"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Attivazione-della-presa-in-carico-cronicit\u00E0-per-MMG.page.md": {
+      "Length": 2697,
+      "LastWriteTime": "2024-05-20T11:29:58+00:00",
+      "Hash": "2693B7B9680D92E93810495D57C8E1C7"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Caso d\u0027uso.page.md": {
+      "Length": 570,
+      "LastWriteTime": "2024-07-18T11:56:58+00:00",
+      "Hash": "E7873FD7095F29E1B6A07BB2EDABA4A6"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Fonti dato.page.md": {
+      "Length": 173,
+      "LastWriteTime": "2024-07-18T11:56:58+00:00",
+      "Hash": "86929E8E24143FC7137174B7F706F4C0"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLEsame1BundleSearchSet.page.md": {
+      "Length": 1321,
+      "LastWriteTime": "2024-10-02T05:49:50+00:00",
+      "Hash": "55CAFE43DF8050164EAA878115D4AB55"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLEsame2BundleSearchSet.page.md": {
+      "Length": 1925,
+      "LastWriteTime": "2024-09-26T13:49:48+00:00",
+      "Hash": "D26CB715A478A315721406F0DACC9421"
+    },
+    "Examples\\Example_RL_Patient_Core.json": {
+      "Length": 835,
+      "LastWriteTime": "2024-06-28T07:15:26+00:00",
+      "Hash": "6F5AF2606385A398086B430920BE25D4"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLAllergyIntoleranceAllergie.page.md": {
+      "Length": 3299,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "86F7E7892E4B4DF8DB84EE600A85E8C0"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleRispostaLabReport.page.md": {
+      "Length": 3244,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "68F6DC8D0C0609C34FCA6FEBEE50CE0B"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCarePlanProgettoIndividuale.page.md": {
+      "Length": 9460,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "BEFB9B94AF4426B5689F56E74E644883"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDeviceRequestProtesiAusili.page.md": {
+      "Length": 3596,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "2517765A287EA77E3F195461D6880EBD"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDiagnosticReportLabReport.page.md": {
+      "Length": 3982,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "1E901ED118D3C3E51514EEE57A5F0BB3"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMedicationRequestTerapiaFarmacologica.page.md": {
+      "Length": 4216,
+      "LastWriteTime": "2024-10-01T06:47:00+00:00",
+      "Hash": "D6F5FCA93D8FD591C86A6D8A870EE4E5"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMessageHeaderControlloCoerenza.page.md": {
+      "Length": 2300,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "33FE9133F0D2E9CE6D31D81FCA82C820"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationbatteryLabReport.page.md": {
+      "Length": 3342,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "67A3D41B3F90C3C8A48CA2742A868EF3"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationbatteryLabReport.page.md": {
+      "Length": 3342,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "67A3D41B3F90C3C8A48CA2742A868EF3"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationDocumentLabReport.page.md": {
+      "Length": 3947,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "545EEB645A33B767E5D905D38F69FED7"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationDocumentLabReport.page.md": {
+      "Length": 3947,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "545EEB645A33B767E5D905D38F69FED7"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationEsitoValutazione.page.md": {
+      "Length": 3698,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "A74E750C2A8C0BE08039E35FBD7D81FA"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationOperatoreLabReport.page.md": {
+      "Length": 4457,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "C7006854E688BED35FF9EC27A21D929E"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationOperatoreLabReport.page.md": {
+      "Length": 4457,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "C7006854E688BED35FF9EC27A21D929E"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerMedicoPrescrittore.page.md": {
+      "Length": 3942,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "82B103F71FEE4082E131C67CB83A49B1"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerProfessionistaSanitario.page.md": {
+      "Length": 3498,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "D609865C279CBF3F9FB850E544449A80"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleLabReport.page.md": {
+      "Length": 3513,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "ABB3159DAEA93540BDC790B7FEF7D2E2"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleOperatoreADI.page.md": {
+      "Length": 3738,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "79099A5E0E4A22195ECE5326F998294C"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleProfessionistaSanitario.page.md": {
+      "Length": 3860,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "A3468EAAFB6B04615FB7C0120B4EA609"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestInterventoEducazionale.page.md": {
+      "Length": 4099,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "DD0429E8973D34523AB12D8A25AB1003"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestLabReport.page.md": {
+      "Length": 3771,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "032EED736963097E06F861029056E6B7"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioniInfermieristiche.page.md": {
+      "Length": 3843,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "686093572DBF4CBE5E0297D92FA6FFE6"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioniSpecialistiche.page.md": {
+      "Length": 3748,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "C62A4BF5103F37CC597BC749045E034D"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestRivalutazione.page.md": {
+      "Length": 7313,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "7E05331EE4197A218DA85F58A1E4D759"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestServiziSocioAssistenziali.page.md": {
+      "Length": 4505,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "1F44AC7BBB3CBCF7F8D615F24AB25B2A"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestSospensioneADI.page.md": {
+      "Length": 7817,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "2F07907C04CA161EFE927C141D8FF1DF"
+    },
+    "esempio.snippet.md": {
+      "Length": 610,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "77B313E20760D69178FF49B53760147A"
+    },
+    "Examples\\Example_RLBundleNotificaErrori_Bundle.json": {
+      "Length": 21680,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "F40BCE2458F16431D8F7C4712694C657"
+    },
+    "Examples\\Example_RLBundleNotificaErrori_Resource.json": {
+      "Length": 5742,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "F1520F5906333AA3D50F5845C97E8F4C"
+    },
+    "Examples\\Example_CarePlan_ProgettoIndividuale.json": {
+      "Length": 2256,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "9A3651B311F8D9A15A612714A21491D5"
+    },
+    "Examples\\Example_CareTeam-Equipe.json": {
+      "Length": 603,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "4C5C1CF4CC3B1455143E577315B03270"
+    },
+    "Examples\\Example_Condition_CondizioneClinicaPrevalente.json": {
+      "Length": 917,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "75C3D6406D46E96324F3156B1FB0243B"
+    },
+    "Examples\\Example_Condition_PatologiaPrimaria.json": {
+      "Length": 853,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "EC9E305FD731FF4B63E9DB20642AB061"
+    },
+    "Examples\\Example_Condition_ProblemaInfermieristico.json": {
+      "Length": 965,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "1B287D6172D05A64532A3A5EFC97F0C9"
+    },
+    "Examples\\Example_RL_Condition_ProblemiSalute_PIC.json": {
+      "Length": 1225,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "56024C8FC40F601EEF3EACF1BD2C5FDD"
+    },
+    "Examples\\Example_Bundle_ConEncounter_LAB.json": {
+      "Length": 7895,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "EF62545F946935F8A3397FBEF77C1197"
+    },
+    "Examples\\Example_DeviceRequest_ProtesiAusili.json": {
+      "Length": 1097,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "708D06B9D2230988B372333687C99161"
+    },
+    "Examples\\Example_Encounter_Accesso.json": {
+      "Length": 1215,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "A1735C1116F5C4237F56B5DFE8BB54FD"
+    },
+    "Examples\\Example_Encounter_MovimentazionePaziente_Arrivopz.json": {
+      "Length": 1719,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "44A3FB6ADB049A158F9B27DF07B97898"
+    },
+    "Examples\\Example_Encounter_MovimentazionePaziente_Trasferimento.json": {
+      "Length": 1948,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "4CBB889E9F4A3F700EA6C4B3FE903C86"
+    },
+    "Examples\\Example_Bundle_EsameSpecifico_1_LAB.json": {
+      "Length": 8866,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "C3260D0AF3CC5F007CA8311B2DF9C97A"
+    },
+    "Examples\\Example_Bundle_EsameSpecifico_2_LAB.json": {
+      "Length": 21829,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "4F01CED248D338EC89D331D9EE5A17C3"
+    },
+    "Examples\\Example_Goal_ObiettiviSalute.json": {
+      "Length": 866,
+      "LastWriteTime": "2023-10-27T11:52:02+00:00",
+      "Hash": "C68FC867A38A93BA305256B2B7C6AD83"
+    },
+    "Examples\\Example_location_CORE_base.json": {
+      "Length": 544,
+      "LastWriteTime": "2024-07-01T13:38:30+00:00",
+      "Hash": "8AE23BFD045825C2886D17CB9591A608"
+    },
+    "Examples\\Example_Location_LuogoPrestazioneCureDom.json": {
+      "Length": 509,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "BAA82F0920A6DBB31CC9210258B7AAAD"
+    },
+    "Examples\\Example_location_PLO_Edificio.json": {
+      "Length": 696,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "6ECC6F1756DAABAA7723336B92462B9C"
+    },
+    "Examples\\Example_location_PLO_Letto.json": {
+      "Length": 2351,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "D1A48168C36C9F10F55490DAB5F88872"
+    },
+    "Examples\\Example_location_PLO_Piano.json": {
+      "Length": 774,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "9A46AA20D595F5604BB2E05BC690DDBF"
+    },
+    "Examples\\Example_location_PLO_Stanza.json": {
+      "Length": 778,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "7FEF052F8A9511F001DDBED2EDB80638"
+    },
+    "Examples\\Example_MedicationRequest_Ossigenoterapia.json": {
+      "Length": 1512,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "7777F649CE0883D7B0110276E3E91D8C"
+    },
+    "Examples\\Example_MedicationRequest_TerapiaFarmacologica.json": {
+      "Length": 1642,
+      "LastWriteTime": "2024-05-02T06:23:54+00:00",
+      "Hash": "3299AB90616BCE8B644665E8D76FB3D3"
+    },
+    "Examples\\Example_RL_MedicationRequest_TerapiaFarmacologica.json": {
+      "Length": 1776,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "7BE0CF674DCE979ADDB490A7C50D97FD"
+    },
+    "Examples\\Example_Bundle_MP_TempiMedi.json": {
+      "Length": 12929,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "2999CA46572D69B1122214E4444EC24B"
+    },
+    "Examples\\Example_Bundle_MP_Turnover.json": {
+      "Length": 9962,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "29EECCD816C8AEFD71C11FDDCCAD7822"
+    },
+    "Examples\\Example_Bundle_NelTempo_LAB.json": {
+      "Length": 55704,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "941CBFC9F5728DB5DC2FE672B8F92FD1"
+    },
+    "Examples\\Example_Observation_EsitoValutazione_InterRAI.json": {
+      "Length": 1576,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "E2AD39BB13C63273959E3DFEEF7DB898"
+    },
+    "Examples\\Example_Observation_EsitoValutazione.json": {
+      "Length": 1000,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "3AA648AF01FE4171D79F11F6858AFB5D"
+    },
+    "Examples\\Example_RL_Organization_Core.json": {
+      "Length": 1049,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "803959C2FCD679B4D6D3232723509D17"
+    },
+    "Examples\\Example_Bundle_Richiesta_2_Paging1_LAB.json": {
+      "Length": 128493,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "7671831E71A4E5879B69AC894D189256"
+    },
+    "Examples\\Example_Bundle_Richiesta_2_Paging2_LAB.json.json": {
+      "Length": 128448,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "13073E1E81D29D9DF854C48D8B4A3073"
+    },
+    "Examples\\Example_Patient_Base.json": {
+      "Length": 845,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "2BD5CD5ED9161707E310808665063F10"
+    },
+    "Examples\\Example_RL_Patient_Cittadino.json": {
+      "Length": 2927,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "D0748D41BF84BC43D84CBEF5A65FDB87"
+    },
+    "Examples\\Example_Bundle_Location_PLO.json": {
+      "Length": 14870,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "7651C421A20ED08460E4FA16AA5625E7"
+    },
+    "Examples\\Example_RL_PractitionerMedicoPrescrittore.json": {
+      "Length": 1468,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "5390C27D6E5EE191A3C7B0C5AAA43403"
+    },
+    "Examples\\Example_Practitioner_ProfessionistaSanitario.json": {
+      "Length": 520,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "020A1AC3749C3259067809290EA82ABF"
+    },
+    "Examples\\Example_RL_PractitionerRoleMedicoPrescrittore.json": {
+      "Length": 1325,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "990393CBFA319A7087B513AB20A8F4CC"
+    },
+    "Examples\\Example_PractitionerRole_Core.json": {
+      "Length": 933,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "21D1EA631B2A36B82F6CC0CD5973496D"
+    },
+    "Examples\\Example_PractitionerRole_OperatoreADI.json": {
+      "Length": 975,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "A074AE9F77BC0C2F2AA4A127864931F0"
+    },
+    "Examples\\Example_PractitionerRole_ProfessionistaSanitario.json": {
+      "Length": 922,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "27B0E243068D08C524A1727711B27310"
+    },
+    "Examples\\Example_Procedure_Prestazione.json": {
+      "Length": 2460,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "4DAD03E26F398654C62830F5586014CE"
+    },
+    "Examples\\Example_Bundle_RicercaEntiErogatoriAccreditatiAmbitoTerritorialeASST_C-DOM.json": {
+      "Length": 954349,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "57B936002656BB7303BE80DC5B69EE52"
+    },
+    "Examples\\Example_Ricerca_PI-Attivi.json": {
+      "Length": 112135,
+      "LastWriteTime": "2024-05-02T06:23:54+00:00",
+      "Hash": "DAE9922A81E9F372C0EBFD04E12F25DD"
+    },
+    "Examples\\Example_Ricerca_Prestazioni-Erogate.json": {
+      "Length": 30492,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "2D0C006A3A78943FFDB1FB95A871B584"
+    },
+    "Examples\\Example_Ricerca_Rivalutazioni.json": {
+      "Length": 7853,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "515224CD1E67138DA78A5B4358FC1155"
+    },
+    "Examples\\Example_Ricerca_Rivalutazioni_Sospensioni.json": {
+      "Length": 9407,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "8E5D7CF52CFC08DA1062DDD58398EF31"
+    },
+    "Examples\\Example_Ricerca_Sospensioni.json": {
+      "Length": 8222,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "4C93DF69AF5907F94371580BE351A62F"
+    },
+    "Examples\\Example_Ricerca_Storico-PI.json": {
+      "Length": 81003,
+      "LastWriteTime": "2024-05-02T06:23:54+00:00",
+      "Hash": "486E4E00A9904A0713DCCBB6DE1E641E"
+    },
+    "Examples\\Example_Ricerca_Valutazioni.json": {
+      "Length": 48544,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "8360A0C230D5D177C490E25EB1CB08BE"
+    },
+    "Examples\\Example_Bundle_Richiesta_1_LAB.json": {
+      "Length": 105428,
+      "LastWriteTime": "2024-09-26T13:49:48+00:00",
+      "Hash": "1A93F57612581BFFFC93A62675F5B7F4"
+    },
+    "Examples\\Example_Bundle_Richiesta_2_LAB.json": {
+      "Length": 255657,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "81B02C89C503FCAFC1F79830D2691A54"
+    },
+    "Examples\\Example_RL_Organization_L1_ASST-Brianza.json": {
+      "Length": 2169,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "70B571D59A65947B62941A4ADA8FCD79"
+    },
+    "Examples\\Example_RL_Organization_L2.json": {
+      "Length": 20994,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "CD3B4B814769521855E6C6946A973A40"
+    },
+    "Examples\\Example_RL_Organization_L3_Medicina-Specifica.json": {
+      "Length": 1182,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "B1F32F2D43C4550EA6FD825C15EB3757"
+    },
+    "Examples\\Example_RL_HealthcareService_RSAInfoBase.json": {
+      "Length": 3513,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "0051B01539E5AA3A9CEBDDD0E657A3CC"
+    },
+    "Examples\\Example_RL_HealthcareService_UDO.json": {
+      "Length": 1724,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "E83B1C3389BF05C5E13EABC08E39D9DB"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationLuogoPrestazioneCureDom.page.md": {
+      "Length": 3658,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "32D385BF53462BEED07A23A007A2502C"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMedicationRequestOssigenoterapia.page.md": {
+      "Length": 3750,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "5CBF9EC444B29EBB83DEA9E490F231AB"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleMMGPLSLabReport.page.md": {
+      "Length": 3556,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "9350B02CBF1C08332AFDFDAF70BC2B2E"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleMMGPLSLabReport.page.md": {
+      "Length": 3556,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "9350B02CBF1C08332AFDFDAF70BC2B2E"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLQuestionnaireResponseValutazione.page.md": {
+      "Length": 6330,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "0F33888F15331E5CD5CC765AFCD7D76F"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioniSociali.page.md": {
+      "Length": 3616,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "ADA1FF5E7CE052252B8E7FFBEFB76EE2"
+    },
+    "Examples\\Example_exception.json": {
+      "Length": 424,
+      "LastWriteTime": "2024-06-25T13:17:42+00:00",
+      "Hash": "B616C10A35B980E9F0FEB18897B4B342"
+    },
+    "Examples\\Example_Measure_PLO.json": {
+      "Length": 334,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "5EABAB43C0EAA6B9473AA8FAC8510FB6"
+    },
+    "Examples\\Example_MeasureReport_PLO.json": {
+      "Length": 1267,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "706407EBCC1A66B9EB690F0ABCF42353"
+    },
+    "Examples\\Example_searchfail.json": {
+      "Length": 599,
+      "LastWriteTime": "2024-06-25T08:40:36+00:00",
+      "Hash": "BD964AF3A8C8FCED450C293B5E2BA03D"
+    },
+    "Examples\\Example_ServiceRequest_ServiziSocioAssistenziali.json": {
+      "Length": 2867,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "24DDC603787FDA51644E0F9D9F91974E"
+    },
+    "Examples\\Example_RLMessageHeaderMMG_MMGpicMMG.json": {
+      "Length": 601,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "5E4429202A7D0E301FA60842D05869E7"
+    },
+    "Examples\\Example_RLMessageHeaderMMG_negativa.json": {
+      "Length": 785,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "5E5EBF4BC0CD1228F1569B90481BACD4"
+    },
+    "Examples\\Example_RLMessageHeaderMMG_positiva.json": {
+      "Length": 776,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "493D33661E7D119E2F00DCA7BA674F88"
+    },
+    "Examples\\Example_RL_OperationOutcomeMMG_Negativa.json": {
+      "Length": 667,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "7B8F038328CFCDD0DA6DF0B61514458F"
+    },
+    "Examples\\Example_RL_OperationOutcomeMMG_Positiva.json": {
+      "Length": 1098,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "9445CF0F91C227BC14401BBAA411ABAE"
+    },
+    "Examples\\Example_ServiceRequest_InterventoEducazionale.json": {
+      "Length": 1247,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "6B0B85D9F516D943509E36E043DC2B79"
+    },
+    "Examples\\Example_ServiceRequest_PrestazioniInfermieristiche.json": {
+      "Length": 1319,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "F066B0E04074187EE1713F44963EF559"
+    },
+    "Examples\\Example_ServiceRequest_PrestazioniSpecialistiche.json": {
+      "Length": 1498,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "615C6A0B343FDBAF0BC9E234ABABEE9E"
+    },
+    "Examples\\Example_ServiceRequest_Rivalutazione.json": {
+      "Length": 938,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "A06A90D60EFC6A9D25685C35CBA2E3F7"
+    },
+    "Examples\\Example_ServiceRequest_SospensioneADI.json": {
+      "Length": 1145,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "215257204A22F457DBC8932C8CDF8986"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\toc.yaml": {
+      "Length": 249,
+      "LastWriteTime": "2024-07-18T11:56:58+00:00",
+      "Hash": "1D9D60C7AB28E25CEC6B13854A2E742C"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLPaging.page.md": {
+      "Length": 2656,
+      "LastWriteTime": "2024-10-01T08:30:50+00:00",
+      "Hash": "2A58C122B869A9BEFB7EFD222BA63021"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLRichiesta1.page.md": {
+      "Length": 815,
+      "LastWriteTime": "2024-10-02T05:54:10+00:00",
+      "Hash": "3CA7ECFA250DB0E36430815725E2D089"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLRichiesta2.page.md": {
+      "Length": 869,
+      "LastWriteTime": "2024-09-26T13:49:48+00:00",
+      "Hash": "2F8F499E107260BD4DFFB2FC35B85E1C"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 12032,
+      "LastWriteTime": "2024-10-02T05:49:50+00:00",
+      "Hash": "D26F3CF64047B9B0CD6A8012D1D85187"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 2487,
+      "LastWriteTime": "2024-07-18T12:13:48+00:00",
+      "Hash": "000CE099CD2D7D1141DB2D93F39AA93A"
+    },
+    "guides\\cdr-lab\\guide.yaml": {
+      "Length": 210,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "4CD5B906F3EB2B7E936124291BA2BBF0"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto\\Caso d\u0027uso.page.md": {
+      "Length": 570,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "E7873FD7095F29E1B6A07BB2EDABA4A6"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto\\Contenuto informativo.page.md": {
+      "Length": 284,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "402B1E7AD60A7EA8447B803A30F2805A"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto\\Fonti dato.page.md": {
+      "Length": 173,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "86929E8E24143FC7137174B7F706F4C0"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto-sospesa.page.md": {
+      "Length": 3483,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "151B400634D941586C3F2CE34F43561B"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto\\toc.yaml": {
+      "Length": 249,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "1D9D60C7AB28E25CEC6B13854A2E742C"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Panoramica-di-progetto\\Utenti fruitori.page.md": {
+      "Length": 238,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "00DFE89223777C4ED6EF090DAA4990E9"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Paradigmi-di-comunicazione-e-API-RESTful.page.md": {
+      "Length": 12625,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "0A88FF3632CAB99720E0D62700B23D74"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 1084,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "9140F38EAD8DFD5EE6A67E7F78AF1B32"
+    },
+    "guides\\cdr-lab\\Home\\Contesto\\toc.yaml": {
+      "Length": 236,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "69B4B622B93FC81E7E17F385F755B677"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 3084,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "D7B3390FE762A5AACE4BCE54EA4C4079"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLEncounterBundleSearchSet.page.md": {
+      "Length": 1607,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "C6DCDDEB5C841E268E7FC0588F42A924"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLEsame1BundleSearchSet.page.md": {
+      "Length": 1321,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "55CAFE43DF8050164EAA878115D4AB55"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLEsame2BundleSearchSet.page.md": {
+      "Length": 1925,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "D26CB715A478A315721406F0DACC9421"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLNelTempoBundleSearchSet.page.md": {
+      "Length": 1718,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "FE5049917E390635FDADA3FBD092C8D0"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLPaging.page.md": {
+      "Length": 2656,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "2A58C122B869A9BEFB7EFD222BA63021"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLRichiesta1.page.md": {
+      "Length": 815,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "3CA7ECFA250DB0E36430815725E2D089"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\Raccolta-esempi\\RLRichiesta2.page.md": {
+      "Length": 869,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "2F8F499E107260BD4DFFB2FC35B85E1C"
+    },
+    "guides\\cdr-lab\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\cdr-lab\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\cdr-lab\\Home\\Index.page.md": {
+      "Length": 906,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "2BA9C861FC01DA2691CD23508DDB3185"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 3756,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "F228DD5AF50103CB8F2EE7F37900C883"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 12283,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "0B03998397EA8A27BC91EC8BFF1D0D1D"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMediaLabReport.page.md": {
+      "Length": 3216,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B9C671D79FEB055FB1581654B1903EFD"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\cdr-lab\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 12032,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "D26F3CF64047B9B0CD6A8012D1D85187"
+    },
+    "guides\\cdr-lab\\Home\\Terminologia\\Libreria-ValueSet.page copy.md": {
+      "Length": 15942,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "7D9D1DB4145A022BD86D5080FEDC6823"
+    },
+    "guides\\cdr-lab\\Home\\Terminologia\\toc.yaml": {
+      "Length": 63,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "14011722F9507570022E18058AF3B890"
+    },
+    "guides\\cdr-lab\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\cdr-lab\\pics\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\cdr-lab\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\cdr-lab\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\cdr-lab\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-10-02T10:49:42+00:00",
+      "Hash": "2C3AF3DC926F806E6D66DF3D4AF6F5CB"
+    },
+    "guides\\cdr-lab\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\cdr-lab\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\cdr-lab\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\cdr-ldo-sviluppo\\guide.yaml": {
+      "Length": 155,
+      "LastWriteTime": "2024-12-16T16:03:50+00:00",
+      "Hash": "0D24BFD8FB7FBEEE69A966BE1EC56A80"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Caso d\u0027uso.page.md": {
+      "Length": 42,
+      "LastWriteTime": "2024-12-17T07:48:14+00:00",
+      "Hash": "8D952873E5D680173B53393D7C77EC56"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Fonti dato.page.md": {
+      "Length": 173,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "86929E8E24143FC7137174B7F706F4C0"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto-sospesa.page.md": {
+      "Length": 3483,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "151B400634D941586C3F2CE34F43561B"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\toc.yaml": {
+      "Length": 258,
+      "LastWriteTime": "2024-12-17T08:01:32+00:00",
+      "Hash": "CE51AC3D4472FEB9A09A661DD7975C9E"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 1084,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "9140F38EAD8DFD5EE6A67E7F78AF1B32"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\toc.yaml": {
+      "Length": 236,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "69B4B622B93FC81E7E17F385F755B677"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 3084,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "D7B3390FE762A5AACE4BCE54EA4C4079"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLEsame1BundleSearchSet.page.md": {
+      "Length": 1321,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "55CAFE43DF8050164EAA878115D4AB55"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLEsame2BundleSearchSet.page.md": {
+      "Length": 1925,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "D26CB715A478A315721406F0DACC9421"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLPaging.page.md": {
+      "Length": 2656,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "2A58C122B869A9BEFB7EFD222BA63021"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLRichiesta1.page.md": {
+      "Length": 815,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "3CA7ECFA250DB0E36430815725E2D089"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLRichiesta2.page.md": {
+      "Length": 869,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "2F8F499E107260BD4DFFB2FC35B85E1C"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Index.page.md": {
+      "Length": 1823,
+      "LastWriteTime": "2024-12-17T08:17:26+00:00",
+      "Hash": "C7B4FAB4828B0C02FA0D8DE91DE3B9D7"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 3756,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "F228DD5AF50103CB8F2EE7F37900C883"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 12283,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "0B03998397EA8A27BC91EC8BFF1D0D1D"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 12032,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "D26F3CF64047B9B0CD6A8012D1D85187"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page copy.md": {
+      "Length": 15942,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "7D9D1DB4145A022BD86D5080FEDC6823"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Terminologia\\toc.yaml": {
+      "Length": 63,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "14011722F9507570022E18058AF3B890"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\cdr-ldo-sviluppo\\pics\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-12-16T15:54:34+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\cdr-ldo-sviluppo\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-12-16T15:54:34+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\cdr-ldo-sviluppo\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-12-16T15:54:34+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\cdr-ldo-sviluppo\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-12-16T15:54:34+00:00",
+      "Hash": "83B0261F4F078C5780BC2CE26A7079D1"
+    },
+    "guides\\cdr-ldo-sviluppo\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-12-16T15:54:34+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\cdr-ldo-sviluppo\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-12-16T15:54:34+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\cdr-ldo-sviluppo\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-12-16T14:01:02+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\ig-core\\guide.yaml": {
+      "Length": 180,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "201BDE29C617A36637FED98FA819F3C7"
+    },
+    "guides\\ig-core\\Home\\Contesto\\Panoramica-di-progetto.page.md": {
+      "Length": 2099,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "170C4E39012E55F9FC3A064F4DD16FF1"
+    },
+    "guides\\ig-core\\Home\\Contesto\\toc.yaml": {
+      "Length": 316,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "B56943C71B8EDE606254752D37F82A79"
+    },
+    "guides\\ig-core\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 1849,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "8A35851EF530B671446B32BBCF30DE1F"
+    },
+    "guides\\ig-core\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\ig-core\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\ig-core\\Home\\Index.page.md": {
+      "Length": 1184,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "C39AC3F715F6C9EBC7C10C398D84FA70"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\FQL-extension.page.md": {
+      "Length": 654,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "00D0B684A1220AEB9BE0F28C60BC262B"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\FQL-profili.page.md": {
+      "Length": 607,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "4F9846D5D4A00735BA97D9DEFD789077"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\FQL-search-parameters.page.md": {
+      "Length": 197,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "A14F289951FEB1DE2EC6FFDB6CEFDA29"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\FQL-valueset.page.md": {
+      "Length": 145,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "9C0956A3BD8AA60C0F736D13AE47AC26"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\Mappa-CodeSystem.page.md": {
+      "Length": 8403,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "26FEFAA6F3128172CEDD4120E2C9416D"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\pagina-test-link.page.md": {
+      "Length": 876,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "BE554765A5D187E2973FCE8BF4289CA5"
+    },
+    "guides\\ig-core\\Home\\pagine-extra\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 2487,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "000CE099CD2D7D1141DB2D93F39AA93A"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 3815,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "89BC1E243957E0A6D94C72DE3BCB4E55"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationCore.page.md": {
+      "Length": 2826,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "A0B823618367031CB5850A59A0E9229C"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientCore.page.md": {
+      "Length": 3074,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "6210DE8DB4E6F4CF5128E801628F1DCA"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\ig-core\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 2175,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "DAE2F1E19E6827652BC6EE294DB9806B"
+    },
+    "guides\\ig-core\\Home\\Terminologia\\toc.yaml": {
+      "Length": 153,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "B3DE8468C58D6E4D2F038ACDA30B2787"
+    },
+    "guides\\ig-core\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\ig-core\\pics\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\ig-core\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\ig-core\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\ig-core\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-08-02T13:42:52+00:00",
+      "Hash": "A37F1F2B074B3110B105F6884B705FA1"
+    },
+    "guides\\ig-core\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\ig-core\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\ig-core\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\guide.yaml": {
+      "Length": 179,
+      "LastWriteTime": "2024-12-16T15:58:36+00:00",
+      "Hash": "41CA0FDA4ED974B37BFA443612FF47EC"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\toc.yaml": {
+      "Length": 308,
+      "LastWriteTime": "2024-07-18T12:06:14+00:00",
+      "Hash": "3AAC64FD897D6805FA110688311D3EC3"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-06-28T06:47:48+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-06-13T13:08:14+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Index.page.md": {
+      "Length": 1328,
+      "LastWriteTime": "2024-06-13T13:51:30+00:00",
+      "Hash": "EC4F42BC6C73520ED9AA69CF66F26724"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Terminologia\\toc.yaml": {
+      "Length": 153,
+      "LastWriteTime": "2024-06-28T06:47:48+00:00",
+      "Hash": "B3DE8468C58D6E4D2F038ACDA30B2787"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-06-28T06:47:48+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\styles\\RL-css\\logo-ARIA.png": {
+      "Length": 18130,
+      "LastWriteTime": "2024-07-01T11:32:58+00:00",
+      "Hash": "29D0AC74739706646FF23BC0F352248C"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-06-13T13:08:20+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-06-13T13:08:20+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-07-01T11:41:16+00:00",
+      "Hash": "83B0261F4F078C5780BC2CE26A7079D1"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-06-13T13:08:20+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-06-13T13:08:20+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-06-28T06:47:48+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\IG-RL-PLO-live\\guide.yaml": {
+      "Length": 206,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "B1C9120557F0C00AB1EE43CB3B69FC8C"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Contesto\\API-RESTful.page.md": {
+      "Length": 1981,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "36F2EF87E3A29F2CE3F2AB46A9226183"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Contesto\\Panoramica-di-progetto.page.md": {
+      "Length": 3789,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "355A39646A755F42D6F4442FDB09CC1E"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 3365,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "8F12A8B505BB01B8E9C1DDB79F5F8408"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Contesto\\toc.yaml": {
+      "Length": 186,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "0F7467F57BA917DDAEE909EF17040723"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 2821,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "F5424E70D15E852D964198ED2918CB2A"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Index.page.md": {
+      "Length": 864,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "20310FD90B12D45C6D239A972C004C10"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\FQL-extension.page.md": {
+      "Length": 654,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "00D0B684A1220AEB9BE0F28C60BC262B"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\FQL-profili.page.md": {
+      "Length": 607,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "4F9846D5D4A00735BA97D9DEFD789077"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\FQL-search-parameters.page.md": {
+      "Length": 197,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "A14F289951FEB1DE2EC6FFDB6CEFDA29"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\FQL-valueset.page.md": {
+      "Length": 145,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "9C0956A3BD8AA60C0F736D13AE47AC26"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\Mappa-CodeSystem.page.md": {
+      "Length": 8403,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "26FEFAA6F3128172CEDD4120E2C9416D"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\pagina-test-link.page.md": {
+      "Length": 876,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "BE554765A5D187E2973FCE8BF4289CA5"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\pagine-extra\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 4959,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "67010212D8ED8D6F227507BF7F9DE66A"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 6323,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "795E27E6DBAA4E05E1F4533D77AED17B"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 74,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D3A0439B17FFCCEF0B630733BE7FB214"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 3243,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "9CF795B5DA9C426ED720F7EE1FE859C9"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Terminologia\\toc.yaml": {
+      "Length": 64,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "9F4EA8E4B8E58E5D2066E42A1C5E4981"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\IG-RL-PLO-live\\pics\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\IG-RL-PLO-live\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\IG-RL-PLO-live\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\IG-RL-PLO-live\\styles\\RL-css\\master.html": {
+      "Length": 5881,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "E7C7C9C96B72D3D2937F08D99A535419"
+    },
+    "guides\\IG-RL-PLO-live\\styles\\RL-css\\settings.style": {
+      "Length": 72,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "0A757B4E4F7A35F1CF4F8BCCFE3A7757"
+    },
+    "guides\\IG-RL-PLO-live\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "8770E6632543D615786D991D037802CC"
+    },
+    "guides\\IG-RL-PLO-live\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\IG-RL-sviluppo\\guide.yaml": {
+      "Length": 197,
+      "LastWriteTime": "2024-10-08T12:53:12+00:00",
+      "Hash": "1F4A735A0C938E121D193544903094D9"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Panoramica-di-progetto.page.md": {
+      "Length": 3895,
+      "LastWriteTime": "2024-05-21T10:40:30+00:00",
+      "Hash": "191B8705258C6B91CA5903970AA68146"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 3828,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "EB4440E2D9ECBC7D99A760F559FE4064"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Care-plan.page.md": {
+      "Length": 16,
+      "LastWriteTime": "2024-05-21T11:41:20+00:00",
+      "Hash": "D1C7A57EA438B9C68A313CF68DF87335"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\toc.yaml": {
+      "Length": 342,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "1CF7D4C6CEE012CABFE7592A792B58CA"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\toc.yaml": {
+      "Length": 316,
+      "LastWriteTime": "2024-05-29T13:41:50+00:00",
+      "Hash": "B56943C71B8EDE606254752D37F82A79"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 13022,
+      "LastWriteTime": "2024-10-08T13:47:36+00:00",
+      "Hash": "A9133D70B2D0CD2424522F07F2CBE872"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-12-16T15:58:56+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Index.page.md": {
+      "Length": 3746,
+      "LastWriteTime": "2024-06-25T08:40:36+00:00",
+      "Hash": "96C54D95EDBDA5F989CB8BA96EB57F11"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\FQL-extension.page.md": {
+      "Length": 654,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "00D0B684A1220AEB9BE0F28C60BC262B"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\FQL-profili.page.md": {
+      "Length": 607,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "4F9846D5D4A00735BA97D9DEFD789077"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\FQL-search-parameters.page.md": {
+      "Length": 197,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "A14F289951FEB1DE2EC6FFDB6CEFDA29"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\FQL-valueset.page.md": {
+      "Length": 145,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "9C0956A3BD8AA60C0F736D13AE47AC26"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\Mappa-CodeSystem.page.md": {
+      "Length": 8403,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "26FEFAA6F3128172CEDD4120E2C9416D"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\pagina-test-link.page.md": {
+      "Length": 876,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "BE554765A5D187E2973FCE8BF4289CA5"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\pagine-extra\\toc.yaml": {
+      "Length": 1,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "68B329DA9893E34099C7D8AD5CB9C940"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 14625,
+      "LastWriteTime": "2023-11-13T14:58:52+00:00",
+      "Hash": "D4997939E495D71FE006D4E3157D7603"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 26501,
+      "LastWriteTime": "2024-04-24T13:20:58+00:00",
+      "Hash": "1F15157B8393D307A11CBB9BE9B0AE86"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 61,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "6F36EF14407254C7632CC154C704F9AB"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Terminologia\\Anagrafica-Schede-Valutazione.page.md": {
+      "Length": 14361,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "AF96A8EC96A8E868C10C2B426CDFB0DE"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 17848,
+      "LastWriteTime": "2024-06-25T11:30:02+00:00",
+      "Hash": "5D9EAD53BD36E05FAE7DEA209FE78D1B"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Terminologia\\toc.yaml": {
+      "Length": 153,
+      "LastWriteTime": "2023-11-15T07:51:46+00:00",
+      "Hash": "FFCA2C7915DE5EA87B9AD86DF67634BA"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\toc.yaml": {
+      "Length": 298,
+      "LastWriteTime": "2023-11-13T14:58:52+00:00",
+      "Hash": "FE255414BE9F98FCC191B1F66026FCE3"
+    },
+    "guides\\IG-RL-sviluppo\\pics\\diagramma_UML_Observation.png": {
+      "Length": 20584,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "BBB31880A2D294ED941DED7B2D701180"
+    },
+    "guides\\IG-RL-sviluppo\\pics\\PIAttivi_flussologico.png": {
+      "Length": 201560,
+      "LastWriteTime": "2024-05-20T11:45:06+00:00",
+      "Hash": "F7A50E98FBE9CB3BB0D0DF9DB756DCE3"
+    },
+    "guides\\IG-RL-sviluppo\\pics\\PrestazioniErogatePaziente.png": {
+      "Length": 207432,
+      "LastWriteTime": "2024-05-20T11:45:06+00:00",
+      "Hash": "9E7422CD07E0F8E9F507AA97A79851AE"
+    },
+    "guides\\IG-RL-sviluppo\\pics\\RicercaPeriodiSospensione.png": {
+      "Length": 211520,
+      "LastWriteTime": "2024-05-20T11:45:06+00:00",
+      "Hash": "90E122FE5627ECE0FF6823093C625609"
+    },
+    "guides\\IG-RL-sviluppo\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\IG-RL-sviluppo\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\IG-RL-sviluppo\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-10-08T13:01:42+00:00",
+      "Hash": "5BCC525052B2A6881390076C8ABA0840"
+    },
+    "guides\\IG-RL-sviluppo\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\IG-RL-sviluppo\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\IG-RL-sviluppo\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-05-21T11:41:38+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\IG-RL-versionhistory\\guide.yaml": {
+      "Length": 101,
+      "LastWriteTime": "2023-12-06T08:26:28+00:00",
+      "Hash": "B182FAEAAA77F4FFAE368625AE0C96DB"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\Index.page.md": {
+      "Length": 2315,
+      "LastWriteTime": "2024-10-08T13:52:58+00:00",
+      "Hash": "D884ACA84838FEB6276F6974B1D130D5"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\OMr.page.md": {
+      "Length": 861,
+      "LastWriteTime": "2024-07-22T10:56:54+00:00",
+      "Hash": "78947676259CBB315F707B41A1A9FF55"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.13.0.page.md": {
+      "Length": 1684,
+      "LastWriteTime": "2024-01-31T12:45:26+00:00",
+      "Hash": "3CB64F89FA56ECDC0665277092DB6708"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.13.1.page.md": {
+      "Length": 485,
+      "LastWriteTime": "2024-04-24T12:34:12+00:00",
+      "Hash": "AA8BE4E76806382C37022572D0A78662"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.13.2.page.md": {
+      "Length": 2433,
+      "LastWriteTime": "2024-06-25T08:40:36+00:00",
+      "Hash": "BFCCE0B7B8F3774FE87E6C486BBC5EF8"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.13.3.page.md": {
+      "Length": 2565,
+      "LastWriteTime": "2024-06-25T11:14:38+00:00",
+      "Hash": "7900B6A111C7F8435B85B3CDC80E4D67"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.0.0-beta.page.md": {
+      "Length": 442,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "E6506C45739E509BF3DC3DB92F98F0D7"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.1.0-beta.page.md": {
+      "Length": 1758,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "14DD135E71730D9FBB94843618809E67"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.10.0.page.md": {
+      "Length": 913,
+      "LastWriteTime": "2023-10-17T11:44:42+00:00",
+      "Hash": "300792B3AD5D7FE6445991315E007080"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.11.0.page.md": {
+      "Length": 1636,
+      "LastWriteTime": "2023-10-27T12:51:28+00:00",
+      "Hash": "95DEF212981B1C5B1F8D4A6081661C83"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.12.0.page.md": {
+      "Length": 3270,
+      "LastWriteTime": "2023-11-15T15:08:20+00:00",
+      "Hash": "61747D76AE39B47CE021FB5A2F817A88"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.12.1.page.md": {
+      "Length": 3405,
+      "LastWriteTime": "2023-11-23T13:58:48+00:00",
+      "Hash": "12BE6A0C9BAEB517177E720D01062C03"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.13.5.page.md": {
+      "Length": 756,
+      "LastWriteTime": "2024-10-08T13:01:42+00:00",
+      "Hash": "FA5A0185E9216D3077D2E223FD47A2F9"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.2.0-beta.page.md": {
+      "Length": 780,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "BB4C92BB24B95065D908DA3A1C3E862E"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.2.1-beta.page.md": {
+      "Length": 1153,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "1A0FBE5FE0F843F8C5A93BA1DBB2A359"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.2.2-beta.page.md": {
+      "Length": 1810,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "D4EC75ACDDB4DA46137AB77BFA0A8CB1"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.3.0.page.md": {
+      "Length": 934,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "0B3299289BEC07A34A79F000D32E3459"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.4.0.page.md": {
+      "Length": 682,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "DA71C7EBE6867A1B20DAE2F5657A7CDE"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.4.1.page.md": {
+      "Length": 749,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "A01D1778B9DA40803E56106560DBBB7C"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.5.0.page.md": {
+      "Length": 729,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "248EE2B3434D9227696B251F8ACDFA68"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.6.0.page.md": {
+      "Length": 1114,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "FBC3327828C991EBEC8621C837E1C553"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.7.0.page.md": {
+      "Length": 1212,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "ABD09D7B060AE8B91595E3425E671328"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.8.0.page.md": {
+      "Length": 1280,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "75C5E4AFE1026B856B0880D1AE58B55B"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\draft_3.9.1.page.md": {
+      "Length": 857,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "1F376557D404433E597A896A07EE6FBB"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\gdrl-1.0.0.page.md": {
+      "Length": 475,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "DE5E812D9BE1CE38C4E28789BB96DF55"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\gdrl-1.1.0.page.md": {
+      "Length": 1062,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "98AF0861547887B9CC21B6817ADD53E9"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\gdrl-1.3.0.page.md": {
+      "Length": 1285,
+      "LastWriteTime": "2024-07-22T10:54:06+00:00",
+      "Hash": "91E9AA3E97579FFB655172B32DD01760"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\IG-PLO-v1.0.0.page.md": {
+      "Length": 364,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "1F56A24BDFC1B634BAC5EF8B07224465"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\IG-PLO-v1.0.1.page.md": {
+      "Length": 475,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "3EA3C951F2EC4E23AA71472350B8129A"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.10.0.page.md": {
+      "Length": 2681,
+      "LastWriteTime": "2024-07-03T08:30:20+00:00",
+      "Hash": "690398315CAC6EE589D3D546806435AB"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.9.0.page.md": {
+      "Length": 1645,
+      "LastWriteTime": "2024-01-31T13:00:48+00:00",
+      "Hash": "AEB0A85991FA07CFC79B6094FFF71DA9"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.10.2.page.md": {
+      "Length": 818,
+      "LastWriteTime": "2024-09-20T13:16:26+00:00",
+      "Hash": "370F6E1C648B4FA8987F4EFB8B11FDA3"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.10.3.page.md": {
+      "Length": 388,
+      "LastWriteTime": "2024-10-08T13:01:42+00:00",
+      "Hash": "AB4D5CD779F2DDD4CBF34E2C67CAD94F"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.4.0.page.md": {
+      "Length": 663,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "626FCC2FD85B7DDD42C0B694175E7510"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.5.0.page.md": {
+      "Length": 867,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "41AAF8D621024DB7241AC08033565EDE"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.6.0.page.md": {
+      "Length": 817,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "C23DAA57B21A2C2DB8D17D0A517CB290"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.7.0.page.md": {
+      "Length": 2153,
+      "LastWriteTime": "2023-10-27T13:17:42+00:00",
+      "Hash": "105A846CF4EA5C5A6C15DB2B3BC2A75B"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.8.0.page.md": {
+      "Length": 3229,
+      "LastWriteTime": "2023-11-15T15:08:20+00:00",
+      "Hash": "BD653B1256A690A1208DCBDFE431471D"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\live_3.8.1.page.md": {
+      "Length": 3366,
+      "LastWriteTime": "2023-11-23T14:00:14+00:00",
+      "Hash": "90155A6D10D435DD1B2325269EA55298"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\sviluppo_2.6.0.page.md": {
+      "Length": 1694,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "BED7C09E8ED889B088B1FCE6A68FFE92"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\sviluppo_2.7.0.page.md": {
+      "Length": 837,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "76199BB355FB39F70692E5413E6BD3C0"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\sviluppo_2.7.1.page.md": {
+      "Length": 1093,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "DE95A019627224B36EE680DD879AD307"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\PLO.page.md": {
+      "Length": 628,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "6D1EF14335390B2C889E25A9C52E6E35"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\toc.yaml": {
+      "Length": 144,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "776406E12D8291F9956D8D8A5AAE5186"
+    },
+    "guides\\IG-RL-versionhistory\\toc.yaml": {
+      "Length": 29,
+      "LastWriteTime": "2023-12-06T08:29:46+00:00",
+      "Hash": "081E10433CADB0ECA755B1662B7264EA"
+    },
+    "guides\\mov-pz-draft\\guide.yaml": {
+      "Length": 224,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "41BD65178DCE9BBF793243F323D7CDF6"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto.page.md": {
+      "Length": 3774,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "8C5B090E231AB8F7728AF0CA32A515FD"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto\\Caso d\u0027uso.page.md": {
+      "Length": 570,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "E7873FD7095F29E1B6A07BB2EDABA4A6"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto\\Fonti dato.page.md": {
+      "Length": 437,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "764D59E35C35AA56D6C909EB05267A55"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto\\toc.yaml": {
+      "Length": 177,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "1D2CA89DD964945E0C9F363F3A45F7AB"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto\\Utenti fruitori.page.md": {
+      "Length": 672,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "A9CF665D6377BA0ABA3BD56E476CA06B"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Paradigmi-di-comunicazione-e-API-RESTful.page.md": {
+      "Length": 3369,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "206F7E1DD36C087077AB697DE05AFCFB"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 1085,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "905CBB01D39B719086D222E7824A253F"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\toc.yaml": {
+      "Length": 308,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "3AAC64FD897D6805FA110688311D3EC3"
+    },
+    "guides\\mov-pz-draft\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 2794,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "3153831B6BF0B26D9D64EAD051E0EB72"
+    },
+    "guides\\mov-pz-draft\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\mov-pz-draft\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\mov-pz-draft\\Home\\Index.page.md": {
+      "Length": 1328,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "EC4F42BC6C73520ED9AA69CF66F26724"
+    },
+    "guides\\mov-pz-draft\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 2319,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "05DF6A364BB856DBE20D0354372A44FD"
+    },
+    "guides\\mov-pz-draft\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 6560,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "220D4719013E246E54B0BE2E821C33FF"
+    },
+    "guides\\mov-pz-draft\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\mov-pz-draft\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\mov-pz-draft\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 5389,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "A090860649BA46C884E5B812810DFF69"
+    },
+    "guides\\mov-pz-draft\\Home\\Terminologia\\toc.yaml": {
+      "Length": 153,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B3DE8468C58D6E4D2F038ACDA30B2787"
+    },
+    "guides\\mov-pz-draft\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\mov-pz-draft\\styles\\RL-css\\logo-ARIA.png": {
+      "Length": 18130,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "29D0AC74739706646FF23BC0F352248C"
+    },
+    "guides\\mov-pz-draft\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\mov-pz-draft\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\mov-pz-draft\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "6DCE10700C93B2D8A9C9F9C291AA1489"
+    },
+    "guides\\mov-pz-draft\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\mov-pz-draft\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\mov-pz-draft\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\guide.yaml": {
+      "Length": 170,
+      "LastWriteTime": "2024-12-16T15:59:36+00:00",
+      "Hash": "7C0171419F583CD68B90AA2A0B0FC351"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\toc.yaml": {
+      "Length": 236,
+      "LastWriteTime": "2024-07-18T11:58:54+00:00",
+      "Hash": "69B4B622B93FC81E7E17F385F755B677"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-06-14T11:31:22+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Index.page.md": {
+      "Length": 1745,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "70C49B499AB89DCAD307039636349769"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Terminologia\\toc.yaml": {
+      "Length": 63,
+      "LastWriteTime": "2024-07-12T14:03:58+00:00",
+      "Hash": "14011722F9507570022E18058AF3B890"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-06-14T11:31:22+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-06-14T10:58:18+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-06-14T10:58:18+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-06-14T10:58:18+00:00",
+      "Hash": "83B0261F4F078C5780BC2CE26A7079D1"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-06-14T10:58:18+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-06-14T10:58:18+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-06-14T11:31:22+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\guide.yaml": {
+      "Length": 158,
+      "LastWriteTime": "2024-12-16T15:59:36+00:00",
+      "Hash": "FA1A89F8A4393D479CEE334425C3D219"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto.page.md": {
+      "Length": 2277,
+      "LastWriteTime": "2024-09-05T06:16:42+00:00",
+      "Hash": "4AB209E9A192AE2E17F7C3D57E715233"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Contesto\\toc.yaml": {
+      "Length": 316,
+      "LastWriteTime": "2024-12-16T15:59:36+00:00",
+      "Hash": "B56943C71B8EDE606254752D37F82A79"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 1849,
+      "LastWriteTime": "2024-07-16T12:01:22+00:00",
+      "Hash": "8A35851EF530B671446B32BBCF30DE1F"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Esempi\\toc.yaml": {
+      "Length": 60,
+      "LastWriteTime": "2024-06-14T11:31:36+00:00",
+      "Hash": "E80EE9B4C18475C416ABBA65D96EA98C"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-06-14T11:31:36+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 2175,
+      "LastWriteTime": "2024-07-18T11:44:52+00:00",
+      "Hash": "DAE2F1E19E6827652BC6EE294DB9806B"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Terminologia\\toc.yaml": {
+      "Length": 153,
+      "LastWriteTime": "2024-12-16T15:59:36+00:00",
+      "Hash": "B3DE8468C58D6E4D2F038ACDA30B2787"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\toc.yaml": {
+      "Length": 222,
+      "LastWriteTime": "2024-06-14T11:31:36+00:00",
+      "Hash": "E24E95BE7BAC239CAA370018BC0AE094"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\styles\\RL-css\\logo-rl.png": {
+      "Length": 49508,
+      "LastWriteTime": "2024-06-13T13:39:18+00:00",
+      "Hash": "4DE3DB72C5BA26C58A543EEA0A7AF8A7"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\styles\\RL-css\\logo-siss.jpg": {
+      "Length": 8578,
+      "LastWriteTime": "2024-06-13T13:39:18+00:00",
+      "Hash": "70A3A02E1DAE1BB8E9827CE8CAA58268"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\styles\\RL-css\\master.html": {
+      "Length": 5937,
+      "LastWriteTime": "2024-06-13T13:39:18+00:00",
+      "Hash": "83B0261F4F078C5780BC2CE26A7079D1"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\styles\\RL-css\\settings.style": {
+      "Length": 76,
+      "LastWriteTime": "2024-06-13T13:39:18+00:00",
+      "Hash": "C852E33C94C6015B635CA2D60ABD3234"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\styles\\RL-css\\style.css": {
+      "Length": 9063,
+      "LastWriteTime": "2024-06-13T13:39:18+00:00",
+      "Hash": "B697548E691F6FA94306A83E0B6CF816"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\toc.yaml": {
+      "Length": 30,
+      "LastWriteTime": "2024-06-14T11:31:36+00:00",
+      "Hash": "6C4E7CFB45244EB29600D120A5C5757C"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Clinical Data Repository.page.md": {
+      "Length": 1975,
+      "LastWriteTime": "2024-07-18T12:30:46+00:00",
+      "Hash": "BC1402C44DA2771D00C72D6DEEC00D16"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Contenuto informativo.page.md": {
+      "Length": 284,
+      "LastWriteTime": "2024-07-18T12:06:14+00:00",
+      "Hash": "402B1E7AD60A7EA8447B803A30F2805A"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Contenuto-informativo.page.md": {
+      "Length": 1094,
+      "LastWriteTime": "2024-12-17T08:02:18+00:00",
+      "Hash": "636CD333BE5006F145B0E97538F2370E"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Distribuzione-dati-codificati--DDC.page.md": {
+      "Length": 87,
+      "LastWriteTime": "2024-05-21T11:41:20+00:00",
+      "Hash": "9F2A3CB2E9D6007F95B72CA88B9EC04C"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\hiden.page.md": {
+      "Length": 382,
+      "LastWriteTime": "2024-06-14T10:58:12+00:00",
+      "Hash": "B52FCEF030B7D069E74698F06E226646"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Index.page.md": {
+      "Length": 1304,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "5298812FC310EDBE1B35ED3F590BEF27"
+    },
+    "guides\\IG-RL-versionhistory\\Home\\pagine-dettaglio\\gdrl-1.2.0.page.md": {
+      "Length": 783,
+      "LastWriteTime": "2024-03-18T12:57:34+00:00",
+      "Hash": "D915F5D67320BA577C54E94B1268DE7B"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\FQL-extension.page.md": {
+      "Length": 654,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "00D0B684A1220AEB9BE0F28C60BC262B"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\FQL-profili.page.md": {
+      "Length": 607,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "4F9846D5D4A00735BA97D9DEFD789077"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\FQL-search-parameters.page.md": {
+      "Length": 197,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "A14F289951FEB1DE2EC6FFDB6CEFDA29"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\FQL-valueset.page.md": {
+      "Length": 145,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "9C0956A3BD8AA60C0F736D13AE47AC26"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\Mappa-CodeSystem.page.md": {
+      "Length": 8403,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "26FEFAA6F3128172CEDD4120E2C9416D"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\pagina-test-link.page.md": {
+      "Length": 876,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "BE554765A5D187E2973FCE8BF4289CA5"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\pagine-extra\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLAllergyIntoleranceAllergie.page.md": {
+      "Length": 3299,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "86F7E7892E4B4DF8DB84EE600A85E8C0"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleRispostaLabReport.page.md": {
+      "Length": 3244,
+      "LastWriteTime": "2024-07-18T13:05:44+00:00",
+      "Hash": "68F6DC8D0C0609C34FCA6FEBEE50CE0B"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCarePlanProgettoIndividuale.page.md": {
+      "Length": 9410,
+      "LastWriteTime": "2024-05-29T06:17:04+00:00",
+      "Hash": "F2F46B451D7E8BC1C8A0E6CD56BF6A47"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLConditionProblemiSalute.page.md": {
+      "Length": 4511,
+      "LastWriteTime": "2024-10-01T06:46:42+00:00",
+      "Hash": "9E748B5D45774C842455C6984F227497"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDeviceRequestProtesiAusili.page.md": {
+      "Length": 3596,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "2517765A287EA77E3F195461D6880EBD"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDiagnosticReportLabReport.page.md": {
+      "Length": 3982,
+      "LastWriteTime": "2024-07-18T13:05:44+00:00",
+      "Hash": "1E901ED118D3C3E51514EEE57A5F0BB3"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationLabReport.page.md": {
+      "Length": 3396,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "C390E0BFC0B4B0FFE778E48CA7AC19C1"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationbatteryLabReport.page.md": {
+      "Length": 3342,
+      "LastWriteTime": "2024-07-19T08:45:34+00:00",
+      "Hash": "67A3D41B3F90C3C8A48CA2742A868EF3"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationDocumentLabReport.page.md": {
+      "Length": 3947,
+      "LastWriteTime": "2024-07-19T08:32:54+00:00",
+      "Hash": "545EEB645A33B767E5D905D38F69FED7"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationEsitoValutazione.page.md": {
+      "Length": 3698,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "A74E750C2A8C0BE08039E35FBD7D81FA"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationLabReport.page.md": {
+      "Length": 3385,
+      "LastWriteTime": "2024-07-16T09:10:26+00:00",
+      "Hash": "DBB171F37B2F68E7C823D5AAD5FBB8D8"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerLabReport.page.md": {
+      "Length": 3154,
+      "LastWriteTime": "2024-07-18T08:58:28+00:00",
+      "Hash": "B65C1543D22CC5E7BB5E7E8D4EDD3F28"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleLabReport.page.md": {
+      "Length": 3513,
+      "LastWriteTime": "2024-07-19T08:47:38+00:00",
+      "Hash": "ABB3159DAEA93540BDC790B7FEF7D2E2"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleOperatoreADI.page.md": {
+      "Length": 3738,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "79099A5E0E4A22195ECE5326F998294C"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLQuestionnaireValutazione.page.md": {
+      "Length": 3232,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "08856C7032C41639613A024B3FC72ECC"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestLabReport.page.md": {
+      "Length": 3771,
+      "LastWriteTime": "2024-07-19T08:50:00+00:00",
+      "Hash": "032EED736963097E06F861029056E6B7"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioni.page.md": {
+      "Length": 4830,
+      "LastWriteTime": "2024-05-03T11:53:20+00:00",
+      "Hash": "7639202D36A0913131099CBB90A4A3ED"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestRivalutazione.page.md": {
+      "Length": 7313,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "7E05331EE4197A218DA85F58A1E4D759"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestSospensioneADI.page.md": {
+      "Length": 7817,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "2F07907C04CA161EFE927C141D8FF1DF"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLSpecimenLabReport.page.md": {
+      "Length": 3553,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "5D7FE1E1B49DA696F9403414AB39446B"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-06-13T13:39:16+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-06-14T10:58:14+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationCore.page.md": {
+      "Length": 2913,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "595FB9227F05BC5AA546228437B530DF"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerCore.page.md": {
+      "Length": 2664,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "F1B87DBAA84A10C7209F6190AAEE3123"
+    },
+    "guides\\ig-core\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleCore.page.md": {
+      "Length": 2735,
+      "LastWriteTime": "2024-08-02T13:42:48+00:00",
+      "Hash": "F8D05559E32336D0482B8833860A0144"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 1085,
+      "LastWriteTime": "2024-07-01T10:53:46+00:00",
+      "Hash": "905CBB01D39B719086D222E7824A253F"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 2794,
+      "LastWriteTime": "2024-07-12T13:47:48+00:00",
+      "Hash": "3153831B6BF0B26D9D64EAD051E0EB72"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-12-16T15:58:36+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCareTeamEquipe.page.md": {
+      "Length": 3194,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "855B5FAFED33AA31CB56484C39D38B0A"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMeasurePLO.page.md": {
+      "Length": 3105,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "E54D2A7C3A790589DB56D91D5091DEB0"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationL1.page.md": {
+      "Length": 4745,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "38B30455782AD9BBF543583CC875BD60"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationL2.page.md": {
+      "Length": 16921,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "A6AF8FA63156823A07F7D4AB0E8B48CF"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationL3.page.md": {
+      "Length": 3241,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "C32F2D771A28C3765E073A695E7CEF2B"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Paradigmi-di-comunicazione-e-API-RESTful.page.md": {
+      "Length": 6900,
+      "LastWriteTime": "2024-09-13T11:39:04+00:00",
+      "Hash": "A630EDA0C2329B467DE8607F3CD54A38"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Catalogo-di-offerta.page.md": {
+      "Length": 601,
+      "LastWriteTime": "2024-05-21T11:05:56+00:00",
+      "Hash": "563F23066674D988B41B6F4F66FA4E0E"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Cure-domiciliari.page.md": {
+      "Length": 4433,
+      "LastWriteTime": "2024-05-21T11:05:56+00:00",
+      "Hash": "908D953E14B226C44633067A84670A79"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Dimissioni-protette.page.md": {
+      "Length": 16,
+      "LastWriteTime": "2024-05-21T11:41:20+00:00",
+      "Hash": "D1C7A57EA438B9C68A313CF68DF87335"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleMMG.page.md": {
+      "Length": 2945,
+      "LastWriteTime": "2024-09-27T06:42:00+00:00",
+      "Hash": "8F8463B9613A2377919F78FB82C6F703"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCareTeamEquipe.page.md": {
+      "Length": 3194,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "855B5FAFED33AA31CB56484C39D38B0A"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMeasurePLO.page.md": {
+      "Length": 3105,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "E54D2A7C3A790589DB56D91D5091DEB0"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationL1.page.md": {
+      "Length": 4745,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "38B30455782AD9BBF543583CC875BD60"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationL2.page.md": {
+      "Length": 17266,
+      "LastWriteTime": "2024-05-03T11:53:20+00:00",
+      "Hash": "8EAC59E2CABA888A887C7035974F8611"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationL3.page.md": {
+      "Length": 3241,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "C32F2D771A28C3765E073A695E7CEF2B"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientBase.page.md": {
+      "Length": 3373,
+      "LastWriteTime": "2024-10-08T13:14:04+00:00",
+      "Hash": "58F0C7AA8DF2B2ED5D65A74AEB103859"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleRispostaLabReport.page.md": {
+      "Length": 3244,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "68F6DC8D0C0609C34FCA6FEBEE50CE0B"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDiagnosticReportLabReport.page.md": {
+      "Length": 3982,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "1E901ED118D3C3E51514EEE57A5F0BB3"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleLabReport.page.md": {
+      "Length": 3513,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "ABB3159DAEA93540BDC790B7FEF7D2E2"
+    },
+    "guides\\cdr-lab\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestLabReport.page.md": {
+      "Length": 3771,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "032EED736963097E06F861029056E6B7"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Utenti fruitori.page.md": {
+      "Length": 238,
+      "LastWriteTime": "2024-07-18T11:56:58+00:00",
+      "Hash": "00DFE89223777C4ED6EF090DAA4990E9"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Paradigmi-di-comunicazione-e-API-RESTful.page.md": {
+      "Length": 12625,
+      "LastWriteTime": "2024-10-02T07:30:54+00:00",
+      "Hash": "0A88FF3632CAB99720E0D62700B23D74"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLEncounterBundleSearchSet.page.md": {
+      "Length": 1607,
+      "LastWriteTime": "2024-10-02T05:49:50+00:00",
+      "Hash": "C6DCDDEB5C841E268E7FC0588F42A924"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Raccolta-esempi\\RLNelTempoBundleSearchSet.page.md": {
+      "Length": 1718,
+      "LastWriteTime": "2024-09-26T13:49:48+00:00",
+      "Hash": "FE5049917E390635FDADA3FBD092C8D0"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Clinical Data Repository.page.md": {
+      "Length": 2127,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "CAC9619A52C386FEB2BD7D0DA62FF502"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDeviceLabReport.page.md": {
+      "Length": 3257,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "7DCEF86B14EEA12A7E7695DC47BB2BC8"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMediaLabReport.page.md": {
+      "Length": 3216,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "B9C671D79FEB055FB1581654B1903EFD"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientLabReport.page.md": {
+      "Length": 3992,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "C7CA2E2A967B64DF206E58628F38F7C6"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLConditionProblemiSalute.page.md": {
+      "Length": 4115,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "08EEFD31DF3B6887C4C27669AE819B5D"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLQuestionnaireValutazione.page.md": {
+      "Length": 3232,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "08856C7032C41639613A024B3FC72ECC"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\toc.yaml": {
+      "Length": 177,
+      "LastWriteTime": "2024-07-18T12:06:14+00:00",
+      "Hash": "1D2CA89DD964945E0C9F363F3A45F7AB"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto\\Clinical Data Repository.page.md": {
+      "Length": 1975,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "BC1402C44DA2771D00C72D6DEEC00D16"
+    },
+    "guides\\mov-pz-draft\\Home\\Contesto\\Panoramica-di-progetto\\Contenuto informativo.page.md": {
+      "Length": 284,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "402B1E7AD60A7EA8447B803A30F2805A"
+    },
+    "guides\\mov-pz-draft\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterMP.page.md": {
+      "Length": 3636,
+      "LastWriteTime": "2024-10-01T08:48:40+00:00",
+      "Hash": "32C55E5289FC01CB5D4D1367AD8AF2AB"
+    },
+    "package.json": {
+      "Length": 269,
+      "LastWriteTime": "2024-12-16T16:00:04+00:00",
+      "Hash": "0E1603686238B13F4A722E1D7D0C1874"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Caso d\u0027uso.page.md": {
+      "Length": 570,
+      "LastWriteTime": "2024-07-18T12:06:14+00:00",
+      "Hash": "E7873FD7095F29E1B6A07BB2EDABA4A6"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Fonti dato.page.md": {
+      "Length": 437,
+      "LastWriteTime": "2024-07-18T12:06:14+00:00",
+      "Hash": "764D59E35C35AA56D6C909EB05267A55"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Utenti fruitori.page.md": {
+      "Length": 672,
+      "LastWriteTime": "2024-07-18T12:06:14+00:00",
+      "Hash": "A9CF665D6377BA0ABA3BD56E476CA06B"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Paradigmi-di-comunicazione-e-API-RESTful.page.md": {
+      "Length": 3369,
+      "LastWriteTime": "2024-07-10T12:28:14+00:00",
+      "Hash": "206F7E1DD36C087077AB697DE05AFCFB"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Estensioni.page.md": {
+      "Length": 2319,
+      "LastWriteTime": "2024-07-01T11:57:42+00:00",
+      "Hash": "05DF6A364BB856DBE20D0354372A44FD"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 6560,
+      "LastWriteTime": "2024-07-02T06:23:32+00:00",
+      "Hash": "220D4719013E246E54B0BE2E821C33FF"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterMP.page.md": {
+      "Length": 3636,
+      "LastWriteTime": "2024-07-18T08:54:36+00:00",
+      "Hash": "32C55E5289FC01CB5D4D1367AD8AF2AB"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-12-16T15:58:36+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto.page.md": {
+      "Length": 3774,
+      "LastWriteTime": "2024-12-16T15:58:36+00:00",
+      "Hash": "8C5B090E231AB8F7728AF0CA32A515FD"
+    },
+    "guides\\IG-FHIR-per-Movimentazione-Paziente-Sviluppo\\Home\\Terminologia\\Libreria-ValueSet.page.md": {
+      "Length": 5389,
+      "LastWriteTime": "2024-07-10T11:50:38+00:00",
+      "Hash": "A090860649BA46C884E5B812810DFF69"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\pics\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-06-13T13:39:14+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\pics\\toc.yaml": {
+      "Length": 0,
+      "LastWriteTime": "2024-06-14T10:58:12+00:00",
+      "Hash": "D41D8CD98F00B204E9800998ECF8427E"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\Modello-pagina-profilo.page.md": {
+      "Length": 5261,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "9E924536D93CF98B8F8CF7463A6A4B6C"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleNotificaErrori.page.md": {
+      "Length": 2253,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "B324659FF2BB6150BC65B10188E324DD"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLGoalObiettiviSalute.page.md": {
+      "Length": 3522,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "A31EF1876AC4F338639B868D89A8BABE"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOEdificio.page.md": {
+      "Length": 3197,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D9D3F3A21910AA063D8AFBDA764EFD85"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationStiliVita.page.md": {
+      "Length": 3489,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "BD785F2ACE6B91E20A7226E0EEF8912C"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLProcedurePrestazione.page.md": {
+      "Length": 7511,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D2C56091CD4D2BEE685B2EAA7B9D3B35"
+    },
+    "LAB\\Profile_RL_Provenance_Lab.json": {
+      "Length": 4446,
+      "LastWriteTime": "2024-10-02T11:01:00+00:00",
+      "Hash": "D8C8D93B0A03BA3E55EF26F5AFE26925"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCompositionLabReport.page.md": {
+      "Length": 3966,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "F44E9E16EACD27C1747F80A930AB9207"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterLabReport.page.md": {
+      "Length": 3761,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "6C3870EC9EFF5BA3583D20ECFDC5DC4E"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationLuogoPrestazioneCureDom.page.md": {
+      "Length": 3658,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "32D385BF53462BEED07A23A007A2502C"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMedicationRequestOssigenoterapia.page.md": {
+      "Length": 3750,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "5CBF9EC444B29EBB83DEA9E490F231AB"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMessageHeaderControlloCoerenza.page.md": {
+      "Length": 2300,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "33FE9133F0D2E9CE6D31D81FCA82C820"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationLabReport.page.md": {
+      "Length": 4483,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "1DEEF3E9AFB0FB79DD3B71D1C189B380"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationLabReport.page.md": {
+      "Length": 3385,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "DBB171F37B2F68E7C823D5AAD5FBB8D8"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationOperatoreLabReport.page.md": {
+      "Length": 4457,
+      "LastWriteTime": "2024-07-16T09:10:26+00:00",
+      "Hash": "C7006854E688BED35FF9EC27A21D929E"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerLabReport.page.md": {
+      "Length": 3154,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "B65C1543D22CC5E7BB5E7E8D4EDD3F28"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerMedicoPrescrittore.page.md": {
+      "Length": 3942,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "82B103F71FEE4082E131C67CB83A49B1"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleMedicoPrescrittore.page.md": {
+      "Length": 3724,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "D8F61523228FF90EDACB1200E26AC5C1"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleMMGPLSLabReport.page.md": {
+      "Length": 3556,
+      "LastWriteTime": "2024-07-19T08:48:38+00:00",
+      "Hash": "9350B02CBF1C08332AFDFDAF70BC2B2E"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLProvenanceLabReport.page.md": {
+      "Length": 3269,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "356579DD3D1C44A651668950A342462D"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLQuestionnaireResponseValutazione.page.md": {
+      "Length": 6944,
+      "LastWriteTime": "2023-11-15T10:55:34+00:00",
+      "Hash": "B66CE5E356F196002FF2AF1796F12E69"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioniSociali.page.md": {
+      "Length": 3616,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "ADA1FF5E7CE052252B8E7FFBEFB76EE2"
+    },
+    "guides\\cdr-ldo-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLSubstanceLabReport.page.md": {
+      "Length": 3561,
+      "LastWriteTime": "2024-12-16T15:51:02+00:00",
+      "Hash": "3271CFC757BEE0056E9EDFA4851FD39A"
+    },
+    "profilo.snippet.md": {
+      "Length": 6149,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "6096B91A9C291644BEC589392444FF11"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Stati-ed-Errori.page.md": {
+      "Length": 1084,
+      "LastWriteTime": "2024-09-16T05:21:30+00:00",
+      "Hash": "9140F38EAD8DFD5EE6A67E7F78AF1B32"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Esempi\\Libreria-Esempi.page.md": {
+      "Length": 3084,
+      "LastWriteTime": "2024-10-01T08:19:16+00:00",
+      "Hash": "D7B3390FE762A5AACE4BCE54EA4C4079"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\toc.yaml": {
+      "Length": 130,
+      "LastWriteTime": "2024-06-14T11:31:22+00:00",
+      "Hash": "0B0A7AAD75E171CABC6550A8472DA3AF"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Libreria-Profili.page.md": {
+      "Length": 3815,
+      "LastWriteTime": "2024-07-16T13:30:26+00:00",
+      "Hash": "89BC1E243957E0A6D94C72DE3BCB4E55"
+    },
+    "project.yaml": {
+      "Length": 19,
+      "LastWriteTime": "2024-04-24T08:27:58+00:00",
+      "Hash": "DEE612657E1B3387115956B717639B80"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMedicationRequestTerapiaFarmacologica.page.md": {
+      "Length": 3808,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "4DCB20BAF8AF028ECDE378660F0CB18F"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerProfessionistaSanitario.page.md": {
+      "Length": 3498,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D609865C279CBF3F9FB850E544449A80"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleMedicoPrescrittore.page.md": {
+      "Length": 3724,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D8F61523228FF90EDACB1200E26AC5C1"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleProfessionistaSanitario.page.md": {
+      "Length": 3860,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "A3468EAAFB6B04615FB7C0120B4EA609"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestInterventoEducazionale.page.md": {
+      "Length": 4099,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "DD0429E8973D34523AB12D8A25AB1003"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioniInfermieristiche.page.md": {
+      "Length": 3843,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "686093572DBF4CBE5E0297D92FA6FFE6"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestPrestazioniSpecialistiche.page.md": {
+      "Length": 3748,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "C62A4BF5103F37CC597BC749045E034D"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLServiceRequestServiziSocioAssistenziali.page.md": {
+      "Length": 4505,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "1F44AC7BBB3CBCF7F8D615F24AB25B2A"
+    },
+    "README.md": {
+      "Length": 28,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "A7EC050247940C3480798A473A8731AA"
+    },
+    "PI\\Profile_RL_AllergyIntolerance_Allergie.json": {
+      "Length": 2909,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "054776E5F71DE43A71F13840D795C6BB"
+    },
+    "PIC\\Profile_RL_Bundle_MMG.json": {
+      "Length": 4597,
+      "LastWriteTime": "2024-05-02T05:55:16+00:00",
+      "Hash": "92E3B821CB7844EAF48B77196E5E0E5F"
+    },
+    "Examples\\Example_Bundle_MMG_adi.json": {
+      "Length": 7219,
+      "LastWriteTime": "2024-12-16T15:57:56+00:00",
+      "Hash": "4ED7A36D8BC15CAE5BA77F7E2AB9F711"
+    },
+    "Examples\\Example_Bundle_MMG_pic.json": {
+      "Length": 8471,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "6ADF8152E644688CD55E076B3E042E6D"
+    },
+    "Examples\\Example_Bundle_MMGpicMMG.json": {
+      "Length": 8471,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "6ADF8152E644688CD55E076B3E042E6D"
+    },
+    "PI\\Profile_RL_Bundle_NotificaErrori.json": {
+      "Length": 2885,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "93682EFF66E7AA423C531F64555E4A06"
+    },
+    "PIC\\Profile_RL_BundleRisposta_MMG.json": {
+      "Length": 3353,
+      "LastWriteTime": "2024-04-24T12:04:46+00:00",
+      "Hash": "C70F8064F8412390FA2E78D4516B71D4"
+    },
+    "Examples\\Example_Bundle_Risposta_MMG_ko.json": {
+      "Length": 2083,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "CAC36F7FD7E10E9766B85F0029F17709"
+    },
+    "Examples\\Example_Bundle_Risposta_MMG_ok.json": {
+      "Length": 2595,
+      "LastWriteTime": "2024-10-08T13:04:26+00:00",
+      "Hash": "C121D2C23EDD29F9321064CE35958A2C"
+    },
+    "PI\\SearchParameter_RL_CarePlan_Author.json": {
+      "Length": 552,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "C039B8E13111A479EDFA436BAFCAF7B7"
+    },
+    "PI\\Profile_RL_CarePlan_ProgettoIndividuale.json": {
+      "Length": 15444,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "5CCB10C415810CB11D569D8776A56D63"
+    },
+    "PI\\Extension_RL_CarePlan_VersionePAI.json": {
+      "Length": 1047,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "C77925898B43C2D0285ECF464C687110"
+    },
+    "PI\\Profile_RL_CareTeam_Equipe.json": {
+      "Length": 5513,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "587D5A328A823EAB960D0F47D9A5CB16"
+    },
+    "PI\\Profile_RL_Condition_ProblemiSalute.json": {
+      "Length": 13864,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "EFB305C9C0F93D0C7C0FCDA675195362"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationCore.page.md": {
+      "Length": 2826,
+      "LastWriteTime": "2024-07-19T08:04:56+00:00",
+      "Hash": "A0B823618367031CB5850A59A0E9229C"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientCore.page.md": {
+      "Length": 3074,
+      "LastWriteTime": "2024-08-02T12:53:08+00:00",
+      "Hash": "6210DE8DB4E6F4CF5128E801628F1DCA"
+    },
+    "PI\\Profile_RL_Coverage_Esenzioni.json": {
+      "Length": 6037,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "C3756531F30FE4DCDDE49CEAB0F1C0A0"
+    },
+    "PI\\Extension_RL_DeviceRequest_ConsegnaPaziente.json": {
+      "Length": 1117,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "57DB77BCBDD83476834F3E99B1715135"
+    },
+    "PI\\Extension_RL_DeviceRequest_PrescrizioneElettronica.json": {
+      "Length": 1153,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "AA64E93F33253F87B5B9A2F4E81906CF"
+    },
+    "PI\\Profile_RL_DeviceRequest_ProtesiAusili.json": {
+      "Length": 7637,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "8B679FD98A53A8F9A9533277988A617A"
+    },
+    "PI\\Profile_RL_Encounter_Accesso.json": {
+      "Length": 7716,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "CEACC5025706DFACD49DFBFBDF54819E"
+    },
+    "MP\\Extension_RL_Encounter_DatiDimissione.json": {
+      "Length": 2271,
+      "LastWriteTime": "2024-06-28T05:51:44+00:00",
+      "Hash": "3AAFF2C62604CF3164B399476F98F8A1"
+    },
+    "MP\\Profile_RL_Encounter_MP.json": {
+      "Length": 8763,
+      "LastWriteTime": "2024-07-01T13:23:56+00:00",
+      "Hash": "E1E11B34020774D9ED1A6DA9383B61E5"
+    },
+    "MP\\Extension_RL_Encounter_PlannedDate.json": {
+      "Length": 882,
+      "LastWriteTime": "2024-06-28T05:51:44+00:00",
+      "Hash": "3F1EC3F3F4E0F782B71FCEE6AC56ABCF"
+    },
+    "PI\\Extension_RL_Encounter_ReferenceCarePlan.json": {
+      "Length": 1412,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "7786F1A285DDB6A764F5F6A72F565D92"
+    },
+    "PI\\Extension_RL_Encounter_TipoBisogno.json": {
+      "Length": 1254,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "DD7635B410F581F30DBBD4552D463A99"
+    },
+    "PI\\Profile_RL_Goal_ObiettiviSalute.json": {
+      "Length": 8090,
+      "LastWriteTime": "2024-04-15T13:50:24+00:00",
+      "Hash": "65000F7F43D225AEA2FBF5A5C54EF13E"
+    },
+    "UDO\\Extension_RL_HealthcareService-Characteristic_Period.json": {
+      "Length": 1001,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "D4D05A5DA2106798D799DEFF78C7BAB6"
+    },
+    "UDO\\Extension_RL_HealthcareService-Characteristic_Value.json": {
+      "Length": 997,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "9EA62FC4FDEC7A33B00371E47A557FBD"
+    },
+    "UDO\\Extension_RL_HealthcareService_DataInsert.json": {
+      "Length": 780,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "C08C88181F95B74FFF4DD717EA4DDB08"
+    },
+    "UDO\\Extension_RL_HealthcareService_DataUpdate.json": {
+      "Length": 782,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "2AF6E358ACFEECD40FC66E862AE25692"
+    },
+    "RSA\\Extension_RL_HealthcareService_Parcheggio.json": {
+      "Length": 2783,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "81954AF8C27FE9BC97D2E387136D52B7"
+    },
+    "RSA\\Extension_RL_HealthcareService_ReferenteStruttura.json": {
+      "Length": 1234,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "BE16FFCF5B36DD7539F71E44BA383406"
+    },
+    "RSA\\Extension_RL_HealthcareService_RettaSociale.json": {
+      "Length": 1045,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "B6CFA4B7FE16BDF65EB9C99C22784547"
+    },
+    "RSA\\Profile_RL_HealthcareService_RSAInfoBase.json": {
+      "Length": 6502,
+      "LastWriteTime": "2023-09-05T10:56:10+00:00",
+      "Hash": "E62CB9F36B90B4CCDC7E90588C2A6BD3"
+    },
+    "RSA\\Extension_RL_HealthcareService_TempiMediPresaInCarico.json": {
+      "Length": 1330,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "B23A98E3032C48CF734AE25000DEBFE5"
+    },
+    "UDO\\Profile_RL_HealthcareService_UDO.json": {
+      "Length": 4377,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "15977E4EC1DA842645DF88307D1FD2E0"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_AreaDegenza.json": {
+      "Length": 915,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "171696C83F2D7A92631AD52D3A2F70EA"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_AreaDegenza.json": {
+      "Length": 562,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "6200AE16AA80732978B82635FDB80370"
+    },
+    "CORE\\Profile_RL_Location_Core.json": {
+      "Length": 1687,
+      "LastWriteTime": "2024-08-02T12:45:16+00:00",
+      "Hash": "1C0CEF1CDE1FBE74ADF9240D991ACFAD"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_DataOraAccettazione.json": {
+      "Length": 996,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "AB539E63E867553AFF514F85D1F0D123"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_DataOraAccettazione.json": {
+      "Length": 655,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "51DA57B746BA78BAA57E46A3A1613D51"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_DataOraDimissionePrevista.json": {
+      "Length": 1027,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "04A62269BCDBD44BD6D0FC27E77184F4"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_DataOraDimissionePrevista.json": {
+      "Length": 672,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "5827488E039F6362B021982C0D540578"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_DataOraOccupazioneLetto.json": {
+      "Length": 1023,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "E4B1334D686CBA9B025C6DF89F936BEB"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_DataOraOccupazioneLetto.json": {
+      "Length": 647,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "B0CBDE02B75CD3E4FB52018B68B0FBEA"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_DimissioneProtetta.json": {
+      "Length": 984,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "86D48161E6264B74DC46A69A8E0AB560"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_DimissioneProtetta.json": {
+      "Length": 612,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "D2FD8A57D6C77C9942DF409AB109C461"
+    },
+    "PI\\Profile_RL_Location_LuogoPrestazioneCureDom.json": {
+      "Length": 3772,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "0ED913EC4EF125C3C60F984A55396D6D"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_PhysicalType.json": {
+      "Length": 453,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "6107B54059469599C06BA6847F4CACA6"
+    },
+    "PLO\\Location_PLO\\Profile_RL_Location_PLO_Edificio.json": {
+      "Length": 3101,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "4A3D6B9FF451881B61AD0695FE7C25DC"
+    },
+    "PLO\\Location_PLO\\Profile_RL_Location_PLO_Letto.json": {
+      "Length": 10320,
+      "LastWriteTime": "2024-04-15T13:20:02+00:00",
+      "Hash": "369A3FC9904418A62B69B1F0EC62D654"
+    },
+    "PLO\\Location_PLO\\Profile_RL_Location_PLO_Piano.json": {
+      "Length": 3532,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "41F94EDB5BDCDF5CDEE588994AB5DAC1"
+    },
+    "PLO\\Location_PLO\\Profile_RL_Location_PLO_Stanza.json": {
+      "Length": 3539,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "47F951AAC06DF948AE24A9A81896D2FA"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_RegimeRicovero.json": {
+      "Length": 972,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "9144809A616B609758D033D0DA3B99D3"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_RegimeRicovero.json": {
+      "Length": 563,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "235902A61A7224243FBE45D364C7FBC3"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_RepartoClinico.json": {
+      "Length": 1071,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "2699F2D020E0C9FB7010DDB5FD1104BC"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_RepartoClinico.json": {
+      "Length": 572,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "75B544553F2CF2FEC102DC54F93B24B8"
+    },
+    "PLO\\Location_PLO\\Extension_RL_Location_RepartoFisico.json": {
+      "Length": 1065,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "845D17E7AD44EBB5A5751B4DD45155F9"
+    },
+    "PLO\\Location_PLO\\SearchParameter_RL_Location_RepartoFisico.json": {
+      "Length": 572,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "05B49A16C1CD073C8DD7CD4F807AB1DA"
+    },
+    "PLO\\Profile_RL_Measure_PLO.json": {
+      "Length": 1933,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "D76A0E421A494E6091AB1613AE75C6D9"
+    },
+    "PLO\\Profile_RL_MeasureReport_PLO.json": {
+      "Length": 4010,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "7E5702887FB598516D17BD3CF3748777"
+    },
+    "PI\\Extension_RL_MedicationRequest_ConsegnaOssigenoDomicilio.json": {
+      "Length": 1156,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "1A178E31A359308102E84D7024A0838C"
+    },
+    "PI\\Extension_RL_MedicationRequest_ConsegnaPaziente.json": {
+      "Length": 1136,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "9FA1E33A8AF80496C8043D70FDBFA244"
+    },
+    "PI\\Profile_RL_MedicationRequest_Ossigenoterapia.json": {
+      "Length": 11310,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "0CD92B5BF80085D58953B374425F01C2"
+    },
+    "PI\\Extension_RL_MedicationRequest_PrescrizioneElettronica.json": {
+      "Length": 1005,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "3B8D436F03B61EDE54B18C8C5D936E4B"
+    },
+    "PI\\Profile_RL_MedicationRequest_TerapiaFarmacologica.json": {
+      "Length": 12326,
+      "LastWriteTime": "2024-05-02T06:31:14+00:00",
+      "Hash": "246E95C612927E8180A99F67C630239F"
+    },
+    "PI\\Profile_RL_MessageHeader_ControlloCoerenza.json": {
+      "Length": 2780,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "F1835D9EF16E2E4963EDF009DFA3890E"
+    },
+    "PIC\\Profile_RL_MessageHeader_MMG.json": {
+      "Length": 6544,
+      "LastWriteTime": "2024-12-16T15:58:16+00:00",
+      "Hash": "D84A885EFAB20E2BDA3E9CF66AF3574F"
+    },
+    "PI\\Profile_RL_Observation_EsitoValutazione.json": {
+      "Length": 8762,
+      "LastWriteTime": "2023-10-26T12:02:12+00:00",
+      "Hash": "7D0918F56919ABDCEB3D3840E5D736E9"
+    },
+    "PI\\Profile_RL_Observation_StiliVita.json": {
+      "Length": 7073,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "4CED92447B9A9600BE93DDD82F983024"
+    },
+    "PI\\Profile_RL_OperationOutcome.json": {
+      "Length": 2287,
+      "LastWriteTime": "2024-06-25T13:11:04+00:00",
+      "Hash": "34326394681EAA4C406F9F9352AA3BC0"
+    },
+    "PIC\\Profile_RL_OperationOutcome_MMG.json": {
+      "Length": 6526,
+      "LastWriteTime": "2024-09-19T12:56:52+00:00",
+      "Hash": "3A649CD85EEC4572472D0D5207C9A206"
+    },
+    "DDC\\Extension_RL_Organization_Address_IstatCode.json": {
+      "Length": 1216,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "F5E341589F9A7C89A74751181DFD9793"
+    },
+    "CORE\\Profile_RL_Organization_Core.json": {
+      "Length": 6155,
+      "LastWriteTime": "2024-08-01T14:17:42+00:00",
+      "Hash": "E3815AA4E09894864323B4A40EB7D302"
+    },
+    "DDC\\Extension_RL_Organization_DataCessazione.json": {
+      "Length": 1240,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "71A846501223425786176A5081BD0A49"
+    },
+    "DDC\\SearchParameter_RL_Organization_DataCessazione.json": {
+      "Length": 744,
+      "LastWriteTime": "2024-05-21T11:17:04+00:00",
+      "Hash": "ADA09A401839942915261D76E858A726"
+    },
+    "DDC\\Extension_RL_Organization_DataCostituzione.json": {
+      "Length": 1294,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "950B5D7631C689C7191659B3D17B9B23"
+    },
+    "DDC\\Extension_RL_Organization_DataFineValidita.json": {
+      "Length": 1206,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "113EB7B403247991EEB8D7DEF8F90972"
+    },
+    "DDC\\SearchParameter_RL_Organization_DataFineValidita.json": {
+      "Length": 770,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "C020D868081924ABD2BE8321106019A1"
+    },
+    "DDC\\Extension_RL_Organization_DataInizioValidita.json": {
+      "Length": 1132,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "667E003D014849439A8D04D7F2C5C773"
+    },
+    "DDC\\SearchParameter_RL_Organization_DataInizioValidita.json": {
+      "Length": 777,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "D9A805C905947E13241F9B580EE4D214"
+    },
+    "DDC\\Extension_RL_Organization_DataInsert.json": {
+      "Length": 1208,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "4C4D1F135B49707B49230AA77613DB59"
+    },
+    "DDC\\Extension_RL_Organization_DataUpdate.json": {
+      "Length": 1172,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "E9BE628751C46AC2662D32A22FCB3181"
+    },
+    "DDC\\Extension_RL_Organization_DistrettoAccreditamento.json": {
+      "Length": 2925,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "14382BD082A7C4B8CDFCB4271447251A"
+    },
+    "DDC\\SearchParameter_RL_Organization_DistrettoAccreditamento_AsstAfferenza.json": {
+      "Length": 798,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "0DBD9409D4B02944B4060E318568CECD"
+    },
+    "DDC\\SearchParameter_RL_Organization_DistrettoAccreditamento_AtsAfferenza.json": {
+      "Length": 792,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "1224A9B1F6BCACAB45377C72298832B9"
+    },
+    "DDC\\SearchParameter_RL_Organization_DistrettoAccreditamento_CodiceDistretto.json": {
+      "Length": 752,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "311AE9F29F6CCE88166561F704354DCD"
+    },
+    "DDC\\Extension_RL_Organization_DistrettoTerritoriale.json": {
+      "Length": 2896,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "E95E94100BA6FFA4E0865BBDE262090F"
+    },
+    "DDC\\SearchParameter_RL_Organization_DistrettoTerritoriale_ASSTAfferenza.json": {
+      "Length": 720,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "8880592B86F36B6212987F176D05F15A"
+    },
+    "DDC\\Profile_RL_Organization_L1.json": {
+      "Length": 13884,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "5A252FE4C2EC5516E935907250DFAFFE"
+    },
+    "DDC\\Profile_RL_Organization_L2.json": {
+      "Length": 34234,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "A5F4C4067BC777EF8F1A31D75A259F89"
+    },
+    "DDC\\Profile_RL_Organization_L3.json": {
+      "Length": 5567,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "4F6DD7354113A3697EA5C7F9040DE44F"
+    },
+    "PI\\Extension_RL_Patient_ATSResidenza.json": {
+      "Length": 993,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "BD6019540B18075F78C2185AD3D0D8B5"
+    },
+    "PIC\\Profile_RL_PatientBase.json": {
+      "Length": 4735,
+      "LastWriteTime": "2024-04-24T08:27:58+00:00",
+      "Hash": "CC64FDB1BCD34491EA286CC606E68AF4"
+    },
+    "PI\\Extension_RL_Patient_Cittadinanza.json": {
+      "Length": 1107,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "59A7D13D7A7C1196170AB7B096A7C561"
+    },
+    "PI\\Profile_RL_Patient_Cittadino.json": {
+      "Length": 30143,
+      "LastWriteTime": "2023-11-23T10:53:36+00:00",
+      "Hash": "F0CA628BB6EFBD0F5E126BFF020FB8D6"
+    },
+    "CORE\\Profile_RL_Patient_Core.json": {
+      "Length": 13102,
+      "LastWriteTime": "2024-08-02T12:53:08+00:00",
+      "Hash": "AD461F5EEE234AB4F9A91582E155C975"
+    },
+    "PI\\Extension_RL_Patient_GeneralPractitioner_MedicoSostituto.json": {
+      "Length": 1167,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "87E28DF2ADC5553094946D3E08B08BF6"
+    },
+    "PI\\Extension_RL_Patient_LuogoDiNascita.json": {
+      "Length": 1025,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "1046FC45388A54CCFB1C652BA25206C6"
+    },
+    "PI\\Extension_RL_Patient_PosizioneDellaProfessione.json": {
+      "Length": 1176,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "A038A9641A7D5B3E062ACB733EC93DF1"
+    },
+    "PI\\Extension_RL_Patient_ResponsabilitaGenitoriale.json": {
+      "Length": 1033,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "F26466AF3F75D18BA62464537EDAFA31"
+    },
+    "PI\\Extension_RL_Patient_SituazionePensionistica.json": {
+      "Length": 1164,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "CEC4BCFDAF720C45DE49AFFE381CF9B7"
+    },
+    "PI\\Extension_RL_Patient_TEAMNomeIdentificazioneIstituzioneCompetente.json": {
+      "Length": 1053,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "D9100109F19F89DC1CE52F9112469D0F"
+    },
+    "PI\\Extension_RL_Patient_TEAMNumeroIdentificazioneIstituzioneCompetente.json": {
+      "Length": 1229,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "2555DB40E3064FEEEDC0E4BA84E79D74"
+    },
+    "PI\\Extension_RL_Patient_TipologiaCittadino.json": {
+      "Length": 993,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "00E2C9F5ECC2B00414BFD775B8BD63A2"
+    },
+    "PI\\Extension_RL_Patient_TitoloDiStudio.json": {
+      "Length": 1121,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "2FC80FD53BD66979D3E91179A9E34D23"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCoverageEsenzioni.page.md": {
+      "Length": 3452,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "9F9A5CA01560DA2B73A89106DF9B4FC1"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterAccesso.page.md": {
+      "Length": 3637,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "DCC2481A1760C081239FC8D7E4678E24"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOLetto.page.md": {
+      "Length": 11183,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "83AA0337EE7E16C5B022BCA9ACE353FC"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOPiano.page.md": {
+      "Length": 3155,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "AD00D4585550132585FCBBF3BB6AB236"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOStanza.page.md": {
+      "Length": 3173,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "D3B3A3D40FA8D727B8CA01F501F15445"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMeasureReportPLO.page.md": {
+      "Length": 4227,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "339B8F96AE4415311F11776C067F8D06"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOperationOutcome.page.md": {
+      "Length": 2190,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "E29FC521FCF59466CD3D23D3D6190AC3"
+    },
+    "guides\\IG-RL-PLO-live\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientCittadino.page.md": {
+      "Length": 4126,
+      "LastWriteTime": "2023-10-24T12:53:46+00:00",
+      "Hash": "28AB57824F751D052C911736FA68CAE6"
+    },
+    "CORE\\Profile_RL_Practitioner_Core.json": {
+      "Length": 3184,
+      "LastWriteTime": "2024-08-01T14:17:42+00:00",
+      "Hash": "F2BEAEEE452335517508EC81E6500DAA"
+    },
+    "DDC\\Extension_RL_Practitioner_DataInsert.json": {
+      "Length": 1078,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "C537E2E61B2009E23E1EB4D185123A75"
+    },
+    "DDC\\Extension_RL_Practitioner_DataUpdate.json": {
+      "Length": 1084,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "D4E4815628E8EB75B4DAF0BD4492A980"
+    },
+    "DDC\\Profile_RL_Practitioner_MedicoPrescrittore.json": {
+      "Length": 10755,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "6F9A201213C72E4F44B2DA6426393EF4"
+    },
+    "PI\\Profile_RL_Practitioner_ProfessionistaSanitario.json": {
+      "Length": 3685,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "F4CE6EAD262E04588D45765ABCDB17D7"
+    },
+    "CORE\\Profile_RL_PractitionerRole_Core.json": {
+      "Length": 3680,
+      "LastWriteTime": "2024-08-02T12:57:36+00:00",
+      "Hash": "9047E3FC29BB5D7B057A2DDEC6FE53F6"
+    },
+    "DDC\\Extension_RL_PractitionerRole_DataInsert.json": {
+      "Length": 1098,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "E2ABC11AA055D790E70FCECA9FAA2D57"
+    },
+    "DDC\\SearchParameter_RL_PractitionerRole_DataInsert.json": {
+      "Length": 770,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "83B14141CF25635E86171AD25F9DBDEF"
+    },
+    "DDC\\Extension_RL_PractitionerRole_DataUpdate.json": {
+      "Length": 1104,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "C29B787B7F86DD81FD46BAA361046CFB"
+    },
+    "PI\\Extension_RL_PractitionerRole_DettagliAttivazionePercorsoCure.json": {
+      "Length": 978,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "421748F7EE950A5E433C9D765952FB5C"
+    },
+    "DDC\\Profile_RL_PractitionerRole_MedicoPrescrittore.json": {
+      "Length": 11313,
+      "LastWriteTime": "2023-10-26T12:02:12+00:00",
+      "Hash": "4B4FD40FB3FF62312B3C7D6FA38784D8"
+    },
+    "PI\\Extension_RL_PractitionerRole_NumeroAccessi.json": {
+      "Length": 922,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "33733E9D5F38536906D528A95D6B4771"
+    },
+    "PI\\Profile_RL_PractitionerRole_OperatoreADI.json": {
+      "Length": 6506,
+      "LastWriteTime": "2024-01-25T10:19:56+00:00",
+      "Hash": "B3FDBAD29D2A65DE35450CB48BC4CC86"
+    },
+    "PI\\Profile_RL_PractitionerRole_ProfessionistaSanitario.json": {
+      "Length": 5681,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "53CA9744314898825633A6B68DDC099A"
+    },
+    "PI\\Extension_RL_Procedure_NumeroAccesso.json": {
+      "Length": 1036,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "B0C7C3DBDA1E50E5C703299A3354DC65"
+    },
+    "PI\\Profile_RL_Procedure_Prestazione.json": {
+      "Length": 16891,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "E9E52E74B502DCA2A672C21800CABD35"
+    },
+    "PI\\Extension_RL_Procedure_DataPresaInCarico.json": {
+      "Length": 1007,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "506D62063FE1848FA767799804F657E5"
+    },
+    "PI\\Extension_RL_Procedure_ModalitaErogazione.json": {
+      "Length": 1024,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "33D6369024C7D072C493419D25A71067"
+    },
+    "PI\\Extension_RL_Procedure_TipoAccesso.json": {
+      "Length": 1048,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "AF0F46189A1C78EDD06AF3FC9AFCCD6F"
+    },
+    "PI\\Extension_RL_QuestionnaireResponse_EsitoValutazione.json": {
+      "Length": 1346,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "F7962EC173DF35CADE9376979DD79FBE"
+    },
+    "PI\\Extension_RL_QuestionnaireResponse_LuogoValutazione.json": {
+      "Length": 949,
+      "LastWriteTime": "2023-11-13T14:58:52+00:00",
+      "Hash": "45C1E19475DEAA6F9732050A83408A74"
+    },
+    "PI\\Extension_RL_QuestionnaireResponse_PartecipantiValutazione.json": {
+      "Length": 970,
+      "LastWriteTime": "2023-11-13T14:58:52+00:00",
+      "Hash": "37DA370A149FB7CCD96051A948E58169"
+    },
+    "PI\\Extension_RL_QuestionnaireResponse_TipologiaValutazione.json": {
+      "Length": 1143,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "190123DFEB2C8D60935A840CD36D6346"
+    },
+    "PI\\Profile_RL_QuestionnaireResponse_Valutazione.json": {
+      "Length": 12660,
+      "LastWriteTime": "2023-11-15T10:31:48+00:00",
+      "Hash": "CFD548DC5559F29EA5880CCE81348F5D"
+    },
+    "PI\\Profile_RL_Questionnaire_Valutazione.json": {
+      "Length": 2552,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "AB27F88006D29622D53224C60F8A8214"
+    },
+    "DP\\Profile_RL_RelatedPerson_CareGiverDimissioniProtette.json": {
+      "Length": 2933,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "CAB33B3B3B606E4EBB3D655000D42C01"
+    },
+    "PI\\Extension_RL_ServiceRequest_CausaleDimissione.json": {
+      "Length": 1229,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "EC133969483197D8A94D3C1EE9F83FC0"
+    },
+    "PI\\Extension_RL_ServiceRequest_DataDimissione.json": {
+      "Length": 1209,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "9DFE0B501580411C53FC9DA45D913245"
+    },
+    "PI\\Extension_RL_ServiceRequest_DettagliPrenotazione.json": {
+      "Length": 977,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "DA91B37FC8A870D61232764B8EB18922"
+    },
+    "PI\\Profile_RL_ServiceRequest_InterventoEducazionale.json": {
+      "Length": 8591,
+      "LastWriteTime": "2024-04-24T11:02:46+00:00",
+      "Hash": "921EF967CEE196EC971F31440DD37AE8"
+    },
+    "PI\\Extension_RL_ServiceRequest_MedicoPrescrittore.json": {
+      "Length": 1012,
+      "LastWriteTime": "2023-10-26T12:02:12+00:00",
+      "Hash": "95595D0616FCEAB68C03F8AA90EBEE67"
+    },
+    "PI\\Profile_RL_ServiceRequest_Prestazioni.json": {
+      "Length": 18347,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "3B3E8EA3A01E8F31D8B01988FFFE9533"
+    },
+    "PI\\Profile_RL_ServiceRequest_PrestazioniInfermieristiche.json": {
+      "Length": 10373,
+      "LastWriteTime": "2024-04-24T11:02:46+00:00",
+      "Hash": "E805D2D1D58CCE332388B879C523F682"
+    },
+    "PI\\Profile_RL_ServiceRequest_PrestazioniSociali.json": {
+      "Length": 6635,
+      "LastWriteTime": "2024-04-24T11:02:46+00:00",
+      "Hash": "90AE6005A76E058F41223A7E586A779E"
+    },
+    "PI\\Profile_RL_ServiceRequest_PrestazioniSpecialistiche.json": {
+      "Length": 9278,
+      "LastWriteTime": "2024-04-24T11:02:46+00:00",
+      "Hash": "535E7548FE4A28F1E45FAC0D3E5FC73E"
+    },
+    "PI\\Profile_RL_ServiceRequest_Rivalutazione.json": {
+      "Length": 5879,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "D619A2A698E97D2A82678B187D9A9C97"
+    },
+    "PI\\Profile_RL_ServiceRequest_ServiziSocioAssistenziali.json": {
+      "Length": 20595,
+      "LastWriteTime": "2024-12-16T15:58:16+00:00",
+      "Hash": "903BD6DE9FC78907826EA503FE50EE50"
+    },
+    "PI\\Extension_RL_ServiceRequest_SoggettoProponentePIC.json": {
+      "Length": 1164,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "B86D53214247E76F1741818E4C3EDD8E"
+    },
+    "PI\\Profile_RL_ServiceRequest_SospensioneADI.json": {
+      "Length": 7753,
+      "LastWriteTime": "2023-10-17T08:15:24+00:00",
+      "Hash": "305FE5AB051BE51F2B9D39951829B5B2"
+    },
+    "PI\\Extension_RL_ServiceRequest_UlterioriDettagli.json": {
+      "Length": 3116,
+      "LastWriteTime": "2023-09-05T07:20:48+00:00",
+      "Hash": "000E694618D2363107631E2D27F155DC"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Occupazione-posti-letto.page.md": {
+      "Length": 1479,
+      "LastWriteTime": "2024-05-21T11:41:20+00:00",
+      "Hash": "B197442C56270C419B1203F8857545DA"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleRispostaMMG.page.md": {
+      "Length": 3119,
+      "LastWriteTime": "2024-09-27T07:26:52+00:00",
+      "Hash": "BF234AD2B707BA21F8313460AB933C67"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCoverageEsenzioni.page.md": {
+      "Length": 3452,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "9F9A5CA01560DA2B73A89106DF9B4FC1"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterAccesso.page.md": {
+      "Length": 3637,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "DCC2481A1760C081239FC8D7E4678E24"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOLetto.page.md": {
+      "Length": 11183,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "83AA0337EE7E16C5B022BCA9ACE353FC"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOPiano.page.md": {
+      "Length": 3155,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "AD00D4585550132585FCBBF3BB6AB236"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOStanza.page.md": {
+      "Length": 3173,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "D3B3A3D40FA8D727B8CA01F501F15445"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMeasureReportPLO.page.md": {
+      "Length": 4227,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "339B8F96AE4415311F11776C067F8D06"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMessageHeaderMMG.page.md": {
+      "Length": 3632,
+      "LastWriteTime": "2024-10-08T13:47:36+00:00",
+      "Hash": "5C53F836DD290F129D75A34BA98516C5"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOperationOutcome.page.md": {
+      "Length": 2206,
+      "LastWriteTime": "2024-06-25T08:52:30+00:00",
+      "Hash": "C25ACC367CD0FA0A67DC509B5AB0DF1D"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientCittadino.page.md": {
+      "Length": 4098,
+      "LastWriteTime": "2023-10-17T10:27:06+00:00",
+      "Hash": "5154519AB8126A3B17C3DF3627C32140"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Clinical Data Repository.page.md": {
+      "Length": 2127,
+      "LastWriteTime": "2024-07-18T11:56:58+00:00",
+      "Hash": "CAC9619A52C386FEB2BD7D0DA62FF502"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Contesto\\Panoramica-di-progetto\\Contenuto informativo.page.md": {
+      "Length": 284,
+      "LastWriteTime": "2024-07-18T11:56:58+00:00",
+      "Hash": "402B1E7AD60A7EA8447B803A30F2805A"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Nuova-Anagrafe-Regionale.page.md": {
+      "Length": 584,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "58EB714676BDB562C50F0347C3F20746"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\Modello-pagina-profilo.md": {
+      "Length": 5261,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "9E924536D93CF98B8F8CF7463A6A4B6C"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLBundleNotificaErrori.page.md": {
+      "Length": 2253,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "B324659FF2BB6150BC65B10188E324DD"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLCompositionLabReport.page.md": {
+      "Length": 3966,
+      "LastWriteTime": "2024-07-18T13:05:44+00:00",
+      "Hash": "F44E9E16EACD27C1747F80A930AB9207"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLDeviceLabReport.page.md": {
+      "Length": 3257,
+      "LastWriteTime": "2024-07-18T13:05:44+00:00",
+      "Hash": "7DCEF86B14EEA12A7E7695DC47BB2BC8"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLEncounterLabReport.page.md": {
+      "Length": 3761,
+      "LastWriteTime": "2024-07-18T13:31:36+00:00",
+      "Hash": "6C3870EC9EFF5BA3583D20ECFDC5DC4E"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLGoalObiettiviSalute.page.md": {
+      "Length": 3717,
+      "LastWriteTime": "2023-10-26T12:21:48+00:00",
+      "Hash": "E65C02232266E76DBF10FB94599D29C4"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationLabReport.page.md": {
+      "Length": 3396,
+      "LastWriteTime": "2024-07-18T13:31:36+00:00",
+      "Hash": "C390E0BFC0B4B0FFE778E48CA7AC19C1"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLLocationPLOEdificio.page.md": {
+      "Length": 3197,
+      "LastWriteTime": "2023-09-05T07:21:06+00:00",
+      "Hash": "D9D3F3A21910AA063D8AFBDA764EFD85"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLMediaLabReport.page.md": {
+      "Length": 3216,
+      "LastWriteTime": "2024-07-18T13:31:36+00:00",
+      "Hash": "B9C671D79FEB055FB1581654B1903EFD"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationLabReport.page.md": {
+      "Length": 4483,
+      "LastWriteTime": "2024-10-02T05:49:50+00:00",
+      "Hash": "1DEEF3E9AFB0FB79DD3B71D1C189B380"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLObservationStiliVita.page.md": {
+      "Length": 3489,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "BD785F2ACE6B91E20A7226E0EEF8912C"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOperationOutcomeMMG.page.md": {
+      "Length": 4019,
+      "LastWriteTime": "2024-10-08T13:47:36+00:00",
+      "Hash": "D78CDF2782035E79D0BCED91B50CF072"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLOrganizationCore.page.md": {
+      "Length": 2913,
+      "LastWriteTime": "2024-07-19T08:04:56+00:00",
+      "Hash": "595FB9227F05BC5AA546228437B530DF"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPatientLabReport.page.md": {
+      "Length": 3992,
+      "LastWriteTime": "2024-07-19T08:32:54+00:00",
+      "Hash": "C7CA2E2A967B64DF206E58628F38F7C6"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerCore.page.md": {
+      "Length": 2664,
+      "LastWriteTime": "2024-07-19T08:00:44+00:00",
+      "Hash": "F1B87DBAA84A10C7209F6190AAEE3123"
+    },
+    "guides\\Progetto-FHIR-RL-Core-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLPractitionerRoleCore.page.md": {
+      "Length": 2735,
+      "LastWriteTime": "2024-07-19T07:53:08+00:00",
+      "Hash": "F8D05559E32336D0482B8833860A0144"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLProcedurePrestazione.page.md": {
+      "Length": 7511,
+      "LastWriteTime": "2023-09-05T07:21:18+00:00",
+      "Hash": "D2C56091CD4D2BEE685B2EAA7B9D3B35"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLProvenanceLabReport.page.md": {
+      "Length": 3269,
+      "LastWriteTime": "2024-09-10T10:22:18+00:00",
+      "Hash": "356579DD3D1C44A651668950A342462D"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLSpecimenLabReport.page.md": {
+      "Length": 3553,
+      "LastWriteTime": "2024-07-19T08:51:12+00:00",
+      "Hash": "5D7FE1E1B49DA696F9403414AB39446B"
+    },
+    "guides\\Progetto-FHIR-Dati-di-Laboratorio-Sviluppo\\Home\\Profili-ed-Estensioni\\Raccolta-profili\\RLSubstanceLabReport.page.md": {
+      "Length": 3561,
+      "LastWriteTime": "2024-07-16T09:10:26+00:00",
+      "Hash": "3271CFC757BEE0056E9EDFA4851FD39A"
+    },
+    "guides\\IG-RL-sviluppo\\Home\\Contesto\\Tematiche-di-applicazione\\Recupero-informazioni-di-dominio-del-gestore.page.md": {
+      "Length": 1313,
+      "LastWriteTime": "2024-05-21T11:41:20+00:00",
+      "Hash": "0214ADC3C59FE08BC29F44FF1DD32F21"
+    },
+    "Codifiche\\ValueSet_CodificaASSTAfferenza.json": {
+      "Length": 492,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "5B1813B5723FCD7934474ACB3227A28F"
+    },
+    "Codifiche\\ValueSet_CodificaATSAfferenza.json": {
+      "Length": 487,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "D974302AF0E74B6E8BED08F2BFBD06C5"
+    },
+    "Codifiche\\ValueSet_CodificaAusiliProtesica.json": {
+      "Length": 495,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "01470BC9AAEF1294BA3051416CBDE363"
+    },
+    "Codifiche\\ValueSet_TipologiaEntiLivello1.json": {
+      "Length": 3032,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "2F5B3E4A7A2E94C05EFA385BC91E4CE1"
+    },
+    "Codifiche\\ValueSet_TipologiaUdO.json": {
+      "Length": 8145,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "75938AD193794BE5299AA9E00E805497"
+    },
+    "Codifiche\\ValueSet_CodificaDistrettoSanitario.json": {
+      "Length": 1039,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "0087C7D98E608BB60E81E15F5A922A3D"
+    },
+    "Codifiche\\ValueSet_CodificaFarmaco.json": {
+      "Length": 500,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "F53C101FEC37CE42F8037D191B5A12C9"
+    },
+    "Codifiche\\ValueSet_CodificaFarmaco_AIC.json": {
+      "Length": 518,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "4A7BD48A873D2F8433504050FBF61DD4"
+    },
+    "Codifiche\\ValueSet_CodificaFarmaco_ATC.json": {
+      "Length": 518,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "1261898D262B2F2D42D65AC755D10E89"
+    },
+    "Codifiche\\ValueSet_CodificaFarmaco_GE.json": {
+      "Length": 513,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "5089C31C52DC0B578B0AED1902C87EE9"
+    },
+    "Codifiche\\ValueSet_PrestazioniSpecialisticheSISS.json": {
+      "Length": 503,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "62A9462E406D073A00D22C8A2E137661"
+    },
+    "Codifiche\\ValueSet_QualificheMediciPrescrittori.json": {
+      "Length": 1679,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "E847075E58EAFF0863FD920B3D2C5B04"
+    },
+    "Codifiche\\ValueSet_ErroriMessaggio.json": {
+      "Length": 8926,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "81390C757A256A7FF2DF6481B36F5C82"
+    },
+    "Codifiche\\ValueSet_LivelloGravitaCronica.json": {
+      "Length": 842,
+      "LastWriteTime": "2024-06-25T11:38:04+00:00",
+      "Hash": "D34204EFFEB7BDA7E462414F11CC1B08"
+    },
+    "Codifiche\\ValueSet_MotiviSospensione.json": {
+      "Length": 1178,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "D183BC8C438567A9A1E040AC3A1115EB"
+    },
+    "Codifiche\\ValueSet_RegimeRicovero.json": {
+      "Length": 1005,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "38BD984F8F384F726DF0DFF99D52A710"
+    },
+    "Codifiche\\ValueSet_Errori.json": {
+      "Length": 639,
+      "LastWriteTime": "2024-06-25T08:27:18+00:00",
+      "Hash": "F134739CD17B075E16231524C520B16D"
+    },
+    "Codifiche\\ValueSet_DettagliErrori.json": {
+      "Length": 1091,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "1E1C59555B74162981C990B9AC264122"
+    },
+    "Codifiche\\ValueSet_AmbitoObiettiviSalute.json": {
+      "Length": 856,
+      "LastWriteTime": "2023-10-26T12:29:50+00:00",
+      "Hash": "724DEEDC1EF629A85D984F7A7A9D0C19"
+    },
+    "Codifiche\\ValueSet_EsitoInterRai.json": {
+      "Length": 6023,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "CF9B0485959E2ECB298CC48274726DD4"
+    },
+    "Codifiche\\ValueSet_InterventiEducazionali.json": {
+      "Length": 1360,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "447F1311299126549315CB180F3E1179"
+    },
+    "Codifiche\\ValueSet_ModalitaErogazioneIntEdu.json": {
+      "Length": 825,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "94F02A5A6747F2E88F4D7784BA94F860"
+    },
+    "Codifiche\\ValueSet_MotivoSegnalazione.json": {
+      "Length": 1923,
+      "LastWriteTime": "2023-10-31T13:44:52+00:00",
+      "Hash": "0AC8928321E4A1D00A719C305DFE3BA0"
+    },
+    "Codifiche\\ValueSet_ObiettiviSalute.json": {
+      "Length": 1154,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "4EA08BE8BBF407F100A40AC75EFDC842"
+    },
+    "Codifiche\\ValueSet_PatologieNonICD9CM.json": {
+      "Length": 7256,
+      "LastWriteTime": "2024-05-21T10:37:12+00:00",
+      "Hash": "B2CE888C0050938A4DBB763810B4BD40"
+    },
+    "Codifiche\\ValueSet_PercorsiCureDomiciliari.json": {
+      "Length": 2467,
+      "LastWriteTime": "2023-10-31T13:44:52+00:00",
+      "Hash": "7E27F3E323EF373DDD191B8F2795964C"
+    },
+    "Codifiche\\ValueSet_ProblemaInfermieristico.json": {
+      "Length": 40863,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "53C1139AE52F66927548B3B5432C4C9E"
+    },
+    "Codifiche\\ValueSet_QualificaProfessionistaSanitario.json": {
+      "Length": 2712,
+      "LastWriteTime": "2023-11-13T14:58:52+00:00",
+      "Hash": "A71047F4318F61E5EAB3A00A7D343BE6"
+    },
+    "Codifiche\\ValueSet_SettingAssistenziale.json": {
+      "Length": 660,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "3738F0BCA3078E62DFADD676AF9A4D71"
+    },
+    "Codifiche\\ValueSet_StiliVita.json": {
+      "Length": 844,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "031C987A91209A6D79CA24D0995AAAE8"
+    },
+    "Codifiche\\ValueSet_TipologiaAccesso.json": {
+      "Length": 722,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "A521CC64828628A4BD958AA4C8324039"
+    },
+    "Codifiche\\ValueSet_TipologiaEsenzioni.json": {
+      "Length": 881,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "8FC445040A8C8C8FC4F4C51AF4D94607"
+    },
+    "Codifiche\\ValueSet_TipologiaOssigeno.json": {
+      "Length": 832,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "8B4208028B8A93D041C733A478835438"
+    },
+    "Codifiche\\ValueSet_TipologiaPrestazioni.json": {
+      "Length": 971,
+      "LastWriteTime": "2024-05-03T12:22:22+00:00",
+      "Hash": "99D56A97182FEF4D34B50C0F33EF606A"
+    },
+    "Codifiche\\ValueSet_TipologiaProblemaSalute.json": {
+      "Length": 1070,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "7102CB220D8728700BD01862DFA62FC5"
+    },
+    "Codifiche\\ValueSet_TipologiaValutazione.json": {
+      "Length": 940,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "B3CA4C1358EA811D8C5056DE36246608"
+    },
+    "Codifiche\\ValueSet_CodificaValutazioni.json": {
+      "Length": 925,
+      "LastWriteTime": "2023-10-26T12:16:30+00:00",
+      "Hash": "B678B218CACB487E09DDDFA457D136C9"
+    },
+    "Codifiche\\ValueSet_CausaleDimissione.json": {
+      "Length": 2163,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "ABB53281C5800AE9ADFC0701828CF057"
+    },
+    "Codifiche\\ValueSet_CodificaCondizioneClinica.json": {
+      "Length": 1088,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "FFB5D67FE813FA6920D726D8359FE642"
+    },
+    "Codifiche\\ValueSet_ModalitaErogazione.json": {
+      "Length": 1174,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "EA7486AB23DD8A0C8964838E85595EA2"
+    },
+    "Codifiche\\ValueSet_TipologiaLuogoCureDom.json": {
+      "Length": 1306,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "A88D6430D84C18F3AE6F7CD629878D05"
+    },
+    "Codifiche\\ValueSet_PosizioneProfessione.json": {
+      "Length": 2819,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "D160D727AC1A39EC74332050B7FBD053"
+    },
+    "Codifiche\\ValueSet_ProponentePIC.json": {
+      "Length": 1334,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "C70BC84C8FD8CBC8EDB57234C59ABE8B"
+    },
+    "Codifiche\\ValueSet_SituazionePensionistica.json": {
+      "Length": 1348,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "5C67F0DD7E19143D2A5CF546266AC320"
+    },
+    "Codifiche\\ValueSet_StatoCivile.json": {
+      "Length": 1045,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "76D14C806414288AF97A55FFA1A6B466"
+    },
+    "Codifiche\\ValueSet_CodificaTipoAccesso.json": {
+      "Length": 698,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "A9BCE17E324F1C75D0B7F42E3B546BD6"
+    },
+    "Codifiche\\ValueSet_TipologiaCaregiver.json": {
+      "Length": 731,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "1A6FF9B3660CFCE6F5D3B80FFC0E5571"
+    },
+    "Codifiche\\ValueSet_TipologiaOperatoreADI.json": {
+      "Length": 1823,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "3EB016FFD015C41B2CB155035B89859B"
+    },
+    "Codifiche\\ValueSet_TitoloStudio.json": {
+      "Length": 1350,
+      "LastWriteTime": "2023-09-05T07:20:26+00:00",
+      "Hash": "C717352A54C69D0817C8B6CF52D2342A"
+    },
+    "Codifiche\\ValueSet_TipologiaContenutoMessaggio.json": {
+      "Length": 806,
+      "LastWriteTime": "2024-05-02T10:25:36+00:00",
+      "Hash": "EB354D218B815FBF44672ABA79A9B2EE"
+    },
+    "Codifiche\\ValueSet_TipologiaEventoMessaggioe.json": {
+      "Length": 809,
+      "LastWriteTime": "2024-12-16T15:57:56+00:00",
+      "Hash": "C2AFA7A6AC98D59C009D045A5B2BF7A2"
+    },
+    "Codifiche\\ValueSet_Prestazioni.json": {
+      "Length": 16538,
+      "LastWriteTime": "2024-01-31T09:13:16+00:00",
+      "Hash": "C971A522C9DDA4E8A4AEE0BFB767A7CF"
+    }
+  }
+}

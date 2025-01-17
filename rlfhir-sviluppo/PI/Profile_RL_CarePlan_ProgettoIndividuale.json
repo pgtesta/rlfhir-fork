@@ -1,0 +1,370 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLCarePlanProgettoIndividuale",
+  "meta": {
+    "lastUpdated": "2023-10-17T08:30:40.6508863+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale",
+  "name": "RLCarePlanProgettoIndividuale",
+  "status": "active",
+  "description": "Profilo contenente tutte le attività e le informazioni definite in un progetto individuale di un cittadino redatto sul Sistema di Gestione Digitale del Territorio.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.id",
+        "path": "CarePlan.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta",
+        "path": "CarePlan.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta.versionId",
+        "path": "CarePlan.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta.lastUpdated",
+        "path": "CarePlan.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.meta.profile",
+        "path": "CarePlan.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+      },
+      {
+        "id": "CarePlan.extension",
+        "path": "CarePlan.extension",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.extension:versioneProgettoIndividuale",
+        "path": "CarePlan.extension",
+        "sliceName": "versioneProgettoIndividuale",
+        "short": "Versione del progetto individuale",
+        "definition": "Stringa numerica di al più 3 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "CarePlan.identifier",
+        "path": "CarePlan.identifier",
+        "short": "Identificativo univoco del progetto",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "CarePlan.identifier.system",
+        "path": "CarePlan.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI"
+      },
+      {
+        "id": "CarePlan.identifier.value",
+        "path": "CarePlan.identifier.value",
+        "short": "Identificativo univoco del progetto",
+        "definition": "Stringa alfanumerica di 15 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.status",
+        "path": "CarePlan.status",
+        "short": "Stato del progetto individuale",
+        "definition": "- Active: equivalente allo stato 'Attivo' del SGDT\r\n- Completed: equivalente allo stato 'Chiuso' del SGDT",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CarePlan.intent",
+        "path": "CarePlan.intent",
+        "short": "Intento del progetto individuale",
+        "definition": "Valore fisso su \"order\"",
+        "fixedCode": "order"
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "short": "Paziente al quale il progetto individuale fa riferimento",
+        "definition": "Reference al profilo RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è acquisito dal servizio di identificazione del cittadino del SISS",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.encounter",
+        "path": "CarePlan.encounter",
+        "short": "Dettagli dell'accesso del paziente che ha portato alla stesura del progetto individuale",
+        "definition": "Reference al profilo RLEncounterAccesso contenente i dettagli dell'accesso del cittadino",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.period",
+        "path": "CarePlan.period",
+        "short": "Periodo temporale nel quale il progetto individuale deve essere eseguito",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.period.start",
+        "path": "CarePlan.period.start",
+        "short": "Data di inizio del progetto individuale",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.period.end",
+        "path": "CarePlan.period.end",
+        "short": "Data di fine del progetto individuale",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CarePlan.created",
+        "path": "CarePlan.created",
+        "short": "Data di creazione del progetto individuale",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.author",
+        "path": "CarePlan.author",
+        "short": "ASST che ha prodotto il progetto individuale",
+        "definition": "Reference al profilo RLOrganizationL1 inerente all'ASST produttrice del progetto individuale. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.contributor",
+        "path": "CarePlan.contributor",
+        "short": "Case manager del progetto individuale. La figura del case manager può essere identificata in un professionista santatirio o in un equipe di professionisti sanitari.",
+        "definition": "- Reference al profilo RLPractitionerRoleProfessionistaSanitario nel caso in cui il case manager sia un professionista sanitario. \r\n- Reference al profilo RLCareTeamEquipe nel caso in cui il case manager sia un equipe di professionisti sanitari.",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.addresses",
+        "path": "CarePlan.addresses",
+        "short": "Problemi di salute del paziente",
+        "definition": "Reference al profilo RLConditionProblemiSalute contenente i dettagli dei problemi di salute del paziente (condizione clinica, patologie, ecc.)",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.supportingInfo",
+        "path": "CarePlan.supportingInfo",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Il campo contiene quattro riferimenti: allergie del paziente, esito della valutazione del paziente, stile di vita del paziente ed esenzioni relative al cittadino",
+        "definition": "Reference ai profili:\r\n- RLAllergyIntoleranceAllergie contenente i dettagli delle allergie, \r\n- RLObservationEsitoValutazione contenente gli esisti delle valutazioni effettuate dal paziente, \r\n- RLObservationStiliVita contenente i dettagli sullo stile di vita del paziente, \r\n- RLCoverageEsenzione contenente le esenzioni relative al cittadino",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.supportingInfo:Allergie",
+        "path": "CarePlan.supportingInfo",
+        "sliceName": "Allergie",
+        "short": "Allergie del paziente",
+        "definition": "Reference ai profilo RLAllergyIntoleranceAllergie contenente i dettagli delle allergie del paziente",
+        "comment": "Il dato è detenuto dal SGDT ma non è attualmente inserito all'interno del progetto individuale",
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.supportingInfo:EsitoValutazione",
+        "path": "CarePlan.supportingInfo",
+        "sliceName": "EsitoValutazione",
+        "short": "Esito della valutazione del paziente",
+        "definition": "Reference al profilo RLObservationEsitoValutazione contenente lo score di una determinata valutazione del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.supportingInfo:StileVita",
+        "path": "CarePlan.supportingInfo",
+        "sliceName": "StileVita",
+        "short": "Stile di vita del paziente",
+        "definition": "Reference ai profilo RLObservationStiliVita contente i dettagli sullo stile di vita del paziente",
+        "comment": "Il dato è detenuto dal SGDT ma non è attualmente inserito all'interno del progetto individuale",
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStiliVita"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.supportingInfo:Esenzioni",
+        "path": "CarePlan.supportingInfo",
+        "sliceName": "Esenzioni",
+        "short": "Esenzioni relative al paziente",
+        "definition": "Reference al profilo RLCoverageEsenzione contenente le esenzioni relative al cittadino",
+        "comment": "Il dato è acquisto dal servizio di identificazione del cittadino del SISS",
+        "max": "0",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.goal",
+        "path": "CarePlan.goal",
+        "short": "Obiettivi di salute del paziente",
+        "definition": "Reference al profilo RLGoalObiettiviSalute contenente gli obiettivi di salute del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity",
+        "path": "CarePlan.activity",
+        "short": "Attività previste dal progetto individuale. Le possibili attività sono: prestazioni specialistiche e/o diagnostiche, prestazioni infermieristiche, servizi socio-assistenziali, terapia farmacologica, protesi ed ausili, ossigenoterapia, interventi educazionali e prestazioni sociali",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.activity.reference",
+        "path": "CarePlan.activity.reference",
+        "short": "Dettagli delle possibili attività inserite nel progetto individuali",
+        "definition": "Reference ai profili:\r\n- RLServiceRequestPrestazioniSpecialistiche,\r\n- RLMedicationRequestTerapiaFarmacologica,\r\n- RLServiceRequestServiziSocioAssistenziali,  \r\n- RLMedicationRequestOssigenoterapia, \r\n- RLServiceRequestInterventoEducazionali, \r\n- RLDeviceRequestProtesiAusili, \r\n- RLServiceRequestPrestazioniInfermieristiche",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.note",
+        "path": "CarePlan.note",
+        "short": "Note / commenti aggiuntivi",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
+      }
+    ]
+  }
+}

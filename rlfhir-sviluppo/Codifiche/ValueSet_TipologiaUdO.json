@@ -1,0 +1,292 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-DDC-DescL2",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+  "version": "1.0.0",
+  "name": "DDC Desc L2",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla tipologia UdO",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-DescL2",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "AMS",
+            "display": "AMBULATORIO DI MEDICINA SPORTIVA"
+          },
+          {
+            "code": "CDD",
+            "display": "CENTRO DIURNO DISABILI"
+          },
+          {
+            "code": "AMB",
+            "display": "AMBULATORIO SPECIALISTICO"
+          },
+          {
+            "code": "CSS",
+            "display": "COMUNITÀ SOCIO SANITARIA"
+          },
+          {
+            "code": "PSI-CDI",
+            "display": "CENTRO DIURNO PSICHIATRICO"
+          },
+          {
+            "code": "RSA",
+            "display": "RESIDENZE SANITARIE ASSISTENZIALI"
+          },
+          {
+            "code": "PSI-SRP2-CPA",
+            "display": "COMUNITA' PROTETTA PSICHIATRICA ALTA PROTEZIONE"
+          },
+          {
+            "code": "PSI",
+            "display": "STRUTTURA DI PSICHIATRIA"
+          },
+          {
+            "code": "CDI",
+            "display": "CENTRO DIURNO INTEGRATO"
+          },
+          {
+            "code": "CONS",
+            "display": "CONSULTORIO"
+          },
+          {
+            "code": "TOX",
+            "display": "SERVIZI RESIDENZIALI E SEMIRESIDENZIALI AREA DIPENDENZE"
+          },
+          {
+            "code": "RIA",
+            "display": "RIABILITAZIONE"
+          },
+          {
+            "code": "SMS",
+            "display": "STUDIO PROF.LE DI MEDICINA SPORTIVA"
+          },
+          {
+            "code": "HOSPICE",
+            "display": "HOSPICE"
+          },
+          {
+            "code": "RSD",
+            "display": "RESIDENZE SANITARIE DISABILI"
+          },
+          {
+            "code": "PSI-SRP3-CPB",
+            "display": "COMUNITA' PROTETTA PSICHIATRICA BASSA PROTEZIONE"
+          },
+          {
+            "code": "MLA",
+            "display": "SERVIZIO DI MEDICINA DI LABORATORIO"
+          },
+          {
+            "code": "NPI",
+            "display": "STRUTTURA DI NEUROPSICHIATRIA INFANTILE"
+          },
+          {
+            "code": "PSI-SRP2-CPM",
+            "display": "COMUNITA' PROTETTA PSICHIATRICA MEDIA PROTEZIONE"
+          },
+          {
+            "code": "SERT",
+            "display": "SERVIZIO PER LE TOSSICODIPENDENZE"
+          },
+          {
+            "code": "PSI-SRP1-CRA",
+            "display": "COMUNITA' RIABILITATIVA PSICHIATRICA AD ALTA ASSISTENZA"
+          },
+          {
+            "code": "SMI",
+            "display": "SERVIZI MULTIDISCIPLINARI INTEGRATI"
+          },
+          {
+            "code": "NPI-RIA",
+            "display": "TERAPEUTICO-RIABILITATIVA NEUROPSICHIATRIA INFANTILE"
+          },
+          {
+            "code": "RAS",
+            "display": "STRUTTURA DI RACCOLTA SANGUE"
+          },
+          {
+            "code": "RCD",
+            "display": "RICOVERO A CICLO DIURNO"
+          },
+          {
+            "code": "ADI",
+            "display": "ASSISTENZA DOMICILIARE INTEGRATA"
+          },
+          {
+            "code": "CCP",
+            "display": "CASA DI CURA PRIVATA"
+          },
+          {
+            "code": "UCPDOM",
+            "display": "UNITÀ OPERATIVA CURE PALLIATIVE DOMICILIARI"
+          },
+          {
+            "code": "RCI",
+            "display": "SERVIZI RIABILITATIVI E CURE INTERMEDIE"
+          },
+          {
+            "code": "UOCP",
+            "display": "UNITÀ OPERATIVA CURE PALLIATIVE"
+          },
+          {
+            "code": "UOCPDOM",
+            "display": "UNITA OPERATIVA CURE PALLIATIVE - CURE DOMICILIARI"
+          },
+          {
+            "code": "SRM",
+            "display": "SERVIZIO TERAPEUTICO RIABILITATIVO MINORI"
+          },
+          {
+            "code": "OCLA",
+            "display": "OSPEDALE CLASSIFICATO"
+          },
+          {
+            "code": "C-DOM",
+            "display": "CURE DOMICILIARI"
+          },
+          {
+            "code": "ODC",
+            "display": "OSPEDALE DI COMUNITA'"
+          },
+          {
+            "code": "INL",
+            "display": "SEDE INAIL"
+          },
+          {
+            "code": "ZOO",
+            "display": "ISTITUTO ZOOPROFILATTICO"
+          },
+          {
+            "code": "INT",
+            "display": "CURE INTERMEDIE"
+          },
+          {
+            "code": "NPI-CDI",
+            "display": "CENTRO DIURNO NEUROPSICHIATRICO INFANTILE"
+          },
+          {
+            "code": "NPI-POT",
+            "display": "POLO TERRITORIALE DI NEUROPSICHIATRIA INFANTILE"
+          },
+          {
+            "code": "SUA",
+            "display": "STRUTTURA DI CURE SUB ACUTE"
+          },
+          {
+            "code": "UCPDOM",
+            "display": "UNITA' OPERATIVA CURE PALLIATIVE DOMICILIARI"
+          },
+          {
+            "code": "UOCPAMB",
+            "display": "UNITA OPERATIVA CURE PALLIATIVE - AMBULATORIO"
+          },
+          {
+            "code": "TERM",
+            "display": "CENTRO DI ASSISTENZA IDROTERMALE"
+          },
+          {
+            "code": "UOCPHOS",
+            "display": "UNITA OPERATIVA CURE PALLIATIVE - HOSPICE"
+          },
+          {
+            "code": "PAR",
+            "display": "POSTACUTA RESIDENZIALE"
+          },
+          {
+            "code": "MAINF-CM",
+            "display": "CENTRO MALATTIE INFETTIVE"
+          },
+          {
+            "code": "MAINF-UO",
+            "display": "U.O. MALATTIE INFETTIVE"
+          },
+          {
+            "code": "IRCCS",
+            "display": "ISTITUTO DI RICOVERO E CURA A CARATTERE SCIENTIFICO"
+          },
+          {
+            "code": "CAL",
+            "display": "CENTRO DI ASSISTENZA LIMITATA (DIALISI)"
+          },
+          {
+            "code": "UOCPMAC",
+            "display": "UNITA OPERATIVA CURE PALLIATIVE - MAC"
+          },
+          {
+            "code": "RIC-REP",
+            "display": "SERVIZIO OSPEDALIERO REPARTO DI DEGENZA"
+          },
+          {
+            "code": "PSI-SRP1-CRM",
+            "display": "COMUNITA' RIABILITATIVA PSICHIATRICA A MEDIA ASSISTENZA"
+          },
+          {
+            "code": "MLA-GBA",
+            "display": "SMEL GENERALE DI BASE"
+          },
+          {
+            "code": "UOCPDH",
+            "display": "UNITA OPERATIVA CURE PALLIATIVE - DAY HOSPITAL"
+          },
+          {
+            "code": "CDC",
+            "display": "CASA DI COMUNITA'"
+          },
+          {
+            "code": "PSI-CPS",
+            "display": "CENTRO PSICO SOCIALE"
+          },
+          {
+            "code": "COT",
+            "display": "CENTRALE OPERATIVA TERRITORIALE"
+          },
+          {
+            "code": "POA",
+            "display": "PRESIDIO OSPEDALIERO ASST"
+          },
+          {
+            "code": "PSI-AMB",
+            "display": "AMBULATORIO PSICHIATRICO"
+          },
+          {
+            "code": "PEN",
+            "display": "PENITENZIARIO"
+          },
+          {
+            "code": "NPI-AMB",
+            "display": "AMBULATORIO NEUROPSICHIATRICO INFANTILE"
+          },
+          {
+            "code": "MLA-GSS",
+            "display": "SMEL GENERALE DI BASE CON SEZIONI SPECIALIZZATE"
+          },
+          {
+            "code": "NPI-UONPIA",
+            "display": "UNITA' OPERATIVA NEUROPSICHIATRIA INFANZIA E ADOLESCENZA"
+          },
+          {
+            "code": "REMS",
+            "display": "RESIDENZA ESECUZIONE DELLE MISURE DI SICUREZZA"
+          },
+          {
+            "code": "PSI-DH",
+            "display": "DAY HOSPITAL PSICHIATRICO"
+          },
+          {
+            "code": "NPI-DH",
+            "display": "DAY HOSPITAL NEUROPSICHIATRICO INFANTILE"
+          },
+          {
+            "code": "CMI",
+            "display": "CENTRALE MEDICA INTEGRATA"
+          }
+        ]
+      }
+    ]
+  }
+}

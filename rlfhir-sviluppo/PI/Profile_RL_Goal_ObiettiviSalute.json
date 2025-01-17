@@ -1,0 +1,188 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLGoalObiettiviSalute",
+  "meta": {
+    "lastUpdated": "2023-10-26T08:37:27.8217571+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute",
+  "name": "RLGoalObiettiviSalute",
+  "status": "active",
+  "description": "Profilo volto a descrivere gli obbiettivi di salute che il paziente deve traguardare sulla base delle attività previste dal progetto individuale (PI).",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Goal",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Goal",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Goal.id",
+        "path": "Goal.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta",
+        "path": "Goal.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta.versionId",
+        "path": "Goal.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta.lastUpdated",
+        "path": "Goal.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Goal.meta.profile",
+        "path": "Goal.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalObiettiviSalute"
+      },
+      {
+        "id": "Goal.lifecycleStatus",
+        "path": "Goal.lifecycleStatus",
+        "short": "Stato dell'obbiettivo di salute",
+        "definition": "Valore fisso su \"planned\"",
+        "comment": "Il dato è detenuto dal SGDT",
+        "fixedCode": "planned"
+      },
+      {
+        "id": "Goal.category",
+        "path": "Goal.category",
+        "short": "Ambito dell'obiettivo di salute",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dell'ambito degli obiettivi di salute contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "Goal.category.coding",
+        "path": "Goal.category.coding",
+        "short": "Codice e descrizione dell'ambito dell'obiettivo di salute",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Goal.category.coding.system",
+        "path": "Goal.category.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute"
+      },
+      {
+        "id": "Goal.category.coding.code",
+        "path": "Goal.category.coding.code",
+        "short": "Codice dell'ambito dell'obiettivo",
+        "definition": "Stringa alfanumerica di 6 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-AmbitoObiettiviSalute"
+        }
+      },
+      {
+        "id": "Goal.category.coding.display",
+        "path": "Goal.category.coding.display",
+        "short": "Descrizione dell'ambito dell'obiettivo",
+        "definition": "Stringa alfanumerica di 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Goal.description",
+        "path": "Goal.description",
+        "short": "Obiettivo di salute codificato definito per il paziente. Se il campo category viene valorizzato con \"Ambito clinico\", il campo description contiene l'obiettivo di salute codificato presente nella Tabella degli obiettivi di salute. In alternativa, se viene valorizzato con \"Ambito assistenziale\" o \"Ambito sociale\"  il campo description contiene il valore \"Altro\"."
+      },
+      {
+        "id": "Goal.description.coding",
+        "path": "Goal.description.coding",
+        "short": "Codifica e descrizione dell'obiettivo di salute definito per il paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli obiettivi di salute contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Goal.description.coding.system",
+        "path": "Goal.description.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute"
+      },
+      {
+        "id": "Goal.description.coding.code",
+        "path": "Goal.description.coding.code",
+        "short": "Codice dell'obiettivo di salute",
+        "definition": "Codice numerico di 2 cifre",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo agli obiettivi salute",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ObiettiviSalute"
+        }
+      },
+      {
+        "id": "Goal.description.coding.display",
+        "path": "Goal.description.coding.display",
+        "short": "Descrizione codificata dell'obiettivo di salute",
+        "definition": "Stringa alfanumerica al più di 200 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Goal.subject",
+        "path": "Goal.subject",
+        "short": "Paziente al quale deve essere fornito l'intervento educazionale",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Goal.addresses",
+        "path": "Goal.addresses",
+        "short": "Riferimento al servizio assistenziale dal quale è stato derivato l'obiettivo di salute",
+        "definition": "Reference ai profili RLServiceRequestPrestazioniSpecialistiche,RLMedicationRequestTerapiaFarmacologica,RLServiceRequestServiziSocioAssistenziali,  RLMedicationRequestOssigenoterapia, RLServiceRequestInterventoEducazionale, RLDeviceRequestProtesiAusili, RLServiceRequestPrestazioniInfermieristiche",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestOssigenoterapia",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestInterventoEducazionale",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniInfermieristiche"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Goal.note",
+        "path": "Goal.note",
+        "short": "Descrizione testuale dell'obiettivo di salute. Se il campo description viene valorizzato con \"Altro\", questo campo contiene l'obiettivo di salute non codificato.",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      }
+    ]
+  }
+}

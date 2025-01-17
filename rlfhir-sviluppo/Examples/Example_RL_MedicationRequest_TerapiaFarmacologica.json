@@ -1,0 +1,69 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "esempio-medicationRequest-TerapiaFarmacologica-PIC",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaFarmacologica"
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestConsegnaPaziente",
+      "valueBoolean": true
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC",
+        "code": "Codice FarmacoAIC",
+        "display": "Descrizione FarmacoAIC"
+      },
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC",
+        "code": "039752074",
+        "display": "Descrizione Codice FarmacoATC"
+      },
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoGE",
+        "code": "D8A",
+        "display": "CIPROFLOXACINA 250MG 10 unità uso orale"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/94f89259-2d71-4df0-841f-68fdd1746af8",
+    "display": "UNOTREDUE TEST"
+  },
+  "note": [
+    {
+      "text": "Commenti aggiuntivi"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "text": "Posologia del farmaco in formato testuale",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2024-01-19T02:00:00+01:00",
+            "end": "2024-01-31T02:00:00+01:00"
+          },
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 2,
+            "unit": "fiale"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SIAD-CondizioneClinica",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica",
+  "version": "1.0.0",
+  "name": "SIAD Condizione Clinica",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla codifica della condizione clinica",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-CondizioneClinica",
+        "version": "1.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Paziente ordinario: utenza tipica"
+          },
+          {
+            "code": "2",
+            "display": "Paziente in Stato Vegetativo (DGR 6220)"
+          },
+          {
+            "code": "3",
+            "display": "Paziente affetto da malattie del motoneurone (circ. 20)"
+          },
+          {
+            "code": "4",
+            "display": "Paziente affetto da HIV"
+          },
+          {
+            "code": "5",
+            "display": "Terminale"
+          }
+        ]
+      }
+    ]
+  }
+}

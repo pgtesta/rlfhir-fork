@@ -36,10 +36,10 @@
   <tbody id="myTable">
     <tr>
       <td>
-      <a href="https://hl7.org/fhir/R4/valueset-bundle-type.html" target="_blank">Bundle type</a>
+      <a href="https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni" target="_blank">Allergeni</a>
       </td>
-      <td> ValueSet relativo alla codifica dello scopo del bundle </td>
-<td>https://hl7.org/fhir/R4/valueset-bundle-type.html</td>
+      <td> ValueSet relativo alla codifica degli allergeni </td>
+<td>https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni</td>
     </tr>
     <tr>
       <td>

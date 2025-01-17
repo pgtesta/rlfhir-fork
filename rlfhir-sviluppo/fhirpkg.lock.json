@@ -1,0 +1,14 @@
+{
+  "updated": "2024-12-17T10:43:02.3969362+01:00",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.it.lab-report": "0.2.0",
+    "hl7.terminology.r4": "5.3.0",
+    "hl7.fhir.uv.extensions.r4": "1.0.0",
+    "hl7.fhir.eu.laboratory": "0.1.0",
+    "hl7.fhir.uv.ips": "1.1.0",
+    "fhir.dicom": "2022.4.20221006",
+    "hl7.fhir.eu.extensions": "0.1.0"
+  },
+  "missing": {}
+}

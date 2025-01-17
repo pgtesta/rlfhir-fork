@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationRepartoFisico",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoFisico",
+  "name": "RLLocationRepartoFisico",
+  "status": "draft",
+  "description": "Parametro di ricerca per il reparto fisico dove il paziente risulta allettato",
+  "code": "repartoFisico",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

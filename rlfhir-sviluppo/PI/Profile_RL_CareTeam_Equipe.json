@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLCareTeamEquipe",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe",
+  "name": "RLCareTeamEquipe",
+  "status": "active",
+  "description": "Profilo volto a definire un equipe di professionisti sanitari",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CareTeam",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CareTeam",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CareTeam.id",
+        "path": "CareTeam.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta",
+        "path": "CareTeam.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta.versionId",
+        "path": "CareTeam.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta.lastUpdated",
+        "path": "CareTeam.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.meta.profile",
+        "path": "CareTeam.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe"
+      },
+      {
+        "id": "CareTeam.status",
+        "path": "CareTeam.status",
+        "short": "Stato dell'aggregazione dell'equipe",
+        "definition": "Valore fisso su \"active\"",
+        "min": 1,
+        "fixedCode": "active"
+      },
+      {
+        "id": "CareTeam.name",
+        "path": "CareTeam.name",
+        "short": "Nome dell'equipe",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.period",
+        "path": "CareTeam.period",
+        "short": "Periodo di attività dell'equipe",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.period.start",
+        "path": "CareTeam.period.start",
+        "short": "Data inizio attività",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR.",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.period.end",
+        "path": "CareTeam.period.end",
+        "short": "Data cessazione attività",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR.",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CareTeam.participant",
+        "path": "CareTeam.participant",
+        "short": "Elenco dei professionisti sanitari che compongono l'equipe",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "CareTeam.participant.role",
+        "path": "CareTeam.participant.role",
+        "short": "Riferimento alla qualifica del professionista sanitario. Questo campo viene valorizzato solo nel caso in cui l'equipe non sia composta da persone fisiche (i cui dettagli sono referenziati nel campo 'member') bensì solo configurata a livello di specializzazione dei professionisti sanitari che la compongono.",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della qualifica del professionista sanitario contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "CareTeam.participant.role.coding",
+        "path": "CareTeam.participant.role.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "CareTeam.participant.role.coding.code",
+        "path": "CareTeam.participant.role.coding.code",
+        "short": "Codice della qualifica del professionista sanitario",
+        "definition": "Stringa alfanumerica di 9 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla qualifica del professionista sanitario",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario"
+        }
+      },
+      {
+        "id": "CareTeam.participant.role.coding.display",
+        "path": "CareTeam.participant.role.coding.display",
+        "short": "Descrizione della qualifica del professionista sanitario",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "CareTeam.participant.member",
+        "path": "CareTeam.participant.member",
+        "short": "Riferimento al professionista sanitario",
+        "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

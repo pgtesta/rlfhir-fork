@@ -1,0 +1,310 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationL1",
+  "meta": {
+    "lastUpdated": "2023-10-17T07:53:20.2607845+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1",
+  "name": "RLOrganizationL1",
+  "status": "active",
+  "experimental": false,
+  "description": "Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L1",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.id",
+        "path": "Organization.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto",
+        "min": 1
+      },
+      {
+        "id": "Organization.extension",
+        "path": "Organization.extension",
+        "min": 2
+      },
+      {
+        "id": "Organization.extension:DataCessazione",
+        "path": "Organization.extension",
+        "sliceName": "DataCessazione",
+        "short": "Data di cessazione dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_CESSAZIONE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCessazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataInsert",
+        "path": "Organization.extension",
+        "sliceName": "DataInsert",
+        "short": "Data di inserimento del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INSERT dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataUpdate",
+        "path": "Organization.extension",
+        "sliceName": "DataUpdate",
+        "short": "Data di aggiornamento del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_ULTV dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataUpdate"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataCostituzione",
+        "path": "Organization.extension",
+        "sliceName": "DataCostituzione",
+        "short": "Data di costituzione dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_COSTITUZIONE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataInizioValidita",
+        "path": "Organization.extension",
+        "sliceName": "DataInizioValidita",
+        "short": "Data di inizio della validità di esercizio dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INIZIO_VALIDITA dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documeto DC-DDC-SIAA#01",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.extension:DataFineValidita",
+        "path": "Organization.extension",
+        "sliceName": "DataFineValidita",
+        "short": "Data di fine della validità di esercizio dell'ente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_FINE_VALIDITA dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Lista dei codici identificativi dell'ente",
+        "definition": "I codici identificativi ultilizzati sono: codice fiscale/partita iva, codice L1",
+        "min": 1,
+        "max": "2"
+      },
+      {
+        "id": "Organization.identifier:CF",
+        "path": "Organization.identifier",
+        "sliceName": "CF",
+        "short": "Codice fiscale dell'ente",
+        "definition": "Stringa alfanumerica al più di 16 caratteri",
+        "comment": "La fonte del dato è il campo CD_FISCALE della tabella V_LIVELLO_1_DDC",
+        "max": "1",
+        "fixedIdentifier": {
+          "system": "http://hl7.it/sid/codiceFiscale"
+        }
+      },
+      {
+        "id": "Organization.identifier:CF.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Organization.identifier:CF.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice fiscale dell'ente",
+        "definition": "Stringa alfanumerica massimo di di 16 caratteri",
+        "comment": "La fonte del dato è il campo CD_FISCALE della tabella V_LIVELLO_1_DDC"
+      },
+      {
+        "id": "Organization.identifier:L1",
+        "path": "Organization.identifier",
+        "sliceName": "L1",
+        "short": "Codice identificativo della struttura (ministeriale per AO / ASST e ASL / ATS, mentre per gli ENT è il codice SISS)",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.identifier:L1.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoEnte"
+      },
+      {
+        "id": "Organization.identifier:L1.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice di livello 1 dell'ente",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "La fonte del dato è il campo CD_LIVELLO_1 della tabella V_LIVELLO_1_DDC",
+        "min": 1
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "short": "Tipologia di ente",
+        "definition": "Stringa alfanumerica di al più 4 caratteri",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella tipologia enti di livello 1 contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Organization.type.coding.system",
+        "path": "Organization.type.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1"
+      },
+      {
+        "id": "Organization.type.coding.code",
+        "path": "Organization.type.coding.code",
+        "short": "Codice della tipologia di ente",
+        "definition": "Stringa alfanumerica di 3 caratteri",
+        "comment": "I valori sono ricavati dal documento DC-AP-OPRTR#01",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alle tipologia di enti di livello 1",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL1"
+        }
+      },
+      {
+        "id": "Organization.type.coding.display",
+        "path": "Organization.type.coding.display",
+        "short": "Descrizione della tipologia di ente",
+        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
+        "comment": "I valori sono ricavati dal documento DC-AP-OPRTR#01",
+        "min": 1
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "short": "Denominazione dell'ente",
+        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
+        "comment": "La fonte del dato è il campo DS_LIVELLO_1 dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "short": "Indirizzo dell'azienda",
+        "definition": "Indirizzo dell'azienda."
+      },
+      {
+        "id": "Organization.address.extension:istatCode",
+        "path": "Organization.address.extension",
+        "sliceName": "istatCode",
+        "short": "Codice ISTAT del comune a cui fa riferimento l'indirizzo",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_COMUNE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAddressIstatCode"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Organization.address.extension:istatCode.value[x]",
+        "path": "Organization.address.extension.value[x]",
+        "definition": "Stringa alfanumerica di al più 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_COMUNE dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "Organization.address.use",
+        "path": "Organization.address.use",
+        "short": "Destinazione d'uso dell'indirizzo",
+        "definition": "Valori fisso su \"work\"",
+        "fixedCode": "work"
+      },
+      {
+        "id": "Organization.address.type",
+        "path": "Organization.address.type",
+        "short": "Tipologia di indirizzo",
+        "definition": "Valore costante secondo lo standard FHIR",
+        "fixedCode": "physical"
+      },
+      {
+        "id": "Organization.address.line",
+        "path": "Organization.address.line",
+        "short": "Indirizzo e numero civico dell'ente",
+        "definition": "Stringa alfanumerica massimo di 1000 caratteri",
+        "comment": "La fonte del dato sono i campi DS_INDIRIZZO e NR_CIVICO dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1"
+      },
+      {
+        "id": "Organization.address.district",
+        "path": "Organization.address.district",
+        "short": "Sigla della provincia in cui l'ente è ubicato",
+        "definition": "Stringa alfabetica di due caratteri",
+        "comment": "La fonte del dato è il campo CD_SIGLA_PROVINCIA dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "Organization.address.postalCode",
+        "path": "Organization.address.postalCode",
+        "short": "Codice di avviamento postale (CAP) dell'indirizzo",
+        "definition": "Stringa numerica di 5 cifre",
+        "comment": "La fonte del dato è il campo CD_CAP_DIST dell'anagrafe delle aziende ospedaliere, ASL, enti gestori privati i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      }
+    ]
+  }
+}

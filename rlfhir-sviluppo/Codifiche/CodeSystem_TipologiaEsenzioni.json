@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-TipologiaEsenzioni",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaEsenzioni",
+  "version": "1.0.0",
+  "name": "SGDT Tipologia Esenzioni",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla tipologia di esenzioni",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "PA",
+      "display": "Patologia"
+    },
+    {
+      "code": "RA",
+      "display": "Rare"
+    },
+    {
+      "code": "RE",
+      "display": "Reddito"
+    },
+    {
+      "code": "IN",
+      "display": "Invalidità"
+    }
+  ]
+}

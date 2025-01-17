@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SIAD-ModalitaErogazione",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione",
+  "version": "1.0.0",
+  "name": "SIAD Modalità Erogazione",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla modalità di erogazione",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-ModalitaErogazione",
+        "version": "1.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Presenza"
+          },
+          {
+            "code": "21",
+            "display": "Televisita"
+          },
+          {
+            "code": "22",
+            "display": "Teleconsulto"
+          },
+          {
+            "code": "23",
+            "display": "Teleconsulenza"
+          },
+          {
+            "code": "24",
+            "display": "Teleassistenza"
+          },
+          {
+            "code": "25",
+            "display": "Telemonitoraggio"
+          },
+          {
+            "code": "26",
+            "display": "Teleriabilitazione"
+          }
+        ]
+      }
+    ]
+  }
+}

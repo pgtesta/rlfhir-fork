@@ -1,0 +1,25 @@
+{
+  "resourceType": "Practitioner",
+  "id": "esempio-Practitioner-ProfessionistaSanitario",
+  "meta": {
+    "lastUpdated": "2023-01-01T10:36:03Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "VRDGNN80D16F205I"
+    }
+  ],
+  "name": [
+    {
+      "family": "Verdi",
+      "given": [
+        "Giovanni"
+      ]
+    }
+  ]
+}
