@@ -56,9 +56,10 @@ Il profilo RLProvenanceDocumentoCDA2 è stato strutturato a partire dalla risors
 <br>
 </div>
 
+
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per il profilo RLProvenanceDocumentoCDA2.
+
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
