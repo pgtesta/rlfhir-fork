@@ -9,10 +9,9 @@
 ## Descrizione
 
 Profilo declinato a partire dalla risorsa standard FHIR [Allergy Intolerance](https://hl7.org/fhir/r4/allergyintolerance.html) volto a contenere le informazioni su allergie, intolleranze e reazioni avverse di un paziente. 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:}}.
-=======
+
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO}}.
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
+
 
 <br>
 <div class="tab">
@@ -30,7 +29,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 =======
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
+
 </div>
 
 <div id="Differential View" class="tabcontent">
@@ -43,18 +42,15 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, hybrid}}
 =======
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, hybrid}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 </div>
 
 =======
 {{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
 {{table:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 =======
 {{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 </div>
 
 <div id="XML View" class="tabcontent">
@@ -62,7 +58,6 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{xml:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 =======
 {{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 </div>
 
 <div id="JSON View" class="tabcontent">
@@ -70,7 +65,6 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 {{json:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, snapshot}}
 =======
 {{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, snapshot}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 </div>
 
 <div id="Esempi" class="tabcontent">
