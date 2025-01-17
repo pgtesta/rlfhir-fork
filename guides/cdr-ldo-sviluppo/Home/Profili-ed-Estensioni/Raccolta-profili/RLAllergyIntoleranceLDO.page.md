@@ -2,10 +2,6 @@
 
 - [RLAllergyIntoleranceLDO](#RLAllergyIntoleranceLDO)
   - [Descrizione](#descrizione)
-<<<<<<< HEAD
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
-=======
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -39,11 +35,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-<<<<<<< HEAD
-{{tree:http://hl7.it/fhir/lab-report/StructureDefinition/location-it-lab, diff}}
-=======
 {{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceLDO, diff}}
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
@@ -162,9 +154,6 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLAllergyIn
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-<<<<<<< HEAD
-| type| ??? | ????? |
-=======
 | code | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC |
 | code | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC |
 | code | Codice e descrizione dell'allergene non farmaco |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-AllergieNonFarmaci |
@@ -173,5 +162,3 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLAllergyIn
 | reaction.substance | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC |
 | reaction.substance | Codice e descrizione dell'allergene non farmaco |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-AllergieNonFarmaci |
 | reaction.substance | Codice e descrizione dell'allergene |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni |
->>>>>>> 25d281c092ac0f319baf2962e55b03db8a0ca917
-
