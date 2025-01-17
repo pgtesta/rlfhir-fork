@@ -43,6 +43,37 @@
         "id": "Medication.code.coding:eccezioni",
         "path": "Medication.code.coding",
         "sliceName": "eccezioni"
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "short": "powder | tablets | capsule ...",
+        "definition": "Forma farmaceutica"
+      },
+      {
+        "id": "Medication.amount",
+        "path": "Medication.amount",
+        "short": "Quantità nella confezione"
+      },
+      {
+        "id": "Medication.ingredient",
+        "path": "Medication.ingredient",
+        "short": "Principio attivo"
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "short": "Codifica AIC del farmaco se presente",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "short": "Grammatura"
       }
     ]
   }

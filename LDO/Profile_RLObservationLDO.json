@@ -1,0 +1,138 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLDO",
+  "name": "RLObservationLDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato dell'osservazione",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Codice dell'osservazione",
+        "definition": "In questa implementation guide può assumere i seguenti codici LOINC:\r\nDecorso ospedaliero: 8648-8\r\nMotivo del ricovero strutturata: 8646-2\r\nMotivo del ricovero non strutturata: 46241-6\r\nDiagnosi alla dimissione strutturata: 8651-2\r\nDiagnosi alla dimissione non strutturata: 11535-2"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.code.coding:motivoDelRicoveroStrutturata",
+        "path": "Observation.code.coding",
+        "sliceName": "motivoDelRicoveroStrutturata",
+        "fixedCoding": {
+          "system": "http://loinc.org",
+          "code": "8646-2"
+        }
+      },
+      {
+        "id": "Observation.code.coding:motivoDelRicoveroNONStrutturata",
+        "path": "Observation.code.coding",
+        "sliceName": "motivoDelRicoveroNONStrutturata",
+        "fixedCoding": {
+          "system": "http://loinc.org",
+          "code": "46241-6"
+        }
+      },
+      {
+        "id": "Observation.code.coding:decorsoOspedaliero",
+        "path": "Observation.code.coding",
+        "sliceName": "decorsoOspedaliero",
+        "fixedCoding": {
+          "system": "http://loinc.org",
+          "code": "8648-8"
+        }
+      },
+      {
+        "id": "Observation.code.coding:diagnosiAllaDimissioneStrutturata",
+        "path": "Observation.code.coding",
+        "sliceName": "diagnosiAllaDimissioneStrutturata",
+        "fixedCoding": {
+          "system": "http://loinc.org",
+          "code": "8651-2"
+        }
+      },
+      {
+        "id": "Observation.code.coding:diagnsoiAllaDimissioneNONStrutturata",
+        "path": "Observation.code.coding",
+        "sliceName": "diagnsoiAllaDimissioneNONStrutturata",
+        "fixedCoding": {
+          "system": "http://loinc.org",
+          "code": "11535-2"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Data dell'osservazione",
+        "definition": "Data in cui è stata registrata l'osservazione clinica oppure, in assenza della prima, il campo è valorizzato con la data in cui è stato creato il documento."
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "Note sull'osservazione. In caso di section non strutturate, questo campo contiene la valorizzazione corrispondente al campo section/text del CDA2."
+      },
+      {
+        "id": "Observation.note:OsservazioneNarrativa",
+        "path": "Observation.note",
+        "sliceName": "OsservazioneNarrativa",
+        "min": 1
+      },
+      {
+        "id": "Observation.note:OsservazioneStrutturata",
+        "path": "Observation.note",
+        "sliceName": "OsservazioneStrutturata"
+      }
+    ]
+  }
+}
