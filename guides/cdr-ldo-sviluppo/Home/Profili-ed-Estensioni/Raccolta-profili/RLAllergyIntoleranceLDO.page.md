@@ -63,28 +63,22 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
-## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+## Seacrh parameter
+N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current 
 
+I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
+| Nome | Descrizione | Url di esempio | Link Simplifier |
+|---|---|---|---|
+| clinical-status | Parametro di ricerca per recuperare le informazioni sulle allergie o intolleranze attive di un paziente | /AllergyIntolerance?clinical-status=active<br>&subject.identifier=\{_identificativo paziente_\}<br> |  |
 
-## Search parameter
+| category | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci, alimenti, fattori ambientali di un paziente | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}<br> |  |
 
-Attualmente non sono definiti Search Parameters oltre quelli previsti dallo standard per la risorsa Location.
-
-
-=======
-TBD
-<br>
-</div>
+| last-date (?? non l'ho trovato, vedo solo lastOccurrence) | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci di un paziente | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}<br> |  |
 
 
-
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Search parameter
+OLD:
 
 Nella seguente tabella sono elencati i parametri di ricerca utilizzabili per il profilo AllergyIntoleranceLDO.
 
@@ -115,7 +109,7 @@ Allergia per categoria:
 |---|---|
 | VERB | GET |
 | BASE | tbd    |
-| URL | /AllergyIntolerance?category=enviroment<br>&subject.identifier=\{_identificativo paziente_\}<br>    |
+| URL | /AllergyIntolerance?category=enviroment&subject.identifier=\{_identificativo paziente_\}<br>    |
 
 Ricerca nel tempo:
 
