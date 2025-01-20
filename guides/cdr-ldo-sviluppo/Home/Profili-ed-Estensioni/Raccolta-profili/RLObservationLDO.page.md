@@ -63,7 +63,6 @@ TBD
 
 ## Search parameter
 
-
 N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current 
 
 I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
