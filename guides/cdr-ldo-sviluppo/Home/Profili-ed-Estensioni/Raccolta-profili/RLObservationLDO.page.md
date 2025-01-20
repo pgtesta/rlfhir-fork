@@ -69,7 +69,7 @@ N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardi
 I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
 
 | Nome | Descrizione | Url di esempio | Link Simplifier |
-
+|---|---|---|---|
 | code | Parametro di ricerca per recuperare se presenti, le osservazioni con uno specifico codice LOINC  | /MedicationRequest?<br>medication={_codice farmaco_}&subject.identifier=\{_identificativo paziente_\}<br>&_include=_include=MedicationRequest:subject |  |
 |date | Parametro di ricerca per recuperare se presenti, le osservazioni in una finestra temporale | /Observation?<br>date=lt\{_limite superiore di ricerca_}&date=gt\{_limite inferiore di ricerca_}&subject.identifier=\{_identificativo paziente_\} |  |
 

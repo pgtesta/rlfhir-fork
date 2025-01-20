@@ -67,6 +67,6 @@ Il profilo RLProvenanceDocumentoCDA2 è stato strutturato a partire dalla risors
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLProvenanceDocumentoCDA2:
 
-| Nome | Descrizione | Riferimento al dettaglio della codifica |
-|---|---|---|
+| Nome | Descrizione | Url di esempio | Link Simplifier |
+|---|---|---|---|
 | agent.type | Tipo di attore che aggiunge informazioni di contesto sull'osservazione | La codifica è definita dal ValueSet {{link:http://hl7.org/fhir/ValueSet/provenance-agent-type}} |
