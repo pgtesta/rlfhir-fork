@@ -48,7 +48,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>1</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=8648-8&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient&_include=Observation:encounter</td>
+        <td>[base_API_Manager]/Observation?code=8648-8&date=gt[data fine]&date=lt[data inizio]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient&_include=Observation:encounter</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
         <td>CDR</td>
       </tr>
@@ -60,14 +60,14 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
         <td>CDR</td>
       </tr>
       <tr>
-        <td>5</td>
+        <td>3</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=[LOINC diagnosi]&patient.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter</td>
+        <td>[base_API_Manager]/Observation?code=[LOINC]&patient.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta7.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
-        <td>6</td>
+        <td>4</td>
         <td>GET</td>
         <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta8.page.md}}</td>
@@ -84,6 +84,11 @@ Parametri obbligatori:
 - *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
 - *code=8648-8*: da valorizzare fisso, rappresenta il codice LOINC del decorso ospedaliero e permette di filtrare a sole queste osservazioni la ricerca.
 
+Parametri opzionali:
+- *date=gt[data ricerca]:* da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca.
+- *_has:Provenance:target:agent:_has:Organization=[codice azienda]*: identificativo aziendale (custodian del documento).
+
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informazione.
 - *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance dall'attributo *agent*. 
@@ -99,17 +104,18 @@ Parametri obbligatori:
 Parametri opzionali:
 - *category=[tipo di allergia]*: è possibile filtrare sulla base della categoria di allergia da specificare indicando uno dei codici presenti nel valueset {{link:http://hl7.org/fhir/ValueSet/allergy-intolerance-category}}.
 - *last-date=[data di ultima osservazione]*: corrispondente all'attributo *AllergyIntolerance.lastOccurrence* e permette di filtrare per data di ultima manifestazione allergica. 
-- *clinical-status=[stato allergia]*: indica lo stato dell'allergia e può assumere valore *active*, *inactive* o *resolved* secondo il valueset {{link:http://hl7.org/fhir/ValueSet/allergyintolerance-clinical}}
+- *clinical-status=[stato allergia]*: indica lo stato dell'allergia e può assumere valore *active*, *inactive* o *resolved* secondo il valueset {{link:http://hl7.org/fhir/ValueSet/allergyintolerance-clinical}}.
 
 ### Richiesta 3
-Recupero dei dati relativi ai decorsi ospedalieri di uno specifico paziente.
+Recupero dei dati relativi alle osservazioni fatte durante un ricovero di uno specifico paziente.
 
 Parametri obbligatori:
 - *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale
-- *code=8648-8*: da valorizzare per identificare il tipo di osservazioni che si vuole recuperare, in questo caso il codice riportato è il LOINC relativo al decorso ospedaliero
-- *date=gt[data ricerca]:* da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *code=[Codice LOINC]*: da valorizzare per identificare il tipo di osservazioni che si vuole recuperare
+
 
 Parametri opzionali:
+- *date=gt[data ricerca]:* da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 - *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 - *_has:Provenance:target:agent:_has:Organization=[codice azienda]*: identificativo aziendale (custodian del documento)
 
