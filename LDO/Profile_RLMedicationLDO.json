@@ -12,6 +12,11 @@
   "differential": {
     "element": [
       {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "short": "Codice del farmaco"
+      },
+      {
         "id": "Medication.code.coding",
         "path": "Medication.code.coding",
         "slicing": {
@@ -22,27 +27,65 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "short": "Codice e sistema di codifica del farmaco"
       },
       {
         "id": "Medication.code.coding:aic",
         "path": "Medication.code.coding",
-        "sliceName": "aic"
+        "sliceName": "aic",
+        "short": "Codice del farmaco secondo la codifica AIC"
+      },
+      {
+        "id": "Medication.code.coding:aic.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+      },
+      {
+        "id": "Medication.code.coding:aic.code",
+        "path": "Medication.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+        }
       },
       {
         "id": "Medication.code.coding:atc",
         "path": "Medication.code.coding",
-        "sliceName": "atc"
+        "sliceName": "atc",
+        "short": "Codice del farmaco secondo la codifica ATC"
+      },
+      {
+        "id": "Medication.code.coding:atc.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+      },
+      {
+        "id": "Medication.code.coding:atc.code",
+        "path": "Medication.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+        }
       },
       {
         "id": "Medication.code.coding:gruppoEquivalenza",
         "path": "Medication.code.coding",
-        "sliceName": "gruppoEquivalenza"
+        "sliceName": "gruppoEquivalenza",
+        "short": "Codice del farmaco secondo la codifica Gruppo di Equivalenza (GE)"
       },
       {
-        "id": "Medication.code.coding:eccezioni",
-        "path": "Medication.code.coding",
-        "sliceName": "eccezioni"
+        "id": "Medication.code.coding:gruppoEquivalenza.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+      },
+      {
+        "id": "Medication.code.coding:gruppoEquivalenza.code",
+        "path": "Medication.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+        }
       },
       {
         "id": "Medication.form",
