@@ -197,6 +197,11 @@
         "definition": "Frequenza di erogazione"
       },
       {
+        "id": "MedicationRequest.dispenseRequest",
+        "path": "MedicationRequest.dispenseRequest",
+        "short": "Confezioni richieste"
+      },
+      {
         "id": "MedicationRequest.dispenseRequest.quantity",
         "path": "MedicationRequest.dispenseRequest.quantity",
         "short": "Numero di confezioni",
