@@ -55,22 +55,8 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>2</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&category=[categoria]&last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta4.page.md}}</td>
-        <td>CDR</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?category=[categoria]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta5.page.md}}</td>
-        <td>CDR</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta6.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
@@ -96,6 +82,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 Recupero delle osservazioni relative al decorso ospedaliero di un paziente.
 Parametri obbligatori:
 - *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
+- *code=8648-8*: da valorizzare fisso, rappresenta il codice LOINC del decorso ospedaliero e permette di filtrare a sole queste osservazioni la ricerca.
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informazione.
@@ -104,16 +91,15 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 - *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sul ricovero.
 
 ### Richiesta 2
-Recupero delle lettere di dimissione ospedaliera in FHIR di uno specifico paziente.
+Recupero delle allergie di un paziente.
 
 Parametri obbligatori:
-- *composition.subject=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
-- *composition.code=34105-7*: selezione dei FHIR document tra quelli di lettera di dimissione ospedaliera
-- *composition.date=gt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
 
 Parametri opzionali:
-- *composition.date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
-- *composition.custodian=[codice azienda]*: identificativo aziendale (custodian del documento).
+- *category=[tipo di allergia]*: è possibile filtrare sulla base della categoria di allergia da specificare indicando uno dei codici presenti nel valueset {{link:http://hl7.org/fhir/ValueSet/allergy-intolerance-category}}.
+- *last-date=[data di ultima osservazione]*: corrispondente all'attributo *AllergyIntolerance.lastOccurrence* e permette di filtrare per data di ultima manifestazione allergica. 
+- *clinical-status=[stato allergia]*: indica lo stato dell'allergia e può assumere valore *active*, *inactive* o *resolved* secondo il valueset {{link:http://hl7.org/fhir/ValueSet/allergyintolerance-clinical}}
 
 ### Richiesta 3
 Recupero dei dati relativi ai decorsi ospedalieri di uno specifico paziente.
