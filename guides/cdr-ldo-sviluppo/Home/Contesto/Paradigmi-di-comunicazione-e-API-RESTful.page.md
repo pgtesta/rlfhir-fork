@@ -48,28 +48,28 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>1</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=8648-8&date=gt[data fine]&date=lt[data inizio]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient&_include=Observation:encounter</td>
+        <td>[base_API_Manager]/Observation?code=8648-8&date=gt[data fine]&date=lt[data inizio]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient&_include=Observation:encounter&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>2</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&category=[categoria]&last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&category=[categoria]&last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta4.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>3</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=[LOINC]&patient.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter</td>
+        <td>[base_API_Manager]/Observation?code=[LOINC]&patient.identifier=[identificativo]&authoredOn=gt[data fine]&authoredOn=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta7.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>4</td>
         <td>GET</td>
-        <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&patient.identifier=[identificativo]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta8.page.md}}</td>
         <td>CDR</td>
       </tr>
@@ -87,7 +87,7 @@ Parametri obbligatori:
 Parametri opzionali:
 - *date=gt[data ricerca]:* da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 - *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca.
-- *_has:Provenance:target:agent:_has:Organization=[codice azienda]*: identificativo aziendale (custodian del documento).
+- *_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]*: identificativo aziendale (custodian del documento).
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informazione.
@@ -106,48 +106,52 @@ Parametri opzionali:
 - *last-date=[data di ultima osservazione]*: corrispondente all'attributo *AllergyIntolerance.lastOccurrence* e permette di filtrare per data di ultima manifestazione allergica. 
 - *clinical-status=[stato allergia]*: indica lo stato dell'allergia e può assumere valore *active*, *inactive* o *resolved* secondo il valueset {{link:http://hl7.org/fhir/ValueSet/allergyintolerance-clinical}}.
 
+
+Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
+- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informazione.
+- *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance dall'attributo *agent*. 
+- *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
+- *_include=AllergyIntolerance:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sul ricovero.
+
 ### Richiesta 3
 Recupero dei dati relativi alle osservazioni fatte durante un ricovero di uno specifico paziente.
 
 Parametri obbligatori:
 - *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale
-- *code=[Codice LOINC]*: da valorizzare per identificare il tipo di osservazioni che si vuole recuperare
+- *code=[LOINC]*: da valorizzare per identificare il tipo di osservazioni che si vuole recuperare, è possibile utilizzare '8648-8' (Decorso ospedaliero), '8646-2' (Motivo del ricovero generico), '46241-6' (Motivo del ricovero non strutturata), '8651-2' (Diagnosi alla dimissione generico), '11535-2'(Diagnosi alla dimissione non strutturata).
 
 
 Parametri opzionali:
 - *date=gt[data ricerca]:* da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
 - *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
-- *_has:Provenance:target:agent:_has:Organization=[codice azienda]*: identificativo aziendale (custodian del documento)
+- *_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]*: identificativo aziendale (custodian del documento)
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informazione.
-- *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance. Questi rappresentano il custodian del documento (azienda responsabile dell'osservazione - Organization) e il firmatario del documento (PractitionerRole).
-- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole che si è occupato di eseguire l'esame.
+- *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance dall'attributo *agent*. 
 - *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
-- *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
+- *_include=AllergyIntorance:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sulle allergie segnalate durante il ricovero.
 
 
 ### Richiesta 4
-Recupero risultati di uno specifico esame di laboratorio di uno specifico paziente.
+Recupero delle prescrizioni farmaceutiche assegnate al paziente alla dimissione di un evento di ricovero.
 
 Parametri obbligatori:
-- *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle osservazioni, ad esempio il codice fiscale;
-- *category=laboratory*: selezione delle osservazioni provenienti da referti di medicina di laboratorio
-- *code=[codice esame]*: da valorizzare con il codice LOINC dell'esame di cui si vuole avere l'andamento
-- *date=gt[data ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) da cui cominciare la ricerca
+- *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto delle prescrizioni, ad esempio il codice fiscale.
 
 Parametri opzionali:
-- *date=lt[data di ricerca]*: da valorizzare con la data (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
-- *_has:Provenance:target:agent:_has:Organization=[codice azienda]: identificativo aziendale (custodian del documento).
+- *medication.code=[codice farmaco]*: da valorizzare con il codice del farmaco, utilizzando la codifica AIC, ATC o GE.
+- *authoredon=gt[data ricerca]*: da valorizzare con la data in cui è stata prescritta la terapia (nel formato YYYY-MM-DD) da cui cominciare la ricerca 
+- *authoredon=lt[data di ricerca]*: da valorizzare con la data in cui è stata prescritta la terapia (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+- *_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]: identificativo aziendale (custodian del documento).
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
-- *_include=Observation:patient*: include nella risposta la risorsa Patient
-- *_include=Observation:specimen* : include nella risposta la risorsa Specimen che contiene l'informazione sul campione di laboratorio che ha prodotto il risultato.
+- *_include=MedicationRequest:patient*: include nella risposta la risorsa Patient
 - *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informaizone.
-- *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance. Questi rappresentano il custodian del documento (azienda responsabile dell'osservazione - Organization) e il firmatario del documento (PractitionerRole).
-- *_include=Observation:performer*: include nella risposta la risorsa PractitionerRole del responsabile dell'osservazione e, se disponibile, il PractitionerRole del laboratorio che si è occupato di eseguire l'esame.
+- *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance dall'attributo *agent*. 
+- *_include=MedicationRequest:requester*: include nella risposta la risorsa PractitionerRole del medico che ha prescritto la terapia.
 - *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
-- *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
+- *_include=MedicationRequest:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sull'identificativo dell'episodio, se presente, in cui è stato prodotto il referto e il regime di assistenza del paziente al momento dell'esame.
 
 # Paging
 Il paging in FHIR è un meccanismo che permette di gestire grandi set di dati suddividendoli in pagine più piccole. Quando un client richiede una risorsa FHIR che contiene molti risultati, il server può restituire solo una porzione di questi dati e fornire un link per accedere alla pagina successiva. In questo modo, si riduce il carico di trasferimento e si migliora l'efficienza del sistema.
