@@ -34,7 +34,11 @@
         "id": "Medication.code.coding:aic",
         "path": "Medication.code.coding",
         "sliceName": "aic",
-        "short": "Codice del farmaco secondo la codifica AIC"
+        "short": "Codice del farmaco secondo la codifica AIC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+        }
       },
       {
         "id": "Medication.code.coding:aic.system",
@@ -53,7 +57,11 @@
         "id": "Medication.code.coding:atc",
         "path": "Medication.code.coding",
         "sliceName": "atc",
-        "short": "Codice del farmaco secondo la codifica ATC"
+        "short": "Codice del farmaco secondo la codifica ATC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+        }
       },
       {
         "id": "Medication.code.coding:atc.system",
@@ -72,7 +80,11 @@
         "id": "Medication.code.coding:gruppoEquivalenza",
         "path": "Medication.code.coding",
         "sliceName": "gruppoEquivalenza",
-        "short": "Codice del farmaco secondo la codifica Gruppo di Equivalenza (GE)"
+        "short": "Codice del farmaco secondo la codifica Gruppo di Equivalenza (GE)",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+        }
       },
       {
         "id": "Medication.code.coding:gruppoEquivalenza.system",
