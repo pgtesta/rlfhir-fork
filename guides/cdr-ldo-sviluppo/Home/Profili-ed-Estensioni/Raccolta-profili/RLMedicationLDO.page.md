@@ -71,6 +71,6 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMedicatio
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| ATC | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC}} |
-| AIC | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC}} |
-| GE | Codice e descrizione del farmaco per GE |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoGE}} |
+| ATC | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/DDC-FarmacoATC}} |
+| AIC | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/DDC-FarmacoAIC}} |
+| GE | Codice e descrizione del farmaco per GE |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/DDC-FarmacoGE}} |
