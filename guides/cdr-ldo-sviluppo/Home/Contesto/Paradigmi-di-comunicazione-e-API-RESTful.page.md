@@ -164,4 +164,3 @@ Utilizzo:
 
 La combinazine di questi due parametri permette di navigare tra le diverse pagine che compongono la ricerca completa, che potrebbe sovraccaricare il sistema.
 E' possibile consultare un esempio di applicazione di paging nella pagina degli Esempi ({{pagelink:Home/Esempi/Raccolta-esempi/RLPaging.page.md}})
-

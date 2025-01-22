@@ -65,7 +65,6 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 
 ## Search parameter
-N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current 
 
 I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
 
@@ -75,7 +74,7 @@ I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definit
 | category | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci, alimenti, fattori ambientali di un paziente | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}|  |
 | last-date (?? non l'ho trovato, vedo solo lastOccurrence) | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci di un paziente | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}|  |
 
---------------
+<!--------------
 OLD:
 
 Nella seguente tabella sono elencati i parametri di ricerca utilizzabili per il profilo AllergyIntoleranceLDO.
@@ -116,7 +115,7 @@ Ricerca nel tempo:
 | VERB | GET |
 | BASE | tbd    |
 | URL | /AllergyIntolerance?<br>last-date=\{_data di fine ricerca_\}<br><br>&subject.identifier=\{_identificativo paziente_\}<br>    |
-
+-->
 I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
