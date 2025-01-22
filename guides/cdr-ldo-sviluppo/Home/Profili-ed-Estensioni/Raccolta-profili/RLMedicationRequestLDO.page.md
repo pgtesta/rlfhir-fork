@@ -2,7 +2,6 @@
 
 - [RLMedicationRequestLDO](#RLMedicationRequestLDO)
   - [Descrizione](#descrizione)
-  - [Tipologie di ricerca](#tipologie-di-ricerca)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -58,33 +57,8 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 <br>
 </div>
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
-
-## Tipologie di ricerca
-
-Sono stati definiti i seguenti criteri di ricerca.
-
-Recupero per codice farmaco:
-| SCOPE | Recupero delle richieste di un farmaco associate ad un paziente, includendo nella richiesta il paziente e la descrizione del farmaco   |
-|---|---|
-| VERB | GET |
-| BASE | tbd    |
-| URL | /MedicationRequest?<br>medication={_codice farmaco_}&subject.identifier=\{_identificativo paziente_\}<br>&_include=_include=MedicationRequest:subject    |
-
-TBD
-
-I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.
-<!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current 
-
-I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
-
-| Nome | Descrizione | Url di esempio | Link Simplifier |
-|---|---|---|---|
-| medication | Parametro di ricerca per recuperare le richieste di un farmaco associate ad un paziente | /MedicationRequest?<br>medication={_codice farmaco_}&subject.identifier=\{_identificativo paziente_\}<br>&_include=_include=MedicationRequest:subject |  |
-| | |  |  |
 
 Attualmente non sono definiti Search Parameters.
 
@@ -95,4 +69,6 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLMedicatio
 
 | Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
 |---|---|---|
-| type | Tipo di bundle | ??????????  |
+| ATC | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/DDC-FarmacoATC}} |
+| AIC | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/DDC-FarmacoAIC}} |
+| GE | Codice e descrizione del farmaco per GE |La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/Valueset/DDC-FarmacoGE}} |

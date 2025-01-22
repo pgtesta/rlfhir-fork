@@ -14,12 +14,17 @@
       {
         "id": "MedicationRequest.status",
         "path": "MedicationRequest.status",
-        "short": "Stato prescrizione terapia"
+        "short": "Stato prescrizione terapia",
+        "binding": {
+          "strength": "required",
+          "description": "Codifica obbligatoria"
+        }
       },
       {
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
         "short": "Farmaco da assumere",
+        "definition": "Il farmaco può essere espresso tramite reference o tramite codeableconcept utilizzando le codifiche: \r\n- AIC: https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC\r\n- ATC: https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC\r\n- GE: https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE",
         "type": [
           {
             "code": "CodeableConcept"
@@ -30,7 +35,12 @@
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO"
             ]
           }
-        ]
+        ],
+        "binding": {
+          "strength": "preferred",
+          "description": "Sistema di codifica AIC",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+        }
       },
       {
         "id": "MedicationRequest.subject",
