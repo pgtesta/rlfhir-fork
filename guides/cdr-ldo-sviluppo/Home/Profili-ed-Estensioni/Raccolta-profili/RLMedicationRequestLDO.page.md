@@ -60,8 +60,11 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Search parameter
 
-Attualmente non sono definiti Search Parameters.
+I parametri di ricerca definiti nel profilo RLMedicationRequestLDO sono definiti nella seguente tabella:
 
+| Nome | Descrizione | Url di esempio | Link Simplifier |
+|---|---|---|---|
+| medication | Parametro di ricerca per recuperare le prescrizioni di uno specifico farmaco attive di un paziente | /MedicationRequest?medication.code=[codice farmaco]&patient.identifier=\{_identificativo paziente_\}|  |
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
