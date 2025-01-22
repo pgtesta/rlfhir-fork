@@ -48,35 +48,35 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>1</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=8648-8&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient</td>
+        <td>[base_API_Manager]/Observation?code=8648-8&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=observation:patient&_include=Observation:encounter</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>2</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta4.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>3</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?category=[categoria]&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>[base_API_Manager]/AllergyIntolerance?category=[categoria]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta5.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>4</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?last-date=[data]&subject.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
+        <td>[base_API_Manager]/AllergyIntolerance?last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta6.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>5</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=[LOINC diagnosi]&subject.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target</td>
+        <td>[base_API_Manager]/Observation?code=[LOINC diagnosi]&patient.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta7.page.md}}</td>
         <td>CDR</td>
       </tr>
@@ -92,34 +92,16 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
 </body>
 </html>
 
-<!-- 
-|1|GET|<base_API_Manager>/Bundle?identifier=[id univoco del documento]|-|CDR|
-|2|GET|<base_API_Manager>/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11506-2|-|CDR|
-|3|GET|<base_API_Manager>Observation?date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter|-|CDR|
-|4|GET|<base_API_Manager>Observation?code=[codice esame]date=gt[data ricerca]&date=lt[data ricerca]&category=laboratory&_include=Observation:patient&patient.identifier=[identificativo paziente]&_include=Observation:specimen&_include:iterate=Observation:performer&_revinclude:iterate=Provenance:target&_include:iterate=Provenance:agent&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization&_include=Observation:encounter-|CDR| -->
-<!--<tr>
-Richiesta documento da mettere in un'altra IG
-        <td>1</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/Bundle?identifier=[id univoco del documento]&composition.custodian=[codice azienda]</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
-        <td>CDR</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>GET</td>
-        <td>[base_API_Manager]/Bundle?composition.subject=[identificativo paziente]&composition.date=gt[data di ricerca]&composition.date=lt[data di ricerca]&composition.code=11502-2&composition.custodian=[codice azienda]</td>
-        <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
-        <td>CDR</td>
-      <!/tr>
--->
 ### Richiesta 1
-Recupero di un FHIR document tramite il suo identificativo univoco.
+Recupero delle osservazioni relative al decorso ospedaliero di un paziente.
 Parametri obbligatori:
-- *identifier=[id univoco del documento]*: identificativo univoco del documento secondo la sintassi FHIR: *\[value\]|\[system\]*
+- *patient.identifier=[identificativo paziente]*: da valorizzare con l'identificativo del paziente soggetto del documento, ad esempio il codice fiscale;
 
-Parametri opzionali:
-- *composition.custodian=[codice azienda]*: identificativo aziendale (custodian del documento).
+Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:
+- *_revinclude=Provenance:target* : include nella risposta la risorsa Provenance che contiene le informazioni sul documento da cui è stata estratta l'informazione.
+- *_include=Provenance:agent* : include nella risposta la risorsa PractitionerRole e Organization che sono referenziati all'interno di Provenance dall'attributo *agent*. 
+- *_include=PractitionerRole:practitioner &_include=PractitionerRole:organization*: include nella risposta le informazioni sul Medico (Practitioner) e Azienda (Organization) referenziati dai PractitionerRole inclusi nella richiesta.
+- *_include=Observation:encounter*: questo permette di includere la risorsa Encounter che contiene le informazioni sul ricovero.
 
 ### Richiesta 2
 Recupero delle lettere di dimissione ospedaliera in FHIR di uno specifico paziente.
