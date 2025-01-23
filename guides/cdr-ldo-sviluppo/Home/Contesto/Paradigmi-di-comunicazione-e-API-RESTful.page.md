@@ -62,14 +62,14 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>3</td>
         <td>GET</td>
-        <td>[base_API_Manager]/Observation?code=[LOINC]&patient.identifier=[identificativo]&authoredOn=gt[data fine]&authoredOn=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
+        <td>[base_API_Manager]/Observation?code=[LOINC]&patient.identifier=[identificativo]&date=gt[data fine]&date=lt[data inizio]&_include=Observation:patient&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Observation:encounter&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta7.page.md}}</td>
         <td>CDR</td>
       </tr>
       <tr>
         <td>4</td>
         <td>GET</td>
-        <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&patient.identifier=[identificativo]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization</td>
+        <td>[base_API_Manager]/MedicationRequest?medication.code=[codice farmaco]&patient.identifier=[identificativo]&authoredOn=gt[data fine]&authoredOn=lt[data inizio]&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta8.page.md}}</td>
         <td>CDR</td>
       </tr>
@@ -141,8 +141,8 @@ Parametri obbligatori:
 
 Parametri opzionali:
 - *medication.code=[codice farmaco]*: da valorizzare con il codice del farmaco, utilizzando la codifica AIC, ATC o GE.
-- *authoredon=gt[data ricerca]*: da valorizzare con la data in cui è stata prescritta la terapia (nel formato YYYY-MM-DD) da cui cominciare la ricerca 
-- *authoredon=lt[data di ricerca]*: da valorizzare con la data in cui è stata prescritta la terapia (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
+- *authoredOn=gt[data ricerca]*: da valorizzare con la data in cui è stata prescritta la terapia (nel formato YYYY-MM-DD) da cui cominciare la ricerca 
+- *authoredOn=lt[data di ricerca]*: da valorizzare con la data in cui è stata prescritta la terapia (nel formato YYYY-MM-DD) finale più recente in cui fare la ricerca
 - *_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]: identificativo aziendale (custodian del documento).
 
 Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta utilizzando lo strumento FHIR search 'include' e 'revinclude'. Sono riportati i dettagli dei parametri che possono essere aggiunti alla richiesta:

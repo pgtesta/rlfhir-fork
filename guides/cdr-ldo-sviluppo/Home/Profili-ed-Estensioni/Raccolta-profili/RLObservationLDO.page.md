@@ -63,16 +63,14 @@ TBD
 
 ## Search parameter
 
-N.B : ho preso spunto da quella di https://simplifier.net/guide/Regione-Lombardia---FHIR---Occupazione-Posti-Letto/Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationPLOLetto.page.md?version=current 
-
 I parametri di ricerca definiti nel profilo RLObservationLDO sono definiti nella seguente tabella:
 
 | Nome | Descrizione | Url di esempio | Link Simplifier |
 |---|---|---|---|
-| code | Parametro di ricerca per recuperare se presenti, le osservazioni con uno specifico codice LOINC  | /MedicationRequest?<br>medication={_codice farmaco_}&subject.identifier=\{_identificativo paziente_\}<br>&_include=_include=MedicationRequest:subject |  |
+| code | Parametro di ricerca per recuperare se presenti, le osservazioni con uno specifico codice LOINC  | /Observation?<br>code={_codice LOINC_}&patient.identifier=\{_identificativo paziente_\}<br> |  |
 |date | Parametro di ricerca per recuperare se presenti, le osservazioni in una finestra temporale | /Observation?<br>date=lt\{_limite superiore di ricerca_}&date=gt\{_limite inferiore di ricerca_}&subject.identifier=\{_identificativo paziente_\} |  |
 
----------
+<!---------
 OLD
 
 Nella seguente tabella sono elencati i parametri di ricerca utilizzabili per il profilo RLObservationLDO.
@@ -92,7 +90,7 @@ Ricerca nel tempo:
 | BASE | tbd    |
 | URL | /Observation?<br>date=lt\{_limite superiore di ricerca_}&date=gt\{_limite inferiore di ricerca_}&subject.identifier=\{_identificativo paziente_\}<br>      |
 
-I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.
+I parametri di ricerca possono essere utilizzati in modo congiunto per poter filtrare ulteriormente i risultati della ricerca.-->
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet
