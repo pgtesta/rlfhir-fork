@@ -68,11 +68,11 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 I parametri di ricerca definiti nel profilo RLAllergyIntoleranceLDO sono definiti nella seguente tabella:
 
-| Nome | Descrizione | Url di esempio | Link Simplifier |
+| Nome | Descrizione | Url di esempio | Expression |
 |---|---|---|---|
-| clinical-status | Parametro di ricerca per recuperare le informazioni sulle allergie o intolleranze attive di un paziente | /AllergyIntolerance?clinical-status=active&subject.identifier=\{_identificativo paziente_\}|  |
-| category | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci, alimenti, fattori ambientali di un paziente | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}|  |
-| last-date | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci di un paziente tramite una ricerca per data | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}|  |
+| clinical-status | Parametro di ricerca per recuperare le informazioni sulle allergie o intolleranze attive di un paziente | /AllergyIntolerance?clinical-status=active&subject.identifier=\{_identificativo paziente_\}| AllergyIntolerance.clinicalStatus |
+| category | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci, alimenti, fattori ambientali di un paziente | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}| AllergyIntolerance.category |
+| last-date | Parametro di ricerca per il recupero, se presenti, delle allergie ai farmaci di un paziente tramite una ricerca per data | /AllergyIntolerance?category=medication<br>&subject.identifier=\{_identificativo paziente_\}| AllergyIntolerance.lastOccurrence |
 
 <!--------------
 OLD:

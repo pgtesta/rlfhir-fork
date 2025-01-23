@@ -62,9 +62,10 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 I parametri di ricerca definiti nel profilo RLMedicationRequestLDO sono definiti nella seguente tabella:
 
-| Nome | Descrizione | Url di esempio | Link Simplifier |
+| Nome | Descrizione | Url di esempio | Expression |
 |---|---|---|---|
-| medication | Parametro di ricerca per recuperare le prescrizioni di uno specifico farmaco attive di un paziente | /MedicationRequest?medication.code=[codice farmaco]&patient.identifier=\{_identificativo paziente_\}|  |
+| medication | Parametro di ricerca per recuperare le prescrizioni di uno specifico farmaco attive di un paziente | /MedicationRequest?medication.code=\{_codice farmaco_\}&patient.identifier=\{_identificativo paziente_\}| MedicationRequest.medication |
+| authoredOn | Parametro di ricerca per recuperare le prescrizioni di un paziente tramite una ricerca temporale | /MedicationRequest?authoredOn=lt\{data fine ricerca\}&authoredOn=gt\{_data inizio ricerca_\}&patient.identifier=\{_identificativo paziente_\}| MedicationRequest.authoredOn |
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## ValueSet

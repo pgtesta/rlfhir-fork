@@ -65,10 +65,10 @@ TBD
 
 I parametri di ricerca definiti nel profilo RLObservationLDO sono definiti nella seguente tabella:
 
-| Nome | Descrizione | Url di esempio | Link Simplifier |
+| Nome | Descrizione | Url di esempio | Expression |
 |---|---|---|---|
-| code | Parametro di ricerca per recuperare se presenti, le osservazioni con uno specifico codice LOINC  | /Observation?<br>code={_codice LOINC_}&patient.identifier=\{_identificativo paziente_\}<br> |  |
-|date | Parametro di ricerca per recuperare se presenti, le osservazioni in una finestra temporale | /Observation?<br>date=lt\{_limite superiore di ricerca_}&date=gt\{_limite inferiore di ricerca_}&subject.identifier=\{_identificativo paziente_\} |  |
+| code | Parametro di ricerca per recuperare se presenti, le osservazioni con uno specifico codice LOINC  | /Observation?<br>code={_codice LOINC_}&patient.identifier=\{_identificativo paziente_\}<br> | Observation.code |
+|date | Parametro di ricerca per recuperare se presenti, le osservazioni in una finestra temporale | /Observation?<br>date=lt\{_limite superiore di ricerca_}&date=gt\{_limite inferiore di ricerca_}&subject.identifier=\{_identificativo paziente_\} | Observation.effective |
 
 <!---------
 OLD
