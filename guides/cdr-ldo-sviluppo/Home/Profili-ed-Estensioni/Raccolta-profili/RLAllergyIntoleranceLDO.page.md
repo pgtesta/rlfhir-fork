@@ -124,13 +124,15 @@ I parametri di ricerca possono essere utilizzati in modo congiunto per poter fil
 
 Nella seguente tabella sono elencati i value set relativi al profilo RLAllergyIntoleranceLDO:
 
-| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |
+| Nome    | Descrizione    | Riferimento   al dettaglio della codifica    |  
 |---|---|---|
+| code | Codice e descrizione dell'allergene |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni |
+| reaction.substance | Codice e descrizione dell'allergene |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni |
+
 <!--| code | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC |
 | code | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC |
 | code | Codice e descrizione dell'allergene non farmaco |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-AllergieNonFarmaci |-->
-| code | Codice e descrizione dell'allergene |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni |
+
 <!--| reaction.substance | Codice e descrizione del farmaco per ATC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoATC |
 | reaction.substance | Codice e descrizione del farmaco per AIC |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/CodeSystem/DDC-FarmacoAIC |
 | reaction.substance | Codice e descrizione dell'allergene non farmaco |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-AllergieNonFarmaci |-->
-| reaction.substance | Codice e descrizione dell'allergene |La codifica è definita dal ValueSet https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni |

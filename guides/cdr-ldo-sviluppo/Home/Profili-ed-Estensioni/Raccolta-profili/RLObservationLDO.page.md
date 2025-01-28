@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Profilo declinato a partire dalla risorsa standard FHIR [Observation](https://hl7.org/fhir/r4/observation.html) volto a contenere le informazioni sulle rilevazioni cliniche di un paziente. 
+Profilo declinato a partire dalla risorsa standard FHIR [Observation](https://hl7.org/fhir/R4/observation.html) volto a contenere le informazioni sulle rilevazioni cliniche di un paziente. 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLDO}}.
 
 <br>

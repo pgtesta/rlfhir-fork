@@ -57,8 +57,8 @@
     </tr>
     <tr>
       <td>
-      <a href="  http://hl7.it/fhir/ValueSet/statoCivile" target="_blank">Stato civile</a>
+      <a href="  https://www.hl7.it/fhir/base/ValueSet-statoCivile.html" target="_blank">Stato civile</a>
       </td>
       <td> ValueSet relativo allo stato civile di una persona </td>
-<td>http://hl7.it/fhir/ValueSet/statoCivile</td>
+<td>https://www.hl7.it/fhir/base/ValueSet-statoCivile.html</td>
     </tr>

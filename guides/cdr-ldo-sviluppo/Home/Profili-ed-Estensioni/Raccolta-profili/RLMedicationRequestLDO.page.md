@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLMedicationRequestLDO è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](https://hl7.org/fhir/r4/medicationrequest.html), il profilo è volto a descrivere il contenuto informativo delle prescrizioni farmaceutiche prodotte durante il ricovero.
+Il profilo RLMedicationRequestLDO è stato strutturato a partire dalla risorsa generica FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html), il profilo è volto a descrivere il contenuto informativo delle prescrizioni farmaceutiche prodotte durante il ricovero.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestLDO}}.
 

@@ -8,7 +8,7 @@
 
 ## Descrizione
 
-Il profilo RLMedication è stato strutturato a partire dalla risorsa generica FHIR [Medication](https://hl7.org/fhir/r4/medication.html), il profilo è volto a descrivere il contenuto informativo del farmaco.
+Il profilo RLMedication è stato strutturato a partire dalla risorsa generica FHIR [Medication](https://hl7.org/fhir/R4/medication.html), il profilo è volto a descrivere il contenuto informativo del farmaco.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO}}.
 
