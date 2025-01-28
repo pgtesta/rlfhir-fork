@@ -1,0 +1,66 @@
+{
+    "resourceType": "AllergyIntolerance",
+    "id": "esempio-allergia-farmaci-ldo",
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+          "code": "active",
+          "display": "Active"
+        }
+      ]
+    },
+    "type": "allergy",
+    "category": [
+      "medication"
+    ],
+    "criticality": "high",
+    "code": {
+      "coding": [
+        {
+          "system": "https://hl7.org/fhir/R4/valueset-allergyintolerance-code.html",
+          "code": "39359008",
+          "display": "Penicillin V"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+    },
+    "onsetPeriod":
+    {
+      "start": "2010-03-01"
+    },
+    "recordedDate": "2010-03-01T14:58:00+11:00",
+    "lastOccurrence": "2021-06-01",
+    "note": [
+      {
+        "text": "Il paziente presenta prurito diffuso e un evidente eritema con sfogo cutaneo localizzato su braccia e torace."
+      }
+    ],
+    "reaction": [
+      {
+        "substance": {
+          "coding": [
+            {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni",
+                "code": "102264005",
+                "display": "Formaggio"
+              }
+          ]
+        },
+        "manifestation": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "247472004",
+                "display": "Hives"
+              }
+            ]
+          }
+        ],
+        "onset": "2010-03-01"
+    }
+    ]
+  }
