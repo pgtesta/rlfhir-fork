@@ -43,7 +43,7 @@
             {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntoleranceLDO.page.md}}
           </td>
           <td>
-            <a href="https://hl7.org/fhir/r4/allergyintolerance.html">Allergy Intolerance</a>
+            <a href="https://hl7.org/fhir/R4/allergyintolerance.html">Allergy Intolerance</a>
           </td>
           <td>
             Risorsa contentente informazioni su allergie, intolleranze e reazioni avverse di un paziente. 
