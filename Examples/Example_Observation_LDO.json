@@ -1,0 +1,32 @@
+{
+    "resourceType": "Observation",
+    "id": "esempio-observation-ldo",
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "15074-8",
+          "display": "Glucose [Moles/volume] in Blood"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+    },
+    "effectivePeriod": {
+      "start": "2013-04-02T09:30:10+01:00"
+    },
+    "valueCodeableConcept": {
+        "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "LA28752-6",
+          "display": "Chronic"
+        }
+      ]
+    },
+    "note":{
+        "text": "Condizioni generali: paziente vigile, orientato e collaborante."
+    }
+  }
