@@ -1,0 +1,33 @@
+{
+    "resourceType": "Organization",
+    "id": "esempio-organization-core-ldo",
+    "identifier": [
+      {
+        "system": "http://www.acme.org.au/units",
+        "value": "ClinLab"
+      }
+    ],
+    "name": "Clinical Lab",
+    "active": 1,
+    "address": [
+      {
+        "city": "Roma",
+        "line": [
+          "via Roma 1"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+1 555 234 1234"
+      },
+      {
+        "system": "email",
+        "value": "contact@labs.acme.org"
+      }
+    ],
+    "partOf": {
+      "reference": "Organization/esempio-Organization-core"
+    }
+  }
