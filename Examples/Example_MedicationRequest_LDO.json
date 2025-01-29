@@ -1,0 +1,70 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "esempio-MedicationRequest-ldo",
+  "status": "active",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/esempio-medication-formulazione-ldo"
+  },
+  "subject": {
+    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+  },
+  "authoredOn": "2015-01-15",
+  "requester": {
+    "reference": "Practitioner/3a14db34-a959-11ed-afa1-0242ac120002"
+  },
+  "note": [
+    {
+      "text": "Somministrazione durante i pasti"
+    }
+  ],
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+              "start": "2015-01-15"
+          },
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "site": {
+          "text": "Bocca"
+      },
+      "route": {
+        "text": "Somministrazione per via orale"
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 2,
+            "unit": "mg/kg",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/kg"
+          },
+          "rateRatio": {
+            "numerator": {
+            "value": 2,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/kg"
+            },
+            "denominator": {
+              "value": 20,
+              "system": "http://unitsofmeasure.org",
+              "code": "min"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "dispenseRequest": {
+    "quantity": {
+      "value": 10,
+      "unit": "ORCAP",
+      "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+      "code": "ORCAP"
+    }
+  }
+}
