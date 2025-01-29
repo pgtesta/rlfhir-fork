@@ -1,0 +1,49 @@
+{
+    "resourceType": "Medication",
+    "id": "esempio-medication-formulazione-ldo",
+    "code": {
+      "coding": [
+        {
+          "system": "https://hl7.org/fhir/R4/valueset-medication-codes.html",
+          "code": "261000",
+          "display": "Codeine phosphate"
+        }
+      ]
+    },
+    "form": {
+      "coding": [
+        {
+          "system": "https://hl7.org/fhir/R4/valueset-medication-form-codes.html",
+          "code": "385049006",
+          "display": "Capsule"
+        }
+      ]
+    },
+    "amount":{
+        "numerator":{
+            "value": 12
+        },
+        "denominator":{
+            "value": 1
+        }
+    },
+    "ingredient": [
+      {
+        "itemReference": {
+          "reference": "#substance"
+        },
+        "strength": {
+          "numerator": {
+            "value": 5,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg"
+          },
+          "denominator": {
+            "value": 1,
+            "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+            "code": "TAB"
+          }
+        }
+      }
+    ]
+  }
