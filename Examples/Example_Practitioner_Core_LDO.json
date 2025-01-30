@@ -3,8 +3,15 @@
     "id": "esempio-practitioner-core-ldo",
     "identifier": [
         {
-            "system": "urn:oid:2.16.840.1.113883.2.9.4.3.2",
+            "system": "http://hl7.it/sid/codiceFiscale",
             "value": "PROVAX00X00X000Y"
+        },
+        {
+            "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7",
+            "value": "123456"
+        },
+        {
+            "system": "http://www.acme.com/identifiers/patient"
         }
     ],
     "address": [
