@@ -36,53 +36,18 @@
   </thead>
   <tbody id="myTable">
     <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca degli esami effettuati da un paziente e le relative informazioni riguardanti di contesto</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEncounterBundleSearchSet.page.md}}</td>
-      <td>{{link:Bundle/esempio-con-encounter}}</td>
+      <td>LDO</td>
+      <td>AllergyIntollerance</td>
+      <td>Esempio di allergia al formaggio</td>
+      <td>-</td>
+      <td>{{link:AllergyIntollerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
-    <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca risultati di laboratorio di un paziente in un periodo di 5 mesi </td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLNelTempoBundleSearchSet.page.md}}</td>
-      <td>{{link:Bundle/esempio-nel-tempo}}</td>
-    </tr>
-    <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca esame specifico di laboratorio per un determinato paziente 1</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame1BundleSearchSet.page.md}}</td>
-      <td>{{link:Bundle/esempio-esame-specifico-1}}</td>
-    </tr>
-    <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca esame specifico di laboratorio per un determinato paziente 2</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLEsame2BundleSearchSet.page.md}}</td>
-      <td>{{link:Bundle/esempio-esame-specifico-2}}</td>
-    </tr>
-    <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca documento specifico tramite l'identificativo</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta1.page.md}}</td>
-      <td>{{link:Bundle/esempio-richiesta-1}}</td>
-    </tr>
-    <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca dei docuemnti associati ad un paziente</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta2.page.md}}</td>
-      <td>{{link:Bundle/esempio-richiesta-2}}</td>
-    </tr>
-    <tr>
-      <td>LAB</td>
-      <td>Bundle</td>
-      <td>Ricerca dei docuemnti associati ad un paziente utilizzando il paging</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLPaging.page.md}}</td>
-      <td>{{link:Bundle/esempio-paging-richiesta-1}} {{link:Bundle/esempio-paging-richiesta-2}}</td>
+     <tr>
+      <td>LDO</td>
+      <td>AllergyIntollerance</td>
+      <td>Esempio di allergia al farmaco</td>
+      <td>-</td>
+      <td>{{link:AllergyIntollerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
   </tbody>
 </table>

@@ -5,8 +5,8 @@
       "coding": [
         {
           "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
-          "code": "048301016",
-          "display": "CODEINA E PARACETAMOLO"
+          "code": "J01CE01",
+          "display": "BENZILPENICILLINA POTASSICA K24 PHARMACEUTICALS"
         }
       ]
     },
@@ -33,8 +33,8 @@
           "coding": [
             {
               "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
-              "code": "048301016",
-              "display": "CODEINA E PARACETAMOLO"
+              "code": "J01CE01",
+              "display": "BENZILPENICILLINA POTASSICA K24 PHARMACEUTICALS"
             }
           ]
         },

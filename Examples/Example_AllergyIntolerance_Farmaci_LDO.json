@@ -18,9 +18,9 @@
     "code": {
       "coding": [
         {
-          "system": "https://hl7.org/fhir/R4/valueset-allergyintolerance-code.html",
-          "code": "39359008",
-          "display": "Penicillin V"
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
+          "code": "J01CE01",
+          "display": "BENZILPENICILLINA POTASSICA K24 PHARMACEUTICALS"
         }
       ]
     },
@@ -43,9 +43,9 @@
         "substance": {
           "coding": [
             {
-                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/LDO-Allergeni",
-                "code": "102264005",
-                "display": "Formaggio"
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
+                "code": "J01CE01",
+                "display": "BENZILPENICILLINA POTASSICA K24 PHARMACEUTICALS"
               }
           ]
         },
