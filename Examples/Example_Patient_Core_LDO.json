@@ -1,6 +1,13 @@
 {
     "resourceType": "Patient",
     "id": "esempio-patient-ldo",
+    "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+    ],
+    "versionId": "1"
+    },
     "identifier": [
       {
         "use": "usual",

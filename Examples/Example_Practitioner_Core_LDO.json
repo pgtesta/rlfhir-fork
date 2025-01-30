@@ -1,6 +1,13 @@
 {
     "resourceType": "Practitioner",
     "id": "esempio-practitioner-core-ldo",
+    "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+    ],
+    "versionId": "1"
+    },
     "identifier": [
         {
             "system": "http://hl7.it/sid/codiceFiscale",

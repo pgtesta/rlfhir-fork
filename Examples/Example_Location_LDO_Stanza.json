@@ -1,6 +1,13 @@
 {
     "resourceType": "Location",
     "id": "esempio-location-operation room-ldo",
+    "meta": {
+    "lastUpdated": "2023-05-17T13:05:09Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore"
+    ],
+    "versionId": "1"
+    },
     "identifier": [
       {
         "value": "B1-S.F2.1.00"

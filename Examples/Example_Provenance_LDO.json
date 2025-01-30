@@ -1,6 +1,7 @@
 {
     "resourceType": "Provenance",
     "id": "esempio-provenance-ldo",
+    "recorded": "2024-05-12",
     "target": [
       {
         "reference": "Observation/esempio-observation-ldo"
