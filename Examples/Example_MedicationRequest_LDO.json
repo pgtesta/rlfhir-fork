@@ -27,12 +27,35 @@
           },
           "period": 1,
           "periodUnit": "d"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+              "code": "BED",
+              "display": "at bedtime"
+            }
+          ]
         }
       },
       "site": {
+        "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/approach-site-codes",
+              "code": "836005",
+              "display": "Oral region of face"
+            }
+          ],
           "text": "Bocca"
       },
       "route": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/ValueSet/route-codes",
+            "code": "26643006",
+            "display": "Oral use"
+          }
+        ],
         "text": "Somministrazione per via orale"
       },
       "doseAndRate": [
