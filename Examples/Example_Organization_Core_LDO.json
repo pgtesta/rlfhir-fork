@@ -9,8 +9,8 @@
     },
     "identifier": [
       {
-        "system": "http://www.acme.org.au/units",
-        "value": "ClinLab"
+        "system": "https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture",
+        "value": "030712"
       }
     ],
     "name": "Clinical Lab",
