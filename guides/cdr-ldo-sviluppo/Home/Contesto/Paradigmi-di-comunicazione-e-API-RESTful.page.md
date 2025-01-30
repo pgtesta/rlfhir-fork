@@ -55,7 +55,7 @@ Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione
       <tr>
         <td>2</td>
         <td>GET</td>
-        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&category=[categoria]&last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Observation:patient&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
+        <td>[base_API_Manager]/AllergyIntolerance?clinical-status=active&category=[categoria]&last-date=[data]&patient.identifier=[identificativo]&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=AllergyIntolerance:patient&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization</td>
         <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta4.page.md}}</td>
         <td>CDR</td>
       </tr>
