@@ -1,0 +1,80 @@
+{
+    "resourceType": "Provenance",
+    "id": "esempio-provenance-ldo",
+    "target": [
+      {
+        "reference": "Observation/esempio-observation-ldo"
+      }
+    ],
+    "agent": [
+      {
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "legal",
+              "display": "Legal Authenticator"
+            }
+          ]
+        },
+        "who": {
+          "reference": "Practitioner/esempio-practitioner-core-ldo"
+        }
+      },
+      {
+         "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+              "code": "custodian",
+              "display": "Custodian"
+            }
+          ]
+        },
+        "who": {
+          "reference": "Organization/esempio-organization-core-ldo"
+        }
+      },
+      {
+        "type": {
+         "coding": [
+           {
+             "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+             "code": "author",
+             "display": "Author"
+           }
+         ]
+       },
+       "who": {
+         "reference": "PractitionerRole/esempio-practitionerRole-core-ldo"
+       }
+     },
+     {
+        "type": {
+         "coding": [
+           {
+             "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+             "code": "COPART",
+             "display": "co-participant"
+           }
+         ]
+       },
+       "who": {
+         "reference": "Practitioner/esempio-practitioner-core-ldo"
+       }
+     }
+    ],
+    "entity": [
+      {
+        "role": "source",
+        "what": {
+          "identifier": [
+                {
+                    "system": "urn:oid:2.16.840.1.113883.2.9.2.99.4.4",
+                    "value": "idCDA2root"
+                }
+            ]
+        }
+      }
+    ]
+  }
