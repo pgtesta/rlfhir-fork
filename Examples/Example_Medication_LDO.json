@@ -4,16 +4,16 @@
     "code": {
       "coding": [
         {
-          "system": "https://hl7.org/fhir/R4/valueset-medication-codes.html",
-          "code": "261000",
-          "display": "Codeine phosphate"
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
+          "code": "048301016",
+          "display": "CODEINA E PARACETAMOLO"
         }
       ]
     },
     "form": {
       "coding": [
         {
-          "system": "https://hl7.org/fhir/R4/valueset-medication-form-codes.html",
+          "system": "https://hl7.org/fhir/R4/valueset-medication-form-codes",
           "code": "385049006",
           "display": "Capsule"
         }
@@ -29,12 +29,18 @@
     },
     "ingredient": [
       {
-        "itemReference": {
-          "reference": "#substance"
+        "itemCodeableConcept": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC",
+              "code": "048301016",
+              "display": "CODEINA E PARACETAMOLO"
+            }
+          ]
         },
         "strength": {
           "numerator": {
-            "value": 5,
+            "value": 500,
             "system": "http://unitsofmeasure.org",
             "code": "mg"
           },
