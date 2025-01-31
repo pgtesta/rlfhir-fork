@@ -50,6 +50,34 @@
       <td>{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}</td>
     </tr>
     <tr>
+      <td>LDO</td>
+      <td>Bundle</td>
+      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>{{pagelink:\Home\Esempi\Raccolta-esempi\RLAllergyIntoleranceBundleSearchSet.page.md}}</td>
+      <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
+    </tr>
+    <tr>
+      <td>LDO</td>
+      <td>Bundle</td>
+      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>{{pagelink:\Home\Esempi\Raccolta-esempi\RLBundleSearchSetDecorsoOspedaliero.page.md}}</td>
+      <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
+    </tr>
+    <tr>
+      <td>LDO</td>
+      <td>Bundle</td>
+      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>{{pagelink:\Home\Esempi\Raccolta-esempi\RLBundleSearchSetDimissioneOspedaliera.page.md}}</td>
+      <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
+    </tr>
+    <tr>
+      <td>LDO</td>
+      <td>Bundle</td>
+      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>{{pagelink:\Home\Esempi\Raccolta-esempi\RLMedicationRequestBundleSearchSet.page.md}}</td>
+      <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
+    </tr>
+    <tr>
       <td>CORE</td>
       <td>LocationCore</td>
       <td>Esempio di location di una stanza</td>
