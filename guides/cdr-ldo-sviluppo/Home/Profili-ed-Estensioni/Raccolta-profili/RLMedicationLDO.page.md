@@ -54,7 +54,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi TBD</h3>
-{{link:Medication/esempio-medication-formulazione-ldo}}
+Esempio con formulazione generica: {{link:Medication/esempio-medication-formulazione-ldo}}
 <br>
 </div>
 
