@@ -1,0 +1,394 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-recupero-allergie-farmaceutiche",
+    "meta": {
+        "lastUpdated": "2024-09-06T17:22:06.511+02:00"
+    },
+    "type": "searchset",
+    "total": 1,
+    "link": [
+        {
+        "relation": "self",
+        "url": "baseUrl/MedicationRequest?medication.code=J01CE01&patient.identifier=RSSMRA80A01F205X&authoredOn=gt2024-01-01&authoredOn=lt2025-01-01&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization"
+        }
+    ],
+    "entry": [
+        {
+            "fullUrl": "baseUrl/Provenance/esempio-provenance-ldo",
+            "resource": {
+                "resourceType": "Provenance",
+                "id": "esempio-provenance-ldo",
+                "recorded": "2024-05-12",
+                "target": [
+                    {
+                    "reference": "AllergyIntolerance/esempio-allergia-farmaci-ldo"
+                    }
+                ],
+                "agent": [
+                    {
+                    "type": {
+                        "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+                            "code": "legal",
+                            "display": "Legal Authenticator"
+                        }
+                        ]
+                    },
+                    "who": {
+                        "reference": "Practitioner/esempio-practitioner-core-ldo"
+                    }
+                    },
+                    {
+                        "type": {
+                        "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+                            "code": "custodian",
+                            "display": "Custodian"
+                        }
+                        ]
+                    },
+                    "who": {
+                        "reference": "Organization/esempio-organization-core-ldo"
+                    }
+                    },
+                    {
+                    "type": {
+                        "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+                            "code": "author",
+                            "display": "Author"
+                        }
+                        ]
+                    },
+                    "who": {
+                        "reference": "PractitionerRole/esempio-practitionerRole-core-ldo"
+                    }
+                    },
+                    {
+                    "type": {
+                        "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/provenance-agent-type",
+                            "code": "COPART",
+                            "display": "co-participant"
+                        }
+                        ]
+                    },
+                    "who": {
+                        "reference": "Practitioner/esempio-practitioner-core-ldo"
+                    }
+                    }
+                ],
+                "entity": [
+                    {
+                    "role": "source",
+                    "what": {
+                        "identifier": [
+                            {
+                                "system": "urn:oid:2.16.840.1.113883.2.9.2.99.4.4",
+                                "value": "idCDA2root"
+                            }
+                        ]
+                    }
+                    }
+                ]
+            },
+            "search": {
+            "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/MedicationRequest/esempio-medication-formulazione-ldo",
+            "resource": {
+                "resourceType": "MedicationRequest",
+                "id": "esempio-MedicationRequest-ldo",
+                "status": "active",
+                "intent": "order",
+                "medicationReference": {
+                    "reference": "Medication/esempio-medication-formulazione-ldo"
+                },
+                "subject": {
+                    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+                },
+                "authoredOn": "2024-01-15",
+                "requester": {
+                    "reference": "Practitioner/3a14db34-a959-11ed-afa1-0242ac120002"
+                },
+                "note": [
+                    {
+                    "text": "Somministrazione durante i pasti"
+                    }
+                ],
+                "dosageInstruction": [
+                    {
+                    "timing": {
+                        "repeat": {
+                        "boundsPeriod": {
+                            "start": "2024-01-15"
+                        },
+                        "period": 1,
+                        "periodUnit": "d"
+                        },
+                        "code": {
+                        "coding": [
+                            {
+                            "system": "http://hl7.org/fhir/ValueSet/timing-abbreviation",
+                            "code": "BED",
+                            "display": "at bedtime"
+                            }
+                        ]
+                        }
+                    },
+                    "site": {
+                        "coding": [
+                            {
+                            "system": "http://hl7.org/fhir/ValueSet/approach-site-codes",
+                            "code": "836005",
+                            "display": "Oral region of face"
+                            }
+                        ],
+                        "text": "Bocca"
+                    },
+                    "route": {
+                        "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/ValueSet/route-codes",
+                            "code": "26643006",
+                            "display": "Oral use"
+                        }
+                        ],
+                        "text": "Somministrazione per via orale"
+                    },
+                    "doseAndRate": [
+                        {
+                        "doseQuantity": {
+                            "value": 2,
+                            "unit": "mg/kg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mg/kg"
+                        },
+                        "rateRatio": {
+                            "numerator": {
+                            "value": 2,
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mg/kg"
+                            },
+                            "denominator": {
+                            "value": 20,
+                            "system": "http://unitsofmeasure.org",
+                            "code": "min"
+                            }
+                        }
+                        }
+                    ]
+                    }
+                ],
+                "dispenseRequest": {
+                    "quantity": {
+                    "value": 10,
+                    "unit": "ORCAP",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
+                    "code": "ORCAP"
+                    }
+                }
+            
+            },
+            "search": {
+            "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Patient/e06086d8-a958-11ed-afa1-0242ac120002",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "e06086d8-a958-11ed-afa1-0242ac120002",
+                "meta": {
+                "lastUpdated": "2023-01-11T08:32:56+01:00",
+                "profile": [
+                    "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+                ],
+                "versionId": "1"
+                },
+                "identifier": [
+                {
+                    "system": "http://hl7.it/sid/codiceFiscale",
+                    "value": "RSSMRA80A01F205X"
+                }
+                ],
+                "active": true,
+                "name": [
+                {
+                    "family": "Rossi",
+                    "given": [
+                    "Mario"
+                    ]
+                }
+                ],
+                "gender": "male",
+                "birthDate": "1980-01-01",
+                "address": [
+                {
+                    "use": "billing",
+                    "city": "015146"
+                }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
+                        "code": "2",
+                        "display": "Coniugato/a"
+                        }
+                    ]
+                }
+            },
+            "search": {
+              "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Organization/esempio-organization-core-ldo", 
+            "resource": {
+                "resourceType": "Organization",
+                "id": "esempio-organization-core-ldo",
+                "meta": {
+                "lastUpdated": "2022-03-30T10:36:03.000+00:00",
+                "profile": [
+                "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+                ]
+                },
+                "identifier": [
+                {
+                    "system": "https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture",
+                    "value": "030712"
+                }
+                ],
+                "name": "Clinical Lab",
+                "active": 1,
+                "address": [
+                {
+                    "city": "Roma",
+                    "line": [
+                    "via Roma 1"
+                    ]
+                }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "+1 555 234 1234"
+                    },
+                    {
+                        "system": "email",
+                        "value": "contact@labs.acme.org"
+                    }
+                ],
+                "partOf": {
+                    "reference": "Organization/esempio-Organization-core"
+                }
+            },
+            "search": {
+              "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/PractitionerRole/esempio-practitionerRole-core-ldo", 
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "esempio-practitionerRole-core-ldo",
+                "meta": {
+                "lastUpdated": "2023-01-11T08:32:56+01:00",
+                "profile": [
+                "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
+                ],
+                "versionId": "1"
+                },
+                "identifier": [
+                    {
+                        "system": "http://hl7.it/sid/codiceFiscale",
+                        "value": "PROVAX00X00X000Y"
+                    },
+                    {
+                        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
+                    }
+                ],
+                "active": "true",
+                "period": {
+                    "start": "2012-01-01",
+                    "end": "2013-03-31"
+                },
+                "practitioner": {
+                    "reference": "Practitioner/esempio-practitioner-core-ldo"
+                },
+                "organization": {
+                    "reference": "Organization/esempio-organization-core-ldo"
+                },
+                "code": [
+                    {
+                    "coding": [
+                        {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0286",
+                        "code": "RP"
+                        }
+                    ]
+                    }
+                ]
+            },
+            "search": {
+              "mode": "match"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Practitioner/esempio-practitioner-core-ldo", 
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "esempio-practitioner-core-ldo",
+                "meta": {
+                "lastUpdated": "2023-01-11T08:32:56+01:00",
+                "profile": [
+                "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+                ],
+                "versionId": "1"
+                },
+                "identifier": [
+                    {
+                        "system": "http://hl7.it/sid/codiceFiscale",
+                        "value": "PROVAX00X00X000Y"
+                    },
+                    {
+                        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7",
+                        "value": "123456"
+                    },
+                    {
+                        "system": "http://www.acme.com/identifiers/patient"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Roma",
+                        "line": [
+                            "via Roma 1"
+                        ],
+                        "postalCode": "00184",
+                        "use": "home"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Esempio",
+                        "given": [
+                            "Test"
+                        ]
+                    }
+                ]
+            },
+            "search": {
+              "mode": "match"
+            }
+        }
+    ]
+}
+            
