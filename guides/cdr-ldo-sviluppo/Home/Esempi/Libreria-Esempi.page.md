@@ -40,14 +40,14 @@
       <td>AllergyIntollerance</td>
       <td>Esempio di allergia al formaggio</td>
       <td>-</td>
-      <td>{{link:AllergyIntollerance/esempio-allergia-cibo-ldo}}</td>
+      <td>{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>AllergyIntollerance</td>
       <td>Esempio di allergia al farmaco</td>
       <td>-</td>
-      <td>{{link:AllergyIntollerance/esempio-allergia-farmaci-ldo}}</td>
+      <td>{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
@@ -82,7 +82,7 @@
       <td>LocationCore</td>
       <td>Esempio di location di una stanza</td>
       <td>-</td>
-      <td>{{link:LocationCore/esempio-location-operation room-ldo}}</td>
+      <td>{{link:Location/esempio-location-operation room-ldo}}</td>
     </tr>
     <tr>
       <td>CORE</td>
@@ -96,21 +96,21 @@
       <td>PatientCore</td>
       <td>Esempio del profilo che descrive un paziente</td>
       <td>-</td>
-      <td>{{link:PatientCore/esempio-patient-ldo}}</td>
+      <td>{{link:Patient/esempio-patient-ldo}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>PractitionerCore</td>
       <td>Esempio del profilo che descrive un operatore sanitario</td>
       <td>-</td>
-      <td>{{link:PractitionerCore/esempio-practitioner-core-ldo}}</td>
+      <td>{{link:Practitioner/esempio-practitioner-core-ldo}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>PractitionerRoleCore</td>
       <td>Esempio del profilo che descrive il ruolo e la struttura di un operatore sanitario</td>
       <td>-</td>
-      <td>{{link:PractitionerRoleCore/esempio-practitionerRole-core-ldo}}</td>
+      <td>{{link:PractitionerRole/esempio-practitionerRole-core-ldo}}</td>
     </tr>
   </tbody>
 </table>
