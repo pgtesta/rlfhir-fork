@@ -39,14 +39,14 @@
       <td>LDO</td>
       <td>AllergyIntolerance</td>
       <td>Esempio di allergia al formaggio</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLAllergyIntoleranceFood.page.md}}</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>AllergyIntolerance</td>
       <td>Esempio di allergia al farmaco</td>
-      <td>-</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLAllergyIntoleranceMedication.page.md}}</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}</td>
     </tr>
     <tr>

@@ -238,7 +238,7 @@
                 }
                 ],
                 "name": "Clinical Lab",
-                "active": 1,
+                "active": true,
                 "address": [
                 {
                     "city": "Roma",
@@ -283,7 +283,7 @@
                         "value": "PROVAX00X00X000Y"
                     }
                 ],
-                "active": "true",
+                "active": true,
                 "period": {
                     "start": "2012-01-01",
                     "end": "2013-03-31"
