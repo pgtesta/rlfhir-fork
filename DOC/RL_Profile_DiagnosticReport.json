@@ -1,0 +1,169 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "rl-profile-diagnosticreport-report",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDiagnosticReportReferto",
+  "version": "0.2.0",
+  "name": "RLDiagnosticReportReferto",
+  "title": "DiagnosticReport - Referto",
+  "status": "active",
+  "date": "2024-03-08T10:59:35+01:00",
+  "description": "Descrizione delle informazioni cliniche tramite il profilo della risorsa DiagnosticReport.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/R4/diagnosticreport",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport",
+        "path": "DiagnosticReport",
+        "short": "DiagnosticReport Referto"
+      },
+      {
+        "id": "DiagnosticReport.extension:DiagnosticReportCompositionR5",
+        "path": "DiagnosticReport.extension",
+        "sliceName": "DiagnosticReportCompositionR5",
+        "short": "Estensione di FHIR R5 per legare la DiagnosticReport a Composition."
+      },
+      {
+        "id": "DiagnosticReport.extension:DiagnosticReportCompositionR5.value[x]",
+        "path": "DiagnosticReport.extension.value[x]",
+        "short": "Reference a Composition.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/R4/composition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.identifier",
+        "path": "DiagnosticReport.identifier",
+        "short": "Identificativo indipendente dalla versione.",
+        "comment": "Composition.identifier DEVE essere uguale ad uno dei DiagnosticReport.identifier, se ne esiste almeno uno.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DiagnosticReport.basedOn",
+        "path": "DiagnosticReport.basedOn",
+        "short": "Reference a una o più prestazioni richieste associate al referto.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/R4/servicerequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "short": "Stato del Referto",
+        "comment": "DiagnosticReport.status e Composition.status devono essere coerenti.",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/diagnostic-report-status"
+        }
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "comment": "DiagnosticReport.category e Composition.category  devono essere allineati."
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "short": "Referto",
+        "definition": "Specifica il tipo di documento tramite un codice LOINC",
+        "comment": "DiagnosticReport.code e Composition.type devono essere allineati."
+      },
+      {
+        "id": "DiagnosticReport.code.coding",
+        "path": "DiagnosticReport.code.coding",
+        "short": "Codice definito da un sistema terminologico."
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "comment": "DiagnosticReport e Composition devono avere lo stesso subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/R4/patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.encounter",
+        "path": "DiagnosticReport.encounter",
+        "short": "Evento sanitario a cui si riferisce il Referto (es. al momento della prescrizione).",
+        "definition": "Evento sanitario a cui si riferisce il Referto (es. al momento della prescrizione).",
+        "comment": "This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests).\n  DiagnosticReport e Composition devono referenziare lo stesso encounter.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/R4/encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "short": "Persona o Organizzazione che partecipa all'evento clinico descritto.",
+        "definition": "Organizzazione o Persona che è responsabile del report; non è necessariamente l'autore dei dati atomici o l'entità che ha interpretato i risultati.",
+        "comment": "Se DiagnosticReport.resultsInterpreter esiste, anche Composition.author deve essere valorizzato. Altrimenti DiagnosticReport.performer dovrebbe essere un autore.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http:/hl7.org/fhir/R4/practitioner",
+              "http:/hl7.org/fhir/R4/practitionerrole",
+              "http:/hl7.org/fhir/R4/organization",
+              "http:/hl7.org/fhir/R4/careteam"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter",
+        "path": "DiagnosticReport.resultsInterpreter",
+        "short": "Chi e/o cosa è l'autore del referto .",
+        "comment": "Se DiagnosticReport.resultsInterpreter esiste, anche Composition.author deve essere valorizzato. Altrimenti DiagnosticReport.performer dovrebbe essere un autore."
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "short": "Osservazioni contenute nel referto."
+      },
+      {
+        "id": "DiagnosticReport.media",
+        "path": "DiagnosticReport.media",
+        "short": "Contenuto multimediale associate al DiagnosticReport."
+      },
+      {
+        "id": "DiagnosticReport.media.comment",
+        "path": "DiagnosticReport.media.comment",
+        "short": "Commento sull'immagine."
+      },
+      {
+        "id": "DiagnosticReport.media.link",
+        "path": "DiagnosticReport.media.link",
+        "short": "Riferimento al contenuto multimediale."},
+    
+      {
+        "id": "DiagnosticReport.presentedForm",
+        "path": "DiagnosticReport.presentedForm",
+        "short": "Rappresentazione testuale del Referto  così come emesso."
+      }
+    ]
+  }
+}
