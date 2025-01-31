@@ -89,7 +89,7 @@
       <td>OrganizationCore</td>
       <td>Esempio del profilo che descrive un'azienda</td>
       <td>-</td>
-      <td>{{link:OrganizationCore/esempio-organization-core-ldo}}</td>
+      <td>{{link:Organization/esempio-organization-core-ldo}}</td>
     </tr>
     <tr>
       <td>CORE</td>
