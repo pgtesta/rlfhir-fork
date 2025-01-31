@@ -81,14 +81,14 @@
       <td>CORE</td>
       <td>LocationCore</td>
       <td>Esempio di location di una stanza</td>
-      <td>-</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLLocationCore.page.md}}</td>
       <td>{{link:Location/esempio-location-operation room-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>Medication</td>
       <td>Esempio di identificazione di una formulazione generica</td>
-      <td>-</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLMedication.page.md}}</td>
       <td>{{link:Medication/esempio-medication-formulazione-ldo}}</td>
     </tr>
     <tr>
