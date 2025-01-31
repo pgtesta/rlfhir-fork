@@ -17,7 +17,7 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 
 **Richiesta:** 
 
-| SCOPE | Ricerca esame specifico di laboratorio per un determinato paziente |
+| SCOPE | Ricerca delle allergie di un determinato paziente |
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |

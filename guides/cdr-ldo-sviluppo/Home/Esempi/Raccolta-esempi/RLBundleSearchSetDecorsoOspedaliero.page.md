@@ -19,7 +19,7 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 
 **Richiesta:** 
 
-| SCOPE               | Ricerca di tutte le Observation di un paziente                                                |
+| SCOPE               | Ricerca di tutte le Observation di un paziente in decorso ospedaliero                                                  |
 |---------------------|--------------------------------------------------------------------------------------------------|
 | VERB                | GET                                                                                              |
 | BASE                | [base_API_Manager]                                                                               |

@@ -1,4 +1,4 @@
-# Ricerca risultati di laboratorio di un paziente in un periodo di 5 mesi 
+# Ricerca delle prescrizioni farmaceutiche di un paziente
 
 Recupero delle prescrizioni farmaceutiche assegnate al paziente alla dimissione di un evento di ricovero.
 
@@ -21,12 +21,12 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 
 **Richiesta:** 
 
-| SCOPE | Ricerca risultati di laboratorio di un paziente in un periodo di 5 mesi |
+| SCOPE | Ricerca delle prescrizioni farmaceutiche di un paziente, opzionalmente dato un farmaco |
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
 | URL | / MedicationRequest?medication.code=J01CE01&patient.identifier=RSSMRA80A01F205X&authoredOn=gt2024-01-01&authoredOn=lt2025-01-01&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=030712&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization   |
-|Descrizione risposta | Restituirà tutte le prescrizioni farmaceutiche associate al paziente AAABBB12D55I999D in un determinato periodo di tempo. Nella risposta sono incluse le informazioni del paziente, le informazioni sul documento da cui sono state ricavate le osservazioni, e i professionisti sanitari e le aziende responsabili. |
+|Descrizione risposta | Restituirà tutte le prescrizioni farmaceutiche associate al paziente AAABBB12D55I999D in un determinato periodo di tempo ed eventualmente associate a un farmaco specifico. Nella risposta sono incluse le informazioni del paziente, le informazioni sul documento da cui sono state ricavate le osservazioni, e i professionisti sanitari e le aziende responsabili. |
 
 **Risposta**
 

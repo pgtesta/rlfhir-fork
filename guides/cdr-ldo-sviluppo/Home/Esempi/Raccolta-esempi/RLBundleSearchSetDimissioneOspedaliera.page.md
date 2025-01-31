@@ -20,7 +20,7 @@ Inoltre, è possibile aggiungere opzionalmente ulteriori risorse alla richiesta 
 
 **Richiesta:** 
 
-| SCOPE |  Ricerca esame specifico di laboratorio per un determinato paziente e informazioni di contesto |
+| SCOPE |  Ricerca delle osservazioni cliniche di un paziente in un determinato contesto clinico |
 |---|---|
 | VERB | GET |
 | BASE | [base_API_Manager]    |
