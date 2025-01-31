@@ -21,7 +21,7 @@
                 "recorded": "2024-05-12",
                 "target": [
                     {
-                    "reference": "AllergyIntolerance/esempio-allergia-farmaci-ldo"
+                    "reference": "MedicationRequest/esempio-medication-formulazione-ldo"
                     }
                 ],
                 "agent": [
