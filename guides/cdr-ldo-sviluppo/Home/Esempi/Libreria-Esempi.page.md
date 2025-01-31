@@ -39,7 +39,7 @@
       <td>LDO</td>
       <td>AllergyIntolerance</td>
       <td>Esempio di allergia al formaggio</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
+      <td>-</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
     <tr>
