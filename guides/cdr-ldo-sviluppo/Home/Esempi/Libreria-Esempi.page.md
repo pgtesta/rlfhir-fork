@@ -39,14 +39,14 @@
       <td>LDO</td>
       <td>AllergyIntolerance</td>
       <td>Esempio di allergia al formaggio</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLAllergyIntoleranceFood.page.md}}</td>
+      <td>-</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>AllergyIntolerance</td>
       <td>Esempio di allergia al farmaco</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLAllergyIntoleranceMedication.page.md}}</td>
+      <td>-</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}</td>
     </tr>
     <tr>
@@ -81,14 +81,14 @@
       <td>CORE</td>
       <td>LocationCore</td>
       <td>Esempio di location di una stanza</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLLocationCore.page.md}}</td>
+      <td>-</td>
       <td>{{link:Location/esempio-location-operation room-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>Medication</td>
       <td>Esempio di identificazione di una formulazione generica</td>
-      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLMedication.page.md}}</td>
+      <td>-</td>
       <td>{{link:Medication/esempio-medication-formulazione-ldo}}</td>
     </tr>
     <tr>
