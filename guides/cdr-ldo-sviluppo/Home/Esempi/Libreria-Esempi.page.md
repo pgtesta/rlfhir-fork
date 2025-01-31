@@ -37,24 +37,24 @@
   <tbody id="myTable">
     <tr>
       <td>LDO</td>
-      <td>AllergyIntollerance</td>
+      <td>AllergyIntolerance</td>
       <td>Esempio di allergia al formaggio</td>
-      <td>-</td>
+      <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLRichiesta3.page.md}}</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
-      <td>AllergyIntollerance</td>
+      <td>AllergyIntolerance</td>
       <td>Esempio di allergia al farmaco</td>
       <td>-</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}</td>
     </tr>
     <tr>
-      <td>LDO</td>
-      <td>MedicationRequest</td>
-      <td>Esempio di ordine di un farmaco con istruzioni sulla somministrazione</td>
+      <td>CORE</td>
+      <td>LocationCore</td>
+      <td>Esempio di location di una stanza</td>
       <td>-</td>
-      <td>{{link:MedicationRequest/esempio-MedicationRequest-ldo}}</td>
+      <td>{{link:Location/esempio-location-operation room-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
@@ -65,24 +65,17 @@
     </tr>
     <tr>
       <td>LDO</td>
+      <td>MedicationRequest</td>
+      <td>Esempio di ordine di un farmaco con istruzioni sulla somministrazione</td>
+      <td>-</td>
+      <td>{{link:MedicationRequest/esempio-MedicationRequest-ldo}}</td>
+    </tr>
+    <tr>
+      <td>LDO</td>
       <td>Observation</td>
       <td>Esempio di una rilevazione clinica</td>
       <td>-</td>
       <td>{{link:Observation/esempio-observation-ldo}}</td>
-    </tr>
-    <tr>
-      <td>LDO</td>
-      <td>Provenance</td>
-      <td>Esempio di un documento clinico da cui sono estratte le informazioni</td>
-      <td>-</td>
-      <td>{{link:Provenance/esempio-provenance-ldo}}</td>
-    </tr>
-    <tr>
-      <td>CORE</td>
-      <td>LocationCore</td>
-      <td>Esempio di location di una stanza</td>
-      <td>-</td>
-      <td>{{link:Location/esempio-location-operation room-ldo}}</td>
     </tr>
     <tr>
       <td>CORE</td>
@@ -99,6 +92,7 @@
       <td>{{link:Patient/esempio-patient-ldo}}</td>
     </tr>
     <tr>
+    <tr>
       <td>CORE</td>
       <td>PractitionerCore</td>
       <td>Esempio del profilo che descrive un operatore sanitario</td>
@@ -111,6 +105,12 @@
       <td>Esempio del profilo che descrive il ruolo e la struttura di un operatore sanitario</td>
       <td>-</td>
       <td>{{link:PractitionerRole/esempio-practitionerRole-core-ldo}}</td>
+    </tr>
+      <td>LDO</td>
+      <td>Provenance</td>
+      <td>Esempio di un documento clinico da cui sono estratte le informazioni</td>
+      <td>-</td>
+      <td>{{link:Provenance/esempio-provenance-ldo}}</td>
     </tr>
   </tbody>
 </table>

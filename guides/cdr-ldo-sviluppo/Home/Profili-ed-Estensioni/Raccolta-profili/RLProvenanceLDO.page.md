@@ -52,7 +52,7 @@ Il profilo RLProvenanceDocumentoCDA2 è stato strutturato a partire dalla risors
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-
+{{link:Provenance/esempio-provenance-ldo}}
 <br>
 </div>
 

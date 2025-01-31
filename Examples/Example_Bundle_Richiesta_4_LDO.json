@@ -9,7 +9,7 @@
     "link": [
         {
         "relation": "self",
-        "url": "baseUrl/MedicationRequest?medication.code=J01CE01&patient.identifier=RSSMRA80A01F205X&authoredOn=gt2024-01-01&authoredOn=lt2025-01-01&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=[codice azienda]&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization"
+        "url": "baseUrl/MedicationRequest?medication.code=J01CE01&patient.identifier=RSSMRA80A01F205X&authoredOn=gt2024-01-01&authoredOn=lt2025-01-01&_include=MedicationRequest:medication&_has:Provenance:target:agent:_has:Organization.identifier=030712&_revinclude=Provenance:target&_include=Provenance:agent&_include=MedicationRequest:encounter&_include=MedicationRequest:requester&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization"
         }
     ],
     "entry": [
@@ -21,7 +21,7 @@
                 "recorded": "2024-05-12",
                 "target": [
                     {
-                    "reference": "MedicationRequest/esempio-medication-formulazione-ldo"
+                    "reference": "MedicationRequest/esempio-MedicationRequest-ldo"
                     }
                 ],
                 "agent": [
@@ -89,7 +89,7 @@
                         "identifier": [
                             {
                                 "system": "urn:oid:2.16.840.1.113883.2.9.2.99.4.4",
-                                "value": "idCDA2root"
+                                "value": "idCDA2extension"
                             }
                         ]
                     }
@@ -97,11 +97,11 @@
                 ]
             },
             "search": {
-            "mode": "match"
+            "mode": "include"
             }
         },
         {
-            "fullUrl": "baseUrl/MedicationRequest/esempio-medication-formulazione-ldo",
+            "fullUrl": "baseUrl/MedicationRequest/esempio-MedicationRequest-ldo",
             "resource": {
                 "resourceType": "MedicationRequest",
                 "id": "esempio-MedicationRequest-ldo",
@@ -246,7 +246,7 @@
                 }
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
             }
         },
         {
@@ -291,7 +291,7 @@
                 }
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
             }
         },
         {
@@ -310,9 +310,6 @@
                     {
                         "system": "http://hl7.it/sid/codiceFiscale",
                         "value": "PROVAX00X00X000Y"
-                    },
-                    {
-                        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
                     }
                 ],
                 "active": "true",
@@ -338,7 +335,7 @@
                 ]
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
             }
         },
         {
@@ -357,13 +354,6 @@
                     {
                         "system": "http://hl7.it/sid/codiceFiscale",
                         "value": "PROVAX00X00X000Y"
-                    },
-                    {
-                        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7",
-                        "value": "123456"
-                    },
-                    {
-                        "system": "http://www.acme.com/identifiers/patient"
                     }
                 ],
                 "address": [
@@ -386,7 +376,28 @@
                 ]
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Practitioner/3a14db34-a959-11ed-afa1-0242ac120002",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "3a14db34-a959-11ed-afa1-0242ac120002",
+                "meta": {
+                    "lastUpdated": "2023-01-11T08:32:56+01:00",
+                    "profile": [
+                    "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+                    ],
+                    "versionId": "1"
+                },
+                "identifier": [
+                    {
+                    "system": "http://hl7.it/sid/codiceFiscale",
+                    "value": "VRDGNN80D16F205I"
+                    }
+                ]
+                  
             }
         }
     ]

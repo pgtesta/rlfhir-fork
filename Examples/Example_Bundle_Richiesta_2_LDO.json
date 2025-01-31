@@ -78,7 +78,7 @@
                         ]
                     },
                     "who": {
-                        "reference": "Practitioner/esempio-practitioner-core-ldo"
+                        "reference": "Practitioner/esempio-practitioner-core-ldo1"
                     }
                     }
                 ],
@@ -89,7 +89,7 @@
                         "identifier": [
                             {
                                 "system": "urn:oid:2.16.840.1.113883.2.9.2.99.4.4",
-                                "value": "idCDA2root"
+                                "value": "idCDA2extension"
                             }
                         ]
                     }
@@ -97,7 +97,7 @@
                 ]
             },
             "search": {
-            "mode": "match"
+            "mode": "include"
             }
         },
         {
@@ -217,7 +217,7 @@
                 }
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
             }
         },
         {
@@ -262,7 +262,7 @@
                 }
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
             }
         },
         {
@@ -281,9 +281,6 @@
                     {
                         "system": "http://hl7.it/sid/codiceFiscale",
                         "value": "PROVAX00X00X000Y"
-                    },
-                    {
-                        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
                     }
                 ],
                 "active": "true",
@@ -309,7 +306,7 @@
                 ]
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
             }
         },
         {
@@ -328,13 +325,6 @@
                     {
                         "system": "http://hl7.it/sid/codiceFiscale",
                         "value": "PROVAX00X00X000Y"
-                    },
-                    {
-                        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7",
-                        "value": "123456"
-                    },
-                    {
-                        "system": "http://www.acme.com/identifiers/patient"
                     }
                 ],
                 "address": [
@@ -357,7 +347,48 @@
                 ]
             },
             "search": {
-              "mode": "match"
+              "mode": "include"
+            }
+        },
+        {
+            "fullUrl": "baseUrl/Practitioner/esempio-practitioner-core-ldo1", 
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "esempio-practitioner-core-ldo1",
+                "meta": {
+                "lastUpdated": "2023-01-11T08:32:56+01:00",
+                "profile": [
+                "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+                ],
+                "versionId": "1"
+                },
+                "identifier": [
+                    {
+                        "system": "http://hl7.it/sid/codiceFiscale",
+                        "value": "AAABBX00X00X000Y"
+                    }
+                ],
+                "address": [
+                    {
+                        "city": "Roma",
+                        "line": [
+                            "via Roma 1"
+                        ],
+                        "postalCode": "00184",
+                        "use": "home"
+                    }
+                ],
+                "name": [
+                    {
+                        "family": "Cognome",
+                        "given": [
+                            "Nome"
+                        ]
+                    }
+                ]
+            },
+            "search": {
+              "mode": "include"
             }
         }
     ]

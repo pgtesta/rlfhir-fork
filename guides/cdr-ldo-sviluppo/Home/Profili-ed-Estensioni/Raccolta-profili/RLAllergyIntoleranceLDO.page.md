@@ -57,7 +57,13 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
+Esempio di allergia al cibo
 
+{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}
+
+Esempio di allergia a un farmaco
+
+{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}
 <br>
 </div>
 
