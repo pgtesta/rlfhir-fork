@@ -9,7 +9,7 @@
     "link": [
         {
         "relation": "self",
-        "url": "baseUrl/AllergyIntolerance?clinical-status=active&category=medication&last-date=2020&patient.identifier=RSSMRA80A01F205X&_has:Provenance:target:agent:_has:Organization.identifier=030712&_revinclude=Provenance:target&_include=AllergyIntolerance:patient&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization"
+        "url": "baseUrl/AllergyIntolerance?clinical-status=active&category=medication&last-date=2021-06-01&patient.identifier=RSSMRA80A01F205X&_has:Provenance:target:agent:_has:Organization.identifier=030712&_revinclude=Provenance:target&_include=AllergyIntolerance:patient&_include=PractitionerRole:practitioner &_include=PractitionerRole:organization"
         }
     ],
     "entry": [
