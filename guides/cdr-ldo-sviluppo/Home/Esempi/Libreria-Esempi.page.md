@@ -38,51 +38,44 @@
     <tr>
       <td>LDO</td>
       <td>AllergyIntolerance</td>
-      <td>Esempio di allergia al formaggio</td>
+      <td>Esempio di allergia ad un alimento</td>
       <td>-</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-cibo-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>AllergyIntolerance</td>
-      <td>Esempio di allergia al farmaco</td>
+      <td>Esempio di allergia ad un farmaco</td>
       <td>-</td>
       <td>{{link:AllergyIntolerance/esempio-allergia-farmaci-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>Bundle</td>
-      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>Recupero delle allergie attive di un paziente</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLAllergyIntoleranceBundleSearchSet.page.md}}</td>
       <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>Bundle</td>
-      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>Recupero delle osservazioni di decorso ospedaliero di un paziente</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLBundleSearchSetDecorsoOspedaliero.page.md}}</td>
       <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>Bundle</td>
-      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>Recupero della diagnosi all'accesso dei ricoveri di un paziente</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLBundleSearchSetDimissioneOspedaliera.page.md}}</td>
       <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
     </tr>
     <tr>
       <td>LDO</td>
       <td>Bundle</td>
-      <td>Recupero delle osservazioni in decorso ospedaliero di un paziente</td>
+      <td>Recupero delle prescrizioni farmaceutiche assegnate ad un paziente in seguito ai ricoveri effettuati</td>
       <td>{{pagelink:Home/Esempi/Raccolta-esempi/RLMedicationRequestBundleSearchSet.page.md}}</td>
       <td>{{link:Bundle/bundle-recupero-osservazioni-decorso-ospedaliero}}</td>
-    </tr>
-    <tr>
-      <td>CORE</td>
-      <td>LocationCore</td>
-      <td>Esempio di location di una stanza</td>
-      <td>-</td>
-      <td>{{link:Location/esempio-location-operation room-ldo}}</td>
     </tr>
     <tr>
       <td>LDO</td>
@@ -106,34 +99,6 @@
       <td>{{link:Observation/esempio-observation-ldo}}</td>
     </tr>
     <tr>
-      <td>CORE</td>
-      <td>OrganizationCore</td>
-      <td>Esempio del profilo che descrive un'azienda</td>
-      <td>-</td>
-      <td>{{link:Organization/esempio-organization-core-ldo}}</td>
-    </tr>
-    <tr>
-      <td>CORE</td>
-      <td>PatientCore</td>
-      <td>Esempio del profilo che descrive un paziente</td>
-      <td>-</td>
-      <td>{{link:Patient/esempio-patient-ldo}}</td>
-    </tr>
-    <tr>
-    <tr>
-      <td>CORE</td>
-      <td>PractitionerCore</td>
-      <td>Esempio del profilo che descrive un operatore sanitario</td>
-      <td>-</td>
-      <td>{{link:Practitioner/esempio-practitioner-core-ldo}}</td>
-    </tr>
-    <tr>
-      <td>CORE</td>
-      <td>PractitionerRoleCore</td>
-      <td>Esempio del profilo che descrive il ruolo e la struttura di un operatore sanitario</td>
-      <td>-</td>
-      <td>{{link:PractitionerRole/esempio-practitionerRole-core-ldo}}</td>
-    </tr>
       <td>LDO</td>
       <td>Provenance</td>
       <td>Esempio di un documento clinico da cui sono estratte le informazioni</td>
