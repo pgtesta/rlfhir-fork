@@ -3,7 +3,7 @@
 ## IG Draft
 |Versione e pagina dettaglio|Data rilascio| URL |
 |---|---|---|
-|{{pagelink:Home/pagine-dettaglio/draft_3.13.5.page.md, text:3.13.5}}| 20/09/2024 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.13.5](https://simplifier.net/guide/ig-rlfhir-draft?version=3.13.5) |
+|{{pagelink:Home/pagine-dettaglio/draft_3.14.0.page.md, text:3.14.0}}| 07/11/2025 | [https://simplifier.net/guide/ig-rlfhir-draft?version=3.14.0](https://simplifier.net/guide/ig-rlfhir-draft?version=3.14.0) |
 
 ## IG Produzione
 |Versione e pagina dettaglio|Data rilascio| URL |
@@ -18,5 +18,5 @@
 |{{pagelink:Home/pagine-dettaglio/live_3.10.0.page.md, text:3.10.0}}| 03/07/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.10.0](https://simplifier.net/guide/ig-rlfhir?version=3.10.0) |
 |{{pagelink:Home/pagine-dettaglio/live_3.10.2.page.md, text:3.10.2}}| 20/09/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.10.1](https://simplifier.net/guide/ig-rlfhir?version=3.10.2) |
 |{{pagelink:Home/pagine-dettaglio/live_3.10.3.page.md, text:3.10.3}}| 08/10/2024 | [https://simplifier.net/guide/ig-rlfhir?version=3.10.3](https://simplifier.net/guide/ig-rlfhir?version=3.10.3) |
-
+|{{pagelink:Home/pagine-dettaglio/live_3.14.0.page.md, text:3.14.0}}| 07/11/2025 | [https://simplifier.net/guide/ig-rlfhir?version=3.14.0](https://simplifier.net/guide/ig-rlfhir?version=3.14.0) |
 
