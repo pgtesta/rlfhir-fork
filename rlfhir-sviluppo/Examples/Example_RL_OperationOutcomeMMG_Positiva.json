@@ -1,0 +1,42 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "esempio-OperationOutcomeMMG-PIC-positiva",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
+    ]
+  },
+  "text": {
+    "status": "generated"
+  },
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG",
+            "code": "01",
+            "display": "URL per il passaggio di contesto"
+          }
+        ],
+        "text": "http://localhost:8090/api/access?objId=93031990-9004-4b52-8d6b-b83b28484dc5"
+      }
+    },
+    {
+      "severity": "information",
+      "code": "informational",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/GPC-ContenutoOperationOutcomeMMG",
+            "code": "02",
+            "display": "Numero di protocollo GPC"
+          }
+        ],
+        "text": "TGGN24H04F205B"
+      }
+    }
+  ]
+}

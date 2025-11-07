@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationDimissioneProtetta",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDimissioneProtetta",
+  "name": "RLLocationDimissioneProtetta",
+  "status": "draft",
+  "description": "Parametro di ricerca per ricercare se il posto letto è indicato per una dimissione protetta",
+  "code": "dimissioneProtetta",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

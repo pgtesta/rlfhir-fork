@@ -1,0 +1,200 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLDeviceRequestProtesiAusili",
+  "meta": {
+    "lastUpdated": "2023-10-17T08:57:24.6840585+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili",
+  "name": "RLDeviceRequestProtesiAusili",
+  "status": "active",
+  "description": "Profilo volto a descrivere la prostesi o l’ausilio di cui il paziente necessita come definito dal suo progetto individuale.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceRequest.id",
+        "path": "DeviceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.meta",
+        "path": "DeviceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.meta.versionId",
+        "path": "DeviceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.meta.lastUpdated",
+        "path": "DeviceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.meta.profile",
+        "path": "DeviceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili"
+      },
+      {
+        "id": "DeviceRequest.extension:prescrizioneElettronica",
+        "path": "DeviceRequest.extension",
+        "sliceName": "prescrizioneElettronica",
+        "short": "Flag riguardo la necessità di una prescrizione elettronica per il paziente",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestPrescrizioneElettronica"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DeviceRequest.basedOn",
+        "path": "DeviceRequest.basedOn",
+        "short": "Riferimento al progetto individuale nel quale è prevista la fornitura della protesi o dell'ausilio",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DeviceRequest.status",
+        "path": "DeviceRequest.status",
+        "short": "Stato della fornitura della protesi o dell'ausilio",
+        "definition": "Valore fisso su \"active\"",
+        "min": 1,
+        "fixedCode": "active"
+      },
+      {
+        "id": "DeviceRequest.intent",
+        "path": "DeviceRequest.intent",
+        "short": "Intento della richesta",
+        "definition": "Valore fisso su \"order\"",
+        "fixedCode": "order"
+      },
+      {
+        "id": "DeviceRequest.code[x]",
+        "path": "DeviceRequest.code[x]",
+        "short": "Codice e descrizione dell'ausilio di protesica",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "DeviceRequest.code[x].coding",
+        "path": "DeviceRequest.code[x].coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DeviceRequest.code[x].coding.system",
+        "path": "DeviceRequest.code[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi"
+      },
+      {
+        "id": "DeviceRequest.code[x].coding.code",
+        "path": "DeviceRequest.code[x].coding.code",
+        "short": "Codice dell'ausilio di protesica",
+        "definition": "Stringa alfanumerica di al più 26 caratteri",
+        "comment": "La fonte del dato è il campo CD_AUSILIO della tabella ausili di Protesica i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica gli ausili di protesica",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi"
+        }
+      },
+      {
+        "id": "DeviceRequest.code[x].coding.display",
+        "path": "DeviceRequest.code[x].coding.display",
+        "short": "Descrizione dell'ausilio di protesica",
+        "definition": "Stringra alfanumerica di al più 1024 caratteri.",
+        "comment": "La fonte del dato è il campo DS_AUSILIO della tabella ausili di Protesica i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.subject",
+        "path": "DeviceRequest.subject",
+        "short": "Paziente al quale deve essere fornita la protesi o l'ausilio",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DeviceRequest.occurrence[x]",
+        "path": "DeviceRequest.occurrence[x]",
+        "short": "Periodo di utilizzo della protesi o dell'ausilio",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "DeviceRequest.occurrence[x].start",
+        "path": "DeviceRequest.occurrence[x].start",
+        "short": "Data di inizio del period di utilizzo",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato a detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.occurrence[x].end",
+        "path": "DeviceRequest.occurrence[x].end",
+        "short": "Data di fine del periodo di utilizzo",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato a detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "DeviceRequest.note",
+        "path": "DeviceRequest.note",
+        "short": "Note / commenti aggiuntivi",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
+      }
+    ]
+  }
+}

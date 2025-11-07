@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationDataInsert",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:17:46.302563+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert",
+  "name": "RLOrganizationDataInsert",
+  "description": "Data di inserimento del record",
+  "status": "active",
+  "experimental": false,
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "comment": "Fonte: DT_INSERT",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInsert"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

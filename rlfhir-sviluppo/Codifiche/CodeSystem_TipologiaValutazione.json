@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-TipologiaValutazione",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaValutazione",
+  "version": "1.0.0",
+  "name": "SGDT Tipologia Valutazione",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla tipologia di valutazione",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "I",
+      "display": "Prima Valutazione"
+    },
+    {
+      "code": "V",
+      "display": "Rivalutazione Ordinaria"
+    },
+    {
+      "code": "R",
+      "display": "Valutazione Straordinaria"
+    },
+    {
+      "code": "N",
+      "display": "Valutazione non ADI"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "Bundle",
+  "id": "RLBundleRispostaMMGNegativa",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG"
+    ]
+  },
+  "type": "message",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "3f4233a1-b879-bcd3-b8d5-26dc3a31512b",
+        "meta": {
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
+          "code": "picMMG",
+          "display": "Visualizzazione pagina redazione PI"
+        },
+        "destination": [
+          {
+            "name": "SSI_MMG_NOMEAPPLICATIVO",
+            "endpoint": "urn:rlfhir:SSI_MMG_nome_applicativo"
+          }
+        ],
+        "source": {
+          "name": "SGDT",
+          "endpoint": "urn:rlfhir:SGDT"
+        },
+        "response": {
+          "identifier": "RLBundleMMGpicMMG",
+          "code": "fatal-error",
+          "details": {
+            "reference": "OperationOutcome/a24ab258-a2b5-59ae-4b6f-f5bd57ca4ef0"
+          }
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "OperationOutcome",
+        "id": "a24ab258-a2b5-59ae-4b6f-f5bd57ca4ef0",
+        "meta": {
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
+          ]
+        },
+        "text": {
+          "status": "generated"
+        },
+        "issue": [
+          {
+            "severity": "error",
+            "code": "invalid",
+            "details": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/operation-error",
+                  "code": "9.19",
+                  "display": "[Entry-0] Risorsa di tipo MessageHeader non valida. DESTINATION -> ENDPOINT contiene un valore non atteso."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

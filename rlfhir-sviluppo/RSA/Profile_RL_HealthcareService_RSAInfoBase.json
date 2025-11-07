@@ -1,0 +1,193 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLHealthcareServiceRSAInfoBase",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRSAInfoBase",
+  "name": "RLHealthcareServiceRSAInfoBase",
+  "status": "draft",
+  "description": "Profilo che descrive i servizi offerti e le informazioni caratteristiche di una specifica RSA.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "RSA"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "HealthcareService",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "HealthcareService.extension:PersonaReferente",
+        "path": "HealthcareService.extension",
+        "sliceName": "PersonaReferente",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceReferenteStruttura"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:TempiMediPresaInCarico",
+        "path": "HealthcareService.extension",
+        "sliceName": "TempiMediPresaInCarico",
+        "short": "Tempi Medi Presa In Carico",
+        "definition": "Tempi Medi Presa In Carico",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceTempiMediPresaInCarico"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:RettaSociale",
+        "path": "HealthcareService.extension",
+        "sliceName": "RettaSociale",
+        "short": "Retta Sociale",
+        "definition": "Retta Sociale minima e massima",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceRettaSociale"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:Parcheggio",
+        "path": "HealthcareService.extension",
+        "sliceName": "Parcheggio",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceParcheggio"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "HealthcareService.extension:Parcheggio.extension:ProprietaStruttura",
+        "path": "HealthcareService.extension.extension",
+        "sliceName": "ProprietaStruttura"
+      },
+      {
+        "id": "HealthcareService.extension:Parcheggio.extension:ProprietaStruttura.value[x]",
+        "path": "HealthcareService.extension.extension.value[x]",
+        "definition": "Presenza o assenza di un parcheggio di proprietà della struttura."
+      },
+      {
+        "id": "HealthcareService.providedBy",
+        "path": "HealthcareService.providedBy",
+        "short": "Codice CUDES",
+        "definition": "L2 associata (codice CUDES).",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HealthcareService.type",
+        "path": "HealthcareService.type",
+        "short": "Servizi sociosanitari disponibili",
+        "definition": "Informazioni relative alla dotazione gestionale e caratteristiche sociosanitarie",
+        "comment": "Per la codifica vedere tabella."
+      },
+      {
+        "id": "HealthcareService.location",
+        "path": "HealthcareService.location",
+        "short": "Ubicazione della struttura",
+        "definition": "Ubicazione della struttura",
+        "comment": "Fonte: Ubicazione della struttura"
+      },
+      {
+        "id": "HealthcareService.telecom",
+        "path": "HealthcareService.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "HealthcareService.telecom:numeroTelefono",
+        "path": "HealthcareService.telecom",
+        "sliceName": "numeroTelefono",
+        "short": "Numero telefono struttura",
+        "definition": "Numero telefono struttura"
+      },
+      {
+        "id": "HealthcareService.telecom:email",
+        "path": "HealthcareService.telecom",
+        "sliceName": "email",
+        "short": "Mail struttura",
+        "definition": "Mail struttura"
+      },
+      {
+        "id": "HealthcareService.characteristic",
+        "path": "HealthcareService.characteristic",
+        "short": "Servizi Disponibili",
+        "definition": "Informazioni sulla dotazione strutturale, dotazione camere e altri servizi",
+        "comment": "Per la codifica vedere tabella."
+      },
+      {
+        "id": "HealthcareService.availableTime",
+        "path": "HealthcareService.availableTime",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "HealthcareService.availableTime:GiornateDisponibiliAccettazione",
+        "path": "HealthcareService.availableTime",
+        "sliceName": "GiornateDisponibiliAccettazione",
+        "short": "Giornate disponibili per accettazione",
+        "definition": "Elenco delle giornate disponibili per accettazione sia feriali che festivi"
+      },
+      {
+        "id": "HealthcareService.availableTime:AperturaCentralino",
+        "path": "HealthcareService.availableTime",
+        "sliceName": "AperturaCentralino",
+        "short": "Apertura centralino/reception",
+        "definition": "Apertura centralino/reception"
+      },
+      {
+        "id": "HealthcareService.notAvailable",
+        "path": "HealthcareService.notAvailable",
+        "short": "GiornateNonDisponibiliAccettazione",
+        "comment": "Verranno inserite i festivi in cui non c'è disponibilità in determinate ore (es. Natale)"
+      }
+    ]
+  }
+}

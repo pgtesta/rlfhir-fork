@@ -1,0 +1,93 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-PercorsiCDom",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-PercorsiCDom",
+  "version": "1.0.0",
+  "name": "SGDT Percorsi CDom",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo ai percorsi di cure domiciliari",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "PERCDOM01",
+      "display": "Prelievo"
+    },
+    {
+      "code": "PERCDOM02",
+      "display": "Prestazionale Generico"
+    },
+    {
+      "code": "PERCDOM03",
+      "display": "Gestione Alvo"
+    },
+    {
+      "code": "PERCDOM04",
+      "display": "Gestione Catetere Vescicale"
+    },
+    {
+      "code": "PERCDOM05",
+      "display": "Gestione Stomie"
+    },
+    {
+      "code": "PERCDOM06",
+      "display": "Lesioni A"
+    },
+    {
+      "code": "PERCDOM07",
+      "display": "Lesioni B"
+    },
+    {
+      "code": "PERCDOM08",
+      "display": "Lesioni C"
+    },
+    {
+      "code": "PERCDOM09",
+      "display": "Fisioterapia A"
+    },
+    {
+      "code": "PERCDOM10",
+      "display": "Fisioterapia B"
+    },
+    {
+      "code": "PERCDOM11",
+      "display": "Fisioterapia C"
+    },
+    {
+      "code": "PERCDOM12",
+      "display": "Fisioterapia D"
+    },
+    {
+      "code": "PERCDOM13",
+      "display": "Alta Intensità"
+    },
+    {
+      "code": "PERCDOM14",
+      "display": "Liv I"
+    },
+    {
+      "code": "PERCDOM15",
+      "display": "Liv II"
+    },
+    {
+      "code": "PERCDOM16",
+      "display": "Liv III A"
+    },
+    {
+      "code": "PERCDOM17",
+      "display": "Liv III B"
+    },
+    {
+      "code": "PERCDOM18",
+      "display": "Liv III C"
+    },
+    {
+      "code": "PERCDOM19",
+      "display": "Liv III C autorizzato"
+    },
+    {
+      "code": "PERCDOM20",
+      "display": "Trattamenti Terapeutici"
+    }
+  ]
+}

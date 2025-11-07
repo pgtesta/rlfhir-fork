@@ -1,0 +1,20 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "esempio-searchfail",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore",
+            "code": "RSRC_VERSION_INCOH",
+            "display": "Incoerenza sul versione della risorsa"
+          }
+        ]
+      },
+      "diagnostics": "Fallito il controllo di coerenza: RSRC_VERSION_INCOH. La risorsa da controllare e': Organization/11f6b3ee-82f2-11ed-b856-02001700b287"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "esempio-PractitionerRole",
+  "meta": {
+    "lastUpdated": "2020-12-31T10:36:03.000+00:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/sid/codiceRegionaleMedicoPrescrittore",
+      "value": "123456789"
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2017-06-09",
+    "end": "2020-12-31"
+  },
+  "practitioner": {
+    "reference": "Practitioner/1",
+    "display": "Dr Martino Rossi"
+  },
+  "organization": {
+    "reference": "Organization/2",
+    "display": "Presidio Ospedaliero di Vimercate"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceQualificaMedico",
+          "code": "C",
+          "display": "Specialista di struttura privata accreditata"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert",
+      "valueDate": "2017-06-07"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate",
+      "valueDate": "2020-12-31"
+    }
+  ]
+}

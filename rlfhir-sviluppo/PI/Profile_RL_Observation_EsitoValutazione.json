@@ -1,0 +1,205 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione",
+  "name": "RLObservationEsitoValutazione",
+  "status": "active",
+  "description": "Profilo volto a descrivere l’esito della valutazione al quale il paziente è stato sottoposto.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta",
+        "path": "Observation.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.versionId",
+        "path": "Observation.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.lastUpdated",
+        "path": "Observation.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Observation.meta.profile",
+        "path": "Observation.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato della valutazione",
+        "definition": "Valore fisso su \"registered\"",
+        "fixedCode": "registered"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "short": "Codifica della valutazione al quale il paziente è stato sottoposto"
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione"
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "short": "Codice della valutazione specifica al quale il paziente è stato sottoposto",
+        "definition": "Stringa alfanumerica di 4 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica delle valutazioni",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione"
+        }
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "short": "Nome della valutazione specifica al quale il paziente è stato sottoposto",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Paziente sottoposto alla valutazione",
+        "definition": "Reference alla risorsa RLPatientCittadino",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Data e ora dell'ultima modifica",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Profilo del professionista sanitario che ha effettualto la valutazione",
+        "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario del professionista sanitario che compila la valutazione",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Esito della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito è la scheda Triage",
+        "definition": "Nel caso della scheda Triage il datatype è valueInteger (integer) e il valore numerico è compreso tra 0 e 14",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto",
+        "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLQuestionnaireResponseValutazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "short": "Esito complesso della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito complesso è la valutazione multidimensionale InterRAI - HomeCare"
+      },
+      {
+        "id": "Observation.component.code",
+        "path": "Observation.component.code",
+        "short": "Codifica degli esiti composti della valutazione multidimensionale InterRAI - HomeCare",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella degli esiti della  valutazione InterRAI - HomeCare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
+      },
+      {
+        "id": "Observation.component.code.coding",
+        "path": "Observation.component.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component.code.coding.code",
+        "path": "Observation.component.code.coding.code",
+        "short": "Codice dell'esito composto della valutazione. Nel codice viene indicato se l'esito fa parte della sezione PHP o PVC.",
+        "definition": "Stringa alfanumerica al più di 10 caratteri",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica degli esiti della valutazione InterRAI-HomeCare",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-EsitoInterRAI"
+        }
+      },
+      {
+        "id": "Observation.component.code.coding.display",
+        "path": "Observation.component.code.coding.display",
+        "short": "Descrizione dell'esito composto della valutazione",
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "min": 1
+      },
+      {
+        "id": "Observation.component.value[x]",
+        "path": "Observation.component.value[x]",
+        "short": "Contenuto informativo dell'esito",
+        "definition": "In base alla tipologia di risposta relativa al singolo quesito i possibili campi e i relativi datatype sono: \r\n- valueBoolean (boolean) \r\n- valueDecimal (decimal) \r\n- valueInteger (integer) \r\n- valueDate (date) \r\n- valueDateTime (dateTime) \r\n- valueTime (time) \r\n- valueString (string) \r\n- valueUri (uri) \r\n- valueAttachment (Attachment)\r\n- valueCoding (Coding)\r\n- valueQuantity (Quantity) \r\n- valueReference (Reference)",
+        "min": 1
+      }
+    ]
+  }
+}

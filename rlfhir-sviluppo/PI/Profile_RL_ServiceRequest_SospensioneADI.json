@@ -1,0 +1,204 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "UUID",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI",
+  "name": "RLServiceRequestSospensioneADI",
+  "status": "active",
+  "description": "Profilo che descrive i dettagli della sospensione temporanea del ricovero domiciliare di un paziente",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "C-DOM"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSospensioneADI"
+      },
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "short": "Codice identificativo della sospensione temporanea",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.identifier.system",
+        "path": "ServiceRequest.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/identificativoSospensioneTemporanea"
+      },
+      {
+        "id": "ServiceRequest.identifier.value",
+        "path": "ServiceRequest.identifier.value",
+        "short": "Codice identificativo della sospensione temporanea",
+        "definition": "{codiceL2}{numeroPratica}_S{progressivo a 6 cifre es.000001}",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "short": "Riferimento al progetto individuale contentente la richiesta di attivazione del ricovero domiciliare",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requisition",
+        "path": "ServiceRequest.requisition",
+        "short": "Numero pratica del ricovero domiciliare",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.requisition.system",
+        "path": "ServiceRequest.requisition.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/numeroPraticaRicoveroDomiciliare"
+      },
+      {
+        "id": "ServiceRequest.requisition.value",
+        "path": "ServiceRequest.requisition.value",
+        "short": "Numero pratica del ricovero domiciliare",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "short": "Stato del ricovero domiciliare",
+        "definition": "Valore fisso su \"on-hold\" in quanto temporaneamente sospeso",
+        "fixedCode": "on-hold"
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "short": "Intento della richesta",
+        "definition": "Valore fisso su \"directive\"",
+        "fixedCode": "directive"
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "short": "Paziente",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "short": "Periodo temporale nel quale il ricovero domiciliare è stato sospeso temoraneamente",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].start",
+        "path": "ServiceRequest.occurrence[x].start",
+        "short": "Data di inizio delle sospensione temporanea del ricovero domiciliare",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].end",
+        "path": "ServiceRequest.occurrence[x].end",
+        "short": "Data di fine delle sospensione temporanea del ricovero domiciliare",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "short": "Motivo della sospensione temporanea",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei motivi della sospensione temporanea del ricovero domiciliare contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding",
+        "path": "ServiceRequest.reasonCode.coding",
+        "short": "Codice e descrizione della sospensione temporanea",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.system",
+        "path": "ServiceRequest.reasonCode.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.code",
+        "path": "ServiceRequest.reasonCode.coding.code",
+        "short": "Codice della sospensione temporanea",
+        "definition": "Stringa numerica di una cifra",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo ai motivi della sospensione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione"
+        }
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.display",
+        "path": "ServiceRequest.reasonCode.coding.display",
+        "short": "Descizione della sospensione temporanea",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "min": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "resourceType": "Practitioner",
+  "id": "esempio-Practitioner",
+  "meta": {
+    "lastUpdated": "2022-06-01T10:36:03.000+00:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "RSSMRT57D12D612R"
+    }
+  ],
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Martino"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-555-1002",
+      "use": "work"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "line": [
+        "Via Montenapoleone, 3"
+      ],
+      "city": "Milano",
+      "postalCode": "20121"
+    }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore",
+            "code": "F",
+            "display": "Medico di medicina generale"
+          }
+        ]
+      },
+      "issuer": {
+        "reference": "Organization/7d728476-09f3-11ee-be56-0242ac120002"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert",
+      "valueDate": "2000-01-27"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate",
+      "valueDate": "2015-01-27"
+    }
+  ]
+}

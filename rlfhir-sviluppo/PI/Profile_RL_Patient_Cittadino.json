@@ -1,0 +1,820 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPatientCittadino",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino",
+  "name": "RLPatientCittadino",
+  "status": "active",
+  "description": "Profilo contenente i dettagli anagrafici di un cittadino",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.id",
+        "path": "Patient.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta",
+        "path": "Patient.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.versionId",
+        "path": "Patient.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.lastUpdated",
+        "path": "Patient.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.profile",
+        "path": "Patient.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+      },
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "min": 3
+      },
+      {
+        "id": "Patient.extension:cittadinanza",
+        "path": "Patient.extension",
+        "sliceName": "cittadinanza",
+        "short": "Cittadinanza del cittadino",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:cittadinanza.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice ISTAT della nazione di cittadinanza del cittadino",
+        "definition": "Stringa alfabetica di 3 caratteri",
+        "comment": "il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio",
+        "path": "Patient.extension",
+        "sliceName": "titoloDiStudio",
+        "short": "Titolo di studio del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei titoli di studio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x]",
+        "path": "Patient.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio"
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice del titolo di studio del cittadino",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica del titolo di studio",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio"
+        }
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descizione che rappresenta il titolo di studio del cittadino",
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione",
+        "path": "Patient.extension",
+        "sliceName": "posizioneDellaProfessione",
+        "short": "Posizione della professione del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle professioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x]",
+        "path": "Patient.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione"
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice della professione del cittadino",
+        "definition": "Stringa numerica di 2 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica della posizione professionale",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione"
+        }
+      },
+      {
+        "id": "Patient.extension:posizioneDellaProfessione.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione della professione del cittadino",
+        "definition": "Stringa alfanumerica al più di 200 caratteri"
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica",
+        "path": "Patient.extension",
+        "sliceName": "situazionePensionistica",
+        "short": "Situazione pensionistica del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della situazione pensionistica contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica.value[x]",
+        "path": "Patient.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica"
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice della situazione pensionistica del cittadino",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica della situazione pensionistica",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica"
+        }
+      },
+      {
+        "id": "Patient.extension:situazionePensionistica.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione della situazione pensionistica del cittadino",
+        "definition": "Stringa alfanumerica al più di 100 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "Patient.extension:luogoDiNascita",
+        "path": "Patient.extension",
+        "sliceName": "luogoDiNascita",
+        "short": "Luogo di nascita del cittadino",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:luogoDiNascita.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Se il cittadino è nato in Italia il campo contiente il codice ISTAT del comune di nascita. Se il cittadino è nasto all'estero il campo contiente il codice \"999\" seguito dal codice ISTAT della nazione di nascita. Per gli apolidi o non rilevati il campo riporta il codice \"999999\".",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "NAR",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:CF",
+        "path": "Patient.identifier",
+        "sliceName": "CF",
+        "short": "Codice fiscale del paziente",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:CF.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Patient.identifier:CF.value",
+        "path": "Patient.identifier.value",
+        "short": "Codice fiscale del paziente",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:STP",
+        "path": "Patient.identifier",
+        "sliceName": "STP",
+        "short": "Codice STP del cittadino",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:STP.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/stp"
+      },
+      {
+        "id": "Patient.identifier:STP.value",
+        "path": "Patient.identifier.value",
+        "short": "Codice STP del cittadino",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM",
+        "path": "Patient.identifier",
+        "sliceName": "tesseraTEAM",
+        "short": "Tessera TEAM del paziente",
+        "comment": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il paziente è in carico ad un ente erogatre di cure domiciliari",
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.extension",
+        "path": "Patient.identifier.extension",
+        "min": 2
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente",
+        "path": "Patient.identifier.extension",
+        "sliceName": "TEAMNumeroIdentificazioneIstituzioneCompetente",
+        "short": "Numero di identificazione dell’istituzione” o ”identification number of the institution” indicata sulla tessera TEAM",
+        "definition": "parte a sinistra del separatore “-“",
+        "comment": "Punto 7 della tessara TEAM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNumeroIdentificazioneIstituzioneCompetente"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.extension:TEAMNumeroIdentificazioneIstituzioneCompetente.value[x]",
+        "path": "Patient.identifier.extension.value[x]",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.extension:TEAMNomeIdentificazioneIstituzioneCompetente",
+        "path": "Patient.identifier.extension",
+        "sliceName": "TEAMNomeIdentificazioneIstituzioneCompetente",
+        "short": "Nome identificazione istituzione competente",
+        "definition": "parte a destra del separatore “-“",
+        "comment": "Punto 7 della tessera TEAM",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTEAMNomeIdentificazioneIstituzioneCompetente"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.type",
+        "path": "Patient.identifier.type",
+        "short": "Sigla della nazione riportata sulla tessera",
+        "definition": "Stringa alfabetica di 2 caratteri",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.value",
+        "path": "Patient.identifier.value",
+        "short": "Numero identificazione tessera sanitaria europea",
+        "comment": "Punto 8 della tessara TEAM",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.period",
+        "path": "Patient.identifier.period",
+        "short": "Data scadenza tessera sanitaria",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.period.end",
+        "path": "Patient.identifier.period.end",
+        "short": "Data scadenza tessera sanitaria",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Punto 9 della tessara TEAM",
+        "min": 1
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "short": "Indicazione sullo stato del paziente"
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Nominativo del paziente",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "short": "Cognome del paziente",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "short": "Nome del paziente",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Numero di telefono e indirizzo mail del cittadino"
+      },
+      {
+        "id": "Patient.telecom:phone",
+        "path": "Patient.telecom",
+        "sliceName": "phone",
+        "short": "Numero di telefono del cittadino"
+      },
+      {
+        "id": "Patient.telecom:phone.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Patient.telecom:phone.value",
+        "path": "Patient.telecom.value",
+        "short": "Numero di telefono del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.telecom:mail",
+        "path": "Patient.telecom",
+        "sliceName": "mail",
+        "short": "Indirizzo mail del cittadino"
+      },
+      {
+        "id": "Patient.telecom:mail.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "email"
+      },
+      {
+        "id": "Patient.telecom:mail.value",
+        "path": "Patient.telecom.value",
+        "short": "Indirizzo mail del cittadino",
+        "definition": "Stringa alfanumerica di al più 250 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "Sesso del paziente",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "Data di nascita del paziente",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Residenza anagrafica del cittadino",
+        "definition": "Identificazione della residenza fiscale dell’assistito",
+        "min": 1,
+        "max": "3"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino",
+        "path": "Patient.address",
+        "sliceName": "residenzaAnagraficaCittadino",
+        "short": "Residenza anagrafica del cittadino",
+        "definition": "Identificazione della residenza fiscale dell’assistito",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.use",
+        "path": "Patient.address.use",
+        "min": 1,
+        "fixedCode": "billing"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.line",
+        "path": "Patient.address.line",
+        "short": "Indirizzo della residenza del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.city",
+        "path": "Patient.address.city",
+        "short": "Codice ISTAT della città di residenza del cittadino",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "CAP del comune di residenza del cittadino",
+        "definition": "Stringa numerica di 5 cifre"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.country",
+        "path": "Patient.address.country",
+        "short": "Codice Stato Estero di residenza del cittadino. Se il cittadino è residente in Italia il campo deve essere lasciato vuoto",
+        "definition": "Il campo, se necessario, deve essere obbligatoriamente valorizzato nel momento in cui il cittadino è in carico ad un ente erogatre di cure domiciliari"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino",
+        "path": "Patient.address",
+        "sliceName": "domicilioCittadino",
+        "short": "Domicilio del cittadino se questo differisce dalla residenza",
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.use",
+        "path": "Patient.address.use",
+        "definition": "valore fisso su \"home\"",
+        "min": 1,
+        "fixedCode": "home"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.line",
+        "path": "Patient.address.line",
+        "short": "Indirizzo del domicilio del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.city",
+        "path": "Patient.address.city",
+        "short": "Codice ISTAT del comune di domicilio del cittadino",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "CAP del comune di domicilio del cittandino",
+        "definition": "Stringa numerica di 5 cifre",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino",
+        "path": "Patient.address",
+        "sliceName": "locazioneTemporaneaCittadino",
+        "short": "Locazione temporanea del cittadino",
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.use",
+        "path": "Patient.address.use",
+        "min": 1,
+        "definition": "valore fisso su \"temp\"",
+        "fixedCode": "temp"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.line",
+        "path": "Patient.address.line",
+        "short": "Indirizzo della locazione temporanea del cittadino",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.city",
+        "path": "Patient.address.city",
+        "short": "Codice ISTAT del comune di locazione temporanea del cittadino",
+        "definition": "Stringa numerica di 6 cifre",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCittadino.postalCode",
+        "path": "Patient.address.postalCode",
+        "short": "CAP del comune di locazione temporanea del cittadino",
+        "definition": "Stringa numerica di 5 cifre",
+        "min": 1
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "short": "Stato civile del paziente",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dello stato civile contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
+      },
+      {
+        "id": "Patient.maritalStatus.coding",
+        "path": "Patient.maritalStatus.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.maritalStatus.coding.code",
+        "path": "Patient.maritalStatus.coding.code",
+        "short": "Codice dello stato civile del paziente",
+        "definition": "Stringa numerica di 1 carattere",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica dello stato civile",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile"
+        }
+      },
+      {
+        "id": "Patient.maritalStatus.coding.display",
+        "path": "Patient.maritalStatus.coding.display",
+        "short": "Descrizione dello stato civile del paziente",
+        "definition": "Stringa alfanumerica al più di 50 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "short": "Caregiver del cittadino"
+      },
+      {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "short": "Codifica della tipologia di caregiver del cittadino",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di caregiver contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla codifica della tipologia di caregiver",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver"
+        }
+      },
+      {
+        "id": "Patient.contact.relationship.coding.system",
+        "path": "Patient.contact.relationship.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaCaregiver"
+      },
+      {
+        "id": "Patient.contact.relationship.coding.code",
+        "path": "Patient.contact.relationship.coding.code",
+        "short": "Codice della tipologia di caregiver del cittadino",
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "comment": "il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.contact.relationship.coding.display",
+        "path": "Patient.contact.relationship.coding.display",
+        "short": "Descrizione della tipologia di caregiver del cittadino",
+        "definition": "Stringa alfanumerica di al più 50 caratteri",
+        "comment": "il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.contact.name",
+        "path": "Patient.contact.name",
+        "short": "Nominativo del caregiver o tipo di relazione con il cittadino",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.name.family",
+        "path": "Patient.contact.name.family",
+        "short": "Nome e cognome del caregiver o tipo di relazione con il cittadino",
+        "definition": "Stringa alfabetica di massimo 100 caratteri",
+        "comment": "il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.contact.telecom",
+        "path": "Patient.contact.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Numero di telefono e indirizzo mail del caregiver"
+      },
+      {
+        "id": "Patient.contact.telecom:phone",
+        "path": "Patient.contact.telecom",
+        "sliceName": "phone",
+        "short": "Numero di telefono del caregiver"
+      },
+      {
+        "id": "Patient.contact.telecom:phone.system",
+        "path": "Patient.contact.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Patient.contact.telecom:phone.value",
+        "path": "Patient.contact.telecom.value",
+        "short": "Numero di telefono del caregiver",
+        "definition": "Stringa alfanumerica di al più 100 caratteri"
+      },
+      {
+        "id": "Patient.contact.telecom:mail",
+        "path": "Patient.contact.telecom",
+        "sliceName": "mail"
+      },
+      {
+        "id": "Patient.contact.telecom:mail.system",
+        "path": "Patient.contact.telecom.system",
+        "fixedCode": "email"
+      },
+      {
+        "id": "Patient.contact.telecom:mail.value",
+        "path": "Patient.contact.telecom.value",
+        "short": "Indirizzo mail del caregiver",
+        "definition": "Stringa alfanumerica di al più 250 caratteri"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza. Per il profilo RLOrganizationL1 deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "3",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner.extension:medicoSostituto",
+        "path": "Patient.generalPractitioner.extension",
+        "sliceName": "medicoSostituto",
+        "short": "Flag volto ad identificare se il medico che assiste il cittadino è un sostituto temporaneo del medico scelto dal cittadino",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientGeneralPractitionerMedicoSostituto"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.generalPractitioner.reference",
+        "path": "Patient.generalPractitioner.reference",
+        "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
+        "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza"
+      }
+    ]
+  }
+}

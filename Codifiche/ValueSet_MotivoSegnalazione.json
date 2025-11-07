@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "ValueSet-SGDT-MotivoSegnalazione",
   "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "SGDT Motivo Segnalazione",
   "status": "active",
   "date": "2023-01-24",
@@ -11,64 +11,76 @@
     "include": [
       {
         "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-MotivoSegnalazione",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "concept": [
           {
             "code": "01",
-            "display": "Accesso Spontaneo"
-          },
-          {
+            "display": "Accesso diretto PUA"
+        },
+        {
             "code": "02",
-            "display": "Inviato con prescrizione ADI"
-          },
-          {
+            "display": "Assistenza domiciliare"
+        },
+        {
             "code": "03",
             "display": "Dimissione Protetta"
-          },
-          {
+        },
+        {
             "code": "04",
-            "display": "Inviato da MMG"
-          },
-          {
+            "display": "Inviato da MMG (Deprecato)"
+        },
+        {
             "code": "05",
-            "display": "Inviato da Polo Ospedaliero"
-          },
-          {
+            "display": "Inviato da Polo Ospedaliero (Deprecato)"
+        },
+        {
             "code": "06",
             "display": "Inviato da PS"
-          },
-          {
+        },
+        {
             "code": "07",
-            "display": "Inviato da Polo Territoriale"
-          },
-          {
+            "display": "Inviato da Polo Territoriale (Deprecato)"
+        },
+        {
             "code": "08",
             "display": "Inviato da Enti locali"
-          },
-          {
+        },
+        {
             "code": "09",
-            "display": "Inviato da IFEC"
-          },
-          {
+            "display": "Inviato da IFEC (Deprecato)"
+        },
+        {
             "code": "10",
-            "display": "Inviato da Assistente Sociale"
-          },
-          {
+            "display": "Inviato da Assistente Sociale (Deprecato)"
+        },
+        {
             "code": "11",
             "display": "Inviato da Medico di distretto"
-          },
-          {
+        },
+        {
             "code": "12",
-            "display": "Inviato da Ospedale"
-          },
-          {
+            "display": "Inviato da Ospedale (Deprecato)"
+        },
+        {
             "code": "13",
-            "display": "Inviato da COT"
-          },
-          {
+            "display": "Inviato da COT (Deprecato)"
+        },
+        {
             "code": "14",
-            "display": "Inviato da Centro Servizi"
-          }
+            "display": "Inviato da Centro Servizi (Deprecato)"
+        },
+        {
+            "code": "15",
+            "display": "Arruolamento cronicità"
+        },
+        {
+            "code": "16",
+            "display": "Accesso territoriale dell'MMG"
+        },
+        {
+            "code": "17",
+            "display": "Reti di patologia"
+        }
         ]
       }
     ]

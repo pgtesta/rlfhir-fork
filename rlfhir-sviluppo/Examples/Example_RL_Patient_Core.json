@@ -1,0 +1,43 @@
+{
+  "resourceType": "Patient",
+  "id": "e06086d8-a958-11ed-afa1-0242ac120002",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "RSSMRA80A01F205X"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Rossi",
+      "given": [
+        "Mario"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1980-01-01",
+  "address": [
+    {
+      "use": "billing",
+      "city": "015146"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
+        "code": "2",
+        "display": "Coniugato/a"
+      }
+    ]
+  }
+}

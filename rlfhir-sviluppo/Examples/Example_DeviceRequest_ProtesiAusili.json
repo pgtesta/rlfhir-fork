@@ -1,0 +1,46 @@
+{
+  "resourceType": "DeviceRequest",
+  "id": "esempio-DeviceRequest-ProtesiAusili",
+  "meta": {
+    "lastUpdated": "2023-01-01T10:36:03Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestProtesiAusili"
+    ],
+    "versionId": "1"
+  },
+  "basedOn": [
+    {
+      "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+      "display": "Piano Individuale"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "codeCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-AusilioProtesi",
+        "code": "122406178",
+        "display": "AGGIUNTIVI: BRACCIOLO RIBALTABILE"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002"
+  },
+  "occurrencePeriod": {
+    "start": "2022-01-01",
+    "end": "2023-02-01"
+  },
+  "note": [
+    {
+      "text": "Commenti aggiuntivi"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://example.org/fhir/StructureDefinition/RLDeviceRequestPrescrizioneElettronica",
+      "valueBoolean": true
+    }
+  ]
+}

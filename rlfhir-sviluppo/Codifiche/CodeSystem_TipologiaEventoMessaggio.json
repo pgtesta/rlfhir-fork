@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-TipologiaEventoMessaggio",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipologiaEventoMessaggio",
+  "version": "1.0.0",
+  "name": "Tipologia Evento Messaggio",
+  "status": "active",
+  "date": "2024-04-30T08:15:44.8689778+00:00",
+  "description": "CodeSystem relativo alla tipologia di evento del Messaggio",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "picMMG",
+      "display": "visualizzazione pagina redazione PI"
+    },
+    {
+      "code": "ADP",
+      "display": "redazione assistenza domiciliare programmata"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SIAD-TitoloStudio",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TitoloStudio",
+  "version": "1.0.0",
+  "name": "SIAD Titolo Studio",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica del titolo di studio",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Nessuno"
+    },
+    {
+      "code": "2",
+      "display": "Licenza elementare"
+    },
+    {
+      "code": "3",
+      "display": "Licenza media inferiore"
+    },
+    {
+      "code": "4",
+      "display": "Diploma media superiore"
+    },
+    {
+      "code": "5",
+      "display": "Diploma universitario"
+    },
+    {
+      "code": "6",
+      "display": "Laurea"
+    },
+    {
+      "code": "7",
+      "display": "Laurea specialistica"
+    },
+    {
+      "code": "8",
+      "display": "Dottorato/Master"
+    },
+    {
+      "code": "9",
+      "display": "Altro"
+    }
+  ]
+}

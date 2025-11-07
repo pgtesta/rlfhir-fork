@@ -1,0 +1,22 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationDataOraAccettazione",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraAccettazione",
+  "name": "RLLocationDataOraAccettazione",
+  "status": "draft",
+  "description": "Parametro di ricerca della data e ora di accettazione del paziente (ingresso in struttura)",
+  "code": "dataOraAccettazione",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraAccettazione').value",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

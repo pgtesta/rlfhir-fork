@@ -1,0 +1,39 @@
+{
+  "resourceType": "Observation",
+  "id": "esempio-Observation-EsitoValutazione-triage",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+    ],
+    "versionId": "1"
+  },
+  "status": "registered",
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-Valutazione",
+        "code": "VAL1",
+        "display": "Scheda Triage"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/c2079ade-989e-11ed-a8fc-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "effectiveDateTime": "2023-01-15T08:32:56+01:00",
+  "performer": [
+    {
+      "reference": "PractitionerRole/d252b662-989e-11ed-a8fc-0242ac120002",
+      "display": "Infermiere"
+    }
+  ],
+  "valueInteger": 5,
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/d3541270-9814-11ed-a8fc-0242ac120002",
+      "display": "Scheda Triage"
+    }
+  ]
+}

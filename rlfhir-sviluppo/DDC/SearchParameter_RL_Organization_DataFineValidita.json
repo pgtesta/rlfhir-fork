@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLOrganizationDataFineValidita",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:20:07.5197734+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLOrganizationDataFineValidita",
+  "name": "RLOrganizationDataFineValidita",
+  "status": "active",
+  "experimental": false,
+  "description": "Parametro di ricerca di strutture SISS di livello 1 e livello 2 specificando la data di fine validità.",
+  "code": "dataFineValidita",
+  "base": [
+    "Organization"
+  ],
+  "type": "date",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita').value",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

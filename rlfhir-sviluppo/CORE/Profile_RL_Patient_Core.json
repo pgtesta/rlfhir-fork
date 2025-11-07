@@ -1,0 +1,418 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore",
+  "name": "RLPatientCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.extension:cittadinanza",
+        "path": "Patient.extension",
+        "sliceName": "cittadinanza",
+        "short": "Cittadinanza",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "example",
+          "description": "ISTAT - Cittadinanza",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/istat-cittadinanza"
+        }
+      },
+      {
+        "id": "Patient.extension:titoloDiStudio",
+        "path": "Patient.extension",
+        "sliceName": "titoloDiStudio",
+        "short": "Titolo di studio del paziente",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.it/fhir/StructureDefinition/patient-qualification-it"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "binding": {
+          "strength": "example",
+          "description": "ISTAT - Titolo Studio",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/istat-titoloStudio"
+        }
+      },
+      {
+        "id": "Patient.extension:professione",
+        "path": "Patient.extension",
+        "sliceName": "professione",
+        "short": "Professione esercitata dal paziente",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.it/fhir/StructureDefinition/patient-occupation-it"
+            ]
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "ISTAT - Professioni",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/istat-professione"
+        }
+      },
+      {
+        "id": "Patient.extension:luogoDiNascita",
+        "path": "Patient.extension",
+        "sliceName": "luogoDiNascita",
+        "short": "Luogo di nascita del paziente",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:ATSResidenza",
+        "path": "Patient.extension",
+        "sliceName": "ATSResidenza",
+        "short": "ATS di Residenza del paziente",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "description": "slices",
+          "rules": "open"
+        },
+        "short": "Identificativi del paziente"
+      },
+      {
+        "id": "Patient.identifier:codiceFiscale",
+        "path": "Patient.identifier",
+        "sliceName": "codiceFiscale",
+        "constraint": [
+          {
+            "key": "rl-pat-codiceFiscale",
+            "severity": "warning",
+            "human": "Il Codice Fiscale deve essere di 16 caratteri alfanumerici (3 per il cognome; 3 per il nome; 2 caratteri numerici per l'anno di nascita; 1 per il mese di nascita; 2 caratteri numerici per il giorno di nascita ed il sesso; 4 associati al Comune oppure allo Stato estero di nascita.1",
+            "expression": "matches('^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"
+          }
+        ]
+      },
+      {
+        "id": "Patient.identifier:codiceFiscale.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP",
+        "path": "Patient.identifier",
+        "sliceName": "codiceSTP",
+        "short": "Codice STP",
+        "definition": "Codice Straniero Temporaneamente Presente"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idStp"
+      },
+      {
+        "id": "Patient.identifier:codiceSTP.value",
+        "path": "Patient.identifier.value",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idStp"
+        }
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM",
+        "path": "Patient.identifier",
+        "sliceName": "tesseraTEAM",
+        "short": "Tessera TEAM",
+        "comment": "Tessera Europea Assicurazione Malattia"
+      },
+      {
+        "id": "Patient.identifier:tesseraTEAM.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/tesseraTeam"
+      },
+      {
+        "id": "Patient.identifier:codiceENI",
+        "path": "Patient.identifier",
+        "sliceName": "codiceENI",
+        "short": "Codice ENI",
+        "definition": "Codice Europeo Non Iscritto"
+      },
+      {
+        "id": "Patient.identifier:codiceENI.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idEni"
+      },
+      {
+        "id": "Patient.identifier:anpr",
+        "path": "Patient.identifier",
+        "sliceName": "anpr",
+        "short": "Identificativo ANPR",
+        "definition": "Identificativo Anagrafica Nazionale Popolazione Residente"
+      },
+      {
+        "id": "Patient.identifier:anpr.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://hl7.it/sid/anpr"
+      },
+      {
+        "id": "Patient.identifier:idRegionale",
+        "path": "Patient.identifier",
+        "sliceName": "idRegionale",
+        "short": "Identificativo regionale"
+      },
+      {
+        "id": "Patient.identifier:idRegionale.system",
+        "path": "Patient.identifier.system",
+        "fixedUri": "http://terminology.hl7.it/ValueSet/uri-idRegionali"
+      },
+      {
+        "id": "Patient.identifier:idRegionale.value",
+        "path": "Patient.identifier.value",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.hl7.it/ValueSet/uri-idRegionali"
+        }
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Cognome e nome del paziente",
+        "definition": "L'attributo deve essere utilizzato per indicare il nome e il cognome del paziente nella comunicazione delle etichette tramite dati strutturati.",
+        "max": "1",
+        "constraint": [
+          {
+            "key": "rl-pat-name",
+            "severity": "warning",
+            "human": "Patient.name.given or Patient.name.family or both SHALL be present",
+            "expression": "given.exists() or family.exists()"
+          }
+        ]
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "short": "Cognome del paziente"
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "short": "Nome del paziente"
+      },
+      {
+        "id": "Patient.telecom",
+        "path": "Patient.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.telecom:telefono",
+        "path": "Patient.telecom",
+        "sliceName": "telefono"
+      },
+      {
+        "id": "Patient.telecom:telefono.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "email"
+      },
+      {
+        "id": "Patient.telecom:email",
+        "path": "Patient.telecom",
+        "sliceName": "email"
+      },
+      {
+        "id": "Patient.telecom:email.system",
+        "path": "Patient.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "Sesso del paziente"
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "Data di nascita"
+      },
+      {
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
+        "short": "Decesso del paziente",
+        "definition": "Indica se l'individuo è deceduto o meno"
+      },
+      {
+        "id": "Patient.address",
+        "path": "Patient.address",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "id"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Indirizzi del paziente"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino",
+        "path": "Patient.address",
+        "sliceName": "residenzaAnagraficaCittadino"
+      },
+      {
+        "id": "Patient.address:residenzaAnagraficaCittadino.use",
+        "path": "Patient.address.use",
+        "fixedCode": "billing"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino",
+        "path": "Patient.address",
+        "sliceName": "domicilioCittadino"
+      },
+      {
+        "id": "Patient.address:domicilioCittadino.use",
+        "path": "Patient.address.use",
+        "fixedCode": "home"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCIttadino",
+        "path": "Patient.address",
+        "sliceName": "locazioneTemporaneaCIttadino"
+      },
+      {
+        "id": "Patient.address:locazioneTemporaneaCIttadino.use",
+        "path": "Patient.address.use",
+        "fixedCode": "temp"
+      },
+      {
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
+        "short": "Stato civile del paziente",
+        "definition": "Indica lo stato civile del paziente",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.hl7.it/fhir/base/ValueSet-statoCivile.html"
+        }
+      },
+      {
+        "id": "Patient.contact",
+        "path": "Patient.contact",
+        "short": "Contatto del paziente"
+      },
+      {
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
+        "short": "Tipo di legame con il paziente"
+      },
+      {
+        "id": "Patient.contact.name",
+        "path": "Patient.contact.name",
+        "short": "Nome e cognome",
+        "definition": "Nome e cognome del contattto del paziente"
+      },
+      {
+        "id": "Patient.contact.name.family",
+        "path": "Patient.contact.name.family",
+        "fixedString": "Cognome"
+      },
+      {
+        "id": "Patient.contact.name.given",
+        "path": "Patient.contact.name.given",
+        "short": "Nome"
+      },
+      {
+        "id": "Patient.generalPractitioner",
+        "path": "Patient.generalPractitioner",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "reference"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "- PractitionerRole, se si vuole indicare sia il medico che la struttura a cui afferisce (ad es. MMG + ASST)\r\n- Practitioner, se si vuole indicare solo il medico \r\n- Organization, se si vuole indicare solo l'azienda (es. Casa di Riposo)"
+      },
+      {
+        "id": "Patient.generalPractitioner:mmgPlgRole",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "mmgPlgRole",
+        "short": "Medico e azienda che si occupano della cura primaria del paziente",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner:mmgPls",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "mmgPls",
+        "short": "Medico che si occupa della cura primaria del paziente",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.generalPractitioner:mmgPlsAzienda",
+        "path": "Patient.generalPractitioner",
+        "sliceName": "mmgPlsAzienda",
+        "short": "Azienda che si occupa della cura primaria del paziente",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

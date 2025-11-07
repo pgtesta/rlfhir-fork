@@ -1,0 +1,256 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPractitionerMedicoPrescrittore",
+  "meta": {
+    "lastUpdated": "2023-10-17T08:21:02.8309891+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore",
+  "name": "RLPractitionerMedicoPrescrittore",
+  "status": "active",
+  "experimental": false,
+  "description": "Profilo che contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner",
+        "path": "Practitioner",
+        "comment": "Questa risorsa contiene l’anagrafica dei medici prescrittori della Regione Lombardia destinatari di ricettari RUR, che comprenda le diverse tipologie di medici a cui è data facoltà di prescrivere prestazioni e farmaci dispensati dal SSR. L’elenco contiene anche i medici non più attivi da 6 mesi."
+      },
+      {
+        "id": "Practitioner.id",
+        "path": "Practitioner.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta",
+        "path": "Practitioner.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.versionId",
+        "path": "Practitioner.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.lastUpdated",
+        "path": "Practitioner.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.meta.profile",
+        "path": "Practitioner.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.extension:dataUpdate",
+        "path": "Practitioner.extension",
+        "sliceName": "dataUpdate",
+        "short": "Data dell'ultima modifica del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_ULTV dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.extension:dataInsert",
+        "path": "Practitioner.extension",
+        "sliceName": "dataInsert",
+        "short": "Data di inserimento del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INSER dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataInsert"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "short": "Codice fiscale del medico prescrittore",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "short": "Codice fiscale del medico prescrittore",
+        "definition": "Stringa alfanumerica di 16 caratteri",
+        "comment": "La fonte del dato è il campo  CD_FISCALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documeto DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "short": "Nominativo del medico prescrittore",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.name.family",
+        "path": "Practitioner.name.family",
+        "short": "Cognome del medico prescrittore",
+        "definition": "Stringa alfanumerica di max 40 caratteri.",
+        "comment": "La fonte del dato è il campo DS_COGNOME dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name.given",
+        "path": "Practitioner.name.given",
+        "short": "Nome del medico prescrittore",
+        "definition": "Stringa alfanumerica di max 40 caratteri.",
+        "comment": "La fonte del dato è il campo DS_NOME dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "short": "Contatto telefonico del medico prescrittore",
+        "definition": "Stringa alfanumerica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.telecom.system",
+        "path": "Practitioner.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Practitioner.telecom.value",
+        "path": "Practitioner.telecom.value",
+        "short": "Contatto telefonico del medico prescrittore",
+        "definition": "Stringa alfanumerica di massimo 40 caratteri",
+        "comment": "Il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "short": "Indirizzo dell'ambulatorio del medico prescrittore",
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "definition": "valore fisso su \"work\"",
+        "min": 1,
+        "fixedCode": "work"
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "short": "Indirizzo dell'ambulatorio",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "short": "Comune in cui l'ambulatorio del medico ha sede",
+        "definition": "Stringa alfabedica di massimo 50 caratteri",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.postalCode",
+        "path": "Practitioner.address.postalCode",
+        "short": "CAP del comune in cui l'ambulatorio del medico ha sede",
+        "definition": "Stringa numerica di 5 cifre",
+        "comment": "Il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "short": "Codifica della qualifica del medico prescrittore"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding",
+        "path": "Practitioner.qualification.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.code",
+        "path": "Practitioner.qualification.code.coding.code",
+        "short": "Codice della qualifica del medico prescrittore",
+        "definition": "Singolo carattere alfabetico",
+        "comment": "La fonte del dato è il campo CD_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alle qualifiche dei medici prescrittori",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore"
+        }
+      },
+      {
+        "id": "Practitioner.qualification.code.coding.display",
+        "path": "Practitioner.qualification.code.coding.display",
+        "short": "Descrizione della qualifica del medico prescrittore",
+        "definition": "Stringa alfanumerica di al più 70 caratteri",
+        "comment": "La fonte del dato è il campo DS_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.issuer",
+        "path": "Practitioner.qualification.issuer",
+        "short": "Reference all'ente L1 in cui il medico prescrittore lavora",
+        "definition": "Reference alla risorsa RLOrganizationL1. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "La fonte del dato è il campo CD_STRUTTURA dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

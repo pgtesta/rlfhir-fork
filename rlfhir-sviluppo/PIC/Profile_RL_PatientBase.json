@@ -1,0 +1,146 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPatientBase",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase",
+  "name": "RLPatientBase",
+  "status": "active",
+  "date": "2024-04-23T13:09:25.8682521+00:00",
+  "description": "Profilo contenente i dettagli anagrafici di base di un cittadino.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.id",
+        "path": "Patient.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta",
+        "path": "Patient.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Patient.meta.profile",
+        "path": "Patient.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
+      },
+      {
+        "id": "Patient.extension",
+        "path": "Patient.extension",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:luogoNascitaCodeable",
+        "path": "Patient.extension",
+        "sliceName": "luogoNascitaCodeable",
+        "short": "Codice ISTAT del comune e/o dello stato di nascita",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:luogoNascitaCodeable.value[x].coding",
+        "path": "Patient.extension.value[x].coding",
+        "short": "Codice e descrizione del comune e/o dello stato di nascita"
+      },
+      {
+        "id": "Patient.extension:luogoNascitaCodeable.value[x].coding.system",
+        "path": "Patient.extension.value[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali"
+      },
+      {
+        "id": "Patient.extension:luogoNascitaCodeable.value[x].coding.code",
+        "path": "Patient.extension.value[x].coding.code",
+        "short": "Codice del comune e/o dello stato di nascita",
+        "definition": "Stringa numerica di 6 cifre",
+        "min": 1
+      },
+      {
+        "id": "Patient.extension:luogoNascitaCodeable.value[x].coding.display",
+        "path": "Patient.extension.value[x].coding.display",
+        "short": "Descrizione del comune e/o dello stato di nascita",
+        "definition": "Stringa alfabeta al più di 50 caratteri"
+      },
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "short": "Codice fiscale del cittadino",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "min": 1,
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "short": "Codice fiscale del cittadino",
+        "definition": "Stringa alfanumerica di 16 caratteri"
+      },
+      {
+        "id": "Patient.active",
+        "path": "Patient.active",
+        "short": "Indicazione sullo stato di vita del cittadino",
+        "definition": "True = in vita\r\nFalse = deceduto"
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "short": "Nominativo del cittadino",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
+        "short": "Cognome del cittadino",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "comment": "il dato è detenuto da SGDT",
+        "min": 1
+      },
+      {
+        "id": "Patient.name.given",
+        "path": "Patient.name.given",
+        "short": "Nome del cittadino",
+        "definition": "Stringa alfabetica di massimo 40 caratteri",
+        "comment": "il dato è detenuto da SGDT"
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "Sesso del cittadino",
+        "min": 1
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "Data di nascita del cittadino",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "il dato è detenuto da SGDT",
+        "min": 1
+      }
+    ]
+  }
+}

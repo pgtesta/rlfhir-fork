@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLHealthcareServiceReferenteStruttura",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceReferenteStruttura",
+  "name": "RLHealthcareServiceReferenteStruttura",
+  "status": "draft",
+  "description": "persona principale di contatto della struttura",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Persona principale di contatto",
+        "definition": "Persona principale di contatto"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceReferenteStruttura"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

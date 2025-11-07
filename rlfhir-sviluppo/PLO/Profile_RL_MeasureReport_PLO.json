@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO",
+  "name": "RLMeasureReportPLO",
+  "status": "draft",
+  "description": "Profilo contenente la misura del totale dei posti letto occupati per reparto e per struttura ospedaliera",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PLO"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MeasureReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MeasureReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MeasureReport.id",
+        "path": "MeasureReport.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.meta",
+        "path": "MeasureReport.meta",
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.meta.versionId",
+        "path": "MeasureReport.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.meta.lastUpdated",
+        "path": "MeasureReport.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.meta.profile",
+        "path": "MeasureReport.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasureReportPLO"
+      },
+      {
+        "id": "MeasureReport.identifier",
+        "path": "MeasureReport.identifier",
+        "short": "Identificativo del report relativo alla misura del totale dei posti letto occupati",
+        "definition": "Stringa composta dalle seguenti informazioni: \"TOTPLO-codiceL2\"",
+        "max": "1"
+      },
+      {
+        "id": "MeasureReport.status",
+        "path": "MeasureReport.status",
+        "fixedCode": "complete"
+      },
+      {
+        "id": "MeasureReport.type",
+        "path": "MeasureReport.type",
+        "fixedCode": "summary"
+      },
+      {
+        "id": "MeasureReport.measure",
+        "path": "MeasureReport.measure",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLO"
+      },
+      {
+        "id": "MeasureReport.reporter",
+        "path": "MeasureReport.reporter",
+        "short": "Codice identificativo L2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MeasureReport.period",
+        "path": "MeasureReport.period",
+        "short": "Data in cui è stata calcolata la misura dei posti letto occupati"
+      },
+      {
+        "id": "MeasureReport.period.end",
+        "path": "MeasureReport.period.end",
+        "short": "Data in cui è stata calcolata la misura dei posti letto occupati"
+      },
+      {
+        "id": "MeasureReport.group",
+        "path": "MeasureReport.group",
+        "short": "Informazioni relative al totale dei posti letto occupati per reparto clinico / struttura ospedaliera"
+      },
+      {
+        "id": "MeasureReport.group.code",
+        "path": "MeasureReport.group.code",
+        "short": "Codice identificativo del reparto clinico o struttura ospedaliera di riferimento della misura calcolata"
+      },
+      {
+        "id": "MeasureReport.group.measureScore",
+        "path": "MeasureReport.group.measureScore",
+        "short": "Totale dei posti letto occupati per reparto clinico o struttura ospedaliera"
+      }
+    ]
+  }
+}

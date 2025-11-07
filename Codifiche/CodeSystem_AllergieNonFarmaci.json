@@ -1,0 +1,645 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-AmbitoObiettiviSalute",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/LDO-AllergieNonFarmaci",
+  "version": "1.0.0",
+  "name": "LDO - Allergie Non Farmaci",
+  "status": "active",
+  "date": "2025-01-14",
+  "description": "CodeSystem relativo alla lista degli allergeni che non rientrano nella categoria dei farmaci",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "102259006",
+      "display": "Agrumi"
+    },
+    {
+      "code": "102261002",
+      "display": "fragola"
+    },
+    {
+      "code": "102262009",
+      "display": "Cioccolato"
+    },
+    {
+      "code": "102263004",
+      "display": "Uova (commestibili)"
+    },
+    {
+      "code": "102264005",
+      "display": "Formaggio"
+    },
+    {
+      "code": "111088007",
+      "display": "lattice"
+    },
+    {
+      "code": "11526002",
+      "display": "aspartame"
+    },
+    {
+      "code": "115589000",
+      "display": "Ethanolamine"
+    },
+    {
+      "code": "116273005",
+      "display": "Sostanza alimento"
+    },
+    {
+      "code": "116549003",
+      "display": "Pesticidi organoclorurati"
+    },
+    {
+      "code": "116637007",
+      "display": "Antigene fungino"
+    },
+    {
+      "code": "11894001",
+      "display": "Tossina botulinica da Clostridium"
+    },
+    {
+      "code": "119417004",
+      "display": "Insetticida organofosfato"
+    },
+    {
+      "code": "12503006",
+      "display": "Alluminio"
+    },
+    {
+      "code": "12510000",
+      "display": "Olio di eucalipto"
+    },
+    {
+      "code": "128488006",
+      "display": "Polvere di casa"
+    },
+    {
+      "code": "128489003",
+      "display": "Sabbia"
+    },
+    {
+      "code": "13577000",
+      "display": "Noce"
+    },
+    {
+      "code": "13652007",
+      "display": "Silicone"
+    },
+    {
+      "code": "14402002",
+      "display": "Legna"
+    },
+    {
+      "code": "14423008",
+      "display": "Benda adesiva"
+    },
+    {
+      "code": "226359003",
+      "display": "Olio di pesce - alimento"
+    },
+    {
+      "code": "226491003",
+      "display": "succo di mela"
+    },
+    {
+      "code": "226760005",
+      "display": "Prodotti lattiero-caseari"
+    },
+    {
+      "code": "226915003",
+      "display": "carne rossa"
+    },
+    {
+      "code": "226934003",
+      "display": "Maiale"
+    },
+    {
+      "code": "227037002",
+      "display": "Pesce - alimento"
+    },
+    {
+      "code": "227144008",
+      "display": "Tonno"
+    },
+    {
+      "code": "227146005",
+      "display": "Crostacei - alimento"
+    },
+    {
+      "code": "227161006",
+      "display": "Polpo - alimento"
+    },
+    {
+      "code": "227163009",
+      "display": "Calamaro - alimento"
+    },
+    {
+      "code": "227252000",
+      "display": "Fungo - alimento"
+    },
+    {
+      "code": "227313005",
+      "display": "Verdure impulsive"
+    },
+    {
+      "code": "227344001",
+      "display": "Fava - alimento"
+    },
+    {
+      "code": "227374009",
+      "display": "Erbe e spezie"
+    },
+    {
+      "code": "227388008",
+      "display": "Cannella"
+    },
+    {
+      "code": "227425007",
+      "display": "fichi"
+    },
+    {
+      "code": "227444000",
+      "display": "lamponi"
+    },
+    {
+      "code": "230031005",
+      "display": "Aragosta - alimento"
+    },
+    {
+      "code": "230032003",
+      "display": "Ostrica - alimento"
+    },
+    {
+      "code": "230034002",
+      "display": "Noci e semi"
+    },
+    {
+      "code": "2309006",
+      "display": "Oro"
+    },
+    {
+      "code": "23182003",
+      "display": "Cereale"
+    },
+    {
+      "code": "255640000",
+      "display": "biocida"
+    },
+    {
+      "code": "255667006",
+      "display": "Paraffina"
+    },
+    {
+      "code": "256259004",
+      "display": "Polline"
+    },
+    {
+      "code": "256260009",
+      "display": "Polline di alberi e arbusti"
+    },
+    {
+      "code": "256277009",
+      "display": "Polline d'erba"
+    },
+    {
+      "code": "256292005",
+      "display": "Polline di fiori e infestanti"
+    },
+    {
+      "code": "256303006",
+      "display": "Polline di ambrosia"
+    },
+    {
+      "code": "256305004",
+      "display": "Resina dell'albero"
+    },
+    {
+      "code": "256307007",
+      "display": "Banana"
+    },
+    {
+      "code": "256309005",
+      "display": "Pesca - alimento"
+    },
+    {
+      "code": "256310000",
+      "display": "Ciliegia - alimento"
+    },
+    {
+      "code": "256311001",
+      "display": "Apple - alimento"
+    },
+    {
+      "code": "256319004",
+      "display": "Carota"
+    },
+    {
+      "code": "256323007",
+      "display": "Cipolla - alimento"
+    },
+    {
+      "code": "256326004",
+      "display": "Sedano"
+    },
+    {
+      "code": "256327008",
+      "display": "Pomodoro - alimento"
+    },
+    {
+      "code": "256349002",
+      "display": "Arachide - alimento"
+    },
+    {
+      "code": "256352005",
+      "display": "Noce - noce"
+    },
+    {
+      "code": "256355007",
+      "display": "Semi di soia"
+    },
+    {
+      "code": "256417003",
+      "display": "Pelo di cavallo"
+    },
+    {
+      "code": "256419000",
+      "display": "Epitelio del topo"
+    },
+    {
+      "code": "256435007",
+      "display": "piume"
+    },
+    {
+      "code": "256440004",
+      "display": "Veleno di Vespa"
+    },
+    {
+      "code": "256443002",
+      "display": "Albume"
+    },
+    {
+      "code": "256504004",
+      "display": "Materiale dentale in policarbonato"
+    },
+    {
+      "code": "260118006",
+      "display": "Polline da parete"
+    },
+    {
+      "code": "260126003",
+      "display": "Polline d'oliva"
+    },
+    {
+      "code": "260152009",
+      "display": "Peli di gatto"
+    },
+    {
+      "code": "260153004",
+      "display": "Cacca di mucca"
+    },
+    {
+      "code": "260154005",
+      "display": "Peli di cane"
+    },
+    {
+      "code": "260156007",
+      "display": "Proteine ​​delle urine del mouse"
+    },
+    {
+      "code": "260167008",
+      "display": "seme di sesamo"
+    },
+    {
+      "code": "260170007",
+      "display": "Patata - alimento"
+    },
+    {
+      "code": "260172004",
+      "display": "Aglio - alimento"
+    },
+    {
+      "code": "260176001",
+      "display": "kiwi"
+    },
+    {
+      "code": "260177005",
+      "display": "Melone"
+    },
+    {
+      "code": "261243003",
+      "display": "Ottone"
+    },
+    {
+      "code": "264287008",
+      "display": "Peli di animali"
+    },
+    {
+      "code": "264295007",
+      "display": "Proteine ​​del latte vaccino"
+    },
+    {
+      "code": "264337003",
+      "display": "seme"
+    },
+    {
+      "code": "276310004",
+      "display": "Peli di animali"
+    },
+    {
+      "code": "278840001",
+      "display": "Prodotto gamberetti"
+    },
+    {
+      "code": "2799001",
+      "display": "Methylbenzethonium chloride"
+    },
+    {
+      "code": "280939008",
+      "display": "Veleno di insetti"
+    },
+    {
+      "code": "28230009",
+      "display": "Pollame"
+    },
+    {
+      "code": "28647000",
+      "display": "Carne"
+    },
+    {
+      "code": "288328004",
+      "display": "Veleno d'api"
+    },
+    {
+      "code": "289122001",
+      "display": "Materiale cosmetico"
+    },
+    {
+      "code": "289949002",
+      "display": "Polline di cipresso"
+    },
+    {
+      "code": "303300008",
+      "display": "Proteine ​​dell'uovo"
+    },
+    {
+      "code": "303314008",
+      "display": "Scorpione veleno"
+    },
+    {
+      "code": "303315009",
+      "display": "Veleno del ragno"
+    },
+    {
+      "code": "31006001",
+      "display": "Plantae del Regno"
+    },
+    {
+      "code": "311846002",
+      "display": "Insetticida piretroide"
+    },
+    {
+      "code": "311984009",
+      "display": "Agente chimico o esterno"
+    },
+    {
+      "code": "33008008",
+      "display": "Polvere"
+    },
+    {
+      "code": "33396006",
+      "display": "Nichel"
+    },
+    {
+      "code": "37017009",
+      "display": "Helminth"
+    },
+    {
+      "code": "3829006",
+      "display": "Ferro"
+    },
+    {
+      "code": "386936005",
+      "display": "Acido azelaico"
+    },
+    {
+      "code": "387293003",
+      "display": "Dithranol"
+    },
+    {
+      "code": "387398009",
+      "display": "Resina Podophyllum"
+    },
+    {
+      "code": "391737006",
+      "display": "Olio di mandorle"
+    },
+    {
+      "code": "395922006",
+      "display": "Alcoli di lana"
+    },
+    {
+      "code": "396031000",
+      "display": "Dimeticone"
+    },
+    {
+      "code": "406466009",
+      "display": "Allergia alla polvere domestica"
+    },
+    {
+      "code": "406470001",
+      "display": "Allergene degli insetti"
+    },
+    {
+      "code": "406472009",
+      "display": "Proteina animale ed allergene epidermico"
+    },
+    {
+      "code": "406473004",
+      "display": "Contatto allergeni"
+    },
+    {
+      "code": "406771001",
+      "display": "Solfito e / o derivato di solfito"
+    },
+    {
+      "code": "406774009",
+      "display": "Acido grasso omega 3 derivato dal pesce"
+    },
+    {
+      "code": "410853002",
+      "display": "Perfluorochemical"
+    },
+    {
+      "code": "412061001",
+      "display": "mirtilli"
+    },
+    {
+      "code": "412068007",
+      "display": "Segale"
+    },
+    {
+      "code": "412069004",
+      "display": "Agente aromatizzante"
+    },
+    {
+      "code": "412071004",
+      "display": "Grano"
+    },
+    {
+      "code": "412145001",
+      "display": "Tinta per capelli"
+    },
+    {
+      "code": "412153009",
+      "display": "Pappagallo coniglio"
+    },
+    {
+      "code": "412156001",
+      "display": "Seta"
+    },
+    {
+      "code": "412160003",
+      "display": "Allergene di sutura"
+    },
+    {
+      "code": "412161004",
+      "display": "Lana"
+    },
+    {
+      "code": "412357001",
+      "display": "Mais"
+    },
+    {
+      "code": "415710007",
+      "display": "terpene"
+    },
+    {
+      "code": "418266005",
+      "display": "Paraffina gialla"
+    },
+    {
+      "code": "418504009",
+      "display": "Avena"
+    },
+    {
+      "code": "418785009",
+      "display": "Profumo"
+    },
+    {
+      "code": "418920007",
+      "display": "Agente adesivo"
+    },
+    {
+      "code": "419420009",
+      "display": "Anguria"
+    },
+    {
+      "code": "419604006",
+      "display": "Polline di erba"
+    },
+    {
+      "code": "419633007",
+      "display": "Paraffina bianca"
+    },
+    {
+      "code": "41967008",
+      "display": "Argento"
+    },
+    {
+      "code": "420111002",
+      "display": "Contattare l'agente metallico"
+    },
+    {
+      "code": "42416001",
+      "display": "Lanolina"
+    },
+    {
+      "code": "430503006",
+      "display": "Glutammato"
+    },
+    {
+      "code": "43230003",
+      "display": "Gomma da cancellare"
+    },
+    {
+      "code": "43735007",
+      "display": "Zolfo"
+    },
+    {
+      "code": "44027008",
+      "display": "Frutti di mare"
+    },
+    {
+      "code": "47703008",
+      "display": "Lattosio"
+    },
+    {
+      "code": "51905005",
+      "display": "Mostarda"
+    },
+    {
+      "code": "52454007",
+      "display": "Albumina"
+    },
+    {
+      "code": "57126000",
+      "display": "Colla"
+    },
+    {
+      "code": "59351004",
+      "display": "Citrato"
+    },
+    {
+      "code": "59533004",
+      "display": "Additivo alimentare"
+    },
+    {
+      "code": "59545008",
+      "display": "pesticida"
+    },
+    {
+      "code": "61789006",
+      "display": "Tintura"
+    },
+    {
+      "code": "66925006",
+      "display": "Rame"
+    },
+    {
+      "code": "67324005",
+      "display": "Riso"
+    },
+    {
+      "code": "72511004",
+      "display": "Frutta"
+    },
+    {
+      "code": "7791007",
+      "display": "Proteine ​​di soia"
+    },
+    {
+      "code": "80237000",
+      "display": "Burro di cacao"
+    },
+    {
+      "code": "83619009",
+      "display": "Alcool polivinilico"
+    },
+    {
+      "code": "89811004",
+      "display": "Glutine"
+    },
+    {
+      "code": "89889006",
+      "display": "Fibra di cotone"
+    },
+    {
+      "code": "9021002",
+      "display": "carbaryl"
+    },
+    {
+      "code": "91598004",
+      "display": "Perossido di benzoile"
+    }
+  ]
+}

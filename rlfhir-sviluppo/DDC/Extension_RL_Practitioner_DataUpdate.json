@@ -1,0 +1,42 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPractitionerDataUpdate",
+  "meta": {
+    "lastUpdated": "2022-09-23T16:43:49.5162418+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate",
+  "name": "RLPractitionerDataUpdate",
+  "description": "Data dell'ultima modifica del record",
+  "status": "active",
+  "experimental": false,
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Practitioner"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerDataUpdate"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

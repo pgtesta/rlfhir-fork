@@ -1,0 +1,82 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLAllergyIntoleranceAllergie",
+  "meta": {
+    "lastUpdated": "2023-03-08T14:03:25.5641705+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie",
+  "name": "RLAllergyIntoleranceAllergie",
+  "status": "active",
+  "description": "Profilo volto a descrivere le allergie di cui il paziente è affetto.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.id",
+        "path": "AllergyIntolerance.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.meta",
+        "path": "AllergyIntolerance.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.meta.versionId",
+        "path": "AllergyIntolerance.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.meta.lastUpdated",
+        "path": "AllergyIntolerance.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "AllergyIntolerance.meta.profile",
+        "path": "AllergyIntolerance.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceAllergie"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "Paziente al quale sono riferite le eventuali allergie",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "short": "Campo di testo libero non obbligatorio riportante le informazioni su allergie",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
+      }
+    ]
+  }
+}

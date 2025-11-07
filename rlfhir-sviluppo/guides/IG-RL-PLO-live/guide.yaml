@@ -1,0 +1,5 @@
+title: Regione Lombardia - FHIR - Occupazione Posti Letto
+description: Questa IG fa riferimento a integrazioni che sono state rilasciate in produzione.
+version: 3.6.0
+style-root: project
+style-name: RL-css

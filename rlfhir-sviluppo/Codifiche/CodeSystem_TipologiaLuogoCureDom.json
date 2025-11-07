@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SIAD_TipologiaDiLuogo",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TipologiaDiLuogo",
+  "version": "1.0.0",
+  "name": "SIAD Tipologia Di Luogo",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Propria Residenza"
+    },
+    {
+      "code": "2",
+      "display": "Domicilio presso familiari"
+    },
+    {
+      "code": "3",
+      "display": "Domicilio presso Casa Albergo"
+    },
+    {
+      "code": "4",
+      "display": "Domicilio presso Comunità per minori"
+    },
+    {
+      "code": "5",
+      "display": "Domicilio presso Comunità per disabili"
+    },
+    {
+      "code": "6",
+      "display": "Domicilio presso Case Alloggio"
+    },
+    {
+      "code": "9",
+      "display": "Altro"
+    }
+  ]
+}
