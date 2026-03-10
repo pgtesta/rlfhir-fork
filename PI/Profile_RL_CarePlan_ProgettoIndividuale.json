@@ -104,7 +104,7 @@
         "id": "CarePlan.status",
         "path": "CarePlan.status",
         "short": "Stato del progetto individuale",
-        "definition": "- Active: equivalente allo stato 'Attivo' del SGDT\r\n- Completed: equivalente allo stato 'Chiuso' del SGDT",
+        "definition": "Assume i valori \"active\" o \"completed\" quando il progetto individuale è nello stato attivo",
         "comment": "Il dato è detenuto dal SGDT"
       },
       {
