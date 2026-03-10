@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-OperationOutcome-CodiciWarning",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciWarning",
+  "version": "1.0.0",
+  "name": "Codici Warning",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo ai codici di ai codici di warning da comunicare.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/OperationOutcome-CodiciWarning"
+      }
+    ]
+  }
+}
