@@ -19,7 +19,7 @@ La versione corrente della guida implementativa, che fa riferimento all'ultimo r
 
 - Nel profilo RLCarePlanProgettoIndividuale è stata aggiornata la descrizione del campo “status”.
 
-- È stato aggiornato il profilo RLOperationOutcome ed è stato aggiunto il value-set “Codici Warning”. Nel caso in cui l'esito di una ricerca effettuata da SGDT per ottenere il dettaglio delle prestazioni che un EEPA ha erogato a un paziente in regime di ricovero domiciliare risulti un Bundle vuoto, l’EEPA deve generare e inviare a SGDT un profilo RLOperationOutcome contenente il codice di warning "PRACTICE_NOT_FOUND" quando la pratica non è presente nel sistema dell'EEPA oppure il codice di warning "PROCEDURES_NOT_FOUND" quando la pratica è presente ma non sono state erogate prestazioni al paziente.
+- È stato aggiornato il profilo RLOperationOutcome ed è stato aggiunto il value-set “Codici Warning”. Nel caso in cui l'esito di una ricerca effettuata da SGDT per ottenere il dettaglio delle prestazioni che un EEPA ha erogato a un paziente in regime di ricovero domiciliare risulti un Bundle vuoto, l’EEPA deve generare e inviare a SGDT un profilo RLOperationOutcome contenente il codice Gdi warning "PRACTICE_NOT_FOUND" quando la pratica non è presente nel sistema dell'EEPA oppure il codice di warning "PROCEDURES_NOT_FOUND" quando la pratica è presente ma non sono state erogate prestazioni al paziente.
 
 
 
