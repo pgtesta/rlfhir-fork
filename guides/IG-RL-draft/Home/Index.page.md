@@ -16,9 +16,11 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>test</b>, di c
 ## Novità
 
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, gestisce i seguenti concetti:
-- Nella sezione Terminologia è stato aggiornato il value-set e code-system:
-  
-  - SGDT Motivo Segnalazione
+
+- Nel profilo RLCarePlanProgettoIndividuale è stata aggiornata la descrizione del campo “status”.
+
+ - È stato aggiornato il profilo RLOperationOutcome ed è stato aggiunto il value-set “Codici Warning”. Nel caso in cui l'esito di una ricerca effettuata da SGDT per ottenere il dettaglio delle prestazioni che un EEPA ha erogato a un paziente in regime di ricovero domiciliare risulti un Bundle vuoto, l’EEPA deve generare e inviare a SGDT un profilo RLOperationOutcome contenente il codice di warning "PRACTICE_NOT_FOUND" quando la pratica non è presente nel sistema dell'EEPA oppure il codice di warning "PROCEDURES_NOT_FOUND" quando la pratica è presente ma non sono state erogate prestazioni al paziente.
+
 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).

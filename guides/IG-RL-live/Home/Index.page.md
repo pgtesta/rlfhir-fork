@@ -7,9 +7,7 @@ Il contenuto del sito rappresenta la Guida di Implementazione del progetto FHIR 
 ## Novità
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di <b>produzione</b>, gestisce i seguenti concetti:
 
-- Nella sezione Terminologia è stato aggiornato il value-set e code-system:
-  
-  - SGDT Motivo Segnalazione
+- Nel profilo RLCarePlanProgettoIndividuale è stata aggiornata la descrizione del campo “status”.
 
 
 Per il dettaglio esaustivo delle precedenti versioni della guida rilasciate è possibile fare riferimento al seguente [link](https://simplifier.net/guide/ig-rlfhir-versionhistory/home?version=current).
