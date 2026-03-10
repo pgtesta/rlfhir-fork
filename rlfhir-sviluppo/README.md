@@ -1,3 +1,0 @@
-# rlfhir
-
-Branch di sviluppo
