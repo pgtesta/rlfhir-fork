@@ -55,8 +55,7 @@
       {
         "id": "PractitionerRole.period",
         "path": "PractitionerRole.period",
-        "short": "Periodo di abilitazione del professionista sanitario",
-        "min": 1
+        "short": "Periodo di abilitazione del professionista sanitario. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio"
       },
       {
         "id": "PractitionerRole.period.start",
@@ -91,7 +90,7 @@
       {
         "id": "PractitionerRole.organization",
         "path": "PractitionerRole.organization",
-        "short": "Riferimento all'ASST cui il professionista sanitario esercita la professione",
+        "short": "Nel caso delle cure domiciliari (C-DOM) è il riferimento all'ASST cui il professionista sanitario esercita la professione",
         "definition": "Reference al profilo RLOrganizationL1. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "type": [
           {
@@ -105,8 +104,7 @@
       {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
-        "short": "Codice e descrizione della qualifica del professionista sanitario",
-        "min": 1,
+        "short": "Codice e descrizione della qualifica del professionista sanitario. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio",
         "max": "1"
       },
       {

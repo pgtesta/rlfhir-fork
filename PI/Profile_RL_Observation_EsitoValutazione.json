@@ -61,7 +61,8 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "short": "Codifica della valutazione al quale il paziente è stato sottoposto"
+        "short": "Codifica della valutazione al quale il paziente è stato sottoposto",
+        "definition": "Nel caso della chiamata NEA usare il dato codificato VAL5 – Autonomia nella deambulazione"
       },
       {
         "id": "Observation.code.coding.system",
@@ -108,7 +109,7 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Data e ora dell'ultima modifica",
+        "short": "Data e ora dell'ultima modifica della valutazione",
         "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
@@ -120,7 +121,7 @@
       {
         "id": "Observation.performer",
         "path": "Observation.performer",
-        "short": "Profilo del professionista sanitario che ha effettualto la valutazione",
+        "short": "Profilo del professionista sanitario che ha effettuato la valutazione",
         "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario del professionista sanitario che compila la valutazione",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1",
@@ -136,17 +137,60 @@
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Esito della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito è la scheda Triage",
-        "definition": "Nel caso della scheda Triage il datatype è valueInteger (integer) e il valore numerico è compreso tra 0 e 14",
-        "comment": "Il dato è detenuto dal SGDT"
+        "short": "Esito della valutazione",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "integer"
+          },
+          {
+            "code": "boolean"
+          }
+        ],
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueInteger",
+        "path": "Observation.value[x]",
+        "sliceName": "valueInteger",
+        "short": "Nel caso delle cure domiciliari (C-DOM) corrisponde all'esito della scheda Triage",
+        "definition": "Il valore del campo è un numero compreso tra 0 e 14",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueBoolean",
+        "path": "Observation.value[x]",
+        "sliceName": "valueBoolean",
+        "short": "Nel caso della chiamata NEA corrisponde alla valutazione clinica del paziente sulla deambulazione",
+        "definition": "Il valore del campo è \"TRUE\" se il paziente è in grado di deambulare, \"FALSE\" se il paziente non è in grado di deambulare",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
       },
       {
         "id": "Observation.derivedFrom",
         "path": "Observation.derivedFrom",
-        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto",
+        "short": "Dettaglio delle risposte ai quesiti della valutazione alla quale il paziente è stato sottoposto. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio",
         "definition": "Reference al profilo RLQuestionnaireResponseValutazione della valutazione alla quale il paziente è stato sottoposto. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -160,7 +204,7 @@
       {
         "id": "Observation.component",
         "path": "Observation.component",
-        "short": "Esito complesso della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito complesso è la valutazione multidimensionale InterRAI - HomeCare"
+        "short": "Nel caso delle cure domiciliari (C-DOM) è l'esito complesso della valutazione. Attualmente l'unica valutazione codificata (campo code) che produce un esito complesso è la valutazione multidimensionale InterRAI - HomeCare"
       },
       {
         "id": "Observation.component.code",

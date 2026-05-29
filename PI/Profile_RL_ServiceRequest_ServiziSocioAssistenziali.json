@@ -199,31 +199,39 @@
       {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
-        "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
-        "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 10 cifre (da 0000000001 a 9999999999)",
-        "max": "1"
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Codice identificativo del servizio da attivare. Nel caso delle cure domiciliari (C-DOM) l'identificativo è uno e corrisponde al numero della pratica. Nel caso della chiamata NEA gli identificativi sono due e corrispondono al codice generato dall'applicativo di gestione 116117 NEA quando invia la richiesta a SGDT e il codice generato da SGDT quando la richiesta è stata ricevuta correttamente",
+        "comment": "Il numero della pratica e codice generato da SGDT sono dati detenuti da SGDT. Il codice generato dal NEA è detenuto dall'applicativo di gestione 116117 NEA",
+        "max": "2"
       },
       {
         "id": "ServiceRequest.identifier.system",
         "path": "ServiceRequest.identifier.system",
-        "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale"
+        "short": "Nel caso delle cure domiciliari (C-DOM) il system è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale. Nel caso della chiamata NEA il system del codice generato dall'applicativo di gestione 116117 NEA è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA. Nel caso della chiamata NEA il system del codice generato da SGDT è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT",
+        "min": 1
       },
       {
         "id": "ServiceRequest.identifier.value",
         "path": "ServiceRequest.identifier.value",
         "short": "Codice identificativo del servizio socioassistenziale da attivare. Nel caso delle cure domiciliari (C-DOM) il codice corrisponde al numero della pratica",
-        "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 6 cifre (da 000001 a 999999)",
+        "definition": "Nel caso delle cure domiciliari (C-DOM) è un codice numerico progressivo di 10 cifre (da 0000000001 a 9999999999). Nel caso della chiamata NEA il codice identificativo generato da SGDT è un codice alfanumerico composto da 3 lettere e 12 cifre (ad es. SOC-000000000000)",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
       },
       {
         "id": "ServiceRequest.basedOn",
         "path": "ServiceRequest.basedOn",
-        "short": "Riferimento al progetto individuale nel quale è prevista l'attivazione del servizio sociosanitario",
+        "short": "Riferimento al progetto individuale nel quale è prevista l'attivazione del servizio socioassistenziale. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio.",
         "definition": "Reference al profilo RLCarePlanProgettoIndividuale contenente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -264,8 +272,8 @@
         "id": "ServiceRequest.status",
         "path": "ServiceRequest.status",
         "short": "Stato dell'attivazione del servizio socioassistenziale",
-        "definition": "Valore fisso su \"active\"",
-        "fixedCode": "active"
+        "definition": "Nel caso delle cure domiciliari (C-DOM) il valore è fisso su \"active\". Nel caso della chiamata NEA, i valori ammessi sono: - \"active\": la richiesta è nello stato aperta; - \"completed\": la richiesta è nello stato chiusa",
+        "comment": "Il dato è detenuto da SGDT"
       },
       {
         "id": "ServiceRequest.intent",
@@ -278,6 +286,7 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Codice e descrizione della tipologia di servizio socioassistenziale da attivare",
+        "definition": "Nel caso della chiamata NEA corrisponde al valore fisso \"NEA\"",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del servizio socioassistenziale erogato dall’Ente contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1
       },
@@ -336,7 +345,7 @@
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
         "short": "Paziente al quale deve essere fornito l'acceso al servizio socioassistenziale",
-        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "definition": "Reference al profilo RLPatientCittadino contenente i dettagli anagrafici del paziente",
         "comment": "Il dato è detenuto dal SGDT",
         "type": [
           {
@@ -375,6 +384,23 @@
         "min": 1
       },
       {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "short": "Nel caso della chiamata NEA corrisponde all'operatore che invia la richiesta alla COT",
+        "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.performer",
         "path": "ServiceRequest.performer",
         "slicing": {
@@ -391,7 +417,7 @@
         "id": "ServiceRequest.performer:organization",
         "path": "ServiceRequest.performer",
         "sliceName": "organization",
-        "short": "Unità d'offerta responsabile della presa in carico del paziente",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con l'unità d'offerta responsabile della presa in carico del paziente",
         "definition": "Reference ai profilo RLOrganizationL2 dell'unità d'offerta che prenderà in carico il paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1",
@@ -423,25 +449,41 @@
       {
         "id": "ServiceRequest.reasonCode",
         "path": "ServiceRequest.reasonCode",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il percorso di cure domiciliari del paziente. Nel caso di una chiamata NEA corrisponde al motivo della segnalazione",
+        "max": "2"
+      },
+      {
+        "id": "ServiceRequest.reasonCode:percorsoCDom",
+        "path": "ServiceRequest.reasonCode",
+        "sliceName": "percorsoCDom",
         "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il percorso di cure domiciliari del paziente",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei percorsi di cure domiciliari contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
       {
-        "id": "ServiceRequest.reasonCode.coding",
+        "id": "ServiceRequest.reasonCode:percorsoCDom.coding",
         "path": "ServiceRequest.reasonCode.coding",
         "short": "Codice e descrizione del percorso di cure domiciliari",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "ServiceRequest.reasonCode.coding.system",
+        "id": "ServiceRequest.reasonCode:percorsoCDom.coding.system",
         "path": "ServiceRequest.reasonCode.coding.system",
         "min": 1,
         "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom"
       },
       {
-        "id": "ServiceRequest.reasonCode.coding.code",
+        "id": "ServiceRequest.reasonCode:percorsoCDom.coding.code",
         "path": "ServiceRequest.reasonCode.coding.code",
         "short": "Codice del percorso di cure domiciliari",
         "definition": "Stringa alfanumerica al più di 10 caratteri",
@@ -454,12 +496,87 @@
         }
       },
       {
-        "id": "ServiceRequest.reasonCode.coding.display",
+        "id": "ServiceRequest.reasonCode:percorsoCDom.coding.display",
         "path": "ServiceRequest.reasonCode.coding.display",
         "short": "Descrizione del percorso di cure domiciliari",
         "definition": "Stringa alfanumerica al più di 100 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
         "min": 1
+      },
+      {
+        "id": "ServiceRequest.reasonCode:motivoSegnalazione",
+        "path": "ServiceRequest.reasonCode",
+        "sliceName": "motivoSegnalazione",
+        "short": "Nel caso di una chiamata NEA corrisponde al motivo della segnalazione",
+        "definition": "Nel caso della chiamata NEA corrisponde al valore fisso \"Chiamata NEA\"",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del motivo della segnalazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.reasonCode:motivoSegnalazione.coding",
+        "path": "ServiceRequest.reasonCode.coding",
+        "short": "Codifica del motivo della segnalazione",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.reasonCode:motivoSegnalazione.coding.system",
+        "path": "ServiceRequest.reasonCode.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione"
+      },
+      {
+        "id": "ServiceRequest.reasonCode:motivoSegnalazione.coding.code",
+        "path": "ServiceRequest.reasonCode.coding.code",
+        "short": "Codice del motivo della segnalazione",
+        "definition": "Codice numerico di 2 cifre",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo al motivo della segnalazione",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione"
+        }
+      },
+      {
+        "id": "ServiceRequest.reasonCode:motivoSegnalazione.coding.display",
+        "path": "ServiceRequest.reasonCode.coding.display",
+        "short": "Descrizione del motivo della segnalazione",
+        "definition": "Stringa alfanumerica al più di 200 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.reasonReference",
+        "path": "ServiceRequest.reasonReference",
+        "short": "Nel caso della chiamata NEA corrisponde alla valutazione clinica del paziente sulla deambulazione",
+        "definition": "Reference al profilo RLObservationEsitoValutazione",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "path": "ServiceRequest.supportingInfo",
+        "short": "Nel caso della chiamata NEA corrisponde all'allegato del referto del medico di continuità assistenziale",
+        "definition": "Reference al profilo RLDocumentReferenceDocumento",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDocumentReferenceDocumento"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.note",
