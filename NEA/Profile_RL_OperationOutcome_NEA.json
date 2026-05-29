@@ -29,6 +29,7 @@
       {
         "id": "OperationOutcome.meta.profile",
         "path": "OperationOutcome.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
         "min": 1,
         "max": "1",
         "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeNEA"
@@ -37,6 +38,7 @@
         "id": "OperationOutcome.issue",
         "path": "OperationOutcome.issue",
         "short": "Esito dell'elaborazione del messaggio",
+        "min": 1,
         "max": "2"
       },
       {
@@ -74,49 +76,24 @@
         "id": "OperationOutcome.issue.details:contenutoMessaggio",
         "path": "OperationOutcome.issue.details",
         "sliceName": "contenutoMessaggio",
-        "short": "Dettaglio dell'esito del messaggio"
-      },
-      {
-        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding",
-        "path": "OperationOutcome.issue.details.coding",
-        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo definisce il contenuto del campo text.",
-        "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di contenuto del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "short": "Dettaglio dell'esito del messaggio",
+        "min": 1,
         "max": "1"
-      },
-      {
-        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.system",
-        "path": "OperationOutcome.issue.details.coding.system",
-        "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio"
-      },
-      {
-        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.code",
-        "path": "OperationOutcome.issue.details.coding.code",
-        "short": "Codice del contenuto del campo text",
-        "definition": "Stringa alfanumerica di al più 2 caratteri",
-        "min": 1,
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio"
-        }
-      },
-      {
-        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.display",
-        "path": "OperationOutcome.issue.details.coding.display",
-        "short": "Descrizione del contenuto del campo text",
-        "definition": "Stringa alfanumerica di al più 200 caratteri"
       },
       {
         "id": "OperationOutcome.issue.details:contenutoMessaggio.text",
         "path": "OperationOutcome.issue.details.text",
-        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo contiene l'URL per il passaggio di contesto ad SGDT o il numero di protocollo GPC.",
-        "definition": "Stringa alfanumerica di al più 400 caratteri"
+        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo contiene il codice generato da SGDT quando la richiesta inviata dall'applicativo di gestione 116117 NEA è stata ricevuta correttamente",
+        "definition": "Stringa alfanumerica di al più 400 caratteri",
+        "max": "1"
       },
       {
         "id": "OperationOutcome.issue.details:errore",
         "path": "OperationOutcome.issue.details",
         "sliceName": "errore",
-        "short": "Dettaglio dell'esito del messaggio"
+        "short": "Dettaglio dell'esito del messaggio",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "OperationOutcome.issue.details:errore.coding",
@@ -129,7 +106,7 @@
         "id": "OperationOutcome.issue.details:errore.coding.system",
         "path": "OperationOutcome.issue.details.coding.system",
         "min": 1,
-        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio"
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/operation-error"
       },
       {
         "id": "OperationOutcome.issue.details:errore.coding.code",
