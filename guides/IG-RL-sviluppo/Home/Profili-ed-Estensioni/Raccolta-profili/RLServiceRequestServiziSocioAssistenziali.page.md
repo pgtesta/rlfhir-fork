@@ -62,12 +62,35 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-Attualmente non sono stati definiti criteri di ricerca.
+### 1. Stato della richiesta
+
+Questa ricerca deve essere effettuata dall'applicativo di Gestione 116117 NEA con lo scopo di ottenere lo stato della richiesta dalla piattaforma SGDT.
+
+I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
+
+- **identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA`: è l'identificativo univoco generato dall'applicativo di gestione 116117 NEA quando invia la richiesta a SGDT e associato al profilo RLServiceRequestServiziSocioAssistenziali;
+- **identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT`: è l'identificativo univoco generato da SGDT quando la richiesta è stata ricevuta correttamente e associato al profilo RLServiceRequestServiziSocioAssistenziali.
+
+Nella tabella di seguito vengono riportati i dettagli tecnici per l'implementazione della ricerca:
+
+| | |
+|---|---|
+| **VERB** | GET |
+| **BASE URL** | `https://<endpoint_SGDT>/richiediStato` |
+| **PARAMETRI** | *Definito sulla pagina descrittiva del profilo presente su Simplifier.net |
+
+A titolo esemplificativo, la chiamata:
+
+*Esempio definito sulla pagina descrittiva del profilo presente su Simplifier.net
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
 ## Search parameter
-Attualmente non sono definiti Search Parameters.
+
+Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di seguito i parametri di ricerca del profilo RLServiceRequestServiziSocioAssistenziali:
+
+- `_profile`
+- `identifier`
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
@@ -79,5 +102,6 @@ Nella seguente tabella sono elencati i value-set relativi al profilo RLServiceRe
 |---|---|---|
 | Code | Codice e descrizione del servizio sociosanitario da attivare |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2}}| 
 | ReasonCode | Codice e descrizione dei percorsi di cure domiciliari |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom}}| 
+| ReasonCode | Motivo della segnalazione |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione}}| 
 | causaleDimissione  | Codice e descrizione della causale di dimissione |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CausaleDimissione}}| 
 | soggettoProponentePIC | Codice e descrizione del soggetto che ha proposto la presa in carico dell'assistito |  La codifica è definita dal ValueSet {{link:https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC}}| 

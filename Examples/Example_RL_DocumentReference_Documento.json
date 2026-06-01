@@ -1,0 +1,32 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "d4e5f6a7-0004-11ed-b856-02001700b287",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2026-01-08T13:27:57.887+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDocumentReferenceDocumento"
+    ]
+  },
+  "status": "current",
+  "subject": {
+    "reference": "Patient/94f89259-2d71-4df0-841f-68fdd1746af8",
+    "display": "QUATTRO GIUGNO"
+  },
+  "date": "2026-01-08T13:27:57.887+01:00",
+  "author": [
+    {
+      "reference": "PractitionerRole/b2c3d4e5-0002-11ed-b856-02001700b287"
+    }
+  ],
+  "description": "Referto del medico di continuità assistenziale",
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf",
+        "title": "Referto_continuita_assistenziale.pdf",
+        "data": "JVBERi0xLjQKJeLjz9MKDQo="
+      }
+    }
+  ]
+}
