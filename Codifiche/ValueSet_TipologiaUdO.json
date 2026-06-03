@@ -282,6 +282,10 @@
             "display": "DAY HOSPITAL NEUROPSICHIATRICO INFANTILE"
           },
           {
+            "code": "NEA",
+            "display": "NUMERO EUROPEO ARMONIZZATO (NEA) 116117"
+          },
+          {
             "code": "CMI",
             "display": "CENTRALE MEDICA INTEGRATA"
           }

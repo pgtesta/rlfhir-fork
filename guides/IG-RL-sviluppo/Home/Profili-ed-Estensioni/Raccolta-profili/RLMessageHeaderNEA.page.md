@@ -6,7 +6,7 @@
 
 ## Descrizione
 
-Il profilo RLMessageHeaderNEA è stato strutturato a partire dalla risorsa generica FHIR [MessageHeader](https://hl7.org/fhir/R4/messageheader.html) in modo da contenere le informazioni relative al messaggio scambiato tra l'applicativo di gestione 116117 NEA e SGDT.
+Il profilo RLMessageHeaderNEA è stato strutturato a partire dalla risorsa generica FHIR [MessageHeader](https://hl7.org/fhir/R4/messageheader.html) in modo da contenere le informazioni pertinenti al messaggio scambiato tra l’applicativo di gestione 116117 NEA e la piattaforma SGDT.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderNEA}}.
 

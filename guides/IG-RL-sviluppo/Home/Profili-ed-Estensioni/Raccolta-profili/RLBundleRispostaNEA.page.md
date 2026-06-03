@@ -8,8 +8,6 @@
 
 Il profilo RLBundleRispostaNEA è stato strutturato a partire dalla risorsa generica FHIR [Bundle](http://hl7.org/fhir/R4/bundle.html), il profilo è volto a descrivere il contenuto del Bundle di risposta inviato da SGDT all'applicativo di gestione 116117 NEA.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaNEA}}.
-
 <br>
 <div class="tab">
   <button class="tablinks active" onclick="openTab(event, 'Hybrid View')">Hybrid View</button>
@@ -53,9 +51,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:Bundle/RLBundleRispostaNEAPositiva}}
+  {{link:Examples/RLBundleRispostaNEAPositiva}}
   <br>
-  {{link:Bundle/RLBundleRispostaNEANegativa}}
+  {{link:Examples/RLBundleRispostaNEANegativa}}
 <br>
 </div>
 

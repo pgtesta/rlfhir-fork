@@ -280,6 +280,10 @@
     {
       "code": "CMI",
       "display": "CENTRALE MEDICA INTEGRATA"
+    },
+    {
+      "code": "NEA",
+      "display": "NUMERO EUROPEO ARMONIZZATO (NEA) 116117"
     }
   ]
 }

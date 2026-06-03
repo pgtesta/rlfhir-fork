@@ -6,7 +6,7 @@
 
 ## Descrizione
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeNEA}}.
+Il profilo RLOperationOutcomeMMG è stato strutturato a partire dalla risorsa standard FHIR [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) per contenere il dettaglio delle informazioni relative all’elaborazione dell’operazione tentata, nello specifico del messaggio scambiato tra l’applicativo di gestione 116117 NEA e la piattaforma SGDT.
 
 <br>
 <div class="tab">

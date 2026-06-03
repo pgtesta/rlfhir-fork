@@ -8,7 +8,7 @@
 
 
 ## Descrizione
-Il profilo RLServiceRequestServiziSocioAssistenziali è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e definisce i dettagli relativi all’attivazione di un servizio socioassistenziale per un assistito come previsto dal proprio progetto individuale. Se già noto, all’interno del profilo verrà riportato l’Ente Erogatore della rete territoriale responsabile della presa in carico. 
+Il profilo RLServiceRequestServiziSocioAssistenziali è stato strutturato a partire dalla risorsa generica FHIR [ServiceRequest](http://hl7.org/fhir/R4/servicerequest.html) e definisce i dettagli relativi all’attivazione di un servizio socioassistenziale per un assistito. Se già noto, all’interno del profilo verrà riportato l’Ente Erogatore della rete territoriale responsabile della presa in carico. 
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali}}.
 
@@ -68,8 +68,8 @@ Questa ricerca deve essere effettuata dall'applicativo di Gestione 116117 NEA co
 
 I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 
-- **identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA`: è l'identificativo univoco generato dall'applicativo di gestione 116117 NEA quando invia la richiesta a SGDT e associato al profilo RLServiceRequestServiziSocioAssistenziali;
-- **identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT`: è l'identificativo univoco generato da SGDT quando la richiesta è stata ricevuta correttamente e associato al profilo RLServiceRequestServiziSocioAssistenziali.
+- **Identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA`: è l'identificativo univoco generato dall'applicativo di gestione 116117 NEA quando invia la richiesta a SGDT e associato al profilo RLServiceRequestServiziSocioAssistenziali;
+- **Identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT`: è l'identificativo univoco generato da SGDT quando la richiesta è stata ricevuta correttamente e associato al profilo RLServiceRequestServiziSocioAssistenziali.
 
 Nella tabella di seguito vengono riportati i dettagli tecnici per l'implementazione della ricerca:
 
@@ -77,11 +77,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l'implementazi
 |---|---|
 | **VERB** | GET |
 | **BASE URL** | `https://<endpoint_SGDT>/richiediStato` |
-| **PARAMETRI** | *Definito sulla pagina descrittiva del profilo presente su Simplifier.net |
+| **PARAMETRI** | Identifier, _profile |
 
 A titolo esemplificativo, la chiamata:
 
-*Esempio definito sulla pagina descrittiva del profilo presente su Simplifier.net
+`/ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA|1234`
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

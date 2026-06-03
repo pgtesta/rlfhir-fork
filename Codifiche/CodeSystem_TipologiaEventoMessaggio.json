@@ -16,6 +16,10 @@
     {
       "code": "ADP",
       "display": "redazione assistenza domiciliare programmata"
+    },
+    {
+      "code": "NEA",
+      "display": "richiesta di attivazione di un servizio socio-assistenziale proveniente dall’applicativo di gestione 116117 NEA"
     }
   ]
 }

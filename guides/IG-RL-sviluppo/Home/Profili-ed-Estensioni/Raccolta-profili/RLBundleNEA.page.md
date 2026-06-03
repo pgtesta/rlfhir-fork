@@ -8,7 +8,6 @@
 
 Il profilo RLBundleNEA è stato strutturato a partire dalla risorsa generica FHIR [Bundle](http://hl7.org/fhir/R4/bundle.html) ed è volto a descrivere il contenuto informativo del Bundle inviato dall'applicativo di gestione 116117 NEA a SGDT.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNEA}}.
 
 <br>
 <div class="tab">
@@ -53,7 +52,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:RLBundleNEArichiesta}}
+  {{link:Examples/RLBundleNEArichiesta}}
 <br>
 </div>
 
