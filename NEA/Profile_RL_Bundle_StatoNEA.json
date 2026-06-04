@@ -38,8 +38,8 @@
         "id": "Bundle.type",
         "path": "Bundle.type",
         "short": "Tipo di Bundle",
-        "definition": "Valore fisso su \"message\"",
-        "fixedCode": "message"
+        "definition": "Valore fisso su \"searchset\"",
+        "fixedCode": "searchset"
       },
       {
         "id": "Bundle.timestamp",

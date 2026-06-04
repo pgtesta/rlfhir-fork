@@ -77,11 +77,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l'implementazi
 |---|---|
 | **VERB** | GET |
 | **BASE URL** | `https://<endpoint_SGDT>/richiediStato` |
-| **PARAMETRI** | Identifier, _profile |
+| **PARAMETRI** | Identifier, _profile, _include |
 
 A titolo esemplificativo, la chiamata:
 
-`/ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA|1234`
+`/ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA|1234&_include=ServiceRequest:subject`
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 

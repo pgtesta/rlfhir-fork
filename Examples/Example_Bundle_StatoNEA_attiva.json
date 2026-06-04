@@ -6,7 +6,7 @@
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleStatoNEA"
     ]
   },
-  "type": "message",
+  "type": "searchset",
   "entry": [
     {
       "resource": {
@@ -44,6 +44,9 @@
           "reference": "Patient/94f89259-2d71-4df0-841f-68fdd1746af8",
           "display": "QUATTRO GIUGNO"
         }
+      },
+      "search": {
+        "mode": "match"
       }
     },
     {
@@ -73,6 +76,9 @@
         ],
         "gender": "male",
         "birthDate": "2024-06-04"
+      },
+      "search": {
+        "mode": "include"
       }
     }
   ]

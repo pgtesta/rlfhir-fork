@@ -46,6 +46,7 @@ L'elenco delle API esposte è:
 |POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
 
 
+
 #### API Enti erogatori
 I servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
 Il base_url con cui accedere a tali servizi è il seguente:
@@ -66,7 +67,7 @@ L'elenco delle API esposte è:
 |GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestSospensioneADI, RLServiceRequestRivalutazione|Ente Erogatore|
 |POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
 |GET|<base_API_Ente>/_Location_|RLLocationPLOLetto|Ente Erogatore|
-
+|GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestServiziSocioAssistenziali|NEA|
 
 # 3. Paradigma FHIR messaging
 Il paradigma scelto per lo scambio dei dati con SGDT è quello del FHIR messaging. Il paradigma messaging prevede un sender, un receiver, un evento di trigger che innesca la creazione e l’invio di un messaggio, un messaggio di richiesta e uno messaggio di risposta.
@@ -106,6 +107,7 @@ L'elenco delle API esposte è:
 |Metodo HTTP|URL|Nome profilo|Detentore del dato|
 |---|---|---|
 |POST|<base_API_Manager>/message/$process-message|RLBundleMMG|SGDT|
+|POST|<base_API_Manager>/message/$process-message|RLBundleNEA|NEA|
  
 dove:
 - <base_API_manager> è l’indirizzo radice del servizio che sarà esposto tramite API Manager;
