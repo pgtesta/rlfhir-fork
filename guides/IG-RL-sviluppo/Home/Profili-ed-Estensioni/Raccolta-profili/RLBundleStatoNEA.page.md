@@ -52,9 +52,9 @@ Il profilo RLBundleStatoNEA è stato strutturato a partire dalla risorsa generic
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  Richiesta attiva: {{link:Examples/RLBundleStatoNEAAttiva.json}}
+  Richiesta attiva: {{link:RLBundleStatoNEAAttiva}}
   <br>
-  Richiesta chiusa: {{link:Examples/RLBundleStatoNEAChiusa.json}}
+  Richiesta chiusa: {{link:RLBundleStatoNEAChiusa}}
   <br>
 </div>
 

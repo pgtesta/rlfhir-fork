@@ -51,9 +51,9 @@ Il profilo RLBundleRispostaNEA è stato strutturato a partire dalla risorsa gene
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:Examples/RLBundleRispostaNEAPositiva}}
+  {{link:RLBundleRispostaNEAPositiva}}
   <br>
-  {{link:Examples/RLBundleRispostaNEANegativa}}
+  {{link:RLBundleRispostaNEANegativa}}
 <br>
 </div>
 

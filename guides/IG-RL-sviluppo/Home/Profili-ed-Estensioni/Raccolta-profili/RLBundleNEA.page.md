@@ -52,7 +52,7 @@ Il profilo RLBundleNEA è stato strutturato a partire dalla risorsa generica FHI
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:Examples/RLBundleNEArichiesta}}
+  {{link:RLBundleNEArichiesta}}
 <br>
 </div>
 
