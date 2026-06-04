@@ -17,9 +17,23 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>test</b>, di c
 
 La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, gestisce i seguenti concetti:
 
-- Nel profilo RLCarePlanProgettoIndividuale è stata aggiornata la descrizione del campo “status”.
-
-- È stato aggiornato il profilo RLOperationOutcome ed è stato aggiunto il value-set “Codici Warning”. Nel caso in cui l'esito di una ricerca effettuata da SGDT per ottenere il dettaglio delle prestazioni che un EEPA ha erogato a un paziente in regime di ricovero domiciliare risulti un Bundle vuoto, l’EEPA deve generare e inviare a SGDT un profilo RLOperationOutcome contenente il codice di warning "PRACTICE_NOT_FOUND" quando la pratica non è presente nel sistema dell'EEPA oppure il codice di warning "PROCEDURES_NOT_FOUND" quando la pratica è presente ma non sono state erogate prestazioni al paziente.
+- È stato descritto il nuovo scenario di cooperazione applicativa tra l’applicativo di gestione 1116117 NEA e SGDT per trasmettere alla rete delle COT in maniera integrata la richiesta di attivazione di un servizio socio-assistenziale. Nella sezione Contesto sono state aggiornate le pagine:
+   - Panoramica di progetto;
+   - Tematiche di applicazione;
+   - Paradigmi di integrazione e API RESTful.
+- Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLDocumentReferenceDocumento, RLMessageHeaderNEA, RLOperationOutcomeNEA, RLBundleNEA, RLBundleRispostaNEA e RLBundleStatoNEA.
+- Nella sezione Profili ed Estensioni sono stati aggiornati i profili RLServiceRequestServiziSocioAssistenziali, RLPatientCittadino, RLObservationEsitoValutazione, RLPractitionerRoleProfessionistaSanitario, RLPractitionerProfessionistaSanitario.
+- Nella sezione Terminologia sono stati aggiornati i seguenti value-set:
+   - DDC Desc L2;
+   - SGDT Motivo Segnalazione;
+   - SGDT Valutazione;
+   - Tipologia Evento Messaggio;
+   - Errori Messaggio.
+- Nella sezione Esempi sono stati aggiunti i seguenti esempi:
+   - Esempio Bundle NEA di richiesta di attivazione di un servizio socio-assistenziale da parte dell’applicativo di gestione 116117 NEA;
+   - Esempio Bundle Risposta NEA del messaggio con esito positivo;
+   - Esempio Bundle Risposta NEA del messaggio con errore;
+   - Esempio Bundle Stato NEA per richiedere alla piattaforma SGDT lo Stato della richiesta da parte dell’applicativo di gestione 116117 NEA.
 
 
 
