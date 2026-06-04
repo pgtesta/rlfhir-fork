@@ -15,30 +15,24 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>sviluppo</b>, 
 
 ## Novità
 
-La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, gestisce i seguenti concetti:
-
-- È stato descritto il nuovo scenario di cooperazione applicativa tra le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici e il SGDT. Nella sezione Contesto sono state aggiornate le pagine.
+La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, presenta le seguenti novità:
+- È stato descritto il nuovo scenario di cooperazione applicativa tra l’applicativo di gestione 1116117 NEA e SGDT per trasmettere alla rete delle COT in maniera integrata la richiesta di attivazione di un servizio socio-assistenziale. Nella sezione Contesto sono state aggiornate le pagine:
    - Panoramica di progetto;
    - Tematiche di applicazione;
    - Paradigmi di integrazione e API RESTful.
-- Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLMessageHeaderMMG, RLPatientBase, RLOperationOutcomeMMG, RLBundleMMG, RLBundleRispostaMMG e RLServiceRequestPrestazioni.
-- Nel profilo RLOperationOutcome sono stati aggiornati i campi “issue.code” e “details.coding.code” e i value-set ad essi associati.
-- Nel profilo RLConditionProblemiSalute è stato aggiunto il campo “severity”, è stato aggiornato il campo “code” ed è stata aggiornata la cardinalità del campo “meta”.
-- Nel profilo RLMedicationRequestTerapiaFarmacologica è stato aggiunto il campo “text”, è stato aggiornato il campo “medication” ed è stata aggiornata la cardinalità del campo “meta” e “basedOn”.
-- Nel profilo RLCarePlanProgettoIndividuale è stato aggiornato l’esempio della chiamata per la ricerca dei Progetti Individuali attivi.
-- Nel profilo RLOrganizationL2 è stata aggiornata la descrizione e aggiunto il parametro “dataCessazione” per alcune tipologie di ricerca.
-- Nel profilo RLGoalObiettiviSalute sono state aggiornate le descrizioni dei campi “description” e “note”.
-- Nella sezione Terminologia sono stati aggiunti i seguenti value-set:
-   - SGDT MessageEvents;
-   - GPC LivelloGravita;
-   - GPC ContenutoOperationOutcomeMMG;
-   - SGDT operation error;
-   - SGDT Tipologia Prestazione.
+- Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLDocumentReferenceDocumento, RLMessageHeaderNEA, RLOperationOutcomeNEA, RLBundleNEA, RLBundleRispostaNEA e RLBundleStatoNEA.
+- Nella sezione Profili ed Estensioni sono stati aggiornati i profili RLServiceRequestServiziSocioAssistenziali, RLPatientCittadino, RLObservationEsitoValutazione, RLPractitionerRoleProfessionistaSanitario, RLPractitionerProfessionistaSanitario.
+- Nella sezione Terminologia sono stati aggiornati i seguenti value-set:
+   - DDC Desc L2;
+   - SGDT Motivo Segnalazione;
+   - SGDT Valutazione;
+   - Tipologia Evento Messaggio;
+   - Errori Messaggio.
 - Nella sezione Esempi sono stati aggiunti i seguenti esempi:
-   - Esempio Bundle di attivazione dei servizi di presa in carico dei pazienti cronici da parte del MMG;
-   - Esempio Bundle di richiesta di interventi di Assistenza Domiciliare Programmata da parte del MMG;
-   - Esempio Bundle Risposta del messaggio con esito positivo;
-   - Esempio Bundle Risposta del messaggio con errore.
+   - Esempio Bundle NEA di richiesta di attivazione di un servizio socio-assistenziale da parte dell’applicativo di gestione 116117 NEA;
+   - Esempio Bundle Risposta NEA del messaggio con esito positivo;
+   - Esempio Bundle Risposta NEA del messaggio con errore;
+   - Esempio Bundle Stato NEA per richiedere alla piattaforma SGDT lo Stato della richiesta da parte dell’applicativo di gestione 116117 NEA.
 
 
 
