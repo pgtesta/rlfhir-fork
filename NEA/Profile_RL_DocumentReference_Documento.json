@@ -1,0 +1,116 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLDocumentReferenceDocumento",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDocumentReferenceDocumento",
+  "name": "RLDocumentReferenceDocumento",
+  "status": "active",
+  "date": "2026-05-29T09:46:43.7514659+00:00",
+  "description": "Profilo volto a descrivere il documento caricato.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.id",
+        "path": "DocumentReference.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.meta",
+        "path": "DocumentReference.meta",
+        "short": "Metadati della risorsa",
+        "definition": "Formato standard FHIR: YYYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.meta.versionId",
+        "path": "DocumentReference.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.meta.lastUpdated",
+        "path": "DocumentReference.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.meta.profile",
+        "path": "DocumentReference.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDocumentReferenceDocumento"
+      },
+      {
+        "id": "DocumentReference.status",
+        "path": "DocumentReference.status",
+        "short": "Stato del documento caricato",
+        "definition": "Valore fisso su \"current\". Il dato è detenuto da SGDT",
+        "min": 1,
+        "fixedCode": "current"
+      },
+      {
+        "id": "DocumentReference.subject",
+        "path": "DocumentReference.subject",
+        "short": "Paziente a cui è associato il documento",
+        "definition": "Reference al profilo RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.date",
+        "path": "DocumentReference.date",
+        "short": "Data del documento",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.author",
+        "path": "DocumentReference.author",
+        "short": "Autore del documento",
+        "definition": "Reference al profilo RLPractitionerRoleProfessionistaSanitario che corrisponde all'autore del documento",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.description",
+        "path": "DocumentReference.description",
+        "short": "Titolo del documento",
+        "min": 1
+      },
+      {
+        "id": "DocumentReference.content",
+        "path": "DocumentReference.content",
+        "short": "Documento caricato",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "DocumentReference.content.attachment",
+        "path": "DocumentReference.content.attachment",
+        "short": "Documento caricato. Nel caso di una chiamata NEA corrisponde al referto del medico di continuità assistenziale",
+        "definition": "Il dato è detenuto da SGDT",
+        "min": 1
+      }
+    ]
+  }
+}

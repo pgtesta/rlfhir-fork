@@ -1,0 +1,164 @@
+{
+  "resourceType": "Bundle",
+  "id": "RLBundleNEArichiesta",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNEA"
+    ]
+  },
+  "type": "message",
+  "timestamp": "2026-01-08T13:27:57.887+01:00",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "MessageHeader",
+        "id": "RLMessageHeaderNEA",
+        "meta": {
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderNEA"
+          ]
+        },
+        "eventCoding": {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
+          "code": "NEA",
+          "display": "Chiamata NEA"
+        },
+        "destination": [
+          {
+            "name": "SGDT",
+            "endpoint": "urn:rlfhir:SGDT"
+          }
+        ],
+        "source": {
+          "name": "NEA",
+          "endpoint": "urn:rlfhir:NEA"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "a1b2c3d4-0001-11ed-b856-02001700b287",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2026-01-08T13:27:57.887+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA",
+            "value": "NEA-000000000123"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+              "code": "NEA",
+              "display": "Chiamata NEA"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/94f89259-2d71-4df0-841f-68fdd1746af8",
+          "display": "QUATTRO GIUGNO"
+        },
+        "requester": {
+          "reference": "PractitionerRole/b2c3d4e5-0002-11ed-b856-02001700b287"
+        },
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
+                "code": "01",
+                "display": "Chiamata NEA"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "94f89259-2d71-4df0-841f-68fdd1746af8",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2026-01-08T13:27:57.887+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "QTTGGN24H04F205B"
+          }
+        ],
+        "name": [
+          {
+            "family": "QUATTRO",
+            "given": [
+              "GIUGNO"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2024-06-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "b2c3d4e5-0002-11ed-b856-02001700b287",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2026-01-08T13:27:57.887+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleProfessionistaSanitario"
+          ]
+        },
+        "practitioner": {
+          "reference": "Practitioner/c3d4e5f6-0003-11ed-b856-02001700b287"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-QualificaProfessionistaSanitario",
+                "code": "01",
+                "display": "Operatore COT"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "c3d4e5f6-0003-11ed-b856-02001700b287",
+        "meta": {
+          "versionId": "1",
+          "lastUpdated": "2026-01-08T13:27:57.887+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerProfessionistaSanitario"
+          ]
+        },
+        "name": [
+          {
+            "family": "ROSSI",
+            "given": [
+              "MARIO"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

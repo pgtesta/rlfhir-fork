@@ -1,0 +1,111 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLBundleRispostaNEA",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaNEA",
+  "name": "RLBundleRispostaNEA",
+  "status": "active",
+  "date": "2026-05-29T09:46:43.7514659+00:00",
+  "description": "Profilo volto a descrivere il contenuto del Bundle di risposta inviato da SGDT all'applicativo di gestione 116117 NEA.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.id",
+        "path": "Bundle.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa",
+        "min": 1
+      },
+      {
+        "id": "Bundle.meta",
+        "path": "Bundle.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Bundle.meta.profile",
+        "path": "Bundle.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaNEA"
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "short": "Tipo di Bundle",
+        "definition": "Valore fisso su \"message\"",
+        "fixedCode": "message"
+      },
+      {
+        "id": "Bundle.timestamp",
+        "path": "Bundle.timestamp",
+        "short": "Data di creazione del Bundle",
+        "definition": "Formato standard FHIR: YYYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "resource.meta.profile"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Profili contenuti nel Bundle",
+        "min": 2,
+        "max": "2"
+      },
+      {
+        "id": "Bundle.entry:RLMessageHeaderNEA",
+        "path": "Bundle.entry",
+        "sliceName": "RLMessageHeaderNEA",
+        "short": "Profilo volto a contenere le informazioni relative al messaggio scambiato tra l'applicativo di gestione 116117 NEA e SGDT.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:RLMessageHeaderNEA.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderNEA"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:RLOperationOutcomeNEA",
+        "path": "Bundle.entry",
+        "sliceName": "RLOperationOutcomeNEA",
+        "short": "Profilo volto a contenere il dettaglio delle informazione relative all'elaborazione del messaggio.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Bundle.entry:RLOperationOutcomeNEA.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Resource",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeNEA"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

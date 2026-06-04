@@ -28,6 +28,10 @@
           {
             "code": "VAL4",
             "display": "Campi extra del flusso SIAD"
+          },
+          {
+            "code": "VAL5",
+            "display": "Autonomia nella deambulazione"
           }
         ]
       }

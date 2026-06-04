@@ -61,8 +61,7 @@
         "id": "Patient.extension:cittadinanza",
         "path": "Patient.extension",
         "sliceName": "cittadinanza",
-        "short": "Cittadinanza del cittadino",
-        "min": 1,
+        "short": "Cittadinanza del cittadino. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio.",
         "max": "1",
         "type": [
           {
@@ -91,9 +90,8 @@
         "id": "Patient.extension:titoloDiStudio",
         "path": "Patient.extension",
         "sliceName": "titoloDiStudio",
-        "short": "Titolo di studio del cittadino",
+        "short": "Titolo di studio del cittadino. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio.",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella dei titoli di studio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
-        "min": 1,
         "max": "1",
         "type": [
           {
@@ -145,7 +143,7 @@
         "id": "Patient.extension:posizioneDellaProfessione",
         "path": "Patient.extension",
         "sliceName": "posizioneDellaProfessione",
-        "short": "Posizione della professione del cittadino",
+        "short": "Nel caso delle cure domiciliari (C-DOM) corrisponde alla posizione della professione del cittadino",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle professioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1",
         "type": [
@@ -196,7 +194,7 @@
         "id": "Patient.extension:situazionePensionistica",
         "path": "Patient.extension",
         "sliceName": "situazionePensionistica",
-        "short": "Situazione pensionistica del cittadino",
+        "short": "Nel caso delle cure domiciliari (C-DOM) corrisponde alla situazione pensionistica del cittadino",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della situazione pensionistica contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1",
         "type": [
@@ -778,7 +776,7 @@
       {
         "id": "Patient.generalPractitioner",
         "path": "Patient.generalPractitioner",
-        "short": "Riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
+        "short": "Nel caso delle cure domiciliari (C-DOM) è il riferimento al profilo del medico che assiste il cittadino e all'ATS di residenza",
         "definition": "Reference al profilo RLPractitionerRoleMedicoPrescrittore in caso di MMG/PLS (anche sostituto) e al profilo RLOrganizationL1 in caso di ATS di residenza. Per il profilo RLOrganizationL1 deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
         "comment": "Il dato è detenuto da SGDT",
         "max": "3",

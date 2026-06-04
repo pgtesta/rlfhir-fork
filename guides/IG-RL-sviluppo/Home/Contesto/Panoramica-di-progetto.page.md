@@ -5,10 +5,11 @@ Il progetto FHIR per Regione Lombardia è descritto tramite diverse Guide Implem
 Ad oggi la piattaforma SGDT supporta le seguenti integrazioni:
 - Cooperazione applicativa con i verticali degli Enti Erogatori Privati Accreditati (EEPA) per la gestione degli assistiti nell’ambito del servizio delle Cure Domiciliari. I principali profili FHIR utilizzati sono: RLCarePlanProgettoIndividuale, RLServiceRequestServiziSocioAssistenziali e RLProcedurePrestazione;
 - Cooperazione applicativa con le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici. I principali profili FHIR utilizzati sono: RLMessageHeaderMMG, RLPatientBase, RLConditionProblemiSalute e RLOperationOutcomeMMG;
+•	Cooperazione applicativa con il sistema di Gestione 116117 NEA per trasmettere la richiesta di attivazione di un servizio socio-assistenziale inviato alla rete delle COT e richiedere alla piattaforma SGDT lo Stato della richiesta. I principali profili FHIR utilizzati sono: RLMessageHeaderNEA, RLOperationOutcomeNEA, RLServiceRequestServiziSocioAss;
 - l’acquisizione delle informazioni relative al catalogo dell’offerta dei servizi assistenziali attivabili in Regione Lombardia attraverso la consultazione del patrimonio informativo contenuto nei  Dati Codificati (DDC). Il principale profilo utilizzato è RLOrganizationL2.
 
 
-Il protocollo di interoperabilità HL7-FHIR® utilizzato per ogni integrazione è definito nella sezione API RESTful della Guida Implementativa. Attualmente lo scenario di cooperazione applicativa con gli EEPA nell’ambito delle Cure Domiciliari prevede uno scambio dati in logica PULL attraverso la definizione di parametri di ricerca, mentre lo scenario di cooperazione applicativa con le CE-MMG per i pazienti cronici prevede uno scambio di dati tramite messaggistica FHIR.
+Il protocollo di interoperabilità HL7-FHIR® utilizzato per ogni integrazione è definito nella sezione API RESTful della Guida Implementativa. Attualmente lo scenario di cooperazione applicativa con gli EEPA nell’ambito delle Cure Domiciliari e con il sistema di Gestione 116117 NEA per richiedere alla piattaforma SGDT lo Stato della richiesta prevede uno scambio dati in logica PULL attraverso la definizione di parametri di ricerca. Lo scenario di cooperazione applicativa con le CE-MMG per i pazienti cronici e con il sistema di Gestione 116117 NEA per la trasmissione della richiesta di attivazione di un servizio socio-assistenziale inviato alla rete delle COT prevede invece uno scambio di dati tramite messaggistica FHIR.
 
 ## Glossario
 Raccolta di acronimi e termini usati nel progetto:
@@ -17,9 +18,11 @@ Raccolta di acronimi e termini usati nel progetto:
 |---|---|
 |ADP  |Assistenza Domiciliare Programmata |
 |API  |Application Programming Interface  |
+|AREU| Agenzia Regionale Emergenza Urgenza|
 |ASST |Azienda Socio-Sanitaria Territoriale    |
 |C-DOM|Cure Domiciliari    |
 |CE-MMG    |Cartella Elettronica del Medico di Medicina Generale   |
+|COT| Centrale Operativa Territoriale|
 |DDC  |Distribuzione Dati Codificati |
 |EEPA |Ente Erogatore Privato Accreditato |
 |EVM  |Equipe di Valutazione   Multidimensionale    |
@@ -29,6 +32,7 @@ Raccolta di acronimi e termini usati nel progetto:
 |L2   |Codice   identificativo di livello 2 degli Enti Erogatori di servizi   socioassistenziali. La risorsa FHIR che descrive questa tipologia di   struttura è RLOrganizationL2.    |
 |MMG  |Medico di   Medicina Generale |
 |NAR  |Nuova   Anagrafe Regionale    |
+|NEA 116117|	Numero Europeo Armonizzato 116117|
 |NPRI |Nuova   Piattaforma Regionale di Integrazione|
 |PAI  |Piano   Assistenziale Individuale  |
 |PI   |Progetto Individuale|
