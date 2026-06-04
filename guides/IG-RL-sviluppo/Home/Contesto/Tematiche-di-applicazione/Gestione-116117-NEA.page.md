@@ -19,11 +19,10 @@ In caso di esito positivo restituisce l’identificativo univoco della richiesta
 In caso di esito negativo il profilo [RLOperationOutcomeNEA](Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcomeNEA.page.md) restituisce i dettegli dell’errore.
 
 
-{{render:guides/IG-RL-sviluppo/pics/nea.png, fig.cap="Flusso dati logico per l’invio di una richiesta di attivazione di un servizio socio-assistenziale alla piattaforma SGDT"}}
+{{render:guides/IG-RL-sviluppo/pics/nea1.png, fig.cap="Flusso dati logico per l’invio di una richiesta di attivazione di un servizio socio-assistenziale alla piattaforma SGDT"}}
 <p style="text-align: center;">Flusso dati logico per l’invio di una richiesta di attivazione di un servizio socio-assistenziale alla piattaforma SGDT</p>
 
-{{render:guides/IG-RL-sviluppo/pics/nea2.png, fig.cap="
-Flusso dati logico per la risposta da parte della piattaforma SGDT con l’esito dell’elaborazione del messaggio di richiesta"}}
+{{render:guides/IG-RL-sviluppo/pics/nea2.png, fig.cap="Flusso dati logico per la risposta da parte della piattaforma SGDT con l’esito dell’elaborazione del messaggio di richiesta"}}
 <p style="text-align: center;">
 Flusso dati logico per la risposta da parte della piattaforma SGDT con l’esito dell’elaborazione del messaggio di richiesta</p>
 
@@ -33,7 +32,6 @@ Il modello di interoperabilità FHIR REST viene utilizzato per richiedere alla p
 Il **richiedente** è l’applicativo di gestione 116117 NEA e la richiesta deve contenere, tra i parametri di ricerca, il codice generato dall'applicativo di gestione 116117 NEA quando invia la richiesta a SGDT e il codice generato da SGDT quando la richiesta è stata ricevuta correttamente, entrambi associati al profilo [RLServiceRequestServiziSocioAssistenziali](Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioAssistenziali.page.md).
 SGDT è l’**espositore** che risponde con il profilo [RLBundleStatoNEA](Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleStatoNEA.page.md) contenente il profilo [RLServiceRequestServiziSocioAssistenziali](Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioAssistenziali.page.md)i, nel quale è presente lo stato aggiornato della richiesta (*active* se richiesta è nello stato aperta; *completed*: se la richiesta è nello stato chiusa) e il profilo [RLPatientCittadino](Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientCittadino.page.md) contenente i dati anagrafici del paziente. 
 
-{{render:guides/IG-RL-sviluppo/pics/nea3.png, fig.cap="
-Flusso dati logico per la richiesta dello stato della richiesta alla piattaforma SGDT"}}
+{{render:guides/IG-RL-sviluppo/pics/nea3.png, fig.cap="Flusso dati logico per la richiesta dello stato della richiesta alla piattaforma SGDT"}}
 <p style="text-align: center;">
 Flusso dati logico per la richiesta dello stato della richiesta alla piattaforma SGDT</p>
