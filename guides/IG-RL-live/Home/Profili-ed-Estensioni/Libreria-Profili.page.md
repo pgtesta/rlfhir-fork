@@ -720,6 +720,96 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaMMG}}
           </td>
         </tr>
+        <tr>
+          <td>NEA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcomeNEA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a>
+          </td>
+          <td>
+            Profilo volto a contenere il dettaglio delle informazione relative all'elaborazione del messaggio.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeNEA}}
+          </td>
+        </tr>
+        <tr>
+          <td>NEA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleNEA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a descrivere il contenuto del Bundle inviato dall'applicativo di gestione 116117 NEA a SGDT.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleNEA}}
+          </td>
+        </tr>
+        <tr>
+          <td>NEA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/messageheader.html">MessageHeader</a>
+          </td>
+          <td>
+            Profilo volto a contenere le informazioni relative al messaggio scambiato tra l'applicativo di gestione 116117 NEA e SGDT.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderNEA}}
+          </td>
+        </tr>
+        <tr>
+          <td>NEA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDocumentReferenceDocumento.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+          </td>
+          <td>
+            Profilo volto a descrivere il documento caricato.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDocumentReferenceDocumento}}
+          </td>
+        </tr>
+        <tr>
+          <td>NEA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleRispostaNEA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a descrivere il contenuto del Bundle di risposta inviato da SGDT all'applicativo di gestione 116117 NEA.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleRispostaNEA}}
+          </td>
+        </tr>
+        <tr>
+          <td>NEA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLBundleStatoNEA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a>
+          </td>
+          <td>
+            Profilo volto a descrivere il contenuto del Bundle inviato da SGDT all'applicativo di gestione 116117 NEA.
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBundleStatoNEA}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
