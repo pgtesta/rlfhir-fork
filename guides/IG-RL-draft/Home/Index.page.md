@@ -15,25 +15,23 @@ Questa guida di implementazione fa riferimento all'ambiente di <b>test</b>, di c
 
 ## Novità
 
-La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, gestisce i seguenti concetti:
-
-- È stato descritto il nuovo scenario di cooperazione applicativa tra l’applicativo di gestione 1116117 NEA e SGDT per trasmettere alla rete delle COT in maniera integrata la richiesta di attivazione di un servizio socio-assistenziale. Nella sezione Contesto sono state aggiornate le pagine:
+La versione corrente della guida implementativa, che fa riferimento all'ultimo rilascio in ambiente di produzione, presenta le seguenti novità:
+- È stato descritto il nuovo scenario di cooperazione applicativa tra l'applicativo di gestione 1116117 NEA e SGDT per trasmettere alla rete delle COT in maniera integrata la richiesta di attivazione di un servizio socio-assistenziale. Nella sezione Contesto sono state aggiornate le pagine:
    - Panoramica di progetto;
    - Tematiche di applicazione;
    - Paradigmi di integrazione e API RESTful.
 - Nella sezione Profili ed Estensioni sono stati aggiunti i profili RLDocumentReferenceDocumento, RLMessageHeaderNEA, RLOperationOutcomeNEA, RLBundleNEA, RLBundleRispostaNEA e RLBundleStatoNEA.
-- Nella sezione Profili ed Estensioni sono stati aggiornati i profili RLServiceRequestServiziSocioAssistenziali, RLPatientCittadino, RLObservationEsitoValutazione, RLPractitionerRoleProfessionistaSanitario, RLPractitionerProfessionistaSanitario.
+- Nella sezione Profili ed Estensioni sono stati aggiornati i profili RLServiceRequestServiziSocioAssistenziali, RLPatientCittadino, RLPractitionerRoleProfessionistaSanitario, RLPractitionerProfessionistaSanitario.
 - Nella sezione Terminologia sono stati aggiornati i seguenti value-set:
    - DDC Desc L2;
    - SGDT Motivo Segnalazione;
-   - SGDT Valutazione;
    - Tipologia Evento Messaggio;
    - Errori Messaggio.
 - Nella sezione Esempi sono stati aggiunti i seguenti esempi:
-   - Esempio Bundle NEA di richiesta di attivazione di un servizio socio-assistenziale da parte dell’applicativo di gestione 116117 NEA;
+   - Esempio Bundle NEA di richiesta di attivazione di un servizio socio-assistenziale da parte dell'applicativo di gestione 116117 NEA;
    - Esempio Bundle Risposta NEA del messaggio con esito positivo;
    - Esempio Bundle Risposta NEA del messaggio con errore;
-   - Esempio Bundle Stato NEA per richiedere alla piattaforma SGDT lo Stato della richiesta da parte dell’applicativo di gestione 116117 NEA.
+   - Esempio Bundle Stato NEA per richiedere alla piattaforma SGDT lo Stato della richiesta da parte dell'applicativo di gestione 116117 NEA.
 
 
 
