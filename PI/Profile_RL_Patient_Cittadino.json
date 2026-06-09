@@ -246,8 +246,8 @@
         "id": "Patient.extension:luogoDiNascita",
         "path": "Patient.extension",
         "sliceName": "luogoDiNascita",
-        "short": "Luogo di nascita del cittadino",
-        "min": 1,
+        "short": "Luogo di nascita del cittadino. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -265,6 +265,35 @@
         "short": "Se il cittadino è nato in Italia il campo contiente il codice ISTAT del comune di nascita. Se il cittadino è nasto all'estero il campo contiente il codice \"999\" seguito dal codice ISTAT della nazione di nascita. Per gli apolidi o non rilevati il campo riporta il codice \"999999\".",
         "definition": "Stringa numerica di 6 cifre",
         "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:ASSTdiRiferimento",
+        "path": "Patient.extension",
+        "sliceName": "ASSTdiRiferimento",
+        "short": "ASST di riferimento del cittadino. Nel caso della chiamata NEA il campo è obbligatorio",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientASSTdiRiferimento"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Patient.extension:ASSTdiRiferimento.value[x]",
+        "path": "Patient.extension.value[x]",
+        "short": "Codice L1 dell'ASST di assistenza del cittadino",
+        "definition": "Stringa numerica di 6 caratteri",
         "min": 1,
         "type": [
           {
@@ -456,13 +485,13 @@
           ],
           "rules": "open"
         },
-        "short": "Numero di telefono e indirizzo mail del cittadino"
+        "short": "Numero di telefono e indirizzo mail del cittadino. Nel caso della chiamata NEA il numero di telefono del cittadino o del caregiver è obbligatorio"
       },
       {
         "id": "Patient.telecom:phone",
         "path": "Patient.telecom",
         "sliceName": "phone",
-        "short": "Numero di telefono del cittadino"
+        "short": "Numero di telefono del cittadino. Nel caso della chiamata NEA il numero di telefono del cittadino o del caregiver è obbligatorio"
       },
       {
         "id": "Patient.telecom:phone.system",
@@ -497,16 +526,16 @@
       {
         "id": "Patient.gender",
         "path": "Patient.gender",
-        "short": "Sesso del paziente",
-        "min": 1
+        "short": "Sesso del cittadino. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio",
+        "min": 0
       },
       {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
-        "short": "Data di nascita del paziente",
+        "short": "Data di nascita del cittadino. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio",
         "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
         "comment": "Il dato è detenuto dal SGDT",
-        "min": 1
+        "min": 0
       },
       {
         "id": "Patient.address",
@@ -520,9 +549,9 @@
           ],
           "rules": "open"
         },
-        "short": "Residenza anagrafica del cittadino",
+        "short": "Residenza anagrafica del cittadino. Nel caso delle cure domiciliari (C-DOM) il campo è obbligatorio",
         "definition": "Identificazione della residenza fiscale dell’assistito",
-        "min": 1,
+        "min": 0,
         "max": "3"
       },
       {
@@ -738,13 +767,13 @@
           ],
           "rules": "open"
         },
-        "short": "Numero di telefono e indirizzo mail del caregiver"
+        "short": "Numero di telefono e indirizzo mail del caregiver. Nel caso della chiamata NEA il numero di telefono del cittadino o del caregiver è obbligatorio"
       },
       {
         "id": "Patient.contact.telecom:phone",
         "path": "Patient.contact.telecom",
         "sliceName": "phone",
-        "short": "Numero di telefono del caregiver"
+        "short": "Numero di telefono del caregiver. Nel caso della chiamata NEA il numero di telefono del cittadino o del caregiver è obbligatorio"
       },
       {
         "id": "Patient.contact.telecom:phone.system",

@@ -62,7 +62,7 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Codifica della valutazione al quale il paziente è stato sottoposto",
-        "definition": "Nel caso della chiamata NEA usare il dato codificato VAL5 – Autonomia nella deambulazione"
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle tipologie di valutazioni specifiche contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide."
       },
       {
         "id": "Observation.code.coding.system",
@@ -168,20 +168,6 @@
         "type": [
           {
             "code": "integer"
-          }
-        ]
-      },
-      {
-        "id": "Observation.value[x]:valueBoolean",
-        "path": "Observation.value[x]",
-        "sliceName": "valueBoolean",
-        "short": "Nel caso della chiamata NEA corrisponde alla valutazione clinica del paziente sulla deambulazione",
-        "definition": "Il valore del campo è \"TRUE\" se il paziente è in grado di deambulare, \"FALSE\" se il paziente non è in grado di deambulare",
-        "comment": "Il dato è detenuto dal SGDT",
-        "max": "1",
-        "type": [
-          {
-            "code": "boolean"
           }
         ]
       },

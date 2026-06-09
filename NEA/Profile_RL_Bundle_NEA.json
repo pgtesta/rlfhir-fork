@@ -127,27 +127,6 @@
         ]
       },
       {
-        "id": "Bundle.entry:RLObservationEsitoValutazione",
-        "path": "Bundle.entry",
-        "sliceName": "RLObservationEsitoValutazione",
-        "short": "Profilo volto a descrivere l'esito della valutazione alla quale il paziente è stato sottoposto.",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Bundle.entry:RLObservationEsitoValutazione.resource",
-        "path": "Bundle.entry.resource",
-        "min": 1,
-        "type": [
-          {
-            "code": "Resource",
-            "profile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Bundle.entry:RLDocumentReferenceDocumento",
         "path": "Bundle.entry",
         "sliceName": "RLDocumentReferenceDocumento",
