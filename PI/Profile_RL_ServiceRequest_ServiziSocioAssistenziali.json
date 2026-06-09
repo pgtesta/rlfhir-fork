@@ -458,7 +458,7 @@
           ],
           "rules": "open"
         },
-        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il percorso di cure domiciliari del paziente. Nel caso di una chiamata NEA corrisponde al motivo della segnalazione",
+        "short": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo viene popolato con il percorso di cure domiciliari del paziente. Nel caso della chiamata NEA il campo è obbligatorio e corrisponde al motivo della segnalazione",
         "max": "2"
       },
       {
@@ -547,22 +547,6 @@
         "min": 1
       },
       {
-        "id": "ServiceRequest.reasonReference",
-        "path": "ServiceRequest.reasonReference",
-        "short": "Nel caso della chiamata NEA corrisponde alla valutazione clinica del paziente sulla deambulazione",
-        "definition": "Reference al profilo RLObservationEsitoValutazione",
-        "comment": "Il dato è detenuto dal SGDT",
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsitoValutazione"
-            ]
-          }
-        ]
-      },
-      {
         "id": "ServiceRequest.supportingInfo",
         "path": "ServiceRequest.supportingInfo",
         "short": "Nel caso della chiamata NEA corrisponde all'allegato del referto del medico di continuità assistenziale",
@@ -581,7 +565,7 @@
       {
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
-        "short": "Note / commenti aggiuntivi",
+        "short": "Note / commenti aggiuntivi. Nel caso della chiamata NEA il campo è obbligatorio e deve essere specificato se il paziente è in grado di deambulare",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1"
