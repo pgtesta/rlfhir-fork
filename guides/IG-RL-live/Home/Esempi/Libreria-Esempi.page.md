@@ -419,6 +419,66 @@
       <td>Esempio profilo RLMessageHeaderMMG MMGpicMMG</td>
       <td>{{link:Examples/Example_RLMessageHeaderMMG_MMGpicMMG.json}}</td>
     </tr>
+    <tr>
+      <td>NEA</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle di richiesta inviato dall'applicativo di gestione 116117 NEA a SGDT</td>
+      <td>{{link:Examples/Example_Bundle_NEA.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle Risposta del messaggio con esito positivo</td>
+      <td>{{link:Examples/Example_Bundle_Risposta_NEA_ok.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle Risposta del messaggio con errore</td>
+      <td>{{link:Examples/Example_Bundle_Risposta_NEA_ko.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle di stato con richiesta attiva</td>
+      <td>{{link:Examples/Example_Bundle_StatoNEA_attiva.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>Bundle</td>
+      <td>Esempio Bundle di stato con richiesta chiusa</td>
+      <td>{{link:Examples/Example_Bundle_StatoNEA_chiusa.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>OperationOutcome</td>
+      <td>Esempio profilo RLOperationOutcomeNEA risposta positiva</td>
+      <td>{{link:Examples/Example_RL_OperationOutcomeNEA_Positiva.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>OperationOutcome</td>
+      <td>Esempio profilo RLOperationOutcomeNEA risposta negativa</td>
+      <td>{{link:Examples/Example_RL_OperationOutcomeNEA_Negativa.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>MessageHeader</td>
+      <td>Esempio profilo RLMessageHeaderNEA risposta positiva</td>
+      <td>{{link:Examples/Example_RLMessageHeaderNEA_positiva.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>MessageHeader</td>
+      <td>Esempio profilo RLMessageHeaderNEA risposta negativa</td>
+      <td>{{link:Examples/Example_RLMessageHeaderNEA_negativa.json}}</td>
+    </tr>
+    <tr>
+      <td>NEA</td>
+      <td>DocumentReference</td>
+      <td>Esempio del profilo RLDocumentReferenceDocumento</td>
+      <td>{{link:Examples/Example_RL_DocumentReference_Documento.json}}</td>
+    </tr>
   </tbody>
 </table>
   </body>
