@@ -53,7 +53,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-  {{link:RLDocumentReferenceDocumento}}
+  {{link:a1b2c3d4-e5f6-7890-abcd-ef1234567890}}
 <br>
 </div>
 
