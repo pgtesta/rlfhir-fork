@@ -74,6 +74,7 @@
       {
         "id": "Bundle.entry:RLMessageHeaderNEA.resource",
         "path": "Bundle.entry.resource",
+        "short": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a href=\"https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page\">Link</a></div>",
         "min": 1,
         "type": [
           {
