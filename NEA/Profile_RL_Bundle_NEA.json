@@ -74,8 +74,7 @@
       {
         "id": "Bundle.entry:RLMessageHeaderNEA.resource",
         "path": "Bundle.entry.resource",
-        "contentReference": "https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page",
-        "definition": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a href=\"https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page\">Link</a></div>",
+        "definition": "[Link](https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page), {{pagelink:Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page.md}}",
         "min": 1,
         "type": [
           {
