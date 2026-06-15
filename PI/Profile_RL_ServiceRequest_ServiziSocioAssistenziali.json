@@ -286,7 +286,7 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Codice e descrizione della tipologia di servizio socioassistenziale da attivare",
-        "definition": "Nel caso della chiamata NEA corrisponde al valore fisso \"NEA\"",
+        "definition": "Nel caso della chiamata NEA corrisponde al valore fisso \"NEA\" - \"PRESA IN CARICO CHIAMATA NEA 116117\"",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia del servizio socioassistenziale erogato dall’Ente contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "min": 1
       },
@@ -508,7 +508,7 @@
         "path": "ServiceRequest.reasonCode",
         "sliceName": "motivoSegnalazione",
         "short": "Nel caso di una chiamata NEA corrisponde al motivo della segnalazione",
-        "definition": "Nel caso della chiamata NEA corrisponde al valore fisso \"Chiamata NEA\"",
+        "definition": "Nel caso della chiamata NEA corrisponde al valore fisso \"18\" - Contatto paziente NEA 116117",
         "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella del motivo della segnalazione contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
         "max": "1"
       },
@@ -565,7 +565,7 @@
       {
         "id": "ServiceRequest.note",
         "path": "ServiceRequest.note",
-        "short": "Note / commenti aggiuntivi. Nel caso della chiamata NEA il campo è obbligatorio e deve essere specificato se il paziente è in grado di deambulare",
+        "short": "Note / commenti aggiuntivi. Nel caso di chiamata NEA, inserire un testo descrittivo della valutazione del bisogno che ha motivato l'invio alla COT. Il testo verrà letto dall'operatore COT al ricevimento della segnalazione",
         "definition": "Stringa alfanumerica al più di 1000 caratteri",
         "comment": "Il dato è detenuto dal SGDT",
         "max": "1"
