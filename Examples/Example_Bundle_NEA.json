@@ -59,7 +59,7 @@
                         {
                             "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
                             "code": "NEA",
-                            "display": "Chiamata NEA"
+                            "display": "PRESA IN CARICO CHIAMATA NEA 116117"
                         }
                     ]
                 },
@@ -75,8 +75,8 @@
                         "coding": [
                             {
                                 "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
-                                "code": "01",
-                                "display": "Chiamata NEA"
+                                "code": "18",
+                                "display": "Contatto paziente NEA 116117"
                             }
                         ]
                     }
