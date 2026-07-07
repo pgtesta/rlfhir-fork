@@ -76,6 +76,7 @@
         "id": "Bundle.entry:RLMessageHeaderNEA.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
+        "definition": "[Link della risorsa](https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page.md?version=current)",
         "type": [
           {
             "code": "Resource",
@@ -97,6 +98,7 @@
         "id": "Bundle.entry:RLOperationOutcomeNEA.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
+        "definition": "[Link della risorsa](https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLOperationOutcomeNEA.page.md?version=current)",
         "type": [
           {
             "code": "Resource",

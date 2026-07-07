@@ -76,6 +76,7 @@
         "id": "Bundle.entry:RLServiceRequestServiziSocioAssistenziali.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
+        "definition": "[Link della risorsa](https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestServiziSocioAssistenziali.page.md?version=current)",
         "type": [
           {
             "code": "Resource",

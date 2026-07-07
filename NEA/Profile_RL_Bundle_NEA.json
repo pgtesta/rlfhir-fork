@@ -74,7 +74,7 @@
       {
         "id": "Bundle.entry:RLMessageHeaderNEA.resource",
         "path": "Bundle.entry.resource",
-        "definition": "[Link](https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page.md?version=current)",
+        "definition": "[Link della risorsa](https://simplifier.net/guide/ig-rlfhir/Home/Profili-ed-Estensioni/Raccolta-profili/RLMessageHeaderNEA.page.md?version=current)",
         "min": 1,
         "type": [
           {
