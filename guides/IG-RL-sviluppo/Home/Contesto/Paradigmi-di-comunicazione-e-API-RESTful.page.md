@@ -2,8 +2,10 @@
 - [1. Header](#header)
 - [2. Paradigma FHIR RESTful](#paradigma-fhir-restful)
   - [2.1 EndPoint FHIR](#endpoint-fhir)
+    - [Endpoint dedicato](#endpoint-dedicato)
 - [3. Paradigma FHIR messaging](#paradigma-fhir-messaging)
   - [3.1 EndPoint FHIR](#endpoint-fhir-1)
+    - [Endpoint dedicato](#endpoint-dedicato-1)
   
 
 # 1. Header 
@@ -69,6 +71,12 @@ L'elenco delle API esposte è:
 |GET|<base_API_Ente>/_Location_|RLLocationPLOLetto|Ente Erogatore|
 |GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestServiziSocioAssistenziali|NEA|
 
+##### Endpoint dedicato
+
+Per l'integrazione con l'applicativo di gestione 116117 NEA, la chiamata per la verifica dello stato di una segnalazione deve essere effettuata al seguente endpoint:
+
+        https://api.integrazione.lispa.it/c/operatori.siss/nea/v1.0.0/verifica-stato-segnalazione/ServiceRequest?codiceNEA=NEA-2026-00001&codiceSGDT=SOC-00000000
+
 # 3. Paradigma FHIR messaging
 Il paradigma scelto per lo scambio dei dati con SGDT è quello del FHIR messaging. Il paradigma messaging prevede un sender, un receiver, un evento di trigger che innesca la creazione e l’invio di un messaggio, un messaggio di richiesta e uno messaggio di risposta.
 
@@ -113,3 +121,10 @@ dove:
 - <base_API_manager> è l’indirizzo radice del servizio che sarà esposto tramite API Manager;
 - *message* rappresenta il <servizio_ricevente>, ovvero il nome del servizio a cui indirizzare i messaggi;
 - *$process-message* è l’operazione FHIR esposta.
+
+##### Endpoint dedicato
+
+Per l'integrazione con l'applicativo di gestione 116117 NEA, la chiamata per l'invio di una nuova segnalazione deve essere effettuata al seguente endpoint:
+
+        https://api.integrazione.lispa.it/c/operatori.siss/nea/v1.0.0/nuova-segnalazione
+
