@@ -3,6 +3,8 @@
 - [RLServiceRequestServiziSocioAssistenziali](#rlservicerequestservizisocioassistenziali)
   - [Descrizione](#descrizione)
   - [Tipologie di ricerca](#tipologie-di-ricerca)
+    - [1. Stato della richiesta](#1-stato-della-richiesta)
+      - [Endpoint dedicato](#endpoint-dedicato)
   - [Search parameter](#search-parameter)
   - [ValueSet](#valueset)
 
@@ -79,9 +81,11 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l'implementazi
 | **BASE URL** | https://<endpoint_SGDT>/richiediStato|
 | **PARAMETRI** | Identifier, _profile, _include |
 
-A titolo esemplificativo, la chiamata:
+#### Endpoint dedicato
 
-/ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA|1234&_include=ServiceRequest:subject
+Per l'integrazione con l'applicativo di gestione 116117 NEA, la chiamata per la verifica dello stato di una segnalazione deve essere effettuata al seguente endpoint:
+
+        https://api.integrazione.lispa.it/c/operatori.siss/nea/v1.0.0/verifica-stato-segnalazione/ServiceRequest?codiceNEA=NEA-2026-00001&codiceSGDT=SOC-00000000
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
