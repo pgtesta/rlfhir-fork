@@ -24,7 +24,7 @@
         "min": 0,
         "max": "1"
       },
-        {
+      {
         "id": "AllergyIntolerance.clinicalStatus.coding",
         "path": "AllergyIntolerance.clinicalStatus.coding",
         "min": 0,
@@ -42,15 +42,15 @@
         "path": "AllergyIntolerance.clinicalStatus.coding.system",
         "short": "Identificativo del sistema di codifica",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
       },
       {
         "id": "AllergyIntolerance.clinicalStatus.coding.version",
         "path": "AllergyIntolerance.clinicalStatus.coding.version",
         "short": "Versione del sistema di codifica",
         "min": 0,
-        "max": "1",
-        "fixedString": "LOINC"
+        "max": "1"
       },
       {
         "id": "AllergyIntolerance.clinicalStatus.coding.display",
@@ -60,8 +60,8 @@
         "max": "1"
       },
       {
-        "id": "AllergyIntolerance.onset[x]",
-        "path": "AllergyIntolerance.onset[x]",
+        "id": "AllergyIntolerance.onsetPeriod",
+        "path": "AllergyIntolerance.onsetPeriod",
         "short": "Periodo di insorgenza dell'allergia/intolleranza",
         "definition": "Periodo di insorgenza dell'allergia/intolleranza",
         "min": 0,
