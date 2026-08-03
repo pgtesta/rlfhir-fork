@@ -111,6 +111,21 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
           </td>
         </tr>
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive un'azienda
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
