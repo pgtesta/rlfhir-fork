@@ -88,7 +88,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
             ]
           }
         ]
@@ -205,13 +205,6 @@
         "max": "1"
       },
       {
-        "id": "AllergyIntolerance.reaction.onset",
-        "path": "AllergyIntolerance.reaction.onset",
-        "short": "Data di insorgenza della reazione",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "AllergyIntolerance.reaction.manifestation",
         "path": "AllergyIntolerance.reaction.manifestation",
         "short": "Sintomi o segni della reazione",
@@ -252,8 +245,7 @@
         "path": "AllergyIntolerance.reaction.manifestation.coding.version",
         "short": "Versione del sistema di codifica",
         "min": 0,
-        "max": "1",
-        "fixedString": "ICD9-CM"
+        "max": "1"
       },
       {
         "id": "AllergyIntolerance.reaction.manifestation.coding.display",
@@ -266,6 +258,13 @@
         "id": "AllergyIntolerance.reaction.manifestation.text",
         "path": "AllergyIntolerance.reaction.manifestation.text",
         "short": "Testo libero del sintomo",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.onset",
+        "path": "AllergyIntolerance.reaction.onset",
+        "short": "Data di insorgenza della reazione",
         "min": 0,
         "max": "1"
       }
