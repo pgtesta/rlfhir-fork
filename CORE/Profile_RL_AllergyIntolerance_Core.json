@@ -106,6 +106,47 @@
         "max": "*"
       },
       {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "short": "Gravita' potenziale della reazione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.note.text",
+        "path": "AllergyIntolerance.note.text",
+        "short": "Note aggiuntive in testo libero",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "Paziente a cui e' riferita l'allergia/intolleranza",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction",
+        "path": "AllergyIntolerance.reaction",
+        "min": 0,
+        "max": "*"
+      },
+      {
         "id": "AllergyIntolerance.reaction.substance",
         "path": "AllergyIntolerance.reaction.substance",
         "short": "Agente che ha causato la reazione",
@@ -216,33 +257,6 @@
         "path": "AllergyIntolerance.reaction.manifestation.text",
         "short": "Testo libero del sintomo",
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "AllergyIntolerance.criticality",
-        "path": "AllergyIntolerance.criticality",
-        "short": "Gravita' potenziale della reazione",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "AllergyIntolerance.note",
-        "path": "AllergyIntolerance.note",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "AllergyIntolerance.note.text",
-        "path": "AllergyIntolerance.note.text",
-        "short": "Note aggiuntive in testo libero",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "AllergyIntolerance.patient",
-        "path": "AllergyIntolerance.patient",
-        "short": "Paziente a cui e' riferita l'allergia/intolleranza",
-        "min": 1,
         "max": "1"
       }
     ]
