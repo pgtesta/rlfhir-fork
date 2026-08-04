@@ -1,7 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ServiceRequestCore",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/ServiceRequestCore",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore",
   "name": "RLServiceRequestCore",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -38,12 +37,19 @@
         "path": "ServiceRequest.identifier.assigner.display",
         "short": "Nome dell'organizzazione che assegna l'identificatore",
         "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner",
+        "path": "ServiceRequest.identifier.assigner",
+        "short": "Organizzazione che assegna l'identificatore",
+        "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.example.org/StructureDefinition/OrganizationCore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
             ]
           }
         ]
@@ -74,7 +80,15 @@
         "path": "ServiceRequest.subject",
         "short": "Soggetto a cui è riferita la richiesta",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.authoredOn",
@@ -93,7 +107,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.example.org/StructureDefinition/PractitionerCore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
             ]
           }
         ]
@@ -108,7 +122,22 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://fhir.example.org/StructureDefinition/PractitionerRoleCore"
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "short": "Episodio clinico in cui è stata fatta la richiesta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
             ]
           }
         ]
