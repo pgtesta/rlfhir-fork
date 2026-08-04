@@ -59,6 +59,56 @@
         "max": "1"
       },
       {
+        "id": "AllergyIntolerance.type",
+        "path": "AllergyIntolerance.type",
+        "short": "allergy | intolerance - Tipo di reazione",
+        "definition": "Definisce se la risorsa rappresenta un'allergia o un'intolleranza."
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+         "short": "Categoria dell'agente",
+        "definition": "Categoria dell'agente (food | medication | environment | biologic).",
+        "min": 0
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "short": "Gravita' potenziale della reazione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "Paziente a cui e' riferita l'allergia/intolleranza",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.encounter",
+        "path": "AllergyIntolerance.encounter",
+        "short": "Episodio clinico in cui è stata fatta la richiesta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
+            ]
+          }
+        ]
+      },
+      {
         "id": "AllergyIntolerance.onsetPeriod",
         "path": "AllergyIntolerance.onsetPeriod",
         "short": "Periodo di insorgenza dell'allergia/intolleranza",
@@ -88,30 +138,6 @@
         "max": "1"
       },
       {
-        "id": "AllergyIntolerance.type",
-        "path": "AllergyIntolerance.type",
-        "short": "Tipo di condizione",
-        "definition": "Tipo di condizione (allergy | intolerance).",
-        "comment": "La codifica FHIR base usa i valori minuscoli 'allergy' e 'intolerance'.",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "AllergyIntolerance.category",
-        "path": "AllergyIntolerance.category",
-        "short": "Categoria dell'agente",
-        "definition": "Categoria dell'agente (food | medication | environment | biologic).",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "AllergyIntolerance.criticality",
-        "path": "AllergyIntolerance.criticality",
-        "short": "Gravita' potenziale della reazione",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "AllergyIntolerance.note",
         "path": "AllergyIntolerance.note",
         "min": 1,
@@ -123,21 +149,6 @@
         "short": "Note aggiuntive in testo libero",
         "min": 1,
         "max": "1"
-      },
-      {
-        "id": "AllergyIntolerance.patient",
-        "path": "AllergyIntolerance.patient",
-        "short": "Paziente a cui e' riferita l'allergia/intolleranza",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ]
       },
       {
         "id": "AllergyIntolerance.reaction",
