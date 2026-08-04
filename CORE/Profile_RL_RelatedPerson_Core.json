@@ -1,0 +1,166 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLRelatedPersonCore",
+  "name": "RLRelatedPersonCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.name",
+        "path": "RelatedPerson.name",
+        "short": "Dati anagrafici del soggetto associato al paziente",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "RelatedPerson.name.family",
+        "path": "RelatedPerson.name.family",
+        "short": "Cognome",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.name.given",
+        "path": "RelatedPerson.name.given",
+        "short": "Nome",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.patient",
+        "path": "RelatedPerson.patient",
+        "short": "Riferimento al paziente a cui il soggetto è associato",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier",
+        "path": "RelatedPerson.identifier",
+        "short": "Identificativo univoco del soggetto associato al paziente",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "short": "Tipo di relazione con il paziente",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.code",
+        "path": "RelatedPerson.relationship.coding.code",
+        "short": "Codice che indica il tipo di relazione con il paziente",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.system",
+        "path": "RelatedPerson.relationship.coding.system",
+        "short": "Sistema di codifica utilizzato",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.version",
+        "path": "RelatedPerson.relationship.coding.version",
+        "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.display",
+        "path": "RelatedPerson.relationship.coding.display",
+        "short": "Descrizione leggibile della relazione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address",
+        "path": "RelatedPerson.address",
+        "short": "Indirizzo",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "RelatedPerson.address.country",
+        "path": "RelatedPerson.address.country",
+        "short": "Paese di residenza",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address.state",
+        "path": "RelatedPerson.address.state",
+        "short": "Regione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address.district",
+        "path": "RelatedPerson.address.district",
+        "short": "Provincia",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address.city",
+        "path": "RelatedPerson.address.city",
+        "short": "Città",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address.postalCode",
+        "path": "RelatedPerson.address.postalCode",
+        "short": "CAP",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address.line",
+        "path": "RelatedPerson.address.line",
+        "short": "Via, numero civico",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.address.line.extension:censusTract",
+        "path": "RelatedPerson.address.line.extension",
+        "sliceName": "censusTract",
+        "short": "Estensione per il codice di censimento",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-censusTract"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.telecom",
+        "path": "RelatedPerson.telecom",
+        "short": "Recapiti del soggetto",
+        "min": 0,
+        "max": "*"
+      }
+    ]
+  }
+}
