@@ -1,0 +1,118 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ServiceRequestCore",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/ServiceRequestCore",
+  "name": "RLServiceRequestCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "short": "Identificatore univoco della richiesta (es. richiesta di ricovero)",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "ServiceRequest.identifier.system",
+        "path": "ServiceRequest.identifier.system",
+        "short": "Sistema di codifica dell'identificatore",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.identifier.value",
+        "path": "ServiceRequest.identifier.value",
+        "short": "Valore dell'identificatore",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner.display",
+        "path": "ServiceRequest.identifier.assigner.display",
+        "short": "Nome dell'organizzazione che assegna l'identificatore",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.example.org/StructureDefinition/OrganizationCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "short": "Priorità della richiesta",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "short": "Stato della richiesta",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "short": "Serve a distinguere il grado di formalità e vincolatività della richiesta di farmaco",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "short": "Soggetto a cui è riferita la richiesta",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "short": "Data e ora in cui la richiesta è stata creata",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "short": "Professionista sanitario incaricato di eseguire il servizio richiesto",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.example.org/StructureDefinition/PractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "short": "Da chi è stata fatta la richiesta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.example.org/StructureDefinition/PractitionerRoleCore"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
