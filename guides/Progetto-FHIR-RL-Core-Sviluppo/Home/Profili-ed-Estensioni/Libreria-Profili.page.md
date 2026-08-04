@@ -37,6 +37,111 @@
         </tr>
       </thead>
       <tbody id="myTable">
+       <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntoleranceCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a>
+          </td>
+          <td>
+            Profilo che descrive le allergie e le intolleranze
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceCore}}
+          </td>
+        </tr>
+       <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+          </td>
+          <td>
+            Profilo che descrive le patologie di un paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCore}}
+          </td>
+        </tr>
+       <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+          </td>
+          <td>
+            Profilo che descrive gli episodi clinici
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore}}
+          </td>
+        </tr>     
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+          </td>
+          <td>
+            Profilo che descrive una struttura fisica 
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}
+          </td>    
+        </tr>           
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCorePrecedentiEsamiEseguiti.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive i precedenti esami eseguiti
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCorePrecedentiEsamiEseguiti}}
+          </td>    
+        </tr>          
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationStoriaClinicaCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la storia clinica
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStoriaClinica}}
+          </td>    
+        </tr>      
+        <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive un'azienda
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
+          </td>
+        </tr>
         <tr>
           <td>CORE</td>
           <td>
@@ -81,49 +186,20 @@
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore}}
           </td>
-        </tr>        
+        </tr>   
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLLocationCore.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestCore.page.md}}
           </td>
           <td>
-            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+            <a href="http://hl7.org/fhir/R4/organization.html">ServiceRequest</a>
           </td>
           <td>
-            Profilo che descrive una struttura fisica 
+            Profilo che descrive una richiesta
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}
-          </td>    
-        <tr>
-          <td>CORE</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationCore.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
-          </td>
-          <td>
-            Profilo che descrive un'azienda
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
-          </td>
-        </tr>
-        <tr>
-          <td>CORE</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationCore.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
-          </td>
-          <td>
-            Profilo che descrive un'azienda
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore}}
           </td>
         </tr>
       </tbody>
