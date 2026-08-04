@@ -1,7 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "AllergyIntoleranceCore",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/AllergyIntoleranceCore",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceCore",
   "name": "RLAllergyIntoleranceCore",
   "status": "draft",
   "date": "2026-08-03",
