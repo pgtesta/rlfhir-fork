@@ -1,15 +1,15 @@
-# RLFamMembHistCore
+# RLFamilyMemberHistoryCore
 
-- [RLFamMembHistCore](#rllocationcore)
+- [RLFamilyMemberHistoryCore](#rllocationcore)
   - [Descrizione](#descrizione)
   - [ValueSet](#valueset)
 
 
 ## Descrizione
 
-Il profilo RLFamMembHistCore è stato strutturato a partire dalla risorsa generica FHIR [FamilyMemberHistory](http://hl7.org/fhir/R4/familymemberhistory.html) volta a contenere le informazioni relative alla storia clinica dei familiari del paziente in Regione Lombardia.
+Il profilo RLFamilyMemberHistoryCore è stato strutturato a partire dalla risorsa generica FHIR [FamilyMemberHistory](http://hl7.org/fhir/R4/familymemberhistory.html) volta a contenere le informazioni relative alla storia clinica dei familiari del paziente in Regione Lombardia.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore}}.
 
 <br>
 <div class="tab">
@@ -24,32 +24,32 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamMembHistCore, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
@@ -63,7 +63,7 @@ StoriaClinicaFamiliare: {{link:}}
 
 ## ValueSet
 
-Nella seguente tabella sono elencati i value set relativi al profilo RLFamMembHistCore:
+Nella seguente tabella sono elencati i value set relativi al profilo RLFamilyMemberHistoryCore:
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
