@@ -1,0 +1,23 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "rl-FamilyMemberHistory-001",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore"
+    ]
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+  },
+  "relationship": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "version": "RoleCode",
+        "code": "FTH",
+        "display": "Father"
+      }
+    ]
+  }
+}
