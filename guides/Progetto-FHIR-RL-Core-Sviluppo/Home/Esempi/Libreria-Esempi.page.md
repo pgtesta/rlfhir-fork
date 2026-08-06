@@ -82,6 +82,12 @@
       <td>Richiesta di servizio sanitario</td>
       <td>{{link:ServiceRequest/rl-ServiceRequest-001}}</td>
     </tr>
+     <tr>
+      <td>CORE</td>
+      <td>Observation-PrecedentiEsamiEseguiti</td>
+      <td>Precedenti esami eseguiti del paziente</td>
+      <td>{{link:Observation/rl-ObservationCorePrecedentiEsamiEseguiti-001}}</td>
+    </tr>
   </tbody>
 </table>
   </body>
