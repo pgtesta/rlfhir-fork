@@ -130,6 +130,21 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "short": "Episodio clinico in cui è stata fatta la richiesta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
+            ]
+          }
+        ]
       }
     ]
   }
