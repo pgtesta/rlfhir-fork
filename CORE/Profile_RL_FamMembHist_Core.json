@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore",
+  "name": "RLFamilyMemberHistoryCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.status",
+        "path": "FamilyMemberHistory.status",
+        "short": "Stato della risorsa",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "completed"
+      },
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "short": "Relazione del familiare con il paziente (es. padre, madre)",
+        "min": 1,
+        "max": "1",
+        "binding": {  
+            "strength": "required",  
+            "valueSet": "https://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html"
+        }
+      },
+      {
+        "id": "FamilyMemberHistory.relationship.coding.code",
+        "path": "FamilyMemberHistory.relationship.coding.code",
+        "short": "Codice che rappresenta il tipo di parentela",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "FamilyMemberHistory.relationship.coding.system",
+        "path": "FamilyMemberHistory.relationship.coding.system",
+        "short": "Sistema di codifica utilizzato per il codice di parentela",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "FamilyMemberHistory.relationship.coding.version",
+        "path": "FamilyMemberHistory.relationship.coding.version",
+        "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "FamilyMemberHistory.relationship.coding.display",
+        "path": "FamilyMemberHistory.relationship.coding.display",
+        "short": "Descrizione testuale della parentela",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "short": "Riferimento al paziente associato alla risorsa",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
