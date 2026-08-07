@@ -36,6 +36,7 @@
         "id": "ServiceRequest.identifier.assigner.display",
         "path": "ServiceRequest.identifier.assigner.display",
         "short": "Nome dell'organizzazione che assegna l'identificatore",
+        "definition": "Alternativa alla reference",
         "min": 0,
         "max": "1"
       },
