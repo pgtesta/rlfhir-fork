@@ -139,7 +139,7 @@
             Profilo che descrive la storia clinica
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStoriaClinica}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreStoriaClinica}}
           </td>    
         </tr>      
         <tr>
