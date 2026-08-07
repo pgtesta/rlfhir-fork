@@ -109,8 +109,8 @@
         ]
       },
       {
-        "id": "AllergyIntolerance.onsetPeriod",
-        "path": "AllergyIntolerance.onsetPeriod",
+        "id": "AllergyIntolerance.onset[x]",
+        "path": "AllergyIntolerance.onset[x]",
         "short": "Periodo di insorgenza dell'allergia/intolleranza",
         "definition": "Periodo di insorgenza dell'allergia/intolleranza",
         "min": 0,
