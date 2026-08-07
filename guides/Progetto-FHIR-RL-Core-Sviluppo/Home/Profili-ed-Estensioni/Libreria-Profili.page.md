@@ -55,7 +55,7 @@
        <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionCore.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionProblem.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
@@ -82,6 +82,21 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore}}
           </td>
         </tr>     
+       <tr>
+          <td>CORE</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLFamMembHistCore.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/familymemberhistory.html">FamilyMemberHistory</a>
+          </td>
+          <td>
+            Profilo che descrive l'anamnesi familiare
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore}}
+          </td>
+        </tr>     
         <tr>
           <td>CORE</td>
           <td>
@@ -100,7 +115,7 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCorePrecedentiEsamiEseguiti.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationParametri.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -115,7 +130,7 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationStoriaClinicaCore.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationStoriaClinica.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
