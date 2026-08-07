@@ -54,7 +54,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-StoriaClinicaFamiliare: {{link:}}
+StoriaClinicaFamiliare: {{link:FamilyMemberHistory/rl-familymemberHistory-001}}
 
 <br>
 </div>
@@ -67,4 +67,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLFamilyMem
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| relationship    | Relazione del familiare con il paziente| La codifica è definita dal Valueset {{link:https://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html}}
+| relationship    | Relazione del familiare con il paziente| La codifica è definita dal Valueset [Role Code](https://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html)

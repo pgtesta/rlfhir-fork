@@ -17,6 +17,15 @@
         "id": "Observation",
         "path": "Observation"
       },
+      
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Indica lo stato dell'osservazione",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "final"
+      },
       {
         "id": "Observation.code",
         "path": "Observation.code",
@@ -28,6 +37,7 @@
       {
         "id": "Observation.code.coding",
         "path": "Observation.code.coding",
+        "short": "Codifica dell'esame eseguito",
         "min": 0,
         "max": "1"
       },
@@ -60,8 +70,39 @@
         "max": "1"
       },
       {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Soggetto a cui si riferisce l'osservazione",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "short": "Episodio clinico in cui è stata fatta la richiesta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "short": "Data e ora clinicamente rilevanti per l'osservazione",
         "min": 0,
         "max": "1",
         "type": [
@@ -107,44 +148,6 @@
         "short": "Valore associato all'esame eseguito",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "short": "Indica lo stato dell'osservazione",
-        "min": 1,
-        "max": "1",
-        "fixedCode": "final"
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "Soggetto a cui si riferisce l'osservazione",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.encounter",
-        "path": "Observation.encounter",
-        "short": "Episodio clinico in cui è stata fatta la richiesta",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
-            ]
-          }
-        ]
       }
     ]
   }
