@@ -68,4 +68,4 @@ Nella seguente tabella sono elencati i value set relativi al profilo RLAllergyIn
 
 | Nome | Descrizione | Riferimento al dettaglio della codifica |
 |---|---|---|
-| clinicalStatus    | Stato clinico dell'allergia o intolleranza| La codifica è definita dal Valueset {{link: http://hl7.org/fhir/ValueSet/allergyintolerance-clinical}}
+| clinicalStatus    | Stato clinico dell'allergia o intolleranza| La codifica è definita dal Valueset [Stato clinico dell'allergia](http://hl7.org/fhir/ValueSet/allergyintolerance-clinical.html)
