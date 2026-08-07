@@ -102,6 +102,7 @@
       {
         "id": "Condition.evidence",
         "path": "Condition.evidence",
+        "short": "Riferimento alle evidenze cliniche che supportano la condizione",
         "min": 0,
         "max": "*"
       },
