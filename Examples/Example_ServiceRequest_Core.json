@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "rl-ServiceRequest-001",
+  "id": "rl-servicerequest-001",
   "meta": {
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"
@@ -23,7 +23,7 @@
   },
   "authoredOn": "2023-06-01T10:30:00+02:00",
   "requester": {
-    "reference": "PractitionerRole/esempio-PractitionerRole-core"
+    "reference": "PractitionerRole/rl-practitionerrole-core"
   },
   "performer": [
     {
@@ -31,6 +31,6 @@
     }
   ],
   "encounter": {
-    "reference": "Encounter/esempio-Encounter-core"
+    "reference": "Encounter/rl-encounter-ambulatoriale-001"
   }
 }

@@ -56,7 +56,7 @@
       <td>CORE</td>
       <td>PractitionerRole</td>
       <td>Infermiere</td>
-      <td>{{link:PractitionerRole/esempio-practitionerrole-core}}</td>
+      <td>{{link:PractitionerRole/esempio-PractitionerRole-core}}</td>
     </tr>
     <tr>
       <td>CORE</td>
@@ -68,13 +68,13 @@
       <td>CORE</td>
       <td>Location</td>
       <td>Struttura fisica</td>
-      <td>{{link:Location/esempio-location-core-base}}</td>
+      <td>{{link:Location/esempio-Location-CORE-base}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>Organization</td>
       <td>Azienda sanitaria</td>
-      <td>{{link:Organization/esempio-organization-core}}</td>
+      <td>{{link:Organization/esempio-Organization-core}}</td>
     </tr>
     <tr>
       <td>CORE</td>
@@ -108,15 +108,15 @@
     </tr>
     <tr>
       <td>CORE</td>
-      <td>Observation</td>
+      <td>Observation-PrecedentiEsamiEseguiti</td>
       <td>Precedenti esami eseguiti del paziente</td>
       <td>{{link:Observation/rl-observation-precedentiesamieseguiti-001}}</td>
     </tr>
-     <tr>
+    <tr>
       <td>CORE</td>
-      <td>Observation</td>
-      <td>Storia Clinica Del Paziente</td>
-      <td>{{link:Observation/rl-observation-storia-clinica}}</td>
+      <td>Observation-StoriaClinica</td>
+      <td>Storia clinica del paziente</td>
+      <td>{{link:Observation/rl-observation-storiaclinica-001}}</td>
     </tr>
   </tbody>
 </table>

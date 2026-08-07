@@ -1,6 +1,6 @@
 {
   "resourceType": "FamilyMemberHistory",
-  "id": "rl-FamilyMemberHistory-001",
+  "id": "rl-familymemberhistory-001",
   "meta": {
     "profile": [
       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore"
