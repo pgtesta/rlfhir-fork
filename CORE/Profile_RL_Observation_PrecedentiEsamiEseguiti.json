@@ -17,7 +17,6 @@
         "id": "Observation",
         "path": "Observation"
       },
-      
       {
         "id": "Observation.status",
         "path": "Observation.status",
@@ -42,13 +41,6 @@
         "max": "1"
       },
       {
-        "id": "Observation.code.coding.code",
-        "path": "Observation.code.coding.code",
-        "short": "Valore del codice",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "Observation.code.coding.system",
         "path": "Observation.code.coding.system",
         "short": "Sistema di codifica",
@@ -59,6 +51,13 @@
         "id": "Observation.code.coding.version",
         "path": "Observation.code.coding.version",
         "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "short": "Valore del codice",
         "min": 0,
         "max": "1"
       },

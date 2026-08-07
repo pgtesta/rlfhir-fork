@@ -62,13 +62,6 @@
         "max": "*"
       },
       {
-        "id": "RelatedPerson.relationship.coding.code",
-        "path": "RelatedPerson.relationship.coding.code",
-        "short": "Codice che indica il tipo di relazione con il paziente",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "RelatedPerson.relationship.coding.system",
         "path": "RelatedPerson.relationship.coding.system",
         "short": "Sistema di codifica utilizzato",
@@ -79,6 +72,13 @@
         "id": "RelatedPerson.relationship.coding.version",
         "path": "RelatedPerson.relationship.coding.version",
         "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.code",
+        "path": "RelatedPerson.relationship.coding.code",
+        "short": "Codice che indica il tipo di relazione con il paziente",
         "min": 0,
         "max": "1"
       },

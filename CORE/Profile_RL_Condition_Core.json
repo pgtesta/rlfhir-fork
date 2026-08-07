@@ -31,14 +31,6 @@
         "max": "1"
       },
       {
-        "id": "Condition.category.coding.code",
-        "path": "Condition.category.coding.code",
-        "short": "Codice che identifica la categoria della condizione",
-        "min": 0,
-        "max": "1",
-        "fixedCode": "75326-9"
-      },
-      {
         "id": "Condition.category.coding.system",
         "path": "Condition.category.coding.system",
         "short": "Sistema di codifica utilizzato",
@@ -53,6 +45,14 @@
         "min": 0,
         "max": "1",
         "fixedString": "LOINC"
+      },
+      {
+        "id": "Condition.category.coding.code",
+        "path": "Condition.category.coding.code",
+        "short": "Codice che identifica la categoria della condizione",
+        "min": 0,
+        "max": "1",
+        "fixedCode": "75326-9"
       },
       {
         "id": "Condition.category.coding.display",
