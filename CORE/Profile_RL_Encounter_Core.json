@@ -47,13 +47,6 @@
         "max": "1"
       },
       {
-        "id": "Encounter.type.coding.code",
-        "path": "Encounter.type.coding.code",
-        "short": "Codice del tipo di incontro",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "Encounter.type.coding.system",
         "path": "Encounter.type.coding.system",
         "short": "URI del sistema di codifica utilizzato",
@@ -64,6 +57,13 @@
         "id": "Encounter.type.coding.version",
         "path": "Encounter.type.coding.version",
         "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Encounter.type.coding.code",
+        "path": "Encounter.type.coding.code",
+        "short": "Codice del tipo di incontro",
         "min": 0,
         "max": "1"
       },
