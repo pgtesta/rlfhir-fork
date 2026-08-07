@@ -44,7 +44,7 @@
       <td>CORE</td>
       <td>PractitionerRole</td>
       <td>Infermiere</td>
-      <td>{{link:PractitionerRole/esempio-PractitionerRole-core}}</td>
+      <td>{{link:PractitionerRole/esempio-practitionerrole-core}}</td>
     </tr>
     <tr>
       <td>CORE</td>
@@ -56,37 +56,43 @@
       <td>CORE</td>
       <td>Location</td>
       <td>Struttura fisica</td>
-      <td>{{link:Location/esempio-Location-CORE-base}}</td>
+      <td>{{link:Location/esempio-location-core-base}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>Organization</td>
       <td>Azienda sanitaria</td>
-      <td>{{link:Organization/esempio-Organization-core}}</td>
+      <td>{{link:Organization/esempio-organization-core}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>RelatedPerson</td>
       <td>Soggetto delegato</td>
-      <td>{{link:RelatedPerson/rl-RelatedPerson-001}}</td>
+      <td>{{link:RelatedPerson/rl-relatedperson-001}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>FamilyMemberHistory</td>
       <td>Storia clinica del familiare</td>
-      <td>{{link:FamilyMemberHistory/rl-FamilyMemberHistory-001}}</td>
+      <td>{{link:FamilyMemberHistory/rl-familymemberhistory-001}}</td>
     </tr>
     <tr>
       <td>CORE</td>
       <td>ServiceRequest</td>
       <td>Richiesta di servizio sanitario</td>
-      <td>{{link:ServiceRequest/rl-ServiceRequest-001}}</td>
+      <td>{{link:ServiceRequest/rl-servicerequest-001}}</td>
     </tr>
      <tr>
       <td>CORE</td>
-      <td>Observation-PrecedentiEsamiEseguiti</td>
+      <td>Observation</td>
       <td>Precedenti esami eseguiti del paziente</td>
-      <td>{{link:Observation/rl-ObservationCorePrecedentiEsamiEseguiti-001}}</td>
+      <td>{{link:Observation/rl-observation-precedentiesamieseguiti-001}}</td>
+    </tr>
+     <tr>
+      <td>CORE</td>
+      <td>Observation</td>
+      <td>Storia Clinica Del Paziente</td>
+      <td>{{link:Observation/rl-observation-storia-clinica}}</td>
     </tr>
   </tbody>
 </table>

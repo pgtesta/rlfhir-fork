@@ -54,7 +54,7 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-Storia Clinica: {{link:}}
+Storia Clinica: {{link: Observation/rl-observation-storiaclinica}}
 <br>
 </div>
 
@@ -62,4 +62,8 @@ Storia Clinica: {{link:}}
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLObservationCoreStoriaClinica.
+Nella seguente tabella sono elencati i value set relativi al profilo RLObservationCoreStoriaClinica.
+
+| Nome | Descrizione | Riferimento al dettaglio della codifica |
+|---|---|---|
+| valueCodeableConcept |  Criticità Clinica | La codifica è definita dal ValueSet [Criticità Clinica](https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica) |
