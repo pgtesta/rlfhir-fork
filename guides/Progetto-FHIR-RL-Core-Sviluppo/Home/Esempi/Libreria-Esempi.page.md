@@ -40,6 +40,18 @@
       <td>Paziente</td>
       <td>{{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}</td>
     </tr>
+     <tr>
+      <td>CORE</td>
+      <td>AllergyIntolerance</td>
+      <td>Allergie o intolleranze</td>
+      <td>{{link:AllergyIntolerance/rl-allergyintolerance-002}}</td>
+    </tr>
+     <tr>
+      <td>CORE</td>
+      <td>Condition</td>
+      <td>Diagnosi e Patologie associate al paziente</td>
+      <td>{{link:Condition/rl-condition-001}}</td>
+    </tr>
     <tr>
       <td>CORE</td>
       <td>PractitionerRole</td>
@@ -75,6 +87,18 @@
       <td>FamilyMemberHistory</td>
       <td>Storia clinica del familiare</td>
       <td>{{link:FamilyMemberHistory/rl-familymemberhistory-001}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>Encounter</td>
+      <td>Episodio clinico ambulatoriale</td>
+      <td>{{link:Encounter/rl-encounter-ambulatoriale-001}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>Encounter</td>
+      <td>Episodio clinico di ricovero</td>
+      <td>{{link:Encounter/rl-encounter-ricovero-001}}</td>
     </tr>
     <tr>
       <td>CORE</td>
