@@ -30,13 +30,6 @@
         "max": "1"
       },
       {
-        "id": "AllergyIntolerance.clinicalStatus.coding.code",
-        "path": "AllergyIntolerance.clinicalStatus.coding.code",
-        "short": "Codice che rappresenta lo stato clinico",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "AllergyIntolerance.clinicalStatus.coding.system",
         "path": "AllergyIntolerance.clinicalStatus.coding.system",
         "short": "Identificativo del sistema di codifica",
@@ -48,6 +41,13 @@
         "id": "AllergyIntolerance.clinicalStatus.coding.version",
         "path": "AllergyIntolerance.clinicalStatus.coding.version",
         "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.code",
+        "path": "AllergyIntolerance.clinicalStatus.coding.code",
+        "short": "Codice che rappresenta lo stato clinico",
         "min": 0,
         "max": "1"
       },
@@ -171,13 +171,6 @@
         "max": "1"
       },
       {
-        "id": "AllergyIntolerance.reaction.substance.coding.code",
-        "path": "AllergyIntolerance.reaction.substance.coding.code",
-        "short": "Codice dell'agente",
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "AllergyIntolerance.reaction.substance.coding.system",
         "path": "AllergyIntolerance.reaction.substance.coding.system",
         "short": "OID del sistema di codifica",
@@ -188,6 +181,13 @@
         "id": "AllergyIntolerance.reaction.substance.coding.version",
         "path": "AllergyIntolerance.reaction.substance.coding.version",
         "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "short": "Codice dell'agente",
         "min": 0,
         "max": "1"
       },
@@ -224,17 +224,6 @@
         "max": "1"
       },
       {
-        "id": "AllergyIntolerance.reaction.manifestation.coding.code",
-        "path": "AllergyIntolerance.reaction.manifestation.coding.code",
-        "short": "Codice del sintomo",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/ReazioniAllergiche"
-        },
-        "min": 0,
-        "max": "1"
-      },
-      {
         "id": "AllergyIntolerance.reaction.manifestation.coding.system",
         "path": "AllergyIntolerance.reaction.manifestation.coding.system",
         "short": "Sistema di codifica",
@@ -245,6 +234,17 @@
         "id": "AllergyIntolerance.reaction.manifestation.coding.version",
         "path": "AllergyIntolerance.reaction.manifestation.coding.version",
         "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.code",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.code",
+        "short": "Codice del sintomo",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/ReazioniAllergiche"
+        },
         "min": 0,
         "max": "1"
       },
