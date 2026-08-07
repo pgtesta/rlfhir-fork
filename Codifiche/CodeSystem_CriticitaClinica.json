@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-CriticitaClinica",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/CriticitaClinica",
+  "version": "1.0.0",
+  "name": "Criticità Clinica",
+  "status": "active",
+  "date": "2026-08-07",
+  "description": "CodeSystem relativo alla codifica della criticità clinica",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "LA28752-6",
+      "display": "Chronic"
+    },
+    {
+      "code": "LA18821-1",
+      "display": "Acute"
+    }
+  ]
+}

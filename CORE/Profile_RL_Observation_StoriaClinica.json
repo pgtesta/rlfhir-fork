@@ -68,6 +68,10 @@
         "short": "Codice identificativo",
         "min": 0,
         "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica"
+        },
         "type": [
           {
             "code": "CodeableConcept"
@@ -84,6 +88,10 @@
         "id": "Observation.valueCodeableConcept.coding.code",
         "path": "Observation.valueCodeableConcept.coding.code",
         "short": "Valore del codice",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica"
+        },
         "min": 0,
         "max": "1"
       },
@@ -91,6 +99,7 @@
         "id": "Observation.valueCodeableConcept.coding.system",
         "path": "Observation.valueCodeableConcept.coding.system",
         "short": "Sistema di codifica",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica",
         "min": 0,
         "max": "1"
       },
