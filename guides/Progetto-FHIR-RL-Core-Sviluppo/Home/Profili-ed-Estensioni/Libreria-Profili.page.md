@@ -115,7 +115,7 @@
         <tr>
           <td>CORE</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationParametri.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrecedentiEsami.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
