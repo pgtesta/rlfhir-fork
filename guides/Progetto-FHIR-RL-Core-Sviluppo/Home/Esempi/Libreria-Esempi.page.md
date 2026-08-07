@@ -64,6 +64,30 @@
       <td>Azienda sanitaria</td>
       <td>{{link:Organization/esempio-Organization-core}}</td>
     </tr>
+    <tr>
+      <td>CORE</td>
+      <td>RelatedPerson</td>
+      <td>Soggetto delegato</td>
+      <td>{{link:RelatedPerson/rl-RelatedPerson-001}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>FamilyMemberHistory</td>
+      <td>Storia clinica del familiare</td>
+      <td>{{link:FamilyMemberHistory/rl-FamilyMemberHistory-001}}</td>
+    </tr>
+    <tr>
+      <td>CORE</td>
+      <td>ServiceRequest</td>
+      <td>Richiesta di servizio sanitario</td>
+      <td>{{link:ServiceRequest/rl-ServiceRequest-001}}</td>
+    </tr>
+     <tr>
+      <td>CORE</td>
+      <td>Observation-PrecedentiEsamiEseguiti</td>
+      <td>Precedenti esami eseguiti del paziente</td>
+      <td>{{link:Observation/rl-ObservationCorePrecedentiEsamiEseguiti-001}}</td>
+    </tr>
   </tbody>
 </table>
   </body>
