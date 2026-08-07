@@ -76,6 +76,13 @@
       <td>Value Set relativo alla codifica del tipo di parentela.</td>
       <td>https://terminology.hl7.org/3.1.0/CodeSystem-v3-RoleCode.html</td>
     </tr>
+    <tr>
+      <td>
+      <a href="https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica.html" target="_blank">Criticità Clinica</a>
+      </td>
+      <td>Value Set relativo alla codifica della criticità clinica della patologia.</td>
+      <td>https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica</td>
+    </tr>
   </tbody>
 </table>
   </body>
