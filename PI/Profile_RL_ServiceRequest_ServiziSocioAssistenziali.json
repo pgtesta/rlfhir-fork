@@ -215,7 +215,7 @@
       {
         "id": "ServiceRequest.identifier.system",
         "path": "ServiceRequest.identifier.system",
-        "short": "Nel caso delle cure domiciliari (C-DOM) il system è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale. Nel caso della chiamata NEA il system del codice generato dall'applicativo di gestione 116117 NEA è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA. Nel caso della chiamata NEA il system del codice generato da SGDT è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT",
+        "short": "Nel caso delle cure domiciliari (C-DOM) il system è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale. Nel caso della chiamata NEA il system del codice generato dall'applicativo di gestione 116117 NEA è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA; mentre il system del codice generato da SGDT è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT. Nel caso di altri tipi di richiesta generica per pazienti in carico a MMG il system del codice generato dal Portale MMG è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoPortaleMMG; mentre il system del codice generato da SGDT è: https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT",
         "min": 1
       },
       {
