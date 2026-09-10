@@ -1,0 +1,35 @@
+{
+ "resourceType": "Observation",
+ "id": "rl-observation-storiaclinica-001",
+ "meta": {
+  "profile": [
+   "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreStoriaClinica"
+  ]
+ },
+ "status": "final",
+ "code": {
+  "coding": [
+   {
+    "system": "http://loinc.org",
+    "version": "2.74",
+    "code": "89261-2",
+    "display": "Decorso Clinico"
+   }
+  ]
+ },
+ "subject": {
+  "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+ },
+ "encounter": {
+  "reference": "Encounter/rl-encounter-ricovero-001"
+ },
+ "valueCodeableConcept": {
+  "coding": [
+   {
+    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/CriticitaClinica",
+    "code": "LA18821-1",
+    "display": "Acute"
+   }
+  ]
+ }
+}

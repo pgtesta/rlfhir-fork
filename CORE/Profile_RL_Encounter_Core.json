@@ -1,0 +1,165 @@
+{
+    "resourceType": "StructureDefinition",
+    "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore",
+    "name": "EncounterCore",
+    "title": "Encounter Core",
+    "status": "draft",
+    "date": "2026-08-04",
+    "publisher": "Regione Lombardia",
+    "description": "Profilo core per la gestione degli incontri (Encounter), derivato da Encounter (FHIR R4).",
+    "fhirVersion": "4.0.1",
+    "kind": "resource",
+    "abstract": false,
+    "type": "Encounter",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+    "derivation": "constraint",
+    "differential": {
+        "element": [
+            {
+                "id": "Encounter",
+                "path": "Encounter"
+            },
+            {
+                "id": "Encounter.identifier",
+                "path": "Encounter.identifier",
+                "short": "Identificativo dell'incontro. Puo' identificare anche il nosologico",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Encounter.class",
+                "path": "Encounter.class",
+                "short": "Classificazione dell'incontro",
+                "min": 1,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.type",
+                "path": "Encounter.type",
+                "short": "Specifica il tipo di incontro",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Encounter.type.coding",
+                "path": "Encounter.type.coding",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.type.coding.system",
+                "path": "Encounter.type.coding.system",
+                "short": "URI del sistema di codifica utilizzato",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.type.coding.version",
+                "path": "Encounter.type.coding.version",
+                "short": "Versione del sistema di codifica",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.type.coding.code",
+                "path": "Encounter.type.coding.code",
+                "short": "Codice del tipo di incontro",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.type.coding.display",
+                "path": "Encounter.type.coding.display",
+                "short": "Descrizione testuale leggibile",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.participant",
+                "path": "Encounter.participant",
+                "short": "Lista di partecipanti coinvolti nell'incontro",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Encounter.participant.type",
+                "path": "Encounter.participant.type",
+                "short": "Specifica il ruolo del partecipante nell'incontro",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Encounter.participant.period",
+                "path": "Encounter.participant.period",
+                "short": "Intervallo di tempo in cui il partecipante e' stato coinvolto nell'incontro",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.participant.individual",
+                "path": "Encounter.participant.individual",
+                "short": "Ruolo del professionista coinvolto nell'incontro",
+                "definition": "Nel caso del RSA e RAD la sezione PUO' essere utilizzata per inserire i dati relativi al Tecnico di Approfondimento Diagnostico o al Medico Prescrittore.",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.period",
+                "path": "Encounter.period",
+                "short": "Inizio e fine incontro",
+                "min": 0,
+                "max": "1"
+            },
+            {
+                "id": "Encounter.reasonReference",
+                "path": "Encounter.reasonReference",
+                "short": "Ragione tale per cui avviene l'incontro",
+                "min": 0,
+                "max": "*",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "http://hl7.org/fhir/StructureDefinition/Condition",
+                            "http://hl7.org/fhir/StructureDefinition/Procedure",
+                            "http://hl7.org/fhir/StructureDefinition/Observation",
+                            "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Encounter.location",
+                "path": "Encounter.location",
+                "short": "Luogo in cui si è svolto l'incontro tra il paziente e la struttura sanitaria",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Encounter.location.location",
+                "path": "Encounter.location.location",
+                "short": "Luogo in cui si e' svolto l'incontro tra il paziente e la struttura sanitaria",
+                "definition": "E' logicamente organizzato come segue: unita' operativa; presidio di ricovero o struttura erogante; azienda sanitaria.",
+                "comment": "Ogni singola occorrenza di Encounter.location.location punta a una sola LocationCore (cardinalita' base 1..1, non modificabile). Per rappresentare piu' livelli (unita' operativa, presidio, azienda) usare piu' occorrenze di Encounter.location.",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Reference",
+                        "targetProfile": [
+                            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

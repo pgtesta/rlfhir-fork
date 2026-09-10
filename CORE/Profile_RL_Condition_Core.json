@@ -1,0 +1,126 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCore",
+  "name": "RLConditionCore",
+  "title": "Condition Core",
+  "status": "draft",
+  "date": "2026-08-04",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition"
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "short": "Categoria della condizione clinica",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Condition.category.coding",
+        "path": "Condition.category.coding",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.category.coding.system",
+        "path": "Condition.category.coding.system",
+        "short": "Sistema di codifica utilizzato",
+        "min": 0,
+        "max": "1",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Condition.category.coding.version",
+        "path": "Condition.category.coding.version",
+        "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1",
+        "fixedString": "LOINC"
+      },
+      {
+        "id": "Condition.category.coding.code",
+        "path": "Condition.category.coding.code",
+        "short": "Codice che identifica la categoria della condizione",
+        "min": 0,
+        "max": "1",
+        "fixedCode": "75326-9"
+      },
+      {
+        "id": "Condition.category.coding.display",
+        "path": "Condition.category.coding.display",
+        "short": "Descrizione leggibile della categoria della condizione",
+        "min": 0,
+        "max": "1",
+        "fixedString": "Problem"
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "short": "Codice che identifica la condizione, patologia o problema clinico",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "short": "Riferimento al paziente a cui si riferisce la condizione",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "short": "Episodio clinico in cui è stata fatta la richiesta",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.evidence",
+        "path": "Condition.evidence",
+        "short": "Riferimento alle evidenze cliniche che supportano la condizione",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Condition.evidence.detail",
+        "path": "Condition.evidence.detail",
+        "short": "Riferimento alle evidenze cliniche che supportano la condizione",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
