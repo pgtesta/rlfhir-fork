@@ -104,27 +104,24 @@ NB: “x” rappresenta una coppia di numeri che identificano in modo più detta
 Il dettaglio dell’operazione è riportato nella risorsa OperationOutcome.
 
 ## 3.1 Endpoint FHIR
-#### API Manager
-L'API Manager espone i servizi FHIR di messaggistica definiti nell'ecosistema di Regione Lombardia. 
-Il base_url con cui accedere a tali servizi è il seguente:
-        
-        <base_API_Manager> = https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri
 
-L'elenco delle API esposte è:
- 
-|Metodo HTTP|URL|Nome profilo|Detentore del dato|
-|---|---|---|
-|POST|<base_API_Manager>/message/$process-message|RLBundleMMG|SGDT|
-|POST|<base_API_Manager>/message/$process-message|RLBundleNEA|NEA|
- 
-dove:
-- <base_API_manager> è l’indirizzo radice del servizio che sarà esposto tramite API Manager;
-- *message* rappresenta il <servizio_ricevente>, ovvero il nome del servizio a cui indirizzare i messaggi;
-- *$process-message* è l’operazione FHIR esposta.
+L’esposizione dei servizi di messaggistica FHIR, disponibili nell'ecosistema di Regione Lombardia, viene attuata tramite il componente API Manager. 
+Il base_url con cui accedere alle API esposte da API Manager è il seguente:
 
-##### Endpoint dedicato
+```text
+<base_API_Manager> = https://api.servizirl.it/c/operatori.siss/<contesto>/v1.0.0/<risorsaAPI>
+```
 
-Per l'integrazione con l'applicativo di gestione 116117 NEA, la chiamata per l'invio di una nuova segnalazione deve essere effettuata al seguente endpoint:
+Il contenuto del messaggio FHIR deve essere inserito nel Body della chiamata.
+I diversi messaggi FHIR sono costituiti da Profili Bundle con Bundle.type=message e sono descritti nella sezione Profili ed Estensioni -> Libreria Profili.
+L'elenco delle API esposte con i relativi Profili Bundle Message è il seguente:
 
-        https://api.integrazione.lispa.it/c/operatori.siss/nea/v1.0.0/nuova-segnalazione
+| Metodo HTTP | Contesto | Risorsa API Manager | Profilo Bundle Message | Descrizione |
+|---|---|---|---|---|
+| POST | NEA | nuova-segnalazione | RLBundleNEA | Gestisce i messaggi inviati per attivare una segnalazione di un paziente che ha contattato il Numero Europeo Armonizzato NEA 116117 |
+| POST | portaleMMG | nuova-segnalazione | RLBundleMMG | Gestisce i messaggi inviati per attivare una segnalazione di un paziente assistito da un Medico di Assistenza Primaria |
 
+Esempi:
+
+- chiamata da NEA: `https://api.servizirl.it/c/operatori.siss/nea/v1.0.0/nuova-segnalazione`
+- chiamata da portale MMG: `https://api.servizirl.it/c/operatori.siss/portaleMMG/v1.0.0/nuova-segnalazione`
