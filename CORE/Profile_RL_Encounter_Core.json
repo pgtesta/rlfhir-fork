@@ -75,23 +75,6 @@
         "max": "1"
       },
       {
-        "id": "Encounter.basedOn",
-        "path": "Encounter.basedOn",
-        "short": "Richiesta di prestazione da cui ha origine l'incontro",
-        "definition": "Riferimento alla ServiceRequest che ha originato l'incontro, quando applicabile.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore",
-              "http://hl7.org/fhir/StructureDefinition/ServiceRequest"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Encounter.participant.type",
         "path": "Encounter.participant.type",
         "short": "Specifica il ruolo del partecipante nell'incontro",
