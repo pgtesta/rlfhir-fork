@@ -119,55 +119,5 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Encounter.period",
-        "path": "Encounter.period",
-        "short": "Inizio e fine incontro",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Encounter.reasonReference",
-        "path": "Encounter.reasonReference",
-        "short": "Ragione tale per cui avviene l'incontro",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Condition",
-              "http://hl7.org/fhir/StructureDefinition/Procedure",
-              "http://hl7.org/fhir/StructureDefinition/Observation",
-              "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Encounter.location",
-        "path": "Encounter.location",
-        "min": 0,
-        "max": "*"
-      },
-      {
-        "id": "Encounter.location.location",
-        "path": "Encounter.location.location",
-        "short": "Luogo in cui si e' svolto l'incontro tra il paziente e la struttura sanitaria",
-        "definition": "E' logicamente organizzato come segue: unita' operativa; presidio di ricovero o struttura erogante; azienda sanitaria.",
-        "comment": "Ogni singola occorrenza di Encounter.location.location punta a una sola LocationCore (cardinalita' base 1..1, non modificabile). Per rappresentare piu' livelli (unita' operativa, presidio, azienda) usare piu' occorrenze di Encounter.location.",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore"
-            ]
-          }
-        ]
-      }
-    ]
-  }
+    }
 }

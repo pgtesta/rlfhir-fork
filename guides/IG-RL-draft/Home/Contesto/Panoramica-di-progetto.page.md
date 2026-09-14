@@ -5,7 +5,7 @@ Il progetto FHIR per Regione Lombardia è descritto tramite diverse Guide Implem
 Ad oggi la piattaforma SGDT supporta le seguenti integrazioni:
 - Cooperazione applicativa con i verticali degli Enti Erogatori Privati Accreditati (EEPA) per la gestione degli assistiti nell’ambito del servizio delle Cure Domiciliari. I principali profili FHIR utilizzati sono: RLCarePlanProgettoIndividuale, RLServiceRequestServiziSocioAssistenziali e RLProcedurePrestazione;
 - Cooperazione applicativa con le Cartelle Elettroniche in uso dai Medici di Medicina Generale (CE-MMG) per la gestione dei pazienti cronici. I principali profili FHIR utilizzati sono: RLMessageHeaderMMG, RLPatientBase, RLConditionProblemiSalute e RLOperationOutcomeMMG;
--	Cooperazione applicativa con il sistema di Gestione 116117 NEA per trasmettere la richiesta di attivazione di un servizio socio-assistenziale inviato alla rete delle COT e richiedere alla piattaforma SGDT lo Stato della richiesta. I principali profili FHIR utilizzati sono: RLMessageHeaderNEA, RLOperationOutcomeNEA, RLServiceRequestServiziSocioAss;
+- Cooperazione applicativa con il sistema di Gestione 116117 NEA per trasmettere la richiesta di attivazione di un servizio socio-assistenziale inviato alla rete delle COT e richiedere alla piattaforma SGDT lo Stato della richiesta. I principali profili FHIR utilizzati sono: RLMessageHeaderNEA, RLOperationOutcomeNEA, RLServiceRequestServiziSocioAss;
 - l’acquisizione delle informazioni relative al catalogo dell’offerta dei servizi assistenziali attivabili in Regione Lombardia attraverso la consultazione del patrimonio informativo contenuto nei  Dati Codificati (DDC). Il principale profilo utilizzato è RLOrganizationL2.
 
 

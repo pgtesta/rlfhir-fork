@@ -64,7 +64,9 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 ## Tipologie di ricerca
 
-### 1. Stato della richiesta
+### 1. Stato della richiesta NEA
+
+Le ricerche su questo tipo di risorsa FHIR vengono eseguite tramite API esposte dal componente API Manager (vedi la pagina Paradigmi di comunicazione e API RESTful nella sezione Contesto).
 
 Questa ricerca deve essere effettuata dall'applicativo di Gestione 116117 NEA con lo scopo di ottenere lo stato della richiesta dalla piattaforma SGDT.
 
@@ -73,29 +75,36 @@ I parametri da valorizzare obbligatoriamente per effettuare la ricerca sono:
 - **Identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoNEA`: è l'identificativo univoco generato dall'applicativo di gestione 116117 NEA quando invia la richiesta a SGDT e associato al profilo RLServiceRequestServiziSocioAssistenziali;
 - **Identifier** con system `https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT`: è l'identificativo univoco generato da SGDT quando la richiesta è stata ricevuta correttamente e associato al profilo RLServiceRequestServiziSocioAssistenziali.
 
-Nella tabella di seguito vengono riportati i dettagli tecnici per l'implementazione della ricerca:
+La tabella seguente riassume le modalità di utilizzo dell’API.
 
-| | |
+| Voce | Valore |
 |---|---|
 | **VERB** | GET |
-| **BASE URL** | https://<endpoint_SGDT>/richiediStato|
-| **PARAMETRI** | Identifier, _profile, _include |
+| **BASE URL** | https://api.servizirl.it/c/operatori.siss/nea/v1.0.0/verifica-stato-segnalazione |
+| **PARAMETRI** | `/ServiceRequest?codiceNEA=<identificativo richiesta in NEA>&codiceSGDT=<identificativo segnalazione in SGDT>` |
 
-#### Endpoint dedicato
+# Endpoint dedicato
 
-Per l'integrazione con l'applicativo di gestione 116117 NEA, la chiamata per la verifica dello stato di una segnalazione deve essere effettuata al seguente endpoint:
+Esempio chiamata:    
+https://api.servizirl.it/c/operatori.siss/nea/v1.0.0/verifica-stato-segnalazione/ServiceRequest?codiceNEA=NEA-2026-00001&codiceSGDT=SOC-00000001
 
-        https://api.integrazione.lispa.it/c/operatori.siss/nea/v1.0.0/verifica-stato-segnalazione/ServiceRequest?codiceNEA=NEA-2026-00001&codiceSGDT=SOC-00000000
+### 2. Stato di altri tipi di richiesta generica per pazienti in carico a MMG
 
-<!-- ===================================================FINE SEZIONE=================================================== -->
+Le ricerche su questo tipo di risorsa FHIR vengono eseguite tramite API esposte dal componente API Manager (vedi la pagina Paradigmi di comunicazione e API RESTful nella sezione Contesto).
+Questa ricerca deve essere effettuata dagli applicativi utilizzati da MMG che hanno inviato a SGDT una richiesta di attivazione di un setting assistenziale.
+Lo scopo della ricerca è quello di ottenere lo stato della Richiesta di Transizione COT generata in SGDT per il paziente oggetto della richiesta stessa.
+La tabella seguente riassume le modalità di utilizzo dell’API.
 
-## Search parameter
+| Voce | Valore |
+|---|---|
+| **VERB** | GET |
+| **BASE URL** | https://api.servizirl.it/c/operatori.siss/portaleMMG/v1.0.0/stato-segnalazione |
+| **PARAMETRI** | `ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoPortaleMMG\|<identificativo Portale>&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT\|<identificativo SGDT>` |
 
-Sulla base di quanto descritto nelle tipologie di ricerca sono riportati di seguito i parametri di ricerca del profilo RLServiceRequestServiziSocioAssistenziali:
+# Endpoint dedicato
 
-- _profile
-- identifier
-- _include
+Esempio chiamata:        
+https://api.servizirl.it/c/operatori.siss/portaleMMG/v1.0.0/stato-segnalazione/ServiceRequest?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoPortaleMMG|PPP0001&identifier=https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoSGDT|SOC_0000002
 
 <!-- ===================================================FINE SEZIONE=================================================== -->
 
