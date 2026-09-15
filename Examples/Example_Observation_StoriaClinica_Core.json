@@ -3,7 +3,7 @@
  "id": "rl-observation-storiaclinica-001",
  "meta": {
   "profile": [
-   "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreStoriaClinica"
+   "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreDecorsoClinico"
   ]
  },
  "status": "final",
