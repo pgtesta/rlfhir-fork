@@ -95,7 +95,7 @@
         "type": [
           {
             "code": "Reference",
-            "targetProfile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/PatientCore"]
+            "targetProfile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"]
           }
         ],
         "definition": "Paziente (Assistito) a cui si riferisce il documento.",
