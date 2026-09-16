@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreStoriaClinica",
-  "name": "RLObservationCoreStoriaClinica",
-  "title": "Observation Core - Storia Clinica",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreDecorsoClinico",
+  "name": "RLObservationCoreDecorsoClinico",
+  "title": "Observation Core - Decorso Clinico",
   "status": "draft",
   "date": "2026-08-04",
   "fhirVersion": "4.0.1",

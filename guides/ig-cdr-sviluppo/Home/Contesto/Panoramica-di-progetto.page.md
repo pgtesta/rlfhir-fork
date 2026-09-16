@@ -9,6 +9,5 @@ Questo scenario di trasformazione di servizi e tecnologie a disposizione dei pro
 
 Al fine di consentire un’adeguata ideazione, prototipazione e avvio di servizi innovativi abilitati dal Clinical Data Repository è necessario definire le esigenze informative di business a cui i servizi innovativi del CDR devono rispondere e identificare casi d’uso funzionali abilitati dall’adozione del CDR, anche attraverso la valorizzazione di eventuali esperienze già maturate in contesti sanitari. Coerentemente con le esigenze di Regione Lombardia, nell’individuazione dei casi d’uso prioritari viene effettuata una distinzione - a seconda del destinatario del servizio - in casi d’uso clinici (migliore gestione delle cure e migliore assistenza sanitaria ai pazienti in cura) e di governo (monitoraggio di dati aggregati ai fini di governo e programmazione). 
 
-## IG Core per Regione Lombardia
-I profili definiti in questa guida implementativa (IG) sono da considerare come la struttura di base delle risorse FHIR per le successive applicazioni dello standard sul territorio.
-L’obiettivo è supportare l’implementazione di sistemi interoperabili e coordinati, riducendo la frammentazione e promuovendo l’efficienza nella gestione dei dati clinici.
+## IG CDR
+I profili definiti in questa guida implementativa (IG)..

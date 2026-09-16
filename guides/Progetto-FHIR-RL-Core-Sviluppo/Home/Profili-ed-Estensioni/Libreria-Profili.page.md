@@ -136,10 +136,10 @@
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
           </td>
           <td>
-            Profilo che descrive la storia clinica
+            Profilo che descrive il decorso clinico
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreStoriaClinica}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCoreDecorsoClinico}}
           </td>    
         </tr>      
         <tr>
