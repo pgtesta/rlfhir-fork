@@ -1,0 +1,31 @@
+{
+ "resourceType": "Observation",
+ "id": "Example-Observation-PrecedentiEsamiEseguiti-2-RAD",
+ "meta": {
+ "lastUpdated": "2026-09-18T10:25:00+02:00",
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad"
+ ],
+ "versionId": "1"
+ },
+ "status": "final",
+ "code": {
+ "coding": [
+ {
+ "system": "urn:oid:2.16.840.1.113883.6.2",
+ "version": "ICD9-CM",
+ "code": "87.44",
+ "display": "Radiografia del torace routinaria"
+ }
+ ]
+ },
+ "subject": {
+ "reference": "Patient/b2c3d4e5-2345-6789-abcd-ef0123456789",
+ "display": "Giulia Bianchi"
+ },
+ "effectivePeriod": {
+ "start": "2025-06-01T08:00:00+02:00",
+ "end": "2025-06-01T08:30:00+02:00"
+ },
+ "valueString": "RX torace standard in due proiezioni, nessuna alterazione parenchimale"
+}

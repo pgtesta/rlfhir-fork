@@ -1,0 +1,28 @@
+{
+ "resourceType": "Observation",
+ "id": "Example-Observation-PrecedentiEsamiEseguiti-1-RAD",
+ "meta": {
+ "lastUpdated": "2026-09-18T10:20:00+02:00",
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad"
+ ],
+ "versionId": "1"
+ },
+ "status": "final",
+ "code": {
+ "coding": [
+ {
+ "system": "http://loinc.org",
+ "version": "LOINC 2.19",
+ "code": "24627-2",
+ "display": "CT Chest"
+ }
+ ]
+ },
+ "subject": {
+ "reference": "Patient/a1b2c3d4-1234-5678-9abc-def012345678",
+ "display": "Mario Rossi"
+ },
+ "effectiveDateTime": "2025-03-10T08:00:00+01:00",
+ "valueString": "Esame TC torace eseguito con mezzo di contrasto, esito nella norma"
+}
