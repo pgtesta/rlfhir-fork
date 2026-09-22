@@ -34,36 +34,68 @@
     </tr>
   </thead>
   <tbody id="myTable">
-     <tr>
-      <td>CORE</td>
-      <td>Patient</td>
-      <td>Paziente</td>
-      <td>{{link:Patient/e06086d8-a958-11ed-afa1-0242ac120002}}</td>
+        <tr>
+      <td>RAD</td>
+      <td>MedicationStatement-TerapiaFarmacologica</td>
+      <td>Terapia farmacologica precedente del paziente</td>
+      <td>{{link:MedicationStatement/rl-medicationstatement-001}}
+      </td>
     </tr>
     <tr>
-      <td>CORE</td>
-      <td>PractitionerRole</td>
-      <td>Infermiere</td>
-      <td>{{link:PractitionerRole/esempio-PractitionerRole-core}}</td>
+      <td>RAD</td>
+      <td>MedicationStatement-TerapiaFarmacologica</td>
+      <td>Terapia farmacologica in atto del paziente</td>
+      <td>{{link:MedicationStatement/rl-medicationstatement-002}}
+      </td>
     </tr>
     <tr>
-      <td>CORE</td>
-      <td>Practitioner</td>
-      <td>Medico</td>
-      <td>{{link:Practitioner/3a14db34-a959-11ed-afa1-0242ac120002}}</td>
+      <td>RAD</td>
+      <td>Observation</td>
+      <td>Esame Eseguito (1)</td>
+        <td>{{link:Observation/Example-Observation-EsameEseguito-1-RAD}}</td>
     </tr>
     <tr>
-      <td>CORE</td>
-      <td>Location</td>
-      <td>Struttura fisica</td>
-      <td>{{link:Location/esempio-Location-CORE-base}}</td>
+      <td>RAD</td>
+      <td>Observation</td>
+      <td>Esame Eseguito (2)</td>
+      <td>{{link:Observation/Example-Observation-EsameEseguito-2-RAD}}</td>
     </tr>
     <tr>
-      <td>CORE</td>
-      <td>Organization</td>
-      <td>Azienda sanitaria</td>
-      <td>{{link:Organization/esempio-Organization-core}}</td>
+      <td>RAD</td>
+      <td>Observation</td>
+      <td>Precedenti Esami Eseguiti (1)</td>
+      <td>{{link:Observation/Example-Observation-PrecedentiEsamiEseguiti-1-RAD}}</td>
     </tr>
+    <tr>
+     <td>RAD</td>
+     <td>Observation</td>
+    <td>Precedenti Esami Eseguiti (2)</td>
+    <td>{{link:Observation/Example-Observation-PrecedentiEsamiEseguiti-2-RAD}}</td>
+  </tr>
+  <tr>
+   <td>RAD</td>
+   <td>Observation</td>
+   <td>Complicanze (1)</td>
+   <td>{{link:Observation/Example-Observation-Complicanze-1-RAD}}</td>
+  </tr>
+  <tr>
+   <td>RAD</td>
+   <td>Observation</td>
+   <td>Complicanze (2)</td>
+   <td>{{link:Observation/Example-Observation-Complicanze-2-RAD}}</td>
+  </tr>
+  <tr>
+   <td>RAD</td>
+   <td>ImagingStudy</td>
+   <td>ImagingStudy (1)</td>
+   <td>{{link:ImagingStudy/Example-ImagingStudy-1-RAD}}</td>
+  </tr>
+  <tr>
+   <td>RAD</td>
+   <td>ImagingStudy</td>
+   <td>ImagingStudy (2)</td>
+   <td>{{link:ImagingStudy/Example-ImagingStudy-2-RAD}}</td>
+</tr>
   </tbody>
 </table>
   </body>

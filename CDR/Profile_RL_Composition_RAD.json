@@ -279,19 +279,19 @@
         "note": [{"text": "Target uniformato a PractitionerRoleCore (la fonte riportava un'incoerenza tra path e colonna Tipo)."}]
       },
       {
-        "id": "Composition.basedOn",
-        "path": "Composition.basedOn",
+        "id": "Composition.extension:basedOnOrderOrRequisition",
+        "path": "Composition.extension",
+        "sliceName": "basedOnOrderOrRequisition",
+        "short": "Numero ricetta medica / Codice CUP / Codice ordine interno / Accession Number / Studio DICOM",
+        "definition": "Richiesta che ha determinato la produzione del documento di Referto di Radiologia o ogni altro ordine ad esso relativo.",
         "min": 0,
         "max": "*",
         "type": [
           {
-            "code": "Reference",
-            "targetProfile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"]
+            "code": "Extension",
+            "profile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBasedOnOrderOrRequisition"]
           }
-        ],
-        "short": "Numero ricetta medica / Codice CUP / Codice ordine interno / Accession Number / Studio DICOM",
-        "definition": "Richiesta che ha determinato la produzione del documento di Referto di Radiologia o ogni altro ordine ad esso relativo.",
-        "note": [{"text": "Il Medico Prescrittore è rintracciabile tramite ServiceRequestCore.requester (RLPractitionerRoleCore), non è un elemento proprio di questo profilo Composition."}]
+        ]
       },
       {
         "id": "Composition.extension:versionNumber",
