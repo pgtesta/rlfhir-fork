@@ -34,46 +34,37 @@
           <th>Link simplifier</th>
         </tr>
       </thead>
-      <tbody id="myTable">
-        <tr>
-          <td>patient-citizienship</td>
-          <td>Patient</td>
-          <td>Indica il codice di riferimento del paese di cittadinanza </td>
+      <tbody id="myTable">        
+      <tr>
+          <td>dataEnterer</td>
+          <td>Composition</td>
+          <td>Persona o dispositivo che trasforma un testo dettato nel documento FHIR</td>
           <td>
-            {{link:http://hl7.org/fhir/StructureDefinition/patient-citizenship}}
+            {{link:http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it}}
           </td>
         </tr>
         <tr>
-          <td>patient-birthPlace</td>
-          <td>Patient</td>
-          <td>Indica l'indirizzo di nascita del paziente</td>
+          <td>information-recipient</td>
+          <td>Composition</td>
+          <td>Professionisti sanitari che ricevono una copia del documento (es. MMG/PLS)</td>
           <td>
-            {{link:http://hl7.org/fhir/StructureDefinition/patient-birthPlace}}
-          </td>
-        </tr>
-        </tr>
-        <tr>
-          <td>patient-occupation-it</td>
-          <td>Patient</td>
-          <td>Occupazione del paziente</td>
-          <td>
-            {{link:http://hl7.it/fhir/StructureDefinition/patient-occupation-it}}
+            {{link:http://hl7.eu/fhir/StructureDefinition/information-recipient}}
           </td>
         </tr>
         <tr>
-          <td>patient-qualification-it</td>
-          <td>Patient</td>
-          <td>Titolo di studio del paziente</td>
+          <td>basedOnOrderOrRequisition</td>
+          <td>Composition</td>
+          <td>Richiesta che ha determinato la produzione del documento (ricetta, CUP, ordine interno, accession number, studio DICOM)</td>
           <td>
-            {{link:http://hl7.it/fhir/StructureDefinition/patient-qualification-it}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBasedOnOrderOrRequisition}}
           </td>
         </tr>
-         <tr>
-          <td>patient-ATSResidenza</td>
-          <td>Patient</td>
-          <td>ATS di residenza del paziente</td>
+        <tr>
+          <td>versionNumber</td>
+          <td>Composition</td>
+          <td>Identificatore specifico della versione della composizione, assegnato quando ciascuna versione viene creata o aggiornata</td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza}}
+            {{link:http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber}}
           </td>
         </tr>
         </tbody>
