@@ -12,7 +12,7 @@
  "code": {
  "coding": [
  {
- "system": "urn:oid:2.16.840.1.113883.6.2",
+ "system": "urn:oid:2.16.840.1.113883.6.103",
  "version": "ICD9-CM",
  "code": "87.44",
  "display": "Radiografia del torace routinaria"
