@@ -88,9 +88,6 @@ Nella tabella di seguito vengono riportati i dettagli tecnici per l’implementa
 | BASE_URL | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
 | PARAMETRI | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.code=C-DOM<br>&author:Organization.identifier={codiceLivelloL1}<br>&_lastUpdated=gt{dataLimiteIntervalloInferiore}<br>&_lastUpdated=lt{dataLimiteIntervalloSuperiore}<br>&status=active<br>&_include=* |
 
-| BASE_APIMANAGER | https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri |
-| URL | CarePlan?_profile=https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale<br>&activity-reference:ServiceRequest.code=C-DOM<br>&author:Organization.identifier=\{_codiceLivelloL1_\}<br>&_lastUpdated=gt\{_dataLimiteIntervalloInferiore_\}<br>&_lastUpdated=lt\{_dataLimiteIntervalloSuperiore_\}<br>&status=active<br>&_include=* |
-
 ### Endpoint dedicato
 
 Esempio chiamata:

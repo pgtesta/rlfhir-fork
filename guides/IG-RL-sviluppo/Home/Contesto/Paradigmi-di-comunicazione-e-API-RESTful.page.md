@@ -120,9 +120,7 @@ Il dettaglio dell’operazione è riportato nella risorsa OperationOutcome.
 L’esposizione dei servizi di messaggistica FHIR, disponibili nell'ecosistema di Regione Lombardia, viene attuata tramite il componente API Manager. 
 Il base_url con cui accedere alle API esposte da API Manager è il seguente:
 
-```text
-<base_API_Manager> = https://api.servizirl.it/c/operatori.siss/<contesto>/v1.0.0/<risorsaAPI>
-```
+`<base_API_Manager> = https://api.servizirl.it/c/operatori.siss/<contesto>/v1.0.0/<risorsaAPI>`
 
 Il contenuto del messaggio FHIR deve essere inserito nel Body della chiamata.
 I diversi messaggi FHIR sono costituiti da Profili Bundle con Bundle.type=message e sono descritti nella sezione Profili ed Estensioni -> Libreria Profili.
@@ -133,8 +131,6 @@ L'elenco delle API esposte con i relativi Profili Bundle Message è il seguente:
 | POST | nea | nuova-segnalazione | RLBundleNEA | Gestisce i messaggi inviati per attivare una segnalazione di un paziente che ha contattato il Numero Europeo Armonizzato NEA 116117 |
 | POST | portaleMMG | nuova-segnalazione | RLBundleMMGPortal | Gestisce i messaggi inviati per attivare una segnalazione di un paziente assistito da un Medico di Assistenza Primaria |
 | POST | fhir | npri/message/$process-message | RLBundleMMG | Gestisce la creazione di un PAI per i pazienti cronici con un passaggio di contesto tra CCE dei medici e SGDT |
-| POST | NEA | nuova-segnalazione | RLBundleNEA | Gestisce i messaggi inviati per attivare una segnalazione di un paziente che ha contattato il Numero Europeo Armonizzato NEA 116117 |
-| POST | portaleMMG | nuova-segnalazione | RLBundleMMG | Gestisce i messaggi inviati per attivare una segnalazione di un paziente assistito da un Medico di Assistenza Primaria |
 
 Esempi:
 

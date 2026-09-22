@@ -17,7 +17,7 @@ Ask for any missing information before editing:
 
 - The workbook path or attachment.
 - If no workbook is attached, inspect `.github/DaProcessare/` and report the available supported files before selecting one. If there is more than one plausible input, ask the user which document to process.
-- Confirmation that the workbook uses explicit columns for target file/profile, JSON path, and new value. If those columns are absent, ask how the mapping is represented.
+- Confirmation that the workbook uses explicit columns for target file/profile, JSON path, and changed value. If those columns are absent, ask how the mapping is represented.
 - Whether every yellow cell is a requested change, or whether some yellow cells are explanatory/highlighted context.
 - Whether any worksheet is highlighted entirely or predominantly in yellow, including a yellow worksheet tab color. Treat such a worksheet as a request to create a new FHIR profile, not as a collection of cell updates.
 - The target project area when the workbook does not identify it clearly.
@@ -37,9 +37,10 @@ Do not infer a target JSON file from a sheet name alone when more than one file 
    - Use a structured Excel reader such as `openpyxl` for `.xlsx`. If the workbook is `.xls`, ask the user to provide `.xlsx` or confirm an available conversion path.
 
 2. Build a change inventory without writing files.
-   - For every candidate, record worksheet, cell address, displayed value, source row/column labels, target file, target JSON path, requested operation, and any ambiguity.
+   - For every candidate, record worksheet, cell address, displayed value, source row/column labels, target file, target JSON path, proposed operation (`insert`, `update`, or `delete`), and any ambiguity.
    - Group related cells into one logical change when the sheet uses a row-based record.
-   - Read the explicit target file/profile, JSON path, and new value columns. Resolve their identifiers against the repository before applying anything by searching profile id, canonical URL, resource type, code, path, or filename.
+   - Read the explicit target file/profile, JSON path, and changed value columns. Resolve their identifiers against the repository before applying anything by searching profile id, canonical URL, resource type, code, path, or filename.
+   - Use the surrounding row/column labels and existing target content to determine whether the yellow value is an insertion or an update. Do not assume that a populated target path must be overwritten.
    - For a yellow worksheet representing a new profile, extract the proposed profile name, id, canonical URL, base resource/profile, differential elements, cardinalities, bindings, fixed/pattern values, descriptions, and any other declared metadata. Identify missing mandatory information before drafting files.
    - Mark unsupported, conflicting, duplicate, or ambiguous records as blocked rather than guessing.
 
@@ -48,7 +49,7 @@ Do not infer a target JSON file from a sheet name alone when more than one file 
    - For JSON changes, show the exact JSON Pointer/path and old/new value when available.
    - For a new profile, show the intended filename, StructureDefinition metadata, baseDefinition, differential, and any related files that would be created.
    - Stop after this preview when the user asks for preview-only, dry-run, review, or approval before applying. Do not write, create, or delete project files in preview-only mode.
-   - Ask for confirmation if the workbook contains more than one plausible mapping, destructive operations, or changes to invariant FHIR fields.
+   - Ask for confirmation if the workbook contains more than one plausible mapping, an ambiguous insert-versus-update operation, destructive operations, or changes to invariant FHIR fields.
 
 4. Apply the smallest possible edits after confirmation.
    - Keep JSON valid and preserve the repository's existing indentation and ordering as far as practical.
@@ -66,8 +67,11 @@ Do not infer a target JSON file from a sheet name alone when more than one file 
 ## Decision Rules
 
 - Yellow fill is a signal to inspect, not permission to guess. Ambiguous mappings must remain unapplied.
-- A yellow cell containing a new value updates the explicitly mapped target property; it does not imply a broad replacement of matching text throughout the repository.
-- A yellow cell containing an existing value is still reported, but is not changed if the target already has that value.
+- A yellow cell is a requested change, but its context determines whether it is an insertion or an update to an existing target property.
+- A yellow cell must never cause a broad replacement of matching text throughout the repository.
+- If the context does not clearly distinguish insertion from update, block the item and ask the user before applying it.
+- A yellow cell containing a value already present at the target is reported as unchanged.
+- Yellow formatting alone never means deletion. Deletion requires explicit strikethrough or a separately confirmed deletion convention.
 - Conflicting yellow cells for the same target path are blocked until the user resolves the conflict.
 - A worksheet with a yellow tab, or highlighted entirely or predominantly in yellow, represents a new profile request. Do not treat it as a mass update and do not create the profile until the preview has been reviewed and explicitly approved.
 - Do not alter canonical URLs, profile ids, resource types, cardinalities, bindings, or fixed values without explicitly calling out the FHIR impact and obtaining confirmation.

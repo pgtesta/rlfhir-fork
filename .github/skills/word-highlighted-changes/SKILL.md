@@ -15,7 +15,7 @@ Ask for missing information before editing:
 
 - The DOCX path or attachment. If none is provided, inspect `.github/DaProcessare/` and report the available `.docx` files. Ask which one to use if there is more than one plausible document.
 - The guide set or version to update when the DOCX explicitly targets one. Otherwise use `guides/IG-RL-sviluppo/` and report that default.
-- Confirm that highlighted non-strikethrough text represents an insertion. Never remove or replace surrounding unhighlighted content because of a non-strikethrough highlight.
+- Confirm that the context clearly identifies highlighted non-strikethrough text as an insertion or an update. Never remove or replace surrounding unhighlighted content unless the context explicitly identifies the existing text being updated.
 - Whether yellow strikethrough text always means deletion, including when the text is inside a table, heading, list, header, footer, or other document region.
 - Whether comments, tracked changes, unhighlighted text, images, and formatting-only changes should be considered.
 - Whether the user wants preview-only or application. Default to preview-only.
@@ -27,18 +27,18 @@ Ask for missing information before editing:
    - Enumerate paragraphs, tables, headings, lists, headers, footers, comments, and tracked changes that contain highlighted runs.
    - Detect yellow highlighting from the run's highlight property and report the detection method. Do not treat font color, shading, or a yellow page background as equivalent unless the user confirms that convention.
    - Preserve run order and combine adjacent highlighted runs only when they form one contiguous logical change.
-   - Record whether every highlighted run is strikethrough. A highlighted and strikethrough run is a deletion request; a highlighted non-strikethrough run is an insertion request requiring context.
+   - Record whether every highlighted run is strikethrough. A highlighted and strikethrough run is always a deletion request; a highlighted non-strikethrough run is an insertion or update request that must be resolved from context.
 
 2. Build a change inventory without writing guide files.
    - For each change, record DOCX location, exact highlighted text, strikethrough state, surrounding sentence/heading, proposed operation, target guide path, target heading or anchor, and ambiguity.
    - Resolve target pages only within `guides/**/*.page.md` or other explicitly documented guide-page formats. Search by page title, profile/resource name, heading, canonical guide link, and distinctive surrounding text. Use `guides/IG-RL-sviluppo/` unless the DOCX specifies another guide set.
    - Prefer an explicit page name or guide link in the DOCX. Do not infer a page solely from a profile name when multiple guide pages match.
    - For yellow strikethrough text, locate the exact target text before proposing deletion. If it appears more than once, report all matches and ask which occurrence to remove.
-   - For yellow non-strikethrough text, treat it as insertion text. Insert it at the explicitly indicated location or immediately adjacent to the matching context, preserving the existing unhighlighted content. If the insertion location cannot be determined from the document, mark it blocked rather than guessing.
+   - For yellow non-strikethrough text, use the surrounding document context to determine whether it is an insertion or an update. Preserve existing unhighlighted content unless the context explicitly identifies the text to update. If the operation or location cannot be determined unambiguously, mark it blocked and ask the user rather than guessing.
    - Keep changes to different guide versions separate. Never apply a change to every matching page by default.
 
 3. Show a preview and request approval.
-   - Present a compact table with DOCX source location, operation (`delete` or `insert`), target page, target anchor, existing context, and inserted/deleted text.
+   - Present a compact table with DOCX source location, operation (`delete`, `insert`, or `update`), target page, target anchor, existing context, old text when applicable, and inserted/updated/deleted text.
    - Show the exact Markdown context or diff for every proposed change.
    - List unresolved page mappings, repeated matches, unsupported DOCX constructs, and interpretation questions separately.
    - Stop after the preview when the user asks for preview-only, dry-run, review, or approval before applying. Do not write, create, rename, or delete guide files in preview-only mode.
@@ -46,7 +46,7 @@ Ask for missing information before editing:
 4. Apply approved changes to guide pages.
    - Edit only approved target pages and preserve unrelated Markdown, links, front matter, tables, indentation, and line endings as far as practical.
    - For yellow strikethrough text, remove only the exact approved text and clean up resulting whitespace or empty list/table artifacts without rewriting surrounding prose.
-   - For approved insertions, preserve the intended Markdown structure and place the text at the approved anchor without deleting or replacing surrounding unhighlighted content.
+   - For approved insertions or updates, preserve the intended Markdown structure. Update existing text only when that exact text and operation were identified and approved in the preview.
    - Do not modify the source DOCX, profiles, extensions, examples, terminology, or generated artifacts.
    - If the target page changed after preview, stop and regenerate the preview instead of overwriting the newer content.
 
@@ -60,11 +60,11 @@ Ask for missing information before editing:
 
 - Yellow highlighting identifies candidate changes; it is not permission to guess the target page or operation.
 - Yellow plus strikethrough means delete the highlighted text from the approved guide location.
-- Yellow without strikethrough means insertion text. It must never replace or delete surrounding unhighlighted text.
+- Yellow without strikethrough means a contextual insertion or update. It must never replace or delete surrounding unhighlighted text unless the context explicitly identifies the target text and the user approves the operation.
 - Unhighlighted Word text is context only unless the user explicitly says otherwise.
 - Tracked deletions and comments are not applied automatically; include them in the inventory and ask for confirmation.
 - Never update profiles or extensions because a guide page mentions them.
-- Ambiguous mappings, duplicate target text, and conflicting instructions remain blocked until resolved.
+- Ambiguous mappings, ambiguous insert-versus-update interpretation, duplicate target text, and conflicting instructions remain blocked until resolved.
 
 ## Completion Report
 
