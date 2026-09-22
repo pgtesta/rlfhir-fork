@@ -106,7 +106,15 @@
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Valore dell'osservazione",
-        "definition": "Rappresenta il valore dell'osservazione."
+        "definition": "Rappresenta il valore dell'osservazione.",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
       }
     ]
   }
