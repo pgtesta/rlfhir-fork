@@ -251,6 +251,81 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore}}
           </td>
         </tr>
+        <tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLImagingStudyRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ </td>
+ <td>
+ Profilo che descrive lo studio DICOM associato al referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsameEseguitoRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive l'esame eseguito nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsameEseguitoRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive le complicanze nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrecedentiEsamiEseguitiRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive i precedenti esami eseguiti nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationQuesitoDiagnosticoRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il quesito diagnostico nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationQuesitoDiagnosticoRad}}
+ </td>
+</tr>
       </tbody>
     </table>
   </body>
