@@ -96,6 +96,12 @@
    <td>ImagingStudy (2)</td>
    <td>{{link:ImagingStudy/Example-ImagingStudy-2-RAD}}</td>
 </tr>
+<tr>
+ <td>RAD</td>
+ <td>Observation</td>
+ <td>Quesito Diagnostico</td>
+ <td>{{link:Observation/Example-Observation-QuesitoDiagnostico-1-RAD}}</td>
+</tr>
   </tbody>
 </table>
   </body>
