@@ -1,0 +1,24 @@
+{
+  "resourceType": "MessageHeader",
+  "id": "esempio-RLMessageHeaderMMG-MMGpicMMG",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
+    ]
+  },
+  "eventCoding": {
+    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
+    "code": "picMMG",
+    "display": "visualizzazione pagina redazione PI"
+  },
+  "destination": [
+    {
+      "name": "SGDT",
+      "endpoint": "urn:rlfhir:SGDT"
+    }
+  ],
+  "source": {
+    "name": "SSI_MMG_NOMEAPPLICATIVO",
+    "endpoint": "urn:rlfhir:SSI_MMG_nome_applicativo"
+  }
+}

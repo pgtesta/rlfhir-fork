@@ -1,0 +1,19 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "esempio-exception",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-CodiciErrore",
+            "code": "NOT_PROCESSABLE",
+            "display": "Risorsa non processabile"
+          }
+        ]
+      }
+    }
+  ]
+}

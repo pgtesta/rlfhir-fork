@@ -1,0 +1,25 @@
+{
+  "resourceType": "CareTeam",
+  "id": "esempio-CareTeam-Equipe",
+  "meta": {
+    "lastUpdated": "2023-01-01T10:36:03Z",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCareTeamEquipe"
+    ],
+    "versionId": "1"
+  },
+  "status": "active",
+  "name": "Peter James Charlmers Care Plan for Inpatient Encounter",
+  "period": {
+    "start": "2013-01-01",
+    "end": "2023-12-31"
+  },
+  "participant": [
+    {
+      "member": {
+        "reference": "PractitionerRole/22369fd8-a95a-11ed-afa1-0242ac120002",
+        "display": "Dr. Peter James Chalmers"
+      }
+    }
+  ]
+}

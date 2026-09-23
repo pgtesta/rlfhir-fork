@@ -1,0 +1,115 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleCore",
+  "name": "RLPractitionerRoleCore",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.identifier:codiceFiscale",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "codiceFiscale",
+        "short": "Codice fiscale dell'operatore sanitario",
+        "definition": "Se disponibile si riporta il codice fiscale dell'operatore sanitario.",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:codiceFiscale.system",
+        "path": "PractitionerRole.identifier.system",
+        "fixedUri": "http://hl7.it/sid/codiceFiscale"
+      },
+      {
+        "id": "PractitionerRole.identifier:codiceFiscale.value",
+        "path": "PractitionerRole.identifier.value",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.it/sid/codiceFiscale"
+        }
+      },
+      {
+        "id": "PractitionerRole.identifier:CodiceRegionale",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "CodiceRegionale",
+        "short": "Codice regionale dell'operatore sanitario",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:CodiceRegionale.system",
+        "path": "PractitionerRole.identifier.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/CodeSystem/HL7"
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "short": "Stato del record dell'operatore",
+        "definition": "Indica se questa risorsa è in uso."
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "short": "Periodo di validità del ruolo",
+        "definition": "Periodo di validità del ruolo indicato per il professionista sanitario"
+      },
+      {
+        "id": "PractitionerRole.period.start",
+        "path": "PractitionerRole.period.start",
+        "short": "Data di inizio"
+      },
+      {
+        "id": "PractitionerRole.period.end",
+        "path": "PractitionerRole.period.end",
+        "short": "Data di fine"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "short": "Operatore sanitario",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "short": "Azienda associata all'operatore per questo specifico ruolo",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "short": "Ruoli dell'operatore sanitario"
+      }
+    ]
+  }
+}

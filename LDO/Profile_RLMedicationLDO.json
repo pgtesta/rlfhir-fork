@@ -1,0 +1,135 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO",
+  "name": "RLMedicationLDO",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "short": "Codice del farmaco"
+      },
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Codice e sistema di codifica del farmaco"
+      },
+      {
+        "id": "Medication.code.coding:aic",
+        "path": "Medication.code.coding",
+        "sliceName": "aic",
+        "short": "Codice del farmaco secondo la codifica AIC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+        }
+      },
+      {
+        "id": "Medication.code.coding:aic.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+      },
+      {
+        "id": "Medication.code.coding:aic.code",
+        "path": "Medication.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoAIC"
+        }
+      },
+      {
+        "id": "Medication.code.coding:atc",
+        "path": "Medication.code.coding",
+        "sliceName": "atc",
+        "short": "Codice del farmaco secondo la codifica ATC",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+        }
+      },
+      {
+        "id": "Medication.code.coding:atc.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+      },
+      {
+        "id": "Medication.code.coding:atc.code",
+        "path": "Medication.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoATC"
+        }
+      },
+      {
+        "id": "Medication.code.coding:gruppoEquivalenza",
+        "path": "Medication.code.coding",
+        "sliceName": "gruppoEquivalenza",
+        "short": "Codice del farmaco secondo la codifica Gruppo di Equivalenza (GE)",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+        }
+      },
+      {
+        "id": "Medication.code.coding:gruppoEquivalenza.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+      },
+      {
+        "id": "Medication.code.coding:gruppoEquivalenza.code",
+        "path": "Medication.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-FarmacoGE"
+        }
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "short": "powder | tablets | capsule ...",
+        "definition": "Forma farmaceutica"
+      },
+      {
+        "id": "Medication.amount",
+        "path": "Medication.amount",
+        "short": "Quantità nella confezione"
+      },
+      {
+        "id": "Medication.ingredient",
+        "path": "Medication.ingredient",
+        "short": "Principio attivo"
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "short": "Codifica AIC del farmaco se presente",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "short": "Grammatura"
+      }
+    ]
+  }
+}

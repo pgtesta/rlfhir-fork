@@ -1,0 +1,45 @@
+{
+  "resourceType": "Encounter",
+  "id": "esempio-Encounter-Accesso",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterAccesso"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoAccesso",
+      "value": "HC40-ENLIST-SVIL.bff1913c-e45f-d212-baf5-e4182fa06238"
+    }
+  ],
+  "status": "in-progress",
+  "class": {
+    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaAccesso",
+    "code": "ACCSS",
+    "display": "Socio-sanitario"
+  },
+  "subject": {
+    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "period": {
+    "start": "2023-01-15T08:32:56+01:00"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-MotivoSegnalazione",
+          "code": "02",
+          "display": "Attivazione Cure Domiciliari (ADI)"
+        }
+      ]
+    }
+  ],
+  "serviceProvider": {
+    "reference": "Organization/e5002d24-a958-11ed-afa1-0242ac120002",
+    "display": "ASST DELLA BRIANZA"
+  }
+}

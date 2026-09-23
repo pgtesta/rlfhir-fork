@@ -1,0 +1,38 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLLocationDimissioneProtetta",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta",
+  "name": "RLLocationDimissioneProtetta",
+  "status": "draft",
+  "description": "Dimissione Protetta",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Location"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDimissioneProtetta"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

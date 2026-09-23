@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-TipologiaProblemaSalute",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-TipologiaProblemaSalute",
+  "version": "1.0.0",
+  "name": "SGDT Tipologia Problema Di Salute",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem che identifica la tipologia del problema di salute",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Patologia primaria"
+    },
+    {
+      "code": "2",
+      "display": "Patologia secondaria"
+    },
+    {
+      "code": "3",
+      "display": "Patologia ulteriore"
+    },
+    {
+      "code": "4",
+      "display": "Condizione clinica prevalente"
+    },
+    {
+      "code": "5",
+      "display": "Problema infermieristico"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "rl-servicerequest-001",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.9.2.30.4.4",
+      "value": "ACC20230001",
+      "assigner": {
+        "display": "ASST Grande Ospedale Metropolitano Niguarda"
+      }
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "priority": "routine",
+  "subject": {
+    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+  },
+  "authoredOn": "2023-06-01T10:30:00+02:00",
+  "requester": {
+    "reference": "PractitionerRole/rl-practitionerrole-core"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/3a14db34-a959-11ed-afa1-0242ac120002"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/rl-encounter-ambulatoriale-001"
+  }
+}

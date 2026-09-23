@@ -1,0 +1,38 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLLocationDataOraOccupazioneLetto",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto",
+  "name": "RLLocationDataOraOccupazioneLetto",
+  "status": "draft",
+  "description": "Data e ora di occupazione posto letto",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Location"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraOccupazioneLetto"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

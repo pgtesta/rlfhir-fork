@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationRepartoClinico",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRepartoClinico",
+  "name": "RLLocationRepartoClinico",
+  "status": "draft",
+  "description": "Parametro di ricerca per il reparto clinico che ha in carico il paziente",
+  "code": "repartoClinico",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoClinico').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

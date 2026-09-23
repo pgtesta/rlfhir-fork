@@ -1,0 +1,5 @@
+title: Guida Implementativa FHIR per SGDT
+description: Questa IG fa riferimento a integrazioni che sono state rilasciate in produzione.
+version: 3.16.002
+style-root: project
+style-name: RL-css

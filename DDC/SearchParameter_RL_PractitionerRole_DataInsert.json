@@ -1,0 +1,26 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLPractitionerRoleDataInsert",
+  "meta": {
+    "lastUpdated": "2022-09-23T10:59:52.7835329+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLPractitionerRoleDataInsert",
+  "name": "RLPractitionerRoleDataInsert",
+  "status": "active",
+  "experimental": false,
+  "description": "Parametro di ricerca della data di inserimento associata al ruolo che può essere assunto dai medici prescrittori",
+  "code": "dataInsert",
+  "base": [
+    "PractitionerRole"
+  ],
+  "type": "date",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert').value",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

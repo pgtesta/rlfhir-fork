@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLL",
+  "name": "RLMeasurePLL",
+  "status": "draft",
+  "description": "Profilo relativo alla misura del totale dei posti letto disponibili per reparto e per struttura ospedaliera",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PLO"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Measure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Measure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Measure.id",
+        "path": "Measure.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Measure.meta",
+        "path": "Measure.meta",
+        "min": 1
+      },
+      {
+        "id": "Measure.meta.versionId",
+        "path": "Measure.meta.versionId",
+        "short": "Versione della risorsa"
+      },
+      {
+        "id": "Measure.meta.lastUpdated",
+        "path": "Measure.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Measure.meta.profile",
+        "path": "Measure.meta.profile",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMeasurePLL"
+      },
+      {
+        "id": "Measure.status",
+        "path": "Measure.status",
+        "fixedCode": "active",
+        "min":1,
+        "max":"1"
+      },
+      {
+        "id": "Measure.publisher",
+        "path": "Measure.publisher",
+        "min":1,
+        "max":"1",
+        "short": "Codice di livello 2 dell'Ente o codice livello 3 dell'ente",
+        "definition": "Stringa alfanumerica di al più 13 caratteri --- da aggiungere l3",
+        "description":"da valorizzare con uno dei valori presenti nel valueset : 'https://fhir.siss.regione.lombardia.it/sid/codiceMinisterialePresidio' o valueset B (L3)"
+      }
+      
+    ]
+  }
+}

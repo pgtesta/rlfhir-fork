@@ -1,0 +1,35 @@
+{
+ "resourceType": "Observation",
+ "id": "Example-Observation-QuesitoDiagnostico-1-RAD",
+ "meta": {
+ "lastUpdated": "2026-09-18T11:00:00+02:00",
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationQuesitoDiagnosticoRad"
+ ],
+ "versionId": "1"
+ },
+ "status": "final",
+ "code": {
+ "coding": [
+ {
+ "system": "http://loinc.org",
+ "code": "29308-4",
+ "display": "Diagnosi"
+ }
+ ]
+ },
+ "subject": {
+ "reference": "Patient/a1b2c3d4-1234-5678-9abc-def012345678",
+ "display": "Mario Rossi"
+ },
+ "valueCodeableConcept": {
+ "coding": [
+ {
+ "system": "urn:oid:2.16.840.1.113883.6.103",
+ "version": "ICD9-CM",
+ "code": "786.2",
+ "display": "Tosse"
+ }
+ ]
+ }
+}

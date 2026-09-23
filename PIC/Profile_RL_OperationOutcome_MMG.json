@@ -1,0 +1,153 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOperationOutcomeMMG",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG",
+  "name": "RLOperationOutcomeMMG",
+  "status": "active",
+  "date": "2024-04-24T09:46:43.7514659+00:00",
+  "description": "Profilo volto a contenere il dettaglio delle informazione relative all'elaborazione del messaggio.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "OperationOutcome",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/OperationOutcome",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "OperationOutcome.id",
+        "path": "OperationOutcome.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa",
+        "min": 1
+      },
+      {
+        "id": "OperationOutcome.meta",
+        "path": "OperationOutcome.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "OperationOutcome.meta.profile",
+        "path": "OperationOutcome.meta.profile",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
+      },
+      {
+        "id": "OperationOutcome.issue",
+        "path": "OperationOutcome.issue",
+        "short": "Esito dell'elaborazione del messaggio",
+        "max": "2"
+      },
+      {
+        "id": "OperationOutcome.issue.severity",
+        "path": "OperationOutcome.issue.severity",
+        "short": "Esito dell'elaborazione del messaggio",
+        "definition": "Il valore è \"information\" se l'esito è positivo, \"error\" se l'elaborazione del messaggio è terminata con un errore"
+      },
+      {
+        "id": "OperationOutcome.issue.code",
+        "path": "OperationOutcome.issue.code",
+        "short": "Codice associato all'esito del messaggio",
+        "definition": "Il valore è \"informational\" se l'esito è positivo, \"invalid\" se l'elaborazione del messaggio è terminata con un errore. I valori ammessi appartengono al ValueSet IssueType e sono consultabili al seguente link http://hl7.org/fhir/issue-type",
+        "binding": {
+          "strength": "required",
+          "description": "Descrizione dell'esito del messaggio."
+        }
+      },
+      {
+        "id": "OperationOutcome.issue.details",
+        "path": "OperationOutcome.issue.details",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Dettaglio dell'esito del messaggio",
+        "min": 1
+      },
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio",
+        "path": "OperationOutcome.issue.details",
+        "sliceName": "contenutoMessaggio",
+        "short": "Dettaglio dell'esito del messaggio"
+      },
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding",
+        "path": "OperationOutcome.issue.details.coding",
+        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo definisce il contenuto del campo text.",
+        "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di contenuto del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.system",
+        "path": "OperationOutcome.issue.details.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio"
+      },
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.code",
+        "path": "OperationOutcome.issue.details.coding.code",
+        "short": "Codice del contenuto del campo text",
+        "definition": "Stringa alfanumerica di al più 2 caratteri",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/TipologiaContenutoMessaggio"
+        }
+      },
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.coding.display",
+        "path": "OperationOutcome.issue.details.coding.display",
+        "short": "Descrizione del contenuto del campo text",
+        "definition": "Stringa alfanumerica di al più 200 caratteri"
+      },
+      {
+        "id": "OperationOutcome.issue.details:contenutoMessaggio.text",
+        "path": "OperationOutcome.issue.details.text",
+        "short": "Nel caso in cui l'esito del messaggio sia positivo questo campo contiene l'URL per il passaggio di contesto ad SGDT o il numero di protocollo GPC.",
+        "definition": "Stringa alfanumerica di al più 400 caratteri"
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore",
+        "path": "OperationOutcome.issue.details",
+        "sliceName": "errore",
+        "short": "Dettaglio dell'esito del messaggio"
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore.coding",
+        "path": "OperationOutcome.issue.details.coding",
+        "short": "Nel caso in cui l'elaborazione del messaggio termina con un errore questo campo contiene il codice e la descrizione dell'errore.",
+        "definition": "Per il dettaglio esaustivo della codifica consultare la Tabella degli errori del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "max": "1"
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore.coding.system",
+        "path": "OperationOutcome.issue.details.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio"
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore.coding.code",
+        "path": "OperationOutcome.issue.details.coding.code",
+        "short": "Codice dell'errore",
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/ErroriMessaggio"
+        }
+      },
+      {
+        "id": "OperationOutcome.issue.details:errore.coding.display",
+        "path": "OperationOutcome.issue.details.coding.display",
+        "short": "Descrizione dell'errore",
+        "definition": "Stringa alfanumerica di al più 200 caratteri"
+      }
+    ]
+  }
+}

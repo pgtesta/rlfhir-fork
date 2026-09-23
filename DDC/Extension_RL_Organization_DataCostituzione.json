@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationDataCostituzione",
+  "meta": {
+    "lastUpdated": "2023-03-16T11:12:56.726791+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione",
+  "name": "RLOrganizationDataCostituzione",
+  "status": "active",
+  "experimental": false,
+  "description": "Data di costituzione dell'ente",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "comment": "Fonte: DT_COSTITUZIONE",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataCostituzione"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "date"
+          },
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

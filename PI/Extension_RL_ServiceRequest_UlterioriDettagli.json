@@ -1,0 +1,111 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLServiceRequestUlterioriDettagli",
+  "meta": {
+    "lastUpdated": "2023-01-23T15:16:24.0386612+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli",
+  "name": "RLServiceRequestUlterioriDettagli",
+  "status": "active",
+  "description": "Ulteriori dettagli riguardo la prestazione specialistica e/o diagnostica da erogare",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:erogabileTelemedicina",
+        "path": "Extension.extension",
+        "sliceName": "erogabileTelemedicina",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:erogabileTelemedicina.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "erogabileTelemedicina"
+      },
+      {
+        "id": "Extension.extension:erogabileTelemedicina.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prenotabileStrutturaProssimita",
+        "path": "Extension.extension",
+        "sliceName": "prenotabileStrutturaProssimita",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:prenotabileStrutturaProssimita.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "prenotabileStrutturaProssimita"
+      },
+      {
+        "id": "Extension.extension:prenotabileStrutturaProssimita.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:prescrizioneElettronica",
+        "path": "Extension.extension",
+        "sliceName": "prescrizioneElettronica",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:prescrizioneElettronica.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "prescrizioneElettronica"
+      },
+      {
+        "id": "Extension.extension:prescrizioneElettronica.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

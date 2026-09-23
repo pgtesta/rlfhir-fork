@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SIAD-ProponentePIC",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
+  "version": "1.0.0",
+  "name": "SIAD   Proponente PIC",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla codifica del soggetto che ha proposto la presa in carico",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-ProponentePIC",
+        "version": "1.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Servizi Sociali"
+          },
+          {
+            "code": "2",
+            "display": "MMG / PLS"
+          },
+          {
+            "code": "3",
+            "display": "Ospedale"
+          },
+          {
+            "code": "4",
+            "display": "Ospedale per dimissione protetta"
+          },
+          {
+            "code": "5",
+            "display": "Struttura residenziale extraospedaliera"
+          },
+          {
+            "code": "6",
+            "display": "Utente/Familiari"
+          },
+          {
+            "code": "8",
+            "display": "Stessa struttura per apertura amministrativa"
+          },
+          {
+            "code": "9",
+            "display": "Altro"
+          }
+        ]
+      }
+    ]
+  }
+}

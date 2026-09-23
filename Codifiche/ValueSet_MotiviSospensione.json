@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-MotiviSospensione",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-MotiviSospensione",
+  "version": "1.0.0",
+  "name": "SIAD Motivi Sospensione",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo ai motivi della sospensione",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-MotiviSospensione",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Ricovero in ospedale"
+          },
+          {
+            "code": "2",
+            "display": "Allontanamento temporaneo"
+          },
+          {
+            "code": "3",
+            "display": "Ricovero temporaneo in Strutture residenziali"
+          },
+          {
+            "code": "4",
+            "display": "Sospensione Amministrativa (Qualora non vi fossero prestazioni per 1 mese)"
+          },
+          {
+            "code": "5",
+            "display": "Assenza volontaria"
+          },
+          {
+            "code": "9",
+            "display": "Altro"
+          }
+        ]
+      }
+    ]
+  }
+}

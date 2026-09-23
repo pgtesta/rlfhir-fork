@@ -1,0 +1,227 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLServiceRequestPrestazioniSpecialistiche",
+  "meta": {
+    "lastUpdated": "2023-10-17T08:38:13.2439009+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche",
+  "name": "RLServiceRequestPrestazioniSpecialistiche",
+  "status": "retired",
+  "description": "Profilo volto a contenere i dettagli una prestazione specialistica e/o diagnostica definita nell’ambito di un progetto individuale di un cittadino.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.id",
+        "path": "ServiceRequest.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.lastUpdated",
+        "path": "ServiceRequest.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.meta.profile",
+        "path": "ServiceRequest.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPrestazioniSpecialistiche"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli",
+        "path": "ServiceRequest.extension",
+        "sliceName": "ulterioriDettagli",
+        "short": "Ulteriori dettaglio riguardo la prestazione specialistica e/o diagnostica da erogare",
+        "definition": "- prestazione erogabile in regime di telemedicina\r\n- prestazione prenotabile in struttura di prossimità\r\n- prescrizione elettronica",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestUlterioriDettagli"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:erogabileTelemedicina",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "erogabileTelemedicina",
+        "short": "Prestazione erogabile in regime di telemedicina",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:prenotabileStrutturaProssimita",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "prenotabileStrutturaProssimita",
+        "short": "Prestazione prenotabile in struttura di prossimità",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.extension:ulterioriDettagli.extension:prescrizioneElettronica",
+        "path": "ServiceRequest.extension.extension",
+        "sliceName": "prescrizioneElettronica",
+        "short": "Prescrizione elettronica",
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "short": "Riferimento al progetto individule nel quale è prevista l'erogazione della prestazione",
+        "definition": "Reference al profilo RLCarePlanProgettoIndividuale contente il progetto individuale del paziente. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requisition",
+        "path": "ServiceRequest.requisition",
+        "short": "Identificativo condiviso da due o più prestazioni nel momento in cui siano parte dello stesso pacchetto",
+        "definition": "Codice alfanumerico di al più 10 caratteri",
+        "comment": "Il dato è detenuto dal SGDT"
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "short": "Stato della prestazione specialistica",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      },
+      {
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "short": "Intento della richesta",
+        "definition": "Valore fisso su \"order\" (la richiesta autorizza l'azione di un professionista)",
+        "fixedCode": "order"
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "short": "Codifica della prestazione specialistica",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.code.coding.system",
+        "path": "ServiceRequest.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS"
+      },
+      {
+        "id": "ServiceRequest.code.coding.code",
+        "path": "ServiceRequest.code.coding.code",
+        "short": "Codice della prestazione specialistica",
+        "definition": "Stringa alfanumerica di al più 10 caratteri",
+        "comment": "La fonte del dato è il campo CD_PRESTAZIONE_SISS della tabella delle prestazioni specialisitiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet che identifica le prestazioni specialistiche SISS",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-PrestSpecSISS"
+        }
+      },
+      {
+        "id": "ServiceRequest.code.coding.display",
+        "path": "ServiceRequest.code.coding.display",
+        "short": "Descrizione della prestazione specialistica",
+        "definition": "Stringa alfanumerica di al più 70 caratteri",
+        "comment": "La fonte del dato è il campo DS_PRESTAZIONE_SISS della tabella delle prestazioni specialisitiche i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "short": "Paziente al quale deve essere erogata la prestazione",
+        "definition": "Reference alla risorsa RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "short": "Range temporale nel quale la prestazione deve essere erogata",
+        "min": 1,
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].start",
+        "path": "ServiceRequest.occurrence[x].start",
+        "short": "Prima data possibile per l'erogazione della prestazione",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].end",
+        "path": "ServiceRequest.occurrence[x].end",
+        "short": "Ultima data possibile per l'erogazione della prestazione",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
+        "short": "Note / commenti aggiuntivi",
+        "definition": "Stringa alfanumerica al più di 1000 caratteri",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Organization",
+  "id": "esempio-RLOrganizationL3",
+  "meta": {
+    "lastUpdated": "2022-02-18T10:31:24Z",
+    "versionId": "1",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL3"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceInternoReparto",
+      "value": "301030143002601"
+    },
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/CodiceMinisterialeReparto",
+      "value": "2601"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code": "dept",
+          "display": "Hospital Department"
+        }
+      ]
+    }
+  ],
+  "name": "MEDICINA SPECIFICA",
+  "partOf": {
+    "reference": "Organization/1"
+  },
+  "extension": [
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataInizioValidita",
+      "valueDate": "2015-01-27"
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDataFineValidita",
+      "valueDate": "2035-01-14"
+    }
+  ]
+}

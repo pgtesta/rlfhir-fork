@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLLocationRepartoFisico",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico",
+  "name": "RLLocationRepartoFisico",
+  "status": "draft",
+  "description": "Reparto Fisico",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Location"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Reparto fisico"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRepartoFisico"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

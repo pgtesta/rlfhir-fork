@@ -1,0 +1,193 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLOrganizationCore",
+  "meta": {
+    "lastUpdated": "2024-07-23T08:19:59.4946383+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore",
+  "name": "RLOrganizationCore",
+  "status": "active",
+  "experimental": false,
+  "description": "Profilo che descrive una struttura o un ente identificato univocamente da un codice di ente L1",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "CORE"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Lista dei codici identificativi dell'organizzazione"
+      },
+      {
+        "id": "Organization.identifier.system",
+        "path": "Organization.identifier.system",
+        "short": "Sistema di identificazione"
+      },
+      {
+        "id": "Organization.identifier.value",
+        "path": "Organization.identifier.value",
+        "short": "Codice identificativo dell'organizzazione"
+      },
+      {
+        "id": "Organization.identifier:struttura",
+        "path": "Organization.identifier",
+        "sliceName": "struttura",
+        "short":"Identificativo Struttura di Ricovero"
+      },
+      {
+        "id": "Organization.identifier:struttura.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture"
+      },
+      {
+        "id": "Organization.identifier:partitaIva",
+        "path": "Organization.identifier",
+        "sliceName": "partitaIva",
+        "short":"Partita IVA Organizzazione"
+      },
+      {
+        "id": "Organization.identifier:partitaIva.system",
+        "path": "Organization.identifier.system",
+        "fixedUri": "http://hl7.it/sid/partitaIva"
+      },
+      {
+        "id": "Organization.active",
+        "path": "Organization.active",
+        "short": "Indicazione dello stato di attività dell'organizzazione"
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "short": "Tipologia di organizzazione (es. Azienda Ospedaliera, presidio, ecc.)"
+      },
+      {
+        "id": "Organization.type.coding.code",
+        "path": "Organization.type.coding.code",
+        "short": "Codice della tipologia di organization",
+        "binding": {
+          "strength": "example",
+          "description": "ValueSet relativo al tipo di organizzazione",
+          "valueSet": "http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione"
+        }
+      },
+      {
+        "id": "Organization.type.coding.display",
+        "path": "Organization.type.coding.display",
+        "short": "Descrizione della tipologia di organizzazione"
+      },
+      {
+        "id": "Organization.name",
+        "path": "Organization.name",
+        "short": "Denominazione dell'organizzazione",
+        "definition": "Nome dell'organizzazione con cui è possibile riconoscerla a livello human-readable"
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "open"
+        },
+        "short": "Recapiti dell'organizzazione",
+        "definition": "Telefono, mail, fax"
+      },
+      {
+        "id": "Organization.telecom:phone",
+        "path": "Organization.telecom",
+        "sliceName": "phone",
+        "short": "Contatto telefonico"
+      },
+      {
+        "id": "Organization.telecom:phone.system",
+        "path": "Organization.telecom.system",
+        "fixedCode": "phone"
+      },
+      {
+        "id": "Organization.telecom:phone.value",
+        "path": "Organization.telecom.value",
+        "short": "Numero di telefono dell'organizzazione"
+      },
+      {
+        "id": "Organization.telecom:fax",
+        "path": "Organization.telecom",
+        "sliceName": "fax",
+        "short": "Recapito fax"
+      },
+      {
+        "id": "Organization.telecom:fax.system",
+        "path": "Organization.telecom.system",
+        "fixedCode": "fax"
+      },
+      {
+        "id": "Organization.telecom:mail",
+        "path": "Organization.telecom",
+        "sliceName": "mail",
+        "short": "Indirizzo di posta elettronica"
+      },
+      {
+        "id": "Organization.telecom:mail.system",
+        "path": "Organization.telecom.system",
+        "fixedCode": "mail"
+      },
+      {
+        "id": "Organization.telecom:mail.value",
+        "path": "Organization.telecom.value",
+        "short": "Indirizzo mail dell'organizzazione"
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "short": "Indirizzo dell'azienda",
+        "definition": "Indirizzo in cui è ubicata l'organizzazione"
+      },
+      {
+        "id": "Organization.address.line",
+        "path": "Organization.address.line",
+        "short": "Indirizzo dell'organizzazione",
+        "definition":"Indirizzo completo (via, civico, ecc.) in cui l'organizzazione è ubicata"
+      },
+      {
+        "id": "Organization.address.city",
+        "path": "Organization.address.city",
+        "short": "Comune in cui l'organizzazione è ubicata"
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "short": "Ente o struttura di livello più alto a cui afferisce l'organizzazione di cui si sta parlando.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

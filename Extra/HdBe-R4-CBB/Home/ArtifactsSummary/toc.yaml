@@ -1,0 +1,12 @@
+- name: CBB (Logical Models)
+  filename: LogicalModels.page.md
+- name: Resource Profiles
+  filename: ResourceProfiles.page.md
+- name: Resource Examples
+  filename: ResourceExamples.page.md
+- name: Data type Profiles
+  filename: DatatypeProfiles.page.md
+- name: Extensions
+  filename: Extensions.page.md
+- name: Terminology
+  filename: Terminology.page.md

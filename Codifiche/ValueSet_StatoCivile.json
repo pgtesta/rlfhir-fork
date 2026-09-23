@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SIAD-StatoCivile",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
+  "version": "1.0.0",
+  "name": "SIAD Stato Civile",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla codifica dello stato civile",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-StatoCivile",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "Celibe/nubile"
+          },
+          {
+            "code": "2",
+            "display": "Coniugato/a"
+          },
+          {
+            "code": "3",
+            "display": "Separato/a"
+          },
+          {
+            "code": "4",
+            "display": "Divorziato/a"
+          },
+          {
+            "code": "5",
+            "display": "Vedovo/a"
+          },
+          {
+            "code": "9",
+            "display": "Non dichiarato"
+          }
+        ]
+      }
+    ]
+  }
+}

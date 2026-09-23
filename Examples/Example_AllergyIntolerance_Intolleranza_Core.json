@@ -1,0 +1,57 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "rl-allergyintolerance-002",
+  "meta": {
+    "profile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceCore"]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "type": "intolerance",
+  "category": ["food"],
+  "criticality": "low",
+  "patient": {
+    "reference": "Patient/rl-patient-001"
+  },
+  "onsetPeriod": {
+    "start": "2018-04-01"
+  },
+  "note": [
+    {
+      "text": "Intolleranza al lattosio riferita dal paziente, confermata con breath test."
+    }
+  ],
+  "reaction": [
+    {
+      "substance": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.3.1937.777.63.11.56",
+            "code": "47703008",
+            "display": "Lattosio"
+          }
+        ],
+        "text": "Lattosio"
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/ReazioniAllergiche",
+              "code": "23232134343",
+              "display": "Meteorismo"
+            }
+          ],
+          "text": "Meteorismo"
+        }
+      ],
+      "onset": "2018-04-01"
+    }
+  ]
+}

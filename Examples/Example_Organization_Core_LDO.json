@@ -1,0 +1,39 @@
+{
+    "resourceType": "Organization",
+    "id": "esempio-organization-core-ldo",
+    "meta": {
+    "lastUpdated": "2022-03-30T10:36:03.000+00:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationCore"
+    ]
+    },
+    "identifier": [
+      {
+        "system": "https://www.hl7.it/fhir/terminology/ValueSet/minsan-idStrutture",
+        "value": "030712"
+      }
+    ],
+    "name": "Clinical Lab",
+    "active": 1,
+    "address": [
+      {
+        "city": "Roma",
+        "line": [
+          "via Roma 1"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+1 555 234 1234"
+      },
+      {
+        "system": "email",
+        "value": "contact@labs.acme.org"
+      }
+    ],
+    "partOf": {
+      "reference": "Organization/esempio-Organization-core"
+    }
+  }

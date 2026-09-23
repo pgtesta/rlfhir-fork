@@ -1,0 +1,21 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://example.org/fhir/StructureDefinition/MySpecimen",
+  "name": "MySpecimen",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.identifier",
+        "path": "Specimen.identifier",
+        "short": "External Identifier1"
+      }
+    ]
+  }
+}

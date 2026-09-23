@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLMessageHeaderMMG",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG",
+  "name": "RLMessageHeaderMMG",
+  "status": "active",
+  "date": "2024-04-23T13:09:25.8682521+00:00",
+  "description": "Profilo volto a contenere le informazioni relative al messaggio scambiato tra la Cartella Clinica Elettronica dell'MMG e SGDT.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MessageHeader",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MessageHeader.id",
+        "path": "MessageHeader.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa",
+        "min": 1
+      },
+      {
+        "id": "MessageHeader.meta",
+        "path": "MessageHeader.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "MessageHeader.meta.profile",
+        "path": "MessageHeader.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderMMG"
+      },
+      {
+        "id": "MessageHeader.event[x]",
+        "path": "MessageHeader.event[x]",
+        "short": "Codice e descrizione dell'evento rappresentato dal messaggio",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di evento del messaggio contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt"
+        }
+      },
+      {
+        "id": "MessageHeader.event[x].system",
+        "path": "MessageHeader.event[x].system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt"
+      },
+      {
+        "id": "MessageHeader.event[x].code",
+        "path": "MessageHeader.event[x].code",
+        "short": "Codice dell'evento rappresentato dal messaggio",
+        "definition": "Stringa alfanumerica di al più 20 caratteri",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt"
+        },
+        "min": 1
+      },
+      {
+        "id": "MessageHeader.event[x].display",
+        "path": "MessageHeader.event[x].display",
+        "short": "Descrizione dell'evento rappresentato dal messaggio",
+        "definition": "Stringa alfanumerica di al più 250 caratteri"
+      },
+      {
+        "id": "MessageHeader.destination",
+        "path": "MessageHeader.destination",
+        "short": "Destinatario del messaggio",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MessageHeader.destination.name",
+        "path": "MessageHeader.destination.name",
+        "short": "Nome del destinatario del messaggio",
+        "definition":"Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  il nome del destinatario è \"SGDT\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG,  il nome del destinatario è \"SSI_MMG_<nome_applicativo>\""
+      },
+      {
+        "id": "MessageHeader.destination.endpoint",
+        "path": "MessageHeader.destination.endpoint",
+        "short": "URN dell'endpoint del destinatario del messaggio",
+        "definition": "Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  l'URN dell'endpoint del destinatario è \"urn:rlfhir:SGDT\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG, l'URN dell'endpoint del destinatario è \"urn:rlfhir:SSI_MMG_<nome_applicativo>\""
+      },
+      {
+        "id": "MessageHeader.source",
+        "path": "MessageHeader.source",
+        "short": "Mittente del messaggio"
+      },
+      {
+        "id": "MessageHeader.source.name",
+        "path": "MessageHeader.source.name",
+        "short": "Nome del mittente del messaggio",
+        "definition":"Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  il nome del mittente è \"SSI_MMG_<nome_applicativo>\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG,  il nome del mittente è \"SGDT\""
+      },
+      {
+        "id": "MessageHeader.source.endpoint",
+        "path": "MessageHeader.source.endpoint",
+        "short": "URN dell'endpoint del mittente del messaggio",
+        "definition": "Nel messaggio di richiesta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleMMG,  l'URN dell'endpoint del mittente è \"urn:rlfhir:SSI_MMG_<nome_applicativo>\". Nel messaggio di risposta, quando il profilo RLMessageHeaderMMG è contenuto nel campo entry del profilo RLBundleRispostaMMG, l'URN dell'endpoint del mittente è \"urn:rlfhir:SGDT\""
+      },
+      {
+        "id": "MessageHeader.response",
+        "path": "MessageHeader.response",
+        "short": "Esito del messaggio di risposta. Il campo viene valorizzato quando il profilo RLMessageHeaderMMG è contenuto nel bundle di risposta"
+      },
+      {
+        "id": "MessageHeader.response.identifier",
+        "path": "MessageHeader.response.identifier",
+        "short": "Identificativo del messaggio originale"
+      },
+      {
+        "id": "MessageHeader.response.code",
+        "path": "MessageHeader.response.code",
+        "short": "Codice dell'esito del messaggio",
+        "definition": "Valori ammessi: ok, transient-error, fatal-error"
+      },
+      {
+        "id": "MessageHeader.response.details",
+        "path": "MessageHeader.response.details",
+        "short": "Descrizione dell'esito del messaggio",
+        "definition": "Reference al profilo RLOperationOutcomeMMG",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
