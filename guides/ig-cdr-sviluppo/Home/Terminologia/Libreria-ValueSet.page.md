@@ -36,31 +36,40 @@
   <tbody id="myTable">
     <tr>
       <td>
-        {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
+        {{link:http://loinc.org}}
       </td>
-      <td>ValueSet relativo alla codifica della tipologia di location</td>
-      <td>http://hl7.org/fhir/ValueSet/location-physical-type</td>
+      <td>Tipologia di documento</td>
+      <td>http://loinc.org</td>
     </tr>
     <tr>
       <td>
-        {{link:http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione}}
+        {{link:http://hl7.org/fhir/ValueSet/composition-status}}
       </td>
-      <td>ValueSet relativo alla codifica della tipologia di organizzazione</td>
-      <td>http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione</td>
+      <td>Stato del documento</td>
+      <td>http://hl7.org/fhir/ValueSet/composition-status</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://hl7.org/fhir/ValueSet/composition-attestation-mode}}
+      </td>
+      <td>Modalità di attestazione del documento</td>
+      <td>http://hl7.org/fhir/ValueSet/composition-attestation-mode</td>
     </tr>
     <tr>
       <td>
         {{link:http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali}}
       </td>
-      <td>ValueSet relativo alla codifica ISTAT delle unità amministrative territoriali</td>
-      <td>http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali</td>
+      <td>Codice identificativo di ciascuna sezione del documento</td>
+      <td>http://loinc.org
+      </td>
     </tr>
     <tr>
       <td>
-      <a href="https://www.hl7.it/fhir/base/ValueSet-statoCivile.html" target="_blank">Stato civile</a>
+        {{link:http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali}}
       </td>
-      <td>ValueSet relativo allo stato civile del paziente</td>
-      <td>https://www.hl7.it/fhir/base/ValueSet-statoCivile</td>
+      <td>Codice identificativo di ciascuna sezione del documento</td>
+      <td>urn:oid:1.2.840.10008.2.16.4
+      </td>
     </tr>
   </tbody>
 </table>
