@@ -6,7 +6,6 @@
   NOTA PER LA COMPILAZIONE
   Fonte: Documento Integrazione Broker FSE 2.0, Sogei, v1.9 (25/08/2026).
   I valori [DA DEFINIRE] vanno sostituiti prima della pubblicazione.
-  La colonna "Profilo RL" associa i profili della guida per tipo di risorsa: verificare le corrispondenze.
 -->
 
 # 1. Header e autenticazione
@@ -54,51 +53,52 @@ curl -X GET "<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Condition?patie
   -H "Accept: application/json"
 ```
 
-L'elenco delle API di consultazione è il seguente. 
-| Metodo | URL                                                                                              | Fruitore       | Profilo RL                                                                                                                                                        |
-| ------ | ------------------------------------------------------------------------------------------------ | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Condition`                                  | Assistito      | RLConditionCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi/Condition`                      | Professionista | RLConditionCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-ricovero-ps/Condition`                         | Professionista | RLConditionCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Condition`                            | Professionista | RLConditionCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/AllergyIntolerance`                         | Assistito      | RLAllergyIntoleranceCore                                                                                                                                          |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/AllergyIntolerance`            | Assistito      | RLAllergyIntoleranceCore                                                                                                                                          |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/AllergyIntolerance`       | Professionista | RLAllergyIntoleranceCore                                                                                                                                          |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/AllergyIntolerance`                   | Professionista | RLAllergyIntoleranceCore                                                                                                                                          |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/MedicationStatement`                        | Assistito      | RLMedicationStatementRAD                                                                                                                                          |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/MedicationStatement`                  | Professionista | RLMedicationStatementRAD                                                                                                                                          |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/MedicationDispense`                         | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/MedicationDispense`            | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/MedicationDispense`       | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/MedicationDispense`                   | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/MedicationRequest`             | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/MedicationRequest`        | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/MedicationAdministration`      | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/MedicationAdministration` | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Observation`                                | Assistito      | RLObservationDecorsoClinico, RLObservationQuesitoDiagnosticoRad, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
-| GET    | `<BASE_PATH>/v1/assistito-visualizzazione-andamento-dati-clinici/Observation`                    | Assistito      | RLObservationDecorsoClinico, RLObservationQuesitoDiagnosticoRad, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
-| GET    | `<BASE_PATH>/v1/professionista-visualizzazione-andamento-dati-clinici/Observation`               | Professionista | RLObservationDecorsoClinico, RLObservationQuesitoDiagnosticoRad, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Observation`                          | Professionista | RLObservationDecorsoClinico, RLObservationQuesitoDiagnosticoRad, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi-dettaglio/Observation`               | Assistito      | RLObservationDecorsoClinico, RLObservationQuesitoDiagnosticoRad, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi-dettaglio/Observation`          | Professionista | RLObservationDecorsoClinico, RLObservationQuesitoDiagnosticoRad, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Procedure`                                  | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Procedure`                            | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/DiagnosticReport`                           | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/DiagnosticReport`                     | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Immunization`                               | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-vaccinazioni/Immunization`                     | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi-dettaglio/Immunization`              | Assistito      | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi-dettaglio/Immunization`         | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Immunization`                         | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-vaccinazioni/ImmunizationRecommendation`       | Professionista | —                                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi/Encounter`                           | Assistito      | RLEncounterCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi/Encounter`                      | Professionista | RLEncounterCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-ricovero-ps/Encounter`                         | Professionista | RLEncounterCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-prestazioni/Encounter`                         | Professionista | RLEncounterCore                                                                                                                                                   |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi-dettaglio/ImagingStudy`              | Assistito      | RLImagingStudyRAD                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi-dettaglio/ImagingStudy`         | Professionista | RLImagingStudyRAD                                                                                                                                                 |
-| GET    | `<BASE_PATH>/v1/professionista-consultazione-dati-ricovero-ps/Location`                          | Professionista | RLLocationCore                                                                                                                                                    |
-| GET    | `<BASE_PATH>/v1/assistito-consultazione-dati-accesso/AuditEvent`                                 | Assistito      | —                                                                                                                                                                 |
+L'elenco delle API di consultazione è il seguente.
+
+| Metodo | URL | Fruitore | Profilo RL |
+| ------ | --- | -------- | ---------- |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Condition` | Assistito | RLConditionCore |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi/Condition` | Professionista | RLConditionCore |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-ricovero-ps/Condition` | Professionista | RLConditionCore |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Condition` | Professionista | RLConditionCore |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/AllergyIntolerance` | Assistito | RLAllergyIntoleranceCore |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/AllergyIntolerance` | Assistito | RLAllergyIntoleranceCore |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/AllergyIntolerance` | Professionista | RLAllergyIntoleranceCore |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/AllergyIntolerance` | Professionista | RLAllergyIntoleranceCore |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/MedicationStatement` | Assistito | RLMedicationStatementTerapiaFarmacologica |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/MedicationStatement` | Professionista | RLMedicationStatementTerapiaFarmacologica |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/MedicationDispense` | Assistito | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/MedicationDispense` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/MedicationDispense` | Professionista | — |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/MedicationDispense` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/MedicationRequest` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/MedicationRequest` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-dossier-farmaceutico/MedicationAdministration` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-dossier-farmaceutico/MedicationAdministration` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Observation` | Assistito | RLObservationDecorsoClinico, RLObservationQuesitoDiagnostico, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
+| GET | `<BASE_PATH>/v1/assistito-visualizzazione-andamento-dati-clinici/Observation` | Assistito | RLObservationDecorsoClinico, RLObservationQuesitoDiagnostico, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
+| GET | `<BASE_PATH>/v1/professionista-visualizzazione-andamento-dati-clinici/Observation` | Professionista | RLObservationDecorsoClinico, RLObservationQuesitoDiagnostico, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Observation` | Professionista | RLObservationDecorsoClinico, RLObservationQuesitoDiagnostico, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi-dettaglio/Observation` | Assistito | RLObservationDecorsoClinico, RLObservationQuesitoDiagnostico, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi-dettaglio/Observation` | Professionista | RLObservationDecorsoClinico, RLObservationQuesitoDiagnostico, RLObservationComplicanzeRad, RLObservationPrecedentiEsamiEseguitiRad, RLObservationEsameEseguitoRad |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Procedure` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Procedure` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/DiagnosticReport` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/DiagnosticReport` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-clinici/Immunization` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-vaccinazioni/Immunization` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi-dettaglio/Immunization` | Assistito | — |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi-dettaglio/Immunization` | Professionista | — |
+| GET | `<BASE_PATH>/v1/professionista-parametri-clinici-rilevanti/Immunization` | Professionista | — |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-vaccinazioni/ImmunizationRecommendation` | Professionista | — |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi/Encounter` | Assistito | RLEncounterCore |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi/Encounter` | Professionista | RLEncounterCore |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-ricovero-ps/Encounter` | Professionista | RLEncounterCore |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-prestazioni/Encounter` | Professionista | RLEncounterCore |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-sintesi-eventi-dettaglio/ImagingStudy` | Assistito | RLImagingStudyRAD |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-sintesi-eventi-dettaglio/ImagingStudy` | Professionista | RLImagingStudyRAD |
+| GET | `<BASE_PATH>/v1/professionista-consultazione-dati-ricovero-ps/Location` | Professionista | RLLocationCore |
+| GET | `<BASE_PATH>/v1/assistito-consultazione-dati-accesso/AuditEvent` | Assistito | — |
 
 # 3. Dettaglio dei servizi di consultazione
 
