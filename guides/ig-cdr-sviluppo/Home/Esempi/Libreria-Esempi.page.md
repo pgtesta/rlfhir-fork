@@ -86,6 +86,12 @@
   </tr>
   <tr>
    <td>RAD</td>
+   <td>Composition</td>
+   <td>Informazioni mediche paziente</td>
+   <td>{{link:Composition/referto-radiologia-0451-20260922}}</td>
+  </tr>
+  <tr>
+   <td>RAD</td>
    <td>ImagingStudy</td>
    <td>ImagingStudy (1)</td>
    <td>{{link:ImagingStudy/Example-ImagingStudy-1-RAD}}</td>
