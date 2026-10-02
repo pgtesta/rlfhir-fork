@@ -1,0 +1,177 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionVPS",
+  "name": "RLCompositionVPS",
+  "title": "Composition VPS",
+  "status": "draft",
+  "date": "2026-10-02",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Composition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition",
+        "path": "Composition",
+        "short": "Verbale di Pronto Soccorso"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding.code"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:pianoDiCura",
+        "path": "Composition.section",
+        "sliceName": "pianoDiCura",
+        "short": "Piano di Cura alla Dimissione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.title",
+        "path": "Composition.section.title",
+        "short": "Titolo della sezione",
+        "comment": "Es. Piano di Cura",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.code",
+        "path": "Composition.section.code",
+        "short": "Codice che identifica il tipo di sezione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "short": "Sistema di codifica",
+        "min": 0,
+        "max": "1",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "short": "Versione del sistema di codifica",
+        "comment": "Es. LOINC 2.19",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "short": "Valore del codice",
+        "min": 0,
+        "max": "1",
+        "fixedCode": "18776-5"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "short": "Descrizione leggibile del codice",
+        "min": 0,
+        "max": "1",
+        "fixedString": "Piano di Cura"
+      },
+      {
+        "id": "Composition.section:pianoDiCura.entry",
+        "path": "Composition.section.entry",
+        "short": "Piano di cura",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVPS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione",
+        "path": "Composition.section",
+        "sliceName": "terapiaFarmacologicaDimissione",
+        "short": "Terapia Farmacologica alla Dimissione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.title",
+        "path": "Composition.section.title",
+        "short": "Titolo della sezione",
+        "comment": "Es. Terapia farmacologica alla dimissione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.code",
+        "path": "Composition.section.code",
+        "short": "Codice che identifica il tipo di sezione",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.code.coding.system",
+        "path": "Composition.section.code.coding.system",
+        "short": "Sistema di codifica",
+        "min": 0,
+        "max": "1",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.code.coding.version",
+        "path": "Composition.section.code.coding.version",
+        "short": "Versione del sistema di codifica",
+        "comment": "Es. LOINC 2.19",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.code.coding.code",
+        "path": "Composition.section.code.coding.code",
+        "short": "Valore del codice",
+        "min": 0,
+        "max": "1",
+        "fixedCode": "5311-1"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.code.coding.display",
+        "path": "Composition.section.code.coding.display",
+        "short": "Descrizione leggibile del codice",
+        "min": 0,
+        "max": "1",
+        "fixedString": "Terapia farmacologica alla dimissione"
+      },
+      {
+        "id": "Composition.section:terapiaFarmacologicaDimissione.entry",
+        "path": "Composition.section.entry",
+        "short": "Terapie farmacologiche prescritte",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestVPS"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
