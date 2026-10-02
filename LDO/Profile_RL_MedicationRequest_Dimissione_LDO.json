@@ -1,0 +1,197 @@
+{
+ "resourceType": "StructureDefinition",
+ "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestDimissioneLdo",
+ "name": "RLMedicationRequestDimissioneLdo",
+ "title": "MedicationRequest LDO - Terapia Farmacologica alla Dimissione",
+ "status": "draft",
+ "date": "2026-10-02",
+ "fhirVersion": "4.0.1",
+ "kind": "resource",
+ "abstract": false,
+ "type": "MedicationRequest",
+ "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+ "derivation": "constraint",
+ "differential": {
+ "element": [
+ {
+ "id": "MedicationRequest",
+ "path": "MedicationRequest"
+ },
+ {
+ "id": "MedicationRequest.status",
+ "path": "MedicationRequest.status",
+ "short": "Stato della richiesta",
+ "definition": "Suggerimento: quando non presente, assumere il valore 'unknown'. Se presente, deve essere derivato dal ValueSet medicationrequest-status di R4.",
+ "min": 1,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.intent",
+ "path": "MedicationRequest.intent",
+ "short": "Scopo della richiesta",
+ "min": 1,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.medication[x]",
+ "path": "MedicationRequest.medication[x]",
+ "short": "Farmaco prescritto",
+ "min": 1,
+ "max": "1",
+ "type": [
+ {
+ "code": "Reference",
+ "targetProfile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO"
+ ]
+ }
+ ]
+ },
+ {
+ "id": "MedicationRequest.subject",
+ "path": "MedicationRequest.subject",
+ "short": "Paziente a cui si riferisce la prescrizione",
+ "min": 1,
+ "max": "1",
+ "type": [
+ {
+ "code": "Reference",
+ "targetProfile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+ ]
+ }
+ ]
+ },
+ {
+ "id": "MedicationRequest.requester",
+ "path": "MedicationRequest.requester",
+ "short": "Professionista che ha richiesto la prescrizione",
+ "min": 0,
+ "max": "1",
+ "type": [
+ {
+ "code": "Reference",
+ "targetProfile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+ ]
+ }
+ ]
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction",
+ "path": "MedicationRequest.dosageInstruction",
+ "short": "Dati relativi alla posologia",
+ "definition": "Istruzioni di dosaggio, inclusi timing, doseAndRate e l'intervallo di tempo in cui è in atto la terapia.",
+ "min": 0,
+ "max": "*"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route",
+ "path": "MedicationRequest.dosageInstruction.route",
+ "short": "Via di somministrazione del farmaco",
+ "definition": "L'attributo code PUÒ essere valorizzato secondo il ValueSet HL7 RouteOfAdministration.",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route.coding",
+ "path": "MedicationRequest.dosageInstruction.route.coding",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route.coding.system",
+ "path": "MedicationRequest.dosageInstruction.route.coding.system",
+ "short": "Sistema di codifica",
+ "min": 0,
+ "max": "1",
+ "fixedUri": "urn:oid:2.16.840.1.113883.5.112"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route.coding.version",
+ "path": "MedicationRequest.dosageInstruction.route.coding.version",
+ "short": "Versione del sistema di codifica",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route.coding.code",
+ "path": "MedicationRequest.dosageInstruction.route.coding.code",
+ "short": "Codice della via di somministrazione",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route.coding.display",
+ "path": "MedicationRequest.dosageInstruction.route.coding.display",
+ "short": "Descrizione della via di somministrazione",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.route.text",
+ "path": "MedicationRequest.dosageInstruction.route.text",
+ "short": "Testo libero",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site",
+ "path": "MedicationRequest.dosageInstruction.site",
+ "short": "Sito anatomico di somministrazione",
+ "definition": "L'attributo code PUÒ essere valorizzato secondo il ValueSet ActSite.",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site.coding",
+ "path": "MedicationRequest.dosageInstruction.site.coding",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site.coding.system",
+ "path": "MedicationRequest.dosageInstruction.site.coding.system",
+ "short": "Sistema di codifica",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site.coding.version",
+ "path": "MedicationRequest.dosageInstruction.site.coding.version",
+ "short": "Versione del sistema di codifica",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site.coding.code",
+ "path": "MedicationRequest.dosageInstruction.site.coding.code",
+ "short": "Codice del sito",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site.coding.display",
+ "path": "MedicationRequest.dosageInstruction.site.coding.display",
+ "short": "Descrizione del sito",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dosageInstruction.site.text",
+ "path": "MedicationRequest.dosageInstruction.site.text",
+ "short": "Testo libero",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "MedicationRequest.dispenseRequest",
+ "path": "MedicationRequest.dispenseRequest",
+ "short": "Autorizzazione alla fornitura del farmaco",
+ "definition": "Informazioni relative al numero di confezioni.",
+ "min": 0,
+ "max": "1"
+ }
+ ]
+ }
+}
