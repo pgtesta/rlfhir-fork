@@ -1,0 +1,119 @@
+{
+ "resourceType": "StructureDefinition",
+ "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureLdo",
+ "name": "RLProcedureLdo",
+ "title": "Procedure LDO - Procedure Eseguite durante il Ricovero",
+ "status": "draft",
+ "date": "2026-10-02",
+ "fhirVersion": "4.0.1",
+ "kind": "resource",
+ "abstract": false,
+ "type": "Procedure",
+ "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+ "derivation": "constraint",
+ "differential": {
+  "element": [
+   {
+    "id": "Procedure",
+    "path": "Procedure"
+   },
+   {
+    "id": "Procedure.status",
+    "path": "Procedure.status",
+    "short": "Stato della procedura",
+    "definition": "Stato della procedura. Il valore DEVE essere derivato dal ValueSet ActStatus (OID 2.16.840.1.113883.1.11.15933).",
+    "min": 1,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.code",
+    "path": "Procedure.code",
+    "short": "Codice identificativo della procedura",
+    "definition": "Identifica la procedura tramite codici standard. Per la codifica possono essere utilizzati i sistemi LOINC, ICD9-CM o una codifica nazionale/locale. Nel caso di Trapianti, l'elemento PUÒ essere selezionato dal ValueSet ProcedureTrapianti_PSSIT DYNAMIC.",
+    "min": 1,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.code.coding",
+    "path": "Procedure.code.coding",
+    "short": "Codifica della procedura",
+    "min": 0,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.code.coding.system",
+    "path": "Procedure.code.coding.system",
+    "short": "Sistema di codifica",
+    "definition": "Sistema di codifica utilizzato (LOINC: http://loinc.org, ICD9-CM: urn:oid:2.16.840.1.113883.6.103, o codifica nazionale/locale).",
+    "min": 0,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.code.coding.version",
+    "path": "Procedure.code.coding.version",
+    "short": "Versione del sistema di codifica",
+    "min": 0,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.code.coding.code",
+    "path": "Procedure.code.coding.code",
+    "short": "Codice della procedura",
+    "min": 0,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.code.coding.display",
+    "path": "Procedure.code.coding.display",
+    "short": "Descrizione testuale della procedura",
+    "min": 0,
+    "max": "1"
+   },
+   {
+    "id": "Procedure.subject",
+    "path": "Procedure.subject",
+    "short": "Paziente su cui è stata eseguita la procedura",
+    "min": 1,
+    "max": "1",
+    "type": [
+     {
+      "code": "Reference",
+      "targetProfile": [
+       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "Procedure.reasonReference",
+    "path": "Procedure.reasonReference",
+    "short": "Riferimento alla motivazione della procedura",
+    "definition": "Riferimento all'Observation che descrive la diagnosi relativa alla procedura eseguita durante il ricovero.",
+    "min": 0,
+    "max": "*",
+    "type": [
+     {
+      "code": "Reference",
+      "targetProfile": [
+       "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationProcedureRicoveroLdo"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "Procedure.note",
+    "path": "Procedure.note",
+    "short": "Annotazioni relative alla procedura",
+    "min": 1,
+    "max": "*"
+   },
+   {
+    "id": "Procedure.note.text",
+    "path": "Procedure.note.text",
+    "short": "Testo della nota",
+    "min": 1,
+    "max": "1"
+   }
+  ]
+ }
+}

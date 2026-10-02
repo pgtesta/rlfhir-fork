@@ -1,0 +1,160 @@
+{
+ "resourceType": "StructureDefinition",
+ "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDiagnosiDimissioneLdo",
+ "name": "RLObservationDiagnosiDimissioneLdo",
+ "title": "Observation LDO - Diagnosi alla Dimissione",
+ "status": "draft",
+ "date": "2026-10-02",
+ "fhirVersion": "4.0.1",
+ "kind": "resource",
+ "abstract": false,
+ "type": "Observation",
+ "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+ "derivation": "constraint",
+ "differential": {
+ "element": [
+ {
+ "id": "Observation",
+ "path": "Observation"
+ },
+ {
+ "id": "Observation.status",
+ "path": "Observation.status",
+ "short": "Stato dell'osservazione",
+ "min": 1,
+ "max": "1",
+ "fixedCode": "final"
+ },
+ {
+ "id": "Observation.code",
+ "path": "Observation.code",
+ "short": "Codice identificativo",
+ "definition": "Codice che identifica il tipo di osservazione. Fixed LOINC 8651-2 (Diagnosi di Dimissione Ospedaliera).",
+ "min": 1,
+ "max": "1"
+ },
+ {
+ "id": "Observation.code.coding",
+ "path": "Observation.code.coding",
+ "short": "Codifica dell'osservazione",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "Observation.code.coding.system",
+ "path": "Observation.code.coding.system",
+ "short": "Sistema di codifica",
+ "min": 0,
+ "max": "1",
+ "fixedUri": "http://loinc.org"
+ },
+ {
+ "id": "Observation.code.coding.version",
+ "path": "Observation.code.coding.version",
+ "short": "Versione del sistema di codifica",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "Observation.code.coding.code",
+ "path": "Observation.code.coding.code",
+ "short": "Valore del codice",
+ "min": 0,
+ "max": "1",
+ "fixedCode": "8651-2"
+ },
+ {
+ "id": "Observation.code.coding.display",
+ "path": "Observation.code.coding.display",
+ "short": "Descrizione leggibile del codice",
+ "min": 0,
+ "max": "1",
+ "fixedString": "Diagnosi di Dimissione Ospedaliera"
+ },
+ {
+ "id": "Observation.subject",
+ "path": "Observation.subject",
+ "short": "Paziente a cui si riferisce l'osservazione",
+ "min": 0,
+ "max": "1",
+ "type": [
+ {
+ "code": "Reference",
+ "targetProfile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+ ]
+ }
+ ]
+ },
+ {
+ "id": "Observation.value[x]",
+ "path": "Observation.value[x]",
+ "short": "Diagnosi di dimissione codificata",
+ "definition": "Codice della diagnosi di dimissione in ICD9-CM.",
+ "min": 1,
+ "max": "1",
+ "type": [
+ {
+ "code": "CodeableConcept"
+ }
+ ]
+ },
+ {
+ "id": "Observation.valueCodeableConcept",
+ "path": "Observation.valueCodeableConcept",
+ "short": "Diagnosi di dimissione codificata",
+ "min": 1,
+ "max": "1"
+ },
+ {
+ "id": "Observation.valueCodeableConcept.coding",
+ "path": "Observation.valueCodeableConcept.coding",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "Observation.valueCodeableConcept.coding.system",
+ "path": "Observation.valueCodeableConcept.coding.system",
+ "short": "Sistema di codifica",
+ "min": 0,
+ "max": "1",
+ "fixedUri": "urn:oid:2.16.840.1.113883.6.103"
+ },
+ {
+ "id": "Observation.valueCodeableConcept.coding.version",
+ "path": "Observation.valueCodeableConcept.coding.version",
+ "short": "Versione del sistema di codifica",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "Observation.valueCodeableConcept.coding.code",
+ "path": "Observation.valueCodeableConcept.coding.code",
+ "short": "Codice diagnosi di dimissione",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "Observation.valueCodeableConcept.coding.display",
+ "path": "Observation.valueCodeableConcept.coding.display",
+ "short": "Descrizione della diagnosi",
+ "min": 0,
+ "max": "1"
+ },
+ {
+ "id": "Observation.note",
+ "path": "Observation.note",
+ "short": "Note aggiuntive",
+ "min": 0,
+ "max": "*"
+ },
+ {
+ "id": "Observation.note.text",
+ "path": "Observation.note.text",
+ "short": "Testo della nota",
+ "min": 0,
+ "max": "1"
+ }
+ ]
+ }
+}
