@@ -1,40 +1,40 @@
 {
- "resourceType": "MedicationRequest",
- "id": "medicationrequest-ricovero-001",
- "meta": {
- "profile": [
- "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestRicoveroLdo"
- ]
- },
- "status": "completed",
- "intent": "order",
- "medicationReference": {
- "reference": "Medication/medication-001"
- },
- "subject": {
- "reference": "Patient/patient-001"
- },
- "encounter": {
- "reference": "Encounter/encounter-001"
- },
- "requester": {
- "reference": "Practitioner/practitioner-001"
- },
- "dosageInstruction": [
- {
- "timing": {
- "repeat": {
- "frequency": 1,
- "period": 1,
- "periodUnit": "d"
- }
- }
- }
- ],
- "dispenseRequest": {
- "quantity": {
- "value": 7,
- "unit": "fiale"
- }
- }
+  "resourceType": "MedicationRequest",
+  "id": "Example-MedicationRequest-Ricovero-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestRicoveroLdo"
+    ]
+  },
+  "status": "completed",
+  "intent": "order",
+  "medicationReference": {
+    "reference": "Medication/medication-001"
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-001"
+  },
+  "requester": {
+    "reference": "Practitioner/practitioner-001"
+  },
+  "dosageInstruction": [
+    {
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      }
+    }
+  ],
+  "dispenseRequest": {
+    "quantity": {
+      "value": 7,
+      "unit": "fiale"
+    }
+  }
 }

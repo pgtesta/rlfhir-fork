@@ -1,32 +1,32 @@
 {
- "resourceType": "Procedure",
- "id": "procedure-ldo-001",
- "meta": {
- "profile": [
- "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureLdo"
- ]
- },
- "status": "completed",
- "code": {
- "coding": [
- {
- "system": "urn:oid:2.16.840.1.113883.6.103",
- "code": "34.91",
- "display": "Toracentesi"
- }
- ]
- },
- "subject": {
- "reference": "Patient/patient-001"
- },
- "reasonReference": [
- {
- "reference": "Observation/observation-procedure-ricovero-001"
- }
- ],
- "note": [
- {
- "text": "Toracentesi diagnostica eseguita in data 28/09/2026. Evacuati 350 ml di liquido sieroso. Esame citologico e colturale: negativo per cellule neoplastiche, colturale in corso."
- }
- ]
+  "resourceType": "Procedure",
+  "id": "Example-Procedure-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureLdo"
+    ]
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "34.91",
+        "display": "Toracentesi"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "reasonReference": [
+    {
+      "reference": "Observation/Example-Observation-ProcedureRicovero-LDO"
+    }
+  ],
+  "note": [
+    {
+      "text": "Toracentesi diagnostica eseguita in data 28/09/2026. Evacuati 350 ml di liquido sieroso. Esame citologico e colturale: negativo per cellule neoplastiche, colturale in corso."
+    }
+  ]
 }

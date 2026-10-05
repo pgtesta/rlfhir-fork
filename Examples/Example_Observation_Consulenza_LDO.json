@@ -1,37 +1,37 @@
 {
- "resourceType": "Observation",
- "id": "observation-consulenza-001",
- "meta": {
- "profile": [
- "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationConsulenzaLdo"
- ]
- },
- "status": "final",
- "code": {
- "coding": [
- {
- "system": "http://loinc.org",
- "code": "11488-4",
- "display": "Consulenza specialistica"
- }
- ]
- },
- "subject": {
- "reference": "Patient/patient-001"
- },
- "encounter": {
- "reference": "Encounter/encounter-001"
- },
- "performer": [
- {
- "reference": "Practitioner/practitioner-002"
- }
- ],
- "basedOn": [
- {
- "reference": "ServiceRequest/servicerequest-001"
- }
- ],
- "effectiveDateTime": "2026-09-28T14:00:00+02:00",
- "valueString": "Consulenza pneumologica: quadro compatibile con polmonite comunitaria lobo inferiore destro. Si consiglia prosecuzione antibioticoterapia ev e monitoraggio saturazione."
+  "resourceType": "Observation",
+  "id": "Example-Observation-Consulenza-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationConsulenzaLdo"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/servicerequest-001"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "11488-4",
+        "display": "Consulenza specialistica"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-001"
+  },
+  "effectiveDateTime": "2026-09-28T14:00:00+02:00",
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-002"
+    }
+  ],
+  "valueString": "Consulenza pneumologica: quadro compatibile con polmonite comunitaria lobo inferiore destro. Si consiglia prosecuzione antibioticoterapia ev e monitoraggio saturazione."
 }
