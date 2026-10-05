@@ -1,0 +1,37 @@
+{
+ "resourceType": "Observation",
+ "id": "observation-esami-eseguiti-001",
+ "meta": {
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsamiEseguitiRicoveroLdo"
+ ]
+ },
+ "status": "final",
+ "code": {
+ "coding": [
+ {
+ "system": "http://loinc.org",
+ "code": "30954-2",
+ "display": "Risultati esami di laboratorio"
+ }
+ ]
+ },
+ "subject": {
+ "reference": "Patient/patient-001"
+ },
+ "encounter": {
+ "reference": "Encounter/encounter-001"
+ },
+ "performer": [
+ {
+ "reference": "Practitioner/practitioner-001"
+ }
+ ],
+ "basedOn": [
+ {
+ "reference": "ServiceRequest/servicerequest-001"
+ }
+ ],
+ "effectiveDateTime": "2026-09-25T10:00:00+02:00",
+ "valueString": "Emocromo: GB 14.500/mm3, PCR 18.5 mg/dL, Procalcitonina 2.1 ng/mL. Emogasanalisi: pO2 62 mmHg, pCO2 35 mmHg."
+}

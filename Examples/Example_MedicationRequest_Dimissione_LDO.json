@@ -1,0 +1,50 @@
+{
+ "resourceType": "MedicationRequest",
+ "id": "medicationrequest-dimissione-001",
+ "meta": {
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestDimissioneLdo"
+ ]
+ },
+ "status": "active",
+ "intent": "order",
+ "medicationReference": {
+ "reference": "Medication/medication-002"
+ },
+ "subject": {
+ "reference": "Patient/patient-001"
+ },
+ "requester": {
+ "reference": "Practitioner/practitioner-001"
+ },
+ "dosageInstruction": [
+ {
+ "timing": {
+ "repeat": {
+ "frequency": 2,
+ "period": 1,
+ "periodUnit": "d",
+ "boundsPeriod": {
+ "start": "2026-10-02",
+ "end": "2026-10-07"
+ }
+ }
+ },
+ "route": {
+ "coding": [
+ {
+ "system": "urn:oid:2.16.840.1.113883.5.112",
+ "code": "PO",
+ "display": "Orale"
+ }
+ ]
+ }
+ }
+ ],
+ "dispenseRequest": {
+ "quantity": {
+ "value": 1,
+ "unit": "confezione"
+ }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "resourceType": "Observation",
+ "id": "observation-motivo-ricovero-001",
+ "meta": {
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationMotivoRicoveroLdo"
+ ]
+ },
+ "status": "final",
+ "code": {
+ "coding": [
+ {
+ "system": "http://loinc.org",
+ "code": "46241-6",
+ "display": "Motivo del ricovero"
+ }
+ ]
+ },
+ "subject": {
+ "reference": "Patient/patient-001"
+ },
+ "valueString": "Dispnea ingravescente e febbre (39.2°C) da 3 giorni. Sospetta polmonite comunitaria."
+}

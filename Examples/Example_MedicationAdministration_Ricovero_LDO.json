@@ -1,0 +1,37 @@
+{
+ "resourceType": "MedicationAdministration",
+ "id": "medicationadministration-ricovero-001",
+ "meta": {
+ "profile": [
+ "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationRicoveroLdo"
+ ]
+ },
+ "status": "completed",
+ "medicationReference": {
+ "reference": "Medication/medication-001"
+ },
+ "subject": {
+ "reference": "Patient/patient-001"
+ },
+ "performer": [
+ {
+ "actor": {
+ "reference": "Practitioner/practitioner-001"
+ }
+ }
+ ],
+ "request": {
+ "reference": "MedicationRequest/medicationrequest-ricovero-001"
+ },
+ "dosage": {
+ "route": {
+ "coding": [
+ {
+ "system": "urn:oid:2.16.840.1.113883.5.112",
+ "code": "IV",
+ "display": "Intravenosa"
+ }
+ ]
+ }
+ }
+}
