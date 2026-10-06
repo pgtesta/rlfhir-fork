@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVps",
-  "name": "RLCarePlanVps",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVPS",
+  "name": "RLCarePlanVPS",
   "title": "CarePlan VPS",
   "status": "draft",
   "date": "2026-10-02",
