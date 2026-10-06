@@ -255,7 +255,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanPianoCuraDimissioneVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
@@ -285,7 +285,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaFarmacoInPSVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
@@ -300,7 +300,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaPSVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaFarmacoDimissioneVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
@@ -315,7 +315,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaFarmacoInPSVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
@@ -360,7 +360,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDataDecessoVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioniDataDecessoVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -390,7 +390,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationProblemaAccessoVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationMotivoVisitaProblemaAccessoVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -420,7 +420,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRagioneVisitaVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationMotivoVisitaRagioneVisitaVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -435,7 +435,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRichiestaAutopsiaVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioneRichiestaAutopsiaVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -450,7 +450,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationTriageVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationTriageValutazioneAcutezzaVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
