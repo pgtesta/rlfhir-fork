@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeVps",
-  "name": "RLObservationComplicanzeVps",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeVPS",
+  "name": "RLObservationComplicanzeVPS",
   "title": "Observation Complicanze VPS",
   "status": "draft",
   "date": "2026-10-02",

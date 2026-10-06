@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2026-10-05T10:20:00+02:00",
     "profile": [
-      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeVps"
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeVPS"
     ],
     "versionId": "1"
   },

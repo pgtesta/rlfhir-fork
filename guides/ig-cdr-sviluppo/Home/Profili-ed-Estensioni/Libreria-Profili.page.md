@@ -179,6 +179,7 @@
           <td>CORE,RAD</td>
           <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlobservationdecorsoclinico.page.md?version=current">
             RLObservationDecorsoClinico
+      </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -249,6 +250,216 @@
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+          </td>
+          <td>
+            Profilo che descrive il piano di cura alla dimissione dal Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body del Verbale di Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica somministrata in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaPSVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la richiesta di terapia farmacologica in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaPSVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica prescritta alla dimissione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAccertamentiVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive gli accertamenti eseguiti in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAccertamentiVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le complicanze insorte durante l'episodio di Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDataDecessoVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la data e ora del decesso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDataDecessoVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLivelloAppropriatezzaVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il livello di appropriatezza dell'accesso alla dimissione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLivelloAppropriatezzaVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationProblemaAccessoVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il problema principale all'accesso in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationProblemaAccessoVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrognosiVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la prognosi alla dimissione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrognosiVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRagioneVisitaVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la ragione della visita in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationRagioneVisitaVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRichiestaAutopsiaVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la richiesta di autopsia
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationRichiestaAutopsiaVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationTriageVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la valutazione di acutezza (codice) assegnata al triage
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationTriageVPS}}
           </td>
         </tr>
       </tbody>
