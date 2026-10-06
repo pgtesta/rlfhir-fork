@@ -1,0 +1,18 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "esempio-OperationOutcomeNEA-positiva",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeNEA"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "details": {
+        "text": "SOC-000000000123"
+      }
+    }
+  ]
+}

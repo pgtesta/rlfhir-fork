@@ -1,0 +1,44 @@
+{
+  "resourceType": "Condition",
+  "id": "rl-condition-001",
+  "meta": {
+    "profile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCore"]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "version": "LOINC",
+          "code": "75326-9",
+          "display": "Problem"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.3.1937.777.63.11.38",
+        "code": "V42.0",
+        "display": "RENE SOSTITUITO DA TRAPIANTO"
+      }
+    ],
+    "text": "Rene sostituito da trapianto"
+  },
+  "subject": {
+    "reference": "Patient/rl-patient-001"
+  },
+  "encounter": {
+    "reference": "Encounter/rl-encounter-045"
+  },
+  "evidence": [
+    {
+      "detail": [
+        {
+          "reference": "Observation/rl-observation-glicemia-001"
+        }
+      ]
+    }
+  ]
+}

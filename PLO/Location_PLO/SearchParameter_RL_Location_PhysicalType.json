@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationPhysicalType",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationPhysicalType",
+  "name": "RLLocationPhysicalType",
+  "status": "draft",
+  "description": "Parametro di ricerca per la tipologia di Location",
+  "code": "physicalType",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "physicalType.coding.code",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

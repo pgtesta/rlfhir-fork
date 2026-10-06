@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLEncounterReferenceCarePlan",
+  "meta": {
+    "lastUpdated": "2022-09-23T14:36:03.6198216+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterReferenceCarePlan",
+  "name": "RLEncounterReferenceCarePlan",
+  "description": "Riferimento al progetto individuale derivato dall'accesso",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Encounter"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterReferenceCarePlan"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          },
+          {
+            "code": "id"
+          },
+          {
+            "code": "uri"
+          },
+          {
+            "code": "url"
+          },
+          {
+            "code": "uuid"
+          },
+          {
+            "code": "Identifier"
+          },
+          {
+            "code": "Reference"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPatientGeneralPractitionerMedicoSostituto",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientGeneralPractitionerMedicoSostituto",
+  "name": "RLPatientGeneralPractitionerMedicoSostituto",
+  "status": "draft",
+  "description": "Flag volto ad identificare se il medico che assiste il cittadino è un sostituto temporaneo del medico scelto dal cittadino",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient.generalPractitioner"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientGeneralPractitionerMedicoSostituto"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

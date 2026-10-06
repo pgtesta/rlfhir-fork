@@ -1,0 +1,95 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom",
+  "name": "RLLocationLuogoPrestazioneCureDom",
+  "status": "active",
+  "description": "Profilo contenente il dettaglio della tipologia del luogo in cui viene erogata una prestazione al paziente in regime di ricovero domiciliare.",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.id",
+        "path": "Location.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Location.meta",
+        "path": "Location.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.versionId",
+        "path": "Location.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.lastUpdated",
+        "path": "Location.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Location.meta.profile",
+        "path": "Location.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom"
+      },
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "short": "Codifica della tipologia di luogo di erogazione della prestazione di cure domiciliari",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1
+      },
+      {
+        "id": "Location.physicalType.coding",
+        "path": "Location.physicalType.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Location.physicalType.coding.system",
+        "path": "Location.physicalType.coding.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo"
+      },
+      {
+        "id": "Location.physicalType.coding.code",
+        "path": "Location.physicalType.coding.code",
+        "short": "Codice della tipologia di luogo di erogazione",
+        "definition": "Stringa numerica di 1 carattere",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di luogo in cui vengono erogate le prestazioni di cure domiciliari",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo"
+        }
+      },
+      {
+        "id": "Location.physicalType.coding.display",
+        "path": "Location.physicalType.coding.display",
+        "short": "Descrizione della tipologia di luogo di erogazione",
+        "definition": "Stringa alfanumerica di al più di 100 caratteri",
+        "comment": "Le descrizioni della tipologia di luogo di erogazione delle prestazioni di cure domiciliari sono ricavatii dal tracciato SIAD 1",
+        "min": 1
+      }
+    ]
+  }
+}

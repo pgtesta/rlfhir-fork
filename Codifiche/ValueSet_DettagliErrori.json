@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-OperationOutcome-DettagliErrore",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/OperationOutcome-DettagliErrore",
+  "version": "1.0.0",
+  "name": "Dettagli Errore",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo ai dettagli degli errori ottenuti in risposta all'interrogazione di API FHIR. Per chi espone API, si raccomanda l'utilizzo degli attributi code e display per maggiore leggibilita.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/OperationOutcome-DettagliErrore",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "RSRC_VERSION_INCOH",
+            "display": "Incoerenza sul versione della risorsa"
+          },
+          {
+            "code": "RSRC_LUPD_INCOH",
+            "display": "Incoerenza su lastUpdate della risorsa"
+          },
+          {
+            "code": "BNDL_TS_INCOH",
+            "display": "Incoerenza su timestamp del bundle"
+          }
+        ]
+      }
+    ]
+  }
+}

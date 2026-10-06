@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "rl-observation-precedentiesamieseguiti-001",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCorePrecedentiEsamiEseguiti"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "version": "2.74",
+        "code": "58410-2",
+        "display": "CBC panel - Blood by Automated count"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/e06086d8-a958-11ed-afa1-0242ac120002"
+  },
+  "encounter": {
+    "reference": "Encounter/rl-encounter-ricovero-001"
+  },
+  "effectivePeriod": {
+    "start": "2023-01-10T08:00:00+02:00",
+    "end": "2023-01-10T09:00:00+02:00"
+  },
+  "valueString": "Nella norma"
+}

@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento",
+  "name": "RLOrganizationDistrettoAccreditamento",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Organization"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Extension.extension:codiceDistretto",
+        "path": "Extension.extension",
+        "sliceName": "codiceDistretto",
+        "short": "Codice distretto",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:codiceDistretto.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "codiceDistretto"
+      },
+      {
+        "id": "Extension.extension:codiceDistretto.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ASSTAfferenza",
+        "path": "Extension.extension",
+        "sliceName": "ASSTAfferenza",
+        "short": "ASST Afferenza",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:ASSTAfferenza.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ASSTAfferenza"
+      },
+      {
+        "id": "Extension.extension:ASSTAfferenza.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:ATSAfferenza",
+        "path": "Extension.extension",
+        "sliceName": "ATSAfferenza",
+        "short": "ATS Afferenza",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:ATSAfferenza.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "ATSAfferenza"
+      },
+      {
+        "id": "Extension.extension:ATSAfferenza.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationDistrettoAccreditamento"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "esempio-OperationOutcomeNEA-negativa",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeNEA"
+    ]
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/operation-error",
+            "code": "8.0",
+            "display": "[Entry-0] Risorsa di tipo MessageHeader incompleta."
+          }
+        ]
+      }
+    }
+  ]
+}

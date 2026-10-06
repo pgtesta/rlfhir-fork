@@ -1,0 +1,76 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-SIAD-TipologiaOperatoreADI",
+  "url": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore",
+  "version": "1.0.0",
+  "name": "SIAD Tipologia Operatori ADI",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "ValueSet relativo alla tipologia di operatore ADI",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/SIAD-TipoOperatore",
+        "version": "1.0.0",
+        "concept": [
+          {
+            "code": "1",
+            "display": "MMG"
+          },
+          {
+            "code": "2",
+            "display": "PLS"
+          },
+          {
+            "code": "3",
+            "display": "Infermiere"
+          },
+          {
+            "code": "4",
+            "display": "Medico specialista"
+          },
+          {
+            "code": "5",
+            "display": "Medico esperto in cure palliative"
+          },
+          {
+            "code": "6",
+            "display": "Medico di continuità assistenziale"
+          },
+          {
+            "code": "7",
+            "display": "Psicologo"
+          },
+          {
+            "code": "8",
+            "display": "Fisioterapista"
+          },
+          {
+            "code": "9",
+            "display": "Logopedista"
+          },
+          {
+            "code": "10",
+            "display": "OSS/ASA/OTA"
+          },
+          {
+            "code": "11",
+            "display": "Dietista"
+          },
+          {
+            "code": "12",
+            "display": "Assistente sociale del SSN"
+          },
+          {
+            "code": "13",
+            "display": "Terapista occupazionale"
+          },
+          {
+            "code": "99",
+            "display": "Altro"
+          }
+        ]
+      }
+    ]
+  }
+}

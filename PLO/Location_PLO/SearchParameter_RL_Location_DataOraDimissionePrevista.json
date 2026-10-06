@@ -1,0 +1,22 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationDataOraDimissionePrevista",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationDataOraDimissionePrevista",
+  "name": "RLLocationDataOraDimissionePrevista",
+  "status": "draft",
+  "description": "Parametro di ricerca della data e ora prevista per la dimissione del paziente",
+  "code": "dataOraDimissionePrevista",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationDataOraDimissionePrevista').value",
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

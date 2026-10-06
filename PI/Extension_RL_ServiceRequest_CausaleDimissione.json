@@ -1,0 +1,43 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione",
+  "name": "RLServiceRequestCausaleDimissione",
+  "description": "Nel caso in cui il codice del servizio sociosanitario (campo code) sia \"C-DOM\" questo campo contiene la causale di dimissione del paziente dal ricovero domiciliare",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCausaleDimissione"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "integer"
+          },
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

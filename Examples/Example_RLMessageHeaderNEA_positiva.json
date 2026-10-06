@@ -1,0 +1,31 @@
+{
+  "resourceType": "MessageHeader",
+  "id": "esempio-RLMessageHeaderNEA-positiva",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMessageHeaderNEA"
+    ]
+  },
+  "eventCoding": {
+    "system": "https://fhir.siss.regione.lombardia.it/ValueSet/message-events/sgdt",
+    "code": "NEA",
+    "display": "Chiamata NEA"
+  },
+  "destination": [
+    {
+      "name": "NEA",
+      "endpoint": "urn:rlfhir:NEA"
+    }
+  ],
+  "source": {
+    "name": "SGDT",
+    "endpoint": "urn:rlfhir:SGDT"
+  },
+  "response": {
+    "identifier": "RLBundleNEArichiesta",
+    "code": "ok",
+    "details": {
+      "reference": "OperationOutcome/b6052a56-f5f2-2a53-3430-079821b029f1"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationAreaDegenza",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationAreaDegenza",
+  "name": "RLLocationAreaDegenza",
+  "status": "draft",
+  "description": "Parametro di ricerca per l'area di degenza dove il paziente risulta allettato",
+  "code": "areaDegenza",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationAreaDegenza').value",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

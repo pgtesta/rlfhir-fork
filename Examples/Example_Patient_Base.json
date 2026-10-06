@@ -1,0 +1,40 @@
+{
+  "resourceType": "Patient",
+  "id": "esempio-patient-base",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientBase"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.it/fhir/StructureDefinition/patient-codeableBirthPlace",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali",
+            "code": "015146",
+            "display": "MILANO"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "QTTGGN24H04F205B"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "QUATTRO",
+      "given": [
+        "GIUGNO"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "2024-06-04"
+}

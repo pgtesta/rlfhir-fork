@@ -1,0 +1,1153 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-ProblemaInfermieristico",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-ProblemaInfermieristico",
+  "version": "1.0.0",
+  "name": "SGDT Problema Infermieristico",
+  "status": "active",
+  "date": "2023-01-24",
+  "description": "CodeSystem relativo alla codifica dei problemi infermieristici",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "1_2_AC_ACDRA_027",
+      "display": "Al domicilio ci sono barriere architettoniche modificabili/riducibili"
+    },
+    {
+      "code": "1_2_AC_ACDRA_028",
+      "display": "Al domicilio ci sono barriere architettoniche NON modificabili/riducibili"
+    },
+    {
+      "code": "1_3_AC_ACDP_266",
+      "display": "Sono presenti provvedimenti giudiziari di restrizione della libertà personale a domicilio"
+    },
+    {
+      "code": "1_3_AC_ACDP_267",
+      "display": "Sono presenti provvedimenti giudiziari di restrizione della libertà personale presso strutture di degenza CON o SENZA PERSONALE DI CUSTODIA"
+    },
+    {
+      "code": "1_4_AC_AL_006",
+      "display": "Abita in luogo centrale - raggiunge i servizi sanitari in un tempo tra i 10 e 15 minuti"
+    },
+    {
+      "code": "1_4_AC_AL_007",
+      "display": "Abita in luogo isolato - raggiunge i servizi sanitari in circa un'ora"
+    },
+    {
+      "code": "1_4_AC_AL_008",
+      "display": "Abita in luogo isolato e/o disagiato - raggiunge i servizi sanitari in oltre 1 ora"
+    },
+    {
+      "code": "1_4_AC_AL_009",
+      "display": "Abita in periferia - raggiunge i servizi sanitari in circa 30 minuti"
+    },
+    {
+      "code": "1_9_AC_CFCG_099",
+      "display": "E' necessario richiedere il consenso ai genitori separati/divorziati"
+    },
+    {
+      "code": "1_9_AC_CFCG_107",
+      "display": "Famiglia oppositiva a cure e trattamenti"
+    },
+    {
+      "code": "1_9_AC_CFCG_108",
+      "display": "Famiglia/amici/caregiver assenti - vive sola/o"
+    },
+    {
+      "code": "1_9_AC_CFCG_109",
+      "display": "Famiglia/care giver collaborante che necessita di interventi/rinforzi educativi"
+    },
+    {
+      "code": "1_9_AC_CFCG_110",
+      "display": "Famiglia/care giver collaborante ed in grado di comprendere"
+    },
+    {
+      "code": "1_9_AC_CFCG_111",
+      "display": "Famiglia/care giver NON collaboranti"
+    },
+    {
+      "code": "1_9_AC_CFCG_152",
+      "display": "Il paziente è sottoposto a tutela, curatela e amministrazione di sostegno"
+    },
+    {
+      "code": "2_1_AD_A_029",
+      "display": "Allergico e/o Intollerante ad una o più sostanze/alimenti"
+    },
+    {
+      "code": "2_1_AD_A_051",
+      "display": "Autonomo - necessita di educazione per nuovo regime alimentare e/o gestione devices"
+    },
+    {
+      "code": "2_1_AD_A_057",
+      "display": "Chiede insistentemente lassativi o si procura il vomito dopo aver mangiato"
+    },
+    {
+      "code": "2_1_AD_A_058",
+      "display": "Chiede o assume alimenti in maniera compulsiva"
+    },
+    {
+      "code": "2_1_AD_A_081",
+      "display": "DIPENDENTE, necessita di essere imboccato"
+    },
+    {
+      "code": "2_1_AD_A_084",
+      "display": "Alterata alimentazione per disfagia"
+    },
+    {
+      "code": "2_1_AD_A_112",
+      "display": "Fornitura di alimenti speciali da farmacia"
+    },
+    {
+      "code": "2_1_AD_A_125",
+      "display": "Ha SNG o NASO ENTERALE"
+    },
+    {
+      "code": "2_1_AD_A_134",
+      "display": "Ha una Peg complicata"
+    },
+    {
+      "code": "2_1_AD_A_135",
+      "display": "Ha una Peg neoconfezionata"
+    },
+    {
+      "code": "2_1_AD_A_136",
+      "display": "Ha una Peg pregressa che gestisce con incertezza"
+    },
+    {
+      "code": "2_1_AD_A_137",
+      "display": "Ha una Peg pregressa che gestisce efficacemente"
+    },
+    {
+      "code": "2_1_AD_A_138",
+      "display": "Ha una protesi ad una o entrambe le arcate"
+    },
+    {
+      "code": "2_1_AD_A_196",
+      "display": "Necessita di alimenti speciali attraverso Inferm. Ass. Domiciliare"
+    },
+    {
+      "code": "2_1_AD_A_197",
+      "display": "Necessità di bevande o cibi addensati"
+    },
+    {
+      "code": "2_1_AD_A_198",
+      "display": "Necessita di controllo complessivo continuativo (anche clinico/laboratoristico) per la sua condizione di sotto/sovra peso"
+    },
+    {
+      "code": "2_1_AD_A_199",
+      "display": "Necessità di dieta specifica (Diabetica, Nefropatica, Celiaca)"
+    },
+    {
+      "code": "2_1_AD_A_204",
+      "display": "Necessita di verifica della effettiva assunzione del cibo e/o di controllo giornaliero del peso"
+    },
+    {
+      "code": "2_1_AD_A_231",
+      "display": "Parzialmente autonomo, necessita di aiuto in alcune operazioni (tagliare, bere, ecc.)"
+    },
+    {
+      "code": "2_1_AD_A_237",
+      "display": "Pratica esercizio fisico in maniera incongrua subito dopo i pasti"
+    },
+    {
+      "code": "2_10_AD_CI_049",
+      "display": "Autonomo ed efficace nelle cure igieniche personali compreso bagno/doccia e vestirsi/svestirsi"
+    },
+    {
+      "code": "2_10_AD_CI_050",
+      "display": "Autonomo ma poco efficace nelle cure igieniche - necessita educazione"
+    },
+    {
+      "code": "2_10_AD_CI_192",
+      "display": "NECESSITA di aiuto nelle cure igieniche personali compreso bagno/doccia e vestirsi/svestirsi"
+    },
+    {
+      "code": "2_10_AD_CI_205",
+      "display": "Non autonomo, necessita di cure igieniche totali al letto"
+    },
+    {
+      "code": "2_10_AD_CI_230",
+      "display": "Parzialmente autonomo, necessita di aiuto in alcune operazioni"
+    },
+    {
+      "code": "2_14_AD_EA_031",
+      "display": "Alterazione caratteristiche delle feci (Ipocoliche, Sanguinolente) (Verificare e tracciare caratteristiche)"
+    },
+    {
+      "code": "2_14_AD_EA_034",
+      "display": "Alterazioni frequenza evacuazione (Diarrea, Stipsi) (data ultima evacuazione e verifica qualità e quantità delle scariche)"
+    },
+    {
+      "code": "2_14_AD_EA_047",
+      "display": "Autonomo"
+    },
+    {
+      "code": "2_14_AD_EA_118",
+      "display": "Ha cieco o ileo o colon stomia complicata"
+    },
+    {
+      "code": "2_14_AD_EA_119",
+      "display": "Ha cieco o ileo o colon stomia neoconfezionata"
+    },
+    {
+      "code": "2_14_AD_EA_120",
+      "display": "Ha cieco o ileo o colon stomia pregressa, necessità di verifica per la gestione"
+    },
+    {
+      "code": "2_14_AD_EA_154",
+      "display": "INCONTINENTE alle feci e/o necessita di dispositivo per la gestione dell'incontinenza fecale"
+    },
+    {
+      "code": "2_14_AD_EA_186",
+      "display": "Melena"
+    },
+    {
+      "code": "2_14_AD_EA_202",
+      "display": "NECESSITA di pannolone/padella"
+    },
+    {
+      "code": "2_15_AD_EU_032",
+      "display": "Alterazione caratteristiche delle urine (Ipercromiche,Ematuria,Piuria,etc.)"
+    },
+    {
+      "code": "2_15_AD_EU_033",
+      "display": "Alterazione delle caratteristiche delle feci"
+    },
+    {
+      "code": "2_15_AD_EU_034",
+      "display": "Portatore di stomia - necessita di educazione"
+    },
+    {
+      "code": "2_15_AD_EU_035",
+      "display": "Alterata eliminazione intestinale per impossibiltà ad avvertire lo stimolo"
+    },
+    {
+      "code": "2_15_AD_EU_046",
+      "display": "Autonomo"
+    },
+    {
+      "code": "2_15_AD_EU_079",
+      "display": "Dializzato Emodinamica (pianificare i giorni di dialisi, gestione accesso vascolare)"
+    },
+    {
+      "code": "2_15_AD_EU_080",
+      "display": "Dializzato Peritoneale (centro di riferimento, gestione punto di accesso)"
+    },
+    {
+      "code": "2_15_AD_EU_090",
+      "display": "Disturbi della minzione (es. Disuria, Poliuria, Nicturia, etc.)"
+    },
+    {
+      "code": "2_15_AD_EU_116",
+      "display": "Ha catetere vescicale permanenza"
+    },
+    {
+      "code": "2_15_AD_EU_117",
+      "display": "Ha catetere vescicale temporaneo"
+    },
+    {
+      "code": "2_15_AD_EU_139",
+      "display": "Ha urostomia complicata"
+    },
+    {
+      "code": "2_15_AD_EU_140",
+      "display": "Ha urostomia neoconfezionata"
+    },
+    {
+      "code": "2_15_AD_EU_141",
+      "display": "Ha urostomia pregressa, necessita di verifica per la gestione"
+    },
+    {
+      "code": "2_15_AD_EU_203",
+      "display": "NECESSITA di pannolone/padella/storta"
+    },
+    {
+      "code": "2_15_AD_EU_235",
+      "display": "Portatore di cistostomia"
+    },
+    {
+      "code": "2_15_AD_EU_236",
+      "display": "Portatore di nefrostomia"
+    },
+    {
+      "code": "2_15_AD_EU_237",
+      "display": "Alterata eliminazione urinaria per impossibilità ad avvertire lo stimolo"
+    },
+    {
+      "code": "2_15_AD_EU_238",
+      "display": "Portatore di stomia - necessita di educazione"
+    },
+    {
+      "code": "2_18_AD_M_030",
+      "display": "Allettatto MA SI mobilizza nel letto autonomamente"
+    },
+    {
+      "code": "2_18_AD_M_044",
+      "display": "Assume farmaci per apparato cardiovascolare/sistema nervoso/per dormire (suggerito Conley o Barthel)"
+    },
+    {
+      "code": "2_18_AD_M_048",
+      "display": "Autonomo"
+    },
+    {
+      "code": "2_18_AD_M_055",
+      "display": "Cammina occasionalmente per brevi tratti (senza aiuto o supervisione)"
+    },
+    {
+      "code": "2_18_AD_M_096",
+      "display": "E' autonomo in tutte le fasi della mobilità anche se utilizza ausili: uso in sicurezza della carozzina, trasferimento sicuro sul letto, sdraiarsi e rialzarsi, salire e scendere le scale, usa stampelle o bastoni senza aiuto o supervisione"
+    },
+    {
+      "code": "2_18_AD_M_114",
+      "display": "HA AVUTO episodio di caduta con o senza danni negli ultimi tre mesi (suggerito Conley o Barthel)"
+    },
+    {
+      "code": "2_18_AD_M_193",
+      "display": "Parzialmente autonomo, necessita di ausili e/o di sorveglianza per camminare sul piano con o senza ausili"
+    },
+    {
+      "code": "2_18_AD_M_194",
+      "display": "NECESSITA di aiuto per salire e scendere le scale"
+    },
+    {
+      "code": "2_18_AD_M_195",
+      "display": "Parzialmente autonomo, necessita di aiuto per spostarsi dalla sedia al letto e ritornare"
+    },
+    {
+      "code": "2_18_AD_M_200",
+      "display": "NECESSITA di essere posturato in carozzina con aiuto e ausili"
+    },
+    {
+      "code": "2_18_AD_M_210",
+      "display": "NON è in grado di salire e scendere le scale"
+    },
+    {
+      "code": "2_18_AD_M_217",
+      "display": "NON in grado di camminare sul piano e/o spingere/muovere la sedia a rotelle"
+    },
+    {
+      "code": "2_18_AD_M_218",
+      "display": "NON in grado di deambulare autonomamente (severa limitazione)"
+    },
+    {
+      "code": "2_18_AD_M_219",
+      "display": "NON in grado di mobilizzarsi a letto autonomamente - Necessita piano posturale"
+    },
+    {
+      "code": "2_18_AD_M_220",
+      "display": "Non autonomo, necessita di aiuto completo per spostarsi dalla sedia al letto e ritornare"
+    },
+    {
+      "code": "2_18_AD_M_272",
+      "display": "Sta in poltrona ma è capace di camminare"
+    },
+    {
+      "code": "2_28_AD_RC_249",
+      "display": "Punteggio da < 2 scala di Conley - rischio minimo"
+    },
+    {
+      "code": "2_28_AD_RC_250",
+      "display": "Punteggio da 2 a 3 scala conley - rischio basso"
+    },
+    {
+      "code": "2_28_AD_RC_251",
+      "display": "Punteggio da 4 a 5 nella scala Conley - rischio moderato"
+    },
+    {
+      "code": "2_28_AD_RC_252",
+      "display": "Punteggio da 6 a 10 nella scala Conley - rischio elevato"
+    },
+    {
+      "code": "3_22_CS_O_086",
+      "display": "Disorientato/confuso"
+    },
+    {
+      "code": "3_22_CS_O_229",
+      "display": "Orientato nel tempo e nello spazio"
+    },
+    {
+      "code": "3_22_CS_O_253",
+      "display": "Non responsivo con patologie di nuova insorgenza"
+    },
+    {
+      "code": "3_22_CS_O_254",
+      "display": "Non responsivo con patologie pregresse (Alzheimer)"
+    },
+    {
+      "code": "3_22_CS_O_297",
+      "display": "Wandering"
+    },
+    {
+      "code": "3_24_CS_PCDPS_097",
+      "display": "E' in grado di gestire in autonomia il proprio progetto di salute, necessità di interventi educativi"
+    },
+    {
+      "code": "3_24_CS_PCDPS_098",
+      "display": "E' in grado di gestire in autonomia il proprio progetto di salute non necessita di interventi educativi"
+    },
+    {
+      "code": "3_24_CS_PCDPS_208",
+      "display": "NON è in grado di gestire il proprio progetto di salute e necessità che il care giver si sostituisca a lui/lei"
+    },
+    {
+      "code": "3_24_CS_PCDPS_209",
+      "display": "NON è in grado di gestire il proprio progetto di salute e necessità di interventi educativi per se stesso e al care giver"
+    },
+    {
+      "code": "3_27_CS_R_222",
+      "display": "Non reagisce né a chiamata né a dolore (U) - GCS(3-8)"
+    },
+    {
+      "code": "3_27_CS_R_255",
+      "display": "Reagisce solo al dolore (P) - GCS(9-12)"
+    },
+    {
+      "code": "3_27_CS_R_257",
+      "display": "Risvegliabile alla chiamata (V) - GCS(13-15)"
+    },
+    {
+      "code": "3_27_CS_R_296",
+      "display": "Vigile/sveglio (Alert)"
+    },
+    {
+      "code": "3_29_CS_RS_010",
+      "display": "Abuso/dipendenza o astinenza da sostanze psicoattive o alcool (attuale)"
+    },
+    {
+      "code": "3_29_CS_RS_037",
+      "display": "Anamnesi familiare negativa"
+    },
+    {
+      "code": "3_29_CS_RS_038",
+      "display": "Anamnesi familiare positiva (suicidi nei famil.o persone significative)"
+    },
+    {
+      "code": "3_29_CS_RS_039",
+      "display": "Anamnesi personale con gesti dimostrativi/già in trattamento Centro di Salute Mentale"
+    },
+    {
+      "code": "3_29_CS_RS_040",
+      "display": "Anamnesi personale negativa"
+    },
+    {
+      "code": "3_29_CS_RS_064",
+      "display": "Condizioni salute mentale alto rischio (depressione maggiore, disturbo bipolare)"
+    },
+    {
+      "code": "3_29_CS_RS_065",
+      "display": "Condizioni salute mentale basso rischio (episodi depressivi lievi)"
+    },
+    {
+      "code": "3_29_CS_RS_101",
+      "display": "E' un bevitore sociale (beve se in compagnia)"
+    },
+    {
+      "code": "3_29_CS_RS_113",
+      "display": "Gravi condizioni di salute/malattia a esito infausto"
+    },
+    {
+      "code": "3_29_CS_RS_145",
+      "display": "Ideazione suicidiaria a bassa intensità - critica parziale dell'atto (comprende che non è bene)"
+    },
+    {
+      "code": "3_29_CS_RS_146",
+      "display": "Ideazione suicidiaria assente"
+    },
+    {
+      "code": "3_29_CS_RS_147",
+      "display": "Ideazione suicidiaria infrequente, a bassa intensità (ci pensa qualche volta)"
+    },
+    {
+      "code": "3_29_CS_RS_148",
+      "display": "Ideazione suicidiaria presente, intensa e senza critica"
+    },
+    {
+      "code": "3_29_CS_RS_166",
+      "display": "Lutti recenti, separazioni/divorzio/perdita lavoro/violenza ed abusi anche sessuali o altri eventi significativi"
+    },
+    {
+      "code": "3_29_CS_RS_238",
+      "display": "PRECEDENTI abusi/dipendenze anche da gioco"
+    },
+    {
+      "code": "3_29_CS_RS_276",
+      "display": "Ha tentato il suicidio recentemente"
+    },
+    {
+      "code": "3_34_CS_SC_024",
+      "display": "Aggressivo (valutare necessità contenzione)"
+    },
+    {
+      "code": "3_34_CS_SC_025",
+      "display": "Agitato"
+    },
+    {
+      "code": "3_34_CS_SC_043",
+      "display": "Assopito"
+    },
+    {
+      "code": "3_34_CS_SC_059",
+      "display": "Collaborante"
+    },
+    {
+      "code": "3_34_CS_SC_085",
+      "display": "Disorientato"
+    },
+    {
+      "code": "3_34_CS_SC_207",
+      "display": "Non Collaborante"
+    },
+    {
+      "code": "3_34_CS_SC_228",
+      "display": "Orientato"
+    },
+    {
+      "code": "3_34_CS_SC_270",
+      "display": "Soporoso"
+    },
+    {
+      "code": "3_34_CS_SC_295",
+      "display": "Vigile"
+    },
+    {
+      "code": "3_6_CS_CAEA_014",
+      "display": "Aggressione verso gli altri con danni lievi"
+    },
+    {
+      "code": "3_6_CS_CAEA_015",
+      "display": "Aggressione verso gli altri con ferite gravi, fratture morte"
+    },
+    {
+      "code": "3_6_CS_CAEA_016",
+      "display": "Aggressione verso gli altri con ferite lievi"
+    },
+    {
+      "code": "3_6_CS_CAEA_017",
+      "display": "Aggressione verso gli altri senza procurare danni"
+    },
+    {
+      "code": "3_6_CS_CAEA_018",
+      "display": "Aggressione verso gli oggetti con danni gravi e rischio incolumità personale e di altri (lancio oggetti dalla finestra, appicca incendi)"
+    },
+    {
+      "code": "3_6_CS_CAEA_019",
+      "display": "Aggressione verso gli oggetti con danni (rompe finestre, mobili)"
+    },
+    {
+      "code": "3_6_CS_CAEA_020",
+      "display": "Aggressione verso gli oggetti in maniera dimostrativa (lancia indumenti, sbatte la porta, prende a calci i mobili) senza danni"
+    },
+    {
+      "code": "3_6_CS_CAEA_021",
+      "display": "Aggressività assente"
+    },
+    {
+      "code": "3_6_CS_CAEA_022",
+      "display": "Aggressività verbale"
+    },
+    {
+      "code": "3_6_CS_CAEA_023",
+      "display": "Aggressività verso se stessi con gravi ingiurie fisiche auto-procurate"
+    },
+    {
+      "code": "3_7_CS_CR_011",
+      "display": "Accompagnamento in terminalità di vita/necessità di approccio in team"
+    },
+    {
+      "code": "3_7_CS_CR_012",
+      "display": "Accompagnamento/sostegno ai care giver in terminalità di vita"
+    },
+    {
+      "code": "3_7_CS_CR_013",
+      "display": "Alterata comunicazione per afasia"
+    },
+    {
+      "code": "3_7_CS_CR_014",
+      "display": "Alterata comunicazione per ipoacusia"
+    },
+    {
+      "code": "3_7_CS_CR_061",
+      "display": "Comunica e si relaziona efficacemente"
+    },
+    {
+      "code": "3_7_CS_CR_062",
+      "display": "Alterata comunicazione per scarsa comprensione della lingua"
+    },
+    {
+      "code": "3_7_CS_CR_082",
+      "display": "Alterata comunicazione per disartria"
+    },
+    {
+      "code": "3_7_CS_CR_221",
+      "display": "Alterata comunicazione perchè non parla e non comprende la lingua italiana"
+    },
+    {
+      "code": "3_7_CS_CR_222",
+      "display": "Alterata comunicazione per sopore"
+    },
+    {
+      "code": "3_7_CS_CR_223",
+      "display": "Alterata comunicazione per agitazione"
+    },
+    {
+      "code": "3_7_CS_CR_224",
+      "display": "Alterata comunicazione per disorientamento"
+    },
+    {
+      "code": "3_7_CS_CR_225",
+      "display": "Non vuole sapere nulla della sua malattia/delega totale al care giver"
+    },
+    {
+      "code": "3_7_CS_CR_226",
+      "display": "Alterata comunicazione per aggressività"
+    },
+    {
+      "code": "3_7_CS_CR_261",
+      "display": "Si percepisce culturalmente inadeguato/a e non è capace di affrontare confronto/spiegazioni/richieste"
+    },
+    {
+      "code": "4_11_SM_CM_004",
+      "display": "Rimozione elettrodo neutro cute arrossata"
+    },
+    {
+      "code": "4_11_SM_CM_005",
+      "display": "Rimozione elettrodo neutro cute integra"
+    },
+    {
+      "code": "4_11_SM_CM_041",
+      "display": "Applicazione Terapia Pressione Negativa"
+    },
+    {
+      "code": "4_11_SM_CM_074",
+      "display": "Cute integra"
+    },
+    {
+      "code": "4_11_SM_CM_077",
+      "display": "Diagnosi lesione non conosciuta"
+    },
+    {
+      "code": "4_11_SM_CM_167",
+      "display": "Medicazione amputazioni parziali o totali di parte di arti"
+    },
+    {
+      "code": "4_11_SM_CM_168",
+      "display": "Medicazione Catere Arterioso"
+    },
+    {
+      "code": "4_11_SM_CM_169",
+      "display": "Medicazione Catetere Peridurale"
+    },
+    {
+      "code": "4_11_SM_CM_170",
+      "display": "Medicazione complessa piede diabetico"
+    },
+    {
+      "code": "4_11_SM_CM_171",
+      "display": "Medicazione compressiva del sito chirurgico"
+    },
+    {
+      "code": "4_11_SM_CM_172",
+      "display": "Medicazione CVC"
+    },
+    {
+      "code": "4_11_SM_CM_173",
+      "display": "Medicazione CVP periferico"
+    },
+    {
+      "code": "4_11_SM_CM_174",
+      "display": "Medicazione del sito chirurgico complessa (deiescenza di ferita infetta e/o fistola)"
+    },
+    {
+      "code": "4_11_SM_CM_175",
+      "display": "Medicazione del sito chirurgico media"
+    },
+    {
+      "code": "4_11_SM_CM_176",
+      "display": "Medicazione del sito chirurgico semplice"
+    },
+    {
+      "code": "4_11_SM_CM_177",
+      "display": "Medicazione di fasciotomia"
+    },
+    {
+      "code": "4_11_SM_CM_178",
+      "display": "Medicazione fistola vascolare neoconfezionata"
+    },
+    {
+      "code": "4_11_SM_CM_179",
+      "display": "Medicazione innesti cutanei"
+    },
+    {
+      "code": "4_11_SM_CM_180",
+      "display": "Medicazione PICC/PORT/MedLine"
+    },
+    {
+      "code": "4_11_SM_CM_181",
+      "display": "Medicazioni di abrasioni"
+    },
+    {
+      "code": "4_11_SM_CM_182",
+      "display": "Medicazioni di fissatori esterni"
+    },
+    {
+      "code": "4_11_SM_CM_183",
+      "display": "Medicazioni ferite da taglio suturate"
+    },
+    {
+      "code": "4_11_SM_CM_184",
+      "display": "Medicazioni ustioni"
+    },
+    {
+      "code": "4_11_SM_CM_185",
+      "display": "Medicazioni ustioni >= secondo grado"
+    },
+    {
+      "code": "4_11_SM_CM_224",
+      "display": "Non Stadiabile"
+    },
+    {
+      "code": "4_11_SM_CM_279",
+      "display": "Trattamento lesioni da decubito di I grado"
+    },
+    {
+      "code": "4_11_SM_CM_280",
+      "display": "Trattamento lesioni da decubito di II grado"
+    },
+    {
+      "code": "4_11_SM_CM_281",
+      "display": "Trattamento lesioni da decubito di III grado"
+    },
+    {
+      "code": "4_11_SM_CM_282",
+      "display": "Trattamento lesioni da decubito di IV grado"
+    },
+    {
+      "code": "4_11_SM_CM_283",
+      "display": "Trattamento ulcere vascolare arteriose"
+    },
+    {
+      "code": "4_11_SM_CM_284",
+      "display": "Trattamento ulcere vascolari miste"
+    },
+    {
+      "code": "4_11_SM_CM_285",
+      "display": "Trattamento ulcere vascolari venose con terapia elastocompressiva"
+    },
+    {
+      "code": "4_13_SM_DA_100",
+      "display": "E' presente uno stato di agitazione con aggressività etero diretta in risposta allo stato allucinatorio"
+    },
+    {
+      "code": "4_13_SM_DA_223",
+      "display": "Non sono presenti allucinazioni visive ed uditive"
+    },
+    {
+      "code": "4_13_SM_DA_263",
+      "display": "Sono presenti allucinazioni uditive e visive persistenti a cui reagisce con paura"
+    },
+    {
+      "code": "4_13_SM_DA_264",
+      "display": "Sono presenti allucinazioni uditive e visive persistenti con cui convive tranquillamente"
+    },
+    {
+      "code": "4_13_SM_DA_265",
+      "display": "Sono presenti allucinazioni uditive e visive sporadiche"
+    },
+    {
+      "code": "4_13_SM_DA_268",
+      "display": "Sono presenti reazioni gestuali/aggressive alle allucinazioni"
+    },
+    {
+      "code": "4_13_SM_DA_269",
+      "display": "Sono presenti reazioni verbali alle allucinazioni"
+    },
+    {
+      "code": "4_13_SM_DA_291",
+      "display": "Vengono messe in atto reazioni aggressive verso le allucinazioni senza coinvolgimento degli altri"
+    },
+    {
+      "code": "4_16_SM_FR_052",
+      "display": "B-PAP"
+    },
+    {
+      "code": "4_16_SM_FR_063",
+      "display": "Con occhialini o maschera di venturi"
+    },
+    {
+      "code": "4_16_SM_FR_073",
+      "display": "C-PAP"
+    },
+    {
+      "code": "4_16_SM_FR_087",
+      "display": "Dispnoico"
+    },
+    {
+      "code": "4_16_SM_FR_106",
+      "display": "Eupnoico"
+    },
+    {
+      "code": "4_16_SM_FR_277",
+      "display": "Tracheostomia neoconfezionata"
+    },
+    {
+      "code": "4_16_SM_FR_278",
+      "display": "Tracheostomia pregressa"
+    },
+    {
+      "code": "4_16_SM_FR_292",
+      "display": "Ventimask reservoir"
+    },
+    {
+      "code": "4_16_SM_FR_293",
+      "display": "Vicariata con ventilatore NIMV di nuova applicazione"
+    },
+    {
+      "code": "4_16_SM_FR_294",
+      "display": "Vicariata con ventilatore NIMV già in uso al domicilio"
+    },
+    {
+      "code": "4_16_SM_FR_295",
+      "display": "Alterata respirazione per scarsa aderenza terapeutica - non mantiene i device respiratori"
+    },
+    {
+      "code": "4_16_SM_FR_296",
+      "display": "Alterata respirazione per presenza di secrezioni eccessive e dense"
+    },
+    {
+      "code": "4_16_SM_FR_297",
+      "display": "Alterata respirazione per comprimissione degli scambi gassosi"
+    },
+    {
+      "code": "4_17_SM_GECEE_001",
+      "display": "Interventi assistenziali per il controllo e la gestione eventi epidemici livello 1"
+    },
+    {
+      "code": "4_17_SM_GECEE_002",
+      "display": "Interventi assistenziali per il controllo e la gestione eventi epidemici livello 2"
+    },
+    {
+      "code": "4_17_SM_GECEE_003",
+      "display": "Interventi assistenziali per il controllo e la gestione eventi epidemici livello 3"
+    },
+    {
+      "code": "4_17_SM_GECEE_045",
+      "display": "Attivazione protocollo infezione + SIRS (sepsi)"
+    },
+    {
+      "code": "4_17_SM_GECEE_158",
+      "display": "Interventi assistenziali per ALERT specifici (KPC)"
+    },
+    {
+      "code": "4_17_SM_GECEE_233",
+      "display": "Non colonizzato/non necessita di interventi di gestione e controllo per Microrganismi Allert"
+    },
+    {
+      "code": "4_19_SM_MD_066",
+      "display": "Controllo drenaggi più di 8 volte nelle 24 ore"
+    },
+    {
+      "code": "4_19_SM_MD_067",
+      "display": "Controllo drenaggi 1\\3 volte nelle 24 ore"
+    },
+    {
+      "code": "4_19_SM_MD_068",
+      "display": "Controllo drenaggi 4\\5 volte nelle 24 ore"
+    },
+    {
+      "code": "4_19_SM_MD_069",
+      "display": "Controllo drenaggi 6\\8 volte nelle 24 ore"
+    },
+    {
+      "code": "4_19_SM_MD_091",
+      "display": "Drenaggi assenti"
+    },
+    {
+      "code": "4_20_SM_MPV_286",
+      "display": "TUTTI con DOLORE da 5 a 8 volte nelle 24 ore"
+    },
+    {
+      "code": "4_20_SM_MPV_287",
+      "display": "TUTTI con DOLORE E BILANCIO IDRICO da 3 a 4 volte al giorno"
+    },
+    {
+      "code": "4_20_SM_MPV_288",
+      "display": "TUTTI con DOLORE E BILANCIO IDRICO una volta al giorno"
+    },
+    {
+      "code": "4_20_SM_MPV_289",
+      "display": "TUTTI con DOLORE E BILANCIO IDRICO 2 volte al giorno"
+    },
+    {
+      "code": "4_21_SM_MSG_042",
+      "display": "Assente"
+    },
+    {
+      "code": "4_21_SM_MSG_070",
+      "display": "Controllo più di 5 volte nelle 24 ore"
+    },
+    {
+      "code": "4_21_SM_MSG_071",
+      "display": "Controllo 1\\3 volte nelle 24 ore"
+    },
+    {
+      "code": "4_21_SM_MSG_072",
+      "display": "Controllo 4\\5 volte nelle 24 ore"
+    },
+    {
+      "code": "4_23_SM_PDOLORE_149",
+      "display": "Dichiara dolore lieve NRS (1-3) o Painaid(1-3)"
+    },
+    {
+      "code": "4_23_SM_PDOLORE_150",
+      "display": "Dichiara dolore moderato NRS (4-6) o Painaid (4-7)"
+    },
+    {
+      "code": "4_23_SM_PDOLORE_151",
+      "display": "Dichiara dolore severo NRS (7-10) o Painaid (8-10)"
+    },
+    {
+      "code": "4_23_SM_PDOLORE_153",
+      "display": "Riferisce di non avere dolore"
+    },
+    {
+      "code": "4_25_SM_PDLS_102",
+      "display": "Esami di laboratorio di routine/programmati"
+    },
+    {
+      "code": "4_25_SM_PDLS_103",
+      "display": "Esami di laboratorio occasionali e non programmati (DCP)"
+    },
+    {
+      "code": "4_25_SM_PDLS_104",
+      "display": "Esami di laboratorio urgenti piu' di 2 volte/24 h"
+    },
+    {
+      "code": "4_25_SM_PDLS_105",
+      "display": "Esami di laboratorio urgenti uguali o inferiori a 2 volte/24h"
+    },
+    {
+      "code": "4_25_SM_PDLS_155",
+      "display": "Indagini laboratoristiche seriate"
+    },
+    {
+      "code": "4_25_SM_PDLS_156",
+      "display": "Indaqini di radio-diagnostica urgenza"
+    },
+    {
+      "code": "4_25_SM_PDLS_157",
+      "display": "Indaqini semplici di radio-diagnostica programmata"
+    },
+    {
+      "code": "4_25_SM_PDLS_206",
+      "display": "NON ci sono indagini diagnostiche o di laboratorio"
+    },
+    {
+      "code": "4_25_SM_PDLS_243",
+      "display": "Preparazione procedure diagnostiche complesse (endoscopici, PET, ArterioG, ecc.)"
+    },
+    {
+      "code": "4_30_SM_SAD_093",
+      "display": "E' a RISCHIO di sanguinamento (app. digerente)"
+    },
+    {
+      "code": "4_30_SM_SAD_121",
+      "display": "Ha presentato/presenta imponente sanguinamento (app.digerente)"
+    },
+    {
+      "code": "4_30_SM_SAD_123",
+      "display": "Ha presentato/presenta lieve/moderato sanguinamento (app.digerente)"
+    },
+    {
+      "code": "4_30_SM_SAD_142",
+      "display": "Ha zaffo anale"
+    },
+    {
+      "code": "4_30_SM_SAD_211",
+      "display": "NON EVIDENZA di sanguinamento (app. digerente)"
+    },
+    {
+      "code": "4_31_SM_SAG_094",
+      "display": "E' a RISCHIO di sanguinamento (app.genitale)"
+    },
+    {
+      "code": "4_31_SM_SAG_144",
+      "display": "Ha zaffo vaginale"
+    },
+    {
+      "code": "4_31_SM_SAG_212",
+      "display": "NON EVIDENZA di sanguinamento (app.genitale)"
+    },
+    {
+      "code": "4_31_SM_SAG_247",
+      "display": "Presenta metrorragia lieve\\moderata"
+    },
+    {
+      "code": "4_31_SM_SAG_248",
+      "display": "Presenta/ha presentato metrorragia imponente"
+    },
+    {
+      "code": "4_32_SM_SAR_092",
+      "display": "E' a RISCHIO di sanguinamento (app. respiratorio)"
+    },
+    {
+      "code": "4_32_SM_SAR_122",
+      "display": "Ha presentato/presenta imponente sanguinamento (app.respiratorio)"
+    },
+    {
+      "code": "4_32_SM_SAR_124",
+      "display": "Ha presentato/presenta sanguinamento massivo post operatorio con dislocazione trachea"
+    },
+    {
+      "code": "4_32_SM_SAR_133",
+      "display": "Ha tampone nasale"
+    },
+    {
+      "code": "4_32_SM_SAR_143",
+      "display": "Ha zaffo in cavo orale"
+    },
+    {
+      "code": "4_32_SM_SAR_214",
+      "display": "NON EVIDENZA di sanguinamento (app.respiratorio)"
+    },
+    {
+      "code": "4_32_SM_SAR_246",
+      "display": "Presenta lieve\\moderato sanguinamento (app. respiratorio)"
+    },
+    {
+      "code": "4_33_SM_SAU_095",
+      "display": "E' a RISCHIO di sanguinamento (app.urogenitale)"
+    },
+    {
+      "code": "4_33_SM_SAU_115",
+      "display": "Ha catetere vescicale in trazione"
+    },
+    {
+      "code": "4_33_SM_SAU_213",
+      "display": "NON EVIDENZA di sanguinamento (app. urogenitale)"
+    },
+    {
+      "code": "4_33_SM_SAU_244",
+      "display": "Presenta ematuria con lavaggio vescicale continuo"
+    },
+    {
+      "code": "4_33_SM_SAU_245",
+      "display": "Presenta ematuria senza lavaggio vescicale continuo"
+    },
+    {
+      "code": "4_35_SM_VRLDP_053",
+      "display": "Braden >= 20 - rischio assente"
+    },
+    {
+      "code": "4_35_SM_VRLDP_259",
+      "display": "Se Braden<16 rivalutare ed ispezionare la cute ogni 24 ore ed applicare presidi preventivi antidecubuto"
+    },
+    {
+      "code": "4_35_SM_VRLDP_260",
+      "display": "Se Braden >=16 rivalutare ed ispezionare la cute ogni 48 ore"
+    },
+    {
+      "code": "4_36_SM_RISN_298",
+      "display": "Dorme adeguatamente e si sveglia riposato/a"
+    },
+    {
+      "code": "4_36_SM_RISN_299",
+      "display": "Dorme ma non si sveglia mai o quasi mai riposato/a"
+    },
+    {
+      "code": "4_36_SM_RISN_300",
+      "display": "Fa sempre molta fatica ad addormentarsi - non andrebbe mai a dormire"
+    },
+    {
+      "code": "4_36_SM_RISN_301",
+      "display": "Soffre di insonnia e utilizza in foma occasionale/continuativa prodotti per favorire il sonno"
+    },
+    {
+      "code": "4_36_SM_RISN_302",
+      "display": "Alterato sonno/riposo per ospedalizzazione"
+    },
+    {
+      "code": "4_36_SM_RISN_303",
+      "display": "Alterato sonno/riposo per presenza di devices"
+    },
+    {
+      "code": "4_36_SM_RISN_304",
+      "display": "Alterato sonno/riposo per agitazione"
+    },
+    {
+      "code": "4_5_SM_ALPT_126",
+      "display": "Ha somm.ne infusionale continua per via EPIDURALE"
+    },
+    {
+      "code": "4_5_SM_ALPT_127",
+      "display": "Ha somm.ne infusionale continua tramite Catetere Venoso Centrale"
+    },
+    {
+      "code": "4_5_SM_ALPT_128",
+      "display": "Ha somm.ne infusionale continua tramite Catetere Venoso Periferico"
+    },
+    {
+      "code": "4_5_SM_ALPT_129",
+      "display": "Ha somm.ne infusionale continua tramite pompa + insulina"
+    },
+    {
+      "code": "4_5_SM_ALPT_130",
+      "display": "Ha somm.ne terapia os, sc, im, ev,  ad orari PIU' 6 volte\\24 h"
+    },
+    {
+      "code": "4_5_SM_ALPT_131",
+      "display": "Ha somm.ne terapia os, sc, im, ev, ad orari MAX 2 volte\\24 h"
+    },
+    {
+      "code": "4_5_SM_ALPT_132",
+      "display": "Ha somm.ne terapia os, sc, im, ev, ad orari MAX 4 volte\\24 h."
+    },
+    {
+      "code": "4_5_SM_ALPT_190",
+      "display": "Necessaria SUPERVISIONE all'AUTOSOMMINISTRAZIONE della terapia"
+    },
+    {
+      "code": "4_5_SM_ALPT_215",
+      "display": "NON ha trattamenti farmacologici"
+    },
+    {
+      "code": "4_5_SM_ALPT_234",
+      "display": "Pompa elastomerica venosa/peridurale/plessica"
+    },
+    {
+      "code": "4_8_SM_CM_026",
+      "display": "Agitazione intensa e persistente durante il periodo di contenzione con rischio lesioni"
+    },
+    {
+      "code": "4_8_SM_CM_075",
+      "display": "Demenza"
+    },
+    {
+      "code": "4_8_SM_CM_163",
+      "display": "Intossicazione da alcool"
+    },
+    {
+      "code": "4_8_SM_CM_164",
+      "display": "Intossicazione da sostanze stupefacenti"
+    },
+    {
+      "code": "4_8_SM_CM_201",
+      "display": "Necessità di mantenimento della contenzione oltre le 12 ore"
+    },
+    {
+      "code": "4_8_SM_CM_227",
+      "display": "Oligofrenia"
+    },
+    {
+      "code": "4_8_SM_CM_232",
+      "display": "Patologie internistiche concomitanti"
+    },
+    {
+      "code": "4_8_SM_CM_258",
+      "display": "Saturazione O2 ridotta"
+    },
+    {
+      "code": "4_8_SM_CM_273",
+      "display": "Stati psichici da alterazioni organiche"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType": "Condition",
+  "id": "esempio-Condition-CondizioneClinicaPrevalente",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
+    ],
+    "versionId": "1"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute",
+          "code": "4",
+          "display": "Condizione clinica prevalente"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-CondizioneClinica",
+        "code": "1",
+        "display": "Paziente ordinario: utenza tipica"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "recordedDate": "2023-01-15"
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLHealthcareServiceTempiMediPresaInCarico",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceTempiMediPresaInCarico",
+  "name": "RLHealthcareServiceTempiMediPresaInCarico",
+  "status": "draft",
+  "description": "Estensione per la definizione dei tempi medi di presa in carico",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HealthcareService"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLHealthcareServiceTempiMediPresaInCarico"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].unit",
+        "path": "Extension.value[x].unit",
+        "short": "Unità di misura",
+        "definition": "Specificare l'unità di misura del tempo di presa in carico (es. ore, giorni)"
+      }
+    ]
+  }
+}

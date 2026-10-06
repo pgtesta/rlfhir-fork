@@ -1,0 +1,246 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLPractitionerRoleMedicoPrescrittore",
+  "meta": {
+    "lastUpdated": "2023-10-26T08:22:55.5464596+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleMedicoPrescrittore",
+  "name": "RLPractitionerRoleMedicoPrescrittore",
+  "status": "active",
+  "experimental": false,
+  "description": "Risorsa che raccoglie i ruoli e le qualifiche di un determinato medico prescrittore",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "DDC"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.id",
+        "path": "PractitionerRole.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta",
+        "path": "PractitionerRole.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta.versionId",
+        "path": "PractitionerRole.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta.lastUpdated",
+        "path": "PractitionerRole.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.meta.profile",
+        "path": "PractitionerRole.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.extension:dataInsert",
+        "path": "PractitionerRole.extension",
+        "sliceName": "dataInsert",
+        "short": "Data di inserimento del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_INSER dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataInsert"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.extension:dataUpdate",
+        "path": "PractitionerRole.extension",
+        "sliceName": "dataUpdate",
+        "short": "Data dell'ultima modifica del record",
+        "definition": "Formato: YYYY-MM-DD secondo lo standard FHIR",
+        "comment": "La fonte del dato è il campo DT_ULTV dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleDataUpdate"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PractitionerRole.identifier",
+        "path": "PractitionerRole.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:CD_REGIONALE",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "CD_REGIONALE",
+        "short": "Codice regionale valorizzato solo per prescrittori di tipo MMG e PLS",
+        "definition": "Stringa numerica di 5 caratteri.",
+        "comment": "La fonte del dato è il campo CD_REGIONALE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:CD_REGIONALE.system",
+        "path": "PractitionerRole.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceRegionaleMedicoPrescrittore"
+      },
+      {
+        "id": "PractitionerRole.identifier:CD_REGIONALE.value",
+        "path": "PractitionerRole.identifier.value",
+        "short": "Codice regionale valorizzato solo per prescrittori di tipo MMG e PDF",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.identifier:CD_MEDICO_SPEC",
+        "path": "PractitionerRole.identifier",
+        "sliceName": "CD_MEDICO_SPEC",
+        "short": "Codice regionale per gli specialisti",
+        "definition": "Stringa alfanumerica di 6 caratteri",
+        "comment": "La fonte del dato è il campo CD_MEDICO_SPEC dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.identifier:CD_MEDICO_SPEC.system",
+        "path": "PractitionerRole.identifier.system",
+        "min": 1,
+        "fixedUri": "https://fhir.siss.regione.lombardia.it/sid/codiceRegionaleMedicoSpecialista"
+      },
+      {
+        "id": "PractitionerRole.identifier:CD_MEDICO_SPEC.value",
+        "path": "PractitionerRole.identifier.value",
+        "short": "Codice regionale per gli specialisti",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "short": "Indicazione sullo stato del medico prescrittore",
+        "definition": "Può assumere i valori:\n• true se il campo CD_STATO è uguale ad A (attivo).\r\n• false se il campo CD_STATO è uguale ad C(cessato, medico che non può prescrivere su ricettario RUR).",
+        "comment": "La fonte del dato è il campo CD_STATO dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.period",
+        "path": "PractitionerRole.period",
+        "short": "Periodo di attività di prescrittore presso la struttura",
+        "definition": "Periodo di attività di prescrittore presso la struttura"
+      },
+      {
+        "id": "PractitionerRole.period.start",
+        "path": "PractitionerRole.period.start",
+        "short": "Data inizio attività medico",
+        "definition": "Data in cui il medico ha iniziato l’attività di prescrittore presso la struttura (menzionata nel campo organization)\r\nFormato: YYYY-MM-DD secondo lo standard FHIR.",
+        "comment": "La fonte del dato è il campo DT_INIZIO dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01"
+      },
+      {
+        "id": "PractitionerRole.period.end",
+        "path": "PractitionerRole.period.end",
+        "short": "Data cessazione attività medico",
+        "definition": "Data in cui il medico ha terminato l’attività di prescrittore presso la struttura (menzionata nel campo issuer)\r\nFormato: YYYY-MM-DD secondo lo standard FHIR.\r\nIl campo è obbligatorio quando il campo active = C",
+        "comment": "La fonte del dato è il campo DT_FINE della tabella V_MEDICI_GDC_DDC"
+      },
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "short": "Reference al medico prescrittore",
+        "definition": "Reference al medico prescrittore mappato nel profilo RLPractitionerMedicoPrescrittore.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerMedicoPrescrittore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "short": "Reference all'ente L2 in cui il medico prescrittore esercita",
+        "definition": "Reference al profilo RLOrganizationL2. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "La fonte del dato è il campo ID_LIVELLO_2 dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL2"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "short": "Codice e descrizione della qualifica del medico prescrittore",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella delle qualifiche dei medici prescrittori contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.code.coding",
+        "path": "PractitionerRole.code.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.code.coding.code",
+        "path": "PractitionerRole.code.coding.code",
+        "short": "Codice della qualifica del medico prescrittore",
+        "definition": "Singolo carattere alfabetico",
+        "comment": "La fonte del dato è il campo CD_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alle qualifiche dei medici prescrittori",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-TipoPrescrittore"
+        }
+      },
+      {
+        "id": "PractitionerRole.code.coding.display",
+        "path": "PractitionerRole.code.coding.display",
+        "short": "Descrizione della qualifica del medico prescrittore",
+        "definition": "Stringa alfanumerica di al più 70 caratteri.",
+        "comment": "La fonte del dato è il campo DS_TIPO_PRESCRITTORE dell'anagrafe dei medici prescrittori i cui dettagli sono consultabili nel documento DC-DDC-SIAA#02 ed accessibili tramite i servizi descritti nel documento DC-DDC-SIAA#01",
+        "min": 1
+      }
+    ]
+  }
+}

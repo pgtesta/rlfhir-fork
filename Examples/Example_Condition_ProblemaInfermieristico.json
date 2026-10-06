@@ -1,0 +1,36 @@
+{
+  "resourceType": "Condition",
+  "id": "esempio-Condition-ProblemaInfermieristico",
+  "meta": {
+    "lastUpdated": "2023-01-11T08:32:56+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionProblemiSalute"
+    ],
+    "versionId": "1"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaProblemaSalute",
+          "code": "5",
+          "display": "Problema infermieristico"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-ProblemaInfermieristico",
+        "code": "1_2_AC_ACDRA_027",
+        "display": "Al domicilio ci sono barriere architettoniche modificabili/riducibili"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+    "display": "Mario Rossi"
+  },
+  "recordedDate": "2023-01-15"
+}

@@ -1,0 +1,965 @@
+{
+  "resourceType": "Bundle",
+  "id": "esempio-ricerca-prestazioni-erogate",
+  "type": "searchset",
+  "timestamp": "2023-02-15T08:32:56+01:00",
+  "total": 5,
+  "entry": [
+    {
+      "fullUrl": "Procedure/40f9cd20-98a0-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "40f9cd20-98a0-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-06T10:17:16+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione"
+          ],
+          "versionId": "1"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-2",
+            "display": "2023000021"
+          },
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+              "code": "PRESTADI04",
+              "display": "Trasferimento competenze/educazione del caregiver/ colloqui/ nursing/addestramento"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "performedDateTime": "2023-02-06",
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/a6ec490e-98a1-11ed-a8fc-0242ac990002",
+              "display": "Fisioterapista"
+            }
+          }
+        ],
+        "location": {
+          "reference": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+          "display": "Propria Residenza"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico",
+            "valueDateTime": "2022-02-06T10:17:16+01:00"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione",
+                  "code": "1",
+                  "display": "Presenza"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso",
+            "valueInteger": 1
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso",
+                  "code": "1",
+                  "display": "Programmato"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "Procedure/2d5b3c22-b1fa-11ed-afa1-0242ac120002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "2d5b3c22-b1fa-11ed-afa1-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-09T12:48:56+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione"
+          ],
+          "versionId": "1"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-1",
+            "display": "2023000021"
+          },
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+              "code": "PRESTADI03",
+              "display": "Prelievo Ematico"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "performedDateTime": "2023-02-09",
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/a8514460c-b1fa-11ed-afa1-0242ac120002",
+              "display": "Infermiere"
+            }
+          }
+        ],
+        "location": {
+          "reference": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+          "display": "Propria Residenza"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico",
+            "valueDateTime": "2022-02-09T10:17:16+01:00"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione",
+                  "code": "1",
+                  "display": "Presenza"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso",
+            "valueInteger": 1
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso",
+                  "code": "1",
+                  "display": "Programmato"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "Procedure/bd0c63de-b1f8-11ed-afa1-0242ac120002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "bd0c63de-b1f8-11ed-afa1-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-14T09:02:43+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione"
+          ],
+          "versionId": "1"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-1",
+            "display": "2023000021"
+          },
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+              "code": "PRESTADI03",
+              "display": "Prelievo Ematico"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "performedDateTime": "2023-02-14",
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/8514460c-b1fa-11ed-afa1-0242ac120002",
+              "display": "Infermiere"
+            }
+          }
+        ],
+        "location": {
+          "reference": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+          "display": "Propria Residenza"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico",
+            "valueDateTime": "2022-02-14T10:17:16+01:00"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione",
+                  "code": "1",
+                  "display": "Presenza"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso",
+            "valueInteger": 1
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso",
+                  "code": "1",
+                  "display": "Programmato"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "Procedure/c5fc0814-b1f8-11ed-afa1-0242ac120002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "c5fc0814-b1f8-11ed-afa1-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-14T09:36:10+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione"
+          ],
+          "versionId": "1"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-2",
+            "display": "2023000021"
+          },
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+              "code": "PRESTADI16",
+              "display": "Igiene personale e mobilizzazione"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "performedDateTime": "2023-02-14",
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/8514460c-b1fa-11ed-afa1-0242ac120002",
+              "display": "Infermiere"
+            }
+          }
+        ],
+        "location": {
+          "reference": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+          "display": "Propria Residenza"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico",
+            "valueDateTime": "2022-02-14T10:17:16+01:00"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione",
+                  "code": "1",
+                  "display": "Presenza"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso",
+            "valueInteger": 1
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso",
+                  "code": "1",
+                  "display": "Programmato"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "Procedure/7ad27c28-b1f9-11ed-afa1-0242ac120002",
+      "resource": {
+        "resourceType": "Procedure",
+        "id": "7ad27c28-b1f9-11ed-afa1-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-14T15:56:01+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePrestazione"
+          ],
+          "versionId": "1"
+        },
+        "basedOn": [
+          {
+            "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-2",
+            "display": "2023000021"
+          },
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "completed",
+        "category": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-SettingAssistenziale",
+              "code": "C-DOM",
+              "display": "Cure domiciliari"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaPrestazione",
+              "code": "PRESTADI16",
+              "display": "Igiene personale e mobilizzazione"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "performedDateTime": "2023-02-14",
+        "performer": [
+          {
+            "actor": {
+              "reference": "PractitionerRole/8514460c-b1fa-11ed-afa1-0242ac120002",
+              "display": "Infermiere"
+            }
+          }
+        ],
+        "location": {
+          "reference": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+          "display": "Propria Residenza"
+        },
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureDataPresaInCarico",
+            "valueDateTime": "2022-02-14T10:17:16+01:00"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureModalitaErogazione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ModalitaErogazione",
+                  "code": "1",
+                  "display": "Presenza"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureNumeroAccesso",
+            "valueInteger": 2
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTipoAccesso",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoAccesso",
+                  "code": "1",
+                  "display": "Programmato"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-1",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "14aec1c2-9750-11ed-a8fc-0242ac120002-1",
+        "meta": {
+          "lastUpdated": "2023-01-15T18:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+          ],
+          "versionId": "1"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale",
+            "value": "2023000021"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+              "code": "C-DOM",
+              "display": "CURE DOMICILIARI"
+            }
+          ]
+        },
+        "quantityQuantity": {
+          "value": 12
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "occurrencePeriod": {
+          "start": "2023-02-01T10:17:16+01:00",
+          "end": "2023-03-15T10:17:16+01:00"
+        },
+        "performer": [
+          {
+            "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
+            "display": "FONDAZIONE MADDALENA GRASSI"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
+                "code": "PERCDOM01",
+                "display": "Prelievo"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Presa in carico confermata dall'ente"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
+                  "code": "2",
+                  "display": "MMG / PLS"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-2",
+      "resource": {
+        "resourceType": "ServiceRequest",
+        "id": "14aec1c2-9750-11ed-a8fc-0242ac120002-2",
+        "meta": {
+          "lastUpdated": "2023-01-15T18:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestServiziSocioAssistenziali"
+          ],
+          "versionId": "1"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/codiceIdentificativoServizioSocioAssistenziale",
+            "value": "2023000021"
+          }
+        ],
+        "basedOn": [
+          {
+            "reference": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+            "display": "PI-2023000000001"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "code": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/DDC-DescL2",
+              "code": "C-DOM",
+              "display": "CURE DOMICILIARI"
+            }
+          ]
+        },
+        "quantityQuantity": {
+          "value": 8
+        },
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "occurrencePeriod": {
+          "start": "2023-02-01T10:17:16+01:00",
+          "end": "2023-04-01T10:17:16+01:00"
+        },
+        "performer": [
+          {
+            "reference": "Organization/56a3e16e-97e3-11ed-a8fc-0242ac120002",
+            "display": "FONDAZIONE MADDALENA GRASSI"
+          }
+        ],
+        "reasonCode": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-PercorsiCDom",
+                "code": "PERCDOM02",
+                "display": "Prestazionale Generico"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Presa in carico confermata dall'ente"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestSoggettoProponentePIC",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-ProponentePIC",
+                  "code": "2",
+                  "display": "MMG / PLS"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "CarePlan/365db2ec-973c-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "365db2ec-973c-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-01-15T18:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanProgettoIndividuale"
+          ],
+          "versionId": "1"
+        },
+        "identifier": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/sid/identificativoUnivocoPI",
+            "value": "PI-2023000000001"
+          }
+        ],
+        "status": "active",
+        "intent": "order",
+        "subject": {
+          "reference": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+          "display": "Mario Rossi"
+        },
+        "encounter": {
+          "reference": "Encounter/c559333c-974f-11ed-a8fc-0242ac120002",
+          "display": "Accesso"
+        },
+        "period": {
+          "start": "2023-01-15T10:17:16+01:00"
+        },
+        "created": "2023-01-11T10:17:16+01:00",
+        "author": {
+          "reference": "Organization/c8f77b34-974f-11ed-a8fc-0242ac120002",
+          "display": "ASST DELLA BRIANZA"
+        },
+        "contributor": [
+          {
+            "reference": "PractitionerRole/d711fc58-974f-11ed-a8fc-0242ac120002",
+            "display": "Infermiere"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/e243606c-974f-11ed-a8fc-0242ac120002",
+            "display": "Patologia Primaria"
+          },
+          {
+            "reference": "Condition/e028bc4c-b134-11ed-afa1-0242ac120002",
+            "display": "Patologia Secondara"
+          }
+        ],
+        "supportingInfo": [
+          {
+            "reference": "Observation/bnm18194-974f-11ed-a8fc-0242ac120002",
+            "display": "Esito Valutazione"
+          }
+        ],
+        "goal": [
+          {
+            "reference": "Goal/eaa18194-974f-11ed-a8fc-0242ac120002",
+            "display": "Obiettivi Salute"
+          }
+        ],
+        "activity": [
+          {
+            "reference": {
+              "reference": "MedicationRequest/088c489c-9750-11ed-a8fc-0242ac120002",
+              "display": "Terapia farmacologica"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-1",
+              "display": "Servizi Socio Assistenziali"
+            }
+          },
+          {
+            "reference": {
+              "reference": "ServiceRequest/14aec1c2-9750-11ed-a8fc-0242ac120002-2",
+              "display": "Servizi Socio Assistenziali"
+            }
+          }
+        ],
+        "note": [
+          {
+            "text": "Monitorare il soddisfacimento dell'obiettivo di salute almeno una volta al mese"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVersionePAI",
+            "valueUnsignedInt": 1
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "Patient/b7807e00-9745-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "b7807e00-9745-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-01-15T18:36:03Z",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+          ],
+          "versionId": "1"
+        },
+        "identifier": [
+          {
+            "system": "http://hl7.it/sid/codiceFiscale",
+            "value": "RSSMRA80A01F205X"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "Rossi",
+            "given": [
+              "Mario"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1980-01-01",
+        "address": [
+          {
+            "use": "billing",
+            "city": "015146",
+            "country": "100"
+          },
+          {
+            "use": "home",
+            "line": [
+              "Via Adda 7 - Scala B - Piano 3 - Interno A"
+            ],
+            "city": "015146",
+            "postalCode": "20124",
+            "country": "100"
+          }
+        ],
+        "maritalStatus": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-StatoCivile",
+              "code": "2",
+              "display": "Coniugato/a"
+            }
+          ]
+        },
+        "generalPractitioner": [
+          {
+            "reference": "PractitionerRole/0bfe5406-9751-11ed-a8fc-0242ac120002",
+            "display": "Dott. Francesco Verdi"
+          }
+        ],
+        "extension": [
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadinanza",
+            "valueCode": "100"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientTitoloDiStudio",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TitoloStudio",
+                  "code": "6",
+                  "display": "Laurea"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientPosizioneDellaProfessione",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-PosizioneProfessione",
+                  "code": "01",
+                  "display": "imprenditore"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientSituazionePensionistica",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-SituazionePensionistica",
+                  "code": "5",
+                  "display": "Invalidità"
+                }
+              ]
+            }
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientLuogoDiNascita",
+            "valueCode": "015146"
+          },
+          {
+            "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza",
+            "valueCode": "030324"
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "Location/a6ec490e-98a1-11ed-a8fc-0242ac120002",
+      "resource": {
+        "resourceType": "Location",
+        "id": "a6ec490e-98a1-11ed-a8fc-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-07T10:17:16+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom"
+          ],
+          "versionId": "1"
+        },
+        "physicalType": {
+          "coding": [
+            {
+              "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo",
+              "code": "1",
+              "display": "Propria Residenza"
+            }
+          ]
+        }
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/a6ec490e-98a1-11ed-a8fc-0242ac990002",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "a6ec490e-98a1-11ed-a8fc-0242ac990002",
+        "meta": {
+          "lastUpdated": "2023-02-07T10:17:16+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+          ],
+          "versionId": "1"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore",
+                "code": "8",
+                "display": "Fisioterapista"
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    },
+    {
+      "fullUrl": "PractitionerRole/8514460c-b1fa-11ed-afa1-0242ac120002",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "a8514460c-b1fa-11ed-afa1-0242ac120002",
+        "meta": {
+          "lastUpdated": "2023-02-09T12:48:56+01:00",
+          "profile": [
+            "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerRoleOperatoreADI"
+          ],
+          "versionId": "1"
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipoOperatore",
+                "code": "3",
+                "display": "Infermiere"
+              }
+            ]
+          }
+        ]
+      },
+      "search": {
+        "mode": "include"
+      }
+    }
+  ]
+}

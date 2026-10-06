@@ -1,0 +1,167 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RLCoverageEsenzioni",
+  "meta": {
+    "lastUpdated": "2023-10-17T08:35:54.0872366+00:00"
+  },
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni",
+  "name": "RLCoverageEsenzioni",
+  "status": "active",
+  "description": "Profilo volto a descrivere le esenzioni di cui il paziente beneficia",
+  "keyword": [
+    {
+      "system": "https://fhir.siss.regione.lombardia.it/CodeSystem/Tag",
+      "code": "PI"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Coverage",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Coverage",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Coverage.id",
+        "path": "Coverage.id",
+        "short": "UUID prodotto dal server FHIR (applicativo) che detiene la risorsa. Per maggiori informazioni su chi detiene la risorsa consultare il paragrafo API-Restful nella pagina di Contesto.",
+        "min": 1
+      },
+      {
+        "id": "Coverage.meta",
+        "path": "Coverage.meta",
+        "short": "Metadati della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Coverage.meta.versionId",
+        "path": "Coverage.meta.versionId",
+        "short": "Versione della risorsa",
+        "min": 1
+      },
+      {
+        "id": "Coverage.meta.lastUpdated",
+        "path": "Coverage.meta.lastUpdated",
+        "short": "Data e ora di ultimo aggiornamento della risorsa",
+        "definition": "Formato standard FHIR: YYY-MM-DDThh:mm:ss.sss+zz:zz",
+        "min": 1
+      },
+      {
+        "id": "Coverage.meta.profile",
+        "path": "Coverage.meta.profile",
+        "short": "Profilo al quale la risorsa si riferisce",
+        "min": 1,
+        "max": "1",
+        "fixedCanonical": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioni"
+      },
+      {
+        "id": "Coverage.identifier",
+        "path": "Coverage.identifier",
+        "short": "Codice dell'esenzione",
+        "comment": "Per il dettaglio esaustivo della codifica consultare la Tabella della tipologia di esenzioni contenuta nella sezione dei value-set del profilo presente nell'Implementation Guide.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Coverage.identifier.value",
+        "path": "Coverage.identifier.value",
+        "short": "Codice dell'esenzione",
+        "min": 1
+      },
+      {
+        "id": "Coverage.status",
+        "path": "Coverage.status",
+        "short": "Stato dell'esenzione",
+        "definition": "Valore fisso su \"active\"",
+        "fixedCode": "active"
+      },
+      {
+        "id": "Coverage.type",
+        "path": "Coverage.type",
+        "short": "Tipologia e descrizione esenzione",
+        "min": 1
+      },
+      {
+        "id": "Coverage.type.coding",
+        "path": "Coverage.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Coverage.type.coding.code",
+        "path": "Coverage.type.coding.code",
+        "short": "Codice che indica la tipologia dell’esenzione",
+        "definition": "Stringa alfabetica di 2 caratteri",
+        "comment": "La fonte del dato è il campo CD_TIPO_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\"",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "description": "ValueSet relativo alla tipologia di esenzioni",
+          "valueSet": "https://fhir.siss.regione.lombardia.it/ValueSet/SGDT-TipologiaEsenzioni"
+        }
+      },
+      {
+        "id": "Coverage.type.coding.display",
+        "path": "Coverage.type.coding.display",
+        "short": "Descrizione dell’esenzione",
+        "definition": "Stringa alfanumerica di al più 100 caratteri",
+        "comment": "La fonte del dato è il campo DS_ESENZIONE della tabella della codifica ministeriale delle \"Esenzioni\"",
+        "min": 1
+      },
+      {
+        "id": "Coverage.beneficiary",
+        "path": "Coverage.beneficiary",
+        "short": "Paziente beneficiario dell'esenzione",
+        "definition": "Reference alla profilo RLPatientCittadino contenente i dettagli anagrafici del paziente",
+        "comment": "Il dato è detenuto dal SGDT",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.period",
+        "path": "Coverage.period",
+        "short": "Decorrenza e scadenza esenzione",
+        "min": 1
+      },
+      {
+        "id": "Coverage.period.start",
+        "path": "Coverage.period.start",
+        "short": "Decorrenza esenzione",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Coverage.period.end",
+        "path": "Coverage.period.end",
+        "short": "Scadenza esenzione",
+        "definition": "Formato: YYYY-MM-DDThh:mm:ss+zz:zz secondo lo standard FHIR",
+        "comment": "Il dato è detenuto dal SGDT",
+        "min": 1
+      },
+      {
+        "id": "Coverage.payor",
+        "path": "Coverage.payor",
+        "short": "Riferimento all'ATS di appartenenza del paziente che ha emesso l'esenzione",
+        "definition": "Reference al profilo RLOrganizationL1 contenente i dettagli dell'ATS. Deve essere inserito l'UUID generato dal server FHIR (applicativo) detentore della risorsa. Per tutte le informazioni sui server FHIR (applicativi) e le relative risorse detenute consultare la pagina API RESTful della sezione Contesto di questa Implementation Guide",
+        "comment": "Il dato è detenuto dal SGDT",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationL1"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

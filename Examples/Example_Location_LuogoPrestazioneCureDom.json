@@ -1,0 +1,20 @@
+{
+  "resourceType": "Location",
+  "id": "esempio-Location-LuogoPrestazioneCureDom",
+  "meta": {
+    "lastUpdated": "2023-02-07T10:17:16+01:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationLuogoPrestazioneCureDom"
+    ],
+    "versionId": "1"
+  },
+  "physicalType": {
+    "coding": [
+      {
+        "system": "https://fhir.siss.regione.lombardia.it/ValueSet/SIAD-TipologiaDiLuogo",
+        "code": "1",
+        "display": "Propria Residenza"
+      }
+    ]
+  }
+}

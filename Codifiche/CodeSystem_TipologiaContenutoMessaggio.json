@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-TipologiaContenutoMessaggio",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/TipologiaContenutoMessaggio",
+  "version": "1.0.0",
+  "name": "Tipologia Contenuto Messaggio",
+  "status": "active",
+  "date": "2024-04-30T08:15:44.8689778+00:00",
+  "description": "CodeSystem relativo alla tipologia di contenuto del messaggio",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "01",
+      "display": "URL per il passaggio di contesto"
+    },
+    {
+      "code": "02",
+      "display": "Numero di protocollo GPC"
+    }
+  ]
+}

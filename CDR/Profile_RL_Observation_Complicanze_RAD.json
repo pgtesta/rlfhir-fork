@@ -1,0 +1,125 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeRad",
+  "name": "RLObservationComplicanzeRad",
+  "title": "RL Observation Complicanze Rad",
+  "status": "active",
+  "description": "Profilo Observation per le Complicanze nel contesto del Referto di Radiologia – Regione Lombardia.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato dell'osservazione",
+        "definition": "Indica lo stato dell'osservazione.",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "min": 1,
+        "max": "1",
+        "short": "Codice identificativo",
+        "definition": "Codice che identifica il tipo di osservazione."
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding"
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "short": "Sistema di codifica",
+        "definition": "Sistema di codifica utilizzato.",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "short": "Valore del codice",
+        "definition": "Codice LOINC per le complicanze.",
+        "fixedCode": "75326-9"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "short": "Descrizione leggibile del codice",
+        "definition": "Descrizione leggibile del codice.",
+        "fixedString": "Problem"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Soggetto a cui si riferisce l'osservazione",
+        "definition": "Riferimento al paziente a cui si riferisce l'osservazione.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCittadino"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "short": "Episodio di cura",
+        "definition": "Episodio di cura a cui si riferisce l'osservazione.",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Periodo di riferimento dell'osservazione",
+        "definition": "Indica il periodo di riferimento dell'osservazione.",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effective[x].start",
+        "path": "Observation.effective[x].start",
+        "short": "Data/ora di inizio del periodo",
+        "definition": "Data/ora di inizio del periodo."
+      },
+      {
+        "id": "Observation.effective[x].end",
+        "path": "Observation.effective[x].end",
+        "short": "Data/ora di fine del periodo",
+        "definition": "Data/ora di fine del periodo."
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 1,
+        "max": "1",
+        "short": "Valore dell'osservazione",
+        "definition": "Rappresenta il valore dell'osservazione.",
+        "type": [
+          {
+            "code": "string"
+          },
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

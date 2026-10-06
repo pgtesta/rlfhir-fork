@@ -1,0 +1,27 @@
+{
+  "resourceType": "OperationOutcome",
+  "id": "esempio-OperationOutcomeMMG-PIC-negativa",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOperationOutcomeMMG"
+    ]
+  },
+  "text": {
+    "status": "generated"
+  },
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "coding": [
+          {
+            "system": "https://fhir.siss.regione.lombardia.it/operation-error",
+            "code": "9.19",
+            "display": "[Entry-0] Risorsa di tipo MessageHeader non valida. DESTINATION -> ENDPOINT contiene un valore non atteso."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "RLLocationRegimeRicovero",
+  "url": "https://fhir.siss.regione.lombardia.it/SearchParameter/RLLocationRegimeRicovero",
+  "name": "RLLocationRegimeRicovero",
+  "status": "draft",
+  "description": "Parametro di ricerca relativo al regime di ricovero",
+  "code": "regimeRicovero",
+  "base": [
+    "Location"
+  ],
+  "type": "token",
+  "expression": "extension.where(url='https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationRegimeRicovero').value.coding.code",
+  "comparator": [
+    "eq",
+    "ne"
+  ]
+}

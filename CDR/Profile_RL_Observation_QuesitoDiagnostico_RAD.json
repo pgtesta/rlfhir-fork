@@ -1,0 +1,139 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationQuesitoDiagnostico",
+  "name": "RLObservationQuesitoDiagnostico",
+  "title": "RL Observation Quesito Diagnostico",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "Quesito Diagnostico",
+        "definition": "Osservazione FHIR che rappresenta il Quesito Diagnostico associato al Referto Radiologico."
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "final",
+        "definition": "Indica lo stato dell'osservazione."
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "min": 1,
+        "max": "1",
+        "short": "Codice identificativo"
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "min": 0,
+        "max": "1",
+        "fixedUri": "http://loinc.org",
+        "definition": "Sistema di codifica.",
+        "note": [{"text": "Fixed: LOINC (OID 2.16.840.1.113883.6.1)"}]
+      },
+      {
+        "id": "Observation.code.coding.version",
+        "path": "Observation.code.coding.version",
+        "min": 0,
+        "max": "1",
+        "definition": "Versione del sistema di codifica.",
+        "example": [{"label": "Esempio", "valueString": "LOINC 2.19"}]
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "min": 0,
+        "max": "1",
+        "fixedCode": "29308-4",
+        "short": "Valore del codice"
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "min": 0,
+        "max": "1",
+        "fixedString": "Diagnosi",
+        "definition": "Descrizione leggibile del codice."
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": ["https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"]
+          }
+        ],
+        "definition": "Soggetto (Assistito) a cui si riferisce l'osservazione."
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "short": "Codice identificativo diagnosi"
+      },
+      {
+        "id": "Observation.value[x].coding",
+        "path": "Observation.valueCodeableConcept.coding",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x].coding.system",
+        "path": "Observation.valueCodeableConcept.coding.system",
+        "min": 0,
+        "max": "1",
+        "fixedUri": "urn:oid:2.16.840.1.113883.6.103",
+        "definition": "Sistema di codifica.",
+        "note": [{"text": "Fixed: ICD9CM"}]
+      },
+      {
+        "id": "Observation.value[x].coding.version",
+        "path": "Observation.valueCodeableConcept.coding.version",
+        "min": 0,
+        "max": "1",
+        "definition": "Versione del sistema di codifica.",
+        "example": [{"label": "Esempio", "valueString": "ICD9CM v.9"}]
+      },
+      {
+        "id": "Observation.value[x].coding.code",
+        "path": "Observation.valueCodeableConcept.coding.code",
+        "min": 0,
+        "max": "1",
+        "definition": "Valore del codice diagnosi (CODICE_DIAGNOSI)."
+      },
+      {
+        "id": "Observation.value[x].coding.display",
+        "path": "Observation.valueCodeableConcept.coding.display",
+        "min": 0,
+        "max": "1",
+        "definition": "Descrizione leggibile del codice diagnosi (DESCRIZIONE_DIAGNOSI)."
+      }
+    ]
+  }
+}

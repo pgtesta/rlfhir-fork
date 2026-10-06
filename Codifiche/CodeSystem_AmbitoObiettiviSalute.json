@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-SGDT-AmbitoObiettiviSalute",
+  "url": "https://fhir.siss.regione.lombardia.it/CodeSystem/SGDT-AmbitoObiettiviSalute",
+  "version": "1.0.0",
+  "name": "SGDT Ambito Obiettivi Salute",
+  "status": "active",
+  "date": "2023-10-26",
+  "description": "CodeSystem relativo agli ambiti degli obiettivi di salute",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "GOAL01",
+      "display": "Ambito clinico"
+    },
+    {
+      "code": "GOAL02",
+      "display": "Ambito assistenziale"
+    },
+    {
+      "code": "GOAL03",
+      "display": "Ambito sociale"
+    }
+  ]
+}
