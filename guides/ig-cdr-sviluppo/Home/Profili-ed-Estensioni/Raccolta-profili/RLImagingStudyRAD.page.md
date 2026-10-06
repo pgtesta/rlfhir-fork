@@ -63,4 +63,4 @@ ImagingStudy: {{link:ImagingStudy/Example-ImagingStudy-2-RAD}}
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLMedicationStatementRAD.
+Attualmente non sono definiti value set specifici per il profilo RLImagingStudyRAD.
