@@ -375,7 +375,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLivelloAppropriatezzaVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioniLivelloAppropriatezzaVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -405,7 +405,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrognosiVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissionePrognosiVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
