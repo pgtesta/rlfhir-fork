@@ -1,14 +1,13 @@
-# RLImagingStudyRAD
+# RLDeviceTPI
 
-- [RLImagingStudyRAD](#RLImagingStudyRAD)
+- [RLDeviceTPI](#RLDeviceTPI)
   - [Descrizione](#descrizione)
   - [ValueSet](#valueset)
 
-
 ## Descrizione
-Il profilo RLImagingStudyRAD è stato strutturato a partire dalla risorsa standard FHIR [ImagingStudy](https://hl7.org/fhir/R4/imagingstudy.html) volto a contenere i contenuti prodotti in uno studio di imaging DICOM in Regione Lombardia.
+Il profilo RLDeviceTPI è stato strutturato a partire dalla risorsa generica FHIR [Device](https://hl7.org/fhir/R4/device.html) per contenere le informazioni relative all'uso del dispositivo assegnato al paziente assistito in Regione Lombardia.
 
-Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD}}.
+Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI}}.
 
 <br>
 <div class="tab">
@@ -23,44 +22,46 @@ Di seguito è presentato il contenuto del profilo in diversi formati. La corrisp
 
 <div id="Snapshot View" class="tabcontent">
   <h3>Snapshot View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD, snapshot}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI, snapshot}}
 </div>
 
 <div id="Differential View" class="tabcontent">
   <h3>Differential View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD, diff}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI, diff}}
 </div>
 
 <div id="Hybrid View" class="tabcontent"  style="display:block">
   <h3>Hybrid View</h3>
-{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD, hybrid}}
+{{tree:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI, hybrid}}
 </div>
 
 <div id="Table View" class="tabcontent">
   <h3>Table View</h3>
-{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD, snapshot}}
+{{table:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI, snapshot}}
 </div>
 
 <div id="XML View" class="tabcontent">
   <h3>XML View</h3>
-{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD, snapshot}}
+{{xml:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI, snapshot}}
 </div>
 
 <div id="JSON View" class="tabcontent">
   <h3>JSON View</h3>
-{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD, snapshot}}
+{{json:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceTPI, snapshot}}
 </div>
 
 <div id="Esempi" class="tabcontent">
   <h3>Esempi</h3>
-ImagingStudy: {{link:ImagingStudy/Example-ImagingStudy-1-RAD}}
-<br>
-ImagingStudy: {{link:ImagingStudy/Example-ImagingStudy-2-RAD}}
+Composition: {{link:Device/example-device-impianto}}
 <br>
 </div>
 
+
 <!-- ===================================================FINE SEZIONE=================================================== -->
+
+
 
 ## ValueSet
 
-Attualmente non sono definiti value set specifici per il profilo RLImagingStudyRAD.
+Attualmente non sono definiti value set specifici per il profilo RLDeviceTPI.
+
