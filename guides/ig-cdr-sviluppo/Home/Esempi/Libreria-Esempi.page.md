@@ -108,6 +108,12 @@
     </tr>
     <tr>
       <td>VPS</td>
+      <td>Composition</td>
+      <td>Verbale di Pronto Soccorso</td>
+      <td>{{link:Composition/Example-Composition-1-VPS}}</td>
+    </tr>
+    <tr>
+      <td>VPS</td>
       <td>CarePlan</td>
       <td>Piano di cura alla dimissione</td>
       <td>{{link:CarePlan/Example-CarePlan-1-VPS}}</td>
@@ -183,6 +189,72 @@
       <td>Observation</td>
       <td>Triage - Valutazione acutezza</td>
       <td>{{link:Observation/Example-ObservationTriage-1-VPS}}</td>
+    </tr>
+    <tr>
+      <td>TPI</td>
+      <td>Composition</td>
+      <td>Tessera per il portatore di impianto</td>
+      <td>{{link:Composition/tpi-example}}</td>
+    </tr>
+    <tr>
+      <td>TPI</td>
+      <td>Device</td>
+      <td>Dispositivo impiantato (pacemaker)</td>
+      <td>{{link:Device/example-device-impianto}}</td>
+    </tr>
+    <tr>
+      <td>TPI</td>
+      <td>DeviceUseStatement</td>
+      <td>Impianto del dispositivo (pacemaker) nel paziente</td>
+      <td>{{link:DeviceUseStatement/example-deviceusestatement-tpi}}</td>
+    </tr>
+    <tr>
+      <td>VACC</td>
+      <td>Composition</td>
+      <td>Certificato Vaccinale</td>
+      <td>{{link:Composition/composition-certificato-vaccinale}}</td>
+    </tr>
+    <tr>
+      <td>SchedaVACC</td>
+      <td>Composition</td>
+      <td>Scheda della singola vaccinazione (esonero)</td>
+      <td>{{link:Composition/composition-esonero-2}}</td>
+    </tr>
+    <tr>
+      <td>VACC</td>
+      <td>Immunization</td>
+      <td>Vaccinazione MPR non somministrata per esonero</td>
+      <td>{{link:Immunization/immunization-esonero}}</td>
+    </tr>
+    <tr>
+    <td>SchedaVACC</td>
+      <td>Immunization</td>
+      <td>Vaccinazione MPR somministrata (dose 1)</td>
+      <td>{{link:Immunization/immunization-vaccinazione}}</td>
+    </tr>
+    <tr>
+      <td>VACC</td>
+      <td>Immunization</td>
+      <td>Vaccinazione MPR somministrata - dose 1 (Certificato Vaccinale)</td>
+      <td>{{link:Immunization/immunization-dose1}}</td>
+    </tr>
+    <tr>
+      <td>VACC</td>
+      <td>Observation</td>
+      <td>Categoria a rischio per la vaccinazione</td>
+      <td>{{link:Observation/observation-rischio}}</td>
+    </tr>
+    <tr>
+      <td>VACC</td>
+      <td>Observation</td>
+      <td>Condizione sanitaria a rischio per la vaccinazione</td>
+      <td>{{link:Observation/observation-condizione}}</td>
+    </tr>
+    <tr>
+      <td>VACC,SchedaVACC</td>
+      <td>Observation</td>
+      <td>Reazione avversa alla vaccinazione</td>
+      <td>{{link:Observation/observation-reazione}}</td>
     </tr>
   </tbody>
 </table>

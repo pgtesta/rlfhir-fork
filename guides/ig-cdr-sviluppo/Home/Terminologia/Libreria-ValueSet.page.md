@@ -43,6 +43,20 @@
     </tr>
     <tr>
       <td>
+        {{link:https://www.eumed.it/icd9cm/}}
+      </td>
+      <td>Classificazione internazionale delle malattie ICD-9-CM</td>
+      <td>https://www.eumed.it/icd9cm/</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic}}
+      </td>
+      <td>Codici AIC dei medicinali</td>
+      <td>https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic/</td>
+    </tr>
+    <tr>
+      <td>
         {{link:http://hl7.org/fhir/ValueSet/composition-status}}
       </td>
       <td>Stato del documento</td>
@@ -69,6 +83,22 @@
       </td>
       <td>Codice identificativo di ciascuna sezione del documento</td>
       <td>urn:oid:1.2.840.10008.2.16.4
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration}}
+      </td>
+      <td>Via di somministrazione di farmaci e vaccini</td>
+      <td>urn:oid:2.16.840.1.113883.5.112
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://terminology.hl7.org/CodeSystem/v3-ActSite}}
+      </td>
+      <td>Sede anatomica di somministrazione di farmaci e vaccini</td>
+      <td>urn:oid:2.16.840.1.113883.5.1052
       </td>
     </tr>
   </tbody>

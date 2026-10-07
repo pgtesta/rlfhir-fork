@@ -462,6 +462,156 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationTriageVPS}}
           </td>
         </tr>
+        <tr>
+          <td>VACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionCertificatoVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body del Certificato Vaccinale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionCertificatoVaccinale}}
+          </td>
+        </tr>
+        <tr>
+          <td>SchedaVACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionSchedaVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body della Scheda della singola Vaccinazione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionSchedaSingolaVaccinazione}}
+          </td>
+        </tr>
+        <tr>
+          <td>VACC,SchedaVACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationReazioniAvverseVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le reazioni e manifestazioni avverse al vaccino
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationReazioniAvverse}}
+          </td>
+        </tr>
+        <tr>
+          <td>VACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCondizioniSanitarieRischioVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le condizioni sanitarie a rischio correlate alla vaccinazione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCondizioniSanitarieRischio}}
+          </td>
+        </tr>
+        <tr>
+          <td>VACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCategorieRischioVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le categorie di soggetti a rischio ai fini vaccinali
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCategorieRischio}}
+          </td>
+        </tr>
+        <tr>
+          <td>VACC,SchedaVACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLImmunizationEsoneroVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+          </td>
+          <td>
+            Profilo che descrive la mancata somministrazione del vaccino per esonero, omissione o differimento
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImmunizationEsonero}}
+          </td>
+        </tr>
+        <tr>
+          <td>VACC,SchedaVACC</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLImmunizationVACC.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+          </td>
+          <td>
+            Profilo che descrive l'evento di somministrazione del vaccino
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImmunizationVaccinazione}}
+          </td>
+        </tr>
+        <tr>
+          <td>TPI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionTPI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body della Tessera per il Portatore di Impianto
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionTesseraPortatoreImpianto}}
+          </td>
+        </tr>
+        <tr>
+          <td>TPI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceTPI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+          </td>
+          <td>
+            Profilo che descrive il dispositivo medico impiantato
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceImpianto}}
+          </td>
+        </tr>
+        <tr>
+          <td>TPI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceUseStatementTPI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/deviceusestatement.html">DeviceUseStatement</a>
+          </td>
+          <td>
+            Profilo che descrive l'impianto di un dispositivo medico nel paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceUseStatementTPI}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
