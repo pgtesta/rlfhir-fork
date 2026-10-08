@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Observation-DecorsoClinico-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDecorsoClinicoLdo"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "89261-2",
+        "display": "Decorso Clinico"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.2.9.77.22.11.10",
+        "code": "A",
+        "display": "Acuto"
+      }
+    ]
+  }
+}

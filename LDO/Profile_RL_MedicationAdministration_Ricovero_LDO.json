@@ -1,0 +1,196 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationRicoveroLdo",
+  "name": "RLMedicationAdministrationRicoveroLdo",
+  "title": "MedicationAdministration LDO - Terapia Farmacologica durante il Ricovero",
+  "status": "draft",
+  "date": "2026-10-05",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration",
+        "path": "MedicationAdministration"
+      },
+      {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "short": "Stato della somministrazione",
+        "comment": "Il valore DEVE essere derivato dal Value set X_ActStatusActiveSuspendedAbortedCompleted \nSTATIC.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "short": "Riferimento al farmaco somministrato.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationLDO"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "short": "Paziente a cui è stato somministrato il farmaco.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.performer",
+        "path": "MedicationAdministration.performer",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "MedicationAdministration.performer.actor",
+        "path": "MedicationAdministration.performer.actor",
+        "short": "Professionista che ha effettuato la somministrazione.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.request",
+        "path": "MedicationAdministration.request",
+        "short": "Riferimento alla richiesta di somministrazione.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site",
+        "path": "MedicationAdministration.dosage.site",
+        "short": "Sito anatomico di somministrazione.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding",
+        "path": "MedicationAdministration.dosage.site.coding"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding.system",
+        "path": "MedicationAdministration.dosage.site.coding.system",
+        "short": "Sistema di codifica.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding.version",
+        "path": "MedicationAdministration.dosage.site.coding.version",
+        "short": "Versione del sistema",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding.code",
+        "path": "MedicationAdministration.dosage.site.coding.code",
+        "short": "Codice del sito",
+        "comment": "L’attributo @code PUÒ essere valorizzato secondo il Value Set “ActSite”",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding.display",
+        "path": "MedicationAdministration.dosage.site.coding.display",
+        "short": "Descrizione del sito.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.text",
+        "path": "MedicationAdministration.dosage.site.text",
+        "short": "Testo libero",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route",
+        "path": "MedicationAdministration.dosage.route",
+        "short": "Via di somministrazione del farmaco.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding",
+        "path": "MedicationAdministration.dosage.route.coding"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding.system",
+        "path": "MedicationAdministration.dosage.route.coding.system",
+        "short": "Sistema di codifica",
+        "comment": "Valore previsto: http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding.version",
+        "path": "MedicationAdministration.dosage.route.coding.version",
+        "short": "Versione del sistema.",
+        "comment": "Valore previsto: HL7 RouteOfAdministration.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding.code",
+        "path": "MedicationAdministration.dosage.route.coding.code",
+        "short": "Codice della via",
+        "comment": "L’informazione inerente alla via di somministrazione viene inserita attraverso l’elemento l’attributo @code PUÒ essere valorizzato secondo il Value Set “HL7 RouteOfAdministration”",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding.display",
+        "path": "MedicationAdministration.dosage.route.coding.display",
+        "short": "Descrizione della via di somministrazione.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.text",
+        "path": "MedicationAdministration.dosage.route.text",
+        "short": "Testo libero",
+        "min": 0,
+        "max": "1"
+      }
+    ]
+  }
+}

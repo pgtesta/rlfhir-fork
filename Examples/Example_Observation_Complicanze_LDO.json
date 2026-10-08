@@ -1,0 +1,48 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Observation-Complicanze-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeLdo"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/servicerequest-001"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "75326-9",
+        "display": "Problem"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-001"
+  },
+  "effectivePeriod": {
+    "start": "2026-09-27",
+    "end": "2026-09-29"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-001"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-9-cm",
+        "code": "511.9",
+        "display": "Versamento pleurico non specificato"
+      }
+    ]
+  }
+}

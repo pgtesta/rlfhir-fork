@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-Observation-EsamiEseguitiRicovero-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsamiEseguitiRicoveroLdo"
+    ]
+  },
+  "basedOn": [
+    {
+      "reference": "ServiceRequest/servicerequest-001"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "58410-2",
+        "display": "Emocromo completo"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-001"
+  },
+  "effectiveDateTime": "2026-09-25T10:00:00+02:00",
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-001"
+    }
+  ],
+  "valueString": "Emocromo: GB 14.500/mm3, Hb 13.2 g/dL, PLT 245.000/mm3."
+}
