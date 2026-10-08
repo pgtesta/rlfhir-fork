@@ -38,8 +38,6 @@ L'elenco dei Profili FHIR in cui sono descritte le tipologie di ricerca dei serv
 | RLCarePlanProgettoIndividuale |
 | RLServiceRequestServiziSocioAssistenziali |
 
-
-
 <br><br>
 
 #### API Enti erogatori
@@ -53,7 +51,7 @@ dove:
 - <contesto_FHIR>: fhir per la Produzione reale; fhirtest per la Produzione virtuale, da utilizzare per i test delle integrazioni propedeutici all’avvio in produzione
 - <codice_Cudes_L1>: codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
 - <tipologia_servizio_sociosanitario>: nome della tipologia del servizio sociosanitario offerto dall'erogatore. L’elenco delle tipologie al momento disponibili comprende:
-  - `erogazione-adi`
+  - erogazione-adi
 
 Esempio: `https://fhir.hcmanager.it/fhir/732553/v1.0.0/erogazione-adi`
 
@@ -88,7 +86,7 @@ Il dettaglio dell’operazione è riportato nella risorsa OperationOutcome.
 L’esposizione dei servizi di messaggistica FHIR, disponibili nell'ecosistema di Regione Lombardia, viene attuata tramite il componente API Manager. 
 Il base_url con cui accedere alle API esposte da API Manager è il seguente:
 
-`<base_API_Manager> = https://api.servizirl.it/c/operatori.siss/<contesto>/v1.0.0/<risorsaAPI>`
+        <base_API_Manager> = https://api.servizirl.it/c/operatori.siss/<contesto>/v1.0.0/<risorsaAPI>
 
 Il contenuto del messaggio FHIR deve essere inserito nel Body della chiamata.
 I diversi messaggi FHIR sono costituiti da Profili Bundle con Bundle.type=message e sono descritti nella sezione Profili ed Estensioni -> Libreria Profili.
