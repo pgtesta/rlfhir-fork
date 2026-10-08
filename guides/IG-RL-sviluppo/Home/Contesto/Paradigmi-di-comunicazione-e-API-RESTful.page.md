@@ -2,10 +2,8 @@
 - [1. Header](#header)
 - [2. Paradigma FHIR RESTful](#paradigma-fhir-restful)
   - [2.1 EndPoint FHIR](#endpoint-fhir)
-    - [Endpoint dedicato](#endpoint-dedicato)
 - [3. Paradigma FHIR messaging](#paradigma-fhir-messaging)
   - [3.1 EndPoint FHIR](#endpoint-fhir-1)
-    - [Endpoint dedicato](#endpoint-dedicato-1)
   
 
 # 1. Header 
@@ -24,28 +22,9 @@ Il modello di interoperabilità REST in standard FHIR prevede l’interscambio d
 - Il server FHIR espone le Risorse/Profili su specifici punti di accesso (endpoint) raggiungibili con il protocollo https. 
 - Il client FHIR può eseguire le chiamate di interesse agli endpoint dove sono presenti le interfacce programmatiche API (Application Programming Interface) che implementano, in modo semplice e snello conforme all’approccio RESTful, i metodi di fruizione dei dati esposti. 
 
-Tale modalità di consultazione dei dati è definita “logica PULL”, e prevede esclusivamente chiamate di tipo GET per consultare i dati esposti. Il risultato di ogni chiamata è la produzione di una risorsa bundle. Questa risorsa ha lo scopo di raccogliere una serie di Risorse/Profili FHR sulla base dei parametri di ricerca utilizzati nella chiamata GET. 
-
-Mentre, l'interazione che permette di creare una nuova risorsa, in una posizione assegnata dal server, avviene tramite una richiesta HTTPs POST.
+Tale modalità di consultazione dei dati è definita “logica PULL”, e prevede esclusivamente chiamate di tipo GET per consultare i dati esposti. Il risultato di ogni chiamata è la produzione di una risorsa bundle. Questa risorsa ha lo scopo di raccogliere una serie di Risorse/Profili FHR sulla base dei parametri di ricerca utilizzati nella chiamata GET.
 
 ## 2.1 EndPoint FHIR
-L'API Manager espone i servizi FHIR definiti nell'ecosistema di Regione Lombardia. 
-Il base_url con cui accedere a tali servizi è il seguente:
-        
-        <base_API_Manager> = https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri
-
-L'elenco delle API esposte è:
-
-|Metodo HTTP|URL|Nome profilo|Detentore del dato|
-|---|---|---|
-|GET|<base_API_Manager>/_CarePlan_|RLCarePlanProgettoIndividuale|SGDT|
-|GET|<base_API_Manager>/_QuestionnaireResponse_|RLQuestionnaireResponseValutazione|SGDT|
-|GET|<base_API_Manager>/_Organization_|RLOrganizationL1, RLOrganizationL2, RLOrganizationL3 |DDC FHIR Server|
-|GET|<base_API_Manager>/_Practitioner_|RLPractitionerMedicoPrescrittore|DDC FHIR Server|
-|GET|<base_API_Manager>/_PractitionerRole_|RLPractitionerRoleMedicoPrescrittore|DDC FHIR Server|
-|GET|<base_API_Manager>/_Location_|RLLocationPLOLetto|NPRI FHIR Server|
-|POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
-
 L’esposizione dei servizi REST in standard FHIR, disponibili nell'ecosistema di Regione Lombardia, viene attuata tramite il componente API Manager.
 Il base_url con cui accedere alle API esposte da API Manager è il seguente:
 
@@ -61,6 +40,8 @@ L'elenco dei Profili FHIR in cui sono descritte le tipologie di ricerca dei serv
 
 
 
+<br><br>
+
 #### API Enti erogatori
 I servizi FHIR esposti dai Sistemi Informativi degli Enti Erogatori sono accessibili attraverso i canali protetti tra ARIAspa e gli Enti stessi.
 Il base_url con cui accedere a tali servizi è il seguente:
@@ -71,23 +52,10 @@ dove:
 - <nome_host_Ente>: alias corrispondente all’indirizzo IP dell’Ente definito sul canale protetto; la risoluzione dell’alias è inserita nel DNS di ARIAspa
 - <contesto_FHIR>: fhir per la Produzione reale; fhirtest per la Produzione virtuale, da utilizzare per i test delle integrazioni propedeutici all’avvio in produzione
 - <codice_Cudes_L1>: codice L1 dell’Ente Erogatore, al quale è collegato il canale protetto
-- <tipologia_servizio_sociosanitario>: nome della tipologia del servizio sociosanitario offerto dall'erogatore, ad esempio _erogazione-adi_.
+- <tipologia_servizio_sociosanitario>: nome della tipologia del servizio sociosanitario offerto dall'erogatore. L’elenco delle tipologie al momento disponibili comprende:
+  - `erogazione-adi`
 
-L'elenco delle API esposte è:
-
-|Metodo HTTP|URL|Nome profilo|Detentore del dato|
-|---|---|---|
-|GET|<base_API_Ente>/_Procedure_|RLProcedurePrestazione|Ente Erogatore|
-|GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestSospensioneADI, RLServiceRequestRivalutazione|Ente Erogatore|
-|POST|<base_API_Ente>/_Bundle_|RLBundleNotificaErrori|Ente Erogatore|
-|GET|<base_API_Ente>/_Location_|RLLocationPLOLetto|Ente Erogatore|
-|GET|<base_API_Ente>/_ServiceRequest_|RLServiceRequestServiziSocioAssistenziali|NEA|
-
-##### Endpoint dedicato
-
-Per l'integrazione con l'applicativo di gestione 116117 NEA, la chiamata per la verifica dello stato di una segnalazione deve essere effettuata al seguente endpoint:
-
-        https://api.integrazione.lispa.it/c/operatori.siss/nea/v1.0.0/verifica-stato-segnalazione/ServiceRequest?codiceNEA=NEA-2026-00001&codiceSGDT=SOC-00000000
+Esempio: `https://fhir.hcmanager.it/fhir/732553/v1.0.0/erogazione-adi`
 
 # 3. Paradigma FHIR messaging
 Il paradigma scelto per lo scambio dei dati con SGDT è quello del FHIR messaging. Il paradigma messaging prevede un sender, un receiver, un evento di trigger che innesca la creazione e l’invio di un messaggio, un messaggio di richiesta e uno messaggio di risposta.
@@ -136,6 +104,4 @@ Esempi:
 
 - chiamata da NEA: `https://api.servizirl.it/c/operatori.siss/nea/v1.0.0/nuova-segnalazione`
 - chiamata da portale MMG: `https://api.servizirl.it/c/operatori.siss/portaleMMG/v1.0.0/nuova-segnalazione`
-- chiamata per il PAI della PIC:
-
-        `https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri/message/$process-message`
+- chiamata per il PAI della PIC: `https://api.servizirl.it/c/operatori.siss/fhir/v1.0.0/npri/message/$process-message`
