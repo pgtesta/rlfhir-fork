@@ -67,6 +67,14 @@
             {{link:http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber}}
           </td>
         </tr>
+        <tr>
+          <td>StrutturaImpianto</td>
+          <td>DeviceUseStatement</td>
+          <td>Rappresenta la struttura sanitaria che ha effettuato l'impianto del dispositivo.</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceUseStatementStrutturaImpianto}}
+          </td>
+        </tr>
         </tbody>
     </table>
   </body>

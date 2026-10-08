@@ -6,7 +6,7 @@
 
 
 ## Descrizione
-Il profilo RLCarePlanVPS è stato strutturato a partire dalla risorsa standard FHIR [CarePlan](https://hl7.org/fhir/R4/imagingstudy.html) volta a descrivere descrive il piano di cura alla dimissione dal Pronto Soccorso di un paziente in Regione Lombardia.
+Il profilo RLCarePlanVPS è stato strutturato a partire dalla risorsa standard FHIR [CarePlan](https://hl7.org/fhir/R4/CarePlan.html) volta a descrivere il piano di cura alla dimissione dal Pronto Soccorso di un paziente in Regione Lombardia.
 
 Di seguito è presentato il contenuto del profilo in diversi formati. La corrispondente definizione è consultabile al seguente link: {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVPS}}.
 
