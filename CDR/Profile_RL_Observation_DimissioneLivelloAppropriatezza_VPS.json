@@ -1,26 +1,27 @@
 {
   "resourceType": "StructureDefinition",
-  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad",
-  "name": "RLObservationPrecedentiEsamiEseguitiRad",
-  "title": "Observation RAD - Precedenti Esami Eseguiti",
+  "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLivelloAppropriatezzaVPS",
+  "name": "RLObservationLivelloAppropriatezzaVPS",
+  "title": "Observation Livello Appropriatezza VPS",
   "status": "draft",
-  "date": "2026-09-18",
+  "date": "2026-10-02",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCorePrecedentiEsamiEseguiti",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
         "id": "Observation",
-        "path": "Observation"
+        "path": "Observation",
+        "short": "Dimissione - Livello appropriatezza"
       },
       {
         "id": "Observation.status",
         "path": "Observation.status",
-        "short": "Indica lo stato dell'osservazione",
+        "short": "Stato dell'osservazione",
         "min": 1,
         "max": "1",
         "fixedCode": "final"
@@ -29,15 +30,7 @@
         "id": "Observation.code",
         "path": "Observation.code",
         "short": "Codice identificativo",
-        "definition": "Codice che identifica il tipo di precedente esame eseguito. Per la codifica possono essere utilizzati i sistemi di codifica (LOINC, ICD9-CM).",
         "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Observation.code.coding",
-        "path": "Observation.code.coding",
-        "short": "Codifica dell'esame eseguito",
-        "min": 0,
         "max": "1"
       },
       {
@@ -46,36 +39,31 @@
         "short": "Sistema di codifica",
         "min": 0,
         "max": "1",
-        "fixedUri": "http://loinc.org",
-        "definition": "Sistema di codifica.",
-        "comment": "Fixed: LOINC (OID 2.16.840.1.113883.6.1)"
+        "fixedUri": "http://loinc.org"
       },
       {
         "id": "Observation.code.coding.version",
         "path": "Observation.code.coding.version",
         "short": "Versione del sistema di codifica",
+        "comment": "Es. LOINC 2.19",
         "min": 0,
-        "max": "1",
-        "example": [
-                    {
-                        "label": "Esempio",
-                        "valueString": "LOINC 2.19"
-                    }
-                ]
+        "max": "1"
       },
       {
         "id": "Observation.code.coding.code",
         "path": "Observation.code.coding.code",
         "short": "Valore del codice",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "fixedCode": "11283-9"
       },
       {
         "id": "Observation.code.coding.display",
         "path": "Observation.code.coding.display",
-        "short": "Descrizione leggibile dell'esame codificato",
+        "short": "Descrizione leggibile del codice",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "fixedString": "Valutazione Acutezza"
       },
       {
         "id": "Observation.subject",
@@ -95,7 +83,7 @@
       {
         "id": "Observation.encounter",
         "path": "Observation.encounter",
-        "short": "Episodio clinico in cui è stata fatta la richiesta",
+        "short": "Episodio di cura a cui si riferisce l'osservazione",
         "min": 0,
         "max": "1",
         "type": [
@@ -110,57 +98,55 @@
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
-        "short": "Data e ora clinicamente rilevanti per l'osservazione",
+        "short": "Data e ora in cui l'osservazione è stata effettuata o è valida",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "dateTime"
-          },
-          {
-            "code": "Period"
           }
         ]
-      },
-      {
-        "id": "Observation.effectiveDateTime",
-        "path": "Observation.effectiveDateTime",
-        "short": "Data e ora clinicamente rilevanti per l'osservazione",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.effectivePeriod",
-        "path": "Observation.effectivePeriod",
-        "short": "Periodo clinicamente rilevante per l'osservazione",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.effectivePeriod.start",
-        "path": "Observation.effectivePeriod.start",
-        "short": "Inizio dell'osservazione",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.effectivePeriod.end",
-        "path": "Observation.effectivePeriod.end",
-        "short": "Fine dell'osservazione",
-        "min": 0,
-        "max": "1"
       },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
-        "short": "Valore associato all'esame eseguito",
+        "short": "Valore del livello di appropriatezza",
+        "comment": "Value Set: https://develop.art-decor.org/ad/#/hl7itig-/terminology/valueset/2.16.840.1.113883.3.1937.777.63.11.8/2018-03-19T00:00:00",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "Observation.value[x].coding.system",
+        "path": "Observation.value[x].coding.system",
+        "short": "Sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x].coding.version",
+        "path": "Observation.value[x].coding.version",
+        "short": "Versione del sistema di codifica",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x].coding.code",
+        "path": "Observation.value[x].coding.code",
+        "short": "Valore del codice",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x].coding.display",
+        "path": "Observation.value[x].coding.display",
+        "short": "Descrizione leggibile del codice",
+        "min": 0,
+        "max": "1"
       }
     ]
   }

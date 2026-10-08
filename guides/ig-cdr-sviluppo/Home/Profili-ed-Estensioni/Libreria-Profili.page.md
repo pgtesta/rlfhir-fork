@@ -38,18 +38,428 @@
       </thead>
       <tbody id="myTable">
         <tr>
+          <td>CORE</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlallergyintolerancecore.page.md?version=current">
+            RLAllergyIntoleranceCore
+      </a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a>
+          </td>
+          <td>
+            Profilo che descrive le allergie e le intolleranze
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntoleranceCore}}
+          </td>
+        </tr>
+        <tr>
           <td>RAD</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLPatientRAD.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionRAD.page.md}}
           </td>
           <td>
-            <a href="http://hl7.org/fhir/R4/patient.html">Patient</a>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
           </td>
           <td>
-            Profilo che descrive un paziente
+            Profilo che descrive header e body di un documento di radiologia
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientRAD}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionRefertoRadiologia}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlconditioncore.page.md?version=current">
+          RLConditionCore
+      </a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+          </td>
+          <td>
+            Profilo che descrive le patologie di un paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlencountercore.page.md?version=current">RLEncounterCore</a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+          </td>
+          <td>
+            Profilo che descrive gli episodi clinici
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlfammembhistcore.page.md?version=current">
+            RLFamilyMemberHistoryCore
+      </a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/familymemberhistory.html">FamilyMemberHistory</a>
+          </td>
+          <td>
+            Profilo che descrive l'anamnesi familiare
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLFamilyMemberHistoryCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>RAD</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLImagingStudyRAD.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+          </td>
+          <td>
+            Profilo che descrive studi dicom
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRAD}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rllocationcore.page.md?version=current">
+          RLLocationCore
+      </a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+          </td>
+          <td>
+            Profilo che descrive una struttura fisica per il contesto di Regione Lombardia
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLLocationCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>RAD</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationStatementRAD.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+          </td>
+          <td>
+            Profilo che descrive le terapie del paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationStatementTerapiaFarmacologica}}
+          </td>
+        </tr>
+        <tr>
+          <td>RAD</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationQuesitoDiagnosticoRad.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il quesito diagnostico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationQuesitoDiagnostico}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE,RAD</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlobservationdecorsoclinico.page.md?version=current">
+            RLObservationDecorsoClinico
+      </a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il decorso clinico per radiologia
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDecorsoClinico}}
+          </td>
+        </tr>
+        <tr>
+          <td>RAD</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeRad.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le complicanze
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeRad}}
+          </td>
+        </tr>
+        <tr>
+          <td>RAD</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrecedentiEsamiEseguitiRad.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive i precedenti esami eseguiti
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad}}
+          </td>
+        </tr>
+        <tr>
+          <td>RAD</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsameEseguitoRad.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive l'esami eseguito durante l'incontro di radiologia
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsameEseguitoRad}}
+          </td>
+        </tr>
+        <tr>
+          <td>CORE</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlservicerequestcore.page.md?version=current">
+            RLServiceRequestCore
+      </a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+          </td>
+          <td>
+            Profilo che descrive una richiesta
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+          </td>
+          <td>
+            Profilo che descrive il piano di cura alla dimissione dal Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body del Verbale di Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica somministrata in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaPSVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la richiesta di terapia farmacologica in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaPSVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica prescritta alla dimissione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAccertamentiVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive gli accertamenti eseguiti in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAccertamentiVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le complicanze insorte durante l'episodio di Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDataDecessoVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la data e ora del decesso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDataDecessoVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationLivelloAppropriatezzaVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il livello di appropriatezza dell'accesso alla dimissione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationLivelloAppropriatezzaVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationProblemaAccessoVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il problema principale all'accesso in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationProblemaAccessoVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrognosiVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la prognosi alla dimissione
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrognosiVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRagioneVisitaVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la ragione della visita in Pronto Soccorso
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationRagioneVisitaVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRichiestaAutopsiaVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la richiesta di autopsia
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationRichiestaAutopsiaVPS}}
+          </td>
+        </tr>
+        <tr>
+          <td>VPS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationTriageVPS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la valutazione di acutezza (codice) assegnata al triage
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationTriageVPS}}
           </td>
         </tr>
       </tbody>
