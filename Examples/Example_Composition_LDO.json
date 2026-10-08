@@ -1,0 +1,285 @@
+{
+  "resourceType": "Composition",
+  "id": "Example-Composition-LDO",
+  "meta": {
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionLdo"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+      "valueString": "1"
+    },
+    {
+      "url": "http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it",
+      "valueReference": {
+        "reference": "Practitioner/practitioner-001"
+      }
+    },
+    {
+      "url": "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+      "valueReference": {
+        "reference": "Practitioner/practitioner-002"
+      }
+    },
+    {
+      "url": "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLBasedOnOrderOrRequisition",
+      "valueReference": {
+        "reference": "ServiceRequest/servicerequest-001"
+      }
+    }
+  ],
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "34105-7",
+        "display": "Lettera di dimissione ospedaliera"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-001"
+  },
+  "encounter": {
+    "reference": "Encounter/encounter-001"
+  },
+  "date": "2026-10-02T10:30:00+02:00",
+  "author": [
+    {
+      "reference": "Practitioner/practitioner-001"
+    }
+  ],
+  "title": "LETTERA DI DIMISSIONE OSPEDALIERA",
+  "attester": [
+    {
+      "mode": "legal",
+      "time": "2026-10-02T10:30:00+02:00",
+      "party": {
+        "reference": "Practitioner/practitioner-001"
+      }
+    }
+  ],
+  "custodian": {
+    "reference": "Organization/organization-001"
+  },
+  "section": [
+    {
+      "title": "Motivo del ricovero",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "46241-6",
+            "display": "Diagnosi di Accettazione"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/Example-Observation-MotivoRicovero-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Inquadramento Clinico Iniziale",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "47039-3",
+            "display": "Ricovero Ospedaliero, anamnesi ed esame obiettivo"
+          }
+        ]
+      },
+      "section": [
+        {
+          "title": "Anamnesi",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11329-0",
+                "display": "Anamnesi Generale"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Paziente con storia di ipertensione arteriosa in trattamento con ACE-inibitori dal 2018. Diabete mellito tipo 2 diagnosticato nel 2020. Nessun precedente chirurgico di rilievo.</div>"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Decorso Ospedaliero",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "8648-8",
+            "display": "Decorso ospedaliero"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Ricovero per polmonite acquisita in comunità. Trattamento con antibioticoterapia ev (Ceftriaxone 2g/die per 7 giorni). Progressivo miglioramento clinico e radiologico. Sfebbramento in terza giornata.</div>"
+      }
+    },
+    {
+      "title": "Complicanze",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "55109-3",
+            "display": "Complicazioni"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/Example-Observation-Complicanze-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Riscontri ed accertamenti significativi",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11493-4",
+            "display": "Hospital discharge studies summary"
+          }
+        ]
+      },
+      "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">RX torace (25/09/2026): addensamento parenchimale lobo inferiore destro. Controllo RX (01/10/2026): netto miglioramento, residuo minimo velamento basale destro.</div>"
+      }
+    },
+    {
+      "title": "Consulenza",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "34104-0",
+            "display": "Hospital Consult note"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/Example-Observation-Consulenza-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Esami eseguiti durante il ricovero",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "30954-2",
+            "display": "Esami diagnostici e/o di laboratorio significativi"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/Example-Observation-EsamiEseguitiRicovero-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Procedure eseguite durante il ricovero",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "47519-4",
+            "display": "History of Procedures Document"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Procedure/Example-Procedure-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Allergie e/o Reazioni Avverse",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "48765-2",
+            "display": "ALLERGIE E/O REAZIONI AVVERSE"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "AllergyIntolerance/allergyintolerance-001"
+        }
+      ]
+    },
+    {
+      "title": "Terapia farmacologica effettuata durante il ricovero",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "10160-0",
+            "display": "Terapie Farmacologiche"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "MedicationAdministration/Example-MedicationAdministration-Ricovero-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Condizioni del paziente e diagnosi alla dimissione",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "11535-2",
+            "display": "Diagnosi di Dimissione"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "Observation/Example-Observation-DiagnosiDimissione-LDO"
+        }
+      ]
+    },
+    {
+      "title": "Terapia farmacologica alla dimissione",
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "10183-2",
+            "display": "Terapia farmacologica alla dimissione"
+          }
+        ]
+      },
+      "entry": [
+        {
+          "reference": "MedicationRequest/Example-MedicationRequest-Dimissione-LDO"
+        }
+      ]
+    }
+  ]
+}

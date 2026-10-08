@@ -69,5 +69,5 @@ Nella seguente tabella sono elencati i value set e i sistemi di codifica relativ
 | type | Tipologia di documento | La codifica è definita dal sistema [LOINC](http://loinc.org) |
 | status | Stato del documento | La codifica è definita dal ValueSet [CompositionStatus](http://hl7.org/fhir/ValueSet/composition-status) |
 | attester.mode | Modalità di attestazione del documento | La codifica è definita dal ValueSet [CompositionAttestationMode](http://hl7.org/fhir/ValueSet/composition-attestation-mode) |
-| section.code | Codice identificativo di ciascuna sezione del documento | La codifica è definita dal sistema [LOINC](http://loinc.org), ad eccezione della sezione DICOM Object Catalog che utilizza il sistema [DCM](urn:oid:1.2.840.10008.2.16.4) |
+| section.code | Codice identificativo di ciascuna sezione del documento | La codifica è definita dal sistema [LOINC](http://loinc.org) |
 | section.code | Codice identificativo della sezione Dicom object catalog del documento | La codifica è definita dal sistema [DCM](urn:oid:1.2.840.10008.2.16.4) |

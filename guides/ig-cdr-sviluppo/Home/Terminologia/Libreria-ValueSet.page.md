@@ -36,31 +36,70 @@
   <tbody id="myTable">
     <tr>
       <td>
-        {{link:http://hl7.org/fhir/ValueSet/location-physical-type}}
+        {{link:http://loinc.org}}
       </td>
-      <td>ValueSet relativo alla codifica della tipologia di location</td>
-      <td>http://hl7.org/fhir/ValueSet/location-physical-type</td>
+      <td>Tipologia di documento</td>
+      <td>http://loinc.org</td>
     </tr>
     <tr>
       <td>
-        {{link:http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione}}
+        {{link:https://www.eumed.it/icd9cm/}}
       </td>
-      <td>ValueSet relativo alla codifica della tipologia di organizzazione</td>
-      <td>http://hl7.it/fhir/lab-report/ValueSet/tipoOrganizzazione</td>
+      <td>Classificazione internazionale delle malattie ICD-9-CM</td>
+      <td>https://www.eumed.it/icd9cm/</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic}}
+      </td>
+      <td>Codici AIC dei medicinali</td>
+      <td>https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic/</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://hl7.org/fhir/ValueSet/composition-status}}
+      </td>
+      <td>Stato del documento</td>
+      <td>http://hl7.org/fhir/ValueSet/composition-status</td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://hl7.org/fhir/ValueSet/composition-attestation-mode}}
+      </td>
+      <td>Modalità di attestazione del documento</td>
+      <td>http://hl7.org/fhir/ValueSet/composition-attestation-mode</td>
     </tr>
     <tr>
       <td>
         {{link:http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali}}
       </td>
-      <td>ValueSet relativo alla codifica ISTAT delle unità amministrative territoriali</td>
-      <td>http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali</td>
+      <td>Codice identificativo di ciascuna sezione del documento</td>
+      <td>http://loinc.org
+      </td>
     </tr>
     <tr>
       <td>
-      <a href="https://www.hl7.it/fhir/base/ValueSet-statoCivile.html" target="_blank">Stato civile</a>
+        {{link:http://hl7.it/fhir/lab-report/CodeSystem/istat-unitaAmministrativeTerritoriali}}
       </td>
-      <td>ValueSet relativo allo stato civile del paziente</td>
-      <td>https://www.hl7.it/fhir/base/ValueSet-statoCivile</td>
+      <td>Codice identificativo di ciascuna sezione del documento</td>
+      <td>urn:oid:1.2.840.10008.2.16.4
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration}}
+      </td>
+      <td>Via di somministrazione di farmaci e vaccini</td>
+      <td>urn:oid:2.16.840.1.113883.5.112
+      </td>
+    </tr>
+    <tr>
+      <td>
+        {{link:http://terminology.hl7.org/CodeSystem/v3-ActSite}}
+      </td>
+      <td>Sede anatomica di somministrazione di farmaci e vaccini</td>
+      <td>urn:oid:2.16.840.1.113883.5.1052
+      </td>
     </tr>
   </tbody>
 </table>
