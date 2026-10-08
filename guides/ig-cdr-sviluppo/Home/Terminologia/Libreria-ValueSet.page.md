@@ -43,10 +43,10 @@
     </tr>
     <tr>
       <td>
-        {{link:https://www.eumed.it/icd9cm/}}
+        {{link:https://terminology.hl7.org/7.4.0/en/ValueSet-v3-DiagnosisICD9CM.html}}
       </td>
       <td>Classificazione internazionale delle malattie ICD-9-CM</td>
-      <td>https://www.eumed.it/icd9cm/</td>
+      <td>urn:oid:2.16.840.1.113883.6.103</td>
     </tr>
     <tr>
       <td>
@@ -100,6 +100,13 @@
       <td>Sede anatomica di somministrazione di farmaci e vaccini</td>
       <td>urn:oid:2.16.840.1.113883.5.1052
       </td>
+    </tr>
+    <tr>
+      <td>
+        Classificazione regionale delle patologie croniche
+      </td>
+      <td>Codifica delle patologie croniche del paziente (storia clinica)</td>
+      <td>urn:oid:2.16.840.1.113883.2.9.77.22.11.10</td>
     </tr>
   </tbody>
 </table>
