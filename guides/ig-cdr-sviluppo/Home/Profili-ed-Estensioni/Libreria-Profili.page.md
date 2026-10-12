@@ -792,6 +792,21 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationTerapiaConsigliataRSA}}
           </td>
         </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceHeaderRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+          </td>
+          <td>
+            Profilo che descrive il dispositivo e/o l'applicazione software che ha generato il documento
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceHeaderRSA}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
