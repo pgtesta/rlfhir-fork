@@ -4,7 +4,7 @@
   "name": "RLObservationDiagnosiDimissioneLdo",
   "title": "Observation LDO - Diagnosi alla Dimissione",
   "status": "draft",
-  "date": "2026-10-05",
+  "date": "2026-10-08",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -16,14 +16,6 @@
       {
         "id": "Observation",
         "path": "Observation"
-      },
-      {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "short": "Stato dell’osservazione",
-        "min": 1,
-        "max": "1",
-        "fixedCode": "final"
       },
       {
         "id": "Observation.code",
@@ -69,19 +61,11 @@
         "fixedString": "Diagnosi di Dimissione Ospedaliera"
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "Paziente a cui si riferisce l’osservazione.",
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "short": "Note",
         "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
-            ]
-          }
-        ]
+        "max": "*"
       },
       {
         "id": "Observation.value[x]",
@@ -136,11 +120,27 @@
         "max": "1"
       },
       {
-        "id": "Observation.note",
-        "path": "Observation.note",
-        "short": "Note",
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato dell’osservazione",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Paziente a cui si riferisce l’osservazione.",
         "min": 0,
-        "max": "*"
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
       }
     ]
   }
