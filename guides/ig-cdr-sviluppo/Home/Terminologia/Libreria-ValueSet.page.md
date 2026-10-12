@@ -108,6 +108,13 @@
       <td>Codifica delle patologie croniche del paziente (storia clinica)</td>
       <td>urn:oid:2.16.840.1.113883.2.9.77.22.11.10</td>
     </tr>
+    <tr>
+      <td>
+        {{link:https://www.hl7.org/fhir/R4/valueset-medicationrequest-intent.html}}
+      </td>
+      <td>Grado di formalità e vincolatività della richiesta di farmaco</td>
+      <td>https://www.hl7.org/fhir/R4/valueset-medicationrequest-intent.html</td>
+    </tr>
   </tbody>
 </table>
   </body>

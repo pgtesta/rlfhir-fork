@@ -304,6 +304,36 @@
       <td>Terapia farmacologica in atto</td>
       <td>{{link:MedicationStatement/Example-MedicationStatementTerapiaInAtto-1-RSA}}</td>
     </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationAdministration</td>
+      <td>Somministrazione di farmaci durante la prestazione</td>
+      <td>{{link:MedicationAdministration/Example-MedicationAdministrationPrestazioni-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationAdministration</td>
+      <td>Terapia farmacologica consigliata</td>
+      <td>{{link:MedicationAdministration/Example-MedicationAdministrationTerapiaConsigliata-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationRequest</td>
+      <td>Terapia farmacologica consigliata</td>
+      <td>{{link:MedicationRequest/Example-MedicationRequestTerapiaConsigliata-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Medication</td>
+      <td>Medicinale della terapia farmacologica consigliata</td>
+      <td>{{link:Medication/Example-MedicationTerapiaConsigliata-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Device</td>
+      <td>Applicazione software che ha generato il documento</td>
+      <td>{{link:Device/Example-DeviceHeader-1-RSA}}</td>
+    </tr>
   </tbody>
 </table>
   </body>

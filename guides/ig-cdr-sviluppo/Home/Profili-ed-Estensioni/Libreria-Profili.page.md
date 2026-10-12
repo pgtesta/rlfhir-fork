@@ -732,6 +732,66 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationStatementTerapiaInAttoRSA}}
           </td>
         </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationPrestazioniRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+          </td>
+          <td>
+            Profilo che descrive la somministrazione di farmaci nell'ambito delle prestazioni del Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationPrestazioniRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaFarmacologicaConsigliataRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica consigliata al paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationTerapiaConsigliataRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaConsigliataRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica consigliata al paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaConsigliataRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationTerapiaFarmacologicaConsigliataRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+          </td>
+          <td>
+            Profilo che descrive il medicinale oggetto della terapia farmacologica consigliata
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationTerapiaConsigliataRSA}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>

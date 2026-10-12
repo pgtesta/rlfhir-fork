@@ -1,0 +1,46 @@
+{
+  "resourceType": "Device",
+  "id": "Example-Device-1-RSA",
+  "meta": {
+    "lastUpdated": "2026-10-12T12:00:00+02:00",
+    "profile": [
+      "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRSA"
+    ],
+    "versionId": "1"
+  },
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.9.2.30.999.1",
+      "value": "AMB-REFERTI-001",
+      "assigner": {
+        "display": "ASST Esempio"
+      }
+    }
+  ],
+  "manufacturer": "Software Sanitario S.p.A.",
+  "deviceName": [
+    {
+      "name": "Gestionale Referti Ambulatoriali",
+      "type": "user-friendly-name"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "706689003",
+        "display": "Application program software"
+      }
+    ]
+  },
+  "contact": [
+    {
+      "id": "contatto-supporto-1",
+      "system": "email",
+      "value": "supporto@softwaresanitario.example",
+      "period": {
+        "start": "2026-01-01"
+      }
+    }
+  ]
+}
