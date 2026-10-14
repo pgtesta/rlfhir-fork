@@ -612,6 +612,201 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceUseStatementTPI}}
           </td>
         </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body del Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationQuesitoDiagnosticoRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il quesito diagnostico del Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationQuesitoDiagnosticoRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationStoriaClinicaRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la storia clinica del paziente nel Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStoriaClinicaRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrecedentiEsamiEseguitiRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive i precedenti esami eseguiti dal paziente nel Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDiagnosiRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la diagnosi nel Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDiagnosiRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAccertamentiEControlliConsigliatiRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive gli accertamenti e i controlli consigliati nel Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAccertamentiControlliConsigliatiRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrestazioniRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le prestazioni eseguite nel Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrestazioniRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationStatementTerapiaInAttoRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica in atto del paziente nel Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationStatementTerapiaInAttoRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationPrestazioniRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+          </td>
+          <td>
+            Profilo che descrive la somministrazione di farmaci nell'ambito delle prestazioni del Referto di Specialistica Ambulatoriale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationPrestazioniRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaFarmacologicaConsigliataRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica consigliata al paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationTerapiaConsigliataRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaConsigliataRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica consigliata al paziente
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestTerapiaConsigliataRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationTerapiaFarmacologicaConsigliataRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+          </td>
+          <td>
+            Profilo che descrive il medicinale oggetto della terapia farmacologica consigliata
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationTerapiaConsigliataRSA}}
+          </td>
+        </tr>
+        <tr>
+          <td>RSA</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceHeaderRSA.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+          </td>
+          <td>
+            Profilo che descrive il dispositivo e/o l'applicazione software che ha generato il documento
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceHeaderRSA}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
