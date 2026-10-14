@@ -4,7 +4,7 @@
   "name": "RLObservationEsamiEseguitiRicoveroLdo",
   "title": "Observation LDO - Esami Eseguiti durante il Ricovero",
   "status": "draft",
-  "date": "2026-10-05",
+  "date": "2026-10-08",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -16,29 +16,6 @@
       {
         "id": "Observation",
         "path": "Observation"
-      },
-      {
-        "id": "Observation.basedOn",
-        "path": "Observation.basedOn",
-        "short": "Riferimento alla richiesta che ha originato l’osservazione",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "short": "Stato dell’osservazione",
-        "min": 1,
-        "max": "1",
-        "fixedCode": "final"
       },
       {
         "id": "Observation.code",
@@ -55,7 +32,7 @@
         "id": "Observation.code.coding.system",
         "path": "Observation.code.coding.system",
         "short": "Sistema di codifica",
-        "comment": "Valori previsti: http://loinc.org (LOINC) | http://hl7.org/fhir/sid/icd-9-cm (ICD9-CM, OID 2.16.840.1.113883.6.103).",
+        "comment": "Valore previsto: http://loinc.org.",
         "min": 0,
         "max": "1"
       },
@@ -63,7 +40,7 @@
         "id": "Observation.code.coding.version",
         "path": "Observation.code.coding.version",
         "short": "Versione del sistema di codifica",
-        "comment": "Valori previsti: LOINC | ICD9-CM.",
+        "comment": "Valore previsto: LOINC.",
         "min": 0,
         "max": "1"
       },
@@ -80,6 +57,74 @@
         "short": "Descrizione leggibile del codice",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "short": "Data e ora in cui l’osservazione è stata effettuata o è valida.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "Valore dell’osservazione",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato dell’osservazione",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Professionista sanitario che ha eseguito o validato l’osservazione.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "short": "Riferimento alla richiesta che ha originato l’osservazione",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"
+            ]
+          }
+        ]
       },
       {
         "id": "Observation.subject",
@@ -108,51 +153,6 @@
             "targetProfile": [
               "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
             ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
-        "short": "Data e ora in cui l’osservazione è stata effettuata o è valida.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ]
-      },
-      {
-        "id": "Observation.effectiveDateTime",
-        "path": "Observation.effectiveDateTime",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Riferimento alla richiesta che ha originato l’osservazione",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "short": "Valore dell’osservazione",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
           }
         ]
       }
