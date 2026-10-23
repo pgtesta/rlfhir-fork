@@ -1,7 +1,10 @@
 # Documenti da processare
 
-Inserire in questa cartella i documenti destinati alle skill di elaborazione del progetto, ad esempio file `.xlsx` o `.docx`.
+Inserire i documenti nelle sottocartelle in base all'ambito:
 
-Le skill usano `.github/DaProcessare/` come percorso predefinito quando non viene indicato un file specifico.
+- `ModificheIG/`: modifiche alle pagine della Implementation Guide, in formato `.docx` o `.xlsx`; usare la skill `word-highlighted-changes`.
+- `ModificheProfili/`: modifiche ai profili e agli altri artefatti FHIR, in formato `.xlsx`; usare la skill `excel-yellow-changes`.
 
-Il documento originale non viene modificato o eliminato. Prima dell'applicazione, ogni skill deve mostrare un'anteprima delle modifiche quando il flusso lo prevede.
+Quando non viene indicato un file specifico, ciascuna skill cerca i documenti solo nella propria sottocartella. Non inserire documenti direttamente in `DaProcessare`.
+
+I documenti originali non vengono modificati o eliminati. Prima dell'applicazione, le skill mostrano un'anteprima delle modifiche e attendono l'approvazione.
