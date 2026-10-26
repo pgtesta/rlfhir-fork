@@ -4,7 +4,7 @@
   "name": "RLObservationComplicanzeLdo",
   "title": "Observation LDO - Complicanze",
   "status": "draft",
-  "date": "2026-10-05",
+  "date": "2026-10-08",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -16,29 +16,6 @@
       {
         "id": "Observation",
         "path": "Observation"
-      },
-      {
-        "id": "Observation.basedOn",
-        "path": "Observation.basedOn",
-        "short": "Riferimento alla richiesta che ha originato l’osservazione",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.status",
-        "path": "Observation.status",
-        "short": "Stato dell’osservazione",
-        "min": 1,
-        "max": "1",
-        "fixedCode": "final"
       },
       {
         "id": "Observation.code",
@@ -84,36 +61,6 @@
         "fixedString": "Problem"
       },
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "short": "Paziente a cui si riferisce l’osservazione.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.encounter",
-        "path": "Observation.encounter",
-        "short": "Episodio di cura durante il quale è stata effettuata l’osservazione.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
         "short": "Periodo di validità dell’osservazione",
@@ -146,25 +93,11 @@
         "max": "1"
       },
       {
-        "id": "Observation.performer",
-        "path": "Observation.performer",
-        "short": "Professionista sanitario che ha eseguito o validato l’osservazione.",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
         "short": "Codice identificativo",
-        "min": 0,
+        "comment": "L'elemento <value> può essere valorizzato utilizzando i seguenti sistemi di codifica: LOINC (http://loinc.org) ICD9-CM (http://hl7.org/fhir/sid/icd-9-cm) Nomenclatura Ministeriale Regionale",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -175,7 +108,7 @@
       {
         "id": "Observation.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
-        "min": 0,
+        "min": 1,
         "max": "1"
       },
       {
@@ -209,6 +142,74 @@
         "short": "Descrizione leggibile del codice",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "short": "Stato dell’osservazione",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "final"
+      },
+      {
+        "id": "Observation.performer",
+        "path": "Observation.performer",
+        "short": "Professionista sanitario che ha eseguito o validato l’osservazione.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPractitionerCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "short": "Riferimento alla richiesta che ha originato l’osservazione",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "Paziente a cui si riferisce l’osservazione.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientCore"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "short": "Episodio di cura durante il quale è stata effettuata l’osservazione.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterCore"
+            ]
+          }
+        ]
       }
     ]
   }

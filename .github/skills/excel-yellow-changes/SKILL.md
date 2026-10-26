@@ -9,14 +9,14 @@ user-invocable: true
 
 Apply only the changes represented by yellow-highlighted Excel cells to the FHIR project, preserving unrelated content and producing an auditable result.
 
-When no workbook path is provided, look first in `.github/DaProcessare/`. Treat files in that folder as input documents only; never modify or delete a source document. Move or archive processed documents only when the user explicitly requests it.
+When no workbook path is provided, look first in `.github/DaProcessare/ModificheProfili/`. This skill is for profile and other FHIR artifact changes; guide-page changes belong in `.github/DaProcessare/ModificheIG/` and use `word-highlighted-changes`, including when their source is an XLSX workbook. Treat source documents as input only; never modify or delete them. Move or archive processed documents only when the user explicitly requests it.
 
 ## Required Inputs
 
 Ask for any missing information before editing:
 
 - The workbook path or attachment.
-- If no workbook is attached, inspect `.github/DaProcessare/` and report the available supported files before selecting one. If there is more than one plausible input, ask the user which document to process.
+- If no workbook is attached, inspect `.github/DaProcessare/ModificheProfili/` and report the available supported files before selecting one. If there is more than one plausible input, ask the user which document to process.
 - Confirmation that the workbook uses explicit columns for target file/profile, JSON path, and changed value. If those columns are absent, ask how the mapping is represented.
 - Whether every yellow cell is a requested change, or whether some yellow cells are explanatory/highlighted context.
 - Whether any worksheet is highlighted entirely or predominantly in yellow, including a yellow worksheet tab color. Treat such a worksheet as a request to create a new FHIR profile, not as a collection of cell updates.

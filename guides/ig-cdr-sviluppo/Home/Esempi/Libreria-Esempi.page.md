@@ -256,6 +256,84 @@
       <td>Reazione avversa alla vaccinazione</td>
       <td>{{link:Observation/observation-reazione}}</td>
     </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Composition</td>
+      <td>Referto di Specialistica Ambulatoriale</td>
+      <td>{{link:Composition/Example-Composition-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Observation</td>
+      <td>Quesito Diagnostico</td>
+      <td>{{link:Observation/Example-ObservationQuesitoDiagnostico-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Observation</td>
+      <td>Storia Clinica</td>
+      <td>{{link:Observation/Example-ObservationStoriaClinica-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Observation</td>
+      <td>Precedenti Esami Eseguiti</td>
+      <td>{{link:Observation/Example-ObservationPrecedentiEsamiEseguiti-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Observation</td>
+      <td>Diagnosi</td>
+      <td>{{link:Observation/Example-ObservationDiagnosi-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Observation</td>
+      <td>Accertamenti e Controlli Consigliati</td>
+      <td>{{link:Observation/Example-ObservationAccertamentiControlliConsigliati-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Observation</td>
+      <td>Prestazioni</td>
+      <td>{{link:Observation/Example-ObservationPrestazioni-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationStatement</td>
+      <td>Terapia farmacologica in atto</td>
+      <td>{{link:MedicationStatement/Example-MedicationStatementTerapiaInAtto-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationAdministration</td>
+      <td>Somministrazione di farmaci durante la prestazione</td>
+      <td>{{link:MedicationAdministration/Example-MedicationAdministrationPrestazioni-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationAdministration</td>
+      <td>Terapia farmacologica consigliata</td>
+      <td>{{link:MedicationAdministration/Example-MedicationAdministrationTerapiaConsigliata-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>MedicationRequest</td>
+      <td>Terapia farmacologica consigliata</td>
+      <td>{{link:MedicationRequest/Example-MedicationRequestTerapiaConsigliata-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Medication</td>
+      <td>Medicinale della terapia farmacologica consigliata</td>
+      <td>{{link:Medication/Example-MedicationTerapiaConsigliata-1-RSA}}</td>
+    </tr>
+    <tr>
+      <td>RSA</td>
+      <td>Device</td>
+      <td>Applicazione software che ha generato il documento</td>
+      <td>{{link:Device/Example-DeviceHeader-1-RSA}}</td>
+    </tr>
   </tbody>
 </table>
   </body>
