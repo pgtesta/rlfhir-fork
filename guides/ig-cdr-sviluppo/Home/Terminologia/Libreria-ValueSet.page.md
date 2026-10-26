@@ -43,14 +43,14 @@
     </tr>
     <tr>
       <td>
-        {{link:https://terminology.hl7.org/7.4.0/en/ValueSet-v3-DiagnosisICD9CM.html}}
+        <a href="https://terminology.hl7.org/7.4.0/en/ValueSet-v3-DiagnosisICD9CM.html">DiagnosisICD9CM</a>
       </td>
       <td>Classificazione internazionale delle malattie ICD-9-CM</td>
       <td>urn:oid:2.16.840.1.113883.6.103</td>
     </tr>
     <tr>
       <td>
-        {{link:https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic}}
+        <a href="https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic">Codifica AIC</a>
       </td>
       <td>Codici AIC dei medicinali</td>
       <td>https://www.fascicolosanitario.gov.it/portale/sistema-di-codifica-aic/</td>
@@ -110,7 +110,7 @@
     </tr>
     <tr>
       <td>
-        {{link:https://www.hl7.org/fhir/R4/valueset-medicationrequest-intent.html}}
+        <a href="https://www.hl7.org/fhir/R4/valueset-medicationrequest-intent.html">MedicationRequestIntent</a>
       </td>
       <td>Grado di formalità e vincolatività della richiesta di farmaco</td>
       <td>https://www.hl7.org/fhir/R4/valueset-medicationrequest-intent.html</td>

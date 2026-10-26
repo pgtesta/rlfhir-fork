@@ -328,12 +328,6 @@
       <td>Medicinale della terapia farmacologica consigliata</td>
       <td>{{link:Medication/Example-MedicationTerapiaConsigliata-1-RSA}}</td>
     </tr>
-    <tr>
-      <td>RSA</td>
-      <td>Device</td>
-      <td>Applicazione software che ha generato il documento</td>
-      <td>{{link:Device/Example-DeviceHeader-1-RSA}}</td>
-    </tr>
   </tbody>
 </table>
   </body>
