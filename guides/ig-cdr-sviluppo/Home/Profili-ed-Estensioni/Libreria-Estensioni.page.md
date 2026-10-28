@@ -76,6 +76,30 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLPatientATSResidenza}}
           </td>
         </tr>
+                <tr>
+          <td>RLCarePlanFlagPrescrizione</td>
+          <td>CarePlan</td>
+          <td>Flag prescrizione del piano terapeutico (dizionario Flag Prescrizione)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanFlagPrescrizione}}
+          </td>
+        </tr>
+        <tr>
+          <td>RLCarePlanFlagModificaPrescrizione</td>
+          <td>CarePlan</td>
+          <td>Flag modifica prescrizione del piano terapeutico (dizionario Flag Modifica Prescrizione)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanFlagModificaPrescrizione}}
+          </td>
+        </tr>
+        <tr>
+          <td>RLCarePlanMotivoProsecuzione</td>
+          <td>CarePlan</td>
+          <td>Motivo della prosecuzione del piano terapeutico (testo libero)</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanMotivoProsecuzione}}
+          </td>
+        </tr>
         </tbody>
     </table>
   </body>

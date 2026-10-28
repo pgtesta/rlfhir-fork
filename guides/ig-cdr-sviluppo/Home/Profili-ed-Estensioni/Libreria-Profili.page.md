@@ -127,6 +127,127 @@
  {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationQuesitoDiagnosticoRad}}
  </td>
 </tr>
+
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ </td>
+ <td>
+ Profilo che descrive il documento Piano Terapeutico Individuale
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ </td>
+ <td>
+ Profilo che descrive il Piano Terapeutico Individuale: scadenza, flag di prescrizione e condizioni cliniche
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionCondizioniErogabilitaPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ </td>
+ <td>
+ Profilo che descrive una condizione di erogabilità del piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCondizioniErogabilitaPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionCriteriEsclusionePti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ </td>
+ <td>
+ Profilo che descrive un criterio di esclusione del piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCriteriEsclusionePti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPesoPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il peso del paziente nel piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPesoPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDurataMalattiaPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive la durata della malattia (BPCO) nel piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDurataMalattiaPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ </td>
+ <td>
+ Profilo che descrive il programma terapeutico del piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ </td>
+ <td>
+ Profilo che descrive il farmaco prescritto nel piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationPti}}
+ </td>
+</tr>
       </tbody>
     </table>
   </body>

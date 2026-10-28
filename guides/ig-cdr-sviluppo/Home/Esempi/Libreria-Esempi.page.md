@@ -102,6 +102,102 @@
  <td>Quesito Diagnostico</td>
  <td>{{link:Observation/Example-Observation-QuesitoDiagnostico-1-RAD}}</td>
 </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Composition</td>
+   <td>Piano Terapeutico Individuale (1)</td>
+   <td>{{link:Composition/Example-Composition-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Composition</td>
+   <td>Piano Terapeutico Individuale (2)</td>
+   <td>{{link:Composition/Example-Composition-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>CarePlan</td>
+   <td>Piano Terapeutico (1)</td>
+   <td>{{link:CarePlan/Example-CarePlan-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>CarePlan</td>
+   <td>Piano Terapeutico (2)</td>
+   <td>{{link:CarePlan/Example-CarePlan-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Condition</td>
+   <td>Condizioni di Erogabilità (1)</td>
+   <td>{{link:Condition/Example-Condition-CondizioniErogabilita-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Condition</td>
+   <td>Condizioni di Erogabilità (2)</td>
+   <td>{{link:Condition/Example-Condition-CondizioniErogabilita-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Condition</td>
+   <td>Criteri di Esclusione (1)</td>
+   <td>{{link:Condition/Example-Condition-CriteriEsclusione-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Condition</td>
+   <td>Criteri di Esclusione (2)</td>
+   <td>{{link:Condition/Example-Condition-CriteriEsclusione-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Observation</td>
+   <td>Peso (1)</td>
+   <td>{{link:Observation/Example-Observation-Peso-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Observation</td>
+   <td>Peso (2)</td>
+   <td>{{link:Observation/Example-Observation-Peso-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Observation</td>
+   <td>Durata Malattia (1)</td>
+   <td>{{link:Observation/Example-Observation-DurataMalattia-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Observation</td>
+   <td>Durata Malattia (2)</td>
+   <td>{{link:Observation/Example-Observation-DurataMalattia-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>MedicationRequest</td>
+   <td>Programma Terapeutico (1)</td>
+   <td>{{link:MedicationRequest/Example-MedicationRequest-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>MedicationRequest</td>
+   <td>Programma Terapeutico (2)</td>
+   <td>{{link:MedicationRequest/Example-MedicationRequest-2-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Medication</td>
+   <td>Farmaco (1)</td>
+   <td>{{link:Medication/Example-Medication-1-PTI}}</td>
+  </tr>
+  <tr>
+   <td>PTI</td>
+   <td>Medication</td>
+   <td>Farmaco (2)</td>
+   <td>{{link:Medication/Example-Medication-2-PTI}}</td>
+  </tr>
   </tbody>
 </table>
   </body>
