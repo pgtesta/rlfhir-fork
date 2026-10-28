@@ -75,6 +75,38 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceUseStatementStrutturaImpianto}}
           </td>
         </tr>
+        <tr>
+          <td>dataChiusura</td>
+          <td>CarePlan</td>
+          <td>Data di chiusura della programmazione del Piano Assistenziale Individuale</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanDataChiusura}}
+          </td>
+        </tr>
+        <tr>
+          <td>validitaBisogno</td>
+          <td>ServiceRequest</td>
+          <td>Validità del bisogno della prestazione programmata nel Piano Assistenziale Individuale</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestValiditaBisogno}}
+          </td>
+        </tr>
+        <tr>
+          <td>intervalloTemporale</td>
+          <td>ServiceRequest</td>
+          <td>Intervallo temporale (data inizio e data fine) della prestazione programmata nel Piano Assistenziale Individuale</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestIntervalloTemporale}}
+          </td>
+        </tr>
+        <tr>
+          <td>flagProtesica</td>
+          <td>DeviceRequest</td>
+          <td>Flag protesica della richiesta di protesi o ausili nel Piano Assistenziale Individuale</td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestFlagProtesica}}
+          </td>
+        </tr>
         </tbody>
     </table>
   </body>
