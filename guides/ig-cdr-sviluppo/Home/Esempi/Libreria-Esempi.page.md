@@ -328,6 +328,136 @@
       <td>Medicinale della terapia farmacologica consigliata</td>
       <td>{{link:Medication/Example-MedicationTerapiaConsigliata-1-RSA}}</td>
     </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Composition</td>
+      <td>Piano Assistenziale Individuale - paziente cronico iperteso</td>
+      <td>{{link:Composition/Example-Composition-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>CarePlan</td>
+      <td>Piano assistenziale del paziente cronico iperteso</td>
+      <td>{{link:CarePlan/Example-CarePlan-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Goal</td>
+      <td>Obiettivo della presa in carico - controllo dei valori pressori</td>
+      <td>{{link:Goal/Example-Goal-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>ChargeItem</td>
+      <td>Ambito di cura della presa in carico - cronicità</td>
+      <td>{{link:ChargeItem/Example-ChargeItem-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Encounter</td>
+      <td>Presa in carico del paziente cronico iperteso</td>
+      <td>{{link:Encounter/9f0a1b2c-3d4e-4f5a-8b6c-7d8e9f0a1b2c}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Condition</td>
+      <td>Patologia principale della presa in carico - ipertensione arteriosa essenziale</td>
+      <td>{{link:Condition/Example-Condition-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Procedure</td>
+      <td>Prestazione ambulatoriale correlata alla patologia - visita cardiologica di controllo</td>
+      <td>{{link:Procedure/Example-Procedure-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Observation</td>
+      <td>Stile di vita - Fumo: ex fumatore</td>
+      <td>{{link:Observation/Example-ObservationFumo-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Observation</td>
+      <td>Stile di vita - Alcol: consumo occasionale</td>
+      <td>{{link:Observation/Example-ObservationAlcol-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Observation</td>
+      <td>Stile di vita - Sedentarietà: attività fisica moderata</td>
+      <td>{{link:Observation/Example-ObservationSedentarieta-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Observation</td>
+      <td>Caratterizzazione clinica - paziente con pluripatologia cronica</td>
+      <td>{{link:Observation/Example-ObservationCaratterizzazioniCliniche-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>CRS-SISS - Programmazione (codici osservazioni)</td>
+      <td>Codici delle osservazioni della programmazione clinico assistenziale</td>
+      <td>urn:oid:2.16.840.1.113883.2.9.2.30.3.1.3.13.6.17</td>
+    </tr>
+    <tr>
+      <td>CRS-SISS - Indicatore di gravità</td>
+      <td>Indicatore di gravità della programmazione clinico assistenziale</td>
+      <td>urn:oid:2.16.840.1.113883.2.9.2.30.3.1.3.13.6.40</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Observation</td>
+      <td>Raccomandazione clinica - riduzione del consumo di sale e controllo pressorio domiciliare</td>
+      <td>{{link:Observation/Example-ObservationRaccomandazione-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>AllergyIntolerance</td>
+      <td>Allergia alla penicillina</td>
+      <td>{{link:AllergyIntolerance/Example-AllergyIntolerance-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>ServiceRequest</td>
+      <td>Prestazione programmata - visita cardiologica di controllo annuale</td>
+      <td>{{link:ServiceRequest/Example-ServiceRequest-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>MedicationRequest</td>
+      <td>Terapia farmacologica programmata - Ramipril 5 mg, 1 compressa al mattino</td>
+      <td>{{link:MedicationRequest/Example-MedicationRequest-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Medication</td>
+      <td>Farmaco programmato - Ramipril 5 mg compresse (ATC C09AA05)</td>
+      <td>{{link:Medication/Example-Medication-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>DeviceRequest</td>
+      <td>Richiesta di ausilio - misuratore di pressione arteriosa automatico</td>
+      <td>{{link:DeviceRequest/Example-DeviceRequest-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>CommunicationRequest</td>
+      <td>Contatto telefonico programmato mensile</td>
+      <td>{{link:CommunicationRequest/Example-CommunicationRequest-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>OrganizationAffiliation</td>
+      <td>Rete di patologia - rete cardiovascolare</td>
+      <td>{{link:OrganizationAffiliation/Example-OrganizationAffiliation-1-PAI}}</td>
+    </tr>
+    <tr>
+      <td>PAI</td>
+      <td>Organization</td>
+      <td>Erogatore della prestazione programmata - ente erogatore ADI</td>
+      <td>{{link:Organization/Example-OrganizationErogatore-1-PAI}}</td>
+    </tr>
   </tbody>
 </table>
   </body>

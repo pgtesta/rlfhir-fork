@@ -792,6 +792,321 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationTerapiaConsigliataRSA}}
           </td>
         </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive header e body del Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlan.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+          </td>
+          <td>
+            Profilo che descrive il piano assistenziale del paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLGoalPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/goal.html">Goal</a>
+          </td>
+          <td>
+            Profilo che descrive gli obiettivi della presa in carico del paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLGoalPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLChargeItemPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/chargeitem.html">ChargeItem</a>
+          </td>
+          <td>
+            Profilo che descrive l'ambito di cura della presa in carico nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLChargeItemPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLEncounterPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+          </td>
+          <td>
+            Profilo che descrive la presa in carico del paziente (modalità di accesso e patologie) nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLEncounterPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+          </td>
+          <td>
+            Profilo che descrive le patologie della presa in carico (principale, secondaria, addizionale) nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedurePAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+          </td>
+          <td>
+            Profilo che descrive le prestazioni correlate alla patologia nella presa in carico del Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedurePAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationFumoPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive lo stile di vita del paziente relativo al fumo nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationFumoPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAlcolPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive lo stile di vita del paziente relativo al consumo di alcol nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAlcolPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationSedentarietaPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive lo stile di vita del paziente relativo alla sedentarietà nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationSedentarietaPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCaratterizzazioniClinichePAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le caratterizzazioni cliniche del paziente nella presa in carico del Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCaratterizzazioniClinichePAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationValutazionePAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la data dell'ultima valutazione e l'indicatore di gravità di una prestazione programmata nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationValutazionePAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRaccomandazionePAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le raccomandazioni cliniche rivolte al paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationRaccomandazionePAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLAllergyIntolerancePAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a>
+          </td>
+          <td>
+            Profilo che descrive le allergie del paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLAllergyIntolerancePAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+          </td>
+          <td>
+            Profilo che descrive le prestazioni programmate per il paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLServiceRequestPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive la terapia farmacologica programmata per il paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+          </td>
+          <td>
+            Profilo che descrive il farmaco della terapia farmacologica programmata (codici ATC, AIC, GE) nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceRequestPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+          </td>
+          <td>
+            Profilo che descrive le richieste di protesi o ausili programmate per il paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDeviceRequestPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCommunicationRequestPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive i contatti telefonici programmati con il paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCommunicationRequestPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationAffiliationPAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organizationaffiliation.html">OrganizationAffiliation</a>
+          </td>
+          <td>
+            Profilo che descrive le reti di patologia in cui è inserito il paziente nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationAffiliationPAI}}
+          </td>
+        </tr>
+        <tr>
+          <td>PAI</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationErogatorePAI.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive l'erogatore delle prestazioni programmate (ADI, Cure Intermedie, CDI, CDD, RIA, Cure Palliative) nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationErogatorePAI}}
+          </td>
+        </tr>
       </tbody>
     </table>
   </body>
