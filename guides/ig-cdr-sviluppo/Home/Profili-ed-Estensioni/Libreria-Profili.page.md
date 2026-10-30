@@ -248,6 +248,186 @@
  {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationPti}}
  </td>
 </tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ </td>
+ <td>
+ Profilo che descrive il documento lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ </td>
+ <td>
+ Profilo che descrive la terapia farmacologica somministrata durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestDimissioneLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ </td>
+ <td>
+ Profilo che descrive la terapia farmacologica alla dimissione nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestDimissioneLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ </td>
+ <td>
+ Profilo che descrive la terapia farmacologica prescritta durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive le complicanze nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationConsulenzaLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive la consulenza nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationConsulenzaLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDecorsoClinicoLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il decorso clinico nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDecorsoClinicoLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDiagnosiDimissioneLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive la diagnosi alla dimissione nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDiagnosiDimissioneLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsamiEseguitiRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive gli esami eseguiti durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsamiEseguitiRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationMotivoRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il motivo del ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationMotivoRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationProcedureRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive le procedure durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationProcedureRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedureLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ </td>
+ <td>
+ Profilo che descrive le procedure eseguite durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureLdo}}
+ </td>
+</tr>
       </tbody>
     </table>
   </body>

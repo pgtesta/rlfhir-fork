@@ -198,6 +198,78 @@
    <td>Farmaco (2)</td>
    <td>{{link:Medication/Example-Medication-2-PTI}}</td>
   </tr>
+    <tr>
+   <td>LDO</td>
+   <td>Composition</td>
+   <td>Lettera di Dimissione Ospedaliera</td>
+   <td>{{link:Composition/Example-Composition-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>MedicationAdministration</td>
+   <td>Terapia Farmacologica somministrata durante il Ricovero</td>
+   <td>{{link:MedicationAdministration/Example-MedicationAdministration-Ricovero-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>MedicationRequest</td>
+   <td>Terapia Farmacologica alla Dimissione</td>
+   <td>{{link:MedicationRequest/Example-MedicationRequest-Dimissione-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>MedicationRequest</td>
+   <td>Terapia Farmacologica prescritta durante il Ricovero</td>
+   <td>{{link:MedicationRequest/Example-MedicationRequest-Ricovero-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Complicanze</td>
+   <td>{{link:Observation/Example-Observation-Complicanze-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Consulenza</td>
+   <td>{{link:Observation/Example-Observation-Consulenza-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Decorso Clinico</td>
+   <td>{{link:Observation/Example-Observation-DecorsoClinico-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Diagnosi alla Dimissione</td>
+   <td>{{link:Observation/Example-Observation-DiagnosiDimissione-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Esami Eseguiti durante il Ricovero</td>
+   <td>{{link:Observation/Example-Observation-EsamiEseguitiRicovero-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Motivo del Ricovero</td>
+   <td>{{link:Observation/Example-Observation-MotivoRicovero-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Observation</td>
+   <td>Procedure durante il Ricovero</td>
+   <td>{{link:Observation/Example-Observation-ProcedureRicovero-LDO}}</td>
+  </tr>
+  <tr>
+   <td>LDO</td>
+   <td>Procedure</td>
+   <td>Procedure Eseguite durante il Ricovero</td>
+   <td>{{link:Procedure/Example-Procedure-LDO}}</td>
+  </tr>
   </tbody>
 </table>
   </body>

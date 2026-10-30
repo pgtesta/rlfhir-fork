@@ -100,6 +100,30 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanMotivoProsecuzione}}
           </td>
         </tr>
+                <tr>
+          <td>information-recipient</td>
+          <td>Composition</td>
+          <td>Professionisti sanitari che ricevono una copia del documento</td>
+          <td>
+            {{link:http://hl7.eu/fhir/StructureDefinition/information-recipient}}
+          </td>
+        </tr>
+        <tr>
+          <td>composition-clinicaldocument-versionNumber</td>
+          <td>Composition</td>
+          <td>Versione del documento</td>
+          <td>
+            {{link:http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber}}
+          </td>
+        </tr>
+        <tr>
+          <td>composition-dataenterer-it</td>
+          <td>Composition</td>
+          <td>Persona che ha trascritto il documento</td>
+          <td>
+            {{link:http://hl7.it/fhir/StructureDefinition/composition-dataenterer-it}}
+          </td>
+        </tr>
         </tbody>
     </table>
   </body>
