@@ -70,7 +70,7 @@
         </tr>
         <tr>
           <td>CORE</td>
-          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlconditioncore.page.md?version=current">
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/RLConditionProblem.page.md?version=current">
           RLConditionCore
       </a>
           </td>
@@ -221,26 +221,370 @@
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad}}
           </td>
         </tr>
-        <tr>
-          <td>RAD</td>
-          <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsameEseguitoRad.page.md}}
-          </td>
-          <td>
-            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
-          </td>
-          <td>
-            Profilo che descrive l'esami eseguito durante l'incontro di radiologia
-          </td>
-          <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsameEseguitoRad}}
-          </td>
-        </tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLImagingStudyRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/imagingstudy.html">ImagingStudy</a>
+ </td>
+ <td>
+ Profilo che descrive lo studio DICOM associato al referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImagingStudyRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsameEseguitoRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive l'esame eseguito nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsameEseguitoRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive le complicanze nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeRad}}
+ </td>
+</tr>
+<tr>
+ <td>RAD</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPrecedentiEsamiEseguitiRad.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive i precedenti esami eseguiti nel contesto del referto di radiologia
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPrecedentiEsamiEseguitiRad}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ </td>
+ <td>
+ Profilo che descrive il documento Piano Terapeutico Individuale
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ </td>
+ <td>
+ Profilo che descrive il Piano Terapeutico Individuale: scadenza, flag di prescrizione e condizioni cliniche
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionCondizioniErogabilitaPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ </td>
+ <td>
+ Profilo che descrive una condizione di erogabilità del piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCondizioniErogabilitaPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLConditionCriteriEsclusionePti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ </td>
+ <td>
+ Profilo che descrive un criterio di esclusione del piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLConditionCriteriEsclusionePti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPesoPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il peso del paziente nel piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationPesoPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDurataMalattiaPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive la durata della malattia (BPCO) nel piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDurataMalattiaPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ </td>
+ <td>
+ Profilo che descrive il programma terapeutico del piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPti}}
+ </td>
+</tr>
+<tr>
+ <td>PTI</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationPti.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
+ </td>
+ <td>
+ Profilo che descrive il farmaco prescritto nel piano terapeutico
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationPti}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+ </td>
+ <td>
+ Profilo che descrive il documento lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
+ </td>
+ <td>
+ Profilo che descrive la terapia farmacologica somministrata durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationAdministrationRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestDimissioneLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ </td>
+ <td>
+ Profilo che descrive la terapia farmacologica alla dimissione nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestDimissioneLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ </td>
+ <td>
+ Profilo che descrive la terapia farmacologica prescritta durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationComplicanzeLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive le complicanze nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationComplicanzeLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationConsulenzaLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive la consulenza nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationConsulenzaLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDecorsoClinicoLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il decorso clinico nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDecorsoClinicoLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDiagnosiDimissioneLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive la diagnosi alla dimissione nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationDiagnosiDimissioneLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsamiEseguitiRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive gli esami eseguiti durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsamiEseguitiRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationMotivoRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive il motivo del ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationMotivoRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationProcedureRicoveroLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+ </td>
+ <td>
+ Profilo che descrive le procedure durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationProcedureRicoveroLdo}}
+ </td>
+</tr>
+<tr>
+ <td>LDO</td>
+ <td>
+ {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedureLdo.page.md}}
+ </td>
+ <td>
+ <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ </td>
+ <td>
+ Profilo che descrive le procedure eseguite durante il ricovero nel contesto della lettera di dimissione ospedaliera
+ </td>
+ <td>
+ {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureLdo}}
+ </td>
+</tr>
         <tr>
           <td>CORE</td>
           <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlservicerequestcore.page.md?version=current">
             RLServiceRequestCore
-      </a>
+          </a>
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
@@ -285,7 +629,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaFarmacoInPSVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaInPSVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
@@ -300,7 +644,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaFarmacoDimissioneVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestTerapiaDimissioneVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
@@ -360,7 +704,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioniDataDecessoVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioneDataDecessoVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -375,7 +719,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioniLivelloAppropriatezzaVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioneAppropriatezzaVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -435,7 +779,7 @@
         <tr>
           <td>VPS</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDimissioneRichiestaAutopsiaVPS.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRichiestaAutopsiaVPS.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -579,7 +923,7 @@
             Profilo che descrive header e body della Tessera per il Portatore di Impianto
           </td>
           <td>
-            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionTesseraPortatoreImpianto}}
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionPti}}
           </td>
         </tr>
         <tr>
@@ -690,7 +1034,7 @@
         <tr>
           <td>RSA</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAccertamentiEControlliConsigliatiRSA.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAccertamentiConsigliatiRSA.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -750,7 +1094,7 @@
         <tr>
           <td>RSA</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaFarmacologicaConsigliataRSA.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationAdministrationTerapiaConsigliataRSA.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a>
@@ -780,7 +1124,7 @@
         <tr>
           <td>RSA</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationTerapiaFarmacologicaConsigliataRSA.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationTerapiaConsigliataRSA.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
@@ -810,7 +1154,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlan.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanPAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
@@ -900,7 +1244,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationFumoPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAnamnesiFumoPAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -915,7 +1259,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAlcolPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAnamnesiAlcoolPAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -930,7 +1274,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationSedentarietaPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAnamnesiSedentarietaPAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -945,7 +1289,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCaratterizzazioniClinichePAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationPICCaratterizzazioniClinichePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -960,7 +1304,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationValutazionePAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationProgrammazioneValutazionePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -975,7 +1319,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRaccomandazionePAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRaccomandazioniClinichePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
@@ -1005,7 +1349,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLServiceRequestProgrammazionePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
@@ -1020,7 +1364,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestProgrammazione_PAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
@@ -1035,7 +1379,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationProgrammazionePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/medication.html">Medication</a>
@@ -1050,7 +1394,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceRequestPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDeviceRequestProgrammazionePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
@@ -1065,7 +1409,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCommunicationRequestPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCommunicationRequestProgrammazionePAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/communicationrequest.html">CommunicationRequest</a>
@@ -1080,7 +1424,7 @@
         <tr>
           <td>PAI</td>
           <td>
-            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationAffiliationPAI.page.md}}
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLOrganizationAffiliationRetiPatologiaPAI.page.md}}
           </td>
           <td>
             <a href="http://hl7.org/fhir/R4/organizationaffiliation.html">OrganizationAffiliation</a>
@@ -1102,6 +1446,323 @@
           </td>
           <td>
             Profilo che descrive l'erogatore delle prestazioni programmate (ADI, Cure Intermedie, CDI, CDD, RIA, Cure Palliative) nel Piano Assistenziale Individuale
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationErogatorePAI}}
+          </td>
+        </tr>
+                <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCompositionPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/composition.html">Composition</a>
+          </td>
+          <td>
+            Profilo che descrive il documento Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCompositionPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationStatementTerapiePSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+          </td>
+          <td>
+            Profilo che descrive le terapie farmacologiche del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationStatementTerapieFarmacologichePSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationStatementAssenzaTerapiePSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationstatement.html">MedicationStatement</a>
+          </td>
+          <td>
+            Profilo che descrive l'assenza o la non conoscenza di terapie farmacologiche del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationStatementAssenzaTerapiePSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLImmunizationVaccinazioniPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a>
+          </td>
+          <td>
+            Profilo che descrive le vaccinazioni del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLImmunizationVaccinazioniPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationReazioniAvversePSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive le reazioni avverse alle vaccinazioni nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationReazioniAvversePSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAssenzaAnamnesiFamiliarePSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive l'assenza o la non conoscenza di informazioni di anamnesi familiare nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAssenzaAnamnesiFamiliarePSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationStileDiVitaPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive lo stile di vita e i fattori di rischio del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStileDiVitaPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationGravidanzePartoPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive gravidanze, parti e stato mestruale della paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationGravidanzePartoPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationStatoFunzionalePSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive lo stato funzionale del paziente, raggruppando capacità motoria, regime di assistenza e altre informazioni nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationStatoFunzionalePSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationCapacitaMotoriaPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive la capacità motoria del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationCapacitaMotoriaPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationRegimeAssistenzaPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive il regime di assistenza domiciliare (ADI/ADP) del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationRegimeAssistenzaPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationAltreInformazioniPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive altre informazioni sullo stato funzionale (stato mentale) del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAltreInformazioniPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationEsamiLaboratorioPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive i risultati di indagini diagnostiche ed esami di laboratorio nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationEsamiLaboratorioPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLObservationDonazioneOrganiPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/observation.html">Observation</a>
+          </td>
+          <td>
+            Profilo che descrive l'assenso o il dissenso alla donazione degli organi nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLObservationAssensoDissensoDonazioneOrganiPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedureProtesiImpiantiAusiliPSS.page.md}}
+        <tr>
+          <td>PAI</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlprocedurepai.page.md?version=current">RLProcedurePAI</a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+          </td>
+          <td>
+            Profilo che descrive protesi, impianti e ausili del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureProtesiImpiantiAusiliPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLProcedureTrattamentiPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+          </td>
+          <td>
+            Profilo che descrive i trattamenti e le procedure terapeutiche, chirurgiche e diagnostiche del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLProcedureTrattamentiPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCarePlanPianoDiCuraPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+          </td>
+          <td>
+            Profilo che descrive il piano di cura del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCarePlanPianoDiCuraPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLMedicationRequestPianoDiCuraPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+          </td>
+          <td>
+            Profilo che descrive le terapie farmacologiche previste dal piano di cura nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLMedicationRequestPianoDiCuraPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLDiagnosticReportEsamiLaboratorioPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+          </td>
+          <td>
+            Profilo che descrive il referto di indagini diagnostiche ed esami di laboratorio nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLDiagnosticReportEsamiLaboratorioPSS}}
+          </td>
+        </tr>
+        <tr>
+          <td>PSS</td>
+          <td>
+            {{pagelink:Home/Profili-ed-Estensioni/Raccolta-profili/RLCoverageEsenzioniPSS.page.md}}
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+          </td>
+          <td>
+            Profilo che descrive le esenzioni del paziente nel contesto del Profilo Sanitario Sintetico
+          </td>
+          <td>
+            {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLCoverageEsenzioniPSS}}
+          </td>
+        </tr>
+        <tr>
+        <td>PAI</td>
+          <td><a href="https://simplifier.net/guide/progetto-fhir-rl-core-sviluppo/home/profili-ed-estensioni/raccolta-profili/rlorganizationerogatorepai.page.md?version=current">RLOrganizationErogatorePAI</a>
+          </td>
+          <td>
+            <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+          </td>
+          <td>
+            Profilo che descrive gli erogatori delle prestazioni programmate nel Piano Assistenziale Individuale (ADI, Cure intermedie, CDI, CDD, RIA, Cure palliative)
           </td>
           <td>
             {{link:https://fhir.siss.regione.lombardia.it/StructureDefinition/RLOrganizationErogatorePAI}}
